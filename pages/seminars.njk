@@ -24,8 +24,9 @@ permalink: "/network-seminar/"
 
 {% for seminar in seminars %}
 {% set seminar_date = seminar.data.date | utcDate %}
+{% set seminar_time = seminar_date %}
 {% set seminar_date = seminar_date | date("yyyy-MM-dd") %}
-{% if seminar_date >= ctimeStamp %}
+{% if seminar_time >= ctimeStamp %}
 <div class="container my-4">
   <div class="row">
     <div class="col-md-12">
@@ -67,7 +68,7 @@ permalink: "/network-seminar/"
         <p class="card-text">{{ seminar.data.speaker }}</p>
       {% endif %}
       <br>
-      <p class="card-text">{{ seminar_date | date("MMMM dd, yyyy") }} at {{ seminar_date | formatTime }}<br>
+      <p class="card-text">{{ seminar_date | date("MMMM dd, yyyy") }} at {{ seminar_time | formatTime }} (IST)<br>
         Venue: {{ seminar.data.Venue }}</p>
       
       <div class="d-flex align-items-center gap-3">

@@ -35,6 +35,10 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addFilter("localDate", (date) => {
+    return DateTime.fromJSDate(date,  { zone: "UTC" }).toLocal().toFormat("yyyy-MM-dd HH:mm:ss");
+  });
+
   eleventyConfig.addCollection("updates", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob(["./updates/*.md", "./updates/*.html"])
