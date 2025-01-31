@@ -75,8 +75,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("covidResponses", function (collectionApi) {
     return collectionApi.getFilteredByGlob([
-      "./covidresponse/*.md",
-      "./covidresponse/*.html",
+      "./covid-19-response/*.md"
     ]);
   });
 
