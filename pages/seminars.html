@@ -6,50 +6,12 @@ permalink: "/network-seminar/"
 
 ---
 <script src="https://apis.google.com/js/platform.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const now = new Date();
-    const currentTime = now.toLocaleString("en-US", {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false // Use 24-hour format
-    }).replace(/(\d+)\/(\d+)\/(\d+), (\d+:\d+:\d+)/, "$3-$1-$2 $4");
-
-    // Get all seminar cards
-    const seminarCards = document.querySelectorAll(".seminar-card");
-    let upcomingSeminarsCount = 0; // Counter for upcoming seminars
-
-    seminarCards.forEach(card => {
-        const seminarTime = card.getAttribute("data-date");
-
-        console.log("Seminar Time (from data-date):", seminarTime); // Debugging: Log seminar time
-
-        // Compare seminar date with current time
-        if (seminarTime < currentTime) {
-            console.log("Hiding seminar:", card); // Debugging: Log which seminar is being hidden
-            card.style.display = "none"; // Hide past seminars
-        } else {
-            upcomingSeminarsCount++; // Increment counter for upcoming seminars
-        }
-    });
-
-    // Hide the "Upcoming Seminars" heading if there are no upcoming seminars
-    const upcomingSeminarsHeading = document.querySelector("#upcoming-seminars-heading");
-    if (upcomingSeminarsCount === 0 && upcomingSeminarsHeading) {
-        upcomingSeminarsHeading.style.display = "none";
-    }
-});
-</script>
 
 <link rel="stylesheet" href="/assets/css/seminar_cards.css">
 
 {% set seminars = collections.seminars | sort('date') | reverse %}
 
-{% set ctimeStamp = "now" | date("yyyy-MM-dd HH:mm:ss") %}
+{% set ctimeStamp = footerInfo.currentTimeStamp | date("yyyy-MM-dd HH:mm:ss") %}
 
 <div class="container" style="max-width:850px;">
   <h2 class="mt-2 text-center">Network Seminar Series</h2>
@@ -61,70 +23,74 @@ document.addEventListener("DOMContentLoaded", function() {
   </p>
 </div>
 
+{% for seminar in seminars %}
+{% set seminar_date = seminar.data.date | utcDate %}
+{% set seminar_time = seminar_date %}
+{% set seminar_date = seminar_date | date("yyyy-MM-dd") %}
+{% if seminar_time >= ctimeStamp %}
 <div class="container my-4">
-  <h3 id="upcoming-seminars-heading" class="text-center">Upcoming Seminars</h3>
-  <div id="seminar-list">
-    {% for seminar in seminars %}
-      {% set seminar_time = seminar.data.date | utcDate | date("yyyy-MM-dd HH:mm:ss") %}
-      {% set seminar_date = seminar_time | date("yyyy-MM-dd") %}
-
-      <div class="row align-items-center seminar-card" data-date="{{ seminar_time }}">
-        <!-- Image Column -->
-        <div class="col-md-6">
-          {% if seminar.data.recorded_video %}
-            {% set videoId = seminar.data.recorded_video %}
-            <img class="img-fluid rounded" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" 
-                 alt="{{ seminar.data.title }}">
-          {% else %}
-          {% if seminar.data.img.startsWith('/') %}
-          {% set imgSrc = seminar.data.img.slice(1) %}
-          {% else %}
-          {% set imgSrc = seminar.data.img %}
-          {% endif %}
-            <img class="img-fluid rounded" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}">
-          {% endif %}
-        </div>
-
-        <!-- Content Column -->
-        <div class="col-md-6">
-
-          {% if seminar.fileSlug | length == 1 %}
-          <a href="/seminars/{{ seminar_date }}-{{ seminar.fileSlug }}" class="card-anchor">
-            {% else %}
-            <a href="/seminars/{{ seminar.fileSlug }}/" class="card-anchor">
-              {% endif %}
-            <h5 class="card-text">{{ seminar.data.title }}</h5>
-          </a>
-          
-          {% if seminar.data.speaker_url %}
-            <a href="{{ seminar.data.speaker_url }}">
-              <p class="card-text">{{ seminar.data.speaker }}</p>
-            </a>
-          {% else %}
-            <p class="card-text">{{ seminar.data.speaker }}</p>
-          {% endif %}
-          
-          <p class="card-text">{{ seminar_date | date("MMMM dd, yyyy") }} at {{ seminar_time | formatTime }} (IST)<br>
-            Venue: {{ seminar.data.Venue }}</p>
-          
-          <div class="d-flex align-items-center gap-3">
-            {% if seminar.data.zoom_link %}
-              <a href="{{ seminar.data.zoom_link }}" target="_blank" class="btn button-style btn-lg">Join on Zoom</a>
-            {% endif %}
-            {% if seminar.data.recorded_video %}
-              <a href="https://www.youtube.com/watch?v={{ seminar.data.recorded_video }}" target="_blank"
-                 style="color: #ec3c3c;" onmouseover="this.style.color='#FF8F00';"
-                 onmouseout="this.style.color='#FF4D4D';">
-                <i class="fab fa-youtube fa-3x"></i>
-              </a>
-            {% endif %}
-          </div>
-        </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">Upcoming Seminar</h3>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <!-- Image Column -->
+    <div class="col-md-6">
+      {% if seminar.data.recorded_video != '' %}
+        {% set videoId = seminar.data.recorded_video %}
+        <img class="img-fluid rounded" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" 
+             alt="{{ seminar.data.title }}">
+      {% else %}
+      {% if seminar.data.img.startsWith('/') %}
+      {% set imgSrc = seminar.data.img.slice(1) %}
+      {% else %}
+      {% set imgSrc = seminar.data.img %}
+      {% endif %}
+        <img class="img-fluid rounded" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}">
+      {% endif %}
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-md-6">
+      {% if seminar.fileSlug | length == 1 %}
+        <a href="/seminars/{{ seminar_date }}-{{ seminar.fileSlug }}/">
+      {% else %}
+        <a href="/seminars/{{ seminar.fileSlug }}/">
+      {% endif %}
+          <h5 class="card-text">{{ seminar.data.title }}</h5>
+        </a>
+        
+      {% if seminar.data.speaker_url %}
+        <a href="{{ seminar.data.speaker_url }}">
+          <p class="card-text">{{ seminar.data.speaker }}</p>
+        </a>
+      {% else %}
+        <p class="card-text">{{ seminar.data.speaker }}</p>
+      {% endif %}
+      <br>
+      <p class="card-text">{{ seminar_date | date("MMMM dd, yyyy") }} at {{ seminar_time | formatTime }} (IST)<br>
+        Venue: {{ seminar.data.Venue }}</p>
+      
+      <div class="d-flex align-items-center gap-3">
+      {% if seminar.data.zoom_link %}
+        <a href="{{ seminar.data.zoom_link }}" target="_blank" class="btn button-style btn-lg" role="button"
+           aria-pressed="true">Join on Zoom</a>
+      {% endif %}
+      {% if seminar.data.recorded_video %}
+        <a href="https://www.youtube.com/watch?v={{ seminar.data.recorded_video }}" target="_blank"
+           style="color: #ec3c3c;" onmouseover="this.style.color='#009999';"
+           onmouseout="this.style.color='#FF4D4D';">
+          <i class="fab fa-youtube fa-3x"></i>
+        </a>
+      {% endif %}
       </div>
-    {% endfor %}
+    </div>
   </div>
 </div>
 
+{% endif %}
+{% endfor %}
 
 <div class="container my-4">
 <div class="row text-center">
