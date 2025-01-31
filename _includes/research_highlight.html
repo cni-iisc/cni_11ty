@@ -1,0 +1,25 @@
+---
+layout: base.html
+
+---
+
+<header>
+  <h2 class="text-center">{{ title }}</h2>
+  <h4 class="text-center">{{ speaker }}</h4>
+</header>
+
+<div class="container-fluid" style="max-width: 800px;">
+  {% if report_video %}
+  <div class="container-fluid mt-2 mb-4">
+    <div class="ratio ratio-16x9">
+      <iframe class="img-fluid rounded" src="https://www.youtube.com/embed/{{ report_video }}"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  {% endif %}
+  <div class="container-fluid my-2">
+    {{ content | safe }}
+  </div>
+</div>

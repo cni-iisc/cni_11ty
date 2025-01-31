@@ -1,0 +1,70 @@
+---
+layout: base
+title: Updates
+pagination:
+    data: collections.updates
+    size: 7
+    alias: paginatedPosts
+permalink: /updates/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber + 1 }}/{% endif %}
+---
+<div class="container-fluid text-center my-2">
+    <h2>Updates</h2>
+</div>
+
+<div class="container-fluid blog-list mt-4" style="max-width: 800px; margin: 0 auto;">
+    {% for post in paginatedPosts %}
+    <div class="blog-post mb-4">
+        <h3>
+            {{ post.data.title }}
+        </h3>
+        <p><strong>{{ post.date | date("MMMM dd, yyyy") }}</strong></p>
+        <p>{{ post.data.teaser }}</p>
+        <a href="{{ post.url }}" class="read-more heading-anchor">Read More</a>
+    </div>
+    {% if not loop.last %}
+    <hr>
+    {% endif %}
+    {% endfor %}
+
+    {% set startIndex = pagination.pageNumber - 2 %}
+    {% if startIndex < 0 %}
+        {% set startIndex = 0 %}
+    {% endif %}
+    {% set endIndex = pagination.pageNumber + 3 %}
+    {% if endIndex > pagination.pages.length %}
+        {% set endIndex = pagination.pages.length %}
+    {% endif %}
+
+    <div class="container-fluid mt-4 text-center">
+        <ol class="pagination justify-content-center">
+            <!-- First Button -->
+            <li class="{% if page.url == pagination.href.first %}disabled{% endif %}">
+                <a class="btn button-style" href="{{ pagination.href.first }}" tabindex="-1"
+                {% if page.url == pagination.href.first %} 
+                    style="pointer-events: none; color: var(--hyperlink-clr); border-color: var(--hover-clr); background-color: var(--hover-clr);" 
+                {% endif %}>New</a>
+            </li>
+
+            <!-- Page Buttons -->
+            {% for pageIndex in range(startIndex, endIndex) %}
+            <li class="{% if page.url == pagination.hrefs[pageIndex] %}active{% endif %}">
+                <a class="btn button-style {% if page.url == pagination.hrefs[pageIndex] %}active-page{% endif %}" 
+                   href="{{ pagination.hrefs[pageIndex] }}"
+                   {% if page.url == pagination.hrefs[pageIndex] %} 
+                       style="pointer-events: none; color: var(--hyperlink-clr); border-color: var(--hover-clr); background-color: var(--hover-clr);" 
+                   {% endif %}>
+                    Page {{ pageIndex + 1 }}
+                </a>
+            </li>
+            {% endfor %}
+
+            <!-- Last Button -->
+            <li class="{% if page.url == pagination.href.last %}disabled{% endif %}">
+                <a class="btn button-style" href="{{ pagination.href.last }}"{% if page.url == pagination.href.last %} 
+                style="pointer-events: none; color: var(--hyperlink-clr); border-color: var(--hover-clr); background-color: var(--hover-clr);" 
+            {% endif %}>Older</a>
+            </li>
+        </ol>
+
+    </div>
+</div>

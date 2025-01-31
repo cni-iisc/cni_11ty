@@ -1,0 +1,56 @@
+[
+    {
+        "date": "May 11, 2023",
+        "title": "CNI sponsored the ITU Workshop on 'The Future of Television for South Asia, Arab and Africa Regions'",
+        "link": "https://www.itu.int/en/ITU-T/Workshops-and-Seminars/2023/0511/Pages/default.aspx",
+        "img": "assets/img/news/519769_Future of television workshop_Visual concept_Banner.jpg"
+    },
+    {
+        "date": "January 30, 2022",
+        "title": "Curbs delay, but don’t prevent Omicron spread: Study",
+        "source": "The Deccan Herald",
+        "link": "https://www.deccanherald.com/city/top-bengaluru-stories/curbs-delay-but-dont-prevent-omicron-spread-study-1076079.html"
+    },
+    {
+        "date": "January 19, 2022",
+        "title": "IISc gets special network intelligence lab",
+        "source": "The Deccan Herald",
+        "link": "https://www.deccanherald.com/city/top-bengaluru-stories/iisc-gets-special-network-intelligence-lab-940586.html"
+    },
+    {
+        "date": "January 7, 2022",
+        "title": "India may see 10 lakh Covid cases a day by Jan-end: IISc-ISI model",
+        "source": "The Economic Times",
+        "link": "https://economictimes.indiatimes.com/news/india/india-may-see-10-lakh-covid-cases-a-day-by-jan-end-iisc-isi-model/articleshow/88763235.cms",
+        "img": "assets/img/news/coronavirus-indias-weekly-cases-up-nearly-3-fold-in-highest-ever-surge.jpg"
+    },
+    {
+        "date": "January 6, 2022",
+        "title": "Karnataka to see 1.2 lakh Covid cases daily from February 1, claim experts",
+        "source": "The Deccan Herald",
+        "link": "https://www.deccanherald.com/state/top-karnataka-stories/karnataka-to-see-12-lakh-covid-cases-daily-from-february-1-claim-experts-1068423.html",
+        "img": "assets/img/news/1.2_Lakh_Covid_Cases.jpeg"
+    },
+    {
+        "date": "January 19, 2021",
+        "title": "State-of-the-art networking lab inaugurated at Indian Institute of Science",
+        "source": "The Hans India",
+        "link": "https://www.thehansindia.com/news/cities/bengaluru/state-of-the-art-networking-lab-inaugurated-at-indian-institute-of-science-667363",
+        "importance": 2
+    },
+    {
+        "date": "January 19, 2021",
+        "title": "New state-of-the-art networking lab inaugurated at Indian Institute of Science",
+        "source": "Business Today",
+        "link": "https://www.businesstoday.in/latest/trends/new-state-of-the-art-networking-lab-inaugurated-at-indian-institute-of-science/story/428413.html",
+        "importance": 1,
+        "img": "assets/img/news/DSC05426-199x300.jpg"
+    },
+    {
+        "date": "September 10, 2020",
+        "title": "2 Indian Institutes among 31 that receive $8.5mn Google grant",
+        "source": "Telecom.com",
+        "link": "https://telecom.economictimes.indiatimes.com/news/2-indian-institutes-among-31-that-receive-8-5mn-google-grant/78042059",
+        "img": "assets/img/news/15.jpg"
+    }
+]

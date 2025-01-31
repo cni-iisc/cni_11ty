@@ -1,0 +1,27 @@
+---
+layout: base.html
+title: Faculty
+permalink: "/faculty/"
+---
+
+<link rel="stylesheet" href="/assets/css/people.css">
+
+
+<div class="container-fluid my-2 justify-content-center"  style="max-width:1200px;">
+<h1 class="text-center mb-4">Faculty</h1>
+  <div class="row jusitfy-content-center gap-0">
+    {% for person in collections.Faculty | sort(attribute="data.importance") %}
+      <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
+        <div class="card mb-4"> 
+          <!-- show only if person.data.img has 2024-->
+          <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top img-fluid">
+          <div class="card-body mb-0 pb-0">
+            <a href="{{ person.data.redirect }}" target="_blank" class="card-anchor"><h6 class="card-title mb-2">{{ person.data.title }}</h6>
+            <p class="m-0 p-0"><i>{{ person.data.position_at_CNI }}</i></p>
+            <p class="m-0 p-0">{{ person.data.description }}</p></a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

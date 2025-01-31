@@ -1,0 +1,38 @@
+[
+   {
+       "title": "Outreach",
+       "url": "#",
+       "submenu": [
+           {"title": "Seminars", "url": "/network-seminar/"},
+           {"title": "Newsletters", "url": "/newsletter/latest/"},
+           {"title": "Courses", "url": "/courses/"},
+           {"title": "Summer School", "url": "/summer-school/"},
+           {"title": "CNI in News", "url": "/news/"},
+           {"title": "Hackathons", "url": "/hackathons"},
+           {"title": "Workshops", "url": "/workshops/"}
+       ]
+   },
+   {
+       "title": "Research",
+       "url": "#",
+       "submenu": [
+           {"title": "Projects", "url": "/projects/"},
+           {"title": "Publications", "url": "/publications/"},
+           {"title": "Highlights", "url": "/highlights/"}
+       ]
+   },
+   {
+       "title": "People",
+       "url": "#",
+       "submenu": [
+           {"title": "Faculty", "url": "/faculty/"},
+           {"title": "Staff", "url": "/staff/"},
+           {"title": "PhD Fellows", "url": "/phd-fellows/"},
+           {"title": "MTech Fellows", "url": "/mtech-fellows/"}
+       ]
+   },
+   {
+       "title": "Opportunities",
+       "url": "/opportunities/"
+   }
+]

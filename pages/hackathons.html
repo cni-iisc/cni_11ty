@@ -1,0 +1,33 @@
+---
+layout: base.html
+title: Hackathons
+permalink: "/hackathons/"
+---
+{% set hackathons = collections.hackathons | sort(attribute='data.importance') %}
+<link rel="stylesheet" href="/assets/css/projects.css">
+
+<!-- <div class="banner-container text-align-center">
+    
+    <img src="/assets/images/projects.jpg" alt="Projects Banner" class="banner-image">
+    
+    <div class="banner-text">Projects</div>
+</div> -->
+<div class="container-fluid mt-2" align="center">
+    <h1>Hackathons</h1>
+</div>
+<div class="container-fluid mt-5" align="center">
+    <div class="row">
+        {% for hackathon in hackathons %}
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+            <a href="/hackathons/{{ hackathon.fileSlug }}/">
+                <div class="card">
+                    <img class="card-img-top" src="/{{ hackathon.data.img }}" alt="{{ hackathon.data.title }}">
+                    <div class="card-body">
+                        <h5 class="card-text">{{ hackathon.data.title }}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

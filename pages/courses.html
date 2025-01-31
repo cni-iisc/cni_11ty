@@ -1,0 +1,39 @@
+---
+layout: base.html
+title: Courses
+permalink: "/courses/"
+---
+{% set courses = collections.courses | sort(attribute='data.importance') %}
+<link rel="stylesheet" href="/assets/css/projects.css">
+
+<!-- <div class="banner-container text-align-center">
+    
+    <img src="/assets/images/projects.jpg" alt="Projects Banner" class="banner-image">
+    
+    <div class="banner-text">Projects</div>
+</div> -->
+<div class="container-fluid mt-2" align="center">
+    <h1>Courses</h1>
+    <p>
+        While CNI does not offer any academic programs of its own, we have been developing online course/lab modules as well as contributing towards making some of IISc courses available online for the benefit of the larger student community. The courses are designed to provide students with a strong foundation in the fundamentals of these areas and to expose them to the latest research and developments in the
+        field.
+    </p>
+</div>
+<div class="container-fluid mt-5" align="center">
+    <div class="row">
+        {% for course in courses %}
+        {% if course.data.ignore != true %}
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+            <a href="/courses/{{ course.fileSlug }}/">
+                <div class="card">
+                    <img class="card-img-top" src="/{{ course.data.img }}" alt="{{ course.data.title }}">
+                    <div class="card-body">
+                        <h5 class="card-text">{{ course.data.title }}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

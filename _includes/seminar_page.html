@@ -1,0 +1,52 @@
+---
+layout: base.html
+
+---
+<link rel="stylesheet" href="/assets/css/seminar_cards.css">
+
+<div class="container-fluid text-center mt-2">
+<h2>Network Seminar Series</h2>
+<header class="mt-4">
+    <h3>{{ title }}</h3>
+    {% if speaker_url %}
+    <h4><a href="{{ speaker_url }}">{{ speaker }}</a></h4>
+    {% else %}
+    <h4>{{ speaker }}</h4>
+    {% endif %}
+    <h5>#{{ n }}</h5>
+</header>
+</div>
+
+<div class="container-fluid text-center" style="max-width: 800px;">
+    {% if recorded_video %}
+    <div class="ratio ratio-16x9">
+        <iframe class="img-fluid rounded" src="https://www.youtube.com/embed/{{ recorded_video }}"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    {% endif %}
+    {% if slides %}
+    {% if slides.startsWith('/') %}
+    {% set slide_src = slides.slice(1) %}
+    {% else %}
+    {% set slide_src = slides %}
+    {% endif %}
+    <a href="/{{ slide_src }}" type="button" class="btn button-style mx-auto" style="margin-top: 20px;" target="_blank">Slides</a>
+    {% endif %}
+    <br>
+</div> 
+<div class="container-fluid mt-4" style="max-width: 800px;">
+    <h6 class="text-center" style="width: 20px; height: 20px; display: inline-block;">Abstract</h6>
+ 
+    <p>{{ Topic_abstract }}</p>
+    <br>
+    <h6 style="width: 20px; display: inline-block;">Bio</h6>
+    {% if speaker_url %}
+    <h5><a href="{{ speaker_url }}">{{ speaker }}</a></h5>
+    {% else %}
+    <h5>{{ speaker }}</h5>
+    {% endif %}
+    <p>{{ speaker_bio }}</p>
+    
+</div>

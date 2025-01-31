@@ -1,0 +1,54 @@
+---
+layout: base.html
+title: Bio-Surveillance
+description:
+img: assets/img/projects/workflow.png
+importance: 1
+category: ""
+---
+{% set resps = collections.covidResponses | sort(attribute='data.importance') %}
+<link rel="stylesheet" href="/assets/css/covidresp.css">
+
+<h1 align="center">Covid-19 Response</h1>
+
+<div class="container mt-5 mb-2" align="center">
+    <div class="row">
+        {% for resp in resps %}
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+            <a href="/covidresponse/{{ resp.fileSlug }}/">
+                <div class="card">
+                    <img class="card-img-top" src="/{{ resp.data.img }}" alt="{{ resp.data.title }}">
+                    <div class="card-body mt-1 pt-0">
+                        <h6 class="card-text">{{ resp.data.title }}</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <h5>Our Sponsers</h5>
+    <p>We thank our many sponsors for supporting our efforts. Cisco CSR, IISc, Hitachi, Google, DST, DHWFS-NHM.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/covid19-response/Cisco-CSR-Logos-horiz-1920x496.jpg"
+                style="height:90px">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/covid19-response/IISc_Seal_Master_logo_Black-01-1527x1080.jpg"
+                style="height:90px" />
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/covid19-response/hitachi.png" style="height:90px" />
+        </div>
+        <div class="col-md-4">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/covid19-response/Screenshot_2021-05-31-Google-has-a-new-logo.png"
+                style="height:90px" />
+        </div>
+        <div class="col-md-4">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/covid19-response/dst.jpeg" style="height:90px" />
+        </div>
+    </div>
+</div>

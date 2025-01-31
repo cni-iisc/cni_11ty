@@ -1,0 +1,99 @@
+---
+layout: base.html
+title: Publications
+year: [2024, 2023, 2022, 2021, 2020]
+permalink: "/publications/"
+---
+<link rel="stylesheet" href="/assets/css/publications.css">
+
+{% set journal_counter = 0 %}
+{% set conference_counter = 0 %}
+{% set misc_counter = 0 %}
+
+<script>
+    function redirectToDOI(button) {
+        const doiLink = button.getAttribute('href');
+        if (doiLink) {
+            window.location.href = doiLink; // Directly redirects to the DOI link
+        }
+    }
+</script>
+<h1 class="text-center mt-2">Publications</h1>
+<!-- make it span entire width -->
+
+<div class="container-fluid"
+    style="display: flex; justify-content: space-between; align-items: center; text-align: center; margin-top: 20px; margin-bottom: 10px;">
+    <h4 class="conference">C: Conference proceedings</h4>
+    <h4 class="journal">J: Journal articles</h4>
+    <h4 class="misc">M: Miscellaneous</h4>
+</div>
+<div class="container-fluid">
+    <ul class="publications-list">
+        {% for y in year %}
+        <h4><strong>{{ y }}</strong></h4>
+        <hr>
+        {% for entry in bibparse %}
+        {% if entry.YEAR == y %}
+        {% if entry.type == 'article' %}
+        {% set journal_counter = journal_counter + 1 %}
+        {% elif entry.type == 'inproceedings' %}
+        {% set conference_counter = conference_counter + 1 %}
+        {% else %}
+        {% set misc_counter = misc_counter + 1 %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+        {% for entry in bibparse %}
+        {% if entry.YEAR == y %}
+
+        <li class="publication-item">
+            {% if entry.type == 'article' %}
+            <span class="publication-index journal m-0 p-0">[J{{ journal_counter }}]</span>
+            {% set journal_counter = journal_counter - 1 %}
+            {% set published = entry.JOURNAL %}
+            <span class="publication-content"><div class="journal m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
+                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
+                <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
+            </span>
+            {% elif entry.type == 'inproceedings' %}
+            <span class="publication-index conference m-0 p-0">[C{{ conference_counter }}]</span>
+            {% set conference_counter = conference_counter - 1 %}
+            {% set published = entry.BOOKTITLE %}
+            <span class="publication-content"><div class="conference m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
+                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
+                <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
+            </span>
+            {% else %}
+            <span class="publication-index misc m-0 p-0">[M{{ misc_counter }}]</span>
+            {% set misc_counter = misc_counter - 1 %}
+            {% set published = 'arXiv' %}
+            <span class="publication-content"><div class="misc m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
+                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
+                <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
+            </span>
+            {% endif %}
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+<!--
+    <ul>
+        {% for y in year %}
+        <h2><strong>{{ y }}</strong></h2>
+        <hr>
+        {% for entry in bibparse %}
+        {% if entry.YEAR == y %}
+        <li>
+            {{ entry.TITLE }} - {{ entry.AUTHOR }} ({{ entry.YEAR }})
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </ul>
+-->

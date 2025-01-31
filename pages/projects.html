@@ -1,0 +1,31 @@
+---
+layout: base.html
+title: Projects
+permalink: "/projects/"
+---
+{% set projects = collections.projects | sort(attribute='data.importance') %}
+<link rel="stylesheet" href="/assets/css/projects.css">
+
+<div class="banner-container text-align-center">
+    <!-- Replace with your image path -->
+    <img src="/assets/images/projects.jpg" alt="Projects Banner" class="banner-image">
+    <!-- Overlayed text -->
+    <div class="banner-text">Projects</div>
+</div>
+
+<div class="container-fluid mt-5" align="center">
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+            <a href="/projects/{{ project.fileSlug }}/">
+                <div class="card">
+                    <img class="card-img-top" src="/{{ project.data.img }}" alt="{{ project.data.title }}">
+                    <div class="card-body">
+                        <h5 class="card-text">{{ project.data.title }}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,179 @@
+:root{
+  --navbar-clr: #26355D;
+  --hyperlink-clr: #FF8F00;
+  --hover-clr: #FFDB00;
+  --card-hover: #AF47D2;
+}
+
+.navbar-brand:hover, .navbar-brand:active {
+  filter: invert(54%) sepia(94%) saturate(1913%) hue-rotate(1deg) brightness(104%) contrast(103%);
+}
+
+/* When the dropdown menu is open (aria-expanded="true"), apply the hover color */
+.nav-link[aria-expanded="true"] {
+  color: var(--hyperlink-clr) !important;
+}
+
+
+/* Change the background color of the navbar */
+.custom-navbar {
+  background-color: var(--navbar-clr); /* Change to your preferred color */
+}
+
+
+/* Change the text color of the nav links */
+.custom-navbar .nav-link {
+  color: #ffffff; /* Change to your preferred text color */
+}
+
+.custom-navbar .nav-link:focus {
+  color: var(--hyperlink-clr); /* Change to your preferred active link color */
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-navbar .nav-link:active {
+  color: var(--hyperlink-clr); /* Same as focus color */
+  outline: none;
+  box-shadow: none;
+}
+
+/* Change text color on hover */
+.custom-navbar .nav-link:hover {
+  color: var(--hyperlink-clr); /* Change to your preferred hover color */
+  outline: none;
+  box-shadow: none;
+}
+
+/* Dropdown items */
+.custom-navbar .dropdown-item {
+  color: #ffffff; /* Text color for dropdown items */
+}
+
+/* Dropdown item hover */
+.custom-navbar .dropdown-item:hover {
+  color: var(--navbar-clr); /* Hover color for dropdown items */
+}
+
+/* Optional: change the background of dropdowns */
+.custom-navbar .dropdown-menu {
+  background-color: var(--hyperlink-clr); /* Change to your preferred color */
+}
+
+/* Optional: change the background of dropdown items on hover */
+.custom-navbar .dropdown-menu .dropdown-item:hover {
+  background-color: var(--hover-clr); /* Change to your preferred hover color */
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  transition: none;
+}
+
+.custom-navbar .navbar-toggler {
+  background-color: var(--navbar-clr); /* Change to your preferred color */
+  border-color: var(--hyperlink-clr);
+}
+
+.custom-navbar .navbar-toggler:hover{
+  background-color: var(--hyperlink-clr); /* Change to your preferred hover color */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='1' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Default styles */
+.carousel-inner img {
+  width: 100vw;
+  height: 35vw;
+  object-fit: fill;
+}
+
+/* Styles for smaller devices */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 50vw; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner img {
+    height: 60vw; /* Further increase height for extra small screens */
+  }
+}
+
+
+
+.button-style {
+  background-color: var(--navbar-clr);
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 10px 8px;
+  cursor: pointer;
+  /* add border color */
+  border: 2px solid var(--navbar-clr);
+}
+
+.button-style:hover {
+  color: var(--navbar-clr);
+  border: 2px solid var(--hyperlink-clr);
+  background-color: var(--hyperlink-clr);
+}
+
+.button-style:active:hover {
+  color: var(--navbar-clr);
+  border: 2px solid var(--hyperlink-clr);
+  background-color: var(--hyperlink-clr);
+}
+
+/* Active state styling */
+.page-item.active .button-style {
+  background-color: var(--navbar-clr);
+  border-color: var(--navbar-clr);
+  color: #ffffff;
+  pointer-events: none; /* Disable click on the active button */
+  cursor: default;
+}
+
+
+.linkedin-icon {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--hyperlink-clr); /* LinkedIn's color */
+  text-decoration: none;
+}
+
+.linkedin-icon:hover {
+  color: var(--hover-clr) !important;
+}
+
+.website-icon {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--hyperlink-clr); /* LinkedIn's color */
+  text-decoration: none;
+}
+
+.website-icon:hover {
+  color: var(--hover-clr) !important;
+}
+
+a {
+  color: var(--hyperlink-clr);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--card-hover);
+}
+
+.card-anchor:hover {
+  color: var(--hover-clr);
+}

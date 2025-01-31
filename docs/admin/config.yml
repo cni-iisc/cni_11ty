@@ -1,0 +1,178 @@
+backend:
+  name: github
+  repo: sheds-ui/sheds-ui.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.akash-sheds.workers.dev/
+  automatic_deployments: false
+media_folder: "/assets"
+public_folder: "/assets"
+editor:
+    preview: false
+
+collections:
+  - label: "Updates"
+    name: "updates"
+    folder: "updates/"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Teaser", name: "teaser", widget: "text", hint: "Short description of the post" }
+      - { label: "Show post on carousel", name: "showcase", widget: "boolean", default: false, hint: "Showcase this post on the carousel" }
+      - { label: "Image to show on carousel", name: "img", widget: "image", required: false, hint: "Image for the carousel" }
+      - { label: "Publish Date", name: "date", widget: "datetime",  date_format: "YYYY-MM-DD" , time_format: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Faculty"
+    name: "Faculty"
+    folder: "_people/faculty/"
+    create: true
+    media_folder: "assets/images/people/faculty/"
+    public_folder: "assets/images/people/faculty/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Position at CNI", name: "position_at_CNI", widget: "string", required: false }
+      - { label: "Faculty's website link", name: "redirect", widget: "string", required: false }
+      - { label: "Importance", name: "importance", widget: "number" , default: 5, hint: "Keep 5 to maintain current order" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Category", name: "category", widget: "hidden", default: "Faculty" }
+  - label: "Staff"
+    name: "Staff"
+    folder: "_people/staff/"
+    create: true
+    media_folder: "assets/images/people/staff/"
+    public_folder: "assets/images/people/staff/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Position at CNI", name: "position_at_CNI", widget: "string" }
+      - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+      - { label: "Number at which to display", name: "importance", widget: "number" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Is past staff?", name: "past", widget: "boolean", default: false }
+      - { label: "Cap", name: "cap", widget: "number", required: false, hint: "Used to maintain the order of past staff. If someone exits now, put cap as 22" }
+      - { label: "Category", name: "category", widget: "hidden", default: "Staff" }
+  - label: "PhD Fellows"
+    name: "PhD Fellows"
+    folder: "_people/phd_fellows/"
+    create: true
+    media_folder: "assets/images/people/phd/"
+    public_folder: "assets/images/people/phd/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+      - { label: "Website link", name: "redirect", widget: "string", required: false }
+      - { label: "Category", name: "category", widget: "hidden", default: "Ph.D. Fellows/Scholars" }
+      - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
+      - { label: "Advisor", name: "advisor", widget: "string" }
+      - { label: "Department", name: "department", widget: "string" }
+  - label: "MTech Fellows"
+    name: "MTech Fellows"
+    folder: "_people/mtech_fellows/"
+    create: true
+    media_folder: "assets/images/people/mtech/"
+    public_folder: "assets/images/people/mtech/"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "LinkedIn profile link", name: "linkedin", widget: "string", required: false }
+      - { label: "Website link", name: "redirect", widget: "string", required: false }
+      - { label: "Category", name: "category", widget: "hidden", default: "M.Tech. Fellows/Scholars" }
+      - { label: "Years", name: "years", widget: "string", hint: "e.g. [2024, 2025]" }
+      - { label: "Advisor", name: "advisor", widget: "string" }
+      - { label: "Department", name: "department", widget: "string" }
+  - label: "Seminars"
+    name: "Seminars"
+    folder: "seminars/"
+    create: true
+    media_folder: "assets/seminars/2025/"
+    public_folder: "assets/seminars/2025/"
+    slug: "{{fields.date | date('YYYY-MM-DD')}}"
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "seminar_page" }
+      - { label: "Seminar number (#n)", name: "n", widget: "number" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Speaker", name: "speaker", widget: "string" }
+      - { label: "Venue", name: "Venue", widget: "string" }
+      - { label: "Speaker's website link", name: "speaker_url", widget: "string" }
+      - { label: "Speaker's Bio", name: "speaker_bio", widget: "text" }
+      - { label: "YouTube video id", name: "recorded_video", widget: "string", required: false, hint: "Add only if YouTube video is PUBLIC" }
+      - { label: "Image", name: "img", widget: "image", required: false, hint: "Add only if YouTube video is PRIVATE or UNAVAILABEL" }
+      - { label: "Seminar abstract", name: "Topic_abstract", widget: "text" }
+      - { label: "Seminar slides", name: "slides", widget: "file", required: false }
+      - { label: "Zoom link", name: "zoom_link", widget: hidden, default: "https://us06web.zoom.us/j/83388976389?pwd=XcpO3GhLxsR14a7SVbPx33HQQa1jbt.1" }
+  - label: "Workshops"
+    name: "Workshops"
+    folder: "workshops/"
+    create: true
+    media_folder: "assets/img/workshops/"
+    public_folder: "assets/img/workshops/"
+    editor:
+      preview: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Card image", name: "img", widget: "image" }
+      - { label: "Workshop number", name: "importance", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Summer Schools"
+    name: "SummerSchools"
+    folder: "schools/"
+    create: true
+    media_folder: "assets/img/schools/"
+    public_folder: "assets/img/schools/"
+    editor:
+      preview: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Card image", name: "img", widget: "image" }
+      - { label: "Summer school number", name: "importance", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Projects"
+    name: "Projects"
+    folder: "projects/"
+    create: true
+    media_folder: "assets/img/projects/"
+    public_folder: "assets/img/projects/"
+    editor:
+      preview: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "base.html" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Number at which to display", name: "importance", widget: "number" }
+      - { label: "Card image", name: "img", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Hackathons"
+    name: "Hackathons"
+    folder: "hackathons/"
+    create: true
+    media_folder: "assets/img/hackathons/"
+    public_folder: "assets/img/hackathons/"
+    editor:
+      preview: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "project_page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Number at which to display", name: "importance", widget: "number" }
+      - { label: "Card image", name: "img", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Research Highlights 2024"
+    name: "ResearchHighlights2024"
+    folder: "researchHighlights/2024/"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "research_highlight" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Scholar's name", name: "speaker", widget: "string" }
+      - { label: "Year", name: "year", widget: "number", hint: "e.g. 2024" }
+      - { label: "Category", name: "category", widget: "select", options: ["phd", "mtech"] }
+      - { label: "YouTube video id", name: "report_video", widget: "string", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "e.g. /highlights/personName-year/" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+

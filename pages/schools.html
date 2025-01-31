@@ -1,0 +1,35 @@
+---
+layout: base.html
+title: Schools
+permalink: "/summer-school/"
+---
+{% set schools = collections.schools | sort(attribute='data.importance') | reverse %}
+<link rel="stylesheet" href="/assets/css/projects.css">
+
+<!-- <div class="banner-container text-align-center">
+    
+    <img src="/assets/images/projects.jpg" alt="Projects Banner" class="banner-image">
+    
+    <div class="banner-text">Projects</div>
+</div> -->
+<div class="container-fluid mt-2" align="center">
+    <h1>CNI Summer Schools</h1>
+</div>
+<div class="container-fluid mt-5" align="center">
+    <div class="row">
+        {% for school in schools %}
+        {% if school.data.ignore != true %}
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+            <a href="/schools/{{ school.fileSlug }}/">
+                <div class="card">
+                    <img class="card-img-top" src="/{{ school.data.img }}" alt="{{ school.data.title }}">
+                    <div class="card-body">
+                        <h5 class="card-text">{{ school.data.title }}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,32 @@
+---
+layout: base.html
+title: Past Staff
+permalink: "/past-staff/"
+---
+<link rel="stylesheet" href="/assets/css/people.css">
+
+
+<div class="container-fluid mt-2 text-center justify-content-center" style="max-width:1000px;">
+<h2 class="text-center mb-4">Past Staff</h2>
+  <div class="row jusitfy-content-center gap-0">
+    {% for person in collections.Staff | sortByNumber("cap") %}
+    {% if person.data.past === true %}
+      <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
+        <div class="card mb-4 staff-card"> 
+          <!-- show only if person.data.img has 2024-->
+          <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top">
+          <div class="staff-card-body">
+            <h6 class="card-title mt-2">{{ person.data.title }}</h6>
+            <p>{{ person.data.position_at_CNI }}</p>
+            {% if person.data.linkedin %}
+              <a href="{{ person.data.linkedin }}" target="_blank" class="linkedin-icon mt-0">
+                <i class="fab fa-linkedin fa-lg mt-0"></i> <!-- Font Awesome LinkedIn Icon -->
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

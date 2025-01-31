@@ -1,0 +1,32 @@
+---
+layout: base
+title: News
+permalink: /news/
+---
+{% set  news = cni_in_news | sort(attribute='data.importance') %}
+
+<link rel="stylesheet" href="/assets/css/news.css">
+<div class="container-fluid text-center mt-2">
+    <h1>News Items</h1>
+</div>
+<div class="container-fluid my-2">
+    <div class="row">
+        {% for item in news %}
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2">
+            <div class="card shadow-sm">
+                {% if item.img %}
+                <img src="/{{ item.img }}" class="card-img-top img-fluid" alt="{{ item.title }}" style="height:250px; object-fit:cover;">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <p class="card-text"><strong>Date:</strong> {{ item.date }}</p>
+                    {% if item.source %}
+                    <p class="card-text"><strong>Source:</strong> {{ item.source }}</p>
+                    {% endif %}
+                    <a href="{{ item.link }}" target="_blank" class="btn button-style">Read more</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
