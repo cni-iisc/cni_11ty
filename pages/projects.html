@@ -17,7 +17,11 @@ permalink: "/projects/"
     <div class="row">
         {% for project in projects %}
         <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+            {% if project.data.permalink %}
+            <a href="{{ project.data.permalink }}">
+            {% else %}
             <a href="/projects/{{ project.fileSlug }}/">
+            {% endif %}
                 <div class="card">
                     <img class="card-img-top" src="/{{ project.data.img }}" alt="{{ project.data.title }}">
                     <div class="card-body">
