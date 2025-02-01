@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: sheds-ui/sheds-ui.github.io
+  repo: cni-iisc/cni_11ty
   branch: main
-  base_url: https://sveltia-cms-auth.akash-sheds.workers.dev/
+  base_url: https://sveltia-cms-auth.cni-iisc-events.workers.dev/
   automatic_deployments: false
 media_folder: "/assets"
 public_folder: "/assets"
