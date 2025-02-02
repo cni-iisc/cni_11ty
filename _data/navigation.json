@@ -3,7 +3,7 @@
        "title": "Outreach",
        "url": "#",
        "submenu": [
-           {"title": "Seminars", "url": "/network-seminar/"},
+           {"title": "Seminars", "url": "/seminars/"},
            {"title": "Newsletters", "url": "/newsletter/latest/"},
            {"title": "Courses", "url": "/courses/"},
            {"title": "Summer School", "url": "/summer-school/"},
