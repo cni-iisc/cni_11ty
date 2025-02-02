@@ -14,6 +14,8 @@ module.exports = function (eleventyConfig) {
     "./admin/config.yml": "./admin/config.yml",
   });
 
+  //copy CNAME file
+  eleventyConfig.addPassthroughCopy("CNAME");
   // Custom filter to format time
   eleventyConfig.addFilter("formatTime", (date) => {
     return DateTime.fromJSDate(new Date(date)).toFormat("h:mm a"); // Format as 12-hour clock with AM/PM
