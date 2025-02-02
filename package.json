@@ -5,8 +5,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx @11ty/eleventy --serve",
-    "predeploy": "npm run build && cp CNAME build/",
-    "deploy": "gh-pages -d build",
     "start": "npm run serve",
     "build": "cross-env NODE_ENV=production eleventy"
   },
