@@ -27,18 +27,14 @@ permalink: "/"
           <div class="d-flex justify-content-center align-items-center">
             {% if seminar.data.recorded_video %}
             {% set videoId = seminar.data.recorded_video %}
-            <a href="{{ seminar.url }}" style="display: flex; flex-direction: row; justify-content: center; align-items: center; text-decoration: none;">
-            <img class="d-block rounded img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" alt="{{ seminar.data.title }}" style="width: 75%; height:auto;">
-            </a>
+            <img class="d-block rounded img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" alt="{{ seminar.data.title }}" style="width: 75%; height:25%; cursor: pointer;" onclick="window.location.href='{{ seminar.url }}';">
             {% else %}
             {% if seminar.data.img.startsWith('/') %}
             {% set imgSrc = seminar.data.img.slice(1) %}
             {% else %}
             {% set imgSrc = seminar.data.img %}
             {% endif %}
-            <a href="{{ seminar.url }}" style="display: flex; flex-direction: row; justify-content: center; align-items: center; text-decoration: none;">
-            <img class="d-block rounded img-fluid" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}" style="width: 75%; height:auto;"> 
-            </a>
+            <img class="d-block rounded img-fluid" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}" style="width: 75%; height:25%; cursor: pointer;" onclick="window.location.href='{{ seminar.url }}';">
             {% endif %}
           </div>
           <div class="carousel-caption d-none d-md-block position-absolute">
@@ -48,7 +44,7 @@ permalink: "/"
       </div>
       <div class="carousel-item">
         <div class="d-flex justify-content-center align-items-center">
-          <img src="assets/img/posts/cni_scholars_24_resized.png" class="d-block rounded img-fluid" alt="slide 2 image" style="width: 75%; height:auto;">
+          <img src="assets/img/posts/cni_scholars_24_resized.png" class="d-block rounded img-fluid" alt="slide 2 image" style="width: 75%; height:25%;" >
         </div>
         <div class="carousel-caption d-none d-md-block position-absolute">
           <h4 style="color: var(--hyperlink-clr);">CNI Fellows 2024-25</h4>
@@ -59,9 +55,7 @@ permalink: "/"
       {% if post.data.showcase %}
       <div class="carousel-item">
           <div class="d-flex justify-content-center align-items-center">
-            <a href="{{ post.url }}" style="display: flex; flex-direction: row; justify-content: center; align-items: center; text-decoration: none;">
-            <img src="{{ post.data.img }}" class="d-block rounded img-fluid" alt="{{ post.data.title }}" style="width: 75%; height:auto;">
-            </a>
+            <img src="{{ post.data.img }}" class="d-block rounded img-fluid" alt="{{ post.data.title }}" style="width: 75%; height:25%; cursor: pointer;" onclick="window.location.href='{{ post.url }}';">
           </div>
           <div class="carousel-caption d-none d-md-block">
             <h4 style="color: var(--hyperlink-clr);">{{ post.data.title }}</h4>
