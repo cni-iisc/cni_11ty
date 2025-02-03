@@ -25,19 +25,21 @@ permalink: "/"
     <div class="carousel-inner" style="transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;">
       <div class="carousel-item active">
           <div class="d-flex justify-content-center align-items-center">
-            <a href="{{ seminar.url }}" style="display: flex; flex-direction: row; justify-content: center; align-items: center; text-decoration: none;">
             {% if seminar.data.recorded_video %}
             {% set videoId = seminar.data.recorded_video %}
+            <a href="{{ seminar.url }}" style="display: flex; flex-direction: row; justify-content: center; align-items: center; text-decoration: none;">
             <img class="d-block rounded img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" alt="{{ seminar.data.title }}" style="width: 75%; height:auto;">
+            </a>
             {% else %}
             {% if seminar.data.img.startsWith('/') %}
             {% set imgSrc = seminar.data.img.slice(1) %}
             {% else %}
             {% set imgSrc = seminar.data.img %}
             {% endif %}
-            <img class="d-block rounded img-fluid" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}" style="width: 75%; height:auto;">
-            {% endif %}
+            <a href="{{ seminar.url }}" style="display: flex; flex-direction: row; justify-content: center; align-items: center; text-decoration: none;">
+            <img class="d-block rounded img-fluid" src="/{{ imgSrc }}" alt="{{ seminar.data.title }}" style="width: 75%; height:auto;"> 
             </a>
+            {% endif %}
           </div>
           <div class="carousel-caption d-none d-md-block position-absolute">
             <h4 style="color: var(--navbar-clr);">Network Seminar Series 2025</h4>
