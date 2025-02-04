@@ -6,6 +6,34 @@ permalink: /seminars/
 redirect_from: /networks-seminar/
 ---
 <script src="https://apis.google.com/js/platform.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const now = new Date();
+    const currentTime = now.toISOString().slice(0, 19).replace("T", " ");
+    let upcomingSeminarFound = false;
+
+    const seminarCards = document.querySelectorAll(".seminar-card");
+    let pastSeminarsContainer = document.getElementById("past-seminars");
+    let upcomingSeminarContainer = document.getElementById("upcoming-seminar");
+
+    seminarCards.forEach(card => {
+        const seminarTime = card.getAttribute("data-date");
+
+        if (seminarTime >= currentTime && !upcomingSeminarFound) {
+            upcomingSeminarContainer.appendChild(card);
+            upcomingSeminarFound = true;
+        } else if (seminarTime < currentTime) {
+            pastSeminarsContainer.appendChild(card);
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    if (!upcomingSeminarFound) {
+        upcomingSeminarContainer.innerHTML = "<p>No upcoming seminar at the moment.</p>";
+    }
+});
+</script>
 
 <link rel="stylesheet" href="/assets/css/seminar_cards.css">
 
@@ -90,6 +118,7 @@ redirect_from: /networks-seminar/
 
 {% endif %}
 {% endfor %}
+
 
 <div class="container my-4">
   <div class="row text-center">
