@@ -73,7 +73,7 @@ The top two teams will have a chance to do an internship at the Centre for Netwo
 
 **Main Problem**
 <div class="table-responsive">
-  <table class="table">
+  <table class="table-light table-bordered">
     <thead>
       <tr>
         <th>Position</th>
@@ -99,7 +99,7 @@ The top two teams will have a chance to do an internship at the Centre for Netwo
 
 **Visualization/Web Interface**
 <div class="table-responsive">
-  <table class="table">
+  <table class="table-light table-bordered">
     <thead>
       <tr>
         <th>Position</th>
@@ -124,7 +124,7 @@ The top two teams will have a chance to do an internship at the Centre for Netwo
 #### Important Dates
 
 <div class="table-responsive">
-  <table class="table">
+  <table class="table-light table-bordered">
     <thead>
       <tr>
         <th>Event</th>
