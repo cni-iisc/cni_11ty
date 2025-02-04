@@ -6,7 +6,7 @@
            {"title": "Seminars", "url": "/seminars/"},
            {"title": "Newsletters", "url": "/newsletter/latest/"},
            {"title": "Courses", "url": "/courses/"},
-           {"title": "Summer School", "url": "/summer-school/"},
+           {"title": "Summer School", "url": "/schools/"},
            {"title": "CNI in News", "url": "/news/"},
            {"title": "Hackathons", "url": "/hackathons"},
            {"title": "Workshops", "url": "/workshops/"}
