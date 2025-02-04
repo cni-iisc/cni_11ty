@@ -20,7 +20,7 @@ permalink: "/workshops/"
         {% for workshop in workshops %}
         {% if workshop.data.ignore != true %}
         <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
-            <a href="/workshops/{{ workshop.fileSlug }}/">
+            <a href="{{ workshop.filePathStem }}/">
                 <div class="card">
                     <img class="card-img-top" src="/{{ workshop.data.img }}" alt="{{ workshop.data.title }}">
                     <div class="card-body">

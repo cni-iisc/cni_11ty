@@ -67,8 +67,8 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addCollection("workshops", function (collectionApi) {
     return collectionApi.getFilteredByGlob([
-      "./workshops/*.md",
-      "./workshops/*.html",
+      "./workshops/*/*.md",
+      "./workshops/*/*.html",
     ]);
   });
 

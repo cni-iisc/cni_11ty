@@ -9,10 +9,11 @@ showcase: false
 ---
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-<div class="container-fluid text-center">
+<div class="container text-center">
 <div class="d-flex justify-content-center align-items-center flex-wrap">
-<img src= "/assets/img/workshops/eBPF_group_photo.png" clas="img-fluid">  
-<img src= "/assets/img/workshops/eBPF_Day_poster_v3.png" class="img-fluid">
+<img src= "/assets/img/workshops/eBPF_group_photo.png" clas="img-fluid rounded" width=100% height=auto>
+<br>  
+<img src= "/assets/img/workshops/eBPF_Day_poster_v3.png" class="img-fluid rounded">
 </div>
 </div>
 
@@ -51,7 +52,7 @@ Participation is open to all (free registration required). The workshop will be 
 
 <div class="container-fluid text-center">
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube.com/embed/videoseries?si=aHMnLcL5CohNuPjx&amp;list=PLNN9TCnjABcb_o82VmAMRnj4etWnHzUiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/videoseries?si=aHMnLcL5CohNuPjx&amp;list=PLNN9TCnjABcb_o82VmAMRnj4etWnHzUiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded"></iframe>
 </div>
 </div>
 
