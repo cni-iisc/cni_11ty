@@ -19,6 +19,7 @@
     "bootstrap": "^5.3.3",
     "cross-env": "^7.0.3",
     "eleventy-plugin-bibtex": "^0.1.1",
+    "eleventy-plugin-redirects": "^1.0.0",
     "fs": "^0.0.1-security",
     "html-minifier": "^4.0.0",
     "luxon": "^3.5.0",

@@ -11,7 +11,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy({
-    "./admin/config.yml": "./admin/config.yml",
+    "./admin/config.yml": "./admin/config.yml"
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./admin/index.html": "./admin/index.html"
   });
 
   //copy CNAME file
@@ -40,6 +43,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("localDate", (date) => {
     return DateTime.fromJSDate(date,  { zone: "UTC" }).toLocal().toFormat("yyyy-MM-dd HH:mm:ss");
   });
+
+  
 
   eleventyConfig.addCollection("updates", function (collectionApi) {
     return collectionApi
