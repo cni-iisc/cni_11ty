@@ -8,7 +8,7 @@ layout: base.html
    }
 </style>
 <h1 class="text-center my-4">CNI Monthly Newsletter</h1>
-<h3 class="text-center my-2">Issue {{ title }}</h3>
+<h3 class="text-center my-2">Issue {{ title | replace("Newsletter ", "") }}</h3>
 <div class="container-fluid text-center my-2 newsletter-container" style="max-width:900px;">
    {{ content | safe }}
 </div>

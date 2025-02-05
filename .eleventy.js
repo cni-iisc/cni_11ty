@@ -53,9 +53,8 @@ module.exports = function (eleventyConfig) {
   });
   // Collection to fetch all newsletter files
   eleventyConfig.addCollection("newsletters", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("newsletters/*.md").sort((a, b) => {
-      return new Date(b.fileSlug) - new Date(a.fileSlug); // Sort by filename date
-    });
+    return collectionApi.getFilteredByGlob("newsletters/*/*.md")
+    .reverse();
   });
 
   eleventyConfig.addCollection("schools", function (collectionApi) {
