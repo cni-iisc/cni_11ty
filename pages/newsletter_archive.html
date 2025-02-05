@@ -7,7 +7,8 @@ permalink: /newsletter/archive/
 
 <div class="container my-5 text-center" style="max-width:800px;">
     {% for newsletter in collections.newsletters %}
-    <a href="{{ newsletter.url }}" class="btn button-style">{{ newsletter.data.title }}</a>
+    {% set nlt = newsletter.data.title %}
+    <a href="{{ newsletter.url }}" class="btn button-style">{{ nlt | replace("Newsletter ", "") }}</a>
     {% endfor %}
 </div>
 
