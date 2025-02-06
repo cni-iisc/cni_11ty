@@ -8,38 +8,22 @@ redirect_from: /networks-seminar/
 <script src="https://apis.google.com/js/platform.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const now = new Date();
-    const currentTime = now.toISOString().slice(0, 19).replace("T", " ");
-    let upcomingSeminarFound = false;
-
-    const seminarCards = document.querySelectorAll(".seminar-card");
-    let pastSeminarsContainer = document.getElementById("past-seminars");
-    let upcomingSeminarContainer = document.getElementById("upcoming-seminar");
-
-    seminarCards.forEach(card => {
-        const seminarTime = card.getAttribute("data-date");
-
-        if (seminarTime >= currentTime && !upcomingSeminarFound) {
-            upcomingSeminarContainer.appendChild(card);
-            upcomingSeminarFound = true;
-        } else if (seminarTime < currentTime) {
-            pastSeminarsContainer.appendChild(card);
-        } else {
-            card.style.display = "none";
-        }
-    });
-
-    if (!upcomingSeminarFound) {
-        upcomingSeminarContainer.innerHTML = "<p>No upcoming seminar at the moment.</p>";
+    const upcomingTitle = document.getElementsByTagName("h3");
+    for (let i = 1; i < upcomingTitle.length; i++) {
+      upcomingTitle[i].style.display = "none";
+    }
+    if (upcomingTitle.length > 1) {
+      upcomingTitle[0].childNodes[0].nodeValue = "Upcoming Seminars";
     }
 });
 </script>
 
 <link rel="stylesheet" href="/assets/css/seminar_cards.css">
 
-{% set seminars = collections.seminars | sort('date') | reverse %}
+
 
 {% set ctimeStamp = footerInfo.currentTimeStamp | date("yyyy-MM-dd HH:mm:ss") %}
+
 
 <div class="container" style="max-width:850px;">
   <h2 class="mt-2 text-center">Network Seminar Series</h2>
@@ -51,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
   </p>
 </div>
 
+{% set seminars = collections.seminars | sort('date') %}
 {% for seminar in seminars %}
 {% set seminar_date = seminar.data.date | utcDate %}
 {% set seminar_time = seminar.data.date | utcDate %}
@@ -137,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 </div>
 
-
+{% set seminars = collections.seminars | sort('date') | reverse %}
 <div class="container justify-content-center">
   <div class="row jusitfy-content-center gap-0">
     {% for seminar in seminars %}
