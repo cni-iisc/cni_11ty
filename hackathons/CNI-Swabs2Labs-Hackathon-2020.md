@@ -6,6 +6,8 @@ img: assets/img/hackathons/transfer_map_zoomed.png
 importance: 3
 category: ""
 year: 2020
+redirect_from:
+  - /hackathon2020/
 ---
 
 <h3 class="text-center"><a href="/cni-hackathon-2020/">Winners announced</a></h3>
