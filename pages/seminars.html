@@ -8,6 +8,20 @@ redirect_from: /networks-seminar/
 <script src="https://apis.google.com/js/platform.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+  Array.from(document.getElementsByClassName("upcomingSeminar")).forEach(element => {
+      semtime = new Date(element.dataset.time);
+      if (semtime < new Date()) {
+        element.remove();
+      }
+    });
+
+    Array.from(document.getElementsByClassName("past-seminars")).forEach(element => {
+      semtime = new Date(element.dataset.time);
+      if (semtime >= new Date()) {
+        element.remove();
+      }
+    });
+
     const upcomingTitle = document.getElementsByTagName("h3");
     for (let i = 1; i < upcomingTitle.length; i++) {
       upcomingTitle[i].style.display = "none";
@@ -19,11 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <link rel="stylesheet" href="/assets/css/seminar_cards.css">
-
-
-
-{% set ctimeStamp = footerInfo.currentTimeStamp | date("yyyy-MM-dd HH:mm:ss") %}
-
 
 <div class="container" style="max-width:850px;">
   <h2 class="mt-2 text-center">Network Seminar Series</h2>
@@ -40,8 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
 {% set seminar_date = seminar.data.date | utcDate %}
 {% set seminar_time = seminar.data.date | utcDate %}
 {% set seminar_date = seminar_date | date("yyyy-MM-dd") %}
-{% if seminar_time >= ctimeStamp %}
-<div class="container my-4">
+{% set seminar_year = seminar.data.date | date("yyyy") %}
+{% if seminar_year == footerInfo.currentYear %}
+<div class="container my-4 upcomingSeminar" data-time="{{ seminar_time }}">
   <div class="row">
     <div class="col-md-12">
       <h3 class="text-center">Upcoming Seminar</h3>
@@ -129,8 +139,8 @@ document.addEventListener("DOMContentLoaded", function() {
     {% set seminar_date = seminar.data.date | utcDate %}
     {% set seminar_year = seminar.data.date | date("yyyy") %}
     {% set seminar_date = seminar_date | date("yyyy-MM-dd") %}
-    {% if seminar.data.date | utcDate < ctimeStamp and seminar_year==footerInfo.currentYear %} 
-    <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0">
+    {% if seminar_year == footerInfo.currentYear %} 
+    <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0 past-seminars" data-time = "{{ seminar.data.date | utcDate }}">
       <div class="card mb-3">
         {% if seminar.data.recorded_video %}
         {% set videoId = seminar.data.recorded_video %}
