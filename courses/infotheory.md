@@ -21,4 +21,4 @@ Prof. Himanshu Tyagi from CNI offered this instructor-led course on [NPTEL porta
 
 The course lectures are available for self-study on the NPTEL portal.
 
-**Additionally, we have developed [supplementary lectures]({{ site.url }}/_courses/supplementaryInfotheory) to explain some of the key concepts in Information Theory in simpler terms.**
+**Additionally, we have developed [supplementary lectures]({{ site.url }}/courses/supplementaryInfotheory) to explain some of the key concepts in Information Theory in simpler terms.**
