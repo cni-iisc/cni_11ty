@@ -183,4 +183,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" , hint: "e.g. Newsletter Jan 2025" }
       - { label: "Published Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" , time_format: false }
       - { label: "Copied HTML", name: "body", widget: "markdown" , hint: "Add copied HTML" }
+      - { label: "Year", name: "year", widget: "number", default: 2025 }
 
