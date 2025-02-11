@@ -174,5 +174,13 @@ collections:
       - { label: "YouTube video id", name: "report_video", widget: "string", required: false }
       - { label: "Permalink", name: "permalink", widget: "string", hint: "e.g. /highlights/personName-year/" }
       - { label: "Body", name: "body", widget: "markdown" }
-
+  - label: "Newsletters"
+    name: "Newsletters"
+    folder: "newsletters/2025/"
+    create: true
+    fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "newsletter" }
+      - { label: "Title", name: "title", widget: "string" , hint: "e.g. Newsletter Jan 2025" }
+      - { label: "Published Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" , time_format: false }
+      - { label: "Copied HTML", name: "body", widget: "markdown" , hint: "Add copied HTML" }
 
