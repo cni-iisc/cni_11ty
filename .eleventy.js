@@ -161,6 +161,11 @@ module.exports = function (eleventyConfig) {
     const formattedAuthors = authorList.map((author) => {
       // Further split by commas if there are middle names or initials
       const nameParts = author.split(/\s*,\s*/).map((part) => part.trim());
+      // swap first and last name
+      const firstName = nameParts[0];
+      const lastName = nameParts[nameParts.length - 1];
+      nameParts[0] = lastName;
+      nameParts[nameParts.length - 1] = firstName;
       return nameParts.join(" "); // Join back without commas
     });
 
@@ -173,6 +178,7 @@ module.exports = function (eleventyConfig) {
     } else {
       // If there are three or more authors, list all but the last with commas and the last with 'and'
       return (
+        // swap first and last name
         formattedAuthors.slice(0, -1).join(", ") +
         ", and " +
         formattedAuthors[formattedAuthors.length - 1]
