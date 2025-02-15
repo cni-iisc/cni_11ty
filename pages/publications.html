@@ -53,7 +53,7 @@ permalink: "/publications/"
             {% set journal_counter = journal_counter - 1 %}
             {% set published = entry.JOURNAL %}
             <span class="publication-content"><div class="journal m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
-                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
+                <i>{{ published }}</i>{% if entry.type == 'article' %}{% if entry.VOLUME %} vol {{ entry.VOLUME }}{% endif %}{% if entry.NUMBER %}({{ entry.NUMBER}}){% endif %}{% endif %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
                 <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
             </span>
             {% elif entry.type == 'inproceedings' %}
@@ -61,7 +61,7 @@ permalink: "/publications/"
             {% set conference_counter = conference_counter - 1 %}
             {% set published = entry.BOOKTITLE %}
             <span class="publication-content"><div class="conference m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
-                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
+                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
                 <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
             </span>
             {% else %}
@@ -69,7 +69,7 @@ permalink: "/publications/"
             {% set misc_counter = misc_counter - 1 %}
             {% set published = 'arXiv' %}
             <span class="publication-content"><div class="misc m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
-                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
+                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
                 <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
             </span>
             {% endif %}
