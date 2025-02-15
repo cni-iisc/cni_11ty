@@ -9,13 +9,15 @@
         "date": "January 30, 2022",
         "title": "Curbs delay, but don’t prevent Omicron spread: Study",
         "source": "The Deccan Herald",
-        "link": "https://www.deccanherald.com/city/top-bengaluru-stories/curbs-delay-but-dont-prevent-omicron-spread-study-1076079.html"
+        "link": "https://www.deccanherald.com/city/top-bengaluru-stories/curbs-delay-but-dont-prevent-omicron-spread-study-1076079.html",
+        "img": "assets/img/news/curbs_delay.png"
     },
     {
         "date": "January 19, 2022",
         "title": "IISc gets special network intelligence lab",
         "source": "The Deccan Herald",
-        "link": "https://www.deccanherald.com/city/top-bengaluru-stories/iisc-gets-special-network-intelligence-lab-940586.html"
+        "link": "https://www.deccanherald.com/city/top-bengaluru-stories/iisc-gets-special-network-intelligence-lab-940586.html",
+        "img": "assets/img/news/network_intell_lab.png"
     },
     {
         "date": "January 7, 2022",
@@ -36,7 +38,8 @@
         "title": "State-of-the-art networking lab inaugurated at Indian Institute of Science",
         "source": "The Hans India",
         "link": "https://www.thehansindia.com/news/cities/bengaluru/state-of-the-art-networking-lab-inaugurated-at-indian-institute-of-science-667363",
-        "importance": 2
+        "importance": 2,
+        "img": "assets/img/news/sota_lab.png"
     },
     {
         "date": "January 19, 2021",
