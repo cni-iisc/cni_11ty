@@ -12,7 +12,20 @@ layout: base.html
 
 
 <div class="container-fluid text-center mt-2" style="max-width:1200px;">
-  <h2>{{ cat }} Fellows {{ year }}-{{ year + 1}} </h2>
+  <h2>{{ cat }} Fellows</h2>
+  <div class="dropdown text-center">
+    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <span id="selectedYear">{{ year }}-{{ year + 1 }}</span> <!-- Latest year by default -->
+    </button>
+    <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
+      <li><a class="dropdown-item" href="/{{ cat | lower }}-fellows/" data-year="2023">2024-2025</a></li>
+      <li><a class="dropdown-item" href="/{{ cat | lower}}fellows2023/" data-year="2022">2023-2024</a></li>
+      <li><a class="dropdown-item" href="/{{ cat | lower}}fellows2022/" data-year="2021">2022-2023</a></li>
+      <li><a class="dropdown-item" href="/{{ cat | lower}}fellows2021/" data-year="2020">2021-2022</a></li>
+      <li><a class="dropdown-item" href="/{{ cat | lower}}fellows2020/" data-year="2019">2020-2021</a></li>
+      <li><a class="dropdown-item" href="/{{ cat | lower}}fellows2019/" data-year="2019">2019-2020</a></li>
+    </ul>
+  </div>
   <div class="row justify-content-center">
     {% for person in collections.Fellows %}
     {% if person.data.category == category %}
@@ -42,16 +55,3 @@ layout: base.html
   </div>
 </div>
 
-<div class="container-fluid text-center mt-4 my-2">
-  <h4>Previous {{ cat }} Fellows</h4>
-  <a type="button" class="btn button-style" href="/{{ cat | lower }}fellows2023">2023-2024</a>
-  <a type="button" class="btn button-style" href="/{{ cat | lower }}fellows2022">2022-2023</a>
-  <a type="button" class="btn button-style" href="/{{ cat | lower }}fellows2021">2021-2022</a>
-  <a type="button" class="btn button-style" href="/{{ cat | lower }}fellows2020">2020-2021</a>
-  <a type="button" class="btn button-style" href="/{{ cat | lower }}fellows2019">2019-2020</a>
-  {% if year != 2024 %}
-  <br>
-  <a type="button" class="btn button-style" href="/{{ cat | lower }}-fellows"><strong style="font-size:15px;">Current
-      {{ cat }} Fellows</strong></a>
-  {% endif %}
-</div>
