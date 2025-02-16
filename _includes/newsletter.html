@@ -8,18 +8,34 @@ layout: base.html
    }
 </style>
 <h1 class="text-center my-4">CNI Monthly Newsletter</h1>
-<h3 class="text-center my-2">Issue {{ title | replace("Newsletter ", "") }}</h3>
+
+<div class="container" style="max-width:850px;">
+   <div class="dropdown text-center">
+   <b style="font-size: 20px;">Issue</b> 
+     <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <span id="selectedYear">{{ title | replace("Newsletter ", "") }}</span> <!-- Latest year by default -->
+     </button>
+     <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
+      {% set newsletters = collections.newsletters | sort('date') %}
+      {% for newsletter in newsletters %}
+       <li><a class="dropdown-item" href="{{ newsletter.url }}" data-year="2023">{{ newsletter.data.title | replace("Newsletter ", "") }}</a></li>
+       {% endfor %}
+     </ul>
+   </div>
+</div>
+
+<!-- Newsletter Content -->
 <div class="container-fluid text-center my-2 newsletter-container" style="max-width:900px;">
    {{ content | safe }}
 </div>
 
-<div class="container-fluid my-4" style="max-width: 950px;">
+<!-- <div class="container-fluid my-4" style="max-width: 950px;">
    <a type="button" class="btn button-style"
       style="margin-top: 20px; margin-bottom: 20px; width: 100%; margin-left:0; margin-right:0;"
       href="/newsletters/">
       <h6 style="margin: 0; padding: 0;">View Archive</h6>
    </a>
-</div>
+</div> -->
 
 <div class="container my-2" style="max-width: 1000px;">
    <div id="mc_embed_shell">
