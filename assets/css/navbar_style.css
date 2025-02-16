@@ -91,6 +91,87 @@
   object-fit: fill;
 }
 
+.button-year{
+  background-color: var(--navbar-clr);
+  color: #ffffff;
+  border: 2px solid var(--navbar-clr);
+  padding: 5px 10px;
+  margin: 5px 1px;
+  cursor: pointer;
+}
+
+.button-year:hover {
+  background-color: var(--hyperlink-clr);
+  color: #ffffff;
+  border-color: var(--hover-clr);
+}
+
+.bnutton-year-active{
+  background-color: var(--card-clr);
+  color: #ffffff;
+  border: 2px solid var(--hover-clr);
+  padding: 5px 10px;
+  margin: 5px 1px;
+  cursor: pointer;
+}
+
+.bnutton-year-active:hover {
+  background-color: var(--card-hover);
+  color: #ffffff;
+  border-color: var(--hover-clr);
+}
+
+.button-year-active:focus{
+  background-color: var(--card-clr);
+  color: #ffffff;
+  border: 2px solid var(--hover-clr);
+  padding: 5px 10px;
+  margin: 5px 1px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: var(--navbar-clr);
+}
+
+.dropdown-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  color: var(--navbar-clr);
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  color: var(--hyperlink-clr);
+  background-color: var(--hyperlink-clr);
+}
+
+.button-year[aria-expanded="true"], .button-year[aria-expanded="true"]:hover {
+  color: var(--navbar-clr);
+  background-color: var(--hyperlink-clr);
+  border-color: var(--hyperlink-clr);}
+
+.button-year[aria-expanded="false"] {
+  color: #ffffff;
+  background-color: var(--navbar-clr);
+  border-color: var(--navbar-clr);
+}
+
+.button-year[aria-expanded="false"]:hover {
+  border-color: var(--hyperlink-clr);
+  background-color: var(--navbar-clr);
+}
+
+
+
+
+
 /* Styles for smaller devices */
 @media (max-width: 768px) {
   .carousel-inner img {

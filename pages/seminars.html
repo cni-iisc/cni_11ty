@@ -4,6 +4,7 @@ layout: base.html
 title: Network Seminar
 permalink: /seminars/
 redirect_from: /networks-seminar/
+this_year: 2025
 ---
 <script src="https://apis.google.com/js/platform.js"></script>
 <script>
@@ -36,6 +37,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="container" style="max-width:850px;">
   <h2 class="mt-2 text-center">Network Seminar Series</h2>
+  <div class="dropdown text-center">
+    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <span id="selectedYear">{{ this_year }}</span> <!-- Latest year by default -->
+    </button>
+    <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
+      <li><a class="dropdown-item" href="/seminars/" data-year="2023">2025</a></li>
+      <li><a class="dropdown-item" href="/seminars/2024/" data-year="2022">2024</a></li>
+      <li><a class="dropdown-item" href="/seminars/2023/" data-year="2021">2023</a></li>
+      <li><a class="dropdown-item" href="/seminars/2022/" data-year="2020">2022</a></li>
+      <li><a class="dropdown-item" href="/seminars/2021/" data-year="2019">2021</a></li>
+      <li><a class="dropdown-item" href="/seminars/2020/" data-year="2019">2020</a></li>
+      <li><a class="dropdown-item" href="/seminars/2019/" data-year="2019">2019</a></li>
+    </ul>
+  </div>
   <p class="my-4">
     Networks Seminar, supported by the Centre for Networked Intelligence, is a technical discussion forum in topics
     including but not limited to computer networks, machine learning, signal processing, and information theory. The
@@ -43,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     professionals working in related fields.
   </p>
 </div>
+
 
 {% set seminars = collections.seminars | sort('date') %}
 {% for seminar in seminars %}
@@ -184,12 +200,4 @@ document.addEventListener("DOMContentLoaded", function() {
   {% endif %}
   {% endfor %}
 </div>
-
-
-<a type="button" class="btn button-style"
-  style="margin-top: 20px; margin-bottom: 20px; width: 100%; margin-left: 0px; margin-right: 0px;"
-  href="/seminars/{{ footerInfo.currentYear - 1 }}/">
-  <h6 style="margin: 0; padding: 0;">Past Seminars</h6>
-</a>
-
 </div>
