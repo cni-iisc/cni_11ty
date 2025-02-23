@@ -1,7 +1,7 @@
 ---
 layout: base.html
 title: Publications
-year: [2024, 2023, 2022, 2021, 2020]
+year: [2025, 2024, 2023, 2022, 2021, 2020]
 permalink: "/publications/"
 ---
 <link rel="stylesheet" href="/assets/css/publications.css">
@@ -18,16 +18,19 @@ permalink: "/publications/"
         }
     }
 </script>
-<h1 class="text-center mt-2">Publications</h1>
+<div class="container text-center">
+<h2 class="text-center mt-2">Publications</h2>
+<img src="/assets/img/keywords2.png" class="img-fluid rounded text-center" alt="Keywords" style="width: 80%; height: 70%;">
+</div>
 <!-- make it span entire width -->
 
-<div class="container-fluid"
+<div class="container"
     style="display: flex; justify-content: space-between; align-items: center; text-align: center; margin-top: 20px; margin-bottom: 10px;">
     <h4 class="conference">C: Conference proceedings</h4>
     <h4 class="journal">J: Journal articles</h4>
     <h4 class="misc">M: Miscellaneous</h4>
 </div>
-<div class="container-fluid">
+<div class="container">
     <ul class="publications-list">
         {% for y in year %}
         <h4><strong>{{ y }}</strong></h4>
@@ -54,7 +57,7 @@ permalink: "/publications/"
             {% set published = entry.JOURNAL %}
             <span class="publication-content"><div class="journal m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
                 <i>{{ published }}</i>{% if entry.type == 'article' %}{% if entry.VOLUME %} vol {{ entry.VOLUME }}{% endif %}{% if entry.NUMBER %}({{ entry.NUMBER}}){% endif %}{% endif %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
-                <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
+                {% if entry.DOI %}<a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>{% endif %}
             </span>
             {% elif entry.type == 'inproceedings' %}
             <span class="publication-index conference m-0 p-0">[C{{ conference_counter }}]</span>
@@ -62,7 +65,7 @@ permalink: "/publications/"
             {% set published = entry.BOOKTITLE %}
             <span class="publication-content"><div class="conference m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
                 <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
-                <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
+                {% if entry.DOI %}<a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>{% endif %}
             </span>
             {% else %}
             <span class="publication-index misc m-0 p-0">[M{{ misc_counter }}]</span>
@@ -70,7 +73,7 @@ permalink: "/publications/"
             {% set published = 'arXiv' %}
             <span class="publication-content"><div class="misc m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
                 <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
-                <a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
+                {% if entry.DOI %}<a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>{% endif %}
             </span>
             {% endif %}
         </li>
