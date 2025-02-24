@@ -1,0 +1,24 @@
+---
+layout: base.html
+title: Calender
+permalink: /calendar/
+---
+<script>
+function reloadCalendar() {
+    let iframe = document.getElementById("calendarFrame");
+    iframe.src = iframe.src; // Reloads iframe to reset view
+}
+window.onload = reloadCalendar;
+</script>
+
+
+<div class="container my-2">
+  <h2 class="mt-2 text-center">Calendar</h2>
+  <iframe 
+    id="calendarFrame" 
+    src="https://outlook.office365.com/owa/calendar/d33f699d18574f179ad40358bb1089b0@iisc.ac.in/023d3d7fb47a4385b85057abbc4c11fd7132010466550638632/calendar.html" 
+    width="100%" 
+    height="800px" 
+    style="overflow: hidden;"
+  ></iframe>
+</div>
