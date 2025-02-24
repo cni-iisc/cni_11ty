@@ -8,8 +8,8 @@ function reloadCalendar() {
     let iframe = document.getElementById("calendarFrame");
     iframe.src = iframe.src; // Reloads iframe to reset view
 }
-window.onload = reloadCalendar;
-window.onload = applyTheme;
+window.addEventListener('load', reloadCalendar);
+window.addEventListener('load', applyTheme);
 
 </script>
 
