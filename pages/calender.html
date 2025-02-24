@@ -1,7 +1,7 @@
 ---
 layout: base.html
 title: Calender
-permalink: /calendar/
+permalink: "/calendar/"
 ---
 <script>
 function reloadCalendar() {
@@ -9,6 +9,8 @@ function reloadCalendar() {
     iframe.src = iframe.src; // Reloads iframe to reset view
 }
 window.onload = reloadCalendar;
+window.onload = applyTheme;
+
 </script>
 
 
@@ -19,6 +21,6 @@ window.onload = reloadCalendar;
     src="https://outlook.office365.com/owa/calendar/d33f699d18574f179ad40358bb1089b0@iisc.ac.in/023d3d7fb47a4385b85057abbc4c11fd7132010466550638632/calendar.html" 
     width="100%" 
     height="800px" 
-    style="overflow: hidden;"
+    style="overflow: hidden; border: 0; margin: 0 auto; display: block;"
   ></iframe>
 </div>
