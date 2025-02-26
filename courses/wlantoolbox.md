@@ -1,6 +1,6 @@
 ---
 layout: project_page
-title: Introduction to WLAN toolbox
+title: Experimenting with WLAN Toolbox of MathWorks
 description: 
 img: assets/img/courses/wlan-toolbox.png
 importance: 5
