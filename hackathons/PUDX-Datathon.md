@@ -3,7 +3,7 @@ layout: project_page
 title: Pune Urban Data Exchange (PUDX) Datathon 2019
 description:
 img: assets/img/hackathons/2019-datathon.png
-importance: 4
+importance: 1
 category: ""
 year: 2019
 ---

@@ -3,7 +3,7 @@ layout: base.html
 title: Hackathons
 permalink: "/hackathons/"
 ---
-{% set hackathons = collections.hackathons | sort(attribute='data.importance') %}
+{% set hackathons = collections.hackathons | sort(attribute='data.importance') | reverse %}
 <link rel="stylesheet" href="/assets/css/projects.css">
 
 <!-- <div class="banner-container text-align-center">

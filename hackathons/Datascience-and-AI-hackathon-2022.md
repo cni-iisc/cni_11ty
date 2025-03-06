@@ -3,7 +3,7 @@ layout: project_page
 title: Data Science and AI Hackathon 2022
 description:
 img: assets/img/hackathons/hackathon2022_poster.png
-importance: 2
+importance: 4
 year: 2022
 category: ""
 ---
