@@ -1,24 +1,34 @@
 ---
 layout: newsletter
-title: CNI CONNECT January 2025
+title: January 2025
 date: 2025-03-07
 year: 2025
 ---
+<!--MCE_TRACKING_PIXEL--><center>
+
+<table id="bodyTable" style="background-color: #f4f4f4;" border="0" width="100%" cellspacing="0" cellpadding="0">
+
+<tbody>
+
+<tr>
+
+<td class="bodyCell" align="center" valign="top">
+
 <table id="root" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody class="mceWrapper" data-block-id="10">
 
 <tr>
 
-<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top">
+<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top"><!-- [if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="660" style="width:660px;"><tr><td><![endif]-->
 
 <table style="max-width: 660px;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr style="height: 162px;">
+<tr style="height: 161px;">
 
-<td class="mceWrapperInner" style="background-color: #ffffff; height: 162px;" valign="top">
+<td class="mceWrapperInner" style="background-color: #ffffff; height: 161px;" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="9">
 
@@ -39,12 +49,6 @@ year: 2025
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
-
-<tr style="height: 20.4px;">
-
-<td id="blockContainerId-1" style="padding: 0px; height: 20.4px;" valign="top">&nbsp;</td>
-
-</tr>
 
 <tr style="height: 2px;">
 
@@ -68,17 +72,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 179px;">
+<tr style="height: 179.8px;">
 
-<td id="gutterContainerId-8" class="mceGutterContainer" style="height: 179px;" valign="top">
+<td id="gutterContainerId-8" class="mceGutterContainer" style="height: 179.8px;" valign="top">
 
 <table style="border-collapse: separate;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr>
+<tr style="height: 140px;">
 
-<td id="blockContainerId-8" class="mceLayoutContainer" style="background-color: #ffffff; padding: 0 0 20px 0;" valign="top">
+<td id="blockContainerId-8" class="mceLayoutContainer" style="background-color: #ffffff; padding: 0px 0px 20px; height: 140px;" valign="top">
 
 <table id="section_f9160b5ef96f7affad0dfa96c25f1d2f" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="8">
 
@@ -308,7 +312,7 @@ year: 2025
 
 </table>
 
-</td>
+<!-- [if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
 
 </tr>
 
@@ -318,7 +322,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top">
+<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top"><!-- [if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="660" style="width:660px;"><tr><td><![endif]-->
 
 <table style="max-width: 660px;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -348,72 +352,6 @@ year: 2025
 
 <tbody>
 
-<tr style="height: 2px;">
-
-<td id="blockContainerId-11" class="mceDividerBlockContainer" style="background-color: transparent; padding: 0px; height: 2px;" valign="top">
-
-<table class="mceDividerContainer" style="background-color: transparent; width: 100%;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="11">
-
-<tbody>
-
-<tr>
-
-<td class="mceDividerBlock" style="min-width: 100%; border-top-width: 1px; border-top-style: solid; border-top-color: #b5b5b5; line-height: 0; font-size: 0;" valign="top">&nbsp;</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</td>
-
-</tr>
-
-<tr style="height: 2px;">
-
-<td id="blockContainerId-12" class="mceDividerBlockContainer" style="background-color: transparent; padding: 0px; height: 2px;" valign="top">
-
-<table class="mceDividerContainer" style="background-color: transparent; width: 100%;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="12">
-
-<tbody>
-
-<tr>
-
-<td class="mceDividerBlock" style="min-width: 100%; border-top-width: 1px; border-top-style: solid; border-top-color: #323232; line-height: 0; font-size: 0;" valign="top">&nbsp;</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</td>
-
-</tr>
-
-<tr style="height: 2px;">
-
-<td id="blockContainerId-22" class="mceDividerBlockContainer" style="background-color: transparent; padding: 0px 24px; height: 2px;" valign="top">
-
-<table class="mceDividerContainer" style="background-color: transparent; width: 100%;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="22">
-
-<tbody>
-
-<tr>
-
-<td class="mceDividerBlock" style="min-width: 100%; border-top-width: 1px; border-top-style: solid; border-top-color: #b5b5b5; line-height: 0; font-size: 0;" valign="top">&nbsp;</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</td>
-
-</tr>
-
 <tr style="height: 131px;">
 
 <td id="gutterContainerId-219" class="mceGutterContainer" style="height: 131px;" valign="top">
@@ -422,17 +360,17 @@ year: 2025
 
 <tbody>
 
-<tr>
+<tr style="height: 109.25px;">
 
-<td id="blockContainerId-219" class="mceLayoutContainer" style="padding: 12px 0 12px 0;" valign="top">
+<td id="blockContainerId-219" class="mceLayoutContainer" style="padding: 12px 0px; height: 109.25px;" valign="top">
 
 <table id="section_69a00f704ff9adf36a8d315f04807631" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="219">
 
 <tbody>
 
-<tr class="mceRow">
+<tr class="mceRow" style="height: 102.137px;">
 
-<td style="background-position: center; background-repeat: no-repeat; background-size: cover;" valign="top">
+<td style="background-position: center center; background-repeat: no-repeat; background-size: cover; height: 102.137px;" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -486,9 +424,9 @@ year: 2025
 
 <tbody>
 
-<tr>
+<tr style="height: 91.05px;">
 
-<td class="mceColumn" style="padding-top: 0; padding-bottom: 0;" colspan="12" valign="top" width="100%" data-block-id="221">
+<td class="mceColumn" style="padding-top: 0px; padding-bottom: 0px; height: 91.05px;" colspan="12" valign="top" width="100%" data-block-id="221">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -604,25 +542,25 @@ year: 2025
 
 </tr>
 
-<tr style="height: 749px;">
+<tr style="height: 760px;">
 
-<td id="gutterContainerId-213" class="mceGutterContainer" style="height: 749px;" valign="top">
+<td id="gutterContainerId-213" class="mceGutterContainer" style="height: 760px;" valign="top">
 
 <table style="border-collapse: separate;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr style="height: 776.45px;">
+<tr style="height: 726.3px;">
 
-<td id="blockContainerId-213" class="mceLayoutContainer" style="padding: 12px 0px; height: 776.45px;" valign="top">
+<td id="blockContainerId-213" class="mceLayoutContainer" style="padding: 12px 0px; height: 726.3px;" valign="top">
 
 <table id="section_b921e1dc9b2f31b2b86fd617c192f186" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="213">
 
 <tbody>
 
-<tr class="mceRow">
+<tr class="mceRow" style="height: 716.5px;">
 
-<td style="background-position: center; background-repeat: no-repeat; background-size: cover;" valign="top">
+<td style="background-position: center center; background-repeat: no-repeat; background-size: cover; height: 716.5px;" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -660,9 +598,9 @@ year: 2025
 
 <tbody>
 
-<tr style="height: 721.65px;">
+<tr>
 
-<td id="blockContainerId-218" style="height: 721.65px;" valign="top">
+<td id="blockContainerId-218" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="218">
 
@@ -684,9 +622,9 @@ year: 2025
 
 <tbody>
 
-<tr style="height: 96px;">
+<tr>
 
-<td id="blockContainerId-214" style="padding: 0px; height: 96px;" valign="top">
+<td id="blockContainerId-214" style="padding: 0;" valign="top">
 
 <table style="border: 0; background-color: #f4f6ff; border-radius: 0; border-collapse: separate;" width="100%">
 
@@ -714,17 +652,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 56px;">
+<tr>
 
-<td id="blockContainerId-261" style="padding: 0px; height: 56px;" valign="top">
+<td id="blockContainerId-261" style="padding: 0;" valign="top">
 
 <table style="border: 0; background-color: transparent; border-radius: 0; border-collapse: separate;" width="100%">
 
 <tbody>
 
-<tr>
+<tr style="height: 34.7px;">
 
-<td class="mceTextBlockContainer" style="padding: 12px 16px 12px 16px;">
+<td class="mceTextBlockContainer" style="padding: 12px 16px; height: 34.7px;">
 
 <div id="dataBlockId-261" class="mceText" style="width: 100%;" data-block-id="261">
 
@@ -744,21 +682,21 @@ year: 2025
 
 </tr>
 
-<tr style="height: 89px;">
+<tr>
 
-<td id="blockContainerId-262" style="padding: 0px; height: 89px;" valign="top">
+<td id="blockContainerId-262" style="padding: 0;" valign="top">
 
 <table style="border: 0; border-radius: 0; border-collapse: separate;" width="100%">
 
 <tbody>
 
-<tr>
+<tr style="height: 44.1px;">
 
-<td class="mceTextBlockContainer" style="padding: 12px 24px 12px 24px;">
+<td class="mceTextBlockContainer" style="padding: 12px 24px; height: 44.1px;">
 
 <div id="dataBlockId-262" class="mceText" style="width: 100%;" data-block-id="262">
 
-<h1 class="last-child">What&rsquo;s cooking at CNI?</h1>
+<h1 class="last-child" style="text-align: center;">What&rsquo;s cooking at CNI?</h1>
 
 </div>
 
@@ -774,9 +712,9 @@ year: 2025
 
 </tr>
 
-<tr style="height: 188px;">
+<tr>
 
-<td id="blockContainerId-265" style="padding: 0px; height: 188px;" valign="top">
+<td id="blockContainerId-265" style="padding: 0;" valign="top">
 
 <table style="border: 0; background-color: #f4f6ff; border-radius: 0; border-collapse: separate;" width="100%">
 
@@ -804,17 +742,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 304.65px;">
+<tr>
 
-<td id="blockContainerId-266" style="padding: 0px; height: 304.65px;" valign="top">
+<td id="blockContainerId-266" style="padding: 0;" valign="top">
 
 <table style="border: 0; border-radius: 0; border-collapse: separate;" width="100%">
 
 <tbody>
 
-<tr style="height: 305.05px;">
+<tr style="height: 305.9px;">
 
-<td class="mceTextBlockContainer" style="padding: 12px 24px; height: 305.05px;">
+<td class="mceTextBlockContainer" style="padding: 12px 24px; height: 305.9px;">
 
 <div id="dataBlockId-266" class="mceText" style="width: 100%;" data-block-id="266">
 
@@ -918,15 +856,15 @@ year: 2025
 
 <tr style="height: 2px;">
 
-<td id="blockContainerId-47" class="mceDividerBlockContainer" style="background-color: transparent; padding: 0px; height: 2px;" valign="top">
+<td id="blockContainerId-46" class="mceDividerBlockContainer" style="background-color: transparent; padding: 0px; height: 2px;" valign="top">
 
-<table class="mceDividerContainer" style="background-color: transparent; width: 100%;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="47">
+<table class="mceDividerContainer" style="background-color: transparent; width: 100%;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="46">
 
 <tbody>
 
 <tr>
 
-<td class="mceDividerBlock" style="min-width: 100%; border-top-width: 1px; border-top-style: solid; border-top-color: #6c6c6c; line-height: 0; font-size: 0;" valign="top">&nbsp;</td>
+<td class="mceDividerBlock" style="min-width: 100%; border-top-width: 1px; border-top-style: solid; border-top-color: #323232; line-height: 0; font-size: 0;" valign="top">&nbsp;</td>
 
 </tr>
 
@@ -935,6 +873,12 @@ year: 2025
 </table>
 
 </td>
+
+</tr>
+
+<tr style="height: 2px;">
+
+<td id="blockContainerId-47" class="mceDividerBlockContainer" style="background-color: transparent; padding: 0px; height: 2px;" valign="top">&nbsp;</td>
 
 </tr>
 
@@ -968,17 +912,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 354px;">
+<tr style="height: 310px;">
 
-<td id="gutterContainerId-54" class="mceGutterContainer" style="height: 354px;" valign="top">
+<td id="gutterContainerId-54" class="mceGutterContainer" style="height: 310px;" valign="top">
 
 <table style="border-collapse: separate;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr>
+<tr style="height: 291.775px;">
 
-<td id="blockContainerId-54" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 0;" valign="top">
+<td id="blockContainerId-54" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 0px; height: 291.775px;" valign="top">
 
 <table id="section_ecb9cdbf553b9a5162f9f390941e6ed0" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="54">
 
@@ -1032,9 +976,9 @@ year: 2025
 
 <tbody>
 
-<tr class="mceRow">
+<tr class="mceRow" style="height: 278.775px;">
 
-<td style="background-position: center; background-repeat: no-repeat; background-size: cover; padding-top: 0px; padding-bottom: 0px;" valign="top">
+<td style="background-position: center center; background-repeat: no-repeat; background-size: cover; padding-top: 0px; padding-bottom: 0px; height: 278.775px;" valign="top">
 
 <table style="table-layout: fixed;" border="0" width="100%" cellspacing="24" cellpadding="0"><colgroup><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /><col span="1" width="8.333333333333332%" /></colgroup>
 
@@ -1178,17 +1122,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 383px;">
+<tr style="height: 381px;">
 
-<td id="gutterContainerId-60" class="mceGutterContainer" style="height: 383px;" valign="top">
+<td id="gutterContainerId-60" class="mceGutterContainer" style="height: 381px;" valign="top">
 
 <table style="border-collapse: separate;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr>
+<tr style="height: 366.275px;">
 
-<td id="blockContainerId-60" class="mceLayoutContainer" style="padding: 0;" valign="top">
+<td id="blockContainerId-60" class="mceLayoutContainer" style="padding: 0px; height: 366.275px;" valign="top">
 
 <table id="section_3f896797e711682f823126440bda4451" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="60">
 
@@ -1210,9 +1154,9 @@ year: 2025
 
 <tbody>
 
-<tr style="height: 376.175px;">
+<tr>
 
-<td id="blockContainerId--9" style="height: 376.175px;" align="center" valign="top">
+<td id="blockContainerId--9" align="center" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="-9">
 
@@ -1266,9 +1210,9 @@ year: 2025
 
 <tbody>
 
-<tr>
+<tr style="height: 365.275px;">
 
-<td class="mceTextBlockContainer" style="padding: 12px 24px 12px 24px;">
+<td class="mceTextBlockContainer" style="padding: 12px 24px; height: 365.275px;">
 
 <div id="dataBlockId-55" class="mceText" style="width: 100%;" data-block-id="55">
 
@@ -1388,17 +1332,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 383px;">
+<tr style="height: 352px;">
 
-<td id="gutterContainerId-253" class="mceGutterContainer" style="height: 383px;" valign="top">
+<td id="gutterContainerId-253" class="mceGutterContainer" style="height: 352px;" valign="top">
 
 <table style="border-collapse: separate;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr style="height: 287.55px;">
+<tr style="height: 256.275px;">
 
-<td id="blockContainerId-253" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 12px 0px; height: 287.55px;" valign="top">
+<td id="blockContainerId-253" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 12px 0px; height: 256.275px;" valign="top">
 
 <table id="section_fd0469bcc73d842741fd8acf4496727f" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="253">
 
@@ -1494,9 +1438,9 @@ year: 2025
 
 <tbody>
 
-<tr style="height: 345.55px;">
+<tr>
 
-<td class="mceTextBlockContainer" style="padding: 12px 24px; height: 345.55px;">
+<td class="mceTextBlockContainer" style="padding: 12px 24px 12px 24px;">
 
 <div id="dataBlockId-260" class="mceText" style="width: 100%;" data-block-id="260">
 
@@ -1598,17 +1542,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 383px;">
+<tr style="height: 376px;">
 
-<td id="gutterContainerId-267" class="mceGutterContainer" style="height: 383px;" valign="top">
+<td id="gutterContainerId-267" class="mceGutterContainer" style="height: 376px;" valign="top">
 
 <table style="border-collapse: separate;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr style="height: 339.55px;">
+<tr style="height: 375.275px;">
 
-<td id="blockContainerId-267" class="mceLayoutContainer" style="padding: 12px 0px; height: 339.55px;" valign="top">
+<td id="blockContainerId-267" class="mceLayoutContainer" style="padding: 12px 0px; height: 375.275px;" valign="top">
 
 <table id="section_6f01381ebcae84c4bb5e61379e5586af" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="267">
 
@@ -1622,9 +1566,9 @@ year: 2025
 
 <tbody>
 
-<tr style="height: 357.55px;">
+<tr>
 
-<td class="mceColumn" style="height: 357.55px;" colspan="12" valign="top" width="100%" data-block-id="-34">
+<td class="mceColumn" colspan="12" valign="top" width="100%" data-block-id="-34">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -1808,17 +1752,17 @@ year: 2025
 
 </tr>
 
-<tr style="height: 345.7px;">
+<tr style="height: 328px;">
 
-<td id="gutterContainerId-275" class="mceGutterContainer" style="height: 345.7px;" valign="top">
+<td id="gutterContainerId-275" class="mceGutterContainer" style="height: 328px;" valign="top">
 
 <table style="border-collapse: separate;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
 
-<tr style="height: 299.55px;">
+<tr style="height: 290.275px;">
 
-<td id="blockContainerId-275" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 12px 0px; height: 299.55px;" valign="top">
+<td id="blockContainerId-275" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 12px 0px; height: 290.275px;" valign="top">
 
 <table id="section_0e173a24af7d1ca7126a15485ea1f4df" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="275">
 
@@ -2114,8 +2058,6 @@ year: 2025
 
 <p><a href="https://cni.iisc.ac.in/seminars/2025-02-11/" target="_blank">Redefining Caching for Generative AI</a></p>
 
-<p class="mcePastedContent">&nbsp;</p>
-
 <p class="mcePastedContent last-child">In this talk, <a href="https://research.adobe.com/person/subrata-mitra/" target="_blank">Dr. Subrata Mitra</a> focused on reimagining caching techniques in the context of Generative AI. Addressing the limitations of exact caching in generative models, Agarwal introduced two novel approximate caching systems. The first, NIRVANA, optimizes text-to-image diffusion models by reusing intermediate noise states, reducing GPU computation and latency. This work, published in USENIX NSDI 2024, significantly enhances computational efficiency. The second, Cache-Craft, extends approximate caching to large language models (LLMs) in Retrieval-Augmented Generation (RAG). Cache-Craft reuses precomputed key-value pairs, minimizing redundant computations and improving time-to-first-token and system throughput. This work will be published in ACM SIGMOD 2025.</p>
 
 </div>
@@ -2274,9 +2216,9 @@ year: 2025
 
 </tr>
 
-<tr style="height: 80px;">
+<tr style="height: 100px;">
 
-<td id="blockContainerId-75" class="mceLayoutContainer" style="padding: 12px 0px; height: 80px;" valign="top">
+<td id="blockContainerId-75" class="mceLayoutContainer" style="padding: 12px 0px; height: 100px;" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="75">
 
@@ -2308,7 +2250,7 @@ year: 2025
 
 <tr>
 
-<td align="center" valign="middle">
+<td align="center" valign="middle"><!-- [if mso]><table align="left" border="0" cellspacing= "0" cellpadding="0"><tr><![endif]--><!-- [if mso]><td align="center" valign="top"><![endif]-->
 
 <table style="display: inline; float: left;" border="0" cellspacing="0" cellpadding="0" align="left">
 
@@ -2324,6 +2266,8 @@ year: 2025
 
 </table>
 
+<!-- [if mso]></td><![endif]--><!-- [if mso]><td align="center" valign="top"><![endif]-->
+
 <table style="display: inline; float: left;" border="0" cellspacing="0" cellpadding="0" align="left">
 
 <tbody>
@@ -2337,6 +2281,8 @@ year: 2025
 </tbody>
 
 </table>
+
+<!-- [if mso]></td><![endif]--><!-- [if mso]><td align="center" valign="top"><![endif]-->
 
 <table style="display: inline; float: left;" border="0" cellspacing="0" cellpadding="0" align="left">
 
@@ -2352,6 +2298,8 @@ year: 2025
 
 </table>
 
+<!-- [if mso]></td><![endif]--><!-- [if mso]><td align="center" valign="top"><![endif]-->
+
 <table style="display: inline; float: left;" border="0" cellspacing="0" cellpadding="0" align="left">
 
 <tbody>
@@ -2366,7 +2314,7 @@ year: 2025
 
 </table>
 
-</td>
+<!-- [if mso]></td><![endif]--><!-- [if mso]></tr></table><![endif]--></td>
 
 </tr>
 
@@ -2430,7 +2378,7 @@ year: 2025
 
 </table>
 
-</td>
+<!-- [if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
 
 </tr>
 
@@ -2440,7 +2388,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top">
+<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top"><!-- [if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="660" style="width:660px;"><tr><td><![endif]-->
 
 <table style="max-width: 660px;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -2510,7 +2458,7 @@ year: 2025
 
 <tr>
 
-<td class="mceTextBlockContainer" style="padding: 12px 16px 12px 16px;">
+<td class="mceTextBlockContainer" style="padding: 12px 16px; text-align: center;">
 
 <div id="dataBlockId-79" class="mceText" style="display: inline-block; width: 100%;" data-block-id="79">
 
@@ -2530,12 +2478,6 @@ year: 2025
 
 </tr>
 
-<tr>
-
-<td id="blockContainerId--2" class="mceLayoutContainer" align="center" valign="top">&nbsp;</td>
-
-</tr>
-
 </tbody>
 
 </table>
@@ -2588,6 +2530,14 @@ year: 2025
 
 </table>
 
+<!-- [if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 </td>
 
 </tr>
@@ -2595,3 +2545,5 @@ year: 2025
 </tbody>
 
 </table>
+
+</center>
