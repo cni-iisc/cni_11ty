@@ -26,9 +26,9 @@ year: 2025
 
 <tbody>
 
-<tr>
+<tr style="height: 157px;">
 
-<td class="mceWrapperInner" style="background-color: #ffffff;" valign="top">
+<td class="mceWrapperInner" style="background-color: #ffffff; height: 157px;" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="9">
 
@@ -49,12 +49,6 @@ year: 2025
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
 <tbody>
-
-<tr>
-
-<td style="padding: 0;" valign="top">&nbsp;</td>
-
-</tr>
 
 <tr>
 
@@ -126,9 +120,9 @@ year: 2025
 
 <tbody>
 
-<tr>
+<tr style="height: 148.4px;">
 
-<td class="mceColumn" colspan="12" valign="top" width="100%" data-block-id="-31">
+<td class="mceColumn" style="height: 148.4px;" colspan="12" valign="top" width="100%" data-block-id="-31">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -652,9 +646,9 @@ year: 2025
 
 <tbody>
 
-<tr style="height: 472.85px;">
+<tr style="height: 460.2px;">
 
-<td class="mceLayoutContainer" style="padding: 12px 0px; height: 472.85px;" valign="top">
+<td class="mceLayoutContainer" style="padding: 12px 0px; height: 460.2px;" valign="top">
 
 <table id="section_7671822f93b4fe81a4eda7d875b4a60e" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="30">
 
@@ -888,9 +882,9 @@ year: 2025
 
 <tbody>
 
-<tr>
+<tr style="height: 313.6px;">
 
-<td class="mceColumn" colspan="12" valign="top" width="100%" data-block-id="-36">
+<td class="mceColumn" style="height: 313.6px;" colspan="12" valign="top" width="100%" data-block-id="-36">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 
@@ -1020,7 +1014,7 @@ year: 2025
 
 <div id="dataBlockId-158" class="mceText" style="width: 100%;" data-block-id="158">
 
-<h1 class="last-child" style="text-align: left;">Highlights from IISc-IBM AI Day 2024</h1>
+<h1 class="last-child" style="text-align: center;">Highlights from IISc-IBM AI Day 2024</h1>
 
 </div>
 
@@ -1050,7 +1044,7 @@ year: 2025
 
 <div id="dataBlockId-27" class="mceText" style="width: 100%;" data-block-id="27">
 
-<p class="last-child">On December 4, 2024, CNI, in collaboration with IBM-IISc Hybrid Cloud Lab and IBM India Research Lab, hosted the <a href="https://cni.iisc.ac.in/workshops/2024/AI-day" target="_blank">IISc-IBM AI Day</a>. Supported by Cisco CSR, this one-day workshop focused on Generative AI, featuring sessions on IBM's GenAI toolkits and Large Language Models (LLMs) for diverse applications. The event targeted engineering and science students across India, offering both in-person and online participation. Topics included GenAI applications in IT automation, data processing pipelines, fine-tuning algorithms, inference serving optimization, and IBM's Granite models for code, language, and time-series data. The workshop provided valuable insights into the evolving field of Generative AI, equipping participants with knowledge to apply these technologies in various domains. For a deeper dive into the sessions, explore the detailed morning and afternoon recordings available on our YouTube channel.</p>
+<p class="last-child">On December 4, 2024, CNI, in collaboration with IBM-IISc Hybrid Cloud Lab and IBM India Research Lab, hosted the <a href="https://cni.iisc.ac.in/workshops/2024/AI-day" target="_blank">IISc-IBM AI Day</a>. Supported by Cisco CSR, this one-day workshop focused on Generative AI, featuring sessions on IBM's GenAI toolkits and Large Language Models (LLMs) for diverse applications. The event targeted engineering and science students across India, offering both in-person and online participation. Topics included GenAI applications in IT automation, data processing pipelines, fine-tuning algorithms, inference serving optimization, and IBM's Granite models for code, language, and time-series data. The workshop provided valuable insights into the evolving field of Generative AI, equipping participants with knowledge to apply these technologies in various domains. Explore the detailed morning and afternoon recordings available on our YouTube channel for a deeper dive into the sessions.</p>
 
 </div>
 
@@ -1400,13 +1394,13 @@ year: 2025
 
 <td class="mceColumn" style="padding-top: 0; padding-bottom: 0;" colspan="4" valign="top" width="33.33333333333333%" data-block-id="50">
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<table style="width: 39.717%;" border="0" cellspacing="0" cellpadding="0">
 
 <tbody>
 
 <tr>
 
-<td class="mceBlockContainer" style="padding: 105px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-07/" target="_blank" data-block-id="49"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 1920px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a12076a3-0325-f068-4968-3aca2729ea9b.png" alt="" width="220" height="auto" /></span></a></td>
+<td class="mceBlockContainer" style="padding: 105px 0px 12px; width: 100%;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-07/" target="_blank" data-block-id="49"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 202px; height: 114px; border-radius: 0px; display: block; max-width: 1920px !important;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a12076a3-0325-f068-4968-3aca2729ea9b.png" alt="" width="220" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1966,9 +1960,9 @@ year: 2025
 
 <tbody>
 
-<tr>
+<tr style="height: 234.012px;">
 
-<td class="mceWrapperInner" style="background-color: #ffffff;" valign="top">
+<td class="mceWrapperInner" style="background-color: #ffffff; height: 234.012px;" valign="top">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="83">
 
@@ -2047,12 +2041,6 @@ year: 2025
 </table>
 
 </td>
-
-</tr>
-
-<tr>
-
-<td class="mceLayoutContainer" align="center" valign="top">&nbsp;</td>
 
 </tr>
 
