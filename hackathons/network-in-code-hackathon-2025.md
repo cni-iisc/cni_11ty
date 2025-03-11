@@ -2,7 +2,7 @@
 layout: project_page
 title: Network In Code Hackathon 2025
 description: 
-img: assets/img/hackathons/digital-defenders-ctf-2023.jpeg  
+img: assets/img/hackathons/nic.jpeg
 importance: 6
 year: 2025
 category: ""
