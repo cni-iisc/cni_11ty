@@ -1,7 +1,7 @@
 ---
 layout: newsletter
 title: Jan 2025
-date: 2025-03-07
+date: 2025-01-07
 year: 2025
 ---
 <center>
