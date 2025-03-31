@@ -1,6 +1,6 @@
 ---
 layout: newsletter
-title: March 2025
+title: Mar 2025
 date: 2025-03-07
 year: 2025
 ---
@@ -82,7 +82,7 @@ year: 2025
 
 <td id="blockContainerId-8" class="mceLayoutContainer" style="background-color: #ffffff; padding: 0 0 20px 0;" valign="top">
 
-<table id="section_1a9f6304a8ce0d920db6ae3afa61a287" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="8">
+<table id="section\_1a9f6304a8ce0d920db6ae3afa61a287" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="8">
 
 <tbody>
 
@@ -152,7 +152,7 @@ year: 2025
 
 <tr>
 
-<td id="blockContainerId-3" class="mceImageBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="3"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceLogo" style="width: 79.811320754717px; height: auto; max-width: 79.811320754717px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></span></a></td>
+<td id="blockContainerId-3" class="mceImageBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="\_blank" data-block-id="3"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceLogo" style="width: 79.811320754717px; height: auto; max-width: 79.811320754717px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></span></a></td>
 
 </tr>
 
@@ -428,7 +428,7 @@ year: 2025
 
 <td id="blockContainerId-219" class="mceLayoutContainer" style="padding: 12px 0px; height: 90.45px;" valign="top">
 
-<table id="section_e8c356d1494548c5fb8ccfc4977dff0b" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="219">
+<table id="section\_e8c356d1494548c5fb8ccfc4977dff0b" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="219">
 
 <tbody>
 
@@ -620,7 +620,7 @@ year: 2025
 
 <div id="dataBlockId-214" class="mceText" style="width: 100%;" data-block-id="214">
 
-<p class="mcePastedContent last-child">We are pleased to announce that distinguished researchers will be delivering talks in the coming weeks. <a href="https://web.ics.purdue.edu/~vshriva/" target="_blank">Prof. Vishal Shrivastav</a> (<a href="https://www.purdue.edu/" target="_blank">Purdue University</a>), <a href="https://praneethnetrapalli.org/" target="_blank">Dr. Praneeth Netrapalli </a>(<a href="https://research.google/teams/india-research-lab/" target="_blank">Google Research India</a>), and<a href="https://www.bits-pilani.ac.in/goa/vinayak-naik/" target="_blank"> Prof. Vinayak Naik</a> <a href="https://www.bits-pilani.ac.in/" target="_blank">(BITS Pilani)</a> will present their insights on March 11th, 18th, and 25th, respectively. Stay tuned for more details and don&rsquo;t miss these valuable opportunities to engage with leading experts in the field.</p>
+<p class="mcePastedContent last-child">We are pleased to announce that distinguished researchers will be delivering talks in the coming weeks. <a href="https://web.ics.purdue.edu/\~vshriva/" target="\_blank">Prof. Vishal Shrivastav</a> (<a href="https://www.purdue.edu/" target="\_blank">Purdue University</a>), <a href="https://praneethnetrapalli.org/" target="\_blank">Dr. Praneeth Netrapalli </a>(<a href="https://research.google/teams/india-research-lab/" target="\_blank">Google Research India</a>), and<a href="https://www.bits-pilani.ac.in/goa/vinayak-naik/" target="\_blank"> Prof. Vinayak Naik</a> <a href="https://www.bits-pilani.ac.in/" target="\_blank">(BITS Pilani)</a> will present their insights on March 11th, 18th, and 25th, respectively. Stay tuned for more details and don&rsquo;t miss these valuable opportunities to engage with leading experts in the field.</p>
 
 </div>
 
@@ -648,7 +648,7 @@ year: 2025
 
 <td id="blockContainerId-330" class="mceLayoutContainer" style="padding: 12px 0 12px 0;" valign="top">
 
-<table id="section_809aed3a61fe913ff552ce7ee4aec57e" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="330">
+<table id="section\_809aed3a61fe913ff552ce7ee4aec57e" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="330">
 
 <tbody>
 
@@ -730,13 +730,13 @@ year: 2025
 
 <div id="dataBlockId-336" class="mceText" style="width: 100%;" data-block-id="336">
 
-<p class="mcePastedContent">We are excited to launch <a href="https://cnihackathon.in/" target="_blank"><em>Network In Code (NIC)</em>,</a> a <strong>two-week coding competition</strong> in <strong>Networking &amp; Systems</strong>, organized by <a href="https://cni.iisc.ac.in/" target="_blank"><strong>CNI, IISc</strong>,</a> co-hosted by <a href="https://cosh.nitk.ac.in/" target="_blank"><strong>COSH, NITK</strong></a>, and supported by <a href="https://www.cisco.com/c/en_in/about/csr.html" target="_blank"><strong>Cisco CSR</strong>.</a></p>
+<p class="mcePastedContent">We are excited to launch <a href="https://cnihackathon.in/" target="\_blank"><em>Network In Code (NIC)</em>,</a> a <strong>two-week coding competition</strong> in <strong>Networking &amp; Systems</strong>, organized by <a href="https://cni.iisc.ac.in/" target="\_blank"><strong>CNI, IISc</strong>,</a> co-hosted by <a href="https://cosh.nitk.ac.in/" target="\_blank"><strong>COSH, NITK</strong></a>, and supported by <a href="https://www.cisco.com/c/en\_in/about/csr.html" target="\_blank"><strong>Cisco CSR</strong>.</a></p>
 
 <p class="mcePastedContent">Participants will tackle real-world challenges in <strong>eBPF, network simulations, containers, Kubernetes, network security, and IPv6</strong>, gaining hands-on experience.</p>
 
 <p class="mcePastedContent">🏆 <strong>Prizes worth INR 2,00,000</strong> and an <strong>internship at IISc</strong> await the top performers!</p>
 
-<p class="mcePastedContent last-child">📌 <a href="https://unstop.com/p/network-in-code-indian-institute-of-science-iisc-bangalore-1415099" target="_blank"><strong>Register now</strong></a> and stay updated on our <a href="https://cnihackathon.in/" target="_blank"><strong>website!</strong></a></p>
+<p class="mcePastedContent last-child">📌 <a href="https://unstop.com/p/network-in-code-indian-institute-of-science-iisc-bangalore-1415099" target="\_blank"><strong>Register now</strong></a> and stay updated on our <a href="https://cnihackathon.in/" target="\_blank"><strong>website!</strong></a></p>
 
 </div>
 
@@ -862,7 +862,7 @@ year: 2025
 
 <td id="blockContainerId-213" class="mceLayoutContainer" style="padding: 12px 0px; height: 941.85px;" valign="top">
 
-<table id="section_b294e61d1f799e996502bd3a6b400c37" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="213">
+<table id="section\_b294e61d1f799e996502bd3a6b400c37" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="213">
 
 <tbody>
 
@@ -1026,19 +1026,19 @@ year: 2025
 
 <div id="dataBlockId-266" class="mceText" style="width: 100%;" data-block-id="266">
 
-<p>In February, CNI had the privilege of hosting<a href="https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi" target="_blank"> Prof. Sid Jaggi </a>(<a href="https://www.bristol.ac.uk/" target="_blank">University of Bristol</a>), <a href="https://sites.ecse.rpi.edu/~koushik/" target="_blank">Prof. Koushik Kar</a> (<a href="https://www.rpi.edu/" target="_blank">Rensselaer Polytechnic Institute</a>), and <a href="https://scholar.google.com/citations?user=H5MtIcwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Divyanshu Pandey</a> (<a href="https://www.rice.edu/" target="_blank">Rice University</a>). During their visit, they engaged with IISc students, participated in research discussions, and explored future directions in their respective fields. As part of their visit, they also delivered talks on their ongoing research: <a href="https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi" target="_blank">Prof. Sid Jaggi</a> presented on <a href="https://cni.iisc.ac.in/seminars/2025-02-17/" target="_blank"><em>Group Testing</em>,</a> <a href="https://sites.ecse.rpi.edu/~koushik/" target="_blank">Prof. Koushik Kar</a> discussed <a href="https://cni.iisc.ac.in/seminars/2025-02-10/" target="_blank"><em>Traffic Peering Games in Internet Exchange Points</em></a> and <a href="https://scholar.google.com/citations?user=H5MtIcwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Divyanshu Pandey</a> spoke on <a href="https://cni.iisc.ac.in/seminars/2025-01-28/" target="_blank"><em>Exploring multi-bounce scattering to increase the field-of-view of mm-wave radar.</em></a></p>
+<p>In February, CNI had the privilege of hosting<a href="https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi" target="\_blank"> Prof. Sid Jaggi </a>(<a href="https://www.bristol.ac.uk/" target="\_blank">University of Bristol</a>), <a href="https://sites.ecse.rpi.edu/\~koushik/" target="\_blank">Prof. Koushik Kar</a> (<a href="https://www.rpi.edu/" target="\_blank">Rensselaer Polytechnic Institute</a>), and <a href="https://scholar.google.com/citations?user=H5MtIcwAAAAJ&amp;hl=en&amp;oi=ao" target="\_blank">Dr. Divyanshu Pandey</a> (<a href="https://www.rice.edu/" target="\_blank">Rice University</a>). During their visit, they engaged with IISc students, participated in research discussions, and explored future directions in their respective fields. As part of their visit, they also delivered talks on their ongoing research: <a href="https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi" target="\_blank">Prof. Sid Jaggi</a> presented on <a href="https://cni.iisc.ac.in/seminars/2025-02-17/" target="\_blank"><em>Group Testing</em>,</a> <a href="https://sites.ecse.rpi.edu/\~koushik/" target="\_blank">Prof. Koushik Kar</a> discussed <a href="https://cni.iisc.ac.in/seminars/2025-02-10/" target="\_blank"><em>Traffic Peering Games in Internet Exchange Points</em></a> and <a href="https://scholar.google.com/citations?user=H5MtIcwAAAAJ&amp;hl=en&amp;oi=ao" target="\_blank">Dr. Divyanshu Pandey</a> spoke on <a href="https://cni.iisc.ac.in/seminars/2025-01-28/" target="\_blank"><em>Exploring multi-bounce scattering to increase the field-of-view of mm-wave radar.</em></a></p>
 
-<h3 style="text-align: center;"><a href="https://youtu.be/uMQgDYvn_5o" target="_blank">Advances in Group Testing</a></h3>
+<h3 style="text-align: center;"><a href="https://youtu.be/uMQgDYvn\_5o" target="\_blank">Advances in Group Testing</a></h3>
 
-<p class="mcePastedContent"><a href="https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi" target="_blank">Prof. Jaggi</a> discussed group testing, a method for identifying a small subset of individuals or items of interest within a large population using pooled tests. This technique has applications in medical diagnostics, RFID systems, industrial quality control, and streaming algorithms. He provided an overview of fundamental bounds and algorithms for various models and presented recent advancements in the field, highlighting its relevance to broader non-linear sparse inverse problems.</p>
+<p class="mcePastedContent"><a href="https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi" target="\_blank">Prof. Jaggi</a> discussed group testing, a method for identifying a small subset of individuals or items of interest within a large population using pooled tests. This technique has applications in medical diagnostics, RFID systems, industrial quality control, and streaming algorithms. He provided an overview of fundamental bounds and algorithms for various models and presented recent advancements in the field, highlighting its relevance to broader non-linear sparse inverse problems.</p>
 
-<h3 style="text-align: center;"><a href="https://cni.iisc.ac.in/seminars/2025-02-10/" target="_blank">Traffic Peering Games in Internet Exchange Points</a></h3>
+<h3 style="text-align: center;"><a href="https://cni.iisc.ac.in/seminars/2025-02-10/" target="\_blank">Traffic Peering Games in Internet Exchange Points</a></h3>
 
-<p class="mcePastedContent"><a href="https://sites.ecse.rpi.edu/~koushik/" target="_blank">Prof. Kar</a> discussed the dynamics of traffic exchange at Internet Exchange Points (IXPs), where ISPs establish peering connections. Using game-theoretic models, he analyzed how pricing strategies and capacity decisions impact efficiency, showing that congestion-proportional pricing maintains near-optimal performance. He also explored machine learning-based automation of peering decisions and highlighted broader applications of these models in network traffic, power, and heat flow management.</p>
+<p class="mcePastedContent"><a href="https://sites.ecse.rpi.edu/\~koushik/" target="\_blank">Prof. Kar</a> discussed the dynamics of traffic exchange at Internet Exchange Points (IXPs), where ISPs establish peering connections. Using game-theoretic models, he analyzed how pricing strategies and capacity decisions impact efficiency, showing that congestion-proportional pricing maintains near-optimal performance. He also explored machine learning-based automation of peering decisions and highlighted broader applications of these models in network traffic, power, and heat flow management.</p>
 
-<h3 style="text-align: center;"><a href="https://cni.iisc.ac.in/seminars/2025-01-28/" target="_blank">Exploring Multi Bounce Scattering to increase the field-of-view of mm wave radar</a></h3>
+<h3 style="text-align: center;"><a href="https://cni.iisc.ac.in/seminars/2025-01-28/" target="\_blank">Exploring Multi Bounce Scattering to increase the field-of-view of mm wave radar</a></h3>
 
-<p class="mcePastedContent last-child"><a href="https://scholar.google.com/citations?user=H5MtIcwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Pandey</a> presented a novel approach for mm-wave radars to detect objects beyond their direct field of view by leveraging multipath signal reflections. Unlike traditional radar processing, which treats such reflections as noise, this method explicitly models them, expanding radar perception without additional hardware or prior environment knowledge. The technique, tested on a commercial radar platform, has potential applications in autonomous navigation, disaster management, and joint communication-sensing systems.</p>
+<p class="mcePastedContent last-child"><a href="https://scholar.google.com/citations?user=H5MtIcwAAAAJ&amp;hl=en&amp;oi=ao" target="\_blank">Dr. Pandey</a> presented a novel approach for mm-wave radars to detect objects beyond their direct field of view by leveraging multipath signal reflections. Unlike traditional radar processing, which treats such reflections as noise, this method explicitly models them, expanding radar perception without additional hardware or prior environment knowledge. The technique, tested on a commercial radar platform, has potential applications in autonomous navigation, disaster management, and joint communication-sensing systems.</p>
 
 </div>
 
@@ -1146,7 +1146,7 @@ year: 2025
 
 <td id="blockContainerId-289" class="mceLayoutContainer" style="padding: 12px 0 12px 0;" valign="top">
 
-<table id="section_e003962eb7c98f812cabf3b6ab862262" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="289">
+<table id="section\_e003962eb7c98f812cabf3b6ab862262" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="289">
 
 <tbody>
 
@@ -1372,7 +1372,7 @@ year: 2025
 
 <div id="dataBlockId-300" class="mceText" style="width: 100%;" data-block-id="300">
 
-<h1 class="last-child" style="text-align: center;"><a href="https://www.ukifni.org/" target="_blank">UK-FNI Delegation Engages in Research Discussions at IISc</a></h1>
+<h1 class="last-child" style="text-align: center;"><a href="https://www.ukifni.org/" target="\_blank">UK-FNI Delegation Engages in Research Discussions at IISc</a></h1>
 
 </div>
 
@@ -1402,9 +1402,9 @@ year: 2025
 
 <div id="dataBlockId-302" class="mceText" style="width: 100%;" data-block-id="302">
 
-<p class="mcePastedContent">The <a href="https://www.ukifni.org/" target="_blank"><strong>UK-India Future Networks Initiative (UK-FNI) Workshop</strong></a>, held from <strong>February 24&ndash;26, 2025</strong>, at <strong>IISc Bangalore</strong>, served as a vital platform for fostering collaboration between researchers from India and the UK. The workshop facilitated the exchange of advancements in <strong>wired, wireless, optical, and satellite communication technologies</strong>, strengthening Indo-UK partnerships in research and innovation for future networks.</p>
+<p class="mcePastedContent">The <a href="https://www.ukifni.org/" target="\_blank"><strong>UK-India Future Networks Initiative (UK-FNI) Workshop</strong></a>, held from <strong>February 24&ndash;26, 2025</strong>, at <strong>IISc Bangalore</strong>, served as a vital platform for fostering collaboration between researchers from India and the UK. The workshop facilitated the exchange of advancements in <strong>wired, wireless, optical, and satellite communication technologies</strong>, strengthening Indo-UK partnerships in research and innovation for future networks.</p>
 
-<p class="mcePastedContent">The <strong>Indo-UK Meeting on Research for Future Networks</strong>, held on <strong>February 26, 2025</strong>, featured insightful discussions on <strong>Reconfigurable Intelligent Surfaces, 6G research, intrusion detection, mobile network disaggregation, and satellite communications</strong>. The sessions brought together leading experts from <a href="https://iisc.ac.in/" target="_blank"><strong>IISc</strong></a><strong>, </strong><a href="https://www.iitb.ac.in/" target="_blank"><strong>IITs</strong></a><strong>,</strong><a href="https://www.isro.gov.in/" target="_blank"><strong> ISRO,</strong></a> <a href="https://www.cdot.in/" target="_blank"><strong>C-DoT</strong></a><strong>, </strong><a href="https://www.tejasnetworks.com/" target="_blank"><strong>Tejas Networks</strong></a><strong>, and distinguished UK institutions</strong>, including the <a href="https://www.uea.ac.uk/" target="_blank"><strong>University of East Anglia</strong></a><strong>,</strong><a href="https://www.ucl.ac.uk/" target="_blank"><strong> University College London</strong></a><strong>, </strong><a href="https://www.kcl.ac.uk/" target="_blank"><strong>King&rsquo;s College London</strong></a><strong>, and the </strong><a href="https://www.surrey.ac.uk/" target="_blank"><strong>University of Surrey</strong>.</a></p>
+<p class="mcePastedContent">The <strong>Indo-UK Meeting on Research for Future Networks</strong>, held on <strong>February 26, 2025</strong>, featured insightful discussions on <strong>Reconfigurable Intelligent Surfaces, 6G research, intrusion detection, mobile network disaggregation, and satellite communications</strong>. The sessions brought together leading experts from <a href="https://iisc.ac.in/" target="\_blank"><strong>IISc</strong></a><strong>, </strong><a href="https://www.iitb.ac.in/" target="\_blank"><strong>IITs</strong></a><strong>,</strong><a href="https://www.isro.gov.in/" target="\_blank"><strong> ISRO,</strong></a> <a href="https://www.cdot.in/" target="\_blank"><strong>C-DoT</strong></a><strong>, </strong><a href="https://www.tejasnetworks.com/" target="\_blank"><strong>Tejas Networks</strong></a><strong>, and distinguished UK institutions</strong>, including the <a href="https://www.uea.ac.uk/" target="\_blank"><strong>University of East Anglia</strong></a><strong>,</strong><a href="https://www.ucl.ac.uk/" target="\_blank"><strong> University College London</strong></a><strong>, </strong><a href="https://www.kcl.ac.uk/" target="\_blank"><strong>King&rsquo;s College London</strong></a><strong>, and the </strong><a href="https://www.surrey.ac.uk/" target="\_blank"><strong>University of Surrey</strong>.</a></p>
 
 <p class="mcePastedContent last-child">With <strong>keynote talks, technical sessions, and collaborative discussions</strong>, the workshop highlighted emerging research directions and reinforced the importance of Indo-UK cooperation in shaping the future of network technologies.</p>
 
@@ -1434,7 +1434,7 @@ year: 2025
 
 <td id="blockContainerId-317" class="mceLayoutContainer" style="padding: 12px 0 12px 0;" valign="top">
 
-<table id="section_5f635e8a6a6a9a598bdb7f8f127fca0e" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="317">
+<table id="section\_5f635e8a6a6a9a598bdb7f8f127fca0e" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="317">
 
 <tbody>
 
@@ -1694,7 +1694,7 @@ year: 2025
 
 <td id="blockContainerId-54" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 0;" valign="top">
 
-<table id="section_e1b95aa71de78d220d7957f25d5d968c" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="54">
+<table id="section\_e1b95aa71de78d220d7957f25d5d968c" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="54">
 
 <tbody>
 
@@ -1794,9 +1794,9 @@ year: 2025
 
 <div id="dataBlockId-51" class="mceText" style="width: 100%;" data-block-id="51">
 
-<p><a href="https://cni.iisc.ac.in/seminars/2025-02-18/" target="_blank"><strong>Group Testing: Something old, something new, something borrowed</strong></a></p>
+<p><a href="https://cni.iisc.ac.in/seminars/2025-02-18/" target="\_blank"><strong>Group Testing: Something old, something new, something borrowed</strong></a></p>
 
-<p class="mcePastedContent"><a href="https://scholar.google.com/citations?user=HFQeekwAAAAJ&amp;hl=en" target="_blank">Prof. Nikhil Karamchandani</a> delivered an insightful talk on <strong>Group Testing</strong>, a technique for efficiently identifying defective items within a large population using minimal pooled tests. While originally developed for medical diagnostics, group testing has broader applications in <strong>wireless communications, DNA sequencing, network tomography, and neighbor discovery</strong>.</p>
+<p class="mcePastedContent"><a href="https://scholar.google.com/citations?user=HFQeekwAAAAJ&amp;hl=en" target="\_blank">Prof. Nikhil Karamchandani</a> delivered an insightful talk on <strong>Group Testing</strong>, a technique for efficiently identifying defective items within a large population using minimal pooled tests. While originally developed for medical diagnostics, group testing has broader applications in <strong>wireless communications, DNA sequencing, network tomography, and neighbor discovery</strong>.</p>
 
 <p class="mcePastedContent last-child">The talk covered key theoretical results and introduced <strong>Cascaded Group Testing</strong>, a new variation where tests return the first defective item in an ordered subset. This approach offers exciting possibilities for optimizing testing strategies across various fields.</p>
 
@@ -1906,7 +1906,7 @@ year: 2025
 
 <td id="blockContainerId-60" class="mceLayoutContainer" style="padding: 0;" valign="top">
 
-<table id="section_6a14692eb9d1791c5ed0bf1c38e37357" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="60">
+<table id="section\_6a14692eb9d1791c5ed0bf1c38e37357" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="60">
 
 <tbody>
 
@@ -1988,11 +1988,11 @@ year: 2025
 
 <div id="dataBlockId-55" class="mceText" style="width: 100%;" data-block-id="55">
 
-<p><a href="https://cni.iisc.ac.in/seminars/2025-02-25/" target="_blank"><strong>Data-Driven Next-Generation Wireless Networking: Harnessing AI for Superior Performance and Security</strong></a></p>
+<p><a href="https://cni.iisc.ac.in/seminars/2025-02-25/" target="\_blank"><strong>Data-Driven Next-Generation Wireless Networking: Harnessing AI for Superior Performance and Security</strong></a></p>
 
-<p class="mcePastedContent"><a href="https://iitbhu.ac.in/dept/cse/people/prasenjitcse" target="_blank">Prof. <strong>Prasenjit Chanak</strong></a> discussed the role of <strong>Artificial Intelligence (AI) in future wireless networks</strong>, addressing challenges in <strong>IoT, 5G, and NextG systems</strong>, including <strong>high data rates, scalability, security, and cost-effective deployment</strong>.</p>
+<p class="mcePastedContent"><a href="https://iitbhu.ac.in/dept/cse/people/prasenjitcse" target="\_blank">Prof. <strong>Prasenjit Chanak</strong></a> discussed the role of <strong>Artificial Intelligence (AI) in future wireless networks</strong>, addressing challenges in <strong>IoT, 5G, and NextG systems</strong>, including <strong>high data rates, scalability, security, and cost-effective deployment</strong>.</p>
 
-<p class="mcePastedContent last-child">The talk provided a <strong>comprehensive review of AI techniques across the network protocol stack</strong>, highlighting their potential to enhance <strong>performance and security</strong>. <a href="https://iitbhu.ac.in/dept/cse/people/prasenjitcse" target="_blank">Prof. Chanak</a> also explored key <strong>challenges, methodologies, and future opportunities</strong> for AI-driven algorithms, protocols, and system designs in next-generation wireless communication.</p>
+<p class="mcePastedContent last-child">The talk provided a <strong>comprehensive review of AI techniques across the network protocol stack</strong>, highlighting their potential to enhance <strong>performance and security</strong>. <a href="https://iitbhu.ac.in/dept/cse/people/prasenjitcse" target="\_blank">Prof. Chanak</a> also explored key <strong>challenges, methodologies, and future opportunities</strong> for AI-driven algorithms, protocols, and system designs in next-generation wireless communication.</p>
 
 </div>
 
@@ -2022,7 +2022,7 @@ year: 2025
 
 <tr>
 
-<td id="blockContainerId-57" class="mceImageBlockContainer" style="padding: 100px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-14/" target="_blank" data-block-id="57"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/407044c2-b512-efae-d3a0-917f86fc8db2.png" alt="" width="220" height="auto" /></span></a></td>
+<td id="blockContainerId-57" class="mceImageBlockContainer" style="padding: 100px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-14/" target="\_blank" data-block-id="57"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/407044c2-b512-efae-d3a0-917f86fc8db2.png" alt="" width="220" height="auto" /></span></a></td>
 
 </tr>
 
@@ -2118,7 +2118,7 @@ year: 2025
 
 <td id="blockContainerId-253" class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 12px 0px; height: 386.4px;" valign="top">
 
-<table id="section_deceb38282abe628deb1c521a6599934" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="253">
+<table id="section\_deceb38282abe628deb1c521a6599934" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="253">
 
 <tbody>
 
@@ -2220,9 +2220,9 @@ year: 2025
 
 <p><strong>Distributed Network Tomography: Exact Recovery with Adversarial, Heterogeneous and Sporadic Data</strong></p>
 
-<p class="mcePastedContent"><a href="https://sites.google.com/site/gugancth/home" target="_blank">Prof. <strong>Gugan Thoppe</strong></a> presented a novel approach to <strong>network tomography</strong>, focusing on estimating link-level delays from end-to-end path measurements. He examined existing estimation techniques based on <strong>data encoding, robust aggregation, and homogenization</strong>, highlighting their limitations in practical settings.</p>
+<p class="mcePastedContent"><a href="https://sites.google.com/site/gugancth/home" target="\_blank">Prof. <strong>Gugan Thoppe</strong></a> presented a novel approach to <strong>network tomography</strong>, focusing on estimating link-level delays from end-to-end path measurements. He examined existing estimation techniques based on <strong>data encoding, robust aggregation, and homogenization</strong>, highlighting their limitations in practical settings.</p>
 
-<p class="mcePastedContent last-child">To address these challenges, <a href="https://sites.google.com/site/gugancth/home" target="_blank">Prof. Thoppe</a> introduced an <strong>l₁-minimization-based method</strong> that enables <strong>exact recovery of heterogeneous linear systems</strong>, even in the presence of adversarial behavior and sporadic data availability. The talk also covered <strong>convergence guarantees and empirical results</strong>, demonstrating the superiority of this approach over existing methods. Extensions to <strong>tracking and general optimization</strong> were briefly discussed.</p>
+<p class="mcePastedContent last-child">To address these challenges, <a href="https://sites.google.com/site/gugancth/home" target="\_blank">Prof. Thoppe</a> introduced an <strong>l₁-minimization-based method</strong> that enables <strong>exact recovery of heterogeneous linear systems</strong>, even in the presence of adversarial behavior and sporadic data availability. The talk also covered <strong>convergence guarantees and empirical results</strong>, demonstrating the superiority of this approach over existing methods. Extensions to <strong>tracking and general optimization</strong> were briefly discussed.</p>
 
 </div>
 
@@ -2404,7 +2404,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://www.facebook.com/IIScCNI/" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://www.facebook.com/IIScCNI/" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -2420,7 +2420,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://instagram.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://instagram.com/cni\_iisc" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -2436,7 +2436,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://twitter.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://twitter.com/cni\_iisc" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -2452,7 +2452,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://youtube.com/@centrefornetworkedintellig5324" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -2568,7 +2568,7 @@ year: 2025
 
 <td id="blockContainerId-81" style="padding: 8px;" valign="top">
 
-<table id="section_ba16a79728659d0a1748cba04cf196c9" class="mceFooterSection" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="81">
+<table id="section\_ba16a79728659d0a1748cba04cf196c9" class="mceFooterSection" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="81">
 
 <tbody>
 
