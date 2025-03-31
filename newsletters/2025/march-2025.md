@@ -1,7 +1,7 @@
 ---
 layout: newsletter
 title: Mar 2025
-date: 2025-03-07
+date: 2025-03-05
 year: 2025
 ---
 <table id="bodyTable" style="background-color: #f4f4f4;" border="0" width="100%" cellspacing="0" cellpadding="0">
