@@ -1,6 +1,6 @@
 ---
 layout: newsletter
-title: January 2025
+title: Jan 2025
 date: 2025-03-07
 year: 2025
 ---
@@ -84,7 +84,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="background-color: #ffffff; padding: 0 0 20px 0;" valign="top">
 
-<table id="section_35636caca7374345f05ad0781356ee6c" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="8">
+<table id="section\_35636caca7374345f05ad0781356ee6c" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="8">
 
 <tbody>
 
@@ -154,7 +154,7 @@ year: 2025
 
 <tr>
 
-<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="3"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceLogo" style="width: 79.811320754717px; height: auto; max-width: 79.811320754717px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></span></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="\_blank" data-block-id="3"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceLogo" style="width: 79.811320754717px; height: auto; max-width: 79.811320754717px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></span></a></td>
 
 </tr>
 
@@ -460,7 +460,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="padding: 12px 0px; height: 147.85px;" valign="top">
 
-<table id="section_d217a53e79b4bb1961aefa71c6320fc2" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="26">
+<table id="section\_d217a53e79b4bb1961aefa71c6320fc2" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="26">
 
 <tbody>
 
@@ -650,7 +650,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="padding: 12px 0px; height: 460.2px;" valign="top">
 
-<table id="section_7671822f93b4fe81a4eda7d875b4a60e" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="30">
+<table id="section\_7671822f93b4fe81a4eda7d875b4a60e" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="30">
 
 <tbody>
 
@@ -732,13 +732,13 @@ year: 2025
 
 <div id="dataBlockId-159" class="mceText" style="width: 100%;" data-block-id="159">
 
-<p>CNI PhD Scholar <a href="https://scholar.google.com/citations?user=7JK2GrsAAAAJ&amp;hl=en" target="_blank">Ankita Koley</a> recently presented her joint work with <a href="https://faculty.dese.iisc.ac.in/chandramani/" target="_blank">Prof. Chandramani Singh</a> on Dynamic Content Caching at <a href="https://sites.google.com/view/ieee-mass-2024/home">IEEE MASS 2024</a>. Dynamic content, such as YouTube recommendations and Facebook newsfeeds, is continuously updated on central servers, and its timely delivery is essential to maintain user relevance.</p>
+<p>CNI PhD Scholar <a href="https://scholar.google.com/citations?user=7JK2GrsAAAAJ&amp;hl=en" target="\_blank">Ankita Koley</a> recently presented her joint work with <a href="https://faculty.dese.iisc.ac.in/chandramani/" target="\_blank">Prof. Chandramani Singh</a> on Dynamic Content Caching at <a href="https://sites.google.com/view/ieee-mass-2024/home">IEEE MASS 2024</a>. Dynamic content, such as YouTube recommendations and Facebook newsfeeds, is continuously updated on central servers, and its timely delivery is essential to maintain user relevance.</p>
 
 <p>Their research addresses the dynamic content caching problem, where a local cache at a base station (BS) temporarily stores selected content to reduce delays. The BS must decide whether to serve content from its local cache or fetch a fresh version from the central server, balancing two key costs: fetching cost and ageing cost, which reflects the outdatedness of cached content. Adding to the complexity, the BS often has only partial information about how outdated its cached content is.</p>
 
 <p>To solve this, they formulated an optimal content fetching and caching problem to minimize the average cost subject to cache capacity constraints. The problem suffers from the curse of dimensionality and is provably hard to solve. They model it as a continuous-time, restless multi-armed bandit process (RMAB), with each content modelled as a partially observable Markov decision process.</p>
 
-<p class="last-child">They proved the model's indexability, derived explicit expressions for the Whittle index, and developed a Whittle index-based solution. This approach, is further validated through simulations, and demonstrated asymptotically optimal performance, outperforming recent methods.<br />Check out their <a href="https://ieeexplore.ieee.org/document/10723415" target="_blank">paper</a> to learn more!!</p>
+<p class="last-child">They proved the model's indexability, derived explicit expressions for the Whittle index, and developed a Whittle index-based solution. This approach, is further validated through simulations, and demonstrated asymptotically optimal performance, outperforming recent methods.<br />Check out their <a href="https://ieeexplore.ieee.org/document/10723415" target="\_blank">paper</a> to learn more!!</p>
 
 </div>
 
@@ -846,7 +846,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="padding: 12px 0 12px 0;" valign="top">
 
-<table id="section_48a08ec6b5d6a84d8cff8c0c6c66a745" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="171">
+<table id="section\_48a08ec6b5d6a84d8cff8c0c6c66a745" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="171">
 
 <tbody>
 
@@ -1044,7 +1044,7 @@ year: 2025
 
 <div id="dataBlockId-27" class="mceText" style="width: 100%;" data-block-id="27">
 
-<p class="last-child">On December 4, 2024, CNI, in collaboration with IBM-IISc Hybrid Cloud Lab and IBM India Research Lab, hosted the <a href="https://cni.iisc.ac.in/workshops/2024/AI-day" target="_blank">IISc-IBM AI Day</a>. Supported by Cisco CSR, this one-day workshop focused on Generative AI, featuring sessions on IBM's GenAI toolkits and Large Language Models (LLMs) for diverse applications. The event targeted engineering and science students across India, offering both in-person and online participation. Topics included GenAI applications in IT automation, data processing pipelines, fine-tuning algorithms, inference serving optimization, and IBM's Granite models for code, language, and time-series data. The workshop provided valuable insights into the evolving field of Generative AI, equipping participants with knowledge to apply these technologies in various domains. Explore the detailed morning and afternoon recordings available on our YouTube channel for a deeper dive into the sessions.</p>
+<p class="last-child">On December 4, 2024, CNI, in collaboration with IBM-IISc Hybrid Cloud Lab and IBM India Research Lab, hosted the <a href="https://cni.iisc.ac.in/workshops/2024/AI-day" target="\_blank">IISc-IBM AI Day</a>. Supported by Cisco CSR, this one-day workshop focused on Generative AI, featuring sessions on IBM's GenAI toolkits and Large Language Models (LLMs) for diverse applications. The event targeted engineering and science students across India, offering both in-person and online participation. Topics included GenAI applications in IT automation, data processing pipelines, fine-tuning algorithms, inference serving optimization, and IBM's Granite models for code, language, and time-series data. The workshop provided valuable insights into the evolving field of Generative AI, equipping participants with knowledge to apply these technologies in various domains. Explore the detailed morning and afternoon recordings available on our YouTube channel for a deeper dive into the sessions.</p>
 
 </div>
 
@@ -1072,7 +1072,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="padding: 12px 0 12px 0;" valign="top">
 
-<table id="section_7e7457de9a029a45afea5fc605623105" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="185">
+<table id="section\_7e7457de9a029a45afea5fc605623105" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="185">
 
 <tbody>
 
@@ -1142,7 +1142,7 @@ year: 2025
 
 <tr>
 
-<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=t9bVrLiJORM&amp;ab_channel=CentreforNetworkedIntelligence%2CIISc" target="_blank" data-block-id="191"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 282px; height: auto; max-width: 640px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/f5c8da0d5bad208f0be03d48761ffc4b.png" alt="" width="282" height="auto" /></span></a></td>
+<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=t9bVrLiJORM&amp;ab\_channel=CentreforNetworkedIntelligence%2CIISc" target="\_blank" data-block-id="191"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 282px; height: auto; max-width: 640px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video\_thumbnails\_new/f5c8da0d5bad208f0be03d48761ffc4b.png" alt="" width="282" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1160,7 +1160,7 @@ year: 2025
 
 <tr>
 
-<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=t9bVrLiJORM&amp;ab_channel=CentreforNetworkedIntelligence%2CIISc" target="_blank" data-block-id="192"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 282px; height: auto; max-width: 640px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/f5c8da0d5bad208f0be03d48761ffc4b.png" alt="" width="282" height="auto" /></span></a></td>
+<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=t9bVrLiJORM&amp;ab\_channel=CentreforNetworkedIntelligence%2CIISc" target="\_blank" data-block-id="192"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 282px; height: auto; max-width: 640px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video\_thumbnails\_new/f5c8da0d5bad208f0be03d48761ffc4b.png" alt="" width="282" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1330,7 +1330,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="background-color: #f4f6ff; padding: 0;" valign="top">
 
-<table id="section_bc06a5192ff0eb285b51345c25a313d0" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="54">
+<table id="section\_bc06a5192ff0eb285b51345c25a313d0" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="54">
 
 <tbody>
 
@@ -1400,7 +1400,7 @@ year: 2025
 
 <tr>
 
-<td class="mceBlockContainer" style="padding: 105px 0px 12px; width: 100%;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-07/" target="_blank" data-block-id="49"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 202px; height: 114px; border-radius: 0px; display: block; max-width: 1920px !important;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a12076a3-0325-f068-4968-3aca2729ea9b.png" alt="" width="220" height="auto" /></span></a></td>
+<td class="mceBlockContainer" style="padding: 105px 0px 12px; width: 100%;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-07/" target="\_blank" data-block-id="49"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 202px; height: 114px; border-radius: 0px; display: block; max-width: 1920px !important;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a12076a3-0325-f068-4968-3aca2729ea9b.png" alt="" width="220" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1430,9 +1430,9 @@ year: 2025
 
 <div id="dataBlockId-51" class="mceText" style="width: 100%;" data-block-id="51">
 
-<p><a href="https://cni.iisc.ac.in/seminars/2024-12-03/" target="_blank">Dynamic networks and stochastic approximation: the fundamental role of mathematics </a></p>
+<p><a href="https://cni.iisc.ac.in/seminars/2024-12-03/" target="\_blank">Dynamic networks and stochastic approximation: the fundamental role of mathematics </a></p>
 
-<p class="last-child">In this talk, <a href="https://shankarbhamidi.web.unc.edu/" target="_blank">Prof. Shankar Bhamidi</a> discussed the importance of mathematics in understanding the dynamics of evolving networks, with applications ranging from social networks to epidemic modeling. Through three distinct case studies, he explored how mathematical tools can reveal surprising insights, such as the impact of change points in system evolution, the differences in centrality measures like degree and PageRank in networks with diverse nodes, and the challenges faced by individuals who make decisions based on outdated snapshots of a network. The talk highlighted how these mathematical approaches can help uncover hidden patterns and improve our understanding of complex systems.</p>
+<p class="last-child">In this talk, <a href="https://shankarbhamidi.web.unc.edu/" target="\_blank">Prof. Shankar Bhamidi</a> discussed the importance of mathematics in understanding the dynamics of evolving networks, with applications ranging from social networks to epidemic modeling. Through three distinct case studies, he explored how mathematical tools can reveal surprising insights, such as the impact of change points in system evolution, the differences in centrality measures like degree and PageRank in networks with diverse nodes, and the challenges faced by individuals who make decisions based on outdated snapshots of a network. The talk highlighted how these mathematical approaches can help uncover hidden patterns and improve our understanding of complex systems.</p>
 
 </div>
 
@@ -1540,7 +1540,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="padding: 0;" valign="top">
 
-<table id="section_3a590a03174f6743d3ad529bbe83e2e5" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="60">
+<table id="section\_3a590a03174f6743d3ad529bbe83e2e5" class="mceLayout" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="60">
 
 <tbody>
 
@@ -1622,9 +1622,9 @@ year: 2025
 
 <div id="dataBlockId-55" class="mceText" style="width: 100%;" data-block-id="55">
 
-<p><a href="https://cni.iisc.ac.in/seminars/2024-12-10/" target="_blank">An overview of entropy-regularized optimal transport and Schr&ouml;dinger bridges</a></p>
+<p><a href="https://cni.iisc.ac.in/seminars/2024-12-10/" target="\_blank">An overview of entropy-regularized optimal transport and Schr&ouml;dinger bridges</a></p>
 
-<p class="last-child"><a href="https://sites.math.washington.edu//~soumik/" target="_blank">Prof. Soumik Pal</a> discussed the increasing importance of the Monge-Kantorovich optimal transport theory, particularly in fields such as statistics, data science, and generative AI. A significant factor behind its popularity is the entropy-regularized version of the problem, where entropy serves as a penalty function. This version has proven to be mathematically complex, blending ideas from physics, large deviations, stochastic processes, geometry, and partial differential equations (PDEs). The presentation provided a comprehensive overview of the latest research in this rapidly evolving area, showcasing the interdisciplinary nature of the field.</p>
+<p class="last-child"><a href="https://sites.math.washington.edu//\~soumik/" target="\_blank">Prof. Soumik Pal</a> discussed the increasing importance of the Monge-Kantorovich optimal transport theory, particularly in fields such as statistics, data science, and generative AI. A significant factor behind its popularity is the entropy-regularized version of the problem, where entropy serves as a penalty function. This version has proven to be mathematically complex, blending ideas from physics, large deviations, stochastic processes, geometry, and partial differential equations (PDEs). The presentation provided a comprehensive overview of the latest research in this rapidly evolving area, showcasing the interdisciplinary nature of the field.</p>
 
 </div>
 
@@ -1654,7 +1654,7 @@ year: 2025
 
 <tr style="height: 230.275px;">
 
-<td class="mceBlockContainer" style="padding: 100px 0px 12px; height: 230.275px;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-14/" target="_blank" data-block-id="57"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 209px; height: 118px; border-radius: 0px; display: block; max-width: 1920px !important;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/2b0b12c1-07fa-3f86-8702-0249038c2831.png" alt="" width="220" height="auto" /></span></a></td>
+<td class="mceBlockContainer" style="padding: 100px 0px 12px; height: 230.275px;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-14/" target="\_blank" data-block-id="57"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 209px; height: 118px; border-radius: 0px; display: block; max-width: 1920px !important;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/2b0b12c1-07fa-3f86-8702-0249038c2831.png" alt="" width="220" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1824,7 +1824,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://www.facebook.com/IIScCNI/" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://www.facebook.com/IIScCNI/" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -1840,7 +1840,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://instagram.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://instagram.com/cni\_iisc" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -1856,7 +1856,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://twitter.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://twitter.com/cni\_iisc" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -1872,7 +1872,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://youtube.com/@centrefornetworkedintellig5324" target="\_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="40" /></a></td>
 
 </tr>
 
@@ -1988,7 +1988,7 @@ year: 2025
 
 <td class="mceLayoutContainer" style="padding: 8px; height: 195.912px;" valign="top">
 
-<table id="section_89c75c01e9f646ddd7c6011d6e88c61a" class="mceFooterSection" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="81">
+<table id="section\_89c75c01e9f646ddd7c6011d6e88c61a" class="mceFooterSection" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="81">
 
 <tbody>
 
