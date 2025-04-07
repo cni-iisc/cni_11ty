@@ -14,7 +14,8 @@ layout: base.html
 <div class="container-fluid text-center mt-2" style="max-width:1200px;">
   <h2>{{ cat }} Fellows</h2>
   <div class="dropdown text-center">
-    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown"
+      aria-expanded="false">
       <span id="selectedYear">{{ year }}-{{ year + 1 }}</span> <!-- Latest year by default -->
     </button>
     <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
@@ -26,13 +27,30 @@ layout: base.html
       <li><a class="dropdown-item" href="/{{ cat | lower}}fellows2019/" data-year="2019">2019-2020</a></li>
     </ul>
   </div>
-  <div class="row justify-content-center">
+  <div class="row jusitfy-content-center gap-0">
     {% for person in collections.Fellows %}
     {% if person.data.category == category %}
     {% if person.data.years.includes(year) %}
+    <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
+      <div class="card mb-4 staff-card">
+        <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top img-fluid">
+        <div class="staff-card-body">
+          <h6 class="card-title m-2">{{ person.data.title }}</h6>
+          {% if person.data.redirect %}
+          <a href="{{ person.data.redirect }}" target="_blank" class="website-icon mt-0">
+            <i class="fas fa-link fa-lg mt-0"></i> <!-- Font Awesome Link Icon -->
+          </a>
+          {% endif %}
+          {% if person.data.linkedin %}
+          <a href="{{ person.data.linkedin }}" target="_blank" class="linkedin-icon mt-0">
+            <i class="fab fa-linkedin fa-lg mt-0"></i> <!-- Font Awesome LinkedIn Icon -->
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
 
-      <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center text-center">
-        <div class="text-center">
+    <!-- <div class="text-center">
           <div class="overflow-hidden z-index-1 position-relative mx-auto text-center">
             <img class="rounded-circle border border-5" src="{{ person.data.img }}" alt="{{ person.data.title }}" style="width: 200px; height: 200px; object-fit: fill; border-color: var(--navbar-clr) !important;">
           </div>
@@ -47,11 +65,10 @@ layout: base.html
               {% endif %}
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+
     {% endif %}
     {% endif %}
     {% endfor %}
   </div>
 </div>
-
