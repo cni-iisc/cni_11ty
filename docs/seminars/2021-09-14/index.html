@@ -61,6 +61,15 @@
       // Update icon based on current theme
       function updateThemeIcon(theme) {
         const themeIcon = document.getElementById('theme-icon');
+        // themeIcon hover color should be hyperlink color
+        themeIcon.style.color = 'white';
+        themeIcon.addEventListener('mouseover', function() {
+          themeIcon.style.color = 'var(--hyperlink-clr)';
+        });
+        themeIcon.addEventListener('mouseout', function() {
+          themeIcon.style.color = 'white';
+        });
+        // change icon based on theme 
         if (themeIcon) {
           if (theme === 'dark') {
             themeIcon.classList.remove('bi-sun');
