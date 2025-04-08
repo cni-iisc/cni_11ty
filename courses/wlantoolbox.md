@@ -3,7 +3,7 @@ layout: project_page
 title: Experimenting with WLAN Toolbox of MathWorks
 description: 
 img: assets/img/courses/wlan-toolbox.png
-importance: 5
+importance: 4
 category: work
 ignore: false
 ---
