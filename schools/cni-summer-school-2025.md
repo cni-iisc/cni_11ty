@@ -6,3 +6,5 @@ importance: 5
 ---
 <h3>CNI Summer School 2025</h3>
 <h4>Rumours, consensus and epidemics on networks</h4>
+
+<hr>
