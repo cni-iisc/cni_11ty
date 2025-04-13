@@ -69,38 +69,66 @@ permalink: "/"
   </div>
 </div>
 
-<div class="container mx-auto my-2" style="max-width:700px;">
-  <section id="updates" class="py-2">
-      <h4 class="text-center mb-2 mx-auto">Recent Updates</h4>
-      <div class="table-responsive mx-auto">
-        <table class="table table-borderless table-hover">
-          <tbody>
-            {% for post in collections.updates %}
-            {% set post_date = post.date %}
-            {% if loop.index <= 4 %}
-            <tr>
-              <!-- Date Section -->
-              <td class="text-center bg-transparent">
-                <div class="fw-bold fs-6">{{ post_date | date("dd") }}</div>
-                <div>{{ post_date | date("MMM yyyy") }}</div>
-              </td>
-              <!-- Title and Teaser Section -->
-              <td class="bg-transparent">
+
+
+<!-- Updates and Calendar Section -->
+<div class="container my-4">
+  <div class="row">
+    <!-- Recent Updates Column -->
+    <div class="col-md-6">
+      <section id="updates" class="py-2">
+        <h4 class="text-center mb-3">Recent Updates</h4>
+        <div class="table-responsive">
+          <table class="table table-borderless table-hover">
+            <tbody>
+              {% for post in collections.updates %}
+              {% set post_date = post.date %}
+              {% if loop.index <= 4 %}
+              <tr>
+                <!-- Date Section -->
+                <td class="text-center bg-transparent" style="width: 30%;">
+                  <div class="fw-bold fs-6">{{ post_date | date("dd") }}</div>
+                  <div>{{ post_date | date("MMM yyyy") }}</div>
+                </td>
+                <!-- Title and Teaser Section -->
+                <td class="bg-transparent">
                   <h5 class="mb-1"><a href="{{ post.url }}" class="read-more text-decoration-none">{{ post.data.title }}</a></h5>
                   <p class="mb-0">{{ post.data.teaser }}</p>
-              </td>
-            </tr>
-            {% endif %}
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      <div class="text-center mt-0 pt-0">
-        <a href="/updates/">More Updates...</a>
-      </div>
-  </section>
+                </td>
+              </tr>
+              {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-2">
+          <a href="/updates/">More Updates...</a>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Calendar Column -->
+    <div class="col-md-6">
+      <section id="calendar" class="py-2">
+        <h4 class="text-center mb-3">Upcoming Events</h4>
+        <div class="calendar-container border rounded p-3">
+          <div style="zoom: 0.5; transform-origin: top left;">
+          <iframe 
+            id="calendarFrame" 
+            src="https://outlook.office365.com/owa/calendar/d33f699d18574f179ad40358bb1089b0@iisc.ac.in/023d3d7fb47a4385b85057abbc4c11fd7132010466550638632/calendar.html" 
+            width="100%" 
+            height="725px" 
+            style="overflow: hidden; border: 0; margin: 0 auto; display: block;"
+          ></iframe>
+        </div>
+          <div class="text-center mt-2">
+            <a href="/calendar/" class="btn btn-sm button-style">Full View</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </div>
-
 
 <hr>
 <div class="container mx-auto my-2" style="max-width:800px;">
@@ -149,3 +177,29 @@ permalink: "/"
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Reload calendar iframe to fix initial display issues
+    let iframe = document.getElementById("calendarFrame");
+    if (iframe) {
+      iframe.onload = function() {
+        // Apply theme to iframe content if possible
+        try {
+          const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+          const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+          if (theme === 'dark') {
+            iframeDoc.body.style.backgroundColor = '#212121';
+            iframeDoc.body.style.color = '#ffffff';
+          }
+        } catch (e) {
+          // Cross-origin restrictions may prevent this
+          console.log('Cannot access iframe content due to security restrictions');
+        }
+      };
+      
+      // Reload iframe
+      iframe.src = iframe.src;
+    }
+  });
+</script>
