@@ -5,3 +5,6 @@ img: /assets/img/workshops/CNI-Sparc%20Workshop.png
 importance: 5
 ---
 CNI- Sparc Workshop 2025
+**Date:&#32;**21-24 July 2025
+
+**Venue:&#32;**ECE Department, IISc
