@@ -36,23 +36,6 @@ importance: 5
 | 3:45-4:30pm | Gen AI models and agentic solution framework | Diptikalyan Saha |
 
 </div>
-<br>
-
-#### 👥➕  Registration
-
-##### In-person participation
-
-**Thank you for an overwhelming interest in attending the AI Day in-person. Due to logistical reasons, we have limited slots for in-person participation, which are taken up, and we are not taking any new registrations now.**
-<br>
-\*\*Among those who registered, unfortunately we've been able to confirm the registration for a few. 
-For those who we could not accommodate for in-person participation, we have sent online meeting details to join online.\*\*
-<br>
-
-##### Online participation
-
-**Registration for online participation is closed now.**
-<br>
-**We have emailed online meeting details to all registered participants. Please check your spam folder too. If you haven't received an email from outreach.cni@iisc.ac.in with online meeting link, please email outreach.cni@iisc.ac.in.**
 
 #### Learning objectives
 
