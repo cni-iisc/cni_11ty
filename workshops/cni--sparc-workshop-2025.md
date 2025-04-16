@@ -5,7 +5,6 @@ img: /assets/img/workshops/CNI-Sparc%20Workshop.png
 importance: 5
 ---
 <div class="container-fluid mb-2 mt-2">
-<img class="img-fluid" src= "/assets/img/workshops/AIDay-poster-v3.png"/>
 </div>
 
 #### CNI-SPARC WORKSHOP
@@ -25,7 +24,7 @@ importance: 5
 
 | Time | Topic | Speaker |
 | --- | --- | --- |
-| 9:30-9:55  |TBA |Prof. Ayalvadi Ganesh  |
+| 9:30-9:55 | TBA | Prof. Ayalvadi Ganesh |
 | 9:35-10:15 | Gen AI applications and research opportunities in IT automation | Prateeti Mohapatra & Pratibha Moogi |
 | 10:15-11:00am | Data processing pipeline/toolkits from IBM for Gen AI models development | Shailja Thakur & Hima Patel |
 |  | Break |  |
