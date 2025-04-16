@@ -9,6 +9,18 @@ permalink: "/publications/"
 {% set journal_counter = 0 %}
 {% set conference_counter = 0 %}
 {% set misc_counter = 0 %}
+{% for entry in bibparse %}
+        
+    {% if entry.type == 'article' %}
+    {% set journal_counter = journal_counter + 1 %}
+    {% elif entry.type == 'inproceedings' %}
+    {% set conference_counter = conference_counter + 1 %}
+    {% else %}
+    {% set misc_counter = misc_counter + 1 %}
+    {% endif %}
+        
+{% endfor %}
+
 
 <script>
     function redirectToDOI(button) {
@@ -35,17 +47,6 @@ permalink: "/publications/"
         {% for y in year %}
         <h4><strong>{{ y }}</strong></h4>
         <hr>
-        {% for entry in bibparse %}
-        {% if entry.YEAR == y %}
-        {% if entry.type == 'article' %}
-        {% set journal_counter = journal_counter + 1 %}
-        {% elif entry.type == 'inproceedings' %}
-        {% set conference_counter = conference_counter + 1 %}
-        {% else %}
-        {% set misc_counter = misc_counter + 1 %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
 
         {% for entry in bibparse %}
         {% if entry.YEAR == y %}
@@ -58,6 +59,7 @@ permalink: "/publications/"
             <span class="publication-content"><div class="journal m-0 p-0">{{ entry.TITLE }}</div>{{ entry.AUTHOR | formatAuthors }}<br>
                 <i>{{ published }}</i>{% if entry.type == 'article' %}{% if entry.VOLUME %} vol {{ entry.VOLUME }}{% endif %}{% if entry.NUMBER %}({{ entry.NUMBER}}){% endif %}{% endif %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({{ entry.MONTH }} {{ entry.YEAR }})<br>
                 {% if entry.DOI %}<a type="button" class="btn button-style" href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>{% endif %}
+                {% if entry.URL and not entry.DOI %}<a type="button" class="btn button-style" href="{{ entry.URL }}" target="_blank">DOI</a>{% endif %}
             </span>
             {% elif entry.type == 'inproceedings' %}
             <span class="publication-index conference m-0 p-0">[C{{ conference_counter }}]</span>
@@ -85,18 +87,3 @@ permalink: "/publications/"
 
 
 
-<!--
-    <ul>
-        {% for y in year %}
-        <h2><strong>{{ y }}</strong></h2>
-        <hr>
-        {% for entry in bibparse %}
-        {% if entry.YEAR == y %}
-        <li>
-            {{ entry.TITLE }} - {{ entry.AUTHOR }} ({{ entry.YEAR }})
-        </li>
-        {% endif %}
-        {% endfor %}
-        {% endfor %}
-    </ul>
--->
