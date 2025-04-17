@@ -24,17 +24,49 @@ importance: 5
 
 | Time | Topic | Speaker |
 | --- | --- | --- |
-| 9:30-9:55 | TBA | Prof. Ayalvadi Ganesh |
-| 9:35-10:15 | Gen AI applications and research opportunities in IT automation | Prateeti Mohapatra & Pratibha Moogi |
-| 10:15-11:00am | Data processing pipeline/toolkits from IBM for Gen AI models development | Shailja Thakur & Hima Patel |
-|  | Break |  |
-| 11:20-12:05pm | Fine-tuning algorithms/ approaches | Mehant Kammakomati & Padmanabha V. S. |
-| 12:05-12:50pm | Inference serving & optimization approaches | Felix George |
-|  | Lunch break |  |
-| 2:15-3:30pm | IBM Granite models: code, language, and timeseries | Jaydeep Sen, Vijay E, & Pankaj Dhayama |
-|  | Break |  |
-| 3:45-4:30pm | Gen AI models and agentic solution framework | Diptikalyan Saha |
-
+|Day - 1  |21 July 2025 | |
+| 9:30 - 9:55 | TBA | Prof. Ayalvadi Ganesh (Bristol) |
+| 9:55 - 10:20 |TBA| Prof. Avishek (IITB) |
+| 10:20 - 10:45 |TBA| Prof. Nikhil (IITB) |
+| 10:45-11:10 |TBA | Prof. Parthe (IITB)|
+|11:10 - 11:40  |Coffee Break |  |
+| 11:40 - 12:05 |TBA | Prof. Manjunath (IITB) |
+|12:05 - 12:30 |TBA | Prof. Rahul (TIFR) |
+|12:30 - 12:55 |TBA | Prof. Anurag (IISc) |
+|13:00 - 14:00  | Lunch break |  |
+|14:00 - 14:25 |TBA | Prof. Chandramani (IISc) |
+|14:25 - 14:50 |TBA | Prof. Parimal(IISc) |
+|14:50 - 15:20  |Snacks Break |  |
+|15:20 - 17:30  |TBA |Reaseach Discussions |
+|Day - 2  |22 July 2025 | |
+| 9:30 - 9:55 | TBA | Prof. Ayesha (Bristol) |
+| 9:55 - 10:20 |TBA| Prof. Rahil (Bristol) |
+| 10:20 - 10:45 |TBA| Prof. Kieran (Bristol) |
+| 10:45 - 11:10 |TBA | Prof. Ankita (IISc)|
+|11:00 - 11:40  |Coffee Break |  |
+| 11:40 - 12:05 |TBA | Prof. Aniket  (IISc)  |
+|12:05 - 12:30 |TBA | Moonmoon (IISc)  |
+|12:30 - 12:55 |TBA | Srinivas (IISc) |
+|13:00 - 14:00  | Lunch break |  |
+|14:00 - 15:00 |TBA | Reaseach Discussions |
+|15:00 - 15:30  |Snacks Break |  |
+|15:30 - 17:30  |TBA |Reaseach Discussions |
+|Day - 3 |23 July 2025 ||
+|9:30 - 11:10 |TBA | Reaseach Discussions |
+|11:10 - 11:40  |Coffee Break |  |
+| 11:40 - 12:55 |TBA | Reaseach Discussions  |
+|13:00 - 14:00  | Lunch break |  |
+|14:00 - 15:00 |TBA | Reaseach Discussions |
+|15:00 - 15:30  |Snacks Break |  |
+|15:30 - 17:30  |TBA |Reaseach Discussions |
+|Day - 4 |24 July 2025 ||
+|9:30 - 11:10 |TBA | Reaseach Discussions |
+|11:10 - 11:40  |Coffee Break |  |
+| 11:40 - 12:55 |TBA | Reaseach Discussions  |
+|13:00 - 14:00  | Lunch break |  |
+|14:00 - 15:00 |TBA | Reaseach Discussions |
+|15:00 - 15:30  |Snacks Break |  |
+|15:30 - 17:30  |TBA |Reaseach Discussions |
 </div>
 
 #### Learning objectives
