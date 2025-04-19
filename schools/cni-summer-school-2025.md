@@ -12,7 +12,6 @@ importance: 5
 </div>
 <br>
 
-
 <hr>
 
 **Schedule**
@@ -111,7 +110,7 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
     </ul>
   </li>
 
- <li><strong>**Will accommodation be provided on the IISc campus to the participants**</strong>
+ <li><strong>Will accommodation be provided on the IISc campus to the participants</strong>
     <ul style="list-style-type: circle;">
       <li>No, accommodation will not be provided to the participants</li>
     </ul>
