@@ -79,7 +79,7 @@ contact: outreach.cni@iisc.ac.in
 A free registration is required for the participation.
 The seats available for the school are limited. Therefore, we request you to express your intent for the participation only if you are sure about attending all the sessions. The last date of registration is May 15, 2024. 
 <br>
-<a style="text-align:center" href="https://docs.google.com/forms/d/e/1FAIpQLSdHkfU_ZBaCoiDhh8LPmT_EAMxmJ2Xw139lvu6CFmBKcfkquw/viewform" class="btn btn-primary btn-lg active hoverable" role="button" aria-pressed="true"> Register </a>
+<a style="text-align:center" href="https://docs.google.com/forms/d/e/1FAIpQLSdWLhh2TOD7FbAuCFv-UyFy1tLkNUj76TQhc8H82CXz-X4Rbw/viewform?usp=header" class="btn btn-primary btn-lg active hoverable" role="button" aria-pressed="true"> Register </a>
 
 
 <!-- <h5 style="color:red">Registration is closed now.</h5>
