@@ -8,6 +8,11 @@ importance: 5
 
 <hr>
 
+<center>
+  <img src="/assets/img/schools/CNI Summer School 2025.png" class="img-fluid">
+</center>
+<br>
+
 <div style="text-align:justify">  The course will develop techniques for studying the long-term behaviour of random processes on networks. A large part of the motivation comes from computer science, where one is interested in designing decentralised algorithms for large networked systems such as the Internet or P2P networks or blockchain systems. Decentralised mechanisms for disseminating information or achieving consensus are typically a basic building block of such algorithms. Randomness can help create mechanisms which are exceptionally simple as well as highly robust, both to random faults and to malicious agents. Other motivations for the material studied in this course come from ecology, social science and economics, where one is interested in collective decision-making in humans and other animals, and from infectious disease epidemiology. The course will develop probabilistic tools for analysing these random processes. These mathematical methods have considerable elegance of their own.
 </div>
 <br>
