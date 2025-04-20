@@ -31,8 +31,8 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
 
 <div class="table-responsive">
 
-| Time               | Topic                                                                 | Speaker                           |
-|--------------------|-----------------------------------------------------------------------|-----------------------------------|
+| Time                  | Topic                                                                 | Speaker                           |
+|-----------------------|-----------------------------------------------------------------------|-----------------------------------|
 | 9:00-9:30        | Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels                                                         | Prof. Chandra Murthy                                  |
 | 9:30-10:00   | Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling                                                         | Prof. Anurag Kumar                                   |
 | 10:00-10:30       | Network utility maximisation revisited: three issues and their resolution      | Prof. Rajesh Sundaresan |
