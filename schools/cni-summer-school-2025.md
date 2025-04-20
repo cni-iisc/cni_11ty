@@ -73,24 +73,6 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
     </ul>
   </li>
 
- <li><strong>Will accommodation be provided on the IISc campus to the participants?</strong>
-    <ul style="list-style-type: circle;">
-      <li>The participants can express their willingness for accommodation on the IISc campus in the registration form. However, it is subject to availability, and the corresponding information will be sent to the participants in due course of time. Also, note that the accommodation (if provided) will be on a chargeable basis.</li>
-    </ul>
-  </li>
-
- <li><strong>Do I need to bring my laptop for the summer school?</strong>
-    <ul style="list-style-type: circle;">
-      <li>Yes, you need to bring a laptop to attend the practical session.</li>
-    </ul>
-  </li>
-
- <li><strong>Do I need to pre-install some software for the lab sessions?</strong>
-    <ul style="list-style-type: circle;">
-      <li>No, you do not need to pre-install any software for the lab sessions. We will provide access to the online code execution environment.</li>
-    </ul>
-  </li>
-
  <li><strong>Will course participation certificates be provided to the participants?</strong>
     <ul style="list-style-type: circle;">
       <li>Yes, course participation certificates will be provided. Please try to attend all the sessions of the summer school.</li>
@@ -100,12 +82,6 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
  <li><strong>Will any TA/DA be provided?</strong>
     <ul style="list-style-type: circle;">
       <li>No, TA/DA will not be provided to the participants.</li>
-    </ul>
-  </li>
-
- <li><strong>Can I use other device (e.g., tablet) to run the codes online?</strong>
-    <ul style="list-style-type: circle;">
-      <li>Yes, you can use other device as well to run the codes as long as you are comfortable with it.</li>
     </ul>
   </li>
 
