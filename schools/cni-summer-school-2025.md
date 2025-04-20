@@ -97,10 +97,7 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
     </ul>
   </li>
 
- <li><strong>Guest House Pricing Details</strong>
-    <ul style="list-style-type: circle;">
-      <li><a href="{{ site.baseurl }}/assets/img/schools/cvh\_mgh\_rate.pdf" download>CVH and MGH Price</a> + GST will be applicable</li>
-      <li><a href="{{ site.baseurl }}/assets/img/schools/hoysala\_rate.pdf" download>Hoysala Price</a> + GST will be applicable</li>
+ 
     </ul>
   </li>
 </ul>
