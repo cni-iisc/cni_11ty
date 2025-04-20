@@ -31,18 +31,17 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
 
 <div class="table-responsive">
 
-| Time                  | Topic                                                                 | Speaker                           |
-|-----------------------|-----------------------------------------------------------------------|-----------------------------------|
-| 9:00-9:30        | Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels                                                         | Prof. Chandra Murthy                                  |
-| 9:30-10:00   | Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling                                                         | Prof. Anurag Kumar                                   |
-| 10:00-10:30       | Network utility maximisation revisited: three issues and their resolution      | Prof. Rajesh Sundaresan |
-| 10:30-11:00      |  TBD  |  Arthi S.     |
-| 11:00-11:30      |  Break                                                               |  |
-| 11:30-12:00        | Energy-aware compute scheduling in heterogeneous networks                    | Prof. Parimal Parag |
-| 12:00-12:30        | Heterogeneous 2.5D Architecture for LLM Inference at Edge                    | Prof. Sumit Kumar Mandal |
-| 12:30-13:00      | Caching in wireless networks                           | Ankita Koley                     |
-| 13:00-13:30                   | Lunch break                                                           |                                   |
-|                    | Conclusion                                                                 |                                   |
+| Time         | Topic                                                                                  | Speaker                |
+|--------------|------------------------------------------------------------------------------------------|------------------------|
+| 9:00–9:30    | Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels              | Prof. Chandra Murthy  |
+| 9:30–10:00   | Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling | Prof. Anurag Kumar     |
+| 10:00–10:30  | Network utility maximisation revisited: three issues and their resolution               | Prof. Rajesh Sundaresan |
+| 10:30–11:00  | TBD                                                                                     | Arthi S.               |
+| 11:00–11:30  | Break                                                                                   |                        |
+| 11:30–12:00  | Energy-aware compute scheduling in heterogeneous networks                               | Prof. Parimal Parag    |
+| 12:00–12:30  | Heterogeneous 2.5D Architecture for LLM Inference at Edge                               | Prof. Sumit Kumar Mandal |
+| 12:30–13:00  | Caching in wireless networks                                                            | Ankita Koley           |
+| 13:00–13:30  | Lunch break & Conclusion                                                                |                        |
 
 </div>
 <br>
