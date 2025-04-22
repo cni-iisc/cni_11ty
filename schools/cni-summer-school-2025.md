@@ -1,7 +1,7 @@
 ---
 layout: project_page
 title: CNI Summer School 2025
-img: /assets/img/schools/CNI%20Summer%20School%202025-1.png
+img: /assets/img/schools/CNI%20Summer-School_2025.png
 importance: 5
 ---
 <h3 align="center">Rumours, Consensus and Epidemics on Networks</h3>
@@ -9,7 +9,7 @@ importance: 5
 <hr>
 
 <center>
-  <img src="/assets/img/schools/CNI Summer School 2025.png" class="img-fluid">
+  <img src="/assets/img/schools/CNI Summer-School\_2025.png" class="img-fluid">
 </center>
 <br>
 
