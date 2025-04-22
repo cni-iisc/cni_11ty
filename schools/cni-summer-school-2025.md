@@ -21,7 +21,7 @@ importance: 5
 
 **Schedule**
 <ul style="list-style-type: disc;">
-  <li>14th July 2025 to 18th July 2024.</li>
+  <li>July  14-18, 2025 </li>
 
  <li>Auditorium 1, MP 20, ECE MP building, Indian Institute of Science campus
     <div class="container">
