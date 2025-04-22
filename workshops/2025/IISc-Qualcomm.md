@@ -8,8 +8,6 @@ category: ""
 showcase: true
 ---
 
-#### One-day workshop on Wireless Networks Research
-
 Qualcomm Workshop for one day focused on cutting-edge research on Wireless Networks. 
 
 #### 🗓️ Date
@@ -30,18 +28,6 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
 #### 🗒️ Schedule, topics, speakers, and learning objectives
 
 <div class="table-responsive">
-
-<!-- | Time         | Topic                                                                                  | Speaker                |
-|--------------|------------------------------------------------------------------------------------------|------------------------|
-| 9:00–9:30    | Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels              | Prof. Chandra Murthy  |
-| 9:30–10:00   | Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling | Prof. Anurag Kumar     |
-| 10:00–10:30  | Network utility maximisation revisited: three issues and their resolution               | Prof. Rajesh Sundaresan |
-| 10:30–11:00  | TBD                                                                                     | Arthi S.               |
-| 11:00–11:30  | Break                                                                                   |                        |
-| 11:30–12:00  | Energy-aware compute scheduling in heterogeneous networks                               | Prof. Parimal Parag    |
-| 12:00–12:30  | Heterogeneous 2.5D Architecture for LLM Inference at Edge                               | Prof. Sumit Kumar Mandal |
-| 12:30–13:00  | Caching in wireless networks                                                            | Ankita Koley           |
-| 13:00–13:30  | Lunch break & Conclusion                                                                |                        | -->
 
 <head>
       <meta charset="UTF-8">
@@ -96,12 +82,12 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
             </thead>
             <tbody> 
                   <tr>
-                        <td>9:00-9:30</td>
+                        <td>09:00-09:30</td>
                         <td>Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels</td>
                         <td>Prof. Chandra Murthy</td>
                   </tr>
                   <tr>
-                        <td>9:30-10:00</td>
+                        <td>09:30-10:00</td>
                         <td>Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling</td>
                         <td>Prof. Anurag Kumar</td>
                   </tr>
@@ -134,7 +120,12 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
                         <td>Prof. Chandramani Singh</td>
                   </tr>
                   <tr class="break">
-                        <td colspan="3"><strong>Lunch and Conclusion (13:00 - 14:00)</strong></td>
+                        <td colspan="3"><strong>Lunch (13:00 - 14:00)</strong></td>
+                  <tr>
+                        <td>13:00-13:30</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                  </tr>
             </tbody>
 </table>
 </div>
@@ -142,15 +133,13 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
 
 #### 👥➕  Registration
 
-<!-- ##### In-person participation -->
 
-<!-- **Thank you for an your interest in attending the workshop in-person. Due to logistical reasons, we have limited slots for in-person participation, which are taken up, and we are not taking any new registrations now.** -->
-<br>
+<!-- <br>
 **Among those who registered, unfortunately we've been able to confirm the registration for a few. 
 For those who we could not accommodate for in-person participation, we have sent online meeting details to join online.**
-<br>
+<br> -->
 
-#### Talk details
+<!-- #### Talk details
 
 1. **Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels**  
   TBD
@@ -173,7 +162,7 @@ For those who we could not accommodate for in-person participation, we have sent
 7. **Caching in wireless networks**  
   TBD
 
-<br>
+<br> -->
 
 #### ✉️  Contact
 
