@@ -108,7 +108,7 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
                   <tr>
                         <td class="nowrap">10:00-10:30</td>
                         <td>Network utility maximisation revisited: three issues and their resolution</td>
-                        <td class="nowrap">Prof. Rajesh Sundaresan</td>
+                        <td>Prof. Rajesh Sundaresan</td>
                   </tr>
                   <tr>
                         <td>10:30-11:00</td>
@@ -131,7 +131,7 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
                   <tr>
                         <td>12:30-13:00</td>
                         <td>Caching in wireless networks</td>
-                        <td class="nowrap">Prof. Chandramani Singh</td>
+                        <td>Prof. Chandramani Singh</td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Lunch and Conclusion (13:00 - 14:00)</strong></td>
