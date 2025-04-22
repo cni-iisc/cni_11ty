@@ -78,18 +78,6 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
     </ul>
   </li>
 
-  <li><strong>Do I need to bring my laptop for the summer school?</strong>
-    <ul style="list-style-type: circle;">
-      <li>Yes, you need to bring a laptop to attend the practical session.</li>
-    </ul>
-  </li>
-
-  <li><strong>Do I need to pre-install some software for the lab sessions?</strong>
-    <ul style="list-style-type: circle;">
-      <li>No, you do not need to pre-install any software for the lab sessions. We will provide access to the online code execution environment.</li>
-    </ul>
-  </li>
-
   <li><strong>Will course participation certificates be provided to the participants?</strong>
     <ul style="list-style-type: circle;">
       <li>Yes, course participation certificates will be provided. Please try to attend all the sessions of the summer school.</li>
