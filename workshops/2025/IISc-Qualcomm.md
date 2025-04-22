@@ -51,6 +51,35 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
                   color: #004080;
                   text-align: center;
             }
+      table {
+                  width: 80%;
+                  margin: 20px auto;
+                  border-collapse: collapse;
+                  font-family: Arial, sans-serif;
+            }
+            table {
+                  width: 80%;
+                  margin: 20px auto;
+                  border-collapse: collapse;
+                  font-family: Arial, sans-serif;
+            }
+            th {
+                  border: 1px solid #ccc;
+                  padding: 12px;
+                  text-align: center;
+            }
+            td {
+                  border: 1px solid #ccc;
+                  padding: 12px;
+                  text-align: left;
+            }
+            thead {
+                  background-color: #004080;
+                  color: white;
+            }
+            tbody tr:nth-child(even) {
+                  background-color: #f2f2f2;
+            }
       </style>
 </head>
 
@@ -94,12 +123,12 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
                   <tr>
                         <td>12:00–12:30</td>
                         <td>Heterogeneous 2.5D Architecture for LLM Inference at Edge</td>
-                        <td>Prof. Sumit Kumar Mandal</td>
+                        <td>Prof. Sumit K Mandal</td>
                   </tr>
                   <tr>
                         <td>12:30–13:00</td>
                         <td>Caching in wireless networks</td>
-                        <td>Ankita Koley</td>
+                        <td>Prof. Chandramani Singh</td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Lunch Break (13:00 - 14:00)</strong></td>
