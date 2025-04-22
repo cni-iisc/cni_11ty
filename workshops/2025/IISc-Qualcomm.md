@@ -2,7 +2,7 @@
 layout: project_page
 title: IISc-Qualcomm Workshop
 description: ""
-img: 
+img: /assets/img/workshops/IISc-Qualcomm.png
 importance: 5
 category: ""
 showcase: true
