@@ -131,7 +131,7 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
                         <td>Prof. Chandramani Singh</td>
                   </tr>
                   <tr class="break">
-                        <td colspan="3"><strong>Lunch Break (13:00 - 14:00)</strong></td>
+                        <td colspan="3"><strong>Lunch and Conclusion (13:00 - 14:00)</strong></td>
             </tbody>
 </table>
 </div>
