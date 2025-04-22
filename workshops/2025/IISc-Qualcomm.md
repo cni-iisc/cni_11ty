@@ -53,7 +53,7 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
             }
       table {
                   width: 80%;
-                  margin: 20px auto;
+                  margin: 20px;
                   border-collapse: collapse;
                   font-family: Arial, sans-serif;
             }
@@ -65,13 +65,13 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
             }
             th {
                   border: 1px solid #ccc;
-                  padding: 12px;
+                  padding: 10px;
                   text-align: center;
             }
             td {
                   border: 1px solid #ccc;
-                  padding: 12px;
-                  text-align: left;
+                  padding: 10px;
+                  text-align: center;
             }
             thead {
                   background-color: #004080;
@@ -79,6 +79,9 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
             }
             tbody tr:nth-child(even) {
                   background-color: #f2f2f2;
+            }
+            .nowrap {
+            white-space: nowrap ;
             }
       </style>
 </head>
@@ -93,22 +96,22 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
             </thead>
             <tbody> 
                   <tr>
-                        <td>9:00–9:30</td>
+                        <td>9:00-9:30</td>
                         <td>Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels</td>
                         <td>Prof. Chandra Murthy</td>
                   </tr>
                   <tr>
-                        <td>9:30–10:00</td>
+                        <td>9:30-10:00</td>
                         <td>Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling</td>
                         <td>Prof. Anurag Kumar</td>
                   </tr>
                   <tr>
-                        <td>10:00–10:30</td>
+                        <td class="nowrap">10:00-10:30</td>
                         <td>Network utility maximisation revisited: three issues and their resolution</td>
-                        <td>Prof. Rajesh Sundaresan</td>
+                        <td class="nowrap">Prof. Rajesh Sundaresan</td>
                   </tr>
                   <tr>
-                        <td>10:30–11:00</td>
+                        <td>10:30-11:00</td>
                         <td>TBA</td>
                         <td>Arthi S.</td>
                   </tr>
@@ -116,19 +119,19 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
                         <td colspan="3"><strong>Coffee Break (11:00–11:30)</strong></td>
                   </tr>
                   <tr>
-                        <td>11:30–12:00</td>
+                        <td>11:30-12:00</td>
                         <td>Energy-aware compute scheduling in heterogeneous networks</td>
                         <td>Prof. Parimal Parag</td>
                   </tr>
                   <tr>
-                        <td>12:00–12:30</td>
+                        <td>12:00-12:30</td>
                         <td>Heterogeneous 2.5D Architecture for LLM Inference at Edge</td>
                         <td>Prof. Sumit K Mandal</td>
                   </tr>
                   <tr>
-                        <td>12:30–13:00</td>
+                        <td>12:30-13:00</td>
                         <td>Caching in wireless networks</td>
-                        <td>Prof. Chandramani Singh</td>
+                        <td class="nowrap">Prof. Chandramani Singh</td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Lunch and Conclusion (13:00 - 14:00)</strong></td>
