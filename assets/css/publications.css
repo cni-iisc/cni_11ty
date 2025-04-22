@@ -53,13 +53,13 @@
   border: 2px solid var(--navbar-clr);
 }
 
-.button-style:hover {
+.button-style[aria-expanded="true"] {
   color: var(--navbar-clr);
   border: 2px solid var(--hyperlink-clr);
   background-color: var(--hyperlink-clr);
 }
 
-.button-style:active:hover {
+.button-style:active {
   color: var(--navbar-clr);
   border-color: var(--hyperlink-clr);
   background-color: var(--hyperlink-clr);
