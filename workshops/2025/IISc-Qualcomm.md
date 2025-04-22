@@ -7,6 +7,9 @@ importance: 5
 category: ""
 showcase: true
 ---
+<div class="container-fluid mb-2 mt-2">
+      <img class="img-fluid" src="/assets/img/workshops/IISc-Qualcomm.png" />
+</div>
 
 Qualcomm Workshop for one day focused on cutting-edge research on Wireless Networks. 
 
@@ -19,11 +22,6 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
 **In-person: Room MP-20, ECE Department, Indian Institute of Science Campus, Bengaluru**<br>
 ([📌 Map location](https://maps.app.goo.gl/NMirvDu29TTQhtiw7))
 
-<!-- **Online: link will be shared with registered participants.** -->
-
-<!-- #### 👪 Target audience
-
-The workshop is targeted at engineering/science students (pursuing graduate/undergraduate level educational program in India), keen on learning the application of wireless in diverse domains and building systems for Gen-AI. -->
 
 #### 🗒️ Schedule, topics, speakers, and learning objectives
 
@@ -133,36 +131,6 @@ The workshop is targeted at engineering/science students (pursuing graduate/unde
 
 #### 👥➕  Registration
 
-
-<!-- <br>
-**Among those who registered, unfortunately we've been able to confirm the registration for a few. 
-For those who we could not accommodate for in-person participation, we have sent online meeting details to join online.**
-<br> -->
-
-<!-- #### Talk details
-
-1. **Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels**  
-  TBD
-
-2. **Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling**  
-  TBD
-
-3. **Network utility maximisation revisited: three issues and their resolution**  
-  TBD
-
-4. **TBD**  
-  TBD
-
-5. **Energy-aware compute scheduling in heterogeneous networks**  
-  TBD
-
-6. **Heterogeneous 2.5D Architecture for LLM Inference at Edge**  
-  TBD
-
-7. **Caching in wireless networks**  
-  TBD
-
-<br> -->
 
 #### ✉️  Contact
 
