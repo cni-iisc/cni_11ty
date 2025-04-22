@@ -23,31 +23,31 @@ importance: 5
 <ul style="list-style-type: disc;">
   <li>14th July 2025 to 18th July 2024.</li>
 
- <li>Room no. MP-20, Electrical Communication Engineering (ECE) Department, Indian Institute of Science (IISc), Bangalore.
-    <div class="container">
-      <div class="ratio ratio-16x9" style="max-width: 400px;">
-        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15548.793557070037!2d77.5655018!3d13.0230349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17d9d00a4261%3A0xbd07f52c2cd8c898!2sMicroelectronics%20And%20Photonics%20Lab!5e0!3m2!1sen!2sin!4v1688637326173!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </li>
+ <li>Auditorium 1, MP 20, ECE MP building, Indian Institute of Science campus
+    <div class="container">
+      <div class="ratio ratio-16x9" style="max-width: 400px;">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15548.793557070037!2d77.5655018!3d13.0230349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17d9d00a4261%3A0xbd07f52c2cd8c898!2sMicroelectronics%20And%20Photonics%20Lab!5e0!3m2!1sen!2sin!4v1688637326173!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </li>
 
-<li>Each day following sessions will be conducted:
-    <ul style="list-style-type: circle;">
-      <li>09:30 AM to 10:30 AM (Theory Session)</li>
-      <li>10:45 AM to 11:45 AM (Theory Session)</li>
-      <li>12:15 PM to 1:15 PM (Practical Session)</li>
-    </ul>
-  </li>
+ <li>Each day following sessions will be conducted:
+    <ul style="list-style-type: circle;">
+      <li>09:30 AM to 10:30 AM (Theory Session)</li>
+      <li>10:45 AM to 11:45 AM (Theory Session)</li>
+      <li>12:15 PM to 1:15 PM (Practical Session)</li>
+    </ul>
+  </li>
 </ul>
 
 **Registration**
 
-<div style="text-align:center">
+<div style="text-align:left">
 
 A free registration is required for the participation.
 The seats available for the school are limited. Therefore, we request you to express your intent for the participation only if you are sure about attending all the sessions. The last date of registration is May 15, 2025.
  <br>
-<a style="text-align:center" href="https://docs.google.com/forms/d/e/1FAIpQLSdWLhh2TOD7FbAuCFv-UyFy1tLkNUj76TQhc8H82CXz-X4Rbw/viewform?usp=header" class="btn btn-primary btn-lg active hoverable" role="button" aria-pressed="true"> Register </a>
+<a style="text-align:center" href="https://docs.google.com/forms/d/e/1FAIpQLSdWLhh2TOD7FbAuCFv-UyFy1tLkNUj76TQhc8H82CXz-X4Rbw/viewform?usp=header" class="btn btn-primary btn-lg active hoverable" role="button" aria-pressed="true"> Register Here! </a>
 
 <!-- <h5 style="color:red">Registration is closed now.</h5>
 <a type="button" class="btn button-style" href="{{ site.baseurl }}/assets/summerschool24\_participants.html"><strong>Particiapants List</strong></a> -->
