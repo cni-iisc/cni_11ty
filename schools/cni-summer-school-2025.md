@@ -9,7 +9,7 @@ importance: 5
 <hr>
 
 <center>
-  <img src="/assets/img/schools/CNI Summer-School\_2025.png" class="img-fluid">
+  <img src="/assets/img/schools/CNI Summer-School_2025.png" class="img-fluid">
 </center>
 
 <be>
