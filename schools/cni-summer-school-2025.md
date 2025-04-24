@@ -93,7 +93,7 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
 
   <li><strong>Will accommodation be provided on the IISc campus to the participants?</strong>
     <ul style="list-style-type: circle;">
-      <li>The participants can express their willingness for accommodation on the IISc campus in the registration form. However, it is subject to availability, and the corresponding information will be sent to the participants in due course of time. Also, note that the accommodation (if provided) will be on a chargeable basis.</li>
+      <li>No, accommodation will not be provided to the participants.</li>
     </ul>
   </li>
 
@@ -102,11 +102,11 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
       <li>Yes, you can use other device as well to run the codes as long as you are comfortable with it.</li>
     </ul>
   </li> -->
-
+<!-- 
   <li><strong>Guest House Pricing Details</strong>
     <ul style="list-style-type: circle;">
       <li><a href="{{ site.baseurl }}/assets/img/schools/cvh\_mgh\_rate.pdf" download>CVH and MGH Price</a> + GST will be applicable</li>
       <li><a href="{{ site.baseurl }}/assets/img/schools/hoysala\_rate.pdf" download>Hoysala Price</a> + GST will be applicable</li>
     </ul>
-  </li>
+  </li> -->
 </ul>
