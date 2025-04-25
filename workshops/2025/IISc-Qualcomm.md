@@ -125,7 +125,7 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   <tr>
                         <td>12:20-12:40</td>
                         <td>TBD</td>
-                        <td>Parthi S</td>
+                        <td>Arthi S</td>
                   </tr>
                   <tr>
                         <td>12:40-13:10</td>
