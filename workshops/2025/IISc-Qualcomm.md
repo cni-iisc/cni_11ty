@@ -80,49 +80,84 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
             </thead>
             <tbody> 
                   <tr>
+                        <td>08:15-08:30</td>
+                        <td>Opening</td>
+                        <td></td>
+                  </tr>
+                  <tr>
+                        <td>08:30-09:00</td>
+                        <td>Next-generation cellular positioning and sensing techniques</td>
+                        <td>Shashidhar Vummintala</td>
+                  </tr>
+                  <tr>
                         <td>09:00-09:30</td>
-                        <td>Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels</td>
-                        <td>Prof. Chandra Murthy</td>
+                        <td>WLAN Densification for XR Use Cases</td>
+                        <td>Abhijit Bhattacharya</td>
                   </tr>
                   <tr>
                         <td>09:30-10:00</td>
                         <td>Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling</td>
                         <td>Prof. Anurag Kumar</td>
                   </tr>
+                  <tr class="break">
+                        <td colspan="3"><strong>Breakfast (10:00–10:30)</strong></td>
                   <tr>
-                        <td class="nowrap">10:00-10:30</td>
+                        <td class="nowrap">10:30-11:00</td>
                         <td>Network utility maximisation revisited: three issues and their resolution</td>
                         <td>Prof. Rajesh Sundaresan</td>
                   </tr>
                   <tr>
-                        <td>10:30-11:00</td>
-                        <td>TBA</td>
-                        <td>Arthi S.</td>
+                        <td>11:00-11:30</td>
+                        <td>Digital Twin & Wireless Applications</td>
+                        <td>Rajeev Kumar</td>
                   </tr>
                   <tr class="break">
-                        <td colspan="3"><strong>Coffee Break (11:00–11:30)</strong></td>
+                        <td colspan="3"><strong>Coffee Break (11:30-11:40)</strong></td>
                   </tr>
                   <tr>
-                        <td>11:30-12:00</td>
-                        <td>Energy-aware compute scheduling in heterogeneous networks</td>
-                        <td>Prof. Parimal Parag</td>
+                        <td>11:40-12:00</td>
+                        <td>Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels</td>
+                        <td>Prof. Chandra Murthy</td>
                   </tr>
                   <tr>
-                        <td>12:00-12:30</td>
+                        <td class="nowrap">12:00-12:20</td>
+                        <td>Caching in wireless networks (to be presented by his student)</td>
+                        <td>Prof. Chandramani K Singh</td>
+                  </tr>
+                  <tr>
+                        <td>12:20-12:40</td>
+                        <td>TBD</td>
+                        <td>Parthi S</td>
+                  </tr>
+                  <tr>
+                        <td>12:40-13:10</td>
+                        <td>Trends in AI Models, challenges & solutions</td>
+                        <td class="nowrap">Anuj Gupta and Nitin Jain</td>
+                  </tr>
+                  <tr class="break">
+                        <td colspan="3"><strong>Lunch (13:10 - 14:10)</strong></td>
+                  <tr>
+                        <td>14:10-14:30</td>
+                        <td>Qualcomm's AI Hub: On-Device AI at the Edge</td>
+                        <td>Kapil Soni</td>
+                  </tr>
+                  <tr>
+                        <td class="nowrap">14:30-14:50</td>
                         <td>Heterogeneous 2.5D Architecture for LLM Inference at Edge</td>
                         <td>Prof. Sumit K Mandal</td>
                   </tr>
                   <tr>
-                        <td>12:30-13:00</td>
-                        <td>Caching in wireless networks</td>
-                        <td>Prof. Chandramani Singh</td>
+                        <td>14:50-15:10</td>
+                        <td>RUBIK PI3 - Qualcomm AI platform for developers</td>
+                        <td>Arvind Krishna</td>
+                  </tr>
+                  <tr>
+                        <td >15:10-15:30</td>
+                        <td>Energy-aware compute scheduling in heterogeneous networks</td>
+                        <td>Parimal Parag</td>
                   </tr>
                   <tr class="break">
-                        <td colspan="3"><strong>Lunch (13:00 - 14:00)</strong></td>
-                  <tr>
-                        <td>13:00-13:30</td>
-                        <td>TBD</td>
-                        <td>TBD</td>
+                        <td colspan="3"><strong>Conclusion (15:30-15:35)</strong></td>
                   </tr>
             </tbody>
 </table>
