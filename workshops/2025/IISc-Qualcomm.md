@@ -152,7 +152,7 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   <tr>
                         <td >15:10-15:30</td>
                         <td>Energy-aware compute scheduling in heterogeneous networks</td>
-                        <td>Parimal Parag</td>
+                        <td>Prof. Parimal Parag</td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Conclusion (15:30-15:35)</strong></td>
