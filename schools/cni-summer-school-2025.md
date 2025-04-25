@@ -9,7 +9,7 @@ importance: 5
 <hr>
 
 <center>
-  <img src="/assets/img/schools/CNI Summer-School\_2025.png" class="img-fluid">
+  <img src="/assets/img/schools/CNI Summer-School_2025.png" class="img-fluid">
 </center>
 
 <be>
@@ -60,22 +60,16 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
 
 **FAQ's**
 
-<ul style="list-style-type: disc;">
+<!-- <ul style="list-style-type: disc;">
   <li><strong>Is the summer school being conducted in online mode?</strong>
     <ul style="list-style-type: circle;">
       <li>No, the summer school will not be conducted in online mode. It will be an in-person event to be held at the ECE department, IISc.</li>
     </ul>
-  </li>
+  </li> -->
 
   <li><strong>Is there a registration fee for the summer school?</strong>
     <ul style="list-style-type: circle;">
       <li>No, there is no registration fee for the summer school.</li>
-    </ul>
-  </li>
-
-  <li><strong>Will accommodation be provided on the IISc campus to the participants?</strong>
-    <ul style="list-style-type: circle;">
-      <li>The participants can express their willingness for accommodation on the IISc campus in the registration form. However, it is subject to availability, and the corresponding information will be sent to the participants in due course of time. Also, note that the accommodation (if provided) will be on a chargeable basis.</li>
     </ul>
   </li>
 
@@ -91,22 +85,28 @@ You can email us at **outreach.cni@iisc.ac.in** with the following subject: 
     </ul>
   </li>
 
-  <li><strong>Can I use other device (e.g., tablet) to run the codes online?</strong>
-    <ul style="list-style-type: circle;">
-      <li>Yes, you can use other device as well to run the codes as long as you are comfortable with it.</li>
-    </ul>
-  </li>
-
   <li><strong>Where can I have my meals during the summer school?</strong>
     <ul style="list-style-type: circle;">
       <li>According to the institute norms, the on-campus student dining mess does not allow outsiders to avail the corresponding facility. However, there are a few restaurants present on the campus where the participants can have their meals.</li>
     </ul>
   </li>
 
+  <li><strong>Will accommodation be provided on the IISc campus to the participants?</strong>
+    <ul style="list-style-type: circle;">
+      <li>No, accommodation will not be provided to the participants.</li>
+    </ul>
+  </li>
+
+  <!-- <li><strong>Can I use other device (e.g., tablet) to run the codes online?</strong>
+    <ul style="list-style-type: circle;">
+      <li>Yes, you can use other device as well to run the codes as long as you are comfortable with it.</li>
+    </ul>
+  </li> -->
+<!-- 
   <li><strong>Guest House Pricing Details</strong>
     <ul style="list-style-type: circle;">
       <li><a href="{{ site.baseurl }}/assets/img/schools/cvh\_mgh\_rate.pdf" download>CVH and MGH Price</a> + GST will be applicable</li>
       <li><a href="{{ site.baseurl }}/assets/img/schools/hoysala\_rate.pdf" download>Hoysala Price</a> + GST will be applicable</li>
     </ul>
-  </li>
+  </li> -->
 </ul>
