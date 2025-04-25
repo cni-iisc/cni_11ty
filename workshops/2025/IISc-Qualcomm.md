@@ -2,20 +2,20 @@
 layout: project_page
 title: IISc-Qualcomm Workshop
 description: ""
-img: assets/img/workshops/IISc-Qualcomm.png
+img: assets/img/workshops/IISc-Qualcomm-1.png
 importance: 5
 category: ""
 showcase: true
 ---
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/IISc-Qualcomm.png" />
+      <img class="img-fluid" src="/assets/img/workshops/IISc-Qualcomm-1.png" />
 </div>
 
 Qualcomm Workshop for one day focused on cutting-edge research on Wireless Networks. 
 
 #### 🗓️ Date
 
-**April 30, 2025 (9am-4:30pm)**
+**April 30, 2025 (8:30am-3:30pm)**
 
 #### 📍 Venue
 
@@ -124,7 +124,7 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   </tr>
                   <tr>
                         <td>12:20-12:40</td>
-                        <td>TBD</td>
+                        <td>Making Sense of the New Hybrid Access MAC in IEEE 802.11ax/be</td>
                         <td>Arthi S</td>
                   </tr>
                   <tr>
