@@ -79,10 +79,8 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   </tr>
             </thead>
             <tbody> 
-                  <tr>
-                        <td>08:15-08:30</td>
-                        <td>Opening</td>
-                        <td></td>
+                  <tr class="break">
+                        <td colspan="3"><strong>Opening (08:15-08:30)</strong></td>
                   </tr>
                   <tr>
                         <td>08:30-09:00</td>
