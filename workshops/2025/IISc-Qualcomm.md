@@ -15,7 +15,7 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
 
 #### 🗓️ Date
 
-**April 30, 2025 (8:30am-3:30pm)**
+**April 30, 2025 (08:30am-03:30pm)**
 
 #### 📍 Venue
 
@@ -172,11 +172,11 @@ Please email [outreach.cni@iisc.ac.in](mailto:outreach.cni@iisc.ac.in) with the 
 #### Sponsors
 
 <div class="container-fluid" align="center">
-      <img src="/assets/img/Logos/Cisco CSR Logos-TM-vert.png" alt="Cisco CSR logo" class="img-fluid" style="height: 300px; object-fit: contain;"/> 
+      <img src="/assets/img/workshops/ECE_CNI_Sponsored.png" alt="ece and cni logo" class="img-fluid" style="height: 300px; object-fit: contain;"/> 
 </div>
 
 #### Supported by
 
 <div class="container-fluid" align="center">
-<img class="img-fluid" src= "/assets/img/workshops/iisc-ece-logos.png"/>
+<img class="img-fluid" src= "/assets/img/workshops/IISc_RBCCPS_supported.png" alt="IISc_RBCCPS"/>
 </div>
