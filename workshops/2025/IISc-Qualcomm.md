@@ -117,11 +117,11 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                         <td>Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels</td>
                         <td>Prof. Chandra Murthy</td>
                   </tr>
-                  <!-- <tr>
+                  <tr>
                         <td class="nowrap">12:00-12:20</td>
-                        <td>Caching in wireless networks (to be presented by his student)</td>
+                        <td>Caching in wireless networks</td>
                         <td>Prof. Chandramani K Singh</td>
-                  </tr> -->
+                  </tr>
                   <tr>
                         <td>12:20-12:40</td>
                         <td>Making Sense of the New Hybrid Access MAC in IEEE 802.11ax/be</td>
