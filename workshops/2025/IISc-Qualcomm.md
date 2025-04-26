@@ -2,13 +2,13 @@
 layout: project_page
 title: IISc-Qualcomm Workshop
 description: ""
-img: assets/img/workshops/IISc-Qualcomm-1.png
+img: assets/img/workshops/IISc-Qualcomm.png
 importance: 5
 category: ""
 showcase: true
 ---
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/IISc-Qualcomm-1.png" />
+      <img class="img-fluid" src="/assets/img/workshops/IISc-Qualcomm.png" />
 </div>
 
 Qualcomm Workshop for one day focused on cutting-edge research on Wireless Networks. 
@@ -119,7 +119,7 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   </tr>
                   <tr>
                         <td class="nowrap">12:00-12:20</td>
-                        <td>Caching in wireless networks (to be presented by his student)</td>
+                        <td>Caching in wireless networks</td>
                         <td>Prof. Chandramani K Singh</td>
                   </tr>
                   <tr>
