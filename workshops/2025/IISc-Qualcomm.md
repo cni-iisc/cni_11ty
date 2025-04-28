@@ -8,7 +8,7 @@ category: ""
 showcase: true
 ---
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="assets/img/workshops/Qualcomm.png"/>
+      <img class="img-fluid" src="/../../assets/img/workshops/Qualcomm.png"/>
 </div>
 
 Qualcomm Workshop for one day focused on cutting-edge research on Wireless Networks. 
@@ -154,8 +154,13 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                         <td>Energy-aware compute scheduling in heterogeneous networks</td>
                         <td>Prof. Parimal Parag</td>
                   </tr>
+                   <tr>
+                        <td >15:30-15:45</td>
+                        <td>Evaluation of Dual Stack & Dual Connectivity</td>
+                        <td>Geetha Rajendran</td>
+                  </tr>
                   <tr class="break">
-                        <td colspan="3"><strong>Conclusion (15:30-15:35)</strong></td>
+                        <td colspan="3"><strong>Conclusion (15:45-15:50)</strong></td>
                   </tr>
             </tbody>
 </table>
