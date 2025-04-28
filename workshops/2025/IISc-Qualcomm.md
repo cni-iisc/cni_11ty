@@ -35,6 +35,10 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   color: #004080;
                   text-align: center;
             }
+      .break1 td {
+                  color:rgb(93, 8, 8);
+                  text-align: center;
+            }
       table {
                   width: 80%;
                   margin: 20px;
@@ -85,29 +89,29 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   <tr>
                         <td>08:30-09:00</td>
                         <td>Next-generation cellular positioning and sensing techniques</td>
-                        <td>Shashidhar Vummintala</td>
+                        <td>Shashidhar Vummintala<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr>
                         <td>09:00-09:30</td>
                         <td>WLAN Densification for XR Use Cases</td>
-                        <td>Abhijit Bhattacharya</td>
+                        <td>Abhijit Bhattacharya<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr>
                         <td>09:30-10:00</td>
                         <td>Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling</td>
-                        <td>Prof. Anurag Kumar</td>
+                        <td>Prof. Anurag Kumar<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Breakfast (10:00–10:30)</strong></td>
                   <tr>
                         <td class="nowrap">10:30-11:00</td>
                         <td>Network utility maximisation revisited: three issues and their resolution</td>
-                        <td>Prof. Rajesh Sundaresan</td>
+                        <td>Prof. Rajesh Sundaresan<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr>
                         <td>11:00-11:30</td>
                         <td>Digital Twin & Wireless Applications</td>
-                        <td>Rajeev Kumar</td>
+                        <td>Rajeev Kumar<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Coffee Break (11:30-11:40)</strong></td>
@@ -115,53 +119,56 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   <tr>
                         <td>11:40-12:00</td>
                         <td>Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels</td>
-                        <td>Prof. Chandra Murthy</td>
+                        <td>Prof. Chandra Murthy<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr>
                         <td class="nowrap">12:00-12:20</td>
                         <td>Caching in wireless networks</td>
-                        <td>Prof. Chandramani K Singh</td>
+                        <td class="nowrap">Prof. Chandramani K Singh<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr>
                         <td>12:20-12:40</td>
                         <td>Making Sense of the New Hybrid Access MAC in IEEE 802.11ax/be</td>
-                        <td>Arthi S</td>
+                        <td>Arthi S<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr>
                         <td>12:40-13:10</td>
                         <td>Trends in AI Models, challenges & solutions</td>
-                        <td class="nowrap">Anuj Gupta and Nitin Jain</td>
+                        <td class="nowrap">Anuj Gupta<sup style="color: brown">&#8224</sup> and Nitin Jain<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Lunch (13:10 - 14:10)</strong></td>
                   <tr>
                         <td>14:10-14:30</td>
                         <td>Qualcomm's AI Hub: On-Device AI at the Edge</td>
-                        <td>Kapil Soni</td>
+                        <td>Kapil Soni<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr>
                         <td class="nowrap">14:30-14:50</td>
                         <td>Heterogeneous 2.5D Architecture for LLM Inference at Edge</td>
-                        <td>Prof. Sumit K Mandal</td>
+                        <td>Prof. Sumit K Mandal<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr>
                         <td>14:50-15:10</td>
                         <td>RUBIK PI3 - Qualcomm AI platform for developers</td>
-                        <td>Arvind Krishna</td>
+                        <td>Arvind Krishna<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr>
                         <td >15:10-15:30</td>
                         <td>Energy-aware compute scheduling in heterogeneous networks</td>
-                        <td>Prof. Parimal Parag</td>
+                        <td>Prof. Parimal Parag<sup style="color: green">&#42</sup></td>
                   </tr>
                    <tr>
                         <td >15:30-15:45</td>
                         <td>Evaluation of Dual Stack & Dual Connectivity</td>
-                        <td>Geetha Rajendran</td>
+                        <td>Geetha Rajendran<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Conclusion (15:45-15:50)</strong></td>
-                  </tr>
+                  </tr> 
+               <tr class="break1"> 
+                  <td colspan="3"><strong><sup style="color: brown">&#8224</sup>: Qualcomm, <sup style="color: green">&#42</sup>: IISc</strong></td> 
+               </tr> 
             </tbody>
 </table>
 </div>
