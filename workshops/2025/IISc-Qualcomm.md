@@ -2,13 +2,13 @@
 layout: project_page
 title: IISc-Qualcomm Workshop
 description: ""
-img: assets/img/workshops/IISc-Qualcomm.png
+img: ../../assets/img/workshops/Qualcomm.png
 importance: 5
 category: ""
 showcase: true
 ---
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/IISc-Qualcomm.png" />
+      <img class="img-fluid" src="../../assets/img/workshops/Qualcomm.png"/>
 </div>
 
 Qualcomm Workshop for one day focused on cutting-edge research on Wireless Networks. 
