@@ -132,14 +132,14 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                         <td>Arthi S<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr> 
-                        <td >12:40-13:10</td>
+                        <td >12:40-13:00</td>
                         <td>Evaluation of Dual Stack & Dual Connectivity</td>
                         <td>Geetha Rajendran<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Lunch (13:10 - 14:10)</strong></td>
                   <tr>
-                        <td>14:10-14:30</td>
+                        <td>14:00-14:30</td>
                         <td>Trends in AI Models, challenges & solutions</td>
                         <td class="nowrap">Anuj Gupta<sup style="color: brown">&#8224</sup> and Nitin Jain<sup style="color: brown">&#8224</sup></td>
                   </tr>
@@ -155,7 +155,7 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                   </tr>
                   <tr>
                         <td >15:10-15:30</td>
-                        <td>Energy-aware compute scheduling in heterogeneous networks</td>
+                        <td>Energy aware compute scheduling in heterogeneous networks</td>
                         <td>Prof. Parimal Parag<sup style="color: green">&#42</sup></td>
                   </tr>
                   <tr>
