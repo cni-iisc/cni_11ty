@@ -131,37 +131,37 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                         <td>Making Sense of the New Hybrid Access MAC in IEEE 802.11ax/be</td>
                         <td>Arthi S<sup style="color: green">&#42</sup></td>
                   </tr>
-                  <tr>
-                        <td>12:40-13:10</td>
-                        <td>Trends in AI Models, challenges & solutions</td>
-                        <td class="nowrap">Anuj Gupta<sup style="color: brown">&#8224</sup> and Nitin Jain<sup style="color: brown">&#8224</sup></td>
+                  <tr> 
+                        <td >12:40-13:10</td>
+                        <td>Evaluation of Dual Stack & Dual Connectivity</td>
+                        <td>Geetha Rajendran<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Lunch (13:10 - 14:10)</strong></td>
                   <tr>
                         <td>14:10-14:30</td>
+                        <td>Trends in AI Models, challenges & solutions</td>
+                        <td class="nowrap">Anuj Gupta<sup style="color: brown">&#8224</sup> and Nitin Jain<sup style="color: brown">&#8224</sup></td>
+                  </tr>
+                  <tr>
+                        <td>14:30-14:50</td>
                         <td>Qualcomm's AI Hub: On-Device AI at the Edge</td>
                         <td>Kapil Soni<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr>
-                        <td class="nowrap">14:30-14:50</td>
+                        <td class="nowrap">14:50-15:10</td>
                         <td>Heterogeneous 2.5D Architecture for LLM Inference at Edge</td>
                         <td>Prof. Sumit K Mandal<sup style="color: green">&#42</sup></td>
-                  </tr>
-                  <tr>
-                        <td>14:50-15:10</td>
-                        <td>RUBIK PI3 - Qualcomm AI platform for developers</td>
-                        <td>Arvind Krishna<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr>
                         <td >15:10-15:30</td>
                         <td>Energy-aware compute scheduling in heterogeneous networks</td>
                         <td>Prof. Parimal Parag<sup style="color: green">&#42</sup></td>
                   </tr>
-                   <tr>
-                        <td >15:30-15:45</td>
-                        <td>Evaluation of Dual Stack & Dual Connectivity</td>
-                        <td>Geetha Rajendran<sup style="color: brown">&#8224</sup></td>
+                  <tr>
+                        <td>15:30-15:45</td>
+                        <td>RUBIK PI3 - Qualcomm AI platform for developers</td>
+                        <td>Arvind Krishna<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr class="break">
                         <td colspan="3"><strong>Conclusion (15:45-15:50)</strong></td>
@@ -190,5 +190,5 @@ Please email [outreach.cni@iisc.ac.in](mailto:outreach.cni@iisc.ac.in) with the 
 #### Supported by
 
 <div class="container-fluid" align="center">
-<img class="img-fluid" src= "/assets/img/workshops/IISc_RBCCPS_supported.png" alt="IISc_RBCCPS"/>
+<img class="img-fluid" src= "/assets/img/workshops/IISc-RBCCPS.png" alt="IISc-RBCCPS"/>
 </div>
