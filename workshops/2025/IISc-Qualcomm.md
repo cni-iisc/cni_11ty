@@ -137,7 +137,7 @@ Qualcomm Workshop for one day focused on cutting-edge research on Wireless Netwo
                         <td>Geetha Rajendran<sup style="color: brown">&#8224</sup></td>
                   </tr>
                   <tr class="break">
-                        <td colspan="3"><strong>Lunch (13:10 - 14:10)</strong></td>
+                        <td colspan="3"><strong>Lunch (13:00 - 14:00)</strong></td>
                   <tr>
                         <td>14:00-14:30</td>
                         <td>Trends in AI Models, challenges & solutions</td>
