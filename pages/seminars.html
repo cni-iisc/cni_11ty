@@ -116,6 +116,11 @@ document.addEventListener("DOMContentLoaded", function() {
           <a href="{{ seminar.data.zoom_link }}" target="_blank" class="btn button-style btn-lg" role="button"
             aria-pressed="true">Join on Zoom</a>
           {% endif %}
+          {% if seminar.data.online_link %}
+          <a href="{{ seminar.data.zoom_link }}" target="_blank" class="btn button-style btn-lg" role="button"
+            aria-pressed="true">Join online</a>
+          {% endif %}
+
           {% if seminar.data.recorded_video %}
           <a href="https://www.youtube.com/watch?v={{ seminar.data.recorded_video }}" target="_blank"
             style="color: #ec3c3c;" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#FF4D4D';">
