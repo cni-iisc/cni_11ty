@@ -63,6 +63,12 @@ module.exports = function (eleventyConfig) {
       "./schools/*.html",
     ]);
   });
+  eleventyConfig.on("beforeBuild", () => {
+    const outputDir = "docs";
+    if (fs.existsSync(outputDir)) {
+      fs.rmSync(outputDir, { recursive: true, force: true });
+    }
+  });
   eleventyConfig.addCollection("hackathons", function (collectionApi) {
     return collectionApi.getFilteredByGlob([
       "./hackathons/*.md",
@@ -203,3 +209,4 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["html", "njk", "md"],
   };
 };
+
