@@ -1,6 +1,7 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
+const fs = require("fs"); // Import the fs module
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
