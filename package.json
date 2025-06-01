@@ -23,6 +23,7 @@
     "eleventy-plugin-redirects": "^1.0.0",
     "fs": "^0.0.1-security",
     "html-minifier": "^4.0.0",
+    "ical": "^0.8.0",
     "luxon": "^3.5.0",
     "mathjax": "^3.2.2"
   },
