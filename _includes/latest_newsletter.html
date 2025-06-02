@@ -1,5 +1,6 @@
 ---
 layout: base.html
+this_year: 2025
 ---
 <script>
    let dropdowns = document.querySelectorAll('.dropdown-toggle')
@@ -19,14 +20,18 @@ layout: base.html
 </style>
 
 
-<h2 class="text-center my-4">CNI Monthly Newsletter</h2>
+<h2 class="text-center mt-3">CNI Monthly Newsletter</h2>
 
-<div class="container" style="max-width:850px;">
+<div class="text-center mt-1">
+   Issue <span><b style="font-size: 20px;">{{ collections.newsletters[0].data.title | replace("Newsletter ", "") }}</b></span> 
+</div>
+
+<!-- <div class="container" style="max-width:850px;">
    <div class="dropdown text-center">
    <b style="font-size: 20px;">Issue</b> 
      <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <span id="selectedYear">{{ collections.newsletters[0].data.title | replace("Newsletter ", "") }}</span> <!-- Latest year by default -->
-     </button>
+      <span id="selectedYear">{{ collections.newsletters[0].data.title | replace("Newsletter ", "") }}</span> <!- Latest year by default -->
+     <!-- </button>
      <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
       {% set newsletters = collections.newsletters | sort('date') %}
       {% for newsletter in newsletters %}
@@ -34,10 +39,10 @@ layout: base.html
        {% endfor %}
      </ul>
    </div>
-</div>
+</div> -->
 
 <!-- Newsletter Content -->
-<div class="container-fluid text-center my-2 newsletter-container" style="max-width:900px;">
+<div class="container text-center my-2 newsletter-container" style="max-width:900px;">
    {{ collections.newsletters[0].content | safe }}
 </div>
 
@@ -47,6 +52,38 @@ layout: base.html
       <h6 style="margin: 0; padding: 0;">View Archive</h6>
    </a>
 </div> -->
+
+<div class="container my-2 text-center" style="max-width: 650px;">
+<h5>Newsletter Archive</h5>
+  <div class="row row-cols-1 row-cols-md-4 g-3">
+    {% set newsletters = collections.newsletters | sort('date') %}
+    {% for newsletter in newsletters %}
+    {% if not loop.first %}
+   {% if newsletter.data.date | date("yyyy") == this_year %}
+        <div class="col">
+          <a href="{{ newsletter.url }}" class="btn button-style" style="margin: 0; padding: 10px;">
+            {{ newsletter.data.title | replace("Newsletter ", "") }}
+          </a>
+        </div>
+      {% endif %}
+   {% endif %}
+    {% endfor %}
+  </div>
+
+<h6 class="my-2">Previous years</h6>
+   <div class="row row-cols-1 row-cols-md-4 g-3">
+         <div class="col">
+            <a href="/newsletter/2024/" class="btn button-style" style="margin: 0; padding: 10px;">
+               2024
+            </a>     
+         </div>
+         <div class="col">
+            <a href="/newsletter/2023/" class="btn button-style" style="margin: 0; padding: 10px;">
+               2023
+            </a>     
+</div>
+</div>
+</div>
 
 <div class="container my-2" style="max-width: 1000px;">
    <div id="mc_embed_shell">
@@ -93,3 +130,5 @@ layout: base.html
          type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
    </div>
 </div>
+
+

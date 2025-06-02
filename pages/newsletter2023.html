@@ -1,0 +1,24 @@
+---
+layout: base.html
+title: Newsletter
+permalink: "/newsletter/2023/"
+this_year: 2023
+---
+
+<div class="container my-2 text-center" style="max-width: 650px;">
+<h5>Newsletter Archive {{ this_year }}</h5>
+  <div class="row row-cols-1 row-cols-md-4 g-3">
+    {% set newsletters = collections.newsletters | sort('date') %}
+    {% for newsletter in newsletters %}
+    {% if not loop.first %}
+   {% if newsletter.data.date | date("yyyy") == this_year %}
+        <div class="col">
+          <a href="{{ newsletter.url }}" class="btn button-style" style="margin: 0; padding: 10px;">
+            {{ newsletter.data.title | replace("Newsletter ", "") }}
+          </a>
+        </div>
+      {% endif %}
+   {% endif %}
+    {% endfor %}
+  </div>
+</div>
