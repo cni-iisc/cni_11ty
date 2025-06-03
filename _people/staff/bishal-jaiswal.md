@@ -1,6 +1,6 @@
 ---
 title: Bishal Jaiswal
-position_at_CNI: Technical Associate
+position_at_CNI: Project Scientist
 linkedin: https://www.linkedin.com/in/bishal-jaiswal-022022111/
 importance: 11
 img: /assets/images/people/staff/1000072365.png
