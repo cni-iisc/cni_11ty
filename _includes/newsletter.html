@@ -24,7 +24,7 @@ layout: base.html
    </a>
 </div> -->
 <div class="container my-2 text-center" style="max-width: 650px;">
-<h5>Newsletter Archive</h5>
+<h4>Newsletters from {{ year }}</h4>
 {% set this_year = year %}
   <div class="row row-cols-1 row-cols-md-4 g-3">
     {% set newsletters = collections.newsletters | sort('date') %}

@@ -1,13 +1,23 @@
 ---
 layout: base.html
-title: Newsletter
+title: Newsletters 2023
 permalink: "/newsletter/2023/"
 this_year: 2023
 ---
 
 <div class="container my-2 text-center" style="max-width: 650px;">
-<h5>Newsletter Archive {{ this_year }}</h5>
-  <div class="row row-cols-1 row-cols-md-4 g-3">
+<h4>Newsletter archive</h4>
+<div class="dropdown text-center">
+    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px; width:100px; height:40px;">
+      <span id="selectedYear">{{ this_year }}</span> <!-- Latest year by default -->
+    </button>
+    <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
+      <li><a class="dropdown-item" href="/newsletter/latest/" data-year="2023">2025</a></li>
+      <li><a class="dropdown-item" href="/newsletter/2024/" data-year="2022">2024</a></li>
+      <li><a class="dropdown-item" href="/newsletter/2023/" data-year="2021">2023</a></li>
+    </ul>
+  </div>
+  <div class="my-2 row row-cols-1 row-cols-md-4 g-3">
     {% set newsletters = collections.newsletters | sort('date') %}
     {% for newsletter in newsletters %}
     {% if not loop.first %}
@@ -21,4 +31,5 @@ this_year: 2023
    {% endif %}
     {% endfor %}
   </div>
+  <br>
 </div>
