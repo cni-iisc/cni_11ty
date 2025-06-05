@@ -1,0 +1,283 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:title" content="Centre for Networked Intelligence"><meta property="og:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta property="og:url" content=""><meta property="og:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta property="og:image:alt" content="CNI logo"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Centre for Networked Intelligence"><meta name="twitter:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta name="twitter:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta name="twitter:image:alt" content="CNI logo"><link rel="icon" href="/assets/images/tab_symbol.ico" type="image/x-icon"><link rel="icon" href="/assets/images/tab_symbol.png" type="image/png"><title>IISc-Qualcomm Workshop | CNI</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet"><script type="text/javascript">MathJax = {
+        tex: { inlineMath: [['$','$'], ['\\(','\\)']] },
+        svg: { fontCache: 'global' }
+      };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><link rel="stylesheet" href="/assets/css/navbar_style.css"><link rel="stylesheet" href="/assets/css/footer.css"><style>/* Light theme */
+      .light-theme {
+        background-color: #F7F7F7;
+        color: #212121;
+      }
+      .light-theme td {
+        color: #212121;
+      }
+      
+      /* Dark theme */
+      .dark-theme {
+        background-color: #212121;
+        color: #ffffff;
+      }
+      .dark-theme td {
+        color: white;
+      }
+
+      /* Theme toggle button styles */
+      .theme-toggle {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+      }</style><script>// Theme toggle functionality
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          document.body.classList.remove('light-theme');
+          document.body.classList.add('dark-theme');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.body.classList.remove('dark-theme');
+          document.body.classList.add('light-theme');
+          localStorage.setItem('theme', 'light');
+        }
+      }
+
+      // Initialize theme on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get saved theme or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+        
+        // Update icon based on current theme
+        updateThemeIcon(savedTheme);
+      });
+
+      // Toggle between light and dark themes
+      function toggleTheme() {
+        const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+        updateThemeIcon(newTheme);
+      }
+
+      // Update icon based on current theme
+      function updateThemeIcon(theme) {
+        const themeIcon = document.getElementById('theme-icon');
+        // themeIcon hover color should be hyperlink color
+        themeIcon.style.color = 'white';
+        themeIcon.addEventListener('mouseover', function() {
+          themeIcon.style.color = 'var(--hyperlink-clr)';
+        });
+        themeIcon.addEventListener('mouseout', function() {
+          themeIcon.style.color = 'white';
+        });
+        // change icon based on theme 
+        if (themeIcon) {
+          if (theme === 'dark') {
+            themeIcon.classList.remove('bi-sun');
+            themeIcon.classList.add('bi-moon');
+          } else {
+            themeIcon.classList.remove('bi-moon');
+            themeIcon.classList.add('bi-sun');
+          }
+        }
+      }</script></head><body><nav class="navbar navbar-expand-lg custom-navbar"><div class="container-fluid"><a class="navbar-brand" href="/"><img src="/assets/images/cni_logo.png" alt="CNI logo" style="height: 60px;"> </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarText"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">People</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/faculty/">Faculty</a></li><li><a class="dropdown-item" href="/staff/">Staff</a></li><li><a class="dropdown-item" href="/phd-fellows/">PhD Fellows</a></li><li><a class="dropdown-item" href="/mtech-fellows/">MTech Fellows</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Research</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/projects/">Projects</a></li><li><a class="dropdown-item" href="/publications/">Publications</a></li><li><a class="dropdown-item" href="/highlights/">Highlights</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Outreach</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/seminars/">Seminars</a></li><li><a class="dropdown-item" href="/newsletter/latest/">Newsletters</a></li><li><a class="dropdown-item" href="/courses/">Courses</a></li><li><a class="dropdown-item" href="/schools/">Summer School</a></li><li><a class="dropdown-item" href="/news/">CNI in News</a></li><li><a class="dropdown-item" href="/hackathons">Hackathons</a></li><li><a class="dropdown-item" href="/workshops/">Workshops</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/opportunities/">Opportunities</a></li><li class="nav-item"><button class="theme-toggle" onclick="toggleTheme()"><i id="theme-icon" class="bi bi-sun"></i></button></li></ul></div></div></nav><h2 class="container-flui text-center mt-2">IISc-Qualcomm Workshop</h2><div class="container-fluid my-5" style="max-width: 800px;"><article class="post"><pre><code class="language-html">&lt;div class=&quot;container-fluid mb-2 mt-2&quot;&gt;
+      &lt;img class=&quot;img-fluid&quot; src=&quot;/assets/img/workshops/IISc-Qualcomm-Final.png&quot;/&gt;
+&lt;/div&gt;
+
+
+Qualcomm Workshop for one day focused on cutting-edge research on Wireless Networks. 
+
+
+#### 🗓️ Date
+
+
+**April 30, 2025 (08:30am-03:30pm)**
+
+
+#### 📍 Venue
+
+
+**In-person: Room MP-20, ECE Department, Indian Institute of Science Campus, Bengaluru**&lt;br&gt;
+([📌 Map location](https://maps.app.goo.gl/NMirvDu29TTQhtiw7))
+
+
+
+#### 🗒️ Schedule, topics, speakers, and learning objectives
+
+
+&lt;div class=&quot;table-responsive&quot;&gt;
+
+
+&lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;title&gt;Conference Schedule&lt;/title&gt;
+      &lt;style&gt;
+      .break td {
+                  color: #004080;
+                  text-align: center;
+            }
+      .break1 td {
+                  color:rgb(93, 8, 8);
+                  text-align: center;
+            }
+      table {
+                  width: 80%;
+                  margin: 20px;
+                  border-collapse: collapse;
+                  font-family: Arial, sans-serif;
+            }
+            table {
+                  width: 80%;
+                  margin: 20px auto;
+                  border-collapse: collapse;
+                  font-family: Arial, sans-serif;
+            }
+            th {
+                  border: 1px solid #ccc;
+                  padding: 10px;
+                  text-align: center;
+            }
+            td {
+                  border: 1px solid #ccc;
+                  padding: 10px;
+                  text-align: center;
+            }
+            thead {
+                  background-color: #004080;
+                  color: white;
+            }
+            tbody tr:nth-child(even) {
+                  background-color: #f2f2f2;
+            }
+            .nowrap {
+            white-space: nowrap ;
+            }
+      &lt;/style&gt;
+&lt;/head&gt;
+
+
+&lt;table&gt;
+            &lt;thead&gt;
+                  &lt;tr&gt;
+                        &lt;th&gt;Time&lt;/th&gt;
+                        &lt;th&gt;Topic&lt;/th&gt;
+                        &lt;th&gt;Speaker&lt;/th&gt;
+                  &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt; 
+                  &lt;tr class=&quot;break&quot;&gt;
+                        &lt;td colspan=&quot;3&quot;&gt;&lt;strong&gt;Opening (08:15-08:30)&lt;/strong&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;08:30-09:00&lt;/td&gt;
+                        &lt;td&gt;Next-generation cellular positioning and sensing techniques&lt;/td&gt;
+                        &lt;td&gt;Shashidhar Vummintala&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;09:00-09:30&lt;/td&gt;
+                        &lt;td&gt;WLAN Densification for XR Use Cases&lt;/td&gt;
+                        &lt;td&gt;Abhijit Bhattacharya&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;09:30-10:00&lt;/td&gt;
+                        &lt;td&gt;Time sensitive networking over Wi-Fi using overlay time synchronisation and scheduling&lt;/td&gt;
+                        &lt;td&gt;Prof. Anurag Kumar&lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class=&quot;break&quot;&gt;
+                        &lt;td colspan=&quot;3&quot;&gt;&lt;strong&gt;Breakfast (10:00–10:30)&lt;/strong&gt;&lt;/td&gt;
+                  &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;10:30-11:00&lt;/td&gt;
+                        &lt;td&gt;Network utility maximisation revisited: three issues and their resolution&lt;/td&gt;
+                        &lt;td&gt;Prof. Rajesh Sundaresan&lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;11:00-11:30&lt;/td&gt;
+                        &lt;td&gt;Digital Twin &amp; Wireless Applications&lt;/td&gt;
+                        &lt;td&gt;Rajeev Kumar&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class=&quot;break&quot;&gt;
+                        &lt;td colspan=&quot;3&quot;&gt;&lt;strong&gt;Coffee Break (11:30-11:40)&lt;/strong&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;11:40-12:00&lt;/td&gt;
+                        &lt;td&gt;Comparison of Advanced Modulation Waveforms in Delay-Scale Spread Channels&lt;/td&gt;
+                        &lt;td&gt;Prof. Chandra Murthy&lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;12:00-12:20&lt;/td&gt;
+                        &lt;td&gt;Caching in wireless networks&lt;/td&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;Prof. Chandramani K Singh&lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;12:20-12:40&lt;/td&gt;
+                        &lt;td&gt;Making Sense of the New Hybrid Access MAC in IEEE 802.11ax/be&lt;/td&gt;
+                        &lt;td&gt;Arthi S&lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt; 
+                        &lt;td &gt;12:40-13:00&lt;/td&gt;
+                        &lt;td&gt;Evaluation of Dual Stack &amp; Dual Connectivity&lt;/td&gt;
+                        &lt;td&gt;Geetha Rajendran&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class=&quot;break&quot;&gt;
+                        &lt;td colspan=&quot;3&quot;&gt;&lt;strong&gt;Lunch (13:00 - 14:00)&lt;/strong&gt;&lt;/td&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;14:00-14:30&lt;/td&gt;
+                        &lt;td&gt;Trends in AI Models, challenges &amp; solutions&lt;/td&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;Anuj Gupta&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt; and Nitin Jain&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;14:30-14:50&lt;/td&gt;
+                        &lt;td&gt;Qualcomm's AI Hub: On-Device AI at the Edge&lt;/td&gt;
+                        &lt;td&gt;Kapil Soni&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;14:50-15:10&lt;/td&gt;
+                        &lt;td&gt;Heterogeneous 2.5D Architecture for LLM Inference at Edge&lt;/td&gt;
+                        &lt;td&gt;Prof. Sumit K Mandal&lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td &gt;15:10-15:30&lt;/td&gt;
+                        &lt;td&gt;Energy aware compute scheduling in heterogeneous networks&lt;/td&gt;
+                        &lt;td&gt;Prof. Parimal Parag&lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;15:30-15:45&lt;/td&gt;
+                        &lt;td&gt;RUBIK PI3 - Qualcomm AI platform for developers&lt;/td&gt;
+                        &lt;td&gt;Arvind Krishna&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class=&quot;break&quot;&gt;
+                        &lt;td colspan=&quot;3&quot;&gt;&lt;strong&gt;Conclusion (15:45-15:50)&lt;/strong&gt;&lt;/td&gt;
+                  &lt;/tr&gt; 
+               &lt;tr class=&quot;break1&quot;&gt; 
+                  &lt;td colspan=&quot;3&quot;&gt;&lt;strong&gt;&lt;sup style=&quot;color: brown&quot;&gt;&amp;#8224&lt;/sup&gt;: Qualcomm, &lt;sup style=&quot;color: green&quot;&gt;&amp;#42&lt;/sup&gt;: IISc&lt;/strong&gt;&lt;/td&gt; 
+               &lt;/tr&gt; 
+            &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;br&gt;
+
+
+#### 👥➕  Registration
+
+
+
+#### ✉️  Contact
+
+
+Please email [outreach.cni@iisc.ac.in](mailto:outreach.cni@iisc.ac.in) with the subject &quot;IISc-Qualcomm&quot; for any queries.
+
+
+#### Sponsors
+
+
+&lt;div class=&quot;container-fluid&quot; align=&quot;center&quot;&gt;
+      &lt;img src=&quot;/assets/img/workshops/ECE_CNI_Sponsored.png&quot; alt=&quot;ece and cni logo&quot; class=&quot;img-fluid&quot; style=&quot;height: 300px; object-fit: contain;&quot;/&gt; 
+&lt;/div&gt;
+
+
+#### Supported by
+
+
+&lt;div class=&quot;container-fluid&quot; align=&quot;center&quot;&gt;
+&lt;img class=&quot;img-fluid&quot; src= &quot;/assets/img/workshops/IISc-RBCCPS.png&quot; alt=&quot;IISc-RBCCPS&quot;/&gt;
+&lt;/div&gt;
+</code></pre></article></div><footer class="site-footer"><div class="footer-container"><a href="mailto:contact.cni@iisc.ac.in" title="Email" target="_blank"><i class="fa-solid fa-envelope"></i> </a><a href="https://github.com/cni-iisc" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i> </a><a href="https://x.com/cni_iisc" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i> </a><a href="https://www.linkedin.com/company/cni-iisc" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i> </a><a href="https://www.youtube.com/@centrefornetworkedintellig5324" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i> </a><a href="https://www.instagram.com/cni_iisc/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a><p>&copy; 2025 Centre for Networked Intelligence. All rights reserved.</p><p>Last updated: June 5, 2025</p></div></footer></body></html>
