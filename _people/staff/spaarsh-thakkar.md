@@ -1,6 +1,6 @@
 ---
 title: Spaarsh Thakkar
-position_at_CNI: Summer Intern
+position_at_CNI: Summer Research Intern
 linkedin: https://www.linkedin.com/in/spaarsh-thakkar/
 importance: 9
 img: /assets/images/people/staff/Spaarsh Thakkar.jpg
