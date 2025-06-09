@@ -3,27 +3,14 @@ layout: base.html
 ---
 <style>
    .newsletter-container td {
-
       color: #0f0f0f !important;
    }
 </style>
 <h1 class="text-center my-4">CNI Monthly Newsletter</h1>
 
-<div class="container" style="max-width:850px;">
-   <div class="dropdown text-center">
-   <b style="font-size: 20px;">Issue</b> 
-     <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <span id="selectedYear">{{ title | replace("Newsletter ", "") }}</span> <!-- Latest year by default -->
-     </button>
-     <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
-      {% set newsletters = collections.newsletters | sort('date') %}
-      {% for newsletter in newsletters %}
-       <li><a class="dropdown-item" href="{{ newsletter.url }}" data-year="2023">{{ newsletter.data.title | replace("Newsletter ", "") }}</a></li>
-       {% endfor %}
-     </ul>
-   </div>
+<div class="container text-center" style="max-width:850px;">
+   Issue <span><b style="font-size: 20px;">{{ title | replace("Newsletter ", "") }}</b></span>
 </div>
-
 <!-- Newsletter Content -->
 <div class="container-fluid text-center my-2 newsletter-container" style="max-width:900px;">
    {{ content | safe }}
@@ -36,6 +23,46 @@ layout: base.html
       <h6 style="margin: 0; padding: 0;">View Archive</h6>
    </a>
 </div> -->
+<div class="container my-2 text-center" style="max-width: 650px;">
+<h4>Newsletters from {{ year }}</h4>
+{% set this_year = year %}
+  <div class="row row-cols-1 row-cols-md-4 g-3">
+    {% set newsletters = collections.newsletters | sort('date') %}
+    {% for newsletter in newsletters %}
+   {% if newsletter.data.date | date("yyyy") == this_year %}
+        <div class="col">
+          <a href="{{ newsletter.url }}" class="btn button-style" style="margin: 0; padding: 10px;">
+            {{ newsletter.data.title | replace("Newsletter ", "") }}
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+<h6 class="my-2">Other years</h6>
+   <div class="row row-cols-1 row-cols-md-4 g-3">
+<div class="col">
+            <a href="/newsletter/latest/" class="btn button-style" style="margin: 0; padding: 10px;">
+               Current year
+            </a>
+         </div>
+         {% if this_year != 2024 %}
+         <div class="col">
+            <a href="/newsletter/2024/" class="btn button-style" style="margin: 0; padding: 10px;">
+               2024
+            </a>     
+         </div>
+         {% endif %}
+         {% if this_year != 2023 %}
+         <div class="col">
+            <a href="/newsletter/2023/" class="btn button-style" style="margin: 0; padding: 10px;">
+               2023
+            </a>   
+         {% endif %}  
+</div>
+</div>
+</div>
+
 
 <div class="container my-2" style="max-width: 1000px;">
    <div id="mc_embed_shell">

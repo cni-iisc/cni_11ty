@@ -8,6 +8,17 @@ category: work
 ignore: false
 ---
 
+<div class="ratio ratio-16x9 rounded overflow-hidden my-2">
+  <iframe 
+    src="https://www.youtube.com/embed/videoseries?si=j1h8vOWWzyYJBvu7&amp;list=PLNN9TCnjABcYHR9XRiQitBCHJUeT_58QG" 
+    title="YouTube video player" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin"
+    class="border-0">
+  </iframe>
+</div>
+
 The course is offered by Sheela C S, CNI-Research Scholar pursuing Ph.D. under the supervision of Prof. Joy Kuri in the Network Research Lab, Department of Electronic Systems Engineering, Indian Institute of Science, Bangalore, India.
 
 This beginner-friendly course introduces and explores the MATLAB WLAN Toolbox of MathWorks. It covers the conceptual study and discussion of eight simulation experiments derived from her initial research work on IEEE 802.11ax WLANs.  
@@ -25,4 +36,5 @@ Each experiment includes a learning objective, an explanation of essential techn
 
 The course content and codes are available in CNI’s GitHub repository: [https://github.com/cni-iisc/wlan-toolbox](https://github.com/cni-iisc/wlan-toolbox).
 
-Video recordings for each experiment are uploaded under [this playlist](https://youtube.com/playlist?list=PLNN9TCnjABcYHR9XRiQitBCHJUeT_58QG&si=iQvBKUVCtirMGizj) on CNI’s YouTube channel.
+
+

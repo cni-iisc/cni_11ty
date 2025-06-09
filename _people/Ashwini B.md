@@ -2,7 +2,7 @@
 title: Ashwini B
 position_at_CNI: Secretarial Assistant
 img: /assets/images/people/staff/AshwiniB.png
-cap: 21
+cap: 1
 category: Staff
 past: true
 ---

@@ -1,10 +1,20 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
+const fs = require("fs"); // Import the fs module
+const path = require('path');
+const https = require('https');
+const ical = require('ical');
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
+
+  eleventyConfig.addFilter("formatDateTime", (date) => {
+    return DateTime.fromJSDate(new Date(date)).toFormat("dd MMM yyyy, h:mm a"); 
+    // e.g. 30 May 2025, 4:30 pm
+  });
+
 
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
@@ -62,6 +72,12 @@ module.exports = function (eleventyConfig) {
       "./schools/*.md",
       "./schools/*.html",
     ]);
+  });
+  eleventyConfig.on("beforeBuild", () => {
+    const outputDir = "docs";
+    if (fs.existsSync(outputDir)) {
+      fs.rmSync(outputDir, { recursive: true, force: true });
+    }
   });
   eleventyConfig.addCollection("hackathons", function (collectionApi) {
     return collectionApi.getFilteredByGlob([
@@ -190,6 +206,43 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  eleventyConfig.on('eleventy.before', async () => {
+    const icsUrl = 'https://outlook.office365.com/owa/calendar/cf7d500ee50e4c7b876fb1845efe821d@iisc.ac.in/22ed80c434a3478d9ba6316fbfed35137860062344497390190/calendar.ics'; // replace this
+    const outputPath = path.join(__dirname, '_data/events.json');
+
+    function fetchICS(url) {
+      return new Promise((resolve, reject) => {
+        https.get(url, (res) => {
+          let data = '';
+          res.on('data', chunk => data += chunk);
+          res.on('end', () => resolve(data));
+        }).on('error', err => reject(err));
+      });
+    }
+
+    try {
+      const data = await fetchICS(icsUrl);
+      const parsed = ical.parseICS(data);
+      const now = new Date();
+
+      const events = Object.values(parsed)
+        .filter(e => e.type === 'VEVENT' && new Date(e.start) >= now)
+        .sort((a, b) => new Date(a.start) - new Date(b.start))
+        .map(e => ({
+          summary: e.summary,
+          description: e.description,
+          location: e.location,
+          start: e.start,
+          end: e.end
+        }));
+
+      fs.writeFileSync(outputPath, JSON.stringify(events, null, 2));
+      console.log(`✅ Fetched and saved ${events.length} events to _data/events.json`);
+    } catch (err) {
+      console.error('❌ Failed to fetch .ics:', err);
+    }
+  });
+
   return {
     dir: {
       input: ".",
@@ -203,3 +256,4 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["html", "njk", "md"],
   };
 };
+

@@ -13,9 +13,9 @@ permalink: "/workshops/"
     <div class="banner-text">Projects</div>
 </div> -->
 <div class="container-fluid mt-2" align="center">
-    <h1>Workshops</h1>
+    <h2>Workshops</h2>
 </div>
-<div class="container-fluid mt-5" align="center">
+<div class="container-fluid mt-2" align="center">
     <div class="row">
         {% for workshop in workshops %}
         {% if workshop.data.ignore != true %}
@@ -24,12 +24,22 @@ permalink: "/workshops/"
                 <div class="card">
                     <img class="card-img-top" src="/{{ workshop.data.img }}" alt="{{ workshop.data.title }}">
                     <div class="card-body">
-                        <h5 class="card-text">{{ workshop.data.title }}</h5>
+                        <h6 class="card-text">{{ workshop.data.title }}</h6>
                     </div>
                 </div>
             </a>
         </div>
         {% endif %}
         {% endfor %}
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+            <a href="/cni-workshop-2021/">
+                <div class="card">
+                    <img class="card-img-top" src="/{{ workshop.data.img }}" alt="WiFi QoS: Evolution of Standards and Performance Modelling">
+                    <div class="card-body">
+                        <h6 class="card-text">WiFi QoS: Evolution of Standards and Performance Modelling</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </div>

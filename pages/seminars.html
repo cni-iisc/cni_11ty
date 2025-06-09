@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <link rel="stylesheet" href="/assets/css/seminar_cards.css">
 
 <div class="container" style="max-width:850px;">
-  <h2 class="mt-2 text-center">Network Seminar Series</h2>
+  <h2 class="mt-2 text-center">CNI Seminar Series</h2>
   <div class="dropdown text-center">
-    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:24px; width:150px; height:60px;">
       <span id="selectedYear">{{ this_year }}</span> <!-- Latest year by default -->
     </button>
     <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
@@ -116,6 +116,11 @@ document.addEventListener("DOMContentLoaded", function() {
           <a href="{{ seminar.data.zoom_link }}" target="_blank" class="btn button-style btn-lg" role="button"
             aria-pressed="true">Join on Zoom</a>
           {% endif %}
+          {% if seminar.data.online_link %}
+          <a href="{{ seminar.data.online_link }}" target="_blank" class="btn button-style btn-lg" role="button"
+            aria-pressed="true">Join online</a>
+          {% endif %}
+
           {% if seminar.data.recorded_video %}
           <a href="https://www.youtube.com/watch?v={{ seminar.data.recorded_video }}" target="_blank"
             style="color: #ec3c3c;" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#FF4D4D';">
@@ -141,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="g-ytsubscribe" data-channelid="UCxx4V_yoYI5AM1-qSegGsBQ" data-layout="full" data-count="hidden"></div>
     </div>
     <div class="col-md-4">
-      <a href="https://groups.google.com/g/cni-seminar-series" class="btn button-style btn-lg hoverable" role="button"
+      <a href="https://groups.google.com/g/cni-outreach" class="btn button-style btn-lg hoverable" role="button"
         aria-pressed="true">Join Google Group</a>
     </div>
   </div>
