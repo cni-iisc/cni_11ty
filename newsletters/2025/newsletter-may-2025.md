@@ -1,10 +1,10 @@
 ---
 layout: newsletter
-title: Newsletter May 2025
+title: May 2025
 date: 2025-06-01
 year: 2025
 ---
-<table id="bodyTable" style="background-color: #f4f4f4;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<table id="bodyTable" style="background-color: #f4f4f4;" border="0" cellspacing="0" cellpadding="0">
 
 <tbody>
 
