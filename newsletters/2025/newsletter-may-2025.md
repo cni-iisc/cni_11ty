@@ -10,7 +10,7 @@ year: 2025
 
 <tr>
 
-<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top"><!-- [if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="660" style="width:660px;"><tr><td><![endif]-->
+<td class="mceSectionBody" style="background-color: transparent;" align="center" valign="top"><!-- [if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="660"><tr><td><![endif]-->
 
 <table style="max-width: 660px;" border="0" width="100%" cellspacing="0" cellpadding="0">
 
