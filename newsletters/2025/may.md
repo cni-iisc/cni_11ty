@@ -231,7 +231,9 @@ year: 2025
 <tr>
 <td class="mceTextBlockContainer" style="padding: 12px 24px 12px 24px;">
 <div id="dataBlockId-262" class="mceText" style="width: 100%;" data-block-id="262">
-<h1 class="last-child"><span style="font-size: 24px;"><span style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">What’s cooking at CNI?</span></span></h1>
+<center>
+<h1 class="last-child"><span style="font-size: 24px;"><span style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">What’s cooking at CNI?  </span> </center>
+</span></h1>
 </div>
 </td>
 </tr>
