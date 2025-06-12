@@ -19,7 +19,7 @@ ignore: false
   </iframe>
 </div>
 
-The course is offered by Sheela C S, CNI-Research Scholar pursuing Ph.D. under the supervision of Prof. Joy Kuri in the Network Research Lab, Department of Electronic Systems Engineering, Indian Institute of Science, Bangalore, India.
+The course is offered by [Sheela C S](https://www.linkedin.com/in/sheela-c-s-67671742/), CNI-Research Scholar pursuing Ph.D. under the supervision of [Prof. Joy Kuri](https://faculty.dese.iisc.ac.in/kuri/) in the Network Research Lab, Department of Electronic Systems Engineering, Indian Institute of Science, Bangalore, India.
 
 This beginner-friendly course introduces and explores the MATLAB WLAN Toolbox of MathWorks. It covers the conceptual study and discussion of eight simulation experiments derived from her initial research work on IEEE 802.11ax WLANs.  
 
