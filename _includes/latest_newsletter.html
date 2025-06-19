@@ -12,6 +12,12 @@ this_year: 2025
 
 <h2 class="text-center mt-3">CNI Monthly Newsletter</h2>
 
+<div class="col text-center my-2">
+   <a href="/newsletter/2025/" class="btn button-style" style="margin: 0; padding: 10px;">
+      Newsletter archive
+   </a>
+</div>
+
 <div class="text-center mt-1">
    Issue <span><b style="font-size: 20px;">{{ collections.newsletters[0].data.title | replace("Newsletter ", "")
          }}</b></span>
@@ -44,7 +50,7 @@ this_year: 2025
    </a>
 </div> -->
 
-<div class="container my-2 text-center" style="max-width: 650px;">
+<!-- <div class="container my-2 text-center" style="max-width: 650px;">
    <h4>Previous Newsletters from {{ this_year }}</h4>
    <div class="row row-cols-1 row-cols-md-4 g-3">
       {% set newsletters = collections.newsletters | sort('date') %}
@@ -59,8 +65,8 @@ this_year: 2025
       {% endif %}
       {% endif %}
       {% endfor %}
-   </div>
-
+   </div> -->
+<!-- 
    <h5 class="my-2">Newsletters from previous years</h5>
    <div class="row row-cols-1 row-cols-md-4 g-3">
       <div class="col">
@@ -74,7 +80,7 @@ this_year: 2025
          </a>
       </div>
    </div>
-</div>
+</div> -->
 
 <div class="container my-2" style="max-width: 1000px;">
    <div id="mc_embed_shell">

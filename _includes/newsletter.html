@@ -8,6 +8,12 @@ layout: base.html
 </style>
 <h1 class="text-center my-4">CNI Monthly Newsletter</h1>
 
+<div class="col text-center my-2">
+  <a href="/newsletter/2025/" class="btn button-style" style="margin: 0; padding: 10px;">
+    Newsletter archive
+  </a>
+</div>
+
 <div class="container text-center" style="max-width:850px;">
   Issue <span><b style="font-size: 20px;">{{ title | replace("Newsletter ", "") }}</b></span>
 </div>
@@ -23,7 +29,7 @@ layout: base.html
       <h6 style="margin: 0; padding: 0;">View Archive</h6>
    </a>
 </div> -->
-<div class="container my-2 text-center" style="max-width: 650px;">
+<!-- <div class="container my-2 text-center" style="max-width: 650px;">
   <h4>Newsletters from {{ year }}</h4>
   {% set this_year = year %}
   <div class="row row-cols-1 row-cols-md-4 g-3">
@@ -61,7 +67,7 @@ layout: base.html
       {% endif %}
     </div>
   </div>
-</div>
+</div> -->
 
 
 <div class="container my-2" style="max-width: 1000px;">
