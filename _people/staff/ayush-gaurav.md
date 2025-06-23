@@ -3,7 +3,7 @@ title: Ayush Gaurav
 position_at_CNI: Intern
 linkedin: https://www.linkedin.com/in/ayush-gaurav-11530525a/
 importance: 14
-img: assets/images/people/staff/AyushGaurav (1).jpg
+img: assets/images/people/staff/AyushGaurav.JPG
 past: false
 cap: null
 category: Staff
