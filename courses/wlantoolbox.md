@@ -36,5 +36,5 @@ Each experiment includes a learning objective, an explanation of essential techn
 
 <p>The course content and codes are available in CNI’s GitHub repository:<a href="https://github.com/cni-iisc/wlan-toolbox">Here</a></p>
 
-<a href="https://www.youtube.com/playlist?list=PLNN9TCnjABcYHR9XRiQitBCHJUeT_58QG ">YouTube</a> 
+<p> The Course videos are available on <a href="https://www.youtube.com/playlist?list=PLNN9TCnjABcYHR9XRiQitBCHJUeT_58QG ">YouTube</a> </p>
 
