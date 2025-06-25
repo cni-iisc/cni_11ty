@@ -34,7 +34,7 @@ This beginner-friendly course introduces and explores the MATLAB WLAN Toolbox of
 
 Each experiment includes a learning objective, an explanation of essential technical concepts, a detailed walkthrough of the MATLAB code, and an analysis of the simulation results. This course aims to support students and researchers who are new to WLAN technology or the MATLAB WLAN Toolbox. It provides a smooth introduction, enabling learners to start using the WLAN Toolbox with ease.  
 
-<p>The course content and codes are available in CNI’s GitHub repository:<a href="https://github.com/cni-iisc/wlan-toolbox">Here</a></p>
+<p>The course content and codes are available in CNI’s <a href="https://github.com/cni-iisc/wlan-toolbox">GitHub</a> repository.</p>
 
-<p>The course videos are available on <a href="https://www.youtube.com/playlist?list=PLNN9TCnjABcYHR9XRiQitBCHJUeT_58QG ">YouTube</a> </p>
+<p>The course videos are available on CNI's <a href="https://www.youtube.com/playlist?list=PLNN9TCnjABcYHR9XRiQitBCHJUeT_58QG ">YouTube</a> channel.</p>
 
