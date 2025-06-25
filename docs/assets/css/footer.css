@@ -1,0 +1,28 @@
+.site-footer {
+background-color: var(--navbar-clr);
+padding: 5px;
+text-align: center;
+}
+
+.footer-container a {
+margin: 0 10px;
+text-decoration: none;
+color: #ffffff;
+font-size: 20px;
+}
+
+.footer-container a:hover {
+color: var(--hyperlink-clr);
+}
+
+.footer-container p {
+margin: 0;
+color: #ffffff;
+font-size: 15px;
+}
+
+
+
+
+
+
