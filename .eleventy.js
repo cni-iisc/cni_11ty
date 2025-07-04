@@ -5,6 +5,7 @@ const fs = require("fs"); // Import the fs module
 const path = require('path');
 const https = require('https');
 const ical = require('ical');
+const zlib = require('zlib');
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -212,10 +213,43 @@ module.exports = function (eleventyConfig) {
 
     function fetchICS(url) {
       return new Promise((resolve, reject) => {
-        https.get(url, (res) => {
-          let data = '';
-          res.on('data', chunk => data += chunk);
-          res.on('end', () => resolve(data));
+        const options = {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'text/calendar, */*',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1'
+          }
+        };
+        
+        https.get(url, options, (res) => {
+          let data = [];
+          
+          // Handle redirects
+          if (res.statusCode === 301 || res.statusCode === 302) {
+            return fetchICS(res.headers.location).then(resolve).catch(reject);
+          }
+          
+          res.on('data', chunk => data.push(chunk));
+          res.on('end', () => {
+            const buffer = Buffer.concat(data);
+            const encoding = res.headers['content-encoding'];
+            
+            if (encoding === 'gzip') {
+              zlib.gunzip(buffer, (err, decoded) => {
+                if (err) reject(err);
+                else resolve(decoded.toString());
+              });
+            } else if (encoding === 'deflate') {
+              zlib.inflate(buffer, (err, decoded) => {
+                if (err) reject(err);
+                else resolve(decoded.toString());
+              });
+            } else {
+              resolve(buffer.toString());
+            }
+          });
         }).on('error', err => reject(err));
       });
     }
