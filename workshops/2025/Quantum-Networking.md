@@ -36,7 +36,7 @@ thead {
 </head>
 
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/QuantumNetworking.png" />
+      <img class="img-fluid" src="/assets/img/workshops/Quantum_Networking.png" />
 </div>
 
 <p class="date_venue"><b>🗓️ Dates</b></p>
