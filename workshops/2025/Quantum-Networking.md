@@ -1,7 +1,7 @@
 ---
 layout: project_page
 title: Tutorial on Quantum Networking
-img: assets/img/workshops/QuantumNetworking.png
+img: assets/img/workshops/Quantum_Networking.png
 importance: 8
 ---
 
