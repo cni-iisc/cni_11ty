@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CNI Summer School 2025 concluded
+title: CNI Summer School 2025 Concluded
 teaser: Rumours, Consensus and Epidemics on Networks
 showcase: true
 img: assets/img/schools/CNI Summer School 2025 (1920 x 1080 px).png
@@ -8,7 +8,7 @@ date: 2025-07-18
 ---
 <table>
     <tr>
-        <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9421.JPG"  width="100%"></td>
+        <!-- <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9421.JPG"  width="70%"></td> -->
         <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9396.JPG"  width="100%"> </td>
         <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9378.JPG"  width="100%"></td>
     </tr>
@@ -20,10 +20,10 @@ CNI Summer School 2025 has concluded with over a 70+ participants from various p
 
 <table>
     <tr>
-        <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2023/IMG_6693.JPG"  width="100%"></td>
-        <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2023/IMG_6805.JPG"  width="100%"></td>
-        <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2023/IMG_6884.JPG"  width="100%"></td>
-        <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2023/IMG_6891.JPG"  width="100%"></td>
+        <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9320.JPG"  width="100%"></td>
+        <!-- <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9320.JPG"  width="100%"></td> -->
+        <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9451.JPG"  width="100%"></td>
+        <!-- <td> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/schools/2025/CNI-2025_IMG_9421.JPG"  width="100%"></td> -->
     </tr>
 </table>
 
