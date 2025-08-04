@@ -1,6 +1,6 @@
 ---
 layout: project_page
-title: Tutorial on Quantum Networking
+title: Workshop on Quantum Networking
 img: assets/img/workshops/Quantum_Networking.png
 importance: 8
 ---
@@ -47,7 +47,7 @@ thead {
 <p class="date_venue">🗒️ Schedule, topics, and learning objectives</p>
 
  A free registration is required for the participation.
-The seats available for the tutorial are limited. Therefore, we request you to express your intent for the participation only if you are sure about attending all the sessions. The last date of registration is August 05, 2025.
+The seats available for the workshop are limited. Therefore, we request you to express your intent for the participation only if you are sure about attending all the sessions. The last date of registration is August 05, 2025.
 <br>
 <a style="text-align:center" href="https://forms.office.com/r/qYftWUwCRU" class="btn btn-primary btn-lg active hoverable" role="button" aria-pressed="true"> Register Here! </a>
 
