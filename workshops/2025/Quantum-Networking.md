@@ -1,7 +1,7 @@
 ---
 layout: project_page
 title: Workshop on Quantum Networking
-img: assets/img/workshops/Quantum_Networking.png
+img: assets/img/workshops/Quantum_Networking-2025.png
 importance: 8
 ---
 
