@@ -1,7 +1,7 @@
 ---
 layout: project_page
 title: Workshop on Quantum Networking
-img: assets/img/workshops/Quantum_Networking-2025.png
+img: assets/img/workshops/Quantum Networking.png
 importance: 8
 ---
 
@@ -36,7 +36,7 @@ thead {
 </head>
 
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/Quantum_Networking-2025.png" />
+      <img class="img-fluid" src="/assets/img/workshops/Quantum Networking.png" />
 </div>
 
 <p class="date_venue"><b>🗓️ Dates</b></p>
