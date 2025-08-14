@@ -2,7 +2,7 @@
 layout: post
 title: CNI Summer School 2025 Concluded
 teaser: Rumours, Consensus and Epidemics on Networks
-showcase: true
+showcase: false
 img: assets/img/schools/CNI Summer School 2025 (1920 x 1080 px).png
 date: 2025-07-18
 ---
