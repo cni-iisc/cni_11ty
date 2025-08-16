@@ -6,7 +6,7 @@
 }
 
 .card{
-  height:500px;
+  height:470px;
   width: 230px;
   border-color: var(--navbar-clr);
   border-radius: 10px;
@@ -22,7 +22,7 @@
 }
 
 .card-body{
-  height: 240px;
+  height: 210px;
   background-color: var(--navbar-clr);
   color: #ffffff;
   border-bottom-right-radius: 10px;
