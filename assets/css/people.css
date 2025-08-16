@@ -6,25 +6,27 @@
 }
 
 .card{
-  height:420px;
+  height:500px;
   width: 230px;
   border-color: var(--navbar-clr);
-  border-radius: 7px;
+  border-radius: 10px;
   background-color: var(--navbar-clr);
 }
 
 .card-img-top {
-  height: 250px;
-  object-fit: fill;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card-body{
+  height: 240px;
   background-color: var(--navbar-clr);
   color: #ffffff;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .staff-card {
@@ -34,12 +36,9 @@
 .staff-card-body {
   background-color: var(--navbar-clr);
   color: #ffffff;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-
-
-
 
 .button-style {
   color: #ffffff;
@@ -67,8 +66,6 @@
   border-color: var(--hyperlink-clr);
   background-color: var(--hyperlink-clr);
 }
-
-
 
 /* Custom styling for the banner */
 .banner-container {
