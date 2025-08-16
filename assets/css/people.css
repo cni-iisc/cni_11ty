@@ -29,8 +29,12 @@
   border-bottom-left-radius: 10px;
 }
 
+.card-body a {
+    color: #ccccaa;
+}
+
 .staff-card {
-  height: 355px;
+  height: 400px;
 }
 
 .staff-card-body {
