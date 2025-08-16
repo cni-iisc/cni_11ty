@@ -1,12 +1,12 @@
 :root{
-  --navbar-clr: #26355D;
-  --hyperlink-clr: #FF8F00;
-  --hover-clr: #FFDB00;
-  --card-hover: #AF47D2;
+  --navbar-clr: #32485B;
+  --hyperlink-clr: #32BABF;
+  --hover-clr: #22A2A8;
+  --card-hover: #9947D2;
 }
 
 .navbar-brand:hover, .navbar-brand:active {
-  filter: invert(54%) sepia(94%) saturate(1913%) hue-rotate(1deg) brightness(104%) contrast(103%);
+  filter: invert(24%) sepia(94%) saturate(200%) hue-rotate(5deg) brightness(104%) contrast(103%);
 }
 
 /* When the dropdown menu is open (aria-expanded="true"), apply the hover color */
@@ -52,7 +52,8 @@
 
 /* Dropdown item hover */
 .custom-navbar .dropdown-item:hover {
-  color: var(--navbar-clr); /* Hover color for dropdown items */
+  /* color: var(--navbar-clr);  Hover color for dropdown items */
+  filter: hue-rotate(70deg) saturate(90%) brightness(200%);
 }
 
 /* Optional: change the background of dropdowns */
