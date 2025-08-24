@@ -1,7 +1,7 @@
 ---
 layout: newsletter
 title: Oct 2024
-date: 2025-07-27
+date: 2024-10-07
 year: 2024
 ---
 <!-- [if !gte mso 9]><!----><!--<![endif]-->
