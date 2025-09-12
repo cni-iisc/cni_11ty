@@ -3,7 +3,7 @@ title: Anusree Rajan
 position_at_CNI: Post Doctoral Fellow
 linkedin: https://www.linkedin.com/in/anusree-rajan-15612711a/
 importance: 4
-img: /assets/images/people/staff/anusree.jpg
+img: /assets/images/people/staff/anusree_rajan.jpg
 past: false
 cap: null
 category: Staff
