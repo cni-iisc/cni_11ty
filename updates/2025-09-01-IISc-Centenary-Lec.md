@@ -2,7 +2,8 @@
 layout: post
 title: IISc Centenary Lecture
 teaser: Life and Random Algorithms by Prof. Bruce Hajek
-showcase: true
+showcase: false
 img: assets/img/Prof_Bruce_Hajek.jpg
 date: 2025-09-01
 ---
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/Prof_Bruce_Hajek.jpg"  width="100%">
