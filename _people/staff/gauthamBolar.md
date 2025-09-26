@@ -4,13 +4,13 @@ position_at_CNI: Project Associate I
 linkedin: https://www.linkedin.com/in/gautham-bolar-6b76b4253/
 importance: 5
 img: /assets/images/people/staff/gautham.png
-past: false
+past: true
 cap: null
 category: Staff
-advisor: null
-email: null
-department: null
 description: null
+department: null
+email: null
+advisor: null
 layout: null
 redirect: null
 research_interests: null
