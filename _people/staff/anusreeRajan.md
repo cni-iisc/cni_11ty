@@ -4,13 +4,13 @@ position_at_CNI: Post Doctoral Fellow
 linkedin: https://www.linkedin.com/in/anusree-rajan-15612711a/
 importance: 4
 img: /assets/images/people/staff/anusree_rajan.jpg
-past: false
+past: true
 cap: null
 category: Staff
-advisor: Prof. Pavankumar Tallapragada
-email: null
-department: null
 description: null
+department: null
+email: null
+advisor: Prof. Pavankumar Tallapragada
 layout: null
 redirect: null
 research_interests: null
