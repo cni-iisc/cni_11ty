@@ -151,6 +151,22 @@ header {
       color: #333;
     }
 
+     .speaker-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 25px 0 15px;
+    }
+
+    .speaker img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
   </style>
 </head>
 <body>
@@ -339,7 +355,7 @@ This is a joint work with Krishna Gopal Benerjee.
   </div>
 
   <div class="schedule-item" style="cursor:default; background:#f0f0f0;">
-    <time>17:30 - 18:45</time> – Felicitation
+    <time>17:45 - 18:45</time> – Felicitation
   </div>
 </div>
 
@@ -428,13 +444,11 @@ This is a joint work with Krishna Gopal Benerjee.
     <time>12:10 - 12:40</time> – Talk 7: Sreeram Kannan (EigenLayer) (Online)
   </div>
 
-  <div class="schedule-item"
-       data-title=" Myna Vajha (IIT Hyderabad) and Nikhil Krishnan (IIT Palakkad)"
-       data-talktitle="title will go here."
-       data-abstract="Abstract for Talk 7 will go here."
-       data-speaker="TBD."
-       data-image="birenjith-nikhil-myna.jpg">
-    <time>12:40 - 13:10</time> – Myna Vajha (IIT Hyderabad) and Nikhil Krishnan (IIT Palakkad)
+  <div class="schedule-item" data-title2="Myna Vajha (IIT Hyderabad) and Nikhil Krishnan (IIT Palakkad)"
+    data-talktitle2="Title will go here." data-abstract2="Abstract for Talk 8 will go here."
+    data-speaker2="Myna Vajha received the bachelor’s degree from IIT Kharagpur, the master’s degree from the University of Southern California, and the Ph.D. degree from Indian Institute of Science, Bengaluru. She is currently an Assistant Professor with the Department of Electrical Engineering, Indian Institute of Technology Hyderabad. She held earlier positions with Ericsson, San Jose, CA, USA, and Qualcomm, Bengaluru. Her current research interests include wireless communications, coding theory, and information theory, with applications to distributed storage systems, low latency streaming, and privacy.|| M. Nikhil Krishnan received his B.Tech. in Electronics and Communication Engineering from the Amrita School of Engineering, Amritapuri, in 2011, and his M.E. and Ph.D. in Electrical Communication Engineering from the Indian Institute of Science, Bengaluru, in 2013 and 2019, respectively. He was a Postdoctoral Fellow at the University of Toronto from 2019 to 2021 and later served as an Assistant Professor at IIIT Bangalore. He is currently an Assistant Professor with the Mehta Family School of Data Science and Artificial Intelligence, IIT Palakkad. His research interests include coding for low-latency communication, distributed storage, and coded computation."
+    data-image2="/assets/img/workshops/CodeIT/Myna Vajha.jpeg||/assets/img/workshops/CodeIT/Nikhil_Krishnan_M.jpg">
+    <time>12:40 - 13:10</time> – Talk 8: Myna Vajha (IIT Hyderabad) and Nikhil Krishnan (IIT Palakkad)
   </div>
 
   <div class="schedule-item" style="cursor:default; background:#f0f0f0;">
@@ -471,6 +485,41 @@ This is a joint work with Krishna Gopal Benerjee.
     </div>
   </div>
 
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title2"></h3>
+      <p><strong>Title:</strong> <span id="modal-talktitle2"></span></p>
+      <p><strong>Abstract:</strong> <span id="modal-abstract2"></span></p>
+  
+      <!-- Speaker photos side by side -->
+      <div class="speaker-images">
+        <div class="speaker">
+          <img id="modal-image1" src="/assets/img/workshops/CodeIT/Myna Vajha.jpeg" alt="Speaker 1 Image">
+        </div>
+        <div class="speaker">
+          <img id="modal-image2" src="/assets/img/workshops/CodeIT/Nikhil_Krishnan_M.jpg" alt="Speaker 2 Image">
+        </div>
+      </div>
+  
+      <!-- Speaker bios vertical -->
+      <div class="speaker-bios">
+        <p><strong>Bio:</strong> <span id="modal-speaker1">Myna Vajha received the bachelor’s degree from IIT Kharagpur, the master’s degree from the University of Southern
+        California, and the Ph.D. degree from Indian Institute of Science, Bengaluru. She is currently an Assistant Professor
+        with the Department of Electrical Engineering, Indian Institute of Technology Hyderabad. She held earlier positions with
+        Ericsson, San Jose, CA, USA, and Qualcomm, Bengaluru. Her current research interests include wireless communications,
+        coding theory, and information theory, with applications to distributed storage systems, low latency streaming, and
+        privacy.</span></p>
+        <p><strong>Bio:</strong> <span id="modal-speaker2">M. Nikhil Krishnan received his B.Tech. in Electronics and Communication Engineering from the Amrita School of
+        Engineering, Amritapuri, in 2011, and his M.E. and Ph.D. in Electrical Communication Engineering from the Indian
+        Institute of Science, Bengaluru, in 2013 and 2019, respectively. He was a Postdoctoral Fellow at the University of
+        Toronto from 2019 to 2021 and later served as an Assistant Professor at IIIT Bangalore. He is currently an Assistant
+        Professor with the Mehta Family School of Data Science and Artificial Intelligence, IIT Palakkad. His research interests
+        include coding for low-latency communication, distributed storage, and coded computation.</span></p>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Tabs
     function openDay(evt, dayId) {
@@ -489,21 +538,7 @@ This is a joint work with Krishna Gopal Benerjee.
     const modalLink = document.getElementById("modal-link");
     const modaltalktitle = document.getElementById("modal-talktitle");
 
-
-    document.querySelectorAll('.schedule-item').forEach(item => {
-      // Only add click handler if it has data-title (i.e., it's a talk)
-    if (item.hasAttribute('data-title')) {
-    item.addEventListener('click', () => {
-      modalTitle.textContent = item.getAttribute('data-title');
-      modaltalktitle.textContent = item.getAttribute('data-talktitle');
-      modalAbstract.textContent = item.getAttribute('data-abstract');
-      modalSpeaker.textContent = item.getAttribute('data-speaker');
-      modalImage.src = item.getAttribute('data-image');
-      modalLink.href = item.getAttribute('data-link');
-      modal.style.display = "flex";
-    });
-  }
-});
+    
 
 
 
@@ -517,5 +552,46 @@ This is a joint work with Krishna Gopal Benerjee.
         modal.style.display = "none";
       }
     }
+
+
+    //for 2 speakers
+
+    const modal2 = document.getElementById("modal2");
+      const modalTitle2 = document.getElementById("modal-title2");
+      const modalAbstract2 = document.getElementById("modal-abstract2");
+      const modaltalktitle2 = document.getElementById("modal-talktitle2");
+
+      document.querySelectorAll('.schedule-item').forEach(item => {
+        if (item.hasAttribute('data-title2')) {
+          item.addEventListener('click', () => {
+            // set basic info
+            modalTitle2.textContent = item.getAttribute('data-title2');
+            modaltalktitle2.textContent = item.getAttribute('data-talktitle2');
+            modalAbstract2.textContent = item.getAttribute('data-abstract2');
+
+            // split image paths
+            const images = item.getAttribute('data-image2').split('||');
+            document.getElementById('modal-image1').src = images[0] || '';
+            document.getElementById('modal-image2').src = images[1] || '';
+
+            // bio — if you ever decide to add a second bio in data-speaker2 separated by ||
+            const speakers = item.getAttribute('data-speaker2').split('||');
+            document.getElementById('modal-speaker1').textContent = speakers[0] || '';
+            document.getElementById('modal-speaker2').textContent = speakers[1] || '';
+
+            modal2.style.display = "flex";
+          });
+        }
+      });
+
+      function closeModal() {
+        modal2.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      };
   </script>
 </body>
