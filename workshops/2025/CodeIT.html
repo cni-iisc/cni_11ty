@@ -325,17 +325,33 @@ This is a joint work with Krishna Gopal Benerjee.
     <time>15:30 - 16:00</time> – Break
   </div>
 
-  <div class="schedule-item"
-       data-title="Talk 10: Dileep Dharmappa and Sugandh Misra"
-       data-talktitle="Design of Interleaved Z4-Linear (IZ4) Sequences for Satellite Navigation Applications"
-       data-abstract="This talk presents a patented novel sequence design, developed jointly by IISc and ISRO under the guidance of Professor P. Vijay Kumar, based on the interleaving of Z4-linear sequences. The construction achieves near-Welch bound correlation for binary sequences, especially for lengths not typically addressed in standard coding approaches.  The talk will also discuss implementation aspects and optimization efforts done to ensure desirable features, such as odd correlation, which are not intrinsic to the sequence family by design but hold significant importance for satellite navigation.
+  <div class="schedule-item" 
+    data-title2="Talk 10: Dileep Dharmappa and Sugandh Misra, ISRO Bangalore"
+    data-talktitle2="Design of Interleaved Z4-Linear (IZ4) Sequences for Satellite Navigation Applications" 
+    data-abstract2="This talk presents a patented novel sequence design, developed jointly by IISc and ISRO under the guidance of Professor P. Vijay Kumar, based on the interleaving of Z4-linear sequences. The construction achieves near-Welch bound correlation for binary sequences, especially for lengths not typically addressed in standard coding approaches.  The talk will also discuss implementation aspects and optimization efforts done to ensure desirable features, such as odd correlation, which are not intrinsic to the sequence family by design but hold significant importance for satellite navigation.
 These sequences have been adopted in India’s own satellite-based navigation system built by ISRO, known as NavIC, and incorporated into the latest NavIC L1-band SPS signals transmitted from the operational NVS-01 and NVS-02 satellites.  NavIC-based positioning is already supported in all mainstream mobile devices, including those with Qualcomm chipsets and iPhone 17.
 The talk will also provide a forward-looking perspective on sequence design for Lunar PNT signals, aligned with emerging LunaNet standards, to support satellite-based navigation services on the moon and beyond."
-       data-speaker="Bio for Talk 10speaker will go here."
-       data-image="/assets/img/workshops/CodeIT/"
-       data-link="https://www.linkedin.com/in/sugandh-mishra-62709443/?originalSubdomain=in">
+    data-speaker2="Dr. Dileep Dharmappa is a Scientist/Engineer, Heading NavIC two-way ranging section at the ISRO Telemetry, Tracking and Command Network (ISTRAC), ISRO, Bengaluru. Since joining ISRO in 2011, he has contributed significantly to the establishment of the NavIC (Navigation with Indian Constellation) ground segment, including the nationwide one-way CDMA ranging stations (IRIMS) and two-way CDMA  ranging stations(IRCDR) supporting NavIC operations.
+His primary research area is spreading sequence design for satellite navigation systems, focusing on correlation performance and implementation efficiency. He is the co-designer of the Interleaved Z₄-Linear (IZ4) sequence family, a novel class of spreading codes characterized by excellent correlation  properties. The IZ4 sequences have been adopted by ISRO for the civilian L1 signal of NavIC and an Indian patent is granted. These sequences are successfully flown on 2 NavIC satellites.||Smt. Sugandh Mishra joined SAC, ISRO in the year 2009 as Scientist/Engineer ‘SC’, after completing Bachelor of Technology in Electronics &amp; Comm. engineering from U.P. Technical University. Since joining SAC/ISRO, she has contributed significantly in
+navigation signal design and simulation activity for ISRO’s Indian Regional Navigation
+Satellite System Program (IRNSS, operational name NavIC) Signal In Space (SIS) signals at L5, S, and L1 bands.
+As Project Manager, Onboard Encryption and PRN code generation for NavIC Payloads, she is the key member of design team that developed and delivered the indigenous and Novel Interleaved -Z4 linear PRN codes for NavIC L1 satellite signal.
+She is also core team member for NavIC and Pseudolite signal simulator developed at SAC. Currently she is working for development of Navigation Message Authentication(NMA) for NavIC SPS signals and PRN code design for Lunar PNT. Her research interest are in the field of PRN code design, satellite navigation, FPGA based designs and simulation of GNSS signals."
+    data-image2="/assets/img/workshops/CodeIT/Dileep_image.png || /assets/img/workshops/CodeIT/Sugandh_Mishra_Image1.jpg"
+    data-link2="#||https://www.linkedin.com/in/sugandh-mishra-62709443/?originalSubdomain=in">
+  
     <time>16:00 - 16:30</time> – Talk 10: Dileep Dharmappa and Sugandh Misra, ISRO Bangalore
   </div>
+
+  <!-- <div class="schedule-item"
+       data-title="Talk 10: Dileep Dharmappa and Sugandh Misra"
+       data-talktitle=""
+       data-abstract=""
+       data-speaker2="Bio for Talk 10speaker will go here."
+       
+       >
+    
+  </div> -->
 
   <div class="schedule-item"
        data-title="Talk 11: Robert Calderbank"
@@ -495,35 +511,36 @@ This is joint work with Vinayak Ramkumar and P. Vijay Kumar
   </div>
 
   <!-- Modal for two-speaker talk -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal2()">&times;</span>
-  
-      <!-- Speaker photos -->
-      <div class="speaker-images">
-        <div class="speaker">
-          <img id="modal-image1" src="" alt="Speaker 1 Image">
-        </div>
-        <div class="speaker">
-          <img id="modal-image2" src="" alt="Speaker 2 Image">
-        </div>
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal2()">&times;</span>
+
+    <!-- Speaker photos -->
+    <div class="speaker-images">
+      <div class="speaker">
+        <img id="modal-image1" src="" alt="Speaker 1 Image">
       </div>
-  
-      <h3 id="modal-title2"></h3>
-      <p><strong>Title:</strong> <span id="modal-talktitle2"></span></p>
-      <p><strong>Abstract:</strong> <span id="modal-abstract2"></span></p>
-  
-      <!-- Speaker bios -->
-      <div class="speaker-bios">
-        <p><strong>Speaker Bio :</strong> <span id="modal-speaker1"></span></p>
-        <p><strong>Speaker Bio :</strong> <span id="modal-speaker2"></span></p>
-        <p><strong>More info about the speakers:</strong>
-          <a id="modal-link1" href="#" target="_blank">Myna Vajha</a> |
-          <a id="modal-link2" href="#" target="_blank">Nikhil Krishnan</a>
-        </p>
+      <div class="speaker">
+        <img id="modal-image2" src="" alt="Speaker 2 Image">
       </div>
     </div>
+
+    <h3 id="modal-title2"></h3>
+    <p><strong>Title:</strong> <span id="modal-talktitle2"></span></p>
+    <p><strong>Abstract:</strong> <span id="modal-abstract2"></span></p>
+
+    <!-- Speaker bios -->
+    <div class="speaker-bios">
+      <p><strong>Speaker Bio:</strong> <span id="modal-speaker1"></span></p>
+      <p><strong>Speaker Bio:</strong> <span id="modal-speaker2"></span></p>
+      <p><strong>More info about the speakers:</strong>
+        <a id="modal-link1" href="#" target="_blank">Speaker 1</a> |
+        <a id="modal-link2" href="#" target="_blank">Speaker 2</a>
+      </p>
+    </div>
   </div>
+</div>
+
 
   <script>
     
@@ -563,7 +580,7 @@ This is joint work with Vinayak Ramkumar and P. Vijay Kumar
       modal.style.display = "none";
     }
 
-     // Modal #2 (for two-speaker talk)
+    // Modal #2 (for two-speaker talks)
       const modal2 = document.getElementById("modal2");
       const modalTitle2 = document.getElementById("modal-title2");
       const modalTalktitle2 = document.getElementById("modal-talktitle2");
@@ -572,24 +589,45 @@ This is joint work with Vinayak Ramkumar and P. Vijay Kumar
       document.querySelectorAll(".schedule-item").forEach((item) => {
         if (item.hasAttribute("data-title2")) {
           item.addEventListener("click", () => {
+            // Set text fields
             modalTitle2.textContent = item.getAttribute("data-title2");
             modalTalktitle2.textContent = item.getAttribute("data-talktitle2");
             modalAbstract2.textContent = item.getAttribute("data-abstract2");
 
-            // Split multiple speaker data using ||
+            // Split multi-speaker data
             const speakers = item.getAttribute("data-speaker2").split("||");
             const images = item.getAttribute("data-image2").split("||");
             const links = item.getAttribute("data-link2").split("||");
 
-            document.getElementById("modal-speaker1").textContent = speakers[0] || "";
-            document.getElementById("modal-speaker2").textContent = speakers[1] || "";
+            // Fill bios
+            document.getElementById("modal-speaker1").textContent = speakers[0]?.trim() || "";
+            document.getElementById("modal-speaker2").textContent = speakers[1]?.trim() || "";
 
-            document.getElementById("modal-image1").src = images[0] || "";
-            document.getElementById("modal-image2").src = images[1] || "";
+            // Fill images
+            document.getElementById("modal-image1").src = images[0]?.trim() || "";
+            document.getElementById("modal-image2").src = images[1]?.trim() || "";
 
-            document.getElementById("modal-link1").href = links[0]?.trim() || "#";
-            document.getElementById("modal-link2").href = links[1]?.trim() || "#";
+            // Fill links dynamically
+            const link1 = document.getElementById("modal-link1");
+            const link2 = document.getElementById("modal-link2");
 
+            link1.href = links[0]?.trim() || "#";
+            link2.href = links[1]?.trim() || "#";
+
+            // Extract names from data-title2 automatically
+            // Example: "Talk 10: Dileep Dharmappa and Sugandh Misra, ISRO Bangalore"
+            const titleText = item.getAttribute("data-title2");
+            const match = titleText.match(/:\s*(.*?)\s+and\s+(.*?)(,|$)/i);
+            if (match) {
+              link1.textContent = match[1].trim();
+              link2.textContent = match[2].trim();
+            } else {
+              // Fallback
+              link1.textContent = "Speaker 1";
+              link2.textContent = "Speaker 2";
+            }
+
+            // Show modal
             modal2.style.display = "flex";
           });
         }
