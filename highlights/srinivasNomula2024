@@ -370,15 +370,6 @@
 
 <div class="container-fluid" style="max-width: 800px;">
   
-  <div class="container-fluid mt-2 mb-4">
-    <div class="ratio ratio-16x9">
-      <iframe class="img-fluid rounded" src="https://www.youtube.com/embed/oeEx9N-5Hns"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-  </div>
-  
   <div class="container-fluid my-2">
     <p>We considered a system with edge devices such as mobile phones,</p>
 <p>laptops, and an edge server. Each edge device has an oƯload queue</p>
