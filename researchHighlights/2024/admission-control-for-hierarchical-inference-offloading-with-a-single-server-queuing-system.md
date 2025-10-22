@@ -5,7 +5,7 @@ speaker: Srinivas Nomula
 year: 2024
 category: phd
 report_video: oeEx9N-5Hns
-permalink: /highlight/srinivasNomula
+permalink: /highlight/srinivasNomula2024
 ---
 We considered a system with edge devices such as mobile phones, 
 
