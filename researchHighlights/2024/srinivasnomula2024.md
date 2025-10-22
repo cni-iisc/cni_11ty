@@ -2,58 +2,24 @@
 
 layout: research_highlight.html # Do not change this portion
 
-title: Admission Control for Hierarchical Inference Offloading with a Single Server Queuing System
+title: Analytical Modeling of Colocated Wi-Fi Networks with Short-Term Unfairness
 
 
-speaker: Srinivas Nomula
+speaker: Amit Verma
 
 img: none
-year: 2024
+year: 2023
 
-category: phd #should have either mtech or phd
+category: mtech #should have either mtech or phd
 
-report_video: 
-permalink: "/highlights/srinivasNomula2024" 
+report_video: OHDEJ9-XEmo
+permalink: "/highlights/amitverma2023/" 
 ---
-We considered a system with edge devices such as mobile phones, 
 
-laptops, and an edge server. Each edge device has an oƯload queue 
+Our work focuses on analyzing the performance of an IEEE 802.11 CSMA/CA network with infinite transmission queues, no hidden terminals, and operation based on the IEEE 802.11 DCF protocol. Motivated by the possibility of dynamically varying the DCF backoff parameters in the IEEE 802.11ax standard, we consider the performance of a colocated network when the parameters $b_0$ (the initial mean backoff, in slots; $b_0$ = 16 slots in the basic standard), and $p$, the exponential mean backoff growth parameter ($p$ = 2 in the basic standard).
 
-wirelessly connected to the server. We use the system to perform inference 
+Initially, we develop a criterion to determine the accuracy of the classical mean-field analysis for small number of stations ($n$) and $b_0$. Simulations showed that while the criterion had minor errors for $p$ = 2 and larger errors for $p$ = 3, is insufficient by itself. This led to the development of an improved analysis focusing on the collision probability ($\gamma_k$) for different backoff stages ($k$). We have derive an explicit expression for γk in terms of the probability distribution ($\pi_k$) and vice versa and approximating the joint distribution using a multinomial approach, achieving results that aligned well with decoupling approximation as in.
 
-on the arriving tasks. To do so, we deploy each device with a pre-trained ML 
+Further, a time series analysis is done for small nodes ($n$ = 2 and $K$ = 7) highlighting periods of fairness and unfairness depending on $b_0$ values. Our model, which takes these observations into account, produced a better approximation of the backoff stage distribution, with a Total Variation Distance (TVD) of less than 0.10 across all parameters. Throughput calculations based on this model closely matching the simulation results, showing a relative error of approximately 5%, with a few instances of 15% error.
 
-model. As the edge server operates remotely and has abundant resources 
-
-such as power and computing, we deployed a powerful ML model, Large 
-
-ML or L-ML. As the edge devices are resource-constrained, we deployed a 
-
-smaller, less accurate ML model (S-ML), which consumes fewer resources. 
-
-Such a setup is known as Hierarchical Inference. 
-
-We use the system to perform image classification and aim to improve its 
-
-overall inference accuracy by maintaining queue stability. 
-
-The images arrive at the devices at random. As soon as a new task arrives, 
-
-the device classifies the task as having arrived. The device, after 
-
-classification, gives out the tasks' class with some confidence. As the 
-
-task's ground truth is unknown and the S-ML deployed is not accurate, all 
-
-the tasks processed might not be correct. Hence, an oƯloading strategy is 
-
-essential to improve the overall system performance. 
-
-Utilizing the prior works, we designed a strategy that utilizes the confidence 
-
-values of tasks to perform inference. Our strategy significantly improved 
-
-the system accuracy and maintained queue stability throughout. 
-
-Compared with the state-of-the-art techniques, our strategy was more 
-accurate than the rest.
+Overall, our study provides a robust model for predicting network performance under varying backoff conditions, offering insights that are particularly relevant for optimizing the IEEE 802.11ax standard.
