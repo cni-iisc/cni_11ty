@@ -1,11 +1,19 @@
 ---
-layout: research_highlight
+
+layout: research_highlight.html # Do not change this portion
+
 title: Admission Control for Hierarchical Inference Offloading with a Single Server Queuing System
+
+
 speaker: Srinivas Nomula
+
+img: none
 year: 2024
-category: phd
-report_video: oeEx9N-5Hns
-permalink: /highlight/srinivasNomula2024
+
+category: phd #should have either mtech or phd
+
+report_video: 
+permalink: "/highlights/srinivasNomula2024" 
 ---
 We considered a system with edge devices such as mobile phones, 
 
