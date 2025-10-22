@@ -56,5 +56,4 @@ values of tasks to perform inference. Our strategy significantly improved
 the system accuracy and maintained queue stability throughout. 
 
 Compared with the state-of-the-art techniques, our strategy was more 
-
 accurate than the rest.
