@@ -391,8 +391,8 @@
 <p>Utilizing the prior works, we designed a strategy that utilizes the confidence</p>
 <p>values of tasks to perform inference. Our strategy significantly improved</p>
 <p>the system accuracy and maintained queue stability throughout.</p>
-<p>Compared with the state-of-the-art techniques, our strategy was more</p>
-<p>accurate than the rest.</p>
+<p>Compared with the state-of-the-art techniques, our strategy was more
+accurate than the rest.</p>
 
   </div>
 </div>
