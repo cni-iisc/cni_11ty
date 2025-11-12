@@ -13,7 +13,7 @@ year: 2023
 category: phd #should have either mtech or phd
 
 report_video: a-bBLBdl7kA
-permalink: "/highlights/janakyMurthy2023/"
+permalink: "/highlights/2023/janakyMurthy2023/"
 ---
 **Motivation:**
 Interacting particle systems consist of $N$ particles whose states evolve based on their current states and chosen actions. Each particle’s action is influenced by the states of other particles, making the analysis complex. These systems are relevant in various applications, such as traffic networks, chemical reactions, queuing systems resource-sharing networks, mobile systems, data center networks, and neural networks. Further, particles act to optimize their self-interest, for instance, commuters choose routes that minimize travel time.

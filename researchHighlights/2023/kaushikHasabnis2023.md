@@ -13,7 +13,7 @@ year: 2023
 category: mtech #should have either mtech or phd
 
 report_video: Z55kznrvcOM
-permalink: "/highlights/kaushikHasabnis2023/"
+permalink: "/highlights/2023/kaushikHasabnis2023/"
 ---
 
 **Abstract:**

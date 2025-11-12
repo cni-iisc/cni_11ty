@@ -13,7 +13,7 @@ year: 2023
 category: phd #should have either mtech or phd
 
 report_video: rphWnjAkld4
-permalink: "/highlights/tejashreeS2023/"
+permalink: "/highlights/2023/tejashreeS2023/"
 ---
 
 The research activity involved the development of an AI model embedded within a mobile app that can detect subjects with a high risk of transformation into malignancy by processing white light images of the oral cavity 

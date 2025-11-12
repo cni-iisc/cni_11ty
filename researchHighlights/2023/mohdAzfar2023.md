@@ -13,7 +13,7 @@ year: 2023
 category: mtech #should have either mtech or phd
 
 report_video: LwdTcEWBaGw
-permalink: "/highlights/mohdAzfar2023/"
+permalink: "/highlights/2023/mohdAzfar2023/"
 ---
 
 **Introduction:**

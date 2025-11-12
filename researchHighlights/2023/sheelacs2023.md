@@ -13,7 +13,7 @@ year: 2023
 category: phd #should have either mtech or phd
 
 report_video: 0VRTZemw0kw
-permalink: "/highlights/sheelacs2023/"
+permalink: "/highlights/2023/sheelacs2023/"
 ---
 **Motivation and Problem Statement:**
 The optimal modulation and coding scheme (MCS) selection in wireless transmission depends on the dynamically evolving channel state. Hence, Rate adaptation in a wireless channel relies on periodically reported channel quality indicator (CQI) values to select the optimal MCS. The latest 802.11ax, with an HE sounding protocol, supports an explicit feedback mechanism where the client sends back a transformed estimate of the channel state information (CSI) in the HE CQI Report field.

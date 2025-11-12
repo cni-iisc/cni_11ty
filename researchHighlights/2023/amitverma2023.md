@@ -13,7 +13,7 @@ year: 2023
 category: mtech #should have either mtech or phd
 
 report_video: OHDEJ9-XEmo
-permalink: "/highlights/amitverma2023/" 
+permalink: "/highlights/2023/amitverma2023/" 
 ---
 
 Our work focuses on analyzing the performance of an IEEE 802.11 CSMA/CA network with infinite transmission queues, no hidden terminals, and operation based on the IEEE 802.11 DCF protocol. Motivated by the possibility of dynamically varying the DCF backoff parameters in the IEEE 802.11ax standard, we consider the performance of a colocated network when the parameters $b_0$ (the initial mean backoff, in slots; $b_0$ = 16 slots in the basic standard), and $p$, the exponential mean backoff growth parameter ($p$ = 2 in the basic standard).

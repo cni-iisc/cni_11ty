@@ -13,7 +13,7 @@ year: 2023
 category: mtech #should have either mtech or phd
 
 report_video: 7v2lWg-2jiQ
-permalink: "/highlights/prashanthS2023/"
+permalink: "/highlights/2023/prashanthS2023/"
 ---
 
 **Resarch methodology and Impelementation:**

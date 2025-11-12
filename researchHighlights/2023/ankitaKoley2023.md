@@ -13,7 +13,7 @@ year: 2023
 category: phd #should have either mtech or phd
 
 report_video: Ax-rEiqbK0w
-permalink: "/highlights/ankitaKoley2023/" 
+permalink: "/highlights/2023/ankitaKoley2023/" 
 ---
 **Multi-access Edge Computing(MEC)**
 Multi-access Edge Computing (MEC) is an emerging technology in which cloud computing services are extended to edge of the Internet, i.e., wireless access points (APs) and base stations (BSs). By leveraging edge resources, 6G networks can offload processing tasks from centralized data centers, enabling faster response times for AI-enabled applications such as augmented, virtual, and mixed reality. With the rapid growth of connected devices, edge computing will offer lower latency and reduce backhaul traffic. However, due to the limited resources of the MEC server and variable wireless channel conditions between the users and the edge devices, a joint offloading decision and network resource allocation can be quite challenging.
