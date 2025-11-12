@@ -13,7 +13,7 @@ year: 2023
 category: mtech #should have either mtech or phd
 
 report_video: oxk62Ow6h6o
-permalink: "/highlights/kosigaMani2023/"
+permalink: "/highlights/2023/kosigaMani2023/"
 ---
 
 **Abstract:**

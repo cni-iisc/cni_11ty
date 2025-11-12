@@ -12,4 +12,5 @@ Research_Interests:
 email: aakashsunil@iisc.ac.in
 linkedin: https://www.linkedin.com/in/aakash-shedsale
 years: [2024]
+past: true
 ---
