@@ -14,5 +14,5 @@ email: gjagadeesh@iisc.ac.in
 years: [2024]
 linkedin: https://www.linkedin.com/in/jagadeesh-gaje-501a1b285
 advisor: Prof. Chandramani Singh # only applicable for students or fellows
-
+past: true
 ---
