@@ -1,6 +1,6 @@
 ---
 layout: 
-title: Parshil Wankhede
+title: Prashil Wankhede
 description2: ""
 img: /assets/images/people/phd/prashil.jpg
 importance: 1
