@@ -2,7 +2,7 @@
 layout: 
 title: Parshil Wankhede
 description2: ""
-img: /assets/images/people/phd/prashil.png
+img: /assets/images/people/phd/prashil.jpg
 importance: 1
 category: Ph.D. Fellows/Scholars 
 advisor: Prof Pavan Kumar Tallapragada

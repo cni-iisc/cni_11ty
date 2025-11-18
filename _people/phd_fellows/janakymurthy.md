@@ -11,6 +11,6 @@ redirect:
 Research_Interests:
 email: janakymurthy@iisc.ac.in
 linkedin: https://www.linkedin.com/in/janakymurthy/
-years: [2023, 2024]
+years: [2023, 2024, 2025]
 ---
 

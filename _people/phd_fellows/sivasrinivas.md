@@ -11,6 +11,6 @@ redirect:
 Research_Interests:
 email: sivasrinivas@iisc.ac.in
 linkedin: https://www.linkedin.com/in/srinivas-nomula-748a2316b
-years: [2023, 2024]
+years: [2023, 2024, 2025]
 ---
 
