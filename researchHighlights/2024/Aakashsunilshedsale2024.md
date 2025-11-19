@@ -15,7 +15,7 @@ category: phd #should have either mtech or phd
 report_video: s6H1343V3wQ
 permalink: "/highlights/Aakashsunilshedsale2024/" 
 ---
-Class imbalance refers to a situation in a dataset where the number of samples across different
+<p>Class imbalance refers to a situation in a dataset where the number of samples across different
 classes is uneven, with some classes having significantly more samples than others. Class imbalance is a
 common issue in real-world datasets, especially in fields like healthcare, fraud detection, and anomaly
 detection, where rare events or conditions are often more critical to identify but are underrepresented
@@ -47,8 +47,8 @@ for class imbalance in deep learning models [1]. The previous works in [5, 6] ha
 contributions to reduce bias in logistic regression due to class imbalance. In future, these methods
 will be explored in the context of deep learning models. The works in [7, 8, 9] have shown that robust
 methods can be used to improve model performance in presence of outliers and noisy labels. These
-methods will be explored in the context of robust learning in deep learning models.
-1
+methods will be explored in the context of robust learning in deep learning models.</p>
+
 Experiment Sensitivity (%) Specificity (%)
 Baseline (CE) 75.48 ± 3.69 90.45 ± 3.03
 Random oversampling 76.21 ± 3.72 90.10 ± 3.06
