@@ -41,4 +41,4 @@ Allowing “wait” option adds the queue lengths, to the system’s state. It a
 changes the state dynamics, the analysis and the caching policy. We again propose Whittle 
 index based policy as a heuristic to this problem. We show that having a “wait” option 
 improves the average cost. We demonstrate this in In Fig 2.
-<img src="assets/img/Research_highlight/2024/ankitakoley-researchhighlight.png" alt="ankitaresearch"></img>
+<img src="/assets/img/Research_highlight/2024/ankitakoley-researchhighlight.png" alt="ankitaresearch"></img>
