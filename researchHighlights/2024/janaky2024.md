@@ -2,9 +2,7 @@
 
 layout: research_highlight.html # Do not change this portion
 
-title: Optimal Control of Interacting Agents on
-Sparse Graphs
-
+title: Optimal Control of Interacting Agents on Sparse Graphs
 
 speaker: Janaky Murthy
 
