@@ -48,24 +48,18 @@ contributions to reduce bias in logistic regression due to class imbalance. In f
 will be explored in the context of deep learning models. The works in [7, 8, 9] have shown that robust
 methods can be used to improve model performance in presence of outliers and noisy labels. These
 methods will be explored in the context of robust learning in deep learning models.</p>
+<img src="/assets/img/Research_highlight/2024/akash_shedsale table_2025.png" alt="akashresearch" width="752px"></img>
+<img src="/assets/img/Research_highlight/2024/akash_shedsale_fig-2025.png" alt="akashresearch" width="752px"></img>
 
-Experiment Sensitivity (%) Specificity (%)
-Baseline (CE) 75.48 ± 3.69 90.45 ± 3.03
-Random oversampling 76.21 ± 3.72 90.10 ± 3.06
-Random undersampling 83.63 ± 3.60 85.17 ± 3.66
-WCE 83.79 ± 2.85 85.71 ± 3.10
-Focal loss 82.19 ± 2.92 87.92 ± 2.68
-Table 1: Results of experiments on Biocon dataset
-Figure 1: Comparison of mean confidence of predictions for class 0 and class 1 on Biocon dataset
-Experimental Results
-Sampling techniques such as random oversampling and random undersampling have been performed on Biocon dataset to address class imbalance in binary classification task of classifying white
+<b>Experimental Results</b><br>
+Sampling techniques such as random oversampling and random undersampling have been performed on Biocon dataset to address class imbalance in binary classification task of classifying white
 light oral cavity images into suspicious and non-suspicious classes for Oral cancer screening. The
-dataset contains 2932 images in minority (suspicious) class and 14812 images in majority (nonsuspicious) class. WCE, focal loss and polynomial loss have been tested on the dataset to address
+dataset contains 2932 images in minority (suspicious) class and 14812 images in majority (nonsuspicious) class. WCE, focal loss and polynomial loss have been tested on the dataset to address
 class imbalance. Table 1 shows the results of the experiments on the dataset. The experiments were
 conducted on MobileViTv2 model with 50 epochs and a batch size of 64. A total of 10 model instances
 were trained for each experiment and mean and standard deviation of sensitivity and specificity were
 reported. The results show that random undersampling, WCE and focal loss outperform the baseline
-CE loss in terms of sensitivity and specificity on considered dataset. The results indicate that addressing class imbalance using sampling techniques or weighted loss functions can improve the model’s
+CE loss in terms of sensitivity and specificity on considered dataset. The results indicate that addressing class imbalance using sampling techniques or weighted loss functions can improve the model’s
 2
 performance on imbalanced datasets. The hypothesis given in [4], that making the leading polynomial
 term of CE loss positive can help in increasing the model’s confidence in predicting true class (Pt), is
@@ -85,71 +79,75 @@ is also calculated for CE, WCE and focal loss along with random
 undersampling on the Biocon dataset. Class 0 is majority class and class 1 is minority class in the
 dataset. The results are shown in Figure 1. The obtained results do not support the hypothesis that
 making the leading polynomial term of the loss function positive can help in increasing the model’s
-confidence in the predictions.
-References
-[1] Kushankur Ghosh, Colin Bellinger, Roberto Corizzo, Paula Branco, Bartosz Krawczyk, and
+confidence in the predictions.<br>
+<b>References</b><br>
+<ol>
+<li>Kushankur Ghosh, Colin Bellinger, Roberto Corizzo, Paula Branco, Bartosz Krawczyk, and
 Nathalie Japkowicz. The class imbalance problem in deep learning. Machine Learning, 113(7):4845–
-4901, 2024.
-[2] Yuri Sousa Aurelio, Gustavo Matheus De Almeida, Cristiano Leite de Castro, and Antonio Padua
+4901, 2024.</li>
+<li> Yuri Sousa Aurelio, Gustavo Matheus De Almeida, Cristiano Leite de Castro, and Antonio Padua
 Braga. Learning from imbalanced data sets with weighted cross-entropy function. Neural processing
-letters, 50:1937–1949, 2019.
-[3] T-YLPG Ross and GKHP Doll´ar. Focal loss for dense object detection. In proceedings of the IEEE
-conference on computer vision and pattern recognition, pages 2980–2988, 2017.
-[4] Zhaoqi Leng, Mingxing Tan, Chenxi Liu, Ekin Dogus Cubuk, Jay Shi, Shuyang Cheng, and
+letters, 50:1937–1949, 2019.</li>
+<li>T-YLPG Ross and GKHP Doll´ar. Focal loss for dense object detection. In proceedings of the IEEE
+conference on computer vision and pattern recognition, pages 2980–2988, 2017.</li>
+<li>Zhaoqi Leng, Mingxing Tan, Chenxi Liu, Ekin Dogus Cubuk, Jay Shi, Shuyang Cheng, and
 Dragomir Anguelov. Polyloss: A polynomial expansion perspective of classification loss functions.
-In International Conference on Learning Representations.
-[5] Gary King and Langche Zeng. Logistic regression in rare events data. Political analysis, 9(2):137–
-163, 2001.
-[6] David Firth. Bias reduction of maximum likelihood estimates. Biometrika, 80(1):27–38, 1993.
-[7] Ayanendranath Basu, Ian R Harris, Nils L Hjort, and MC Jones. Robust and efficient estimation
-by minimising a density power divergence. Biometrika, 85(3):549–559, 1998.
-[8] MC Jones, Nils Lid Hjort, Ian R Harris, and Ayanendranath Basu. A comparison of related
-density-based minimum divergence estimators. Biometrika, 88(3):865–873, 2001.
-[9] Shinto Eguchi and Shogo Kato. Entropy and divergence associated with power function and the
-statistical application. Entropy, 12(2):262–274, 2010.
-1 Contribution to CNI activities
+In International Conference on Learning Representations.</li>
+<li>Gary King and Langche Zeng. Logistic regression in rare events data. Political analysis, 9(2):137–
+163, 2001.</li>
+<li>David Firth. Bias reduction of maximum likelihood estimates. Biometrika, 80(1):27–38, 1993.</li>
+<li>Ayanendranath Basu, Ian R Harris, Nils L Hjort, and MC Jones. Robust and efficient estimation
+by minimising a density power divergence. Biometrika, 85(3):549–559, 1998.</li>
+<li>MC Jones, Nils Lid Hjort, Ian R Harris, and Ayanendranath Basu. A comparison of related
+density-based minimum divergence estimators. Biometrika, 88(3):865–873, 2001.</li>
+<li>Shinto Eguchi and Shogo Kato. Entropy and divergence associated with power function and the
+statistical application. Entropy, 12(2):262–274, 2010.</li>
+</ol>
+<b>Contribution to CNI activities</b> <br>
 During the year I mainly worked as a web developer for the CNI website. I have also contributed to the
 CNI by broadcasting and hosting a few CNI seminars. I helped in finding few early career professors
 for CNI seminar series. Occasionally, I worked as a photographer to document eminent visitors to
 CNI. I am involved in conducting IISc-IBM AI hackathon. My major activities as a web-developer
 include the following:
-3
-• Maintained the old jekyll-based CNI website and updated it with latest information.
-• Major contribution to old website was to show the list of all publications on the website. This
+<ul>
+<li>Maintained the old jekyll-based CNI website and updated it with latest information.</li>
+<li>Major contribution to old website was to show the list of all publications on the website. This
 was done by removing a bug in CSS which was preventing the publication list to be shown
-completely on the website.
-• The LATEX integration was added to the old jekyll-based CNI website. This allows users to write
+completely on the website.</li>
+<li>The LATEX integration was added to the old jekyll-based CNI website. This allows users to write
 LATEX equations in the website content and have them rendered correctly. The LATEX integration
-is done using MathJax library.
-• Research highlights page was a given a more user-friendly look and feel.
-• Migrated the old jekyll-based CNI website to a modern eleventy-based website. This was done
+is done using MathJax library.</li>
+<li>Research highlights page was a given a more user-friendly look and feel.</li>
+<li>Migrated the old jekyll-based CNI website to a modern eleventy-based website. This was done
 to make the website more user-friendly and easier to maintain. The new website is hosted using
-GitHub pages and is accessible at https://cni.iisc.ac.in/.
-• To help non-technical users to update the website, the website is empowered with Content
+GitHub pages and is accessible at https://cni.iisc.ac.in/.</li>
+<li>To help non-technical users to update the website, the website is empowered with Content
 Management System (CMS) using Sveltia CMS. This allows users to update the website content
 without needing to know how to code. The CMS is accessible at https://cni.iisc.ac.in/
-admin/ and is hosted on the same GitHub repository as the website.
-• Added a javascript-based functionality to the website which lists upcoming seminars on the
-webpage based on the current time.
-• The publications page has been given a new look and feel. The publications are now listed in
+admin/ and is hosted on the same GitHub repository as the website.</li>
+<li>Added a javascript-based functionality to the website which lists upcoming seminars on the
+webpage based on the current time.</li>
+<li>The publications page has been given a new look and feel. The publications are now listed in
 a more user-friendly way with the latest publications shown at the top. The publications are
 also categorized based on the type of publication (e.g. journal, conference, book, etc.) and the
 year of publication. A word-cloud based visualization of the publications is also added to the
 publications page. The word-cloud is generated using the keywords from the publications and
 shows the most frequently used keywords in the publications. This helps in understanding the
-research areas of CNI.
-• Added outlook calendar integration to the CNI website. https://cni.iisc.ac.in/calendar/
+research areas of CNI.</li>
+<li>Added outlook calendar integration to the CNI website. https://cni.iisc.ac.in/calendar/
 This allows users to view the upcoming events and seminars at CNI in a calendar format. The
-calendar is integrated with the CNI outreach outlook calendar.
-• A single link for covid-19 (aka bio-surveillance) project. The old website used to redirect to main
+calendar is integrated with the CNI outreach outlook calendar.</li>
+<li>A single link for covid-19 (aka bio-surveillance) project. The old website used to redirect to main
 home page of the CNI website when clicked on the covid-19 project card on the projects page
 and a separate link was needed to access the covid-19 project page. Now, the covid-19 project
 page is accessible from the projects page with the same link as on the covid-19 project card and
-that has been used in the past.
-• Newsletter archive page has been refurbished with a more user-friendly look and feel.
-• Refurbished CNI in news web-page.
-• Added LinkedIn/personal website links to all staff members and students on the CNI website.
-• A toggle button has been added to the CNI website to switch between light and dark mode.
-This allows users to choose the mode they prefer while browsing the website.
-• The home page of the CNI website has been given a fresh look with recent updates and upcoming
-events shown on the home page.
+that has been used in the past.</li>
+<li>Newsletter archive page has been refurbished with a more user-friendly look and feel.</li>
+<li>Refurbished CNI in news web-page.</li>
+<li>Added LinkedIn/personal website links to all staff members and students on the CNI website.</li>
+<li>A toggle button has been added to the CNI website to switch between light and dark mode.
+This allows users to choose the mode they prefer while browsing the website.</li>
+<li>The home page of the CNI website has been given a fresh look with recent updates and upcoming
+events shown on the home page.</li>
+</ul>
+
