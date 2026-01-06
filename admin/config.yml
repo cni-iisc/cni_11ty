@@ -86,8 +86,8 @@ collections:
     name: "Seminars"
     folder: "seminars/"
     create: true
-    media_folder: "assets/seminars/2026/"
-    public_folder: "assets/seminars/2026/"
+    media_folder: "assets/seminars/2025/"
+    public_folder: "assets/seminars/2025/"
     slug: "{{fields.date | date('YYYY-MM-DD')}}"
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "seminar_page" }
