@@ -44,5 +44,6 @@
   "bugs": {
     "url": "https://github.com/cni-iisc/cni_11ty/issues"
   },
-  "homepage": "https://github.com/cni-iisc/cni_11ty#readme"
+  "homepage": "https://github.com/cni-iisc/cni_11ty#readme",
+  "type": "commonjs"
 }
