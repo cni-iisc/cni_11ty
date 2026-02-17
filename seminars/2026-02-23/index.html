@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:title" content="Centre for Networked Intelligence"><meta property="og:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta property="og:url" content=""><meta property="og:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta property="og:image:alt" content="CNI logo"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Centre for Networked Intelligence"><meta name="twitter:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta name="twitter:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta name="twitter:image:alt" content="CNI logo"><link rel="icon" type="image/x-icon" href="/assets/images/favicon-dark.ico" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" media="(prefers-color-scheme: light)"><title>Mathematical ML and ML for Math: Alternating GD and Minimization (AltGDmin) for Secure Federated Low Rank Matrix Learning for Real-time MRI and ML-enabled K-12 Math Support | CNI</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet"><script type="text/javascript">MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"],
+                    ],
+                },
+                svg: { fontCache: "global" },
+            };</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-9KXWYD9G5G"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-9KXWYD9G5G");</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><link rel="stylesheet" href="/assets/css/navbar_style.css"><link rel="stylesheet" href="/assets/css/footer.css"><style>/* Light theme */
+            .light-theme {
+                background-color: #f7f7f7;
+                color: #212121;
+            }
+            .light-theme td {
+                color: #212121;
+            }
+
+            /* Dark theme */
+            .dark-theme {
+                background-color: #212121;
+                color: #ffffff;
+            }
+            .dark-theme td {
+                color: white;
+            }
+
+            /* Theme toggle button styles */
+            .theme-toggle {
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }</style><script>// Theme toggle functionality
+            function setTheme(theme) {
+                if (theme === "dark") {
+                    document.body.classList.remove("light-theme");
+                    document.body.classList.add("dark-theme");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    document.body.classList.remove("dark-theme");
+                    document.body.classList.add("light-theme");
+                    localStorage.setItem("theme", "light");
+                }
+            }
+
+            // Initialize theme on page load
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get saved theme or default to light
+                const savedTheme = localStorage.getItem("theme") || "light";
+                setTheme(savedTheme);
+
+                // Update icon based on current theme
+                updateThemeIcon(savedTheme);
+            });
+
+            // Toggle between light and dark themes
+            function toggleTheme() {
+                const currentTheme = document.body.classList.contains("dark-theme")
+                    ? "dark"
+                    : "light";
+                const newTheme = currentTheme === "dark" ? "light" : "dark";
+                setTheme(newTheme);
+                updateThemeIcon(newTheme);
+            }
+
+            // Update icon based on current theme
+            function updateThemeIcon(theme) {
+                const themeIcon = document.getElementById("theme-icon");
+                // themeIcon hover color should be hyperlink color
+                themeIcon.style.color = "white";
+                themeIcon.addEventListener("mouseover", function () {
+                    themeIcon.style.color = "var(--hyperlink-clr)";
+                });
+                themeIcon.addEventListener("mouseout", function () {
+                    themeIcon.style.color = "white";
+                });
+                // change icon based on theme
+                if (themeIcon) {
+                    if (theme === "dark") {
+                        themeIcon.classList.remove("bi-sun");
+                        themeIcon.classList.add("bi-moon");
+                    } else {
+                        themeIcon.classList.remove("bi-moon");
+                        themeIcon.classList.add("bi-sun");
+                    }
+                }
+            }</script></head><body><nav class="navbar navbar-expand-lg custom-navbar"><div class="container-fluid"><a class="navbar-brand" href="/"><img src="/assets/images/cni_logo.png" alt="CNI logo" style="height: 60px"> </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarText"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">People</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/faculty/">Faculty</a></li><li><a class="dropdown-item" href="/staff/">Staff</a></li><li><a class="dropdown-item" href="/phd-fellows/">PhD Fellows</a></li><li><a class="dropdown-item" href="/mtech-fellows/">MTech Fellows</a></li><li><a class="dropdown-item" href="/visitors/">Visitors</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Research</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/projects/">Projects</a></li><li><a class="dropdown-item" href="/publications/">Publications</a></li><li><a class="dropdown-item" href="/highlights/">Highlights</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Outreach</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/seminars/">Seminars</a></li><li><a class="dropdown-item" href="/newsletter/latest/">Newsletters</a></li><li><a class="dropdown-item" href="/courses/">Courses</a></li><li><a class="dropdown-item" href="/schools/">Summer School</a></li><li><a class="dropdown-item" href="/news/">CNI in News</a></li><li><a class="dropdown-item" href="/hackathons">Hackathons</a></li><li><a class="dropdown-item" href="/workshops/">Workshops</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/opportunities/">Opportunities</a></li><li class="nav-item"><button class="theme-toggle" onclick="toggleTheme()"><i id="theme-icon" class="bi bi-sun"></i></button></li></ul></div></div></nav><link rel="stylesheet" href="/assets/css/seminar_cards.css"><div class="container-fluid text-center mt-2"><h2>CNI Seminar Series</h2><header class="mt-4"><h3>Mathematical ML and ML for Math: Alternating GD and Minimization (AltGDmin) for Secure Federated Low Rank Matrix Learning for Real-time MRI and ML-enabled K-12 Math Support</h3><h4><a href="https://www.engineering.iastate.edu/people/profile/namrata/">Prof. Namrata Vaswani, Endowed Anderlik Professor, Iowa State University</a></h4><h5>#285</h5></header></div><div class="container-fluid text-center" style="max-width: 800px;"><div class="ratio ratio-16x9"><iframe class="img-fluid rounded" src="https://www.youtube.com/embed/Of6nSVnjkd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br></div><div class="container-fluid mt-4" style="max-width: 800px;"><h6 class="text-center" style="width: 20px; height: 20px; display: inline-block;">Abstract</h6><p>This talk will consist of two parts. In the first 40 minutes, I will describe my group’s (mathematical ML) research on the AltGDmin algorithm and its Byzantine-resilient distributed extension. The last 15 minutes will be “ML for Math” where I will describe our CyMath program’s ML-Enabled K-12 Math Tutoring and Support. https://cymath.iastate.edu/ Math for ML: Modern distributed and federated learning systems are vulnerable to various kinds of adversarial attacks. Byzantine attacks are one of the most difficult attacks to deal with, since these are model update poisoning attacks (poison algorithm iterates of the attacked nodes), the adversarial nodes are omniscient, and these nodes can collude. We introduce provably Byzantine-resilient algorithms for solving three different vertically federated learning low-rank (LR) matrix learning problems – LR Matrix Completion, LR Column-wise Sensing, and LR Phase Retrieval – all of which involve solving a partly-decoupled optimization problem, and all involve dealing with data heterogeneity across nodes. These problems find important applications in recommender system design, multi-task representation learning for few-shot learning, federated sketching, accelerated dynamic MRI, and Fourier ptychography. Our proposed algorithms, Byz-AltGDmin, are provably Byzantine-resilient modifications of Alternating GD and minimization (AltGDmin). AltGDmin, introduced in our recent work, is a novel faster, and more communication-efficient, alternative to Alternating Minimization (AltMin) for partly decoupled optimization problems. These are problems in which the set of optimization variables can be split into two subsets such that the optimization with respect to at least one subset, keeping the other fixed, is decoupled. If time permits, we may also show real-data experimental results on the advantage (speed and generality) of AltGDmin-based methods over the existing state-of-the-art within dynamic MRI. ML for (Cy)Math: Math learning is cumulative; arithmetic fluency is critical for even having the ability to understand basic scalar algebra (solving linear equations in one and two variables for example); this in turn is critical for linear algebra and all SPML and STEM. Fixing the early math skills of students is critical for the future of statistics and all STEM professions. We discuss ways in which STEM students and professionals can help – university or IEEE supported math tutoring for school students, encouraging math practice at home, raising awareness of the need/resources for early math skills, and advocating for better K-12 math teaching policies that re-introduce homework in at least middle school if not earlier. Use of an ML-enabled math learning application (we use ALEKS and Khan Academy for example) by a human makes these tasks easier and less reliant on high quality tutors or math-knowing parents, making our approach scalable and more equitable. Our CyMath https://cymath.iastate.edu/ program uses this. We also argue that some current K-12 policies, based on short-term research, should be critically re-examined from a long-term college STEM student success perspective. For instance removing homework from even older elementary or middle school may have unobservable impact in a 2-3 year study, but no one has done a 10-12 year study of its impact on math skills equity, or earning capacity equity, or workforce success. Reasons are of course it is not easy to do such studies in a statistically sound fashion. However, without long-term impact studies, we need to start relying more on the intuition of college and high school Math and STEM educators.</p><br><h6 style="width: 20px; display: inline-block;">Bio</h6><h5><a href="https://www.engineering.iastate.edu/people/profile/namrata/">Prof. Namrata Vaswani, Endowed Anderlik Professor, Iowa State University</a></h5><p>Prof. Namrata Vaswani received a Ph.D. from the University of Maryland College Park (UMD) in 2004 and a B.Tech from IIT-Delhi in India in 1999. Since Fall 2005, she has been with the Iowa State University where she is currently the Anderlik Professor of Electrical and Computer Engineering. Her research interests lie in data science, with a particular focus on Statistical Machine Learning and Signal Processing. She also directs the CyMath K-12 Math Tutoring and Support program, https://cymath.iastate.edu/. Vaswani has served as an Associate Editor, Area Editor, or Guest Editor for the IEEE Transactions on Information Theory, IEEE Transactions on Signal Processing, the IEEE Signal Processing Magazine, and Proceedings of the IEEE. She has served one term on the Board of Governors of SPS and before that, as the Chair of the Women in Signal Processing committee. She is a recipient of the 2014 IEEE Signal Processing Society Best Paper Award, the UMD ECE Distinguished Alumni Award (2019) and the Iowa State Mid-Career Achievement in Research Award (2019). Vaswani is an AAAS Fellow (class of 2023) and an IEEE Fellow (class of 2019).</p></div><footer class="site-footer"><div class="footer-container"><a href="mailto:contact.cni@iisc.ac.in" title="Email" target="_blank"><i class="fa-solid fa-envelope"></i> </a><a href="https://github.com/cni-iisc" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i> </a><a href="https://x.com/cni_iisc" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i> </a><a href="https://www.linkedin.com/company/cni-iisc" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i> </a><a href="https://www.youtube.com/@centrefornetworkedintellig5324" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i> </a><a href="https://www.instagram.com/cni_iisc/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a><p>&copy; 2026 Centre for Networked Intelligence. All rights reserved.</p><p>Last updated: February 17, 2026</p></div></footer></body></html>
