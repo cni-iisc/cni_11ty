@@ -9,6 +9,23 @@ const zlib = require('zlib');
 const lightningCSS = require("@11tyrocks/eleventy-plugin-lightningcss");
 const browserslist = require("browserslist");
 const { transform, browserslistToTargets } = require("lightningcss");
+const mathjaxPlugin = require("eleventy-plugin-mathjax");
+
+module.exports = function (eleventyConfig) {
+  // Add the plugin with default settings (SVG output)
+  eleventyConfig.addPlugin(mathjaxPlugin);
+
+  // Optional: Advanced configuration
+  /*
+  eleventyConfig.addPlugin(mathjaxPlugin, {
+    output: "svg", // Default is SVG for server-side rendering
+    tex: {
+      inlineMath: [["$", "$"], ["\\(", "\\)"]],
+      displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    }
+  });
+  */
+};
 
 /*
 module.exports = (eleventyConfig) => {

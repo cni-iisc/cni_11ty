@@ -32,7 +32,8 @@
     "mathjax": "^3.2.2"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "eleventy-plugin-mathjax": "^2.0.4"
   },
   "directories": {
     "doc": "docs"
