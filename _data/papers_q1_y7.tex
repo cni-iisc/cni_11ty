@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[numbers]{natbib}
+\bibliographystyle{IEEEtranN}
+
+% Define \bstctlcite to pass control entry to bibtex without visible output
+\makeatletter
+\def\bstctlcite#1{\@bsphack
+  \@for\@citeb:=#1\do{%
+    \edef\@citeb{\expandafter\@firstofone\@citeb\@empty}%
+    \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi}%
+  \@esphack}
+\makeatother
+
+\begin{document}
+
+\bstctlcite{IEEEexample:BSTcontrol}
+\nocite{birur2026studyprotocol}
+\nocite{bhattacharya2025triangle}
+\nocite{sulaiman2026diagnostic}
+\nocite{nomula2026hierarchical}
+\nocite{sun2025optimizing}
+\nocite{sun2025optimizingifip}
+\nocite{eshwar2026monotone}
+\nocite{gopalan2026dqn}
+\nocite{vatsa2026multiap}
+
+\bibliography{papers_q1_y7}
+
+\end{document}
