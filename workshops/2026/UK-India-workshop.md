@@ -117,23 +117,23 @@ button{
             <tbody>
                 <tr>
                     <td>10:00AM – 10:20AM</td>
-                    <td class="speaker-name">Ayalvadi Ganesh</td>
+                    <td class="speaker-name">Prof. Ayalvadi Ganesh (University of Bristol)</td>
                     <td>Gossiping on Random Graphs</td>
                 </tr>
                 <tr>
                     <td>10:20AM – 10:40AM</td>
-                    <td class="speaker-name">Speaker 2</td>
+                    <td class="speaker-name">Prof. Steve Hailes (University College London) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>10:40AM – 11:00AM</td>
-                    <td class="speaker-name">Speaker 3</td>
+                    <td class="speaker-name">Dr. Dilip Krishnaswamy (CDoT)</td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>11:00AM – 11:20AM</td>
-                    <td class="speaker-name">Speaker 4</td>
-                    <td>TBD</td>
+                    <td class="speaker-name">Prof. Prem Singh (IIIT Bangalore) </td>
+                    <td>From Theory to Field: End-to-End Design, Testing, and Deployment of RIS Systems </td>
                 </tr>
                 <tr class="break-row">
                     <td>11:20AM – 11:40AM</td>
@@ -141,22 +141,22 @@ button{
                 </tr>
                 <tr>
                     <td>11:40AM – 12:00PM</td>
-                    <td class="speaker-name">Speaker 5</td>
+                    <td class="speaker-name">Prof. Anurag Kumar (IISc) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>12:00PM – 12:20PM</td>
-                    <td class="speaker-name">Speaker 6</td>
-                    <td>TBD</td>
+                    <td class="speaker-name">Anindya Saha (Tejas Networks)</td>
+                    <td>Discovery Block for Service-Aware and Energy-Efficient Networks </td>
                 </tr>
                 <tr>
                     <td>12:20PM – 12:40PM</td>
-                    <td class="speaker-name">Speaker 7</td>
+                    <td class="speaker-name">Huzur Saran (IITD) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>12:40PM – 01:00PM</td>
-                    <td class="speaker-name">Speaker 8</td>
+                    <td class="speaker-name">Sheela Prabhakar (ArtPark) </td>
                     <td>TBD</td>
                 </tr>
                 <tr class="break-row">
@@ -165,22 +165,22 @@ button{
                 </tr>
                 <tr>
                     <td>02:00PM – 02:20PM</td>
-                    <td class="speaker-name">Speaker 9</td>
-                    <td>TBD</td>
+                    <td class="speaker-name">Prof. Gerard Parr ( University of East Anglia ) </td>
+                    <td>Threats to UK-India  International Submarine Telecoms Cables from Natural/Adversary/Human Attack </td>
                 </tr>
                 <tr>
                     <td>02:20PM – 02:40PM</td>
-                    <td class="speaker-name">Speaker 10</td>
+                    <td class="speaker-name">Srivathsa Acharya (IISc) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>02:40PM – 03:00PM</td>
-                    <td class="speaker-name">Speaker 11</td>
+                    <td class="speaker-name">Prof. Neelesh Mehta (IISc) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>03:00PM – 03:20PM</td>
-                    <td class="speaker-name">Speaker 12</td>
+                    <td class="speaker-name">Prof. Deepa Venkitesh (IITM)</td>
                     <td>TBD</td>
                 </tr>
                 <tr class="break-row">
@@ -189,22 +189,22 @@ button{
                 </tr>
                 <tr>
                     <td>03:40PM – 04:00PM</td>
-                    <td class="speaker-name">Speaker 13</td>
+                    <td class="speaker-name">Prof. Srikrishna Bhashyam (IITM) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>04:00PM – 04:20PM</td>
-                    <td class="speaker-name">Speaker 14</td>
+                    <td class="speaker-name">Dr. Sreenath Ramnath (Lekha Wireless) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>04:20PM – 04:40PM</td>
-                    <td class="speaker-name">Speaker 15</td>
+                    <td class="speaker-name">Prof. Radhakrishna Ganti (IITM) </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>04:40PM – 05:00PM</td>
-                    <td class="speaker-name">Speaker 16</td>
+                    <td class="speaker-name">Prof. David Koilpillai (IITM) </td>
                     <td>TBD</td>
                 </tr>
             </tbody>
