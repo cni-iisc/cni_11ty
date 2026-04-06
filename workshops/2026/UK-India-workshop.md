@@ -26,7 +26,7 @@ showcase: true
 
 #### Registration 
 
-<button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDbTkc5teqRSLoCecmgPyMPjTr4vnuTFt0_gZt1VUkW4JlgQ/viewform?usp=header">Registration Link</a></button>
+<button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDbTkc5teqRSLoCecmgPyMPjTr4vnuTFt0_gZt1VUkW4JlgQ/viewform?usp=header" target="_blank">Registration Link</a></button>
 <p>Deadline:Last Date of Registration 10 April 2026, 12:00 PM</p>
 
 #### Workshop Schedule:  (Tentative)
@@ -36,10 +36,12 @@ showcase: true
 button{
   background-color: #224b6f
 }
+
 .Table_box {
     margin: 30px 0;
 }
 
+/* Table base */
 .Table_box table {
     border-radius: 12px;
     overflow: hidden;
@@ -53,54 +55,101 @@ button{
 
 /* Header */
 .Table_box thead {
-    background: linear-gradient(135deg, #224b6f);
+    background: #224b6f;
     color: #fff;
 }
 
 .Table_box th {
-    padding: 14px;
-    text-align: center;
+    padding: 14px 16px;
+    text-align: left;
     font-weight: 600;
     letter-spacing: 0.5px;
-    border: none;
 }
 
 /* Body */
 .Table_box td {
-    padding: 12px 14px;
-    text-align: center;
-    border-bottom: 1px solid #f1f1f1;
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
     font-size: 14px;
+    vertical-align: top;
+    line-height: 1.5;
 }
 
-/* Alternate row color */
+/* Time column */
+.Table_box td:first-child {
+    width: 140px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #111827;
+}
+
+/* Speaker column */
+.Table_box td:nth-child(2) {
+    width: 260px;
+}
+
+/* Speaker name */
+.speaker-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Speaker affiliation */
+.speaker-org {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Title */
+.Table_box td:last-child {
+    color: #374151;
+}
+
+/* Zebra rows */
 .Table_box tbody tr:nth-child(even) {
     background-color: #f9fafb;
 }
 
-/* Hover effect */
+/* Hover */
 .Table_box tbody tr:hover {
     background-color: #eef2ff;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
-/* Break rows (Coffee/Lunch) */
+/* Break rows */
 .break-row {
-    background: #e0e7ff !important;
+    background: #dbeafe !important;
     font-weight: 600;
-    color: #7fa8cc;
+    color: #1e3a8a;
+    text-align: center;
 }
 
-/* Time column emphasis */
-.Table_box td{
-    font-weight: 500;
-    color: #111827;
+/* DARK MODE */
+body.dark .Table_box table {
+    background: #1f2937;
+    color: #e5e7eb;
 }
 
-/* Speaker highlight */
-.speaker-name {
-    font-weight: 500;
-    color: #1f2937;
+body.dark .Table_box td {
+    border-color: #374151;
+}
+
+body.dark .Table_box tbody tr:nth-child(even) {
+    background: #111827;
+}
+
+body.dark .Table_box tbody tr:hover {
+    background: #374151;
+}
+
+body.dark .speaker-org {
+    color: #9ca3af;
+}
+
+body.dark .break-row {
+    background: #312e81 !important;
+    color: #c7d2fe;
 }
 </style>
 
@@ -117,23 +166,35 @@ button{
             <tbody>
                 <tr>
                     <td>10:00AM – 10:20AM</td>
-                    <td class="speaker-name">Prof. Ayalvadi Ganesh (University of Bristol)</td>
+                    <td>
+                        <div class="speaker-name">Prof. Ayalvadi Ganesh</div>
+                        <div class="speaker-org">University of Bristol</div>
+                    </td>
                     <td>Gossiping on Random Graphs</td>
                 </tr>
                 <tr>
                     <td>10:20AM – 10:40AM</td>
-                    <td class="speaker-name">Prof. Steve Hailes (University College London) </td>
+                    <td>
+                        <div class="speaker-name">Prof. Steve Hailes</div>
+                        <div class="speaker-org">University College London</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>10:40AM – 11:00AM</td>
-                    <td class="speaker-name">Dr. Dilip Krishnaswamy (CDoT)</td>
+                    <td>
+                        <div class="speaker-name">Dr. Dilip Krishnaswamy</div>
+                        <div class="speaker-org">CDoT</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>11:00AM – 11:20AM</td>
-                    <td class="speaker-name">Prof. Prem Singh (IIIT Bangalore) </td>
-                    <td>From Theory to Field: End-to-End Design, Testing, and Deployment of RIS Systems </td>
+                    <td>
+                        <div class="speaker-name">Prof. Prem Singh</div>
+                        <div class="speaker-org">IIIT Bangalore</div>
+                    </td>
+                    <td>From Theory to Field: End-to-End Design, Testing, and Deployment of RIS Systems</td>
                 </tr>
                 <tr class="break-row">
                     <td>11:20AM – 11:40AM</td>
@@ -141,22 +202,34 @@ button{
                 </tr>
                 <tr>
                     <td>11:40AM – 12:00PM</td>
-                    <td class="speaker-name">Prof. Anurag Kumar (IISc) </td>
+                    <td>
+                        <div class="speaker-name">Prof. Anurag Kumar</div>
+                        <div class="speaker-org">IISc</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>12:00PM – 12:20PM</td>
-                    <td class="speaker-name">Anindya Saha (Tejas Networks)</td>
-                    <td>Discovery Block for Service-Aware and Energy-Efficient Networks </td>
+                    <td>
+                        <div class="speaker-name">Anindya Saha</div>
+                        <div class="speaker-org">Tejas Networks</div>
+                    </td>
+                    <td>Discovery Block for Service-Aware and Energy-Efficient Networks</td>
                 </tr>
                 <tr>
                     <td>12:20PM – 12:40PM</td>
-                    <td class="speaker-name">Huzur Saran (IITD) </td>
+                    <td>
+                        <div class="speaker-name">Huzur Saran</div>
+                        <div class="speaker-org">IIT Delhi</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>12:40PM – 01:00PM</td>
-                    <td class="speaker-name">Sheela Prabhakar (ArtPark) </td>
+                    <td>
+                        <div class="speaker-name">Sheela Prabhakar</div>
+                        <div class="speaker-org">ArtPark</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr class="break-row">
@@ -165,22 +238,34 @@ button{
                 </tr>
                 <tr>
                     <td>02:00PM – 02:20PM</td>
-                    <td class="speaker-name">Prof. Gerard Parr ( University of East Anglia ) </td>
-                    <td>Threats to UK-India  International Submarine Telecoms Cables from Natural/Adversary/Human Attack </td>
+                    <td>
+                        <div class="speaker-name">Prof. Gerard Parr</div>
+                        <div class="speaker-org">University of East Anglia</div>
+                    </td>
+                    <td>Threats to UK-India International Submarine Telecoms Cables</td>
                 </tr>
                 <tr>
                     <td>02:20PM – 02:40PM</td>
-                    <td class="speaker-name">Srivathsa Acharya (IISc) </td>
+                    <td>
+                        <div class="speaker-name">Srivathsa Acharya</div>
+                        <div class="speaker-org">IISc</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>02:40PM – 03:00PM</td>
-                    <td class="speaker-name">Prof. Neelesh Mehta (IISc) </td>
+                    <td>
+                        <div class="speaker-name">Prof. Neelesh Mehta</div>
+                        <div class="speaker-org">IISc</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>03:00PM – 03:20PM</td>
-                    <td class="speaker-name">Prof. Deepa Venkitesh (IITM)</td>
+                    <td>
+                        <div class="speaker-name">Prof. Deepa Venkitesh</div>
+                        <div class="speaker-org">IIT Madras</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr class="break-row">
@@ -189,22 +274,34 @@ button{
                 </tr>
                 <tr>
                     <td>03:40PM – 04:00PM</td>
-                    <td class="speaker-name">Prof. Srikrishna Bhashyam (IITM) </td>
+                    <td>
+                        <div class="speaker-name">Prof. Srikrishna Bhashyam</div>
+                        <div class="speaker-org">IIT Madras</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>04:00PM – 04:20PM</td>
-                    <td class="speaker-name">Dr. Sreenath Ramnath (Lekha Wireless) </td>
+                    <td>
+                        <div class="speaker-name">Dr. Sreenath Ramnath</div>
+                        <div class="speaker-org">Lekha Wireless</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>04:20PM – 04:40PM</td>
-                    <td class="speaker-name">Prof. Radhakrishna Ganti (IITM) </td>
+                    <td>
+                        <div class="speaker-name">Prof. Radhakrishna Ganti</div>
+                        <div class="speaker-org">IIT Madras</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
                 <tr>
                     <td>04:40PM – 05:00PM</td>
-                    <td class="speaker-name">Prof. David Koilpillai (IITM) </td>
+                    <td>
+                        <div class="speaker-name">Prof. David Koilpillai</div>
+                        <div class="speaker-org">IIT Madras</div>
+                    </td>
                     <td>TBD</td>
                 </tr>
             </tbody>
