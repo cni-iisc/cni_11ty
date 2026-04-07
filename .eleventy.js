@@ -319,7 +319,7 @@ module.exports = function (eleventyConfig) {
       const now = new Date();
 
       const events = Object.values(parsed)
-        .filter(e => e.type === 'VEVENT' && new Date(e.start) >= now)
+        .filter(e => e.type === 'VEVENT' && new Date(e.start) >= now && e.summary !== 'Private Appointment')
         .sort((a, b) => new Date(a.start) - new Date(b.start))
         .map(e => ({
           summary: e.summary,
