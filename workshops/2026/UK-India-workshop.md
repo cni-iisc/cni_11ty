@@ -26,7 +26,7 @@ showcase: true
 
 #### Registration 
 
-<button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDbTkc5teqRSLoCecmgPyMPjTr4vnuTFt0_gZt1VUkW4JlgQ/viewform?usp=header" target="_blank">Registration Link</a></button>
+<button><a href="https://forms.gle/Fy8CkGABxn6KLa3R6" target="_blank">Registration Link</a></button>
 <p>Deadline:Last Date of Registration 10 April 2026, 12:00 PM</p>
 
 #### Workshop Schedule:  (Tentative)
