@@ -68,6 +68,15 @@ showcase: true
   border-radius: 12px;
 }
 
+.modal-img {
+  width: 160px;
+  height: 160px;   
+  object-fit: cover;  
+  object-position: center; 
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 15px;
+}
 
 /* Time */
 .schedule-item time {
@@ -110,23 +119,35 @@ showcase: true
 
 /* Modal */
 #modal {
-  display: none;
   position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: none; /* controlled by JS */
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+
+  padding: 20px; /* prevents edge sticking */
 }
 
+/* MODAL BOX */
 .modal-content {
-  background: #fff;
-  padding: 24px;
+  background: #ffffff;
+  color: #111827;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;   /* 🔥 important */
+  overflow-y: auto;   /* 🔥 enables scroll */
   border-radius: 12px;
-  max-width: 600px;
-  width: 90%;
+  padding: 25px;
   position: relative;
 }
+
 
 .modal-content h2 {
   margin-bottom: 10px;
@@ -134,7 +155,7 @@ showcase: true
 
 .close-btn {
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 15px;
   font-size: 22px;
   cursor: pointer;
@@ -187,11 +208,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/Prof.SteveHailes.jpg"
        data-title="Prof. Steve Hailes (University College London)"
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="TBD"
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>10:20AM - 10:40AM</time>
     <div class="schedule-content">
@@ -202,9 +223,9 @@ body.dark .close-btn {
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
        data-title="Dilip Krishnaswamy (CDoT) "
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="TBD"
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>10:40AM - 11:00AM</time>
     <div class="schedule-content">
@@ -213,7 +234,7 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/prem_singh.JPG"
        data-title="Prof. Prem Singh (IIIT Bangalore)"
        data-talktitle="From Theory to Field: End-to-End Design, Testing, and Deployment of RIS Systems"
        data-abstract="Reconfigurable Intelligent Surfaces (RIS) are emerging as a key enabler for shaping wireless propagation environments in next-generation communication systems. While extensive research has focused on theoretical models and algorithms, translating these ideas into practical, deployable systems remains a significant challenge. This talk presents an end-to-end perspective on building RIS systems from scratch, encompassing design, prototyping, testing, and real-world deployment. We discuss critical aspects such as hardware-software co-design, control and reconfiguration strategies, calibration, and over-the-air validation. In addition, the talk highlights the associated challenges encountered in practice. "
@@ -231,10 +252,10 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/anurag-kumar.jpg"
        data-title=" Prof. Anurag Kumar (IISc) "
        data-talktitle="Applications-Aware Optimal Joint Scheduling Over Wireless Access "
-       data-abstract=""
+       data-abstract="TBD"
        data-speakerbio="Prof. Anurag Kumar (B.Tech (1977) IIT Kanpur, PhD (1981) Cornell Univ.) was a Member of Technical Staff in AT&T Bell Laboratories (1981-1988), before returning to India and joining the Indian Institute of Science (IISc) as a faculty member in the ECE Department. He was the Director of IISc during 2014-2020.  Since 1st January, 2024, he is an Indian National Science Academy (INSA) Distinguished Professor. He has published about 200 peer reviewed papers in journals and conferences, in the area of performance analysis, optimisation, and control of communications networks and distributed systems, and has coauthored two major books that have been used around the world. He is a recipient of the J.C. Bose National Fellowship, awarded by the Department of Science Technology, for the period 2011-2021."
        data-link="">   
     <time>11:40AM - 12:00PM </time>
@@ -244,7 +265,7 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/AnindyaSaha.png"
        data-title="Anindya Saha (Tejas Networks) "
        data-talktitle="Discovery Block for Service-Aware and Energy-Efficient Networks "
        data-abstract="What if your device could 'peek' at 6G services before committing to a full connection? This talk unveils the Discovery Block, a lightweight physical-layer preamble that replaces 5G's 'blind searches' with intelligent, service-aware filtering. We explore architectures that slash energy waste and enable seamless spectrum sharing."
@@ -259,9 +280,9 @@ body.dark .close-btn {
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
        data-title=" Prof. Huzur Saran (IITD) "
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="TBD"
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>12:20PM- 12:40PM </time>
     <div class="schedule-content">
@@ -272,9 +293,9 @@ body.dark .close-btn {
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
        data-title="Sheela Prabhakar (ArtPark)"
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="TBD"
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>12:40PM - 01:00PM </time>
     <div class="schedule-content">
@@ -289,11 +310,11 @@ body.dark .close-btn {
 
   
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/GerardParr.jpg"
        data-title="Prof. Gerard Parr (University of East Anglia)  "
        data-talktitle="Threats to UK-India International Submarine Telecoms Cables from Natural/Adversary/Human Attack"
-       data-abstract=""
-       data-speakerbio=""
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>02:00PM - 02:20PM </time>
     <div class="schedule-content">
@@ -304,9 +325,9 @@ body.dark .close-btn {
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
        data-title="Srivathsa Acharya (IISc)"
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="TBD"
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>02:20PM - 02:40PM </time>
     <div class="schedule-content">
@@ -317,9 +338,9 @@ body.dark .close-btn {
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
        data-title="Prof. Neelesh Mehta (IISc) "
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="TBD"
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>02:40PM  - 03:00PM </time>
     <div class="schedule-content">
@@ -330,9 +351,9 @@ body.dark .close-btn {
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
        data-title="Prof. Deepa Venkitesh (IITM) "
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="TBD"
+       data-abstract="TBD"
+       data-speakerbio="TBD"
        data-link="">   
     <time>03:00PM - 03:20PM </time>
     <div class="schedule-content">
@@ -347,7 +368,7 @@ body.dark .close-btn {
 
    
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/SrikrishnaBhashyam.png"
        data-title="Prof. Srikrishna Bhashyam (IITM) "
        data-talktitle=" Clustering of Data Sequences"
        data-abstract="We consider the problem of clustering independent and identically distributed (i.i.d.) data sequences generated from unknown probability distributions. The data sequences have to be clustered according to the closeness of the underlying distributions. Clustering of data sequences has applications in several practical problems like network traffic monitoring, anomaly detection, and market segmentation. This problem has been studied in the fixed sample size, sequential and multi-armed bandit settings. We will present algorithms that achieve a fixed confidence level with as few samples as possible from the data sequences. This is joint work with G. Dhinesh Chandran and Kota Srinivas Reddy. "
@@ -386,7 +407,7 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/David Koilpillai.jpg"
        data-title="Prof. David Koilpillai (IITM) "
        data-talktitle="India Roadmap to 6G – A Bharat 6G Alliance Perspective"
        data-abstract=" India has seen the fastest rollout of 5G systems in the world crossing 530,000 5G sites. With 98% of the India’s mobile Broadband users (~98 crores) using mobile access, India is truly a “Mobile First” county … and the rapid developments in 5G and evolution towards 6G are of high interest and impact in India. The three phase roadmap to 6G developed by Bharat 6G Alliance (B6GA) will be presented. The impact of the various technical aspects such as introduction of AI/ML, Integrated Sensing and Communication (ISAC), Non-Terrestrial Networks (NTN) and Delay-Doppler techniques based on Orthogonal Time Frequency Space (OTFS) Modulation will be mentioned. The role of academia and industry in the India 6G initiatives will be highlighted. The spectrum allocation in India for 5G Advanced and 6G is aligned with global trends. This India spectrum allocation will be briefly described. Together, this presentation will provide a comprehensive view of the roadmap to develop the 6G ecosystem in India, and the role of B6GA. "
@@ -399,7 +420,7 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/A. Chockalingam.jpg"
        data-title="Prof. A. Chockalingam (IISc) "
        data-talktitle="Zak-OTFS: A Waveform for Radar Sensing "
        data-abstract=" In this talk, we consider waveforms for radar sensing. While orthogonality is the preferred attribute in communication waveforms to limit interference and achieve improved communication reliability, localization is the preferred attribute in radar sensing waveforms to achieve improved target detection and resolution. The goodness of a radar waveform is typically quantified through its ambiguity function. The range (delay) and velocity (Doppler) resolutions are primarily determined by the ambiguity function of the waveform used. Two candidate waveforms will be considered in this talk. One will be the widely used chirp waveform. The other will be the recent Zak transform-based orthogonal time frequency space (Zak-OTFS) waveform. We present their waveform characteristics and their achieved range/velocity estimation performance in multi-target scenarios. While the self-ambiguity function of a chirp is a line in the delay-Doppler (DD) domain, the self-ambiguity function of the Zak-OTFS waveform is a lattice that gives better DD domain localization and estimation performance. "
@@ -413,11 +434,6 @@ body.dark .close-btn {
 
  
 </div>
-
-
-
-
-
 
 
 
