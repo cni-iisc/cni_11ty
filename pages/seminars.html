@@ -161,12 +161,12 @@ document.addEventListener("DOMContentLoaded", function() {
     {% set seminar_date = seminar.data.date | utcDate %}
     {% set seminar_year = seminar.data.date | date("yyyy") %}
     {% set seminar_date = seminar_date | date("yyyy-MM-dd") %}
-    {% if seminar_year == footerInfo.currentYear %} 
+    {% if seminar_year == footerInfo.currentYear %}
     <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0 past-seminars" data-time = "{{ seminar.data.date | utcDate }}">
       <div class="card mb-3">
         {% if seminar.data.recorded_video %}
         {% set videoId = seminar.data.recorded_video %}
-        <img class="card-img-top img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg" ,
+        <img class="card-img-top img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg"
           alt="Card image cap">
         {% else %}
         {% if seminar.data.img.startsWith('/') %}
