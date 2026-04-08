@@ -1,14 +1,14 @@
 ---
 layout: project_page
 title: "Future Communications and Networking Workshop"
-img: assets/img/workshops/2026/CNI_TechnicalWorkshop_13April2026_Poster.jpg
+img: assets/img/workshops/2026/CNI_TechnicalWorkshop_13April2026_Poster.png
 importance: 10
 category: ""
 showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/2026/CNI_TechnicalWorkshop_13April2026_Poster.jpg"/>
+      <img class="img-fluid" src="/assets/img/workshops/2026/CNI_TechnicalWorkshop_13April2026_Poster.png"/>
 </div>
 <p>A CNI Technical Workshop on Future Communications and Networking, advancing research dialogue and Indo-UK collaboration. This workshop brings together researchers, practitioners, and students to explore emerging directions in communication systems, network science, and related interdisciplinary domains.</p>
 
@@ -68,15 +68,6 @@ showcase: true
   border-radius: 12px;
 }
 
-.modal-img {
-  width: 160px;
-  height: 160px;   
-  object-fit: cover;  
-  object-position: center; 
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto 15px;
-}
 
 /* Time */
 .schedule-item time {
@@ -111,7 +102,7 @@ showcase: true
 
 /* Break */
 .break {
-  background: #b8b8fa;
+  background: #6084a3;
   justify-content: left;
   font-weight: 600;
   cursor: default;
@@ -124,14 +115,11 @@ showcase: true
   left: 0;
   width: 100%;
   height: 100%;
-
   display: none; /* controlled by JS */
   justify-content: center;
   align-items: center;
-
   background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
-
   padding: 20px; /* prevents edge sticking */
 }
 
@@ -222,7 +210,7 @@ body.dark .close-btn {
 
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
-       data-title="Dilip Krishnaswamy (CDoT) "
+       data-title="Dr. Dilip Krishnaswamy (CDoT) "
        data-talktitle="TBD"
        data-abstract="TBD"
        data-speakerbio="TBD"
@@ -257,7 +245,7 @@ body.dark .close-btn {
        data-talktitle="Applications-Aware Optimal Joint Scheduling Over Wireless Access "
        data-abstract="TBD"
        data-speakerbio="Prof. Anurag Kumar (B.Tech (1977) IIT Kanpur, PhD (1981) Cornell Univ.) was a Member of Technical Staff in AT&T Bell Laboratories (1981-1988), before returning to India and joining the Indian Institute of Science (IISc) as a faculty member in the ECE Department. He was the Director of IISc during 2014-2020.  Since 1st January, 2024, he is an Indian National Science Academy (INSA) Distinguished Professor. He has published about 200 peer reviewed papers in journals and conferences, in the area of performance analysis, optimisation, and control of communications networks and distributed systems, and has coauthored two major books that have been used around the world. He is a recipient of the J.C. Bose National Fellowship, awarded by the Department of Science Technology, for the period 2011-2021."
-       data-link="">   
+       data-link="https://eecs.iisc.ac.in/people/anurag-kumar/">   
     <time>11:40AM - 12:00PM </time>
     <div class="schedule-content">
       <div class="speaker">Talk-5  Prof. Anurag Kumar (IISc)</div>
@@ -313,9 +301,9 @@ body.dark .close-btn {
        data-image="/assets/img/workshops/2026/GerardParr.jpg"
        data-title="Prof. Gerard Parr (University of East Anglia)  "
        data-talktitle="Threats to UK-India International Submarine Telecoms Cables from Natural/Adversary/Human Attack"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
-       data-link="">   
+       data-abstract="Protection of Critical National Infrastructure has taken on increased importance and attention in recent years.  With recent world and geo-political events, the importance of maintaining our International Interconnectors has increased dramatically. Whilst there are many challenges in monitoring and protecting on-land infrastructure (water, electricity, oil, gas, telecoms), there are particular areas of risk and interest associated with the sub-sea digital network interconnects that service the UK and India.  Moreover, the UK and India serve as landing points for a number of strategically important communications interconnects for the rest of Europe and Asia.  The importance of this Critical Infrastructure to the economy of India and the UK cannot be overstated. This presentation will give a summary overview of the importance of Submarine Telecoms infrastructure and some of the challenges that exist to provide their resilience. It will also solicit some suggestions for addressing these challenges under the auspices of the UK-India Future Networks Initiative."
+       data-speakerbio="Gerard is a Full Professor in Telecommunications Engineering and has been Head of School of Computing Sciences at the University of East Anglia (UEA) in Norwich, Norfolk, UK from 2016-2023.  His role involved a range of senior management responsibilities covering Teaching, Research, Innovation and Outreach.  He holds a PhD in Self-Stabilising Protocols from Ulster University in Northern Ireland, aspects of which were completed with UCL and one of the founding Fathers of the Internet (Professor Jon Postel) whilst a Visiting Research Scientist at the DARPA/University of Southern California Information Sciences Institute in Marina Del Rey, Los Angeles. Within his academic career, areas of research include Wireless Sensor Clouds, UAVs for Disaster Response Communications, ICT for the Rural Economy, delay-sensitive protocols, energy-aware autonomic networking and IoT-edge computing. He has attracted several £millions of external research and commercial funding and has advised governments on the allocation of funding to large-scale projects valued in total at approximately £4 billion. His industrial collaborations have included companies such as BT, Intel, IBM, Aviva, Ericsson, Siemens, InfoSys, Wipro, Tejas Networks, Vodafone, ARM and SAP.  Professor Parr is an invited member of the Peer Review College of the esteemed UK Government funding agency- the Engineering & Physical Sciences Research Council (EPSRC). His academic research collaborations include MIT, Georgia Institute of Technology, University of Arizona, UC Berkeley, UC San Diego, USC-ISI Los Angeles, University of Florida, University College London, Southampton, Surrey, QMUL, Otto von Guericke University Magdeburg, Oxford, St Andrews, Exeter, Lancaster , Cambridge, Beijing University of Posts & Telecommunications (BUPT), Tsinghua University, Peking University and Indian Institutes of Technology in Mumbai, Madras, Kanpur, Hyderabad, Delhi, Mandi and IISc Bangalore. He was previously appointed as a Visiting Professor to the Science Foundation Ireland/CTVR at Trinity College Dublin and to the Emirates-BT Innovation Centre (EBTIC) at Khalifa University in Abu Dhabi- UAE. He was previously Chief Scientific Advisor to Project Kelvin, an initiative led by UK and Irish governments.  This led to the installation of a submarine telecommunications cable connecting the north coast of Northern Ireland and Dublin to a transatlantic submarine cable linking North America with Southport in England, and onwards to continental Europe. He has been International Scientific Advisor to the UK EPSRC National Centre for Doctoral Training in Communications Engineering at the University of Bristol. He was appointed as Senior Guest Editor for prestigious IEEE Journal on Selected Areas of Communications (JSAC) for a Special Issue on Communications Challenges and Dynamics in UAVs. He has extensive experience of working with developing economies, in particular, India, where he was the UK Academic co-ordinator for the major EPSRC-DST India-UK Advanced Technology Centre in Next Generation Networks Systems and Services which was the largest collaboration of its kind between UK and India in the ICT sector attracting total investment of over £20 million and also helped establish a Virtual Graduate Research School for 67 PhD students under the UKIERI Programme. Gerard was awarded an MBE in Queens New Year Honours for 2018 for contributions to Telecommunications Infrastructure in Northern Ireland.  During January 2020 Prof Parr was elected to the Strategic Advisory Committee for the UK Government UK Research and Innovation (UKRI) – (EPSRC) ICT Programme to assist with strategic developments, funding panels and identification of funding priorities.  Most recently Gerard has been successful in attracting Co-I funding for a 5-year EPSRC Next Stage Digital Economy Hub called DIGIT (Digital-Innovation-Growth-Impact-Transformation) valued over £12 million which will explore methodologies and business impact of Digital Transformation in Large Organisations. During 2021 Gerard was also successful as PI to attract funding for the “UK-India Future Networks Initiative” with academic institutions IISc Bangalore, IIT Delhi, UCL, Kings College, Surrey, Southampton. Most recently in December 2022 he was successful as a Co-PI on a bid to UKRI-ESRC concerning Digital Technology in Teacher Agency. The £5.3 million fund will support a total of nine projects. He is also a Member of the UKRI-EPSRC Digital Security & Resilience Advisory Group. "
+       data-link="https://research-portal.uea.ac.uk/en/persons/gerard-parr/">   
     <time>02:00PM - 02:20PM </time>
     <div class="schedule-content">
       <div class="speaker">Talk-9 Prof. Gerard Parr (University of East Anglia) </div>
@@ -323,12 +311,12 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/SrivathsaAcharya.jpg"
        data-title="Srivathsa Acharya (IISc)"
-       data-talktitle="TBD"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
-       data-link="">   
+       data-talktitle="Product-Code-Based Outer Coding at the PHY-MAC Layer for Reliable, Low-Latency, Cellular Communication"
+       data-abstract="A novel outer-coding scheme, termed Product- Code-Based Outer Coding at PHY-MAC Layer (PROMAC) for 5G and beyond is presented, that enables reliable communication within a single transmission time interval in the presence of two or more datalink paths. It is shown through simulations that this scheme provides an improvement of 10dB over Packet Data Convergence Protocol (PDCP) duplication over a commonly employed 3GPP channel model. The proposed scheme employs a short binary code (SBC) to carry out outer coding at the Medium Access Control (MAC) layer. Innovative features of the proposed scheme that also lead to improved performance include: identifying packets with low-density-parity-check (LDPC) code blocks, architecting the system so that the combination of LDPC codewords and outer code form a product code that can be iteratively decoded, carrying out soft-decision decoding of this outer code and requiring the physical (PHY) layer to pass on all correctly-decoded code blocks to the MAC layer, even if the entire Transport Block has not been correctly decoded. Some further enhancements of this scheme are also presented."
+       data-speakerbio="Srivathsa Acharya earned his B.Tech. from NITK, Surathkal in 2005 and his M.E. from IISc, Bangalore in 2007. He is currently a Senior Principal Communication Systems Technical Lead at MaxLinear, Bangalore, India, specializing in digital signal processing (DSP) for 5G radio-unit (RU) solutions. Simultaneously, he is pursuing his Ph.D. (ERP) at IISc Bangalore under the supervision of Prof. P. Vijay Kumar, researching codes for low-latency geo-distributed storage and packet-level erasure codes for 5G reliable low-latency communication."
+       data-link="https://ece.iisc.ac.in/member/srivathsa-acharya/">   
     <time>02:20PM - 02:40PM </time>
     <div class="schedule-content">
       <div class="speaker">Talk-10 Srivathsa Acharya (IISc)</div>
@@ -369,11 +357,11 @@ body.dark .close-btn {
    
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/SrikrishnaBhashyam.png"
-       data-title="Prof. Srikrishna Bhashyam (IITM) "
-       data-talktitle=" Clustering of Data Sequences"
+       data-title="Prof. Srikrishna Bhashyam (IITM)"
+       data-talktitle="Clustering of Data Sequences"
        data-abstract="We consider the problem of clustering independent and identically distributed (i.i.d.) data sequences generated from unknown probability distributions. The data sequences have to be clustered according to the closeness of the underlying distributions. Clustering of data sequences has applications in several practical problems like network traffic monitoring, anomaly detection, and market segmentation. This problem has been studied in the fixed sample size, sequential and multi-armed bandit settings. We will present algorithms that achieve a fixed confidence level with as few samples as possible from the data sequences. This is joint work with G. Dhinesh Chandran and Kota Srinivas Reddy. "
        data-speakerbio="Srikrishna Bhashyam (Senior Member, IEEE) received the B.Tech. degree in electronics and communication engineering from IIT Madras, India, in 1996, and the M.S. and Ph.D. degrees in electrical and computer engineering from Rice University, Houston, TX, USA, in 1998 and 2001, respectively. He was a Senior Engineer with Qualcomm, Inc., Campbell, CA, USA, from 2001 to 2003, where he was involved in wideband code division multiple access modem design. Since 2003, he has been with IIT Madras. He is currently a Professor with the Department of Electrical Engineering. His research interests include wireless communication, statistical signal processing, and information theory. He served as an Editor for IEEE Transactions on Wireless Communications from 2009 to 2014, and IEEE Transactions on Communications from 2017 to 2024. "
-       data-link="">   
+       data-link="https://www.ee.iitm.ac.in/~skrishna/">   
     <time>03:40PM - 04:00PM </time>
     <div class="schedule-content">
       <div class="speaker">Talk-13 Prof. Srikrishna Bhashyam (IITM)</div>
