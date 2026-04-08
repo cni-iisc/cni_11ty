@@ -121,10 +121,6 @@ is done using MathJax library.</li>
 <li>Migrated the old jekyll-based CNI website to a modern eleventy-based website. This was done
 to make the website more user-friendly and easier to maintain. The new website is hosted using
 GitHub pages and is accessible at https://cni.iisc.ac.in/.</li>
-<li>To help non-technical users to update the website, the website is empowered with Content
-Management System (CMS) using Sveltia CMS. This allows users to update the website content
-without needing to know how to code. The CMS is accessible at https://cni.iisc.ac.in/
-admin/ and is hosted on the same GitHub repository as the website.</li>
 <li>Added a javascript-based functionality to the website which lists upcoming seminars on the
 webpage based on the current time.</li>
 <li>The publications page has been given a new look and feel. The publications are now listed in
@@ -150,4 +146,3 @@ This allows users to choose the mode they prefer while browsing the website.</li
 <li>The home page of the CNI website has been given a fresh look with recent updates and upcoming
 events shown on the home page.</li>
 </ul>
-
