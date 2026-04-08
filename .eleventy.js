@@ -1,6 +1,6 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-terser");
 const fs = require("fs"); // Import the fs module
 const path = require('path');
 const https = require('https');

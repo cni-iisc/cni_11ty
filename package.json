@@ -23,7 +23,7 @@
     "eleventy-plugin-bibtex": "^0.1.1",
     "eleventy-plugin-redirects": "^1.0.0",
     "fs": "^0.0.1-security",
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
     "ical": "^0.8.0",
     "js-yaml": "^4.1.0",
     "lightningcss": "^1.30.1",
