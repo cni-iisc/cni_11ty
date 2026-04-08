@@ -1,4 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:title" content="Centre for Networked Intelligence"><meta property="og:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta property="og:url" content=""><meta property="og:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta property="og:image:alt" content="CNI logo"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Centre for Networked Intelligence"><meta name="twitter:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta name="twitter:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta name="twitter:image:alt" content="CNI logo"><link rel="icon" type="image/x-icon" href="/assets/images/favicon-dark.ico" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" media="(prefers-color-scheme: light)"><title>Interventional Causal Representation Learning | CNI</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet"><script type="text/javascript">MathJax = {
+
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:title" content="Centre for Networked Intelligence"><meta property="og:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta property="og:url" content=""><meta property="og:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta property="og:image:alt" content="CNI logo"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Centre for Networked Intelligence"><meta name="twitter:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta name="twitter:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta name="twitter:image:alt" content="CNI logo"><link rel="icon" type="image/x-icon" href="/assets/images/favicon-dark.ico" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" media="(prefers-color-scheme: light)"><title>Interventional Causal Representation Learning | CNI</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet"><script type="text/javascript">MathJax = {
                 tex: {
                     inlineMath: [
                         ["$", "$"],
@@ -6,7 +7,7 @@
                     ],
                 },
                 svg: { fontCache: "global" },
-            };</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-9KXWYD9G5G"></script><script>window.dataLayer = window.dataLayer || [];
+            };</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9KXWYD9G5G"></script><script>window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments);
             }
@@ -92,4 +93,142 @@
                         themeIcon.classList.add("bi-sun");
                     }
                 }
-            }</script></head><body><nav class="navbar navbar-expand-lg custom-navbar"><div class="container-fluid"><a class="navbar-brand" href="/"><img src="/assets/images/cni_logo.png" alt="CNI logo" style="height: 60px"> </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarText"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">People</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/faculty/">Faculty</a></li><li><a class="dropdown-item" href="/staff/">Staff</a></li><li><a class="dropdown-item" href="/phd-fellows/">PhD Fellows</a></li><li><a class="dropdown-item" href="/mtech-fellows/">MTech Fellows</a></li><li><a class="dropdown-item" href="/visitors/">Visitors</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Research</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/projects/">Projects</a></li><li><a class="dropdown-item" href="/publications/">Publications</a></li><li><a class="dropdown-item" href="/highlights/">Highlights</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Outreach</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/seminars/">Seminars</a></li><li><a class="dropdown-item" href="/newsletter/latest/">Newsletters</a></li><li><a class="dropdown-item" href="/courses/">Courses</a></li><li><a class="dropdown-item" href="/schools/">Summer School</a></li><li><a class="dropdown-item" href="/news/">CNI in News</a></li><li><a class="dropdown-item" href="/hackathons">Hackathons</a></li><li><a class="dropdown-item" href="/workshops/">Workshops</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/opportunities/">Opportunities</a></li><li class="nav-item"><button class="theme-toggle" onclick="toggleTheme()"><i id="theme-icon" class="bi bi-sun"></i></button></li></ul></div></div></nav><link rel="stylesheet" href="/assets/css/seminar_cards.css"><div class="container-fluid text-center mt-2"><h2>CNI Seminar Series</h2><header class="mt-4"><h3>Interventional Causal Representation Learning</h3><h4><a href="https://www.isg-rpi.com/">Prof. Ali Tajer, RPI, Troy, NY, USA</a></h4><h5>#220</h5></header></div><div class="container-fluid text-center" style="max-width: 800px;"><br></div><div class="container-fluid mt-4" style="max-width: 800px;"><h6 class="text-center" style="width: 20px; height: 20px; display: inline-block;">Abstract</h6><p>Causal representation learning (CRL) aims to form a causal understanding of the world by learning appropriate representations that support causal interventions, reasoning, and planning, and it is considered a major step for achieving strong generalization in learning. Specifically, CRL considers a data-generating process in which high-level latent causally related variables are mapped to low-level, generally high-dimensional observed data through an transformation. CRL is the process of using the observed data and recovering the causal structure, the latent causal variables, and the unknown transformation $g$ as well. In this talk we will provide a comprehensive overview of the space of the problem and the recent advances on various identifiability (information-theoretic) and achievability (algorithmic) aspects of interventional CRL.</p><br><h6 style="width: 20px; display: inline-block;">Bio</h6><h5><a href="https://www.isg-rpi.com/">Prof. Ali Tajer, RPI, Troy, NY, USA</a></h5><p>Ali Tajer received the M.A degree in Statistics and the Ph.D. degree in Electrical Engineering from Columbia University. During 2010-2012 he was with Princeton University as a Postdoctoral Research Associate. He is currently an Associate Professor of Electrical, Computer, and Systems Engineering at Rensselaer Polytechnic Institute. His research interests include mathematical statistics, machine learning, and information theory. He is currently serving as an Associate Editor for the IEEE Transactions on Information Theory and a Senior Area Editor for the IEEE Transactions on Signal Processing. He has received the Jury Award (Columbia University), School of Engineering Research Excellence Award (Rensselaer), School of Engineering Classroom Excellence Award (Rensselaer), James M. Tien &#39;66 Early Career Award for Faculty (Rensselaer), a CAREER award from the U.S. National Science Foundation in 2016 and a U.S. Air Force Fellowship Award in 2019.</p></div><footer class="site-footer"><div class="footer-container"><a href="mailto:contact.cni@iisc.ac.in" title="Email" target="_blank"><i class="fa-solid fa-envelope"></i> </a><a href="https://github.com/cni-iisc" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i> </a><a href="https://x.com/cni_iisc" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i> </a><a href="https://www.linkedin.com/company/cni-iisc" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i> </a><a href="https://www.youtube.com/@centrefornetworkedintellig5324" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i> </a><a href="https://www.instagram.com/cni_iisc/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a><p>&copy; 2026 Centre for Networked Intelligence. All rights reserved.</p><p>Last updated: April 8, 2026</p></div></footer></body></html>
+            }</script><style id="MJX-SVG-styles">
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+</style></head><body><nav class="navbar navbar-expand-lg custom-navbar"><div class="container-fluid"><a class="navbar-brand" href="/"><img src="/assets/images/cni_logo.png" alt="CNI logo" style="height: 60px"> </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarText"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">People</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/faculty/">Faculty</a></li><li><a class="dropdown-item" href="/staff/">Staff</a></li><li><a class="dropdown-item" href="/phd-fellows/">PhD Fellows</a></li><li><a class="dropdown-item" href="/mtech-fellows/">MTech Fellows</a></li><li><a class="dropdown-item" href="/visitors/">Visitors</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Research</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/projects/">Projects</a></li><li><a class="dropdown-item" href="/publications/">Publications</a></li><li><a class="dropdown-item" href="/highlights/">Highlights</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Outreach</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/seminars/">Seminars</a></li><li><a class="dropdown-item" href="/newsletter/latest/">Newsletters</a></li><li><a class="dropdown-item" href="/courses/">Courses</a></li><li><a class="dropdown-item" href="/schools/">Summer School</a></li><li><a class="dropdown-item" href="/news/">CNI in News</a></li><li><a class="dropdown-item" href="/hackathons">Hackathons</a></li><li><a class="dropdown-item" href="/workshops/">Workshops</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/opportunities/">Opportunities</a></li><li class="nav-item"><button class="theme-toggle" onclick="toggleTheme()"><i id="theme-icon" class="bi bi-sun"></i></button></li></ul></div></div></nav><link rel="stylesheet" href="/assets/css/seminar_cards.css"><div class="container-fluid text-center mt-2"><h2>CNI Seminar Series</h2><header class="mt-4"><h3>Interventional Causal Representation Learning</h3><h4><a href="https://www.isg-rpi.com/">Prof. Ali Tajer, RPI, Troy, NY, USA</a></h4><h5>#220</h5></header></div><div class="container-fluid text-center" style="max-width: 800px;"><br></div><div class="container-fluid mt-4" style="max-width: 800px;"><h6 class="text-center" style="width: 20px; height: 20px; display: inline-block;">Abstract</h6><p>Causal representation learning (CRL) aims to form a causal understanding of the world by learning appropriate representations that support causal interventions, reasoning, and planning, and it is considered a major step for achieving strong generalization in learning. Specifically, CRL considers a data-generating process in which high-level latent causally related variables are mapped to low-level, generally high-dimensional observed data through an transformation. CRL is the process of using the observed data and recovering the causal structure, the latent causal variables, and the unknown transformation <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.079ex" height="1.464ex" role="img" focusable="false" viewBox="0 -442 477 647" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>g</mi></math></mjx-assistive-mml></mjx-container> as well. In this talk we will provide a comprehensive overview of the space of the problem and the recent advances on various identifiability (information-theoretic) and achievability (algorithmic) aspects of interventional CRL.</p><br><h6 style="width: 20px; display: inline-block;">Bio</h6><h5><a href="https://www.isg-rpi.com/">Prof. Ali Tajer, RPI, Troy, NY, USA</a></h5><p>Ali Tajer received the M.A degree in Statistics and the Ph.D. degree in Electrical Engineering from Columbia University. During 2010-2012 he was with Princeton University as a Postdoctoral Research Associate. He is currently an Associate Professor of Electrical, Computer, and Systems Engineering at Rensselaer Polytechnic Institute. His research interests include mathematical statistics, machine learning, and information theory. He is currently serving as an Associate Editor for the IEEE Transactions on Information Theory and a Senior Area Editor for the IEEE Transactions on Signal Processing. He has received the Jury Award (Columbia University), School of Engineering Research Excellence Award (Rensselaer), School of Engineering Classroom Excellence Award (Rensselaer), James M. Tien '66 Early Career Award for Faculty (Rensselaer), a CAREER award from the U.S. National Science Foundation in 2016 and a U.S. Air Force Fellowship Award in 2019.</p></div><footer class="site-footer"><div class="footer-container"><a href="mailto:contact.cni@iisc.ac.in" title="Email" target="_blank"><i class="fa-solid fa-envelope"></i> </a><a href="https://github.com/cni-iisc" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i> </a><a href="https://x.com/cni_iisc" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i> </a><a href="https://www.linkedin.com/company/cni-iisc" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i> </a><a href="https://www.youtube.com/@centrefornetworkedintellig5324" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i> </a><a href="https://www.instagram.com/cni_iisc/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a><p>© 2026 Centre for Networked Intelligence. All rights reserved.</p><p>Last updated: April 8, 2026</p></div></footer><svg style="display: none;" id="MJX-SVG-global-cache"><defs><path id="MJX-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></defs></svg></body></html>
