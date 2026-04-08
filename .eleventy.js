@@ -11,8 +11,6 @@ const browserslist = require("browserslist");
 const { transform, browserslistToTargets } = require("lightningcss");
 const mathjaxPlugin = require("eleventy-plugin-mathjax");
 
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
-
 module.exports = function (eleventyConfig) {
   // Add the plugin with default settings (SVG output)
   eleventyConfig.addPlugin(mathjaxPlugin);
@@ -29,12 +27,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy({
-    "./admin/config.yml": "./admin/config.yml"
-  });
-  eleventyConfig.addPassthroughCopy({
-    "./admin/index.html": "./admin/index.html"
-  });
 
   //copy CNAME file
   eleventyConfig.addPassthroughCopy("CNAME");
@@ -284,9 +276,6 @@ module.exports = function (eleventyConfig) {
       console.error('❌ Failed to fetch .ics:', err);
     }
   });
-
-  // UpgradeHelper must be added last among all plugins
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
     dir: {

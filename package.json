@@ -14,7 +14,6 @@
   "description": "",
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",
-    "@11ty/eleventy-upgrade-help": "^3.0.2",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.4.0",
     "bibtex-parse": "^2.1.0",
     "bootstrap": "^5.3.3",

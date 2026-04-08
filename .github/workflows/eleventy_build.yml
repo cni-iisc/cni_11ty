@@ -2,8 +2,7 @@ name: Eleventy Build
 on:
   push: 
     branches: [main]
-  repository_dispatch: 
-    types: [sveltia-cms-publish]
+  repository_dispatch:
 
 
 permissions:
