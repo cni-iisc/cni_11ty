@@ -293,7 +293,7 @@ body.dark .close-btn {
 
   <div class="schedule-item break">
     <time> 01:00PM – 02:00PM</time>
-    ☕ Lunch Break
+    🍽 Lunch Break
   </div>
 
   
