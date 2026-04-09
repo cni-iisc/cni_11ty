@@ -369,11 +369,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/SreenathRamanath.png"
        data-title="Dr. Sreenath Ramnath (Lekha Wireless) "
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="Mobility and Scheduling Strategies in Airborne Communication Systems"
+       data-abstract="We consider a local area deployment of UAVs, tasked to deliver packages. We focus on mobility and scheduling strategies. Taking some examples, we provide an insight into the opportunities and challenges that arise in such a deployment."
+       data-speakerbio="Sreenath has over three decades of R&D experience in the Wireless industry. He holds a Masters degree from the Indian Institute of Science (IISc), Bangalore, and a PhD in Computer Science & Control from INRIA, Sophia Antipolis, France. He has worked on technologies such as GPS, CDMA, Wireless LAN, WiMAX, LTE, and 5G, and has held technical and managerial roles at Accord, Ittiam, Philips, and Beceem (acquired by Broadcom). He is currently VP - Technology & Innovation at Lekha Wireless Solutions, Bangalore, where he leads the design and development of next-generation communication networks. He is also actively involved with TSDSI and B6GA, driving indigenous innovation and contributing to India’s 6G vision. In the past, he has served as an Adjunct Professor with the EE Dept., IIT Bombay, Associate Researcher with the Alcatel-Lucent Chair on Flexible-Radio at Supelec, Paris, France and as an associate member of the INRIA-Bell Labs joint research lab on Self Organizing Networks. He is a Senior Member of IEEE. He has co-authored 50+ IPRs and 30+ publications in reputed journals and conferences."
        data-link="">   
     <time>04:00PM - 04:20PM </time>
     <div class="schedule-content">
