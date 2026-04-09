@@ -20,6 +20,7 @@
     "browserslist": "^4.25.2",
     "cni_11ty": "file:",
     "cross-env": "^7.0.3",
+    "eleventy": "^2.0.1",
     "eleventy-plugin-bibtex": "^0.1.1",
     "eleventy-plugin-redirects": "^1.0.0",
     "fs": "^0.0.1-security",

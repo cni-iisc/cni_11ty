@@ -196,12 +196,12 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/Prof.SteveHailes.jpg"
+       data-image="/assets/img/workshops/2026/SteveHailes.png"
        data-title="Prof. Steve Hailes (University College London)"
-       data-talktitle="TBD"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
-       data-link="">   
+       data-talktitle="Towards Trustworthy Wi-Fi Sensing: Systematic Evaluation of Deep Learning Model Robustness to Adversarial Attacks"
+       data-abstract="This talk examines adversarial robustness in Wi-Fi Channel State Information (CSI)-based sensing for human activity recognition (HAR) and identification (HID). Using a unified evaluation framework that we develop to measure and compare robustness across five diverse architectures and four public datasets, it systematically evaluates white-box, black-box transfer, and universal attacks alongside defense strategies like Adversarial Training and Randomized Smoothing. The results show that model capacity does not guarantee resilience - simple architectures often outperform high-capacity ones - and that vulnerability is fundamentally task-dependent. Crucially, enforcing physics-guided signal constraints drastically reduces attack success rates compared to unconstrained perturbations, suggesting that standard digital attacks may overestimate real-world vulnerabilities. These findings, together with the framework itself, establish foundational design principles for secure and deployable edge-based wireless sensing systems. The work covered in this talk was conducted by Shreevanth Krishnaa Gopalakrishnan, a PhD student in the Department of Computer Science at UCL, and is under submission to MobiCom 2026."
+       data-speakerbio="Stephen Hailes is Professor of Wireless Systems and was, until 18 months ago, Head of the Department of Computer Science at UCL. He has broad interests in sensing, communication and security but his main research foci at present are in AI and in cybersecurity, including the cybersecurity of OT systems.  He is a Director of the Centre for Doctoral Training in Cyber-Physical Risk. Shreevanth Gopalakrishnan is one of his PhD students from the CDT in Cybersecurity."
+       data-link="https://profiles.ucl.ac.uk/11262-steve-hailes">   
     <time>10:20AM - 10:40AM</time>
     <div class="schedule-content">
       <div class="speaker">Talk-2 Prof. Steve Hailes (University College London) </div>
@@ -243,7 +243,7 @@ body.dark .close-btn {
        data-image="/assets/img/workshops/2026/anurag-kumar.jpg"
        data-title=" Prof. Anurag Kumar (IISc) "
        data-talktitle="Applications-Aware Optimal Joint Scheduling Over Wireless Access "
-       data-abstract="TBD"
+       data-abstract="Emerging and future wireless access networks will have to support a variety of diverse applications, with various quality-of-service requirements, such as online edge-based control of robots, wireless audio for auditoria, and real-time surveillance video at scale. Despite the 10s of Gbps physical layer bit rates in both 5G/6G networks and Wi-Fi networks,  actual end-to-end performance guarantees are a challenge due to channel variability, cochannel interference, user mobility, the need for complex measurements for optimal operation, etc. In this setting,  efficient and dynamic resource sharing for the emerging applications over wireless access networks poses many challenges. We have been working on both the above technologies. For 5G, we will present our problem formulation and some results on optimal joint scheduling for multiple flow types, initially focusing on full-buffer elastic (FBE) flows and hard deadline real-time (HDR) flows. For WI-Fi, we have developed an overlay orchestration approach that can provide fairness among TCP flows, at the same time ensuring that downlink and uplink real-time UDP flows obtain their required performance guarantees. We will provide a quick overview of one of our experimental demonstrations."
        data-speakerbio="Prof. Anurag Kumar (B.Tech (1977) IIT Kanpur, PhD (1981) Cornell Univ.) was a Member of Technical Staff in AT&T Bell Laboratories (1981-1988), before returning to India and joining the Indian Institute of Science (IISc) as a faculty member in the ECE Department. He was the Director of IISc during 2014-2020.  Since 1st January, 2024, he is an Indian National Science Academy (INSA) Distinguished Professor. He has published about 200 peer reviewed papers in journals and conferences, in the area of performance analysis, optimisation, and control of communications networks and distributed systems, and has coauthored two major books that have been used around the world. He is a recipient of the J.C. Bose National Fellowship, awarded by the Department of Science Technology, for the period 2011-2021."
        data-link="https://eecs.iisc.ac.in/people/anurag-kumar/">   
     <time>11:40AM - 12:00PM </time>
