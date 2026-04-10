@@ -337,12 +337,12 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/DeepaVenkitesh.png"
        data-title="Prof. Deepa Venkitesh (IITM) "
-       data-talktitle="TBD"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
-       data-link="">   
+       data-talktitle="Scaling Capacities- Learnings from AOC Testbed at IITM"
+       data-abstract="The relentless surge in global data traffic necessitates a shift beyond the fundamental capacity limits of single-mode fibers, driving the exploration of Space Division Multiplexing (SDM) at the AOC (Advanced Optical Communication) Testbed at IIT Madras. This talk details the comprehensive lifecycle of Multicore Fiber (MCF)implementation, from the engineering of fiber profiles to minimize inter-core crosstalk to the practical challenges of physical deployment within a controlled testbed environment. We present the results from rigorous data transmission testing of upto 3.2 Tbps per wavelength, and offer our insights into the scalability of next-generation optical infrastructures and the transition of multicore architectures."
+       data-speakerbio="Deepa Venkitesh obtained her Bachelors and Master’s degree in Physics from the University of Kerala and PhD from the Indian Institute of Technology Bombay. She has worked in SAMEER Mumbai, Vivekanand Education Society, Mumbai before joining the Indian Institute of Technology Madras. She is currently a Professor in the Department of Electrical Engineering, IIT Madras. She was bestowed with the Young Faculty Recognition Award of IIT Madras in 2012, and the Abdul Kalam Technology Innovation Fellowship of INAE in 2021. She is Senior Member of OSA, and Editorial Board member of Journal of Lightwave Technology. She was   the Associate Vice President of “Women in Photonics” of the IEEE Photonics Society (2020-2023). She has also served as the National Coordinating Faculty for the Prime Ministers Research Fellowship program of the Govt of India (2022-2024). She is the project lead for the Advanced Optical Communication Testbed project- which is a consortium project funded by the Department of Telecommunications, Govt of India. Her areas of interest are in optical communication including capacity scaling, optical signal processing, continuous variable quantum key distribution and microwave photonics."
+       data-link="https://sites.google.com/a/ee.iitm.ac.in/deepav/">   
     <time>03:00PM - 03:20PM </time>
     <div class="schedule-content">
       <div class="speaker">Talk-12 Prof. Deepa Venkitesh (IITM)</div>
