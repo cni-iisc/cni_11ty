@@ -279,11 +279,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/SheelaPrabhakar.png"
        data-title="Sheela Prabhakar (ArtPark)"
-       data-talktitle="TBD"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
+       data-talktitle="QoS Support in Private 5G Network (for Efficient UA/GVs Operation)"
+       data-abstract="Private 5G networks have significant advantages over traditional or alternate technologies as communication backbone for deployment of UGVs / UAVs for wide range of applications covering industrial, defence, enterprise, etc. One such advantage crucial for UGVs / UAVs operation is the QoS provided by the network. In this talk we share our experience from evaluation of QoS features in Private 5G Networks for deployment of UGVs and UAVs, some of the hurdles faced and our approach in addressing them.  "
+       data-speakerbio="Sheela Prabhakar is a seasoned technology and business leader with a distinguished career spanning nearly four decades in Wired and Wireless Communications, Data Communication Systems, Cellular Networks, and Multimedia Technologies. With a Bachelor’s degree in Electronics & Communication Engineering and a Master’s degree from the Indian Institute of Science (IISc), she combines deep technical expertise with proven leadership in steering complex technology initiatives from concept to successful market-ready products. Her professional journey has made significant contributions across diverse industry domains — from Defence to Industrial, Surveillance, and medical applications — delivering solutions that have reached customers worldwide. Currently, she heads the Government of Karnataka–sponsored Centre of Excellence for Wired & Wireless Technologies at ARTPARK–IISc, where she is spearheading the setup of advanced 5G testbeds and use case laboratories. In the past, She held senior leadership roles at Ittiam Systems, Lucent Technologies, and Bharat Electronics. "
        data-link="">   
     <time>12:40PM - 01:00PM </time>
     <div class="schedule-content">
