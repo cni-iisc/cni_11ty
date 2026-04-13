@@ -209,11 +209,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/Dr.DilipKrishnaswamy.jpg"
        data-title="Dr. Dilip Krishnaswamy (CDoT) "
-       data-talktitle="TBD"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
+       data-talktitle="Resilient and Distributed Space Networking and Computing"
+       data-abstract="This talk explores possibilities for resilient and distributed space computation and networking utilizing satellites in different hierarchical orbits around the planet. In particular, possibilities for different orbital configurations to serve a country are discussed, and possibilities for AI inferencing  and NTN intelligent controllers in space are also discussed. Alternate space routing paths are discussed as well. In general, the talk explores possibilities for resilient and distributed connectivity, computing, networking and storage."
+       data-speakerbio="Dilip Krishnaswamy has led the architecture, design, and development of engineering platforms & products at Intel Corp, Qualcomm Research, IBM Research, and Jio Platforms. He received his PhD degree in Electrical Engineering from the University of Illinois at Urbana-Champaign. He is an alumnus of IIT Madras where he received a B.Tech. degree in Electronics and Communication Engineering. He is an inventor on 80+ granted patents and has authored 80+research publications. He is presently serving as Executive Vice-President at C-DOT (Centre for Development of Telematics), Bangalore, India, where he is leading Advanced-5G Engineering and 6G Innovation efforts."
        data-link="">   
     <time>10:40AM - 11:00AM</time>
     <div class="schedule-content">
@@ -268,9 +268,9 @@ body.dark .close-btn {
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/"
        data-title=" Prof. Huzur Saran (IITD) "
-       data-talktitle="TBD"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
+       data-talktitle="AI-Driven Smart Radio Environments for 6G: Integrating RIS, ISAC, and Semantic Networking for Next-Generation Wireless Systems"
+       data-abstract="The evolution from 5G to 6G involves a rethinking of wireless system design, moving from connectivity-centric architectures to intelligent, adaptive, and context-aware networks. In our at IITD we have been working on comprehensive R&D framework for next-generation wireless systems centered upon AI-driven Smart Radio Environments (SREs), leveraging Reconfigurable Intelligent Surfaces (RIS), Integrated Sensing and Communication (ISAC), and Semantic-Aware Networking (SAN) using Smart Edge Intelligence. The proposed architecture adopts a layered design comprising: (i) a Physical Foundation Layer enabling programmable wireless environments through RIS and advanced spectrum utilization (FR2/FR3), (ii) an Efficiency Layer focused on semantic communication to optimize bandwidth and support massive machine-type communications (mMTC), (iii) a Service Layer enabling ultra-low latency applications such as haptics via edge computing, and (iv) a Security and Management Plane employing AI/ML for device profiling and threat detection enhanced by our Smart Edge Intelligence framework which has been demonstrated in the past. A key innovation lies in shifting intelligence from end devices to the environment, enabling simpler, cost-effective IoT deployments while maintaining high performance and interoperability. The work includes the design and prototyping of RIS hardware, development of open-source emulators, channel estimation frameworks, and ISAC-enabled platforms, along with contributions to standardization bodies such as 3GPP, TSDSI, and ITU. This integrated approach positions the system as a scalable and standards-aligned pathway toward early 6G realization, supporting applications in industrial IoT, tactile internet, and intelligent sensing. The outcomes contribute to indigenous technology development, standards-essential patents, and the establishment of a national ecosystem for AI-native telecom innovation. Some of the above Initiatives are presently funded as a joint Multi-Institutional project by the Ministry of Information & Electronics Technology (MEITY) as a INR 1000 Million project."
+       data-speakerbio="Prof. Huzur Saran is a Professor in the Department of Computer Science IIT Delhi. He was been during his career Head of the Bharti School of Telecom Technology,  head Computer Science & Khosla School of IT and Incharge of the Centre of Excellence in Cyber Security at IIT Delhi. Prior to joining IIT Delhi in 1990, he did his Ph.D in Computer Science from the University of California, Berkeley in 1989  and, a B.Tech from IIT Delhi in 1983. His research is focused on Wireless Networks, Computer Systems & Security and Algorithms. Prof. Saran has been actively working in 5G/6G wireless technologies. He lead the 5G Testbed Project at IITD funded by the Deportment of Telecom. During 2000-2002 he was a Visiting Professor at the Information Systems Lab, Stanford where he worked on the media access control layer of an early 4G wireless system."
        data-link="">   
     <time>12:20PM- 12:40PM </time>
     <div class="schedule-content">
@@ -324,11 +324,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/Prof.NeeleshMehta.jpg"
        data-title="Prof. Neelesh Mehta (IISc) "
-       data-talktitle="TBD"
-       data-abstract="TBD"
-       data-speakerbio="TBD"
+       data-talktitle="Low-Overhead Parametric Estimation for RIS-Aided Near-Field Communications "
+       data-abstract="The push towards larger aperture arrays, more antennas, larger reflective intelligent surfaces (RISs), and higher carrier frequencies has made near-field an important regime of communication in 6G systems. Wavefronts that traditionally are planar in the far-field become spherical in the near-field. Consequently, the steering vector of the near-field channel depends not only on the angle-of-arrival/departure between the transmitter and the receiver, but also on the distance. This renders conventional far-field-based channel estimation schemes suboptimal or even inapplicable for near-field communications. We develop new parametric channel estimation schemes for RIS-aided communications when the user lies in the near-field of the RIS. Such schemes are appealing because the number of pilots required to estimate the channel between the RIS and the user scales with the number of channel parameters, which is small, rather than with the number of RIS elements, which is much larger.  However, channel estimation errors lead to a sub-optimal RIS configuration and a lower RIS beamforming gain, and also affect data demodulation. We characterize the mean-square error in channel estimation and the achievable rate in the presence of estimation errors. We derive new insights into the fundamental trade-off between training and data transmission in the near field. The proposed schemes achieve a lower mean-square channel estimation error and higher data rates than state-of-the-art schemes. "
+       data-speakerbio="Neelesh B. Mehta is a Professor and Chair of the Electrical Communication Engineering department at the Indian Institute of Science, Bengaluru. His research group focuses on the design, modeling, and optimization of 5G and beyond cellular systems and next-generation WiFi systems. He is a Fellow of the IEEE, the Indian Academy of Sciences, the Indian National Science Academy, the Indian National Academy of Engineers, and the National Academy of Sciences India. He is a recipient of the J C Bose Fellowship, Shanti Swarup Bhatnagar Award, and other awards. He currently serves as the Chair of IEEE ComSoc’s Distinguished Lecturer Selection Committee. He has served on ComSoc’s Board of Governors, Nominations and Elections Committee, and Awards Committee, and has held editorial and oversight positions in the IEEE Transactions on Wireless Communications. "
        data-link="">   
     <time>02:40PM  - 03:00PM </time>
     <div class="schedule-content">
@@ -382,11 +382,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
+       data-image="/assets/img/workshops/2026/RadhaKrishnaGanti.png"
        data-title="Prof. Radhakrishna Ganti (IITM) "
-       data-talktitle=""
-       data-abstract=""
-       data-speakerbio=""
+       data-talktitle="Fronthaul Compression and Reliable Pilotless Transmission for Cellular Communications"
+       data-abstract="We will look at a novel technique for communication without any pilots. "
+       data-speakerbio="Radha Krishna Ganti is a Professor at the Indian Institute of Technology Madras, Chennai, India. He received his B. Tech. and M. Tech. in EE from the Indian Institute of Technology, Madras, and a Masters in Applied Mathematics and a Ph.D. in EE from the University of Notre Dame in 2009. His research interests include digital communications, convex optimisation, cellular systems and building communication systems. He received the 2014 IEEE Stephen O. Rice Prize,  and the 2014 IEEE Leonard G. Abraham Prize and the 2015  IEEE Communications society  young author best paper award. He was also awarded the 2016-2017 Institute Research and Development Award (IRDA) by IIT Madras. In 2019, he was awarded the TSDSI fellow for technical excellence in standardisation activities and contribution to LMLC use case in ITU. He was involved in the development of 5G base stations for the 5G testbed project funded by DOT and is currently involved in the development of 6G THz testbeds. He was awarded the Vignan Yuva Shanti Swaroop Bhatnagar Award for the year 2024 in the Engineering Sciences by the Govt. of India"
        data-link="">   
     <time>04:20PM - 04:40PM </time>
     <div class="schedule-content">
