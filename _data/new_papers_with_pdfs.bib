@@ -347,6 +347,7 @@ doi = {https://dl.acm.org/doi/10.5555/3463952.3464178}
 	URL = {https://www.medrxiv.org/content/early/2021/05/29/2021.05.26.21257836},
 	eprint = {https://www.medrxiv.org/content/early/2021/05/29/2021.05.26.21257836.full.pdf},
 	journal = {medRxiv},
+	eprinttype = {{medRxiv}},
 	pdf = {assets/pdf/papers/Strategies_to_Mitigate_COVID-19.pdf}
 }
 
@@ -399,6 +400,7 @@ doi = {https://dl.acm.org/doi/10.5555/3463952.3464178}
 	URL = {https://www.medrxiv.org/content/early/2022/01/28/2022.01.26.22269903},
 	eprint = {https://www.medrxiv.org/content/early/2022/01/28/2022.01.26.22269903.full.pdf},
 	journal = {medRxiv},
+	eprinttype = {{medRxiv}},
 	pdf = {assets/pdf/papers/Impact_of_Weeknight_and_Weekend_Curfews.pdf}
 }
 
@@ -508,6 +510,7 @@ pdf = {assets/pdf/papers/Optimal_Pricing_in_a_Single_Server_System.pdf}
       author={Ajay Badita and Rooji Jinan and Balajee Vamanan and Parimal Parag},
       year={2021},
       eprint={2108.08199},
+      eprinttype = {{arXiv}},
       archivePrefix={arXiv},
 	  abstract = {We consider energy minimization for data-intensive applications run on large number of servers, for given performance guarantees. We consider a system, where each incoming application is sent to a set of servers, and is considered to be completed if a subset of them finish serving it. We consider a simple case when each server core has two speed levels, where the higher speed can be achieved by higher power for each core independently. The core selects one of the two speeds probabilistically for each incoming application request. We model arrival of application requests by a Poisson process, and random service time at the server with independent exponential random variables. Our model and analysis generalizes to today's state-of-the-art in CPU energy management where each core can independently select a speed level from a set of supported speeds and corresponding voltages. The performance metrics under consideration are the mean number of applications in the system and the average energy expenditure. We first provide a tight approximation to study this previously intractable problem and derive closed form approximate expressions for the performance metrics when service times are exponentially distributed. Next, we study the trade-off between the approximate mean number of applications and energy expenditure in terms of the switching probability.},
       primaryClass={cs.DC},
@@ -845,6 +848,7 @@ pdf = {assets/pdf/papers/Optimal_Pricing_in_a_Single_Server_System.pdf}
       author={Joydeep Pal and Deepak Choudhary and Nithish Krishnabharathi Gnani and Chandramani Singh and T. V. Prabhakar},
       year={2023},
       eprint={2310.07480},
+      eprinttype = {{arXiv}},
       archivePrefix={arXiv},
       primaryClass={cs.NI},
 	  abstract = {Time-Aware Shaper (TAS) is a time-triggered scheduling mechanism that ensures bounded latency for time-critical Scheduled Traffic (ST) flows. The Linux kernel implementation (a.k.a TAPRIO) has limited capabilities due to varying CPU workloads and thus does not offer tight latency bound for the ST flows. Also, currently only higher cycle times are possible. Other software implementations are limited to simulation studies without physical implementation. In this paper, we present μTAS, a MicroC-based hardware implementation of TAS onto a programmable SmartNIC. μTAS takes advantage of the parallel-processing architecture of the SmartNIC to configure the scheduling behaviour of its queues at runtime. To demonstrate the effectiveness of μTAS, we built a Time-Sensitive Networking (TSN) testbed from scratch. This consists of multiple end-hosts capable of generating ST and Best Effort (BE) flows and TSN switches equipped with SmartNICs running μTAS. Time synchronization is maintained between the switches and hosts. Our experiments demonstrate that the ST flows experience a bounded latency of the order of tens of microseconds.},
@@ -1237,7 +1241,7 @@ pdf = {assets/pdf/papers/Energy-minimizing_workload_splitting_and_frequency_sele
 	urldate = {2025-06-17},
 	date = {2024-11-19},
 	year = {2024},
-	eprinttype = {arxiv},
+	eprinttype = {{arXiv}},
 	eprint = {2411.12239},
 	keywords = {Computer Science - Systems and Control, Electrical Engineering and Systems Science - Systems and Control, Mathematics - Optimization and Control},
 	pdf = {assets/pdf/papers/2411.12239v1.pdf},
@@ -1368,4 +1372,15 @@ abstract = {This paper proposes an event-triggered parameterized control method 
   pages = {989--1004},
   doi = {10.1109/TON.2025.3613824},
   url = {https://ieeexplore.ieee.org/document/11219358},
+}
+
+@misc{vatsa2023multiap_patent,
+  author   = {Vatsa, Shivam Vinayak and {Anusha, G. P.} and Sevani, Vishal and Saravanan, Purushothaman and Roy, Rishabh and {Anand, S. V. R.} and Kuri, Joy and Kumar, Anurag},
+  title    = {Method and System for Providing Multi-Access Point Coordination in a Wireless Network},
+  eprinttype = {Patent-Granted},
+  number   = {570851},
+  assignee = {Indian Institute of Science},
+  year     = {2025},
+  month    = oct,
+  note     = {Indian Patent Application No.~202341070392; Publication No.~45/2024, Published: 8~Nov.~2024 (INA); IPC: H04W72/12, H04W88/10, H04W72/04, H04W28/16},
 }

@@ -205,48 +205,64 @@ entry.type == 'misc' %} {% set misc_counter = misc_counter + 1 %} {% endif %} {%
 
             {% elif entry.type == 'misc' %}
             <span class="publication-index misc m-0 p-0">[M{{ misc_counter }}]</span>
-            {% set misc_counter = misc_counter - 1 %} {% set published = 'arXiv' %}
+            {% set misc_counter = misc_counter - 1 %}
+
+            {# Resolve display label from eprinttype field #}
+            {% if entry.EPRINTTYPE | lower == 'patent-granted' %}
+                {% set published = 'Patent No. ' + entry.NUMBER %}
+            {% elif entry.EPRINTTYPE | lower == 'patent-filed' %}
+                {% set published = 'Patent: filed' %}
+            {% elif entry.EPRINTTYPE | lower == 'arxiv' %}
+                {% set published = 'arXiv pre-print' %}
+            {% elif entry.EPRINTTYPE | lower == 'medrxiv' %}
+                {% set published = 'medRxiv' %}
+            {% else %}
+                {% set published = 'Misc' %}
+            {% endif %}
+
             <span class="publication-content">
                 <div class="misc m-0 p-0">{{ entry.TITLE }}</div>
                 {{ entry.AUTHOR | formatAuthors }}<br />
-                <i>{{ published }}</i>{% if entry.type == 'article' %} {{ entry.VOLUME }}{% endif
-                %},{% if entry.PAGES %} pp {{ entry.PAGES }} {% endif %} ({% if entry.MONTH %}{{
-                entry.MONTH }} {% endif %}{{ entry.YEAR }})<br />
+                <i>{{ published }}</i>{% if entry.PAGES %} pp {{ entry.PAGES }}{% endif %}
+                ({% if entry.MONTH %}{{ entry.MONTH }} {% endif %}{{ entry.YEAR }})<br />
 
-                {% if entry.DOI %} {% if entry.DOI | startsWith('http') %}
-                <a type="button" class="btn button-style" href="{{ entry.DOI }}" target="_blank"
-                    >DOI</a
-                >
-                {% else %}
-                <a
-                    type="button"
-                    class="btn button-style"
-                    href="https://doi.org/{{ entry.DOI }}"
-                    target="_blank"
-                    >DOI</a
-                >
-                {% endif %} {% endif %} {% if entry.PDF %}<a
-                    type="button"
-                    class="btn button-style"
-                    href="/{{ entry.PDF }}"
-                    target="_blank"
-                    >PDF</a
-                >{% endif %} {% if entry.ABSTRACT %} {% set collapseId = "collapse_" + loop.index %}
-                <button
-                    class="btn button-style"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#{{ collapseId }}"
-                    aria-expanded="false"
-                    aria-controls="{{ collapseId }}"
-                >
-                    Abstract
-                </button>
-                <div class="collapse" id="{{ collapseId }}">
-                    <div class="card card-body border-secondary text-bg-dark">
-                        {{ entry.ABSTRACT }}
-                    </div>
-                </div>
+                {# DOI button (all misc types) #}
+                {% if entry.DOI %}
+                    {% if entry.DOI | startsWith('http') %}
+                        <a type="button" class="btn button-style"
+                            href="{{ entry.DOI }}" target="_blank">DOI</a>
+                    {% else %}
+                        <a type="button" class="btn button-style"
+                            href="https://doi.org/{{ entry.DOI }}" target="_blank">DOI</a>
+                    {% endif %}
+                {% endif %}
+
+                {# URL, PDF, Abstract buttons — arXiv and medRxiv only #}
+                {% if entry.EPRINTTYPE | lower == 'arxiv' or entry.EPRINTTYPE | lower == 'medrxiv' %}
+                    {% if entry.URL and not entry.DOI %}
+                        <a type="button" class="btn button-style"
+                            href="{{ entry.URL }}" target="_blank">URL</a>
+                    {% endif %}
+                    {% if entry.PDF %}
+                        <a type="button" class="btn button-style"
+                            href="/{{ entry.PDF }}" target="_blank">PDF</a>
+                    {% endif %}
+                    {% if entry.ABSTRACT %}
+                        {% set collapseId = "collapse_" + loop.index %}
+                        <button
+                            class="btn button-style"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#{{ collapseId }}"
+                            aria-expanded="false"
+                            aria-controls="{{ collapseId }}"
+                        >Abstract</button>
+                        <div class="collapse" id="{{ collapseId }}">
+                            <div class="card card-body border-secondary text-bg-dark">
+                                {{ entry.ABSTRACT }}
+                            </div>
+                        </div>
+                    {% endif %}
                 {% endif %}
             </span>
             {% endif %}
