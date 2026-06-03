@@ -57,6 +57,11 @@ module.exports = function (eleventyConfig) {
 
   
 
+  eleventyConfig.addNunjucksFilter("upcoming", function (collection) {
+    const now = new Date();
+    return collection.filter(item => item.date > now);
+  });
+
   eleventyConfig.addCollection("updates", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob(["./updates/*.md", "./updates/*.html"])

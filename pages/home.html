@@ -4,9 +4,9 @@ title: Centre for Networked Intelligence
 permalink: "/"
 ---
 
-{% set seminars = collections.seminars | sort('date') | reverse %}
+{% set seminars = collections.seminars | upcoming | sort('date') %}
 
-{% set recentSeminarCount = carousel.recentSeminarCount %}
+{% set seminarCount = seminars.length %}
 
 {# Count showcase updates #}
 {% set showcaseCount = 0 %}
@@ -16,7 +16,7 @@ permalink: "/"
   {% endif %}
 {% endfor %}
 
-{% set totalSlides = recentSeminarCount + showcaseCount %}
+{% set totalSlides = seminarCount + showcaseCount %}
 
 {% set ctimeStamp = footerInfo.currentTimeStamp | date("yyyy-MM-dd HH:mm:ss") %}
 
@@ -31,7 +31,6 @@ permalink: "/"
     </div>
     <div class="carousel-inner" style="transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;">
       {% for seminar in seminars %}
-      {% if loop.index <= recentSeminarCount %}
       <div class="carousel-item{% if loop.first %} active{% endif %}">
           <div class="d-flex justify-content-center align-items-center">
             {% if seminar.data.recorded_video %}
@@ -47,11 +46,10 @@ permalink: "/"
             {% endif %}
           </div>
       </div>
-      {% endif %}
       {% endfor %}
       {% for post in collections.updates %}
       {% if post.data.showcase %}
-      <div class="carousel-item{% if loop.first and recentSeminarCount == 0 %} active{% endif %}">
+      <div class="carousel-item{% if loop.first and seminarCount == 0 %} active{% endif %}">
           <div class="d-flex justify-content-center align-items-center">
             <img src="{{ post.data.img }}" class="d-block rounded img-fluid" alt="{{ post.data.title }}" style="width: 75%; height:25%; cursor: pointer; @media (max-width: 768px) { width: 90%; height: 75%; }" onclick="window.location.href='{{ post.url }}';">
           </div>
@@ -163,8 +161,8 @@ permalink: "/"
           {% endif %}
         </div>
       </div>
-    {% endif %}
-    {% endfor %}
+      {% endif %}
+      {% endfor %}
   </div>
 {% else %}
   <div class="alert alert-secondary text-center">
