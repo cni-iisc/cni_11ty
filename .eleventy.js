@@ -58,8 +58,10 @@ module.exports = function (eleventyConfig) {
   
 
   eleventyConfig.addNunjucksFilter("upcoming", function (collection) {
-    const now = new Date();
-    return collection.filter(item => item.date > now);
+    const carouselCfg = require("./_data/carousel.json");
+    const afterSeconds = (carouselCfg.showSeminarAfterSeconds || 3600) * 1000;
+    const cutoff = new Date(Date.now() - afterSeconds);
+    return collection.filter(item => item.date > cutoff);
   });
 
   eleventyConfig.addCollection("updates", function (collectionApi) {
