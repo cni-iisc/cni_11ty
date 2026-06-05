@@ -14,11 +14,10 @@ permalink: "/"
     "interval": {{ carousel.interval }},
     "afterSeconds": {{ carousel.showSeminarAfterSeconds }}
   },
-  "slides": [
+  "seminars": [
     {% for seminar in collections.seminars | upcoming | sort('date') %}
     {% if not loop.first %},{% endif %}
     {
-      "type": "seminar",
       "title": {{ seminar.data.title | dump | safe }},
       "url": {{ seminar.url | dump | safe }},
       "date": {{ seminar.date | dump | safe }},
@@ -26,22 +25,22 @@ permalink: "/"
       "img": {% if seminar.data.recorded_video %}"https://img.youtube.com/vi/{{ seminar.data.recorded_video }}/maxresdefault.jpg"{% else %}{% if seminar.data.img.startsWith('/') %}{{ ('/' + seminar.data.img.slice(1)) | dump | safe }}{% else %}{{ ('/' + seminar.data.img) | dump | safe }}{% endif %}{% endif %}
     }
     {% endfor %}
-    {% for post in collections.updates %}
-    {% if post.data.showcase %}
-    ,{
-      "type": "showcase",
+  ],
+  "updates": [
+    {% for post in collections.updates | showcases %}
+    {% if not loop.first %},{% endif %}
+    {
       "title": {{ post.data.title | dump | safe }},
       "url": {{ post.url | dump | safe }},
       "img": {{ post.data.img | dump | safe }}
     }
-    {% endif %}
     {% endfor %}
   ]
 }
 </script>
 
 <div class="container my-2">
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators" id="carousel-indicators"></div>
     <div class="carousel-inner" id="carousel-inner" style="transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;"></div>
   </div>
@@ -58,10 +57,11 @@ permalink: "/"
   var now = Date.now();
   var cutoff = (config.afterSeconds || 3600) * 1000;
   
-  var visible = carouselData.slides.filter(function(item) {
-    if (item.type === 'showcase') return true;
+  var seminars = (carouselData.seminars || []).filter(function(item) {
     return now - new Date(item.date).getTime() < cutoff;
-  });
+  }).map(function(item) { item.type = 'seminar'; return item; });
+  var updates = (carouselData.updates || []).map(function(item) { item.type = 'showcase'; return item; });
+  var visible = seminars.concat(updates);
   
   if (visible.length === 0) return;
   
@@ -99,7 +99,8 @@ permalink: "/"
   });
   
   new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
-    interval: config.interval || 5000
+    interval: config.interval || 5000,
+    ride: 'carousel'
   });
 })();
 </script>

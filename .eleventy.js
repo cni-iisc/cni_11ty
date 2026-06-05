@@ -64,6 +64,10 @@ module.exports = function (eleventyConfig) {
     return collection.filter(item => item.date > cutoff);
   });
 
+  eleventyConfig.addNunjucksFilter("showcases", function (collection) {
+    return collection.filter(item => item.data.showcase);
+  });
+
   eleventyConfig.addCollection("updates", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob(["./updates/*.md", "./updates/*.html"])
