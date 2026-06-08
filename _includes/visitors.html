@@ -9,6 +9,19 @@ layout: base.html
 {% set cat = "Guests" %}
 {% endif %}
 
+<script id="visitors-config" type="application/json">
+{
+  "spreadsheetId": "2PACX-1vTpJtozYcDR8ozYoFmkesLEElO6ajo8Snp9RN26uEQcvCnIOtwokd_Xs5YNg6gT14Oo0MSm-T_RaZvL",
+  "tabs": {
+    "2026": 0,
+    "2025": 123456789,
+    "2024": 987654321,
+    "2023": 111111111
+  },
+  "activeTab": {{ year | dump | safe }}
+}
+</script>
+
 <div class="container-fluid text-center mt-2" style="max-width:1200px;">
   <h2>{{ cat }} to CNI</h2>
   <div class="dropdown text-center">
@@ -21,32 +34,161 @@ layout: base.html
       <li><a class="dropdown-item" href="/{{ cat | lower }}-2023/" data-year="2023">2023-2024</a></li>
     </ul>
   </div>
-  <div class="row jusitfy-content-center gap-0">
-    {% for person in collections.Visitors %}
-    {% if person.data.category == category %}
-    {% if person.data.years.includes(year) %}
-    <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center gap-0">
-      <a href="{{ person.url }}" class="text-decoration-none">
-        <div class="card mb-4 staff-card">
-          {% if person.data.img %}
-          <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top img-fluid">
-          {% endif %}
-          <div class="staff-card-body">
-            <h6 class="card-title m-2">{{ person.data.name }}</h6>
-            {% if person.data.institution %}
-            <p class="small m-2 text-white-50">{{ person.data.institution }}</p>
-            {% endif %}
-            {% if person.data.website %}
-            <a href="{{ person.data.website }}" target="_blank" class="website-icon mt-0" onclick="event.stopPropagation();">
-              <i class="fas fa-link fa-lg mt-0"></i>
-            </a>
-            {% endif %}
-          </div>
-        </div>
-      </a>
+  <div id="visitors-container" class="row justify-content-center gap-0">
+    <div class="col-12 text-center py-5">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
   </div>
 </div>
+
+<script>
+(function() {
+  var configEl = document.getElementById('visitors-config');
+  if (!configEl) return;
+  var config;
+  try { config = JSON.parse(configEl.textContent); } catch(e) { return; }
+
+  var gid = config.tabs && config.tabs[config.activeTab];
+  if (gid === undefined || gid === null) { document.getElementById('visitors-container').innerHTML = '<div class="col-12 text-center py-5 text-muted">No visitor data configured for this year.</div>'; return; }
+
+  var url = 'https://docs.google.com/spreadsheets/d/e/' + config.spreadsheetId + '/pub?gid=' + gid + '&single=true&output=csv';
+  var allRows = [];
+
+  fetch(url)
+    .then(function(res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.text(); })
+    .then(function(csv) {
+      allRows = parseCSV(csv);
+      renderView();
+    })
+    .catch(function(err) {
+      document.getElementById('visitors-container').innerHTML = '<div class="col-12 text-center py-5 text-danger">Failed to load visitors: ' + escapeHtml(err.message) + '</div>';
+    });
+
+  window.addEventListener('hashchange', renderView);
+
+  function renderView() {
+    var hash = window.location.hash.replace(/^#\/?/, '').replace(/\/$/, '');
+    if (hash) {
+      showDetail(hash);
+    } else {
+      showList();
+    }
+  }
+
+  function showList() {
+    var container = document.getElementById('visitors-container');
+    if (allRows.length === 0) {
+      container.innerHTML = '<div class="col-12 text-center py-5 text-muted">No visitors found for this year.</div>';
+      return;
+    }
+    container.innerHTML = '';
+    allRows.forEach(function(row) {
+      if (!row.name) return;
+      var slug = slugify(row.name);
+      var card = document.createElement('div');
+      card.className = 'col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0';
+      card.innerHTML = [
+        '<a href="#/' + escapeAttr(slug) + '/" class="text-decoration-none">',
+        '<div class="card mb-4 staff-card">',
+        '<img src="' + escapeAttr(row.img || '/assets/img/Logos/cni_blue_round_1200x1200.png') + '" alt="' + escapeAttr(row.name) + '" class="card-img-top img-fluid">',
+        '<div class="staff-card-body lh-sm">',
+        '<h6 class="card-title mt-2">' + escapeHtml(row.name) + '</h6>',
+        row.institution ? '<p style="color: var(--hover-clr);">' + escapeHtml(row.institution) + '</p>' : '',
+        '</div></div>',
+        '</a>',
+      ].join('');
+      container.appendChild(card);
+    });
+  }
+
+  function showDetail(slug) {
+    var visitor = null;
+    for (var i = 0; i < allRows.length; i++) {
+      if (slugify(allRows[i].name) === slug) { visitor = allRows[i]; break; }
+    }
+    var container = document.getElementById('visitors-container');
+    if (!visitor) {
+      container.innerHTML = '<div class="col-12 text-center py-5 text-muted">Visitor not found. <a href="#/" onclick="window.location.hash=\'\';return false;">Back to all visitors</a></div>';
+      return;
+    }
+    var interests = visitor.research_interests ? visitor.research_interests.split('|').map(function(s) { return s.trim(); }).filter(Boolean) : [];
+    container.innerHTML = [
+      '<div class="container-fluid mt-4" style="max-width: 900px;">',
+      '<div class="text-start mb-3"><a href="#/" onclick="window.location.hash=\'\';return false;">&larr; Back to all visitors</a></div>',
+      '<div class="text-center mb-4">',
+      '<h2>' + escapeHtml(visitor.name) + '</h2>',
+      visitor.institution ? '<h5 class="text-muted">' + escapeHtml(visitor.institution) + '</h5>' : '',
+      visitor.visit_dates ? '<p class="text-secondary"><strong>Visit Dates:</strong> ' + escapeHtml(visitor.visit_dates) + '</p>' : '',
+      '</div>',
+      visitor.img ? '<div class="text-center mb-4"><img src="' + escapeAttr(visitor.img) + '" alt="' + escapeAttr(visitor.name) + '" class="img-fluid rounded" style="max-height:300px;"></div>' : '',
+      visitor.intro ? '<div class="mb-4"><p>' + escapeHtml(visitor.intro) + '</p></div>' : '',
+      visitor.bio ? '<div class="mb-4"><h4>About the Visitor</h4><p>' + escapeHtml(visitor.bio).replace(/\n/g, '<br>') + '</p></div>' : '',
+      (visitor.talk_title || visitor.talk_description || visitor.event_page) ? '<div class="mb-4"><h4>Purpose of the Visit</h4>' : '',
+      visitor.purpose_intro ? '<p>' + escapeHtml(visitor.purpose_intro) + '</p>' : '',
+      visitor.talk_title ? '<p>During the visit, ' + escapeHtml(visitor.name) + ' delivered a talk titled <strong>&ldquo;' + escapeHtml(visitor.talk_title) + '&rdquo;</strong>' + (visitor.talk_description ? ', where they discussed ' + escapeHtml(visitor.talk_description) : '') + '.</p>' : '',
+      visitor.event_page ? '<p>Read more here: <a href="' + escapeAttr(visitor.event_page) + '" target="_blank">' + escapeHtml(visitor.event_page) + '</a></p>' : '',
+      (visitor.talk_title || visitor.talk_description || visitor.event_page) ? '</div>' : '',
+      (interests.length || visitor.google_scholar || visitor.website) ? '<div class="mb-4"><h4>Research Background</h4>' : '',
+      interests.length ? '<p>Their research interests include:</p><ul>' + interests.map(function(i) { return '<li>' + escapeHtml(i) + '</li>'; }).join('') + '</ul>' : '',
+      (visitor.google_scholar || visitor.website) ? '<p><strong>Read More:</strong><br>' : '',
+      visitor.google_scholar ? 'Google Scholar: <a href="' + escapeAttr(visitor.google_scholar) + '" target="_blank">' + escapeHtml(visitor.google_scholar) + '</a><br>' : '',
+      visitor.website ? 'Professional Website: <a href="' + escapeAttr(visitor.website) + '" target="_blank">' + escapeHtml(visitor.website) + '</a>' : '',
+      (visitor.google_scholar || visitor.website) ? '</p>' : '',
+      (interests.length || visitor.google_scholar || visitor.website) ? '</div>' : '',
+      visitor.engagements ? '<div class="mb-4"><h4>Engagements at CNI</h4><p>' + escapeHtml(visitor.engagements) + '</p></div>' : '',
+      visitor.end_note ? '<div class="mb-4"><h4>End Note</h4><p>' + escapeHtml(visitor.end_note) + '</p></div>' : '',
+      '</div>',
+    ].join('');
+  }
+
+  function slugify(s) {
+    return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+
+  function parseCSV(text) {
+    var lines = [];
+    var current = [];
+    var field = '';
+    var inQuotes = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (inQuotes) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { field += '"'; i++; }
+          else { inQuotes = false; }
+        } else { field += c; }
+      } else {
+        if (c === '"') { inQuotes = true; }
+        else if (c === ',') { current.push(field); field = ''; }
+        else if (c === '\n' || (c === '\r' && text[i + 1] === '\n')) { current.push(field); field = ''; if (current.some(Boolean) || current.length > 1) lines.push(current); current = []; if (c === '\r') i++; }
+        else if (c === '\r') { current.push(field); field = ''; if (current.some(Boolean) || current.length > 1) lines.push(current); current = []; }
+        else { field += c; }
+      }
+    }
+    if (field || current.length) { current.push(field); if (current.some(Boolean) || current.length > 1) lines.push(current); }
+    if (lines.length < 2) return [];
+    var headers = lines[0].map(function(h) { return h.trim().toLowerCase().replace(/[^a-zA-Z0-9_]/g, ''); });
+    var result = [];
+    for (var r = 1; r < lines.length; r++) {
+      var row = {};
+      for (var c2 = 0; c2 < headers.length && c2 < lines[r].length; c2++) {
+        row[headers[c2]] = lines[r][c2].trim();
+      }
+      result.push(row);
+    }
+    return result;
+  }
+
+  function escapeHtml(s) {
+    if (!s) return '';
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function escapeAttr(s) {
+    if (!s) return '';
+    return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+})();
+</script>

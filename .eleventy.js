@@ -155,11 +155,6 @@ module.exports = function (eleventyConfig) {
       .filter((person) => person.data.category === "Faculty");
   });
 
-  eleventyConfig.addCollection("Visitors", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("./visitors/*.md");
-  });
-
   eleventyConfig.addFilter("sortByNumber", function (array, attribute) {
     return array.sort((a, b) => {
       // Convert to numbers if necessary, or zero-pad to ensure correct numeric order

@@ -45,6 +45,11 @@
   padding: 8px 0 12px;
 }
 
+.staff-card .card-img-top {
+  height: 260px;
+  object-fit: cover;
+}
+
 .button-style {
   color: #ffffff;
   border: none;
