@@ -3,66 +3,48 @@ layout: base.html
 ---
 <link rel="stylesheet" href="/assets/css/people.css">
 
-
 {% if category == "Visitors" %}
 {% set cat = "Visitors" %}
 {% else %}
 {% set cat = "Guests" %}
 {% endif %}
 
-
 <div class="container-fluid text-center mt-2" style="max-width:1200px;">
   <h2>{{ cat }} to CNI</h2>
   <div class="dropdown text-center">
     <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown"
       aria-expanded="false">
-      <span id="selectedYear">{{ year }}-{{ year + 1 }}</span> <!-- Latest year by default -->
+      <span id="selectedYear">{{ year }}-{{ year + 1 }}</span>
     </button>
     <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
-      <li><a class="dropdown-item" href="/{{ cat | lower }}/" data-year="2024">2024-2025</a></li>
-      <li><a class="dropdown-item" href="/{{ cat | lower}}-2023/" data-year="2023">2023-2024</a></li>
+      <li><a class="dropdown-item" href="/{{ cat | lower }}/" data-year="2026">2026-2027</a></li>
+      <li><a class="dropdown-item" href="/{{ cat | lower }}-2023/" data-year="2023">2023-2024</a></li>
     </ul>
   </div>
   <div class="row jusitfy-content-center gap-0">
     {% for person in collections.Visitors %}
     {% if person.data.category == category %}
     {% if person.data.years.includes(year) %}
-    <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
-      <div class="card mb-4 staff-card">
-        <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top img-fluid">
-        <div class="staff-card-body">
-          <h6 class="card-title m-2">{{ person.data.title }}</h6>
-          {% if person.data.redirect %}
-          <a href="{{ person.data.redirect }}" target="_blank" class="website-icon mt-0">
-            <i class="fas fa-link fa-lg mt-0"></i> <!-- Font Awesome Link Icon -->
-          </a>
+    <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center gap-0">
+      <a href="{{ person.url }}" class="text-decoration-none">
+        <div class="card mb-4 staff-card">
+          {% if person.data.img %}
+          <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top img-fluid">
           {% endif %}
-          {% if person.data.linkedin %}
-          <a href="{{ person.data.linkedin }}" target="_blank" class="linkedin-icon mt-0">
-            <i class="fab fa-linkedin fa-lg mt-0"></i> <!-- Font Awesome LinkedIn Icon -->
-          </a>
-          {% endif %}
+          <div class="staff-card-body">
+            <h6 class="card-title m-2">{{ person.data.name }}</h6>
+            {% if person.data.institution %}
+            <p class="small m-2 text-white-50">{{ person.data.institution }}</p>
+            {% endif %}
+            {% if person.data.website %}
+            <a href="{{ person.data.website }}" target="_blank" class="website-icon mt-0" onclick="event.stopPropagation();">
+              <i class="fas fa-link fa-lg mt-0"></i>
+            </a>
+            {% endif %}
+          </div>
         </div>
-      </div>
+      </a>
     </div>
-
-    <!-- <div class="text-center">
-          <div class="overflow-hidden z-index-1 position-relative mx-auto text-center">
-            <img class="rounded-circle border border-5" src="{{ person.data.img }}" alt="{{ person.data.title }}" style="width: 200px; height: 200px; object-fit: fill; border-color: var(--navbar-clr) !important;">
-          </div>
-          <div class="matter mt-2 text-center rounded" style="width: 200px;">
-            <p class="fw-700 m-0 p-0">{{ person.data.title }}</p>
-            <div class="pt-2">
-              {% if person.data.linkedin %}
-              <a class="linkedin-icon" href="{{ person.data.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-              {% endif %}
-              {% if person.data.redirect %}
-              <a class="website-icon" href="{{ person.data.redirect }}" target="_blank"><i class="fas fa-link fa-lg"></i></a>
-              {% endif %}
-            </div>
-          </div>
-        </div> -->
-
     {% endif %}
     {% endif %}
     {% endfor %}
