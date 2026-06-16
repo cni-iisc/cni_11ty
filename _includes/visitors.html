@@ -2,6 +2,12 @@
 layout: base.html
 ---
 <link rel="stylesheet" href="/assets/css/people.css">
+<style>
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+</style>
 
 {% if category == "Visitors" %}
 {% set cat = "Visitors" %}
@@ -115,36 +121,43 @@ layout: base.html
     }
     var interests = visitor.research_interests ? visitor.research_interests.split('|').map(function(s) { return s.trim(); }).filter(Boolean) : [];
     container.innerHTML = [
-      '<div class="container-fluid mt-4" style="max-width: 900px;">',
-      '<div class="text-start mb-3"><a href="#/" onclick="window.location.hash=\'\';return false;">&larr; Back to all visitors</a></div>',
-      '<div class="text-center mb-4">',
+      '<div class="container-fluid mt-4" style="max-width: 900px; text-align: justify;">',
+      '<div class="text-start mb-3" style="text-align: left;"><a href="#/" onclick="window.location.hash=\'\';return false;">&larr; Back to all visitors</a></div>',
+      visitor.intro ? '<div class="mb-3"><p>' + escapeHtml(visitor.intro) + '</p></div>' : '',
+      '<div class="text-center mb-3" style="text-align: center;">',
       '<h2>' + escapeHtml(visitor.name) + '</h2>',
       visitor.institution ? '<h5 class="text-muted">' + escapeHtml(visitor.institution) + '</h5>' : '',
-      visitor.visit_dates ? '<p class="text-secondary"><strong>Visit Dates:</strong> ' + escapeHtml(visitor.visit_dates) + '</p>' : '',
       '</div>',
-      visitor.img ? '<div class="text-center mb-4"><img src="' + escapeAttr(visitor.img) + '" alt="' + escapeAttr(visitor.name) + '" class="img-fluid rounded" style="max-height:300px;"></div>' : '',
-      visitor.intro ? '<div class="mb-4"><p>' + escapeHtml(visitor.intro) + '</p></div>' : '',
-      visitor.bio ? '<div class="mb-4"><h4>About the Visitor</h4><p>' + escapeHtml(visitor.bio).replace(/\n/g, '<br>') + '</p></div>' : '',
-      (visitor.talk_title || visitor.talk_description || visitor.event_page) ? '<div class="mb-4"><h4>Purpose of the Visit</h4>' : '',
-      visitor.purpose_intro ? '<p>' + escapeHtml(visitor.purpose_intro) + '</p>' : '',
-      visitor.talk_title ? '<p>During the visit, ' + escapeHtml(visitor.name) + ' delivered a talk titled <strong>&ldquo;' + escapeHtml(visitor.talk_title) + '&rdquo;</strong>' + (visitor.talk_description ? ', where they discussed ' + escapeHtml(visitor.talk_description) : '') + '.</p>' : '',
-      visitor.event_page ? '<p>Read more here: <a href="' + escapeAttr(visitor.event_page) + '" target="_blank">' + escapeHtml(visitor.event_page) + '</a></p>' : '',
-      (visitor.talk_title || visitor.talk_description || visitor.event_page) ? '</div>' : '',
+      visitor.visit_dates ? '<p class="text-center text-secondary" style="text-align: center;"><strong>Visit Dates:</strong> ' + escapeHtml(visitor.visit_dates) + '</p>' : '',
+      visitor.img ? '<div class="text-center mb-4" style="text-align: center;"><img src="' + escapeAttr(visitor.img) + '" alt="' + escapeAttr(visitor.name) + '" class="img-fluid rounded" style="max-height:300px;"></div>' : '',
+      visitor.bio ? '<div class="mb-4"><p><strong>Bio:</strong> ' + escapeHtml(visitor.bio).replace(/\n/g, '<br>') + '</p></div>' : '',
       (interests.length || visitor.google_scholar || visitor.website) ? '<div class="mb-4"><h4>Research Background</h4>' : '',
       interests.length ? '<p>Their research interests include:</p><ul>' + interests.map(function(i) { return '<li>' + escapeHtml(i) + '</li>'; }).join('') + '</ul>' : '',
       (visitor.google_scholar || visitor.website) ? '<p><strong>Read More:</strong><br>' : '',
       visitor.google_scholar ? 'Google Scholar: <a href="' + escapeAttr(visitor.google_scholar) + '" target="_blank">' + escapeHtml(visitor.google_scholar) + '</a><br>' : '',
       visitor.website ? 'Professional Website: <a href="' + escapeAttr(visitor.website) + '" target="_blank">' + escapeHtml(visitor.website) + '</a>' : '',
       (visitor.google_scholar || visitor.website) ? '</p>' : '',
-      (interests.length || visitor.google_scholar || visitor.website) ? '</div>' : '',
-      visitor.engagements ? '<div class="mb-4"><h4>Engagements at CNI</h4><p>' + escapeHtml(visitor.engagements) + '</p></div>' : '',
-      visitor.end_note ? '<div class="mb-4"><h4>End Note</h4><p>' + escapeHtml(visitor.end_note) + '</p></div>' : '',
+      (interests.length || visitor.google_scholar || visitor.website) ? '</div><hr style="margin-top: 2.5rem; margin-bottom: 1.5rem; border: 0; border-top: 1px solid #ccc;">' : '',
+      visitor.purpose_intro || visitor.talk_title ? '<div class="mb-3"><p>' : '',
+      visitor.purpose_intro ? escapeHtml(visitor.purpose_intro) + ' ' : '',
+      visitor.talk_title ? 'During the visit, ' + escapeHtml(visitor.name) + ' delivered a talk titled <strong>&ldquo;' + escapeHtml(visitor.talk_title) + '&rdquo;</strong>' + (visitor.talk_description ? ', where they discussed ' + escapeHtml(visitor.talk_description) : '') + '.' : '',
+      visitor.purpose_intro || visitor.talk_title ? '</p></div>' : '',
+      visitor.event_page ? '<p>Read more here: <a href="' + escapeAttr(visitor.event_page) + '" target="_blank">' + escapeHtml(visitor.event_page) + '</a></p>' : '',
+      visitor.engagements ? '<div class="mb-4"><p>' + escapeHtml(visitor.engagements) + '</p></div>' : '',
+      visitor.photos_of_visit ? (function() { var photos = visitor.photos_of_visit.split(',').map(function(u) { return u.trim(); }).filter(Boolean); if (photos.length === 0) return ''; var id = 'carousel-' + slugify(visitor.name); var items = photos.map(function(url, i) { var imgUrl = driveUrlToDirect(url); var proxied = 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(imgUrl); return '<div class="carousel-item' + (i === 0 ? ' active' : '') + '"><div class="d-flex justify-content-center align-items-center" style="height: 400px;"><img src="' + escapeAttr(proxied) + '" alt="Visit photo" class="img-fluid rounded" style="max-height: 100%; width: auto; object-fit: contain;"></div></div>'; }).join(''); var indicators = photos.map(function(_, i) { return '<button type="button" data-bs-target="#' + id + '" data-bs-slide-to="' + i + '" class="' + (i === 0 ? 'active' : '') + '" aria-label="Photo ' + (i + 1) + '"></button>'; }).join(''); return '<div class="mb-4"><div id="' + id + '" class="carousel slide" data-bs-ride="carousel"><div class="carousel-indicators">' + indicators + '</div><div class="carousel-inner">' + items + '</div><button class="carousel-control-prev" type="button" data-bs-target="#' + id + '" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#' + id + '" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button></div></div>'; })() : '',
+      visitor.end_note ? '<div class="mb-4"><p>' + escapeHtml(visitor.end_note) + '</p></div>' : '',
       '</div>',
     ].join('');
   }
 
   function slugify(s) {
     return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+
+  function driveUrlToDirect(url) {
+    var m = url.match(/drive\.google\.com\/file\/d\/([^/?#]+)/);
+    if (m) return 'https://drive.google.com/uc?export=view&id=' + m[1];
+    return url;
   }
 
   function parseCSV(text) {
