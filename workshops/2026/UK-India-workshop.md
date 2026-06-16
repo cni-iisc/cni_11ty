@@ -429,7 +429,7 @@ body.dark .close-btn {
 
 <h4>Sponsor</h4>
 <div class="container-fluid" align="center">
-      <img src="/assets/img/Logos/Cisco CSR Logos-TM-vert.png" alt="Cisco CSR logo" class="img-fluid" style="height: 130px; object-fit: contain;"/> 
+      <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco CSR logo" class="img-fluid" style="height: 130px; object-fit: contain;"/> 
 </div>
 
 <h4>Supported by</h4>
