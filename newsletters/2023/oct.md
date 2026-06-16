@@ -700,61 +700,22 @@ img: "JTGSS 1.JPG"
 </tr>
 <tr>
 <td class="mceLayoutContainer" style="padding: 8px;" valign="top">
-<table id="section_810a0a237a8d40a5a6e4f1619ea9bff0" class="mceFooterSection" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" data-block-id="44">
-<tbody>
-<tr class="mceRow">
-<td style="background-position: center; background-repeat: no-repeat; background-size: cover;" valign="top">
-<table border="0" width="100%" cellspacing="12" cellpadding="0">
-<tbody>
-<tr>
-<td class="mceColumn" style="padding-top: 0; padding-bottom: 0; margin-bottom: 12px;" colspan="12" valign="top" width="100%" data-block-id="-3">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td class="mceBlockContainer" style="padding: 12px 48px 12px 48px;" align="center" valign="top"><img class="" style="width: 313.5625px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/f0063820-12f8-3794-a73b-a22d0f6ac6bd.png" alt="Logo" width="313.5625" height="auto" data-block-id="45" /></td>
-</tr>
-<tr>
-<td class="mceBlockContainer" style="padding: 12px 16px 12px 16px;" align="center" valign="top">
-<div id="dataBlockId-46" class="mceText" style="display: inline-block; width: 100%;" data-block-id="46">
-<p class="last-child"><span style="font-size: 12px;">Our mailing address is:</span><br /><a href="mailto:contact.cni@iisc.ac.in?subject=null&amp;body=null"><span style="font-size: 12px;">contact.cni@iisc.ac.in</span></a></p>
-</div>
+<table id="section_810a0a237a8d40a5a6e4f1619ea9bff0" class="mceFooterSection"><tbody><tr class="mceRow"><td style="background-color:#dfeed4;background-position:center;background-repeat:no-repeat;background-size:cover;padding-top:0px;padding-bottom:0px" valign="top"><table border="0" cellpadding="0" cellspacing="12" width="100%" role="presentation"><tbody><tr><td style="padding-top:0;padding-bottom:0" valign="top" class="mceColumn" id="mceColumnId--3" data-block-id="-3" colspan="12" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"><tbody><tr><td style="background-color:transparent;padding-top:6px;padding-bottom:6px;padding-right:32px;padding-left:32px;border:0;border-radius:0" valign="top" class="mceImageBlockContainer" align="center" id="b78"><div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+  <tr>
+    <td align="center" valign="middle" style="padding: 0 10px;">
+      <a href="https://cni.iisc.ac.in" target="_blank">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+      </a>
+    </td>
+    <td align="center" valign="middle" style="padding: 0 10px;">
+      <a href="https://www.cisco.com" target="_blank">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+      </a>
+    </td>
+  </tr>
+</table></td></tr><tr><td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign="top" class="mceGutterContainer" id="gutterContainerId-79"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate" role="presentation"><tbody><tr><td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border:0;border-radius:0" valign="top" align="center" id="b79"><table width="100%" style="border:0;background-color:transparent;border-radius:0;border-collapse:separate"><tbody><tr><td style="padding-left:16px;padding-right:16px;padding-top:0;padding-bottom:0" class="mceTextBlockContainer"><div data-block-id="79" class="mceText" id="d79" style="display:inline-block;width:100%"><p class="last-child"><span style="color:#1a1a1a;"><span style="font-size: 12px"><span style="font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif">Comments/feedback? Reach us at </span></span></span><a href="mailto:outreach.cni@iisc.ac.in?subject=Re.%20CNI%20Connect%20Newsletter&body=" target="_blank" style="color: #004d00;"><span style="font-size: 12px"><span style="font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif">outreach.cni@iisc.ac.in</span></span></a></p></div></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style="border:0;border-radius:0" valign="top" class="mceLayoutContainer" align="center" id="b-2"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" data-block-id="-2"><tbody><tr class="mceRow"><td style="background-position:center;background-repeat:no-repeat;background-size:cover;padding-top:0px;padding-bottom:0px" valign="top"><table border="0" cellpadding="0" cellspacing="24" width="100%" role="presentation"><tbody></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td></tr></tbody></table>
 </td>
 </tr>
-<tr>
-<td class="mceLayoutContainer" align="center" valign="top">&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<!-- [if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
+</tbody></table>
 </center>
