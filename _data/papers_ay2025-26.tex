@@ -1,0 +1,80 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[numbers]{natbib}
+\usepackage{multibib}
+\usepackage{hyperref}
+
+%% Define three separate bibliographies
+\newcites{conf,jour,pat}{%
+  Conference Papers,%
+  Journal Articles,%
+  Patents%
+}
+
+%% Helper to pass IEEEtran BSTcontrol without visible output (same as papers_q1_y7.tex)
+\makeatletter
+\def\bstctlcite#1{\@bsphack
+  \@for\@citeb:=#1\do{%
+    \edef\@citeb{\expandafter\@firstofone\@citeb\@empty}%
+    \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi}%
+  \@esphack}
+\makeatother
+
+\begin{document}
+
+\title{Publications in Academic Year 2025--26}
+\author{}
+\date{}
+\maketitle
+
+%% -------------------------------------------------------
+%% Conference Papers (8) -- listed chronologically
+%% -------------------------------------------------------
+\nociteconf{sun2025optimizingifip}       % IFIP Performance, Nov 2025
+\nociteconf{11418203}                    % COMSNETS 2026, Jan 2026
+\nociteconf{nomula2026hierarchical}      % INFOCOM 2026, May 2026
+\nociteconf{eshwar2026monotone}          % AISTATS 2026, May 2026
+\nociteconf{chakraborty_2026_ICC}        % IEEE ICC 2026, May 2026
+\nociteconf{poola2026battery}            % IEEE VNC 2026, Jun 2026
+\nociteconf{chen2026pacman}              % IEEE ISIT 2026, Jun--Jul 2026
+\nociteconf{ye2026perfectprivacy}        % IEEE ISIT 2026, Jun--Jul 2026
+
+\bibliographystyleconf{IEEEtranN}
+\bibliographyconf{papers_ay2025-26}
+
+%% -------------------------------------------------------
+%% Journal Articles (8) -- listed chronologically
+%% -------------------------------------------------------
+\nocitejour{rajan_ejcon_2025}            % European Journal of Control, Nov 2025
+\nocitejour{sun2025optimizing}           % Performance Evaluation, Nov 2025
+\nocitejour{gopalan2026dqn}              % IEEE Trans. Autom. Control, 2026
+\nocitejour{vatsa2026multiap}            % IEEE Trans. Networking, 2026
+\nocitejour{10.1145/3805640}             % Proc. ACM MEAS. ANAL. COMPUT. SYST., May 2026
+\nocitejour{narasimha2026powerof2}       % IEEE Trans. Networking, Dec 2026
+\nocitejour{birur2026studyprotocol}      % BMC Med. Informatics, 2026 (submitted)
+\nocitejour{sulaiman2026diagnostic}      % Head and Face Medicine, 2026 (submitted)
+
+\bibliographystylejour{IEEEtranN}
+\bibliographyjour{papers_ay2025-26}
+
+%% -------------------------------------------------------
+%% Patents (1)
+%% -------------------------------------------------------
+\nocitepat{vatsa2023multiap_patent}      % Indian Patent No. 570851, Oct 2025
+
+\bibliographystylepat{IEEEtranN}
+\bibliographypat{papers_ay2025-26}
+
+\end{document}
+
+%% -------------------------------------------------------
+%% Compilation instructions:
+%%   pdflatex papers_ay2025-26
+%%   bibtex conf
+%%   bibtex jour
+%%   bibtex pat
+%%   pdflatex papers_ay2025-26
+%%   pdflatex papers_ay2025-26
+%%
+%% Or with latexmk:
+%%   latexmk -pdf papers_ay2025-26
+%% -------------------------------------------------------
