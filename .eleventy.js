@@ -30,6 +30,20 @@ module.exports = function (eleventyConfig) {
 
   //copy CNAME file
   eleventyConfig.addPassthroughCopy("CNAME");
+
+  //ignore pre-built rpcourse from template processing
+  eleventyConfig.ignores.add("courses/rpcourse/**");
+
+  //copy pre-built rpcourse content to output after build
+  eleventyConfig.on('eleventy.after', async () => {
+    const src = path.join(__dirname, 'courses/rpcourse');
+    const dest = path.join(__dirname, 'docs/courses/rpcourse');
+    if (fs.existsSync(dest)) {
+      fs.rmSync(dest, { recursive: true, force: true });
+    }
+    fs.cpSync(src, dest, { recursive: true });
+    console.log('✅ Copied rpcourse content to docs/courses/rpcourse');
+  });
   // Custom filter to format time
   eleventyConfig.addFilter("formatTime", (date) => {
     return DateTime.fromJSDate(new Date(date)).toFormat("h:mm a"); // Format as 12-hour clock with AM/PM
