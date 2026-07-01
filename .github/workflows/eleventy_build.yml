@@ -3,7 +3,7 @@ on:
   push: 
     branches: [main]
   repository_dispatch:
-
+    types: [rpcourse-updated]
 
 permissions:
   contents: write
@@ -15,11 +15,29 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
+
+      - name: Sync rpcourse content (on dispatch from RP-course)
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          git clone --depth 1 --branch gh-pages https://github.com/cni-iisc/RP-course.git /tmp/rpcourse-tmp
+          rm -rf courses/rpcourse
+          mkdir courses/rpcourse
+          cp -r /tmp/rpcourse-tmp/* courses/rpcourse/
+          rm -rf /tmp/rpcourse-tmp
+          git config user.name "Akhil T"
+          git config user.email "akhilneelamparambil@gmail.com"
+          git add courses/rpcourse/
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -sm "Sync rpcourse content from RP-course gh-pages"
+            git push
+          fi
       
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Node.js 16 is compatible with Eleventy 2.0.1
+          node-version: 18
       
       - name: Install dependencies
         run: npm ci
