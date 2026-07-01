@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Random Vectors – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-06.html" rel="next">
+<link href="../Probability Foundations/lecture-04.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-04.html">Section 2. Random variables, vectors, and processes</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-05.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -416,34 +417,34 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 2. Random variables, vectors, and processes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -460,37 +461,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -559,31 +560,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,14 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#random-vectors" id="toc-random-vectors" class="nav-link active" data-scroll-target="#random-vectors">Random vectors</a>
+  <ul class="collapse">
+  <li><a href="#distribution-of-random-vectors" id="toc-distribution-of-random-vectors" class="nav-link" data-scroll-target="#distribution-of-random-vectors">Distribution of random vectors</a></li>
+  <li><a href="#event-space-generated-by-random-vectors" id="toc-event-space-generated-by-random-vectors" class="nav-link" data-scroll-target="#event-space-generated-by-random-vectors">Event space generated by random vectors</a></li>
+  <li><a href="#independence-of-random-variables" id="toc-independence-of-random-variables" class="nav-link" data-scroll-target="#independence-of-random-variables">Independence of random variables</a></li>
+  <li><a href="#discrete-random-vectors" id="toc-discrete-random-vectors" class="nav-link" data-scroll-target="#discrete-random-vectors">Discrete random vectors</a></li>
+  <li><a href="#continuous-random-vectors" id="toc-continuous-random-vectors" class="nav-link" data-scroll-target="#continuous-random-vectors">Continuous random vectors</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +656,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-04.html">Section 2. Random variables, vectors, and processes</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-05.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Random Vectors</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,20 +687,162 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Lmg_38zoQSc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="random-vectors" class="level1">
+<h1>Random vectors</h1>
+<div class="defn">
+<p><strong>Definition 1</strong> (Projection). For a vector <span class="math inline">\(x \in \R^n\)</span>, we can define <span class="math inline">\(\pi_i: \R^n \to \R\)</span> is the <strong>projection</strong> of an <span class="math inline">\(n\)</span>-length vector onto its <span class="math inline">\(i\)</span>-th component, such that <span class="math inline">\(\pi_i(x) = x_i\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 2</strong>. The Borel sigma algebra over space <span class="math inline">\(\R^n\)</span> is defined as the smallest sigma algebra generated by the family <span class="math inline">\((\pi_i^{-1}(B_x): x \in \R, i \in [n])\)</span> and is denoted by <span class="math inline">\(\sB(\R^n)\)</span>. The elements of the Borel sigma algebra are called Borel sets.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. By definition of <span class="math inline">\(\sB(\R^n)\)</span>, projection <span class="math inline">\(\pi_i: \R^n \to \R\)</span> is a Borel measurable function for all <span class="math inline">\(i \in [n]\)</span>. For a subset <span class="math inline">\(A \subseteq \R\)</span> and projection <span class="math inline">\(\pi_i: \R^n \to \R\)</span>, we can write Thus, for any <span class="math inline">\(A \in \sB(\R)\)</span>, we have <span class="math inline">\(\pi_i^{-1}(A) \in \sB(\R^n)\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 3</strong> (Random vectors). Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span> and a finite <span class="math inline">\(n \in \N\)</span>. A <strong>random vector</strong> <span class="math inline">\(X: \Omega \to \R^n\)</span> is an <span class="math inline">\(\sF\)</span>-measurable mapping from the sample space to an <span class="math inline">\(n\)</span>-length real-valued vector. That is, for any <span class="math inline">\(x \in \R^n\)</span>, we have</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 4</strong> (Tuple of indicators). Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, a finite <span class="math inline">\(n \in \N\)</span>, and events <span class="math inline">\(A_1, \dots, A_n \in \sF\)</span>. We define a mapping <span class="math inline">\(X: \Omega \to \set{0,1}^n\)</span> by <span class="math inline">\(X_i(\omega) \triangleq \Ind{A_i}(\omega)\)</span> for all outcomes <span class="math inline">\(\omega \in \Omega\)</span>. Let <span class="math inline">\(x \in \R^n\)</span>, then we can write <span class="math inline">\(A_X(x) = \cap_{i=1}^n\Ind{A_i}^{-1}(-\infty, x_i]\)</span>. Recall that It follows that the inverse image <span class="math inline">\(A_X(x)\)</span> lies in <span class="math inline">\(\sF\)</span>, and hence <span class="math inline">\(X\)</span> is an <span class="math inline">\(\sF\)</span>-measurable random vector.</p>
+</div>
+</div>
+<div class="thm">
+<p><strong>Theorem 5</strong>. Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, and a finite <span class="math inline">\(n \in \N\)</span>. A mapping <span class="math inline">\(X: \Omega \to \R^n\)</span> is a random vector if and only if <span class="math inline">\(X_i \triangleq \pi_i \circ X: \Omega \to \R\)</span> are random variables for all <span class="math inline">\(i \in [n]\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> We will first show that <span class="math inline">\(X: \Omega \to \R^n\)</span> implies that <span class="math inline">\(\pi_i \circ X\)</span> is a random variable for any <span class="math inline">\(i \in [n]\)</span>. For any <span class="math inline">\(i \in [n]\)</span> and <span class="math inline">\(x_i \in \R\)</span>, we take <span class="math inline">\(x = (\infty, \dots, x_i, \dots, \infty)\)</span>. This implies that <span class="math inline">\(\pi_i^{-1}(-\infty, x_i] = \R \times \dots \times (-\infty, x_i] \times \dots \times \R \in \sB(\R^n).\)</span> Further, defining <span class="math inline">\(A_{X_i}(x_i) \triangleq X_i^{-1}(-\infty, x_i]\)</span>, we observe from the definition of random vectors that</p>
+<p>We will next show that if <span class="math inline">\(X_i: \Omega \to \R\)</span> is a random variable for all <span class="math inline">\(i \in [n]\)</span>, then <span class="math inline">\(X \triangleq (X_1, \dots, X_n): \Omega \to \R^n\)</span> is a random vector. For any <span class="math inline">\(x \in \R^n\)</span>, we have <span class="math inline">\(A_{X_i}(x_i) = X_i^{-1}(-\infty,x_i] \in \sF\)</span> for all <span class="math inline">\(i \in [n]\)</span>, from the definition of random variables. From the closure of event set under countable intersections, we have&nbsp;◻</p>
+</div>
+<section id="distribution-of-random-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-of-random-vectors">Distribution of random vectors</h2>
+<div class="defn">
+<p><strong>Definition 6</strong>. Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span> and a finite <span class="math inline">\(n \in \N\)</span>. The <strong>joint distribution function</strong> of a random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> is defined as the mapping <span class="math inline">\(F_X: \R^n \to [0,1]\)</span> such that</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 7</strong> (Tuple of indicators). Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, a finite <span class="math inline">\(n \in \N\)</span>, and events <span class="math inline">\(A_1, \dots, A_n \in \sF\)</span>, that define the random vector <span class="math inline">\(X \triangleq (\Ind{A_1}, \dots, \Ind{A_n})\)</span>. For any <span class="math inline">\(x \in \R^n\)</span>, we can define index sets <span class="math inline">\(I_0(x) \triangleq \set{i \in [n]: x_i &lt; 0}\)</span> and <span class="math inline">\(I_1(x) \triangleq \set{i \in [n]: x_i \in [0,1)}\)</span>, and write the joint distribution function for this random vector <span class="math inline">\(X\)</span> as</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 8</strong>. For a random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> defined on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span> and <span class="math inline">\(i \in [n]\)</span>, the distribution of the <span class="math inline">\(i\)</span>th random variable <span class="math inline">\(X_i \triangleq \pi_i\circ X: \Omega \to \R\)</span> is called the <span class="math inline">\(i\)</span>th <strong>marginal distribution</strong>, and denoted by <span class="math inline">\(F_{X_i}: \Omega \to [0,1]\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 9</strong> (Tuple of indicators). Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, a finite <span class="math inline">\(n \in \N\)</span>, and events <span class="math inline">\(A_1, \dots, A_n \in \sF\)</span>, that define the random vector <span class="math inline">\(X \triangleq (\Ind{A_1}, \dots, \Ind{A_n})\)</span>. The <span class="math inline">\(i\)</span>th marginal distribution is given by</p>
+</div>
+</div>
+<div class="cor">
+<p><strong>Corollary 10</strong> (Marginal distribution). Consider a random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> defined on a probability space <span class="math inline">\((\Omega, \sF, P)\)</span> with the joint distribution <span class="math inline">\(F_X: \R^n \to [0,1]\)</span>. The <span class="math inline">\(i\)</span>th <strong>marginal distribution</strong> and can be obtained from the joint distribution of <span class="math inline">\(X\)</span> as</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> For any <span class="math inline">\(i \in [n]\)</span> and <span class="math inline">\(x_i \in \R\)</span>, we have <span class="math inline">\(X_i^{-1}(-\infty, x_i] = A_X(x)\)</span> for <span class="math inline">\(x = (\infty, \dots, x_i, \dots, \infty)\)</span> from&nbsp;<a href="#eqn:RandomVector:MarginalEvent" data-reference-type="eqref" data-reference="eqn:RandomVector:MarginalEvent">[eqn:RandomVector:MarginalEvent]</a>.&nbsp;◻</p>
+</div>
+<div class="lem">
+<p><strong>Lemma 11</strong> (Properties of the joint distribution function). Consider a random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> defined on the probability space <span class="math inline">\((\Omega,\sF,P)\)</span>. The associated joint distribution function <span class="math inline">\(F_X: \R^n \to [0,1]\)</span> satisfies the following properties.</p>
+<ol type="i">
+<li><p>For <span class="math inline">\(x, y \in \R^n\)</span> such that <span class="math inline">\(x_i \le y_i\)</span> for each <span class="math inline">\(i \in [n]\)</span>, we have <span class="math inline">\(F_X(x) \le F_X(y)\)</span>.</p></li>
+<li><p>The function <span class="math inline">\(F_X(x)\)</span> is right continuous at all points <span class="math inline">\(x \in \R^n\)</span>.</p></li>
+<li><p>The lower limit is <span class="math inline">\(\lim_{x_i \to -\infty}F_X(x) = 0\)</span>, and the upper limit is <span class="math inline">\(\lim_{x_i \to \infty, i \in [n]}F_X(x) = 1\)</span>.</p></li>
+</ol>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Consider a random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> defined on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span> and any <span class="math inline">\(x \in \R^n\)</span>.</p>
+<ol type="i">
+<li><p>We can verify that <span class="math inline">\(A_X(x)  = \cap_{i=1}^nA_{X_i}(x_i) \subseteq \cap_{i=1}^nA_{X_i}(y_i) = A(y)\)</span>. The result follows from the monotonicity of probability measure.</p></li>
+<li><p>The proof is similar to the proof for single random variable.</p></li>
+<li><p>The event <span class="math inline">\(A_X(x) = \emptyset\)</span> when <span class="math inline">\(x_i = -\infty\)</span> for some <span class="math inline">\(i \in [n]\)</span> and <span class="math inline">\(A_X(x) = \Omega\)</span> when <span class="math inline">\(x_i = \infty\)</span> for all <span class="math inline">\(i \in [n]\)</span>, hence the result follow.</p></li>
+</ol>
+<p>&nbsp;◻</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 12</strong> (Probability of rectangular events). Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span> and a random vector <span class="math inline">\(X: \Omega \to \R^2\)</span>. Consider the points <span class="math inline">\(x \le y\in \R^2\)</span> and the events The marginal probabilities are given by Writing <span class="math inline">\(x = (x_1,x_2)\)</span> and <span class="math inline">\(y = (y_1,y_2)\)</span>, we observe that the end points of the rectangular event <span class="math inline">\(B_1\cap B_2\)</span> are points <span class="math inline">\(x, (y_1,x_2), y, (x_1, y_2)\)</span>. Therefore, we can write this event as Hence, we can write the probability of this rectangular event as</p>
+</div>
+</div>
+</section>
+<section id="event-space-generated-by-random-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="event-space-generated-by-random-vectors">Event space generated by random vectors</h2>
+<div class="defn">
+<p><strong>Definition 13</strong>. Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span> and a finite <span class="math inline">\(n \in \N\)</span>. The <strong>event space generated by a random vector <span class="math inline">\(X:\Omega \to \R^n\)</span></strong> is the smallest <span class="math inline">\(\sigma\)</span>-algebra generated by the collection of events <span class="math inline">\((A_X(x): x \in \R^n)\)</span> and denoted by <span class="math inline">\(\sigma(X) \triangleq \sigma(A_X(x):x \in \R^n)\)</span>.</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 14</strong>. Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, a finite <span class="math inline">\(n \in \N\)</span>, a random vector <span class="math inline">\(X: \Omega \to \R^n\)</span>, and its projections <span class="math inline">\(X_i \triangleq \pi_i \circ X\)</span> for all <span class="math inline">\(i \in [n]\)</span>. Then, <span class="math inline">\(\sigma(X) = \sigma(X_1, \dots, X_n)\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Recall that <span class="math inline">\(\sigma(X)\)</span> is generated by the family <span class="math inline">\((A_X(x): x \in \R^n)\)</span> and <span class="math inline">\(\sigma(X_1, \dots, X_n)\)</span> is generated by the family <span class="math inline">\((A_{X_i}(x_i): x_i \in \R, i \in [n])\)</span>. We first show that <span class="math inline">\(A_{X_i}(x_i) = A_X(x)\)</span> for <span class="math inline">\(x = (\infty, \dots, x_i, \dots, \infty)\)</span>, and hence <span class="math inline">\(\sigma(X_1, \dots, X_n) \subseteq \sigma(X)\)</span>. We then show that <span class="math inline">\(A_X(x) = \cap_{i=1}^nA_{X_i}(x_i)\)</span>, and hence <span class="math inline">\(\sigma(X) \subseteq \sigma(X_1, \dots, X_n)\)</span>.&nbsp;◻</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 15</strong> (Tuple of indicators). Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, a finite <span class="math inline">\(n \in \N\)</span>, and events <span class="math inline">\(A_1, \dots, A_n \in \sF\)</span>, that define the random vector <span class="math inline">\(X \triangleq (\Ind{A_1}, \dots, \Ind{A_n})\)</span>. The <span class="math inline">\(\sigma(X) = \sigma(A_i: i \in [n])\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="independence-of-random-variables" class="level2">
+<h2 class="anchored" data-anchor-id="independence-of-random-variables">Independence of random variables</h2>
+<div class="defn">
+<p><strong>Definition 16</strong>. A family of collections of events <span class="math inline">\((\sA_i \subseteq \sF: i \in I)\)</span> is called independent, if for any finite set <span class="math inline">\(F \subseteq I\)</span> and <span class="math inline">\(A_i \in \sA_i\)</span> for all <span class="math inline">\(i \in F\)</span>, we have</p>
+</div>
+<div class="defn">
+<p><strong>Definition 17</strong> (Independent and identically distributed). A random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> defined on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span> is called <strong>independent</strong> if The random vector <span class="math inline">\(X\)</span> is called <strong>identically distributed</strong> if each of its components have the identical marginal distribution, i.e.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. Independence of a random vector implies that events <span class="math inline">\((A_{X_i}(x_i): i \in [n])\)</span> are independent for any <span class="math inline">\(x \in \R^n\)</span>. Defining families <span class="math inline">\(\sA_i \triangleq (A_{X_i}(x): x \in \R)\)</span> for all <span class="math inline">\(i \in [n]\)</span>, we observe that the families <span class="math inline">\((\sA_1, \dots, \sA_n)\)</span> are mutually independent.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 3</strong>. In general, if two collection of events are mutually independent, then the event space generated by them are independent. This can be proved using Dynkin’s <span class="math inline">\(\pi\)</span>-<span class="math inline">\(\lambda\)</span> Theorem.</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 18</strong>. For an independent random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> defined on a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, the event spaces generated by its components <span class="math inline">\((\sigma(X_i): i \in [n])\)</span> are independent.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> For an we define a family of events <span class="math inline">\(\sA_i \triangleq (X_i^{-1}(-\infty, x]: x\in \R)\)</span> for each <span class="math inline">\(i \in [n]\)</span>. From the definition of independence of random vectors, the families <span class="math inline">\((\sA_i \subseteq \sF: i \in [n])\)</span> are mutually independent. Since <span class="math inline">\(\sigma(\sA_i) = \sigma(X_i)\)</span>, the result follows from the previous remark.&nbsp;◻</p>
+</div>
+<div class="defn">
+<p><strong>Definition 19</strong> (Independent random vectors). To random vectors <span class="math inline">\(X:\Omega \to \R^n\)</span> and <span class="math inline">\(Y: \Omega\to\R^m\)</span> defined on the same probability space <span class="math inline">\((\Omega, \sF, P)\)</span> are independent, if the collection of events <span class="math inline">\((A_X(x): x \in \R^n)\)</span> and <span class="math inline">\((A_Y(y): y \in \R^m)\)</span> are independent, where <span class="math inline">\(A_X(x) \triangleq \cap_{i=1}^nX_i^{-1}(-\infty, x_i]\)</span> and <span class="math inline">\(A_Y(y) \triangleq \cap_{i=1}^mY_i^{-1}(-\infty, y_i]\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 20</strong> (Independent random vectors). Consider a set of vectors <span class="math inline">\(\sX = \set{(0,0,1),(1,0,0)}\subseteq \R^3\)</span>. Consider two independent coin tosses, such that <span class="math inline">\(\Omega = \set{H,T}^2, \sF = \cP(\Omega)\)</span> and <span class="math inline">\(P(\omega) = p^{k_2(\omega)}(1-p)^{2-k_2(\omega)}\)</span>, where <span class="math inline">\(k_2(\omega) = \sum_{i=1}^2\SetIn{\omega_i = H}\)</span>. We define random vectors</p>
+<div class="xalignat*">
+<p>2 &amp;X = (0,0,1) + (1,0,0),&amp; &amp;Y = (0,0,1) + (1,0,0).</p>
+</div>
+<p>We can verify that <span class="math inline">\(X,Y: \Omega \to \R^3\)</span> are mutually independent random vectors, though we can also check that <span class="math inline">\(X_1, X_3\)</span> are dependent random variables and so are <span class="math inline">\(Y_1, Y_3\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="discrete-random-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="discrete-random-vectors">Discrete random vectors</h2>
+<div class="defn">
+<p><strong>Definition 21</strong> (Discrete random vectors). If a random vector <span class="math inline">\(X: \Omega \to \sX_1 \times \dots  \times \sX_n \subseteq \R^n\)</span> takes countable values in <span class="math inline">\(\R^n\)</span>, then it is called a <strong>discrete random vector</strong>. That is, the range of random vector <span class="math inline">\(X\)</span> is countable, and the random vector is completely specified by the <strong>probability mass function</strong></p>
+</div>
+<div class="rem">
+<p><strong>Remark 4</strong>. For an independent discrete random vector <span class="math inline">\(X: \Omega \to \R^n\)</span>, we have <span class="math inline">\(P_X(x) = \prod_{i=1}^nP_{X_i}(x_i)\)</span> for each <span class="math inline">\(x \in \R^n\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 22</strong> (Multiple coin tosses). For a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, such that <span class="math inline">\(\Omega = \set{H,T}^n, \sF = 2^\Omega, P(\omega) = \frac{1}{2^n}\)</span> for all <span class="math inline">\(\omega \in \Omega\)</span>.</p>
+<p>Consider the random vector <span class="math inline">\(X: \Omega \to \R\)</span> such that <span class="math inline">\(X_i(\omega) = \SetIn{\omega_i = H}\)</span> for each <span class="math inline">\(i \in [n]\)</span>. Observe that <span class="math inline">\(X\)</span> is a bijection from the sample space to the set <span class="math inline">\(\set{0,1}^n\)</span>. In particular, <span class="math inline">\(X\)</span> is a discrete random variable.</p>
+<p>For any <span class="math inline">\(x \in [0,1]^n\)</span>, we can write <span class="math inline">\(N(x) = \sum_{i=1}^n\Ind{[0,1)}(x_i)\)</span>. Further, we can write the joint distribution as We can derive the marginal distribution for <span class="math inline">\(i\)</span>-th component as Therefore, it follows that <span class="math inline">\(X\)</span> is an random vector.</p>
+</div>
+</div>
+</section>
+<section id="continuous-random-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="continuous-random-vectors">Continuous random vectors</h2>
+<div class="defn">
+<p><strong>Definition 23</strong> (Joint density function). For jointly continuous random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> with joint distribution function <span class="math inline">\(F_X: \R^n \to [0,1]\)</span>, there exists a <strong>joint density function</strong> <span class="math inline">\(f_X: \R^n \to [0,\infty)\)</span> such that <span class="math inline">\(f_X(x) = \frac{d^n}{dx_1\dots dx_n}F_X(x)\)</span>, and</p>
+</div>
+<div class="rem">
+<p><strong>Remark 5</strong>. For an independent continuous random vector <span class="math inline">\(X: \Omega \to \R^n\)</span>, we have <span class="math inline">\(f_X(x) = \prod_{i=1}^nf_{X_i}(x_i)\)</span> for all <span class="math inline">\(x \in \R^n\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 24</strong> (Gaussian random vectors). For a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, Gaussian random vector is a continuous random vector <span class="math inline">\(X: \Omega \to \R^n\)</span> defined by its density function where the mean vector <span class="math inline">\(\mu \in \R^n\)</span> and the positive definite covariance matrix <span class="math inline">\(\Sigma \in \R^{n \times n}\)</span>. The components of the Gaussian random vector are Gaussian random variables, which are independent when <span class="math inline">\(\Sigma\)</span> is diagonal matrix and are identically distributed when <span class="math inline">\(\Sigma = \sigma^2 I\)</span>.</p>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1116,10 +1261,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-04.html" class="pagination-link" aria-label="Random Variable">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-06.html" class="pagination-link" aria-label="Transformation of random vectors">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1276,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

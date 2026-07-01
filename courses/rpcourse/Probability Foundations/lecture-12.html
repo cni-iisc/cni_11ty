@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Conditional Expectation – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-13.html" rel="next">
+<link href="../Probability Foundations/lecture-11.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-08.html">Section 3. Expectation</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-12.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -425,25 +426,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -451,46 +452,46 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 3. Expectation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -559,31 +560,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,9 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#conditional-expectation-given-a-non-trivial-event" id="toc-conditional-expectation-given-a-non-trivial-event" class="nav-link active" data-scroll-target="#conditional-expectation-given-a-non-trivial-event">Conditional expectation given a non trivial event</a></li>
+  <li><a href="#conditional-expectation-given-an-event-space" id="toc-conditional-expectation-given-an-event-space" class="nav-link" data-scroll-target="#conditional-expectation-given-an-event-space">Conditional expectation given an event space</a></li>
+  <li><a href="#conditional-distribution-given-an-event-space" id="toc-conditional-distribution-given-an-event-space" class="nav-link" data-scroll-target="#conditional-distribution-given-an-event-space">Conditional distribution given an event space</a></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +651,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-08.html">Section 3. Expectation</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-12.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Conditional Expectation</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,18 +682,152 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/OpsLU8dFIY8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="conditional-expectation-given-a-non-trivial-event" class="level1">
+<h1>Conditional expectation given a non trivial event</h1>
+<p>Consider a probability space <span class="math inline">\((\Omega, \sF, P)\)</span> and an event <span class="math inline">\(B \in \sF\)</span> such that <span class="math inline">\(P(B) &gt; 0\)</span>. Then, the conditional probability of any event <span class="math inline">\(A \in \sF\)</span> given an event <span class="math inline">\(B\)</span> is defined as Consider a random variable <span class="math inline">\(X: \Omega\to\R\)</span> defined on a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, with distribution function <span class="math inline">\(F_X: \R \to [0,1]\)</span>, and a non trivial event <span class="math inline">\(B \in \sF\)</span> such that <span class="math inline">\(P(B) &gt; 0\)</span>.</p>
+<div class="defn">
+<p><strong>Definition 1</strong>. The <strong>conditional distribution of <span class="math inline">\(X\)</span> given event <span class="math inline">\(B\)</span></strong> is denoted by <span class="math inline">\(F_{X| B}: \R \to [0,1]\)</span> and <span class="math inline">\(F_{X| B}(x)\)</span> is defined as the probability of event <span class="math inline">\(A_X(x) \triangleq X^{-1}(-\infty, x]\)</span> conditioned on event <span class="math inline">\(B\)</span> for all <span class="math inline">\(x\in\R\)</span>. That is,</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. The conditional distribution <span class="math inline">\(F_{X|B}\)</span> is a distribution function. This follows from the fact that (i) <span class="math inline">\(F_{X|B} \ge 0\)</span>, (ii) <span class="math inline">\(F_{X|B}\)</span> is right continuous, (iii) <span class="math inline">\(\lim_{x\downarrow -\infty}F_{X|B}(x) = 0\)</span> and <span class="math inline">\(\lim_{x\uparrow \infty}F_{X|B}(x) = 1\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. For a discrete random variable <span class="math inline">\(X:\Omega\to\sX\)</span>, the conditional probability mass function of <span class="math inline">\(X\)</span> given a non trivial event <span class="math inline">\(B\)</span> is given by <span class="math inline">\(P_{X|B}(x) = \frac{P(X^{-1}\set{x}\cap B)}{P(B)}\)</span> for all <span class="math inline">\(x \in \sX\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 3</strong>. For a continuous random variable <span class="math inline">\(X:\Omega\to\R\)</span>, the conditional density of <span class="math inline">\(X\)</span> given a non trivial event <span class="math inline">\(B\)</span> is given by <span class="math inline">\(f_{X|B}(x) = \frac{dF_{X|B}(x)}{dx}\)</span> for all <span class="math inline">\(x \in \R\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 2</strong> (Conditional distribution). <span id="exmp:FairDieConditionHalf" data-label="exmp:FairDieConditionHalf"></span> Consider the probability space <span class="math inline">\((\Omega, \sF, P)\)</span> corresponding to a random experiment where a fair die is rolled once. For this case, the outcome space <span class="math inline">\(\Omega = [6]\)</span>, the event space <span class="math inline">\(\sF = \cP([6])\)</span>, and the probability measure <span class="math inline">\(P(\omega) = \frac{1}{6}\)</span> for all <span class="math inline">\(\omega\in \Omega\)</span>.</p>
+<p>We define a random variable <span class="math inline">\(X: \Omega\to\R\)</span> such that <span class="math inline">\(X(\omega) = \omega\)</span> for all <span class="math inline">\(\omega \in \Omega\)</span>, and an event <span class="math inline">\(B \triangleq \set{\omega \in \Omega: X(\omega) \le 3} = [3] \in \sF\)</span>. We note that <span class="math inline">\(P(B) = 0.5\)</span> and the conditional PMF of <span class="math inline">\(X\)</span> given <span class="math inline">\(B\)</span> is</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 3</strong>. The <strong>conditional expectation of <span class="math inline">\(X\)</span> given event <span class="math inline">\(B\)</span></strong> is given as <span class="math inline">\(\E[X|B] \triangleq \int_{x\in\R}xdF_{X|B}(x).\)</span></p>
+</div>
+<div class="rem">
+<p><strong>Remark 4</strong>. For a discrete random variable <span class="math inline">\(X:\Omega\to\sX\)</span>, the conditional expectation of <span class="math inline">\(X\)</span> given a non trivial event <span class="math inline">\(B\)</span> is given by <span class="math inline">\(\E[X|B]= \sum_{x\in\sX}xP_{X|B}(x)\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 4</strong> (Conditional expectation). For the random variable <span class="math inline">\(X\)</span> and event <span class="math inline">\(B\)</span> defined in Example&nbsp;<a href="#exmp:FairDieConditionHalf" data-reference-type="ref" data-reference="exmp:FairDieConditionHalf">[exmp:FairDieConditionHalf]</a>, the conditional expectation <span class="math inline">\(\E[X|B] = 2\)</span>.</p>
+</div>
+</div>
+<div class="rem">
+<p><strong>Remark 5</strong>. Consider two random variables <span class="math inline">\(X,Y\)</span> defined on this probability space, then for <span class="math inline">\(y \in \R\)</span> such that <span class="math inline">\(F_Y(y) &gt; 0\)</span>, we can define events <span class="math inline">\(A_X(x) \triangleq X^{-1}(-\infty, x]\)</span> and <span class="math inline">\(A_Y(y) = Y^{-1}(-\infty, y]\)</span>, such that The key observation is that <span class="math inline">\(\set{Y \le y}\)</span> is a non-trivial event. How do we define conditional expectation based on events such as <span class="math inline">\(\set{Y = y}\)</span>? When random variable <span class="math inline">\(Y\)</span> is continuous, this event has zero probability measure.</p>
+</div>
+</section>
+<section id="conditional-expectation-given-an-event-space" class="level1">
+<h1>Conditional expectation given an event space</h1>
+<p>Consider random variables <span class="math inline">\(X:\Omega\to\R\)</span> and <span class="math inline">\(Y:\Omega\to\R\)</span> defined on the same probability space <span class="math inline">\((\Omega, \sF, P)\)</span> such that <span class="math inline">\(\E\abs{X} &lt; \infty\)</span>, and a smaller event space <span class="math inline">\(\sG \subset \sF\)</span>. For each non trivial event <span class="math inline">\(G \in \sG\)</span>, we know how to define the conditional distribution <span class="math inline">\(F_{X|G}\)</span> and <span class="math inline">\(\E[X|G]\)</span>. For any trivial event <span class="math inline">\(N \in \sG\)</span>, these are undefined.</p>
+<div class="defn">
+<p><strong>Definition 5</strong>. The <strong>conditional expectation of random variable <span class="math inline">\(X\)</span> given event space <span class="math inline">\(\sG\)</span></strong> is a random variable <span class="math inline">\(\E[X\given \sG]: \Omega \to \R\)</span> defined on the same probability space, such that</p>
+<div class="compactenum">
+<p><span class="math inline">\(Z \triangleq \E[X\given \sG]\)</span> is <span class="math inline">\(\sG\)</span> measurable,</p>
+<p>for all <span class="math inline">\(G\in \sG\)</span>, we have <span class="math inline">\(%\int_AXdP =
+\E[X\Ind{G}] = \E[Z\Ind{G}], %=\int_AYdP,\)</span></p>
+<p><span class="math inline">\(\E\abs{Z}&lt;\infty\)</span>.</p>
+</div>
+</div>
+<div class="lem">
+<p><strong>Lemma 6</strong>. The conditional expectation of <span class="math inline">\(X\)</span> given <span class="math inline">\(\sG\)</span> is an a.s. unique random variable.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Consider two random variables <span class="math inline">\(Z_1 = \E[X|\sG]\)</span> and <span class="math inline">\(Z_2 = \E[X|\sG]\)</span>. Then from the definition, <span class="math inline">\(Z_1, Z_2\)</span> are <span class="math inline">\(\sG\)</span> measurable random variables, and <span class="math inline">\(Z_1-Z_2\)</span> is also <span class="math inline">\(\sG\)</span> measurable. Therefore, <span class="math inline">\(G_n \triangleq \set{Z_1 - Z_2 &gt; \frac{1}{n}} \in \sG\)</span> and <span class="math inline">\(\E[(Z_1-Z_2)\Ind{G_n}] = 0\)</span> by definition. It follows from continuity of probability, that <span class="math inline">\(P(\lim_n G_n) = 0\)</span>. Similarly, defining <span class="math inline">\(F_n \triangleq \set{Z_2 - Z_1 &gt; \frac 1 n}\)</span>, we can show that <span class="math inline">\(P(\lim_nF_n) = 0\)</span>.&nbsp;◻</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 7</strong> (Conditional expectation as averaging). Consider a random variable <span class="math inline">\(X:\Omega\to\R\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF,P)\)</span> with <span class="math inline">\(\E\abs{X} &lt; \infty\)</span>, and the coarsest event space <span class="math inline">\(\sG = \set{\emptyset, \Omega} \subseteq \sF\)</span> and finest event space <span class="math inline">\(\sF\)</span>. We observe that <span class="math inline">\(\E[X|\sG] = \E X\)</span> a.s. uniquely, since (i) <span class="math inline">\(\E X\)</span> is a constant and hence <span class="math inline">\(\sG\)</span> measurable, (ii) <span class="math inline">\(\E[\E X \Ind{\emptyset}] = \E[X \Ind{\emptyset}] = 0\)</span> and <span class="math inline">\(\E[\E X \Ind{\Omega}] = \E[X \Ind{\Omega}] = \E X\)</span>, and (iii) <span class="math inline">\(\E\abs{\E X} = \abs{\E X} \le \E \abs{X} &lt; \infty\)</span> from the Jensen’s inequality.</p>
+<p>We also observe that <span class="math inline">\(\E[X|\sF] = X\)</span> a.s. uniquely, since (i) <span class="math inline">\(X\)</span> is <span class="math inline">\(\sF\)</span> measurable random variable, (ii) <span class="math inline">\(\E[ X \Ind{G}] = \E[X \Ind{G}]\)</span> for all events <span class="math inline">\(G\in \sF\)</span>, and (iii) <span class="math inline">\(\E\abs{X} &lt; \infty\)</span>.</p>
+</div>
+</div>
+<div class="lem">
+<p><strong>Lemma 8</strong>. The mean of conditional expectation of random variable <span class="math inline">\(X\)</span> given event space <span class="math inline">\(\sG\)</span> is <span class="math inline">\(\E X\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> From the definition of event space <span class="math inline">\(\Omega\in\sG\)</span>, and from the definition of conditional expectation, we get <span class="math inline">\(\E[\E[X\mid \sG]]
+= \E[\E[X\mid \sG]\Ind{\Omega}]
+= \E[X\Ind{\Omega}]
+= \E X.\)</span>&nbsp;◻</p>
+</div>
+<div class="defn">
+<p><strong>Definition 9</strong>. The conditional expectation of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y\)</span> is a random variable <span class="math inline">\(\E[X\given Y] \triangleq \E[X\given\sigma(Y)]\)</span> defined on the same probability space.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 10</strong> (Conditioning on simple random variables). For a simple random variable <span class="math inline">\(Y: \Omega \to \sY \subseteq \R\)</span> defined on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, we define fundamental events <span class="math inline">\(E_y \triangleq Y^{-1}\set{y} \in \sF\)</span> for all <span class="math inline">\(y \in \sY\)</span>. Then the sequence of events <span class="math inline">\(E \triangleq (E_y \in \sF: y \in \sY)\)</span> partitions the sample space, and we can write the event space generated by random variable <span class="math inline">\(Y\)</span> as <span class="math inline">\(\sigma(Y) = (\cup_{y\in I}E_y: I \subseteq \sY)\)</span>.</p>
+<p>For a random variable <span class="math inline">\(X: \Omega \to \R\)</span> defined on the same probability space, the random variable <span class="math inline">\(Z \triangleq \E[X\given Y]\)</span> is <span class="math inline">\(\sigma(Y)\)</span> measurable. Therefore, <span class="math inline">\(\E[X| Y] = \sum_{y\in\sY}\alpha_y\Ind{E_y}\)</span> for some <span class="math inline">\(\alpha\in\R^\sY\)</span>. We verify that <span class="math inline">\(Z:\Omega\to\R\)</span> is a <span class="math inline">\(\sigma(Y)\)</span> measurable random variable, since <span class="math inline">\(\sigma(Z) \subseteq \sigma(Y)\)</span>. We can also check that <span class="math inline">\(\E\abs{Z} &lt; \infty\)</span>. Further, we have <span class="math inline">\(\E[Z\Ind{E_y}] = \E[X\Ind{E_y}]\)</span> for any <span class="math inline">\(y \in \sY\)</span>, which implies that <span class="math inline">\(\alpha_y = \frac{\E[X\Ind{E_y}]}{P_Y(y)}\)</span> for any <span class="math inline">\(y \in \sY\)</span>. Notice that</p>
+</div>
+</div>
+<div class="rem">
+<p><strong>Remark 6</strong>. There are three main takeaways from this definition. For a random variable <span class="math inline">\(Y\)</span>, the event space generated by <span class="math inline">\(Y\)</span> is <span class="math inline">\(\sigma(Y)\)</span>.</p>
+<ol type="1">
+<li><p>The conditional expectation <span class="math inline">\(\E[X|Y] = \E[X|\sigma(Y)]\)</span> and is <span class="math inline">\(\sigma(Y)\)</span> measurable. That is, <span class="math inline">\(\E[X|Y]\)</span> is a Borel measurable function of <span class="math inline">\(Y\)</span>. In particular when <span class="math inline">\(Y\)</span> is discrete, this implies that <span class="math inline">\(\E[X|Y]\)</span> is a simple random variable that takes value <span class="math inline">\(\E[X|E_y]\)</span> when <span class="math inline">\(\omega \in E_y\)</span>, and the probability of this event is <span class="math inline">\(P_Y(y)\)</span>. When <span class="math inline">\(Y\)</span> is continuous, <span class="math inline">\(\E[X|Y]\)</span> is a continuous random variable with density <span class="math inline">\(f_Y\)</span>.</p></li>
+<li><p>Expectation is averaging. Conditional expectation is averaging over event spaces. We can observe that the coarsest averaging is <span class="math inline">\(\E[X|\set{\emptyset, \Omega}] = \E X\)</span> and the finest averaging is <span class="math inline">\(\E[X|\sigma(X)] = X\)</span>. Further, <span class="math inline">\(\E[X|\sigma(Y)]\)</span> is averaging of <span class="math inline">\(X\)</span> over events generated by <span class="math inline">\(Y\)</span>. If we take any event <span class="math inline">\(A \in \sigma(Y)\)</span> generated by <span class="math inline">\(Y\)</span>, then the conditional expectation of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y\)</span> is fine enough to find the averaging of <span class="math inline">\(X\)</span> when this event occurs. That is, <span class="math inline">\(\E[X\Ind{A}] = \E[\E[X|Y]\Ind{A}]\)</span>.</p></li>
+<li><p>If <span class="math inline">\(X \in L^1\)</span>, then the conditional expectation <span class="math inline">\(\E[X|Y] \in L^1\)</span>.</p></li>
+</ol>
+</div>
+</section>
+<section id="conditional-distribution-given-an-event-space" class="level1">
+<h1>Conditional distribution given an event space</h1>
+<div class="defn">
+<p><strong>Definition 11</strong>. The <strong>conditional probability of an event <span class="math inline">\(A\in\sF\)</span> given event space <span class="math inline">\(\sG\)</span></strong> is defined as <span class="math inline">\(P(A\mid \sG) \triangleq \E[\Ind{A}\mid\sG]\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 7</strong>. From the definition of conditional expectation, it follows that <span class="math inline">\(P(A\mid \sG):\Omega\to[0,1]\)</span> is a <span class="math inline">\(\sG\)</span> measurable random variable, such that <span class="math inline">\(\E[\Ind{G}P(A|\sG)] = P(A\cap G)\)</span> for all <span class="math inline">\(G \in \sG\)</span>, and is uniquely defined up to sets of probability zero.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 12</strong>. For the trivial sigma algebra <span class="math inline">\(\sG =\set{\emptyset ,\Omega}\)</span>, the conditional probability is the constant function <span class="math inline">\(P(A\mid \set{\emptyset ,\Omega})=P (A).\)</span></p>
+</div>
+<div class="exmp">
+<p><strong>Example 13</strong>. If <span class="math inline">\(A\in \sG\)</span>, then <span class="math inline">\(P(A\mid\sG)=\Ind{A}\)</span>.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 14</strong>. The <strong>conditional distribution of random variable <span class="math inline">\(X\)</span> given sub event space <span class="math inline">\(\sG\)</span></strong> is defined as <span class="math inline">\(F_{X \mid \sG}(x)\triangleq P(A_X(x)\mid \sG)\text{ for all }x \in \R.\)</span></p>
+</div>
+<div class="rem">
+<p><strong>Remark 8</strong>. Recall that <span class="math inline">\(F_{X\mid\sG}(x): \Omega\to[0,1]\)</span> a random variable, for each <span class="math inline">\(x\in\R\)</span>. Further, we observe that <span class="math inline">\(F_{X\mid\sG}\)</span> is monotone nondecreasing in <span class="math inline">\(x \in \R\)</span>, right continuous at all <span class="math inline">\(x\in\R\)</span>, and has limits <span class="math inline">\(\lim_{x\downarrow-\infty}F_{X\mid\sG}(x) = 0\)</span> and <span class="math inline">\(\lim_{x\uparrow\infty}F_{X\mid\sG}(x) = 1\)</span>. It follows that <span class="math inline">\(F_{X\mid\sG}: \Omega \to [0,1]^\R\)</span> is a random distribution.</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 15</strong>. Let <span class="math inline">\(g:\R\to\R\)</span> be a Borel measurable function and <span class="math inline">\(\sG\)</span> be a sub-event space. Then, the conditional expectation <span class="math inline">\(\E[g(X)\mid\sG] = \int_{x\in\R}g(x)dF_{X\mid\sG}(x).\)</span></p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> It suffices to show this for simple random variables <span class="math inline">\(X:\Omega\to\sX\)</span>. Since <span class="math inline">\(g\)</span> is Borel measurable, then <span class="math inline">\(g(X)\)</span> is a random variable. We will show that <span class="math inline">\(\E[g(X)\mid\sG] = \sum_{x\in\sX}g(x)P_{X\mid\sG}(x)\)</span> by showing that it satisfies three properties of conditional expectation. For part (i), we observe that from the definition of conditional probability <span class="math inline">\(P_{X\mid\sG}(x)\)</span> is a <span class="math inline">\(\sG\)</span>-measurable random variable for all <span class="math inline">\(x\in\sX\)</span>, and so is the linear combination <span class="math inline">\(\sum_{x\in\sX}g(x)P_{X\mid\sG}(x)\)</span>. For part (ii), we let <span class="math inline">\(G \in \sG\)</span>. Then, it follows from the linearity of expectation and the definition of conditional probability, that For part (iii), it follows from the triangle inequality, the linearity of expectation, and the definition of conditional probability that <span class="math inline">\(\E\abs{\sum_{x\in\sX}g(x)P_{X\mid\sG}(x)} \le \sum_{x\in\sX}\abs{g(x)} \E P_{X\mid\sG}(x)
+= \sum_{x\in\sX}\abs{g(x)}P_X(x) = \E\abs{X} &lt; \infty.\)</span>&nbsp;◻</p>
+</div>
+<div class="rem">
+<p><strong>Remark 9</strong>. The conditional characteristic function is given by <span class="math inline">\(\Phi_{X\mid\sG}(u) = \E[e^{juX}\mid\sG] = \int_{x\in\R}e^{jux}dF_{X\mid\sG}(x).\)</span></p>
+</div>
+<div class="defn">
+<p><strong>Definition 16</strong>. The <strong>conditional distribution of random variable <span class="math inline">\(X\)</span> given random variable <span class="math inline">\(Y\)</span></strong> is defined as <span class="math inline">\(F_{X\mid Y}(x) \triangleq P(A_X(x)\mid\sigma(Y)]\)</span> for all <span class="math inline">\(x\in \R\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 17</strong> (Conditional distribution given simple random variables). Consider a random variable <span class="math inline">\(X: \Omega \to \R\)</span> and a simple random variable <span class="math inline">\(Y:\Omega\to\sY\)</span> defined on the same probability space. Since random variables <span class="math inline">\(F_{X\mid Y}(x) = \E[\Ind{A_X(x)}\mid Y]\)</span> are <span class="math inline">\(\sigma(Y)\)</span> measurable, they can can be written as <span class="math inline">\(F_{X\mid Y}(x) = \sum_{y\in\sY}\beta_{x,y}\Ind{E_y}\)</span> for some <span class="math inline">\(\beta_x\in\R^\sY\)</span> and <span class="math inline">\(E_y = Y^{-1}\set{y}\)</span> for all <span class="math inline">\(y \in \sY\)</span>. Further, we have <span class="math inline">\(\E[F_{X\mid Y}(x)\Ind{E_y}] = \E[\Ind{A_X(x)}\Ind{E_y}]\)</span> for any <span class="math inline">\(y \in \sY\)</span>, which implies that <span class="math inline">\(\beta_{x,y} =\frac{P(A_X(x)\cap E_y)}{P_Y(y)} = F_{X\mid E_y}(x)\)</span> for any <span class="math inline">\(y \in \sY\)</span>. It follows that <span class="math inline">\(F_{X\mid Y}\)</span> is a <span class="math inline">\(\sigma(Y)\)</span> measurable simple random variable.</p>
+</div>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 18</strong> (Conditional expectation). Consider a random experiment of a fair die being thrown and a random variable <span class="math inline">\(X:\Omega\to\R\)</span> taking the value of the outcome of the experiment. That is, for outcome space <span class="math inline">\(\Omega = [6]\)</span> and event space <span class="math inline">\(\sF = \cP(\Omega)\)</span>, we have <span class="math inline">\(X(\omega) = \omega\)</span> with <span class="math inline">\(P_X(x) = 1/6\)</span> for <span class="math inline">\(x \in [6]\)</span>. Define another random variable <span class="math inline">\(Y = \SetIn{X \le 3}\)</span>. Then the conditional expectation of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y\)</span> is a random variable given by Since <span class="math inline">\(P\set{Y = 1} = P\set{Y = 0} = 0.5\)</span>, it follows that that <span class="math inline">\(\E[\E[X|Y]] = \E[X]  = 3.5\)</span>.</p>
+</div>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 19</strong> (Conditional distribution). Consider the zero-mean Gaussian random variable <span class="math inline">\(N:\Omega\to\R\)</span> with variance <span class="math inline">\(\sigma^2\)</span>, and another independent random variable <span class="math inline">\(Y \in \set{-1,1}\)</span> with PMF <span class="math inline">\((1-p, p)\)</span> for some <span class="math inline">\(p \in [0,1]\)</span>. Let <span class="math inline">\(X = Y + N\)</span>, then the conditional distribution of <span class="math inline">\(X\)</span> given simple random variable <span class="math inline">\(Y\)</span> is where <span class="math inline">\(F_{X\mid Y^{-1}(\mu)}\)</span> is <span class="math inline">\(\int_{-\infty}^xe^{-\frac{(t-\mu)^2}{\sigma^2}}dt\)</span>.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 20</strong>. When <span class="math inline">\(X, Y\)</span> are both continuous random variables, there exists a joint density <span class="math inline">\(f_{X,Y}(x,y)\)</span> for all <span class="math inline">\((x, y) \in \R^2\)</span>. For each <span class="math inline">\(y \in \sY\)</span> such that <span class="math inline">\(f_Y(y) &gt; 0\)</span>, we can define a function <span class="math inline">\(f_{X\mid Y}: \R^2 \to \R_+\)</span> such that</p>
+</div>
+<div class="tcolorbox">
+<div class="exerc">
+<p><strong>Exercise 21</strong>. For continuous random variables <span class="math inline">\(X,Y\)</span>, show that the function <span class="math inline">\(f_{X\mid Y^{-1}(y)}\)</span> is a density of continuous random variable <span class="math inline">\(X\)</span> for each <span class="math inline">\(y\in \R\)</span>.</p>
+</div>
+</div>
 
 
 </section>
@@ -1116,10 +1248,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-11.html" class="pagination-link" aria-label="Generating functions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-13.html" class="pagination-link" aria-label="Conditional expectation">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1263,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

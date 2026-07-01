@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>L^p convergence – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-16.html" rel="next">
+<link href="../Probability Foundations/lecture-14.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-14.html">Section 4. Convergence</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-15.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -425,25 +426,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -460,37 +461,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -498,28 +499,28 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 4. Convergence</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -559,31 +560,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,10 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#lp-convergence" id="toc-lp-convergence" class="nav-link active" data-scroll-target="#lp-convergence"><span class="math inline">\(L^p\)</span> convergence</a></li>
+  <li><a href="#l1-convergence-theorems" id="toc-l1-convergence-theorems" class="nav-link" data-scroll-target="#l1-convergence-theorems"><span class="math inline">\(L^1\)</span> convergence theorems</a></li>
+  <li><a href="#convergence-theorems-for-conditional-means" id="toc-convergence-theorems-for-conditional-means" class="nav-link" data-scroll-target="#convergence-theorems-for-conditional-means">Convergence theorems for conditional means</a></li>
+  <li><a href="#uniform-integrability" id="toc-uniform-integrability" class="nav-link" data-scroll-target="#uniform-integrability">Uniform integrability</a></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +652,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-14.html">Section 4. Convergence</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-15.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,18 +683,91 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/sIB9UauIF2Q" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="lp-convergence" class="level1">
+<h1><span class="math inline">\(L^p\)</span> convergence</h1>
+<div class="defn">
+<p><strong>Definition 1</strong> (Convergence in <span class="math inline">\(L^p\)</span>). Let <span class="math inline">\(p \ge 1\)</span>, then we say that a random sequence <span class="math inline">\(X: \Omega \to \R^\N\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF,P)\)</span> <strong>converges in <span class="math inline">\(L^p\)</span></strong> to a random variable <span class="math inline">\(X_\infty:\Omega \to \R\)</span>, if The convergence in <span class="math inline">\(L^p\)</span> is denoted by <span class="math inline">\(\lim_nX_n = X_\infty\)</span> in <span class="math inline">\(L^p\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. For <span class="math inline">\(p \in [1, \infty)\)</span>, the convergence of a random sequence <span class="math inline">\(X: \Omega\to\R^\N\)</span> in <span class="math inline">\(L^p\)</span> to a random variable <span class="math inline">\(X_\infty:\Omega \to \R\)</span> is equivalent to</p>
+</div>
+<div class="prop">
+<p><strong>Proposition 2</strong> (Convergences <span class="math inline">\(L^p\)</span> implies in probability). Consider <span class="math inline">\(p \in [1, \infty)\)</span> and a sequence of random variables <span class="math inline">\(X:\Omega\to\R^\N\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF, P)\)</span> such that <span class="math inline">\(\lim_nX_n = X_\infty\)</span> in <span class="math inline">\(L^p\)</span>, then <span class="math inline">\(\lim_nX_n = X_\infty\)</span> in probability.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Let <span class="math inline">\(\epsilon &gt; 0\)</span>, then from the Markov’s inequality applied to random variable <span class="math inline">\(\abs{X_n-X}^p\)</span>, we have&nbsp;◻</p>
+</div>
+<div class="shaded*">
+<div class="exmp">
+<p><strong>Example 3</strong> (Convergence almost surely doesn’t imply convergence in <span class="math inline">\(L^p\)</span>). Consider the probability space <span class="math inline">\(([0,1], \sB([0,1]), \lambda)\)</span> such that <span class="math inline">\(\lambda([a,b]) = b-a\)</span> for all <span class="math inline">\(0 \le a \le b \le 1\)</span>. We define the scaled indicator random variable <span class="math inline">\(X_n: \Omega \to \set{0,1}\)</span> such that We define <span class="math inline">\(N = \set{0}\)</span>, and for any <span class="math inline">\(\omega \notin N\)</span>, we can find <span class="math inline">\(m \triangleq \lceil \frac{1}{\omega}\rceil\)</span>, such that for all <span class="math inline">\(n &gt; m\)</span>, we have <span class="math inline">\(X_n(\omega) = 0\)</span>. Since <span class="math inline">\(\lambda(N) = 0\)</span>, it implies that <span class="math inline">\(\lim_nX_n = 0\)</span> a.s. However, we see that <span class="math inline">\(\E\abs{X_n}^p = \frac{2^{np}}{n}\)</span>.</p>
+</div>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. Convergence almost surely implies convergence in probability. Therefore, above example also serves as a counterexample to the fact that convergence in probability doesn’t imply convergence in <span class="math inline">\(L^p\)</span>.</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 4</strong> (<span class="math inline">\(L^2\)</span> weak law of large numbers). Consider a sequence of uncorrelated random variables <span class="math inline">\(X:\Omega\to\R^\N\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF, P)\)</span> such that <span class="math inline">\(\E X_n = \mu\)</span> and <span class="math inline">\(\Var(X_n) = \sigma^2\)</span> for all <span class="math inline">\(n \in \N\)</span>. Defining the sum <span class="math inline">\(S_n\triangleq \sum_{i=1}^nX_i\)</span> and the <span class="math inline">\(n\)</span>-empirical mean <span class="math inline">\(\bar{X}_n \triangleq \frac{S_n}{n}\)</span>, we have <span class="math inline">\(\lim_n\bar{X}_n=\mu\)</span> in <span class="math inline">\(L^2\)</span> and in probability.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> From the uncorrelatedness of random sequence <span class="math inline">\(X\)</span>, and linearity of expectation, we get It follows that <span class="math inline">\(\lim_n\bar{X}_n = \mu\)</span> in <span class="math inline">\(L^2\)</span>. Since the convergence in <span class="math inline">\(L^p\)</span> implies convergence in probability, the result holds.&nbsp;◻</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 5</strong> (<span class="math inline">\(L^1\)</span> weak law of large numbers). Consider an random sequence <span class="math inline">\(X:\Omega\to\R^\N\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF, P)\)</span> such that <span class="math inline">\(\E\abs{X_1}&lt; \infty\)</span> and <span class="math inline">\(\E X_1 = \mu\)</span>. Defining the sum <span class="math inline">\(S_n\triangleq \sum_{i=1}^nX_i\)</span> and the <span class="math inline">\(n\)</span>-empirical mean <span class="math inline">\(\bar{X}_n \triangleq \frac{S_n}{n}\)</span>, we have <span class="math inline">\(\lim_n\bar{X}_n=\mu\)</span> in probability.</p>
+</div>
+<div class="shaded*">
+<div class="exmp">
+<p><strong>Example 6</strong> (Convergence in <span class="math inline">\(L^p\)</span> doesn’t imply almost surely). Consider the probability space <span class="math inline">\(([0,1], \sB([0,1]), \lambda)\)</span> such that <span class="math inline">\(\lambda([a,b]) = b-a\)</span> for all <span class="math inline">\(0 \le a \le b \le 1\)</span>. For each <span class="math inline">\(k \in \N\)</span>, we consider the sequence <span class="math inline">\(S_k = \sum_{i=1}^ki\)</span>, and define integer intervals <span class="math inline">\(I_k \triangleq \set{S_{k-1}+1, \dots, S_{k}}\)</span>. Clearly, the intervals <span class="math inline">\((I_k:k \in \N)\)</span> partition the natural numbers, and each <span class="math inline">\(n \in \N\)</span> lies in some <span class="math inline">\(I_{k_n}\)</span>, such that <span class="math inline">\(n = S_{k+n-1}+i_n\)</span> for <span class="math inline">\(i_n \in [k_n]\)</span>. Therefore, for each <span class="math inline">\(n \in \N\)</span>, we define indicator random variable <span class="math inline">\(X_n: \Omega \to \set{0,1}\)</span> such that For any <span class="math inline">\(\omega \in [0,1]\)</span>, we have <span class="math inline">\(X_n(\omega) = 1\)</span> for infinitely many values since there exist infinitely many <span class="math inline">\((i,k)\)</span> pairs such that <span class="math inline">\(\frac{(i-1)}{k} \le \omega \le \frac{i}{k}\)</span>, and hence <span class="math inline">\(\lim\sup_nX_n(\omega) = 1\)</span> and hence <span class="math inline">\(\lim_nX_n(\omega) \neq 0\)</span>. However, <span class="math inline">\(\lim_nX_n(\omega) = 0\)</span> in <span class="math inline">\(L^p\)</span>, since</p>
+</div>
+</div>
+</section>
+<section id="l1-convergence-theorems" class="level1">
+<h1><span class="math inline">\(L^1\)</span> convergence theorems</h1>
+<div class="thm">
+<p><strong>Theorem 7</strong> (Monotone Convergence Theorem). Consider a non-decreasing non-negative random sequence <span class="math inline">\(X: \Omega\to\R_+^\N\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF,P)\)</span>, such that <span class="math inline">\(X_n \in L^1\)</span> for all <span class="math inline">\(n \in \N\)</span>. Let <span class="math inline">\(X_\infty(\omega) \triangleq \sup_nX_n(\omega)\)</span> for all <span class="math inline">\(\omega \in \Omega\)</span>, then <span class="math inline">\(\E X_\infty = \sup_n\E X_n.\)</span></p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> From the monotonicity of sequence <span class="math inline">\(X\)</span> and the monotonicity of expectation, we have <span class="math inline">\(\sup_n\E X_n \le \E X_\infty\)</span>. Let <span class="math inline">\(\alpha \in (0,1)\)</span> and <span class="math inline">\(Y: \Omega\to\R_+\)</span> a non-negative simple random variable such that <span class="math inline">\(Y \le X_\infty\)</span>. We define From the monotonicity of sequence <span class="math inline">\(X\)</span>, the sequence of events <span class="math inline">\(E \in \sF^\N\)</span> are monotonically non-decreasing such that <span class="math inline">\(\cup_{n \in \N}E_n = \Omega\)</span>. It follows that We will use the fact that <span class="math inline">\(\lim_n\E[Y\Ind{E_n}] = \E[Y]\)</span>, then <span class="math inline">\(\alpha\E Y \le \sup_n\E X_n\)</span>. Taking supremum over all <span class="math inline">\(\alpha \in (0,1)\)</span> and all simple functions <span class="math inline">\(Y \le X_\infty\)</span>, we get <span class="math inline">\(\E X_\infty \le \sup_n\E X_n\)</span>.&nbsp;◻</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 8</strong> (Fatou’s Lemma). Consider a non-negative random sequence <span class="math inline">\(X: \Omega\to\R_+^\N\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF,P)\)</span>. Let <span class="math inline">\(X_\infty(\omega) \triangleq \lim\inf_nX_n(\omega)\)</span> for all <span class="math inline">\(\omega\in\Omega\)</span>, then <span class="math inline">\(\E X_\infty \le \lim\inf_n\E X_n.\)</span></p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> We define <span class="math inline">\(Y_n \triangleq \inf_{k \ge n}X_k\)</span> for all <span class="math inline">\(n \in \N\)</span>. It follows that <span class="math inline">\(Y: \Omega \to \R_+^\N\)</span> is a non-negative non-decreasing sequence of random variables, and <span class="math inline">\(X_\infty = \sup_nY_n = \lim_nY_n\)</span>. Applying monotone convergence theorem to random sequence <span class="math inline">\(Y\)</span>, we get <span class="math inline">\(\E X_\infty = \sup_n\E Y_n\)</span>. The result follows from the monotonicity of expectation, and the fact that <span class="math inline">\(Y_n \le X_k\)</span> for all <span class="math inline">\(k \ge n\)</span>, to get <span class="math inline">\(\E Y_n \le \inf_{k\ge n}\E X_k\)</span>.&nbsp;◻</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 9</strong> (Dominated Convergence Theorem). Let <span class="math inline">\(X: \Omega \to \R^\N\)</span> be a random sequence defined on a probability space <span class="math inline">\((\Omega, \sF, P)\)</span>. If <span class="math inline">\(\lim_nX_n = X_\infty\)</span> a.s. and there exists a <span class="math inline">\(Y: \Omega \to \R_+\)</span> such that <span class="math inline">\(Y \in L^1\)</span> and <span class="math inline">\(\abs{X_n} \le Y\)</span> a.s. for all <span class="math inline">\(n\in\N\)</span>, then <span class="math inline">\(\E X_\infty = \lim_n\E X_n\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> From the hypothesis, we have <span class="math inline">\(Y+X_n \ge 0\)</span> a.s. and <span class="math inline">\(Y-X_n \ge 0\)</span> a.s. Therefore, from Fatou’s Lemma and linearity of expectation, we have</p>
+<div class="xalignat*">
+<p>2 &amp;Y + X__n (Y+X_n) = Y + _nX_n,&amp; &amp;Y - X__n (Y-X_n) = Y - _nX_n.</p>
+</div>
+<p>Therefore, we have <span class="math inline">\(\limsup_n\E X_n \le \E X_\infty \le \liminf_n\E X_n\)</span>, and the result follows.&nbsp;◻</p>
+</div>
+</section>
+<section id="convergence-theorems-for-conditional-means" class="level1">
+<h1>Convergence theorems for conditional means</h1>
+<div class="prop">
+<p><strong>Proposition 10</strong>. Let <span class="math inline">\(X:\Omega\to\R^\N\)</span> be a random sequence on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span> such that <span class="math inline">\(\E\abs{X_n} &lt; \infty\)</span> for all <span class="math inline">\(n \in \N\)</span>. Let <span class="math inline">\(\sG\)</span> and <span class="math inline">\(\sH\)</span> be event spaces such that <span class="math inline">\(\sG, \sH \subset \sF\)</span>. Then the following theorems hold.</p>
+<ol type="1">
+<li><p><strong>Conditional monotone convergence theorem:</strong> Consider a random sequence <span class="math inline">\(X:\Omega\to\R_+^\N\)</span> that is non-negative and non-decreasing a.s.. We define <span class="math inline">\(X_\infty:\Omega\to\R_+\)</span> for each <span class="math inline">\(\omega \in \Omega\)</span> as <span class="math inline">\(X_\infty(\omega)\triangleq \sup_{n \in \N}X_n(\omega)\)</span>. If <span class="math inline">\(X_\infty \in L^1\)</span>, then <span class="math inline">\(\E[X_n\mid \sG] \uparrow \E[X_\infty\mid\sG]\)</span> a.s.</p></li>
+<li><p><strong>Conditional Fatou’s lemma:</strong> Consider a random sequence <span class="math inline">\(X:\Omega\to\R_+^\N\)</span> that is non-negative and non-decreasing a.s.. If <span class="math inline">\(\lim\inf_n X_n \in L^1\)</span>, then <span class="math inline">\(\E[\lim\inf_nX_n\mid \sG] \le \lim\inf_n\E[X_n\mid \sG]\)</span> a.s.</p></li>
+<li><p><strong>Conditional dominated convergence theorem:</strong> Consider a random sequence <span class="math inline">\(X:\Omega\to\R_+^\N\)</span> and a random variable <span class="math inline">\(Y:\Omega\to\R_+\)</span> such that <span class="math inline">\(Y \in L^1\)</span> and <span class="math inline">\(\abs{X_n} \le Y\)</span> a.s. for all <span class="math inline">\(n \in  \N\)</span>. If <span class="math inline">\(\lim_n X_n = X_\infty\)</span> a.s., then <span class="math inline">\(\E[X_n\mid \sG] \to  \E[X_\infty\mid\sG]\)</span> a.s. and in <span class="math inline">\(L^1\)</span>.</p></li>
+</ol>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Let <span class="math inline">\(X:\Omega\to\R^\N\)</span> be a random sequence on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span> such that <span class="math inline">\(X_n \in L^1\)</span> for all <span class="math inline">\(n \in \N\)</span>.</p>
+<ol type="1">
+<li><p><strong>Conditional monotone-convergence theorem:</strong> By monotonicity, we have <span class="math inline">\(\E[X_n\mid \sG] \uparrow Y\)</span> a.s. where <span class="math inline">\(Y:\Omega\to \R_+\)</span> is <span class="math inline">\(\sG\)</span> measurable. The monotone convergence theorem implies that, for each <span class="math inline">\(G \in  \sG\)</span>,</p></li>
+<li><p><strong>Conditional Fatou’s lemma:</strong> Defining <span class="math inline">\(Y_n \triangleq \inf_{k\ge n} X_k\)</span>, we get <span class="math inline">\(Y_n \uparrow Y_\infty = \lim\inf_k X_k\)</span>. By monotonicity, The conditional monotone-convergence theorem implies that</p></li>
+<li><p><strong>Conditional dominated-convergence theorem:</strong> By the conditional Fatou’s lemma, we have and the a.s.-statement follows.</p></li>
+</ol>
+<p>&nbsp;◻</p>
+</div>
+</section>
+<section id="uniform-integrability" class="level1">
+<h1>Uniform integrability</h1>
 
 
 </section>
@@ -1116,10 +1188,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-14.html" class="pagination-link" aria-label="Almost sure convergence">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-16.html" class="pagination-link" aria-label="Weak convergence">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1203,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

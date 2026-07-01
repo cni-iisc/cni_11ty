@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Random Processes – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-08.html" rel="next">
+<link href="../Probability Foundations/lecture-06.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-04.html">Section 2. Random variables, vectors, and processes</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-07.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -416,34 +417,34 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 2. Random variables, vectors, and processes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -460,37 +461,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -559,31 +560,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,13 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#classification" id="toc-classification" class="nav-link" data-scroll-target="#classification">Classification</a></li>
+  <li><a href="#measurability" id="toc-measurability" class="nav-link" data-scroll-target="#measurability">Measurability</a></li>
+  <li><a href="#distribution" id="toc-distribution" class="nav-link" data-scroll-target="#distribution">Distribution</a></li>
+  <li><a href="#independence" id="toc-independence" class="nav-link" data-scroll-target="#independence">Independence</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +655,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-04.html">Section 2. Random variables, vectors, and processes</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-07.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Random Processes</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,20 +686,98 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/mi5FVFByRqU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<div class="rem">
+<p><strong>Remark 1</strong>. For an arbitrary index set <span class="math inline">\(T\)</span>, and a real-valued function <span class="math inline">\(x \in \R^T\)</span>, the projection operator <span class="math inline">\(\pi_t:\R^T\to\R\)</span> maps <span class="math inline">\(x\in\R^T\)</span> to <span class="math inline">\(\pi_t(x) = x_t\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 1</strong> (Random process). Let <span class="math inline">\((\Omega, \sF, P)\)</span> be a probability space. For an arbitrary index set <span class="math inline">\(T\)</span> and state space <span class="math inline">\(\sX \subseteq \R\)</span>, a map <span class="math inline">\(X : \Omega \to \sX^T\)</span> is called a <strong>random process</strong> if the projections <span class="math inline">\(X_t:\Omega\to\sX\)</span> defined by <span class="math inline">\(\omega \mapsto X_t(\omega) \triangleq (\pi_t\circ X)(\omega)\)</span> are random variables on the given probability space.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 2</strong>. For each outcome <span class="math inline">\(\omega \in \Omega\)</span>, we have a function <span class="math inline">\(X(\omega): T \mapsto \sX\)</span> called the <strong>sample path</strong> or the <strong>sample function</strong> of the process <span class="math inline">\(X\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. A random process <span class="math inline">\(X\)</span> defined on probability space <span class="math inline">\((\Omega, \sF, P)\)</span> with index set <span class="math inline">\(T\)</span> and state space <span class="math inline">\(\sX\subseteq\R\)</span>, can be thought of as</p>
+<ol type="a">
+<li><p>a map <span class="math inline">\(X: \Omega \times T \to \sX\)</span>,</p></li>
+<li><p>a map <span class="math inline">\(X: T \to \sX^\Omega\)</span>, i.e.&nbsp;a collection of random variables <span class="math inline">\(X_t: \Omega \to \sX\)</span> for each time <span class="math inline">\(t \in T\)</span>,</p></li>
+<li><p>a map <span class="math inline">\(X: \Omega \to \sX^T\)</span>, i.e.&nbsp;a collection of sample functions <span class="math inline">\(X(\omega): T \to \sX\)</span> for each random outcome <span class="math inline">\(\omega \in \Omega\)</span>.</p></li>
+</ol>
+</div>
+<section id="classification" class="level2">
+<h2 class="anchored" data-anchor-id="classification">Classification</h2>
+<p>State space <span class="math inline">\(\sX\)</span> can be countable or uncountable, corresponding to discrete or continuous valued process. If the index set <span class="math inline">\(T \subseteq \R\)</span> is countable, the stochastic process is called <strong>discrete</strong>-time stochastic process or random sequence. When the index set <span class="math inline">\(T\)</span> is uncountable, it is called <strong>continuous</strong>-time stochastic process. The index set <span class="math inline">\(T\)</span> doesn’t have to be time, if the index set is space, and then the stochastic process is spatial process. When <span class="math inline">\(T = \R^n \times [0, \infty)\)</span>, stochastic process <span class="math inline">\(X\)</span> is a spatio-temporal process.</p>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 3</strong>. We list some examples of each such stochastic process.</p>
+<ol type="1">
+<li><p>Discrete random sequence: brand switching, discrete time queues, number of people at bank each day.</p></li>
+<li><p>Continuous random sequence: stock prices, currency exchange rates, waiting time in queue of <span class="math inline">\(n\)</span>th arrival, workload at arrivals in time sharing computer systems.</p></li>
+<li><p>Discrete random process: counting processes, population sampled at birth-death instants, number of people in queues.</p></li>
+<li><p>Continuous random process: water level in a dam, waiting time till service in a queue, location of a mobile node in a network.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="measurability" class="level2">
+<h2 class="anchored" data-anchor-id="measurability">Measurability</h2>
+<p>For random process <span class="math inline">\(X:\Omega\to \sX^T\)</span> defined on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span>, the projections <span class="math inline">\(X_t \triangleq \pi_t\circ X\)</span> are <span class="math inline">\(\sF\)</span>-measurable random variables. Therefore, the set of outcomes <span class="math inline">\(A_{X_t}(x) \triangleq X_t^{-1}(-\infty, x] \in \sF\)</span> for all <span class="math inline">\(t \in T\)</span> and <span class="math inline">\(x \in \R\)</span>.</p>
+<div class="defn">
+<p><strong>Definition 4</strong>. A random map <span class="math inline">\(X:\Omega\to\sX^T\)</span> is called <span class="math inline">\(\sF\)</span>-<strong>measurable</strong> and hence a random process, if the set of outcomes <span class="math inline">\(A_{X_t}(x) = X_t^{-1}(-\infty, x]\in \sF\)</span> for all <span class="math inline">\(t \in T\)</span> and <span class="math inline">\(x\in \R\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 5</strong>. The <strong>event space generated by a random process</strong> <span class="math inline">\(X: \Omega\to\sX^T\)</span> defined on a probability space <span class="math inline">\((\Omega,\sF,P)\)</span> is given by</p>
+</div>
+<div class="defn">
+<p><strong>Definition 6</strong>. For a random process <span class="math inline">\(X:\Omega \to \sX^T\)</span> defined on the probability space <span class="math inline">\((\Omega,\sF,P)\)</span>, we define the projection of <span class="math inline">\(X\)</span> onto components <span class="math inline">\(S \subseteq T\)</span> as the random vector <span class="math inline">\(X_S: \Omega \to \sX^S\)</span>, where <span class="math inline">\(X_S \triangleq (X_s: s \in S)\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 3</strong>. Recall that <span class="math inline">\(\pi_t^{-1}(-\infty, x] = \bigtimes_{s \in T}(-\infty, x_s]\)</span> where <span class="math inline">\(x_s = x\)</span> for <span class="math inline">\(s = t\)</span> and <span class="math inline">\(x_s = \infty\)</span> for all <span class="math inline">\(s\neq t\)</span>. The <span class="math inline">\(\sF\)</span>-measurability of process <span class="math inline">\(X\)</span> implies that for any countable set <span class="math inline">\(S \subseteq T\)</span>, we have <span class="math inline">\(A_{X_S}(x_S) \triangleq \cap_{s \in S}A_{X_s}(x_s) \in \sF\)</span> for <span class="math inline">\(x_S \in \sX^S\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 4</strong>. We can define <span class="math inline">\(A_X(x) \triangleq \cap_{t \in T}A_{X_t}(x_t)\)</span> for any <span class="math inline">\(x \in \R^T\)</span>. However, <span class="math inline">\(A_X(x)\)</span> is guaranteed to be an event only when <span class="math inline">\(S \triangleq \set{t \in T: \pi_t(x) &lt; \infty}\)</span> is a countable set. In this case,</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 7</strong> (Bernoulli sequence). <span id="exmp:BernoulliSeqDefn" data-label="exmp:BernoulliSeqDefn"></span> Consider a sample space <span class="math inline">\(\set{H,T}^\N\)</span>. We define a mapping <span class="math inline">\(X: \Omega \to \set{0,1}^\N\)</span> such that <span class="math inline">\(X_n(\omega) = \SetIn{H}(\omega_n) = \SetIn{\omega_n = H}\)</span>. The map <span class="math inline">\(X\)</span> is an <span class="math inline">\(\sF\)</span>-measurable random sequence, if each <span class="math inline">\(X_n: \Omega \to \set{0,1}\)</span> is a bi-variate <span class="math inline">\(\sF\)</span>-measurable random variable on the probability space <span class="math inline">\((\Omega,\sF,P)\)</span>. Therefore, the event space <span class="math inline">\(\sF\)</span> must contain the event space generated by sequence of events <span class="math inline">\(E\in\sF^\N\)</span> defined by <span class="math inline">\(E_n \triangleq \set{\omega \in \Omega: X_n(\omega)=1} = \set{\omega \in \Omega: \omega_n = H} \in \sF\)</span> for all <span class="math inline">\(n\in \N\)</span>. That is,</p>
+</div>
+</div>
+</section>
+<section id="distribution" class="level2">
+<h2 class="anchored" data-anchor-id="distribution">Distribution</h2>
+<div class="defn">
+<p><strong>Definition 8</strong>. For a random process <span class="math inline">\(X: \Omega \to \sX^T\)</span> defined on the probability space <span class="math inline">\((\Omega,\sF, P)\)</span>, we define a <strong>finite dimensional distribution</strong> <span class="math inline">\(F_{X_S}: \R^S \to [0,1]\)</span> for a finite <span class="math inline">\(S \subseteq T\)</span> by</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 9</strong>. Consider a probability space <span class="math inline">\((\Omega,\sF, P)\)</span> defined by the sample space <span class="math inline">\(\Omega = \set{H,T}^\N\)</span>, the event space <span class="math inline">\(\sF \triangleq \sigma(E)\)</span> where <span class="math inline">\(E_n = \set{\omega \in \Omega: \omega_n = H}\)</span> for <span class="math inline">\(n\in\N\)</span>, and the probability measure <span class="math inline">\(P: \sF \to [0,1]\)</span> defined by Let <span class="math inline">\(X: \Omega\to\set{0,1}^\N\)</span> defined as <span class="math inline">\(X_n(\omega) = \Ind{E_n}(\omega)\)</span> for all outcomes <span class="math inline">\(\omega \in \Omega\)</span> and <span class="math inline">\(n \in \N\)</span>. For this random sequence, we can obtain the finite dimensional distribution <span class="math inline">\(F_{X_S}: \R^S \to [0,1]\)</span> for any finite <span class="math inline">\(S \subseteq T\)</span> and <span class="math inline">\(x \in \R^S\)</span> in terms of <span class="math inline">\(I_0(x) \triangleq \set{i \in S: x_i &lt; 0}\)</span> and <span class="math inline">\(I_1(x) \triangleq \set{i \in S: x_i \in [0,1)}\)</span>, as</p>
+</div>
+</div>
+<p>To define a measure on a random process, we can either put a measure on subsets of sample paths <span class="math inline">\((X(\omega) \in \R^T: \omega \in \Omega)\)</span>, or equip the collection of random variables <span class="math inline">\((X_t \in \R^\Omega: t \in T)\)</span> with a joint measure. Either way, we are interested in identifying the joint distribution <span class="math inline">\(F: \R^T \to [0,1]\)</span>. To this end, for any <span class="math inline">\(x \in \R^T\)</span>, we need to know First of all, we don’t know whether <span class="math inline">\(A_X(x)\)</span> is an event when <span class="math inline">\(T\)</span> is uncountable. Though, we can verify that <span class="math inline">\(A_X(x) \in \sF\)</span> for <span class="math inline">\(x \in \R^T\)</span> such that <span class="math inline">\(\set{t \in T: x_t &lt; \infty}\)</span> is countable. Second, even for a simple independent process with countably infinite <span class="math inline">\(T\)</span>, any function of the above form would be zero if <span class="math inline">\(x_t\)</span> is finite for all <span class="math inline">\(t \in T\)</span>. Therefore, we only look at the values of <span class="math inline">\(F_X(x)\)</span> for <span class="math inline">\(x \in \R^T\)</span> where <span class="math inline">\(\set{t \in T: x_t &lt; \infty}\)</span> is finite. That is, for any finite set <span class="math inline">\(S \subseteq T\)</span>, we focus on the events <span class="math inline">\(A_S(x_S)\)</span> and their probabilities. However, these are precisely the finite dimensional distributions. Set of all finite dimensional distributions of the stochastic process <span class="math inline">\(X: \Omega \to \sX^T\)</span> characterizes its distribution completely.</p>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 10</strong>. Consider a probability space <span class="math inline">\((\Omega,\sF, P)\)</span> defined by the sample space <span class="math inline">\(\Omega = \set{H,T}^\N\)</span> and the event space <span class="math inline">\(\sF \triangleq \sigma(E)\)</span> where <span class="math inline">\(E_n = \set{\omega \in \Omega: \omega_n = H}\)</span> for all <span class="math inline">\(n\in\N\)</span>. Let <span class="math inline">\(X: \Omega\to\set{0,1}^\N\)</span> defined as <span class="math inline">\(X_n(\omega) = \Ind{E_n}(\omega)\)</span> for all outcomes <span class="math inline">\(\omega \in \Omega\)</span> and <span class="math inline">\(n \in \N\)</span>. For this random sequence, if we are given the finite dimensional distribution <span class="math inline">\(F_{X_S}: \R^S \to [0,1]\)</span> for any finite <span class="math inline">\(S \subseteq T\)</span> and <span class="math inline">\(x \in \R^S\)</span> in terms of sets <span class="math inline">\(I_0(x) \triangleq \set{i \in S: x_i &lt; 0}\)</span> and <span class="math inline">\(I_1(x) \triangleq \set{i \in S: x_i \in [0,1)}\)</span>, as defined in Eq.&nbsp;<a href="#eqn:FDDBernoulli" data-reference-type="eqref" data-reference="eqn:FDDBernoulli">[eqn:FDDBernoulli]</a>. Then, we can find the probability measure <span class="math inline">\(P: \sF \to [0,1]\)</span> is given by</p>
+</div>
+</div>
+</section>
+<section id="independence" class="level2">
+<h2 class="anchored" data-anchor-id="independence">Independence</h2>
+<div class="defn">
+<p><strong>Definition 11</strong>. A random process is <strong>independent</strong> if the collection of event spaces <span class="math inline">\((\sigma(X_t): t \in T)\)</span> is independent. That is, for all <span class="math inline">\(x_S \in \R^S\)</span>, we have That is, independence of a random process is equivalent to factorization of any finite dimensional distribution function into product of individual marginal distribution functions.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 12</strong>. Consider a probability space <span class="math inline">\((\Omega,\sF, P)\)</span> defined by the sample space <span class="math inline">\(\Omega = \set{H,T}^\N\)</span>, the event space <span class="math inline">\(\sF \triangleq \sigma(E)\)</span> where <span class="math inline">\(E_n = \set{\omega \in \Omega: \omega_n = H}\)</span> for all <span class="math inline">\(n\in\N\)</span>, and the probability measure <span class="math inline">\(P: \sF \to [0,1]\)</span> defined by Then, we observe that the random sequence <span class="math inline">\(X: \Omega\to\set{0,1}^\N\)</span> defined by <span class="math inline">\(X_n(\omega) \triangleq \Ind{E_n}(\omega)\)</span> for all outcomes <span class="math inline">\(\omega \in \Omega\)</span> and <span class="math inline">\(n \in \N\)</span>, is independent.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 13</strong>. Two stochastic processes <span class="math inline">\(X: \Omega \to \sX^{T_1},Y:\Omega\to \sY^{T_2}\)</span> are <strong>independent</strong>, if the corresponding event spaces <span class="math inline">\(\sigma(X), \sigma(Y)\)</span> are independent. That is, for any <span class="math inline">\(x \in \R^{S_1}, y \in \R^{S_2}\)</span> for finite <span class="math inline">\(S_1 \subseteq T_1, S_2\subseteq T_2\)</span>, the events <span class="math inline">\(A_{S_1}(x) \triangleq \cap_{s\in S_1}X_s^{-1}(-\infty, x_s]\)</span> and <span class="math inline">\(B_{S_2}(y) \triangleq \cap_{s \in S_2}Y_s^{-1}(-\infty, y_s]\)</span> are independent. That is, the joint finite dimensional distribution of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> factorizes, and</p>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1116,10 +1196,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-06.html" class="pagination-link" aria-label="Transformation of random vectors">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-08.html" class="pagination-link" aria-label="Expectation">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1211,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

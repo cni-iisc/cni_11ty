@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Stopping Times – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-19.html" rel="next">
+<link href="../Probability Foundations/lecture-17.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-17.html">Section 5. Random processes and stopping times</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-18.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -425,25 +426,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -460,37 +461,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -527,22 +528,22 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 5. Random processes and stopping times</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -559,31 +560,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#stopping-times" id="toc-stopping-times" class="nav-link active" data-scroll-target="#stopping-times">Stopping times</a>
+  <ul class="collapse">
+  <li><a href="#properties-of-stopping-time" id="toc-properties-of-stopping-time" class="nav-link" data-scroll-target="#properties-of-stopping-time">Properties of stopping time</a></li>
+  <li><a href="#strong-independence-property-and-applications" id="toc-strong-independence-property-and-applications" class="nav-link" data-scroll-target="#strong-independence-property-and-applications">Strong independence property and applications</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +653,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-17.html">Section 5. Random processes and stopping times</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-18.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Stopping Times</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,20 +684,132 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6KZqXp5-pj0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="stopping-times" class="level1">
+<h1>Stopping times</h1>
+<p>Let <span class="math inline">\((\Omega, \sF, P)\)</span> be a probability space. Consider a random process <span class="math inline">\(X:\Omega\to\sX^T\)</span> defined on this probability space with state space <span class="math inline">\(\sX \subseteq \R\)</span> and ordered index set <span class="math inline">\(T\subseteq \R\)</span> considered as time.</p>
+<div class="defn">
+<p><strong>Definition 1</strong>. A collection of event spaces denoted <span class="math inline">\(\sG_{\bullet} \triangleq (\sG_t \subseteq \sF: t \in T)\)</span> is called a filtration if <span class="math inline">\(\sG_s \subseteq \sG_t\)</span> for all <span class="math inline">\(s \le t\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. For the random process <span class="math inline">\(X:\Omega\to\sX^T\)</span>, we can find the event space generated by all random variables until time <span class="math inline">\(t\)</span> as <span class="math inline">\(\sF_t\triangleq \sigma(X_s, s \le t)\)</span>. The collection of event spaces <span class="math inline">\(\sF_\bullet \triangleq (\sF_t: t \in T)\)</span> is a filtration.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 2</strong>. The natural filtration associated with a random process <span class="math inline">\(X:\Omega \to \sX^T\)</span> is given by <span class="math inline">\(\sF_\bullet \triangleq (\sF_t: t\in T)\)</span> where <span class="math inline">\(\sF_t \triangleq \sigma(X_s, s\le t)\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. For a random sequence <span class="math inline">\(X: \Omega \to \sX^\N\)</span>, the natural filtration is a sequence <span class="math inline">\(\sF_\bullet = (\sF_n: n \in \N)\)</span> of event spaces <span class="math inline">\(\sF_n \triangleq \sigma(X_1, \dots, X_n)\)</span> for all <span class="math inline">\(n \in \N\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 3</strong>. If the random sequence <span class="math inline">\(X\)</span> is independent, then the random sequence <span class="math inline">\((X_{n+j}: j \in \N)\)</span> is independent of the event space <span class="math inline">\(\sigma(X_1, \dots, X_n)\)</span>.</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 3</strong>. For a random walk <span class="math inline">\(S\)</span> with step size sequence <span class="math inline">\(X\)</span>, the natural filtration of the random walk is identical to that of the step size sequence. That is, <span class="math inline">\(\sigma(S_1, \dots, S_n) = \sigma(X_1, \dots, X_n)\)</span> for all <span class="math inline">\(n \in \N\)</span>. This follows from the fact that for all <span class="math inline">\(n \in \N\)</span>, we can can write <span class="math inline">\(S_j = \sum_{i=1}^jX_i\)</span> and <span class="math inline">\(X_j = S_j - S_{j-1}\)</span> for all <span class="math inline">\(j \in [n]\)</span>. That is, there is a bijection between <span class="math inline">\((X_1, \dots, X_n)\)</span> and <span class="math inline">\((S_1, \dots, S_n)\)</span>.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 4</strong>. <span id="defn:StoppingTimeGen" data-label="defn:StoppingTimeGen"></span> A random variable <span class="math inline">\(\tau: \Omega \to T\)</span> is called a <strong>stopping time</strong> with respect to a filtration <span class="math inline">\(\sF_\bullet\)</span> if</p>
+<ol type="a">
+<li><p>the event <span class="math inline">\(\tau^{-1}(-\infty, t] \in \sF_t\)</span> for all <span class="math inline">\(t \in T\)</span>, and</p></li>
+<li><p>the random variable <span class="math inline">\(\tau\)</span> is finite almost surely, i.e.&nbsp;<span class="math inline">\(P\set{\tau &lt; \infty} = 1\)</span>.</p></li>
+</ol>
+</div>
+<div class="rem">
+<p><strong>Remark 4</strong>. Intuitively, if we observe the process <span class="math inline">\(X\)</span> sequentially, then the event <span class="math inline">\(\set{\tau \le t}\)</span> can be completely determined by the observation <span class="math inline">\((X_s, s \le t)\)</span> until time <span class="math inline">\(t\)</span>. The intuition behind a stopping time is that its realization is determined by the past and present events but not by future events. That is, given the history of the process until time <span class="math inline">\(t\)</span>, we can tell whether the stopping time is less than or equal to <span class="math inline">\(t\)</span> or not. In particular, <span class="math inline">\(\E[\SetIn{\tau \le t}\given \sF_t]=\SetIn{\tau \le t}\)</span> is either one or zero.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 5</strong> (First hitting time). For a process <span class="math inline">\(X:\Omega\to\sX^T\)</span> and any Borel measurable set <span class="math inline">\(A \in \sB(\sX)\)</span>, we define the <strong>first hitting time</strong> <span class="math inline">\(\tau_X^A: \Omega \to T\cup\set{\infty}\)</span> for the process <span class="math inline">\(X\)</span> to hit states in <span class="math inline">\(A\)</span>, as <span class="math inline">\(\tau_X^A \triangleq \inf\set{t \in T: X_t \in A}.\)</span></p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 6</strong>. We observe that the event <span class="math inline">\(\set{\tau_X^A \le t} = \set{X_s \in A \text{ for some }s \le t} \in\sF_t\)</span> for all <span class="math inline">\(t \in T\)</span>. It follows that, if <span class="math inline">\(\tau_A\)</span> is finite almost surely, then <span class="math inline">\(\tau_A\)</span> is a stopping time with respect to filtration <span class="math inline">\(\sF_\bullet\)</span>.</p>
+</div>
+</div>
+<div class="prop">
+<p><strong>Proposition 7</strong>. For a random sequence <span class="math inline">\(X: \Omega \to \sX^\N\)</span>, an almost sure finite discrete random variable <span class="math inline">\(\tau: \Omega \to \N\cup\set{\infty}\)</span> is a <strong>stopping time</strong> with respect to this random sequence <span class="math inline">\(X\)</span> iff the event <span class="math inline">\(\set{\tau = n} \in \sigma(X_1, \dots, X_n)\)</span> for all <span class="math inline">\(n \in \N\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> From Definition&nbsp;<a href="#defn:StoppingTimeGen" data-reference-type="ref" data-reference="defn:StoppingTimeGen">[defn:StoppingTimeGen]</a>, we have <span class="math inline">\(\set{\tau = n} = \set{\tau \le n}\setminus\set{\tau \le n-1} \in \sigma(X_1, \dots, X_n)\)</span>. Conversely, from the theorem hypothesis, it follows that <span class="math inline">\(\set{\tau \le n} = \cup_{m=1}^n\set{\tau = m} \in \sigma(X_1, \dots, X_n)\)</span>.&nbsp;◻</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 8</strong>. Consider a random sequence <span class="math inline">\(X: \Omega \to \sX^\N\)</span>, with the natural filtration <span class="math inline">\(\sF_\bullet\)</span>, and a measurable set <span class="math inline">\(A \in \sB(\sX)\)</span>. If the first hitting time <span class="math inline">\(\tau_X^A:\Omega\to\N\cup\set{\infty}\)</span> for the sequence <span class="math inline">\(X\)</span> to hit set <span class="math inline">\(A\)</span> is almost surely finite, then <span class="math inline">\(\tau_X^A\)</span> is a stopping time. This follows from the fact that <span class="math inline">\(\set{\tau_X^A = n} = \cap_{k=1}^{n-1}\set{X_k \notin A}\cap\set{X_n \in A} \in \sF_n\)</span> for each <span class="math inline">\(n \in \N\)</span>.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 9</strong>. Consider a random process <span class="math inline">\(X:\Omega\to \sX^{\R_+}\)</span> with discrete state space <span class="math inline">\(\sX\subseteq\R\)</span>. For each state <span class="math inline">\(y \in \sX\)</span>, we define <span class="math inline">\(\tau_X^{\set{y},0} \triangleq 0\)</span> and inductively define the <strong><span class="math inline">\(k\)</span>th hitting time to a state <span class="math inline">\(y\)</span></strong> after time <span class="math inline">\(t = 0\)</span>, as</p>
+</div>
+<div class="rem">
+<p><strong>Remark 5</strong>. We observe that <span class="math inline">\(\set{\tau_X^{\set{y}, k} \le t} \in \sF_t\)</span> for all times <span class="math inline">\(t \in \R_+\)</span>. Hence if <span class="math inline">\(\tau_X^{\set{y}, k}\)</span> is almost surely finite, then it is a stopping time for the process <span class="math inline">\(X\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 10</strong>. For a discrete valued random sequence <span class="math inline">\(X:\Omega\to\sX^\N\)</span>, the number of visits to a state <span class="math inline">\(y \in \sX\)</span> in first <span class="math inline">\(n\)</span> time steps is defined as <span class="math inline">\(N_y(n) \triangleq \sum_{k=1}^n\SetIn{X_k = y}\)</span> for all <span class="math inline">\(n \in \N\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 6</strong>. We observe that <span class="math inline">\(N_y:\Omega\to\Z_+^{\Z_+}\)</span> is a random walk with the Bernoulli step size sequence <span class="math inline">\((\SetIn{X_k = y}: k \in \N)\)</span>. Further, <span class="math inline">\(\tau_X^{\set{y}, k} = \tau_{N_y}^{\set{k}} = \inf\set{n \in \N: N_y(n) = k}\)</span>. We also observe that <span class="math inline">\(\{N_y(n) \le k\} = \{\tau_y^{(k+1)} &gt; n\}\)</span> and <span class="math inline">\(\{N_y(n) = k\} = \{\tau_y^{k} \le n &lt; \tau_y^{(k+1)}\}\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 7</strong>. We observe that the number of visits to state <span class="math inline">\(y\)</span> in first <span class="math inline">\(n\)</span> steps of <span class="math inline">\(X\)</span> is also given by This implies that <span class="math inline">\(N_y(n)+1\)</span> is the first hitting time to set of states <span class="math inline">\(\set{n+1, n+2, \dots }\)</span> for the increasing random sequence <span class="math inline">\((\tau_X^{\set{y},k}:k \in \N)\)</span>.</p>
+</div>
+<div class="lem">
+<p><strong>Lemma 11</strong> (Wald’s Lemma). Consider a random walk <span class="math inline">\(S: \Omega \to \R^{\Z_+}\)</span> with step-sizes <span class="math inline">\(X: \Omega \to  \R^\N\)</span> having finite <span class="math inline">\(\E\abs{X_1}\)</span>. Let <span class="math inline">\(\tau\)</span> be a finite mean stopping time with respect to this random walk. Then,</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Recall that the event space generate by the random walk and the step-sizes are identical. From the independence of step sizes, it follows that <span class="math inline">\(X_n\)</span> is independent of <span class="math inline">\(\sigma(X_0, X_1, \dots, X_{n-1})\)</span>. Since <span class="math inline">\(\tau\)</span> is a stopping time with respect to random walk <span class="math inline">\(S\)</span>, we observe that <span class="math inline">\(\set{\tau \ge n} = \set{\tau &gt; n-1} \in \sigma(X_0, X_1, \dots, X_{n-1})\)</span>, and hence it follows that random variable <span class="math inline">\(X_n\)</span> and indicator <span class="math inline">\(\SetIn{\tau \ge n}\)</span> are independent and <span class="math inline">\(\E[X_n\SetIn{\tau \ge n}] = \E X_1 \E\SetIn{\tau \ge n}\)</span>. Therefore, We exchanged limit and expectation in the above step, which is not always allowed. We were able to do it by the application of dominated convergence theorem.&nbsp;◻</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 12</strong>. Consider the stopping time <span class="math inline">\(\tau_S^{\set{i}} \triangleq \min\set{n \in \N: S_n = i}\)</span> for an integer random walk <span class="math inline">\(S: \Omega \to \Z_+^{\Z_+}\)</span> with step size sequence <span class="math inline">\(X: \Omega \to \Z^\N\)</span>. Then, the mean of stopping time <span class="math inline">\(\E \tau_S^{\set{i}} = {i}/{\E X_1}\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> This follows from the Wald’s Lemma and the fact that <span class="math inline">\(S_{\tau_i} = i\)</span>.&nbsp;◻</p>
+</div>
+<section id="properties-of-stopping-time" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-stopping-time">Properties of stopping time</h2>
+<div class="lem">
+<p><strong>Lemma 13</strong>. Let <span class="math inline">\(\tau_1,\tau_2\)</span> be two stopping times with respect to filtration <span class="math inline">\(\sF_\bullet\)</span>. Then the following hold true.</p>
+<ol type="1">
+<li><p><span class="math inline">\(\min \set{\tau_1,\tau_2}\)</span> is a stopping time.</p></li>
+<li><p>If <span class="math inline">\(T\)</span> is separable, then <span class="math inline">\(\tau_1+\tau_2\)</span> is a stopping time.</p></li>
+</ol>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Let <span class="math inline">\(\tau_1,\tau_2\)</span> be stopping times with respect to a filtration <span class="math inline">\(\sF_{\bullet} = (\sF_t : t \in T)\)</span>.</p>
+<ol type="1">
+<li><p>Result follows since the event <span class="math inline">\(\set{ \min \set{ \tau_1,\tau_2} &gt; t} = \set{\tau_1 &gt; t} \cap \set{\tau_2 &gt; t} \in \sF_t\)</span>.</p></li>
+<li><p>A topological space is called separable if it contains a countable dense set. Since <span class="math inline">\(\R_+\)</span> is separable and ordered, we assume <span class="math inline">\(T = \R_+\)</span> without any loss of generality. It suffices to show that the event <span class="math inline">\(\set{\tau_1+\tau_2 \le  t} \in \sF_t\)</span> for <span class="math inline">\(T = \R_+\)</span>. To this end, we observe that</p></li>
+</ol>
+<p>&nbsp;◻</p>
+</div>
+</section>
+<section id="strong-independence-property-and-applications" class="level2">
+<h2 class="anchored" data-anchor-id="strong-independence-property-and-applications">Strong independence property and applications</h2>
+<div class="thm">
+<p><strong>Theorem 14</strong> (Strong independence property). Let <span class="math inline">\(X: \Omega\to\sX^{\R_+}\)</span> be an independent random process with natural filtration <span class="math inline">\(\sF_\bullet\)</span>, and <span class="math inline">\(\tau:\Omega\to\R_+\)</span> a stopping time with respect to <span class="math inline">\(\sF_\bullet\)</span>, then <span class="math inline">\((X_{\tau+s}: s \in \R_+)\)</span> is independent of history <span class="math inline">\((X_s: s \le \tau)\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 15</strong>. We can define the <strong><span class="math inline">\(k\)</span>th return time to state <span class="math inline">\(y\)</span></strong> for the random process <span class="math inline">\(X:\Omega\to\sX^{\R_+}\)</span> as the interval between two successive visits to state <span class="math inline">\(y\)</span>, that is for all <span class="math inline">\(k \in \N\)</span></p>
+</div>
+<div class="rem">
+<p><strong>Remark 8</strong>. We observe that <span class="math inline">\(\tau_X^{\set{y}, k} = \sum_{j=1}^kH_X^{\set{y}, j}\)</span> for all <span class="math inline">\(k \in \N\)</span>. That is, the hitting times sequence <span class="math inline">\((\tau_X^{\set{y},k}: k \in \N)\)</span> is a random walk with step-size sequence being return times <span class="math inline">\((H_X^{\set{y},j}: j \in \N)\)</span>. Therefore, if <span class="math inline">\(H_X^{\set{y}, j}\)</span> is almost sure finite for all <span class="math inline">\(j \in [k]\)</span>, then the finite sum <span class="math inline">\(\tau_X^{\set{y}, k}\)</span> is almost sure finite for all <span class="math inline">\(k\in \N\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 9</strong>. From the bijection between hitting and return times, we observe that <span class="math inline">\(\sigma(\tau_X^{\set{y}, k)}: k \in [n]) =  \sigma(H_X^{\set{y}, j}: j \in [n])\)</span>. Recall that <span class="math inline">\(\tau_X^{N_y(n)+1} &gt; n\)</span> by definition. If passage times are independent and from second passage time, then it follows from the Wald’s Lemma that</p>
+</div>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 16</strong>. We also observe that the <span class="math inline">\(k\)</span>th hitting time to <span class="math inline">\(\set{1}\)</span> by a Bernoulli step size sequence <span class="math inline">\(X:\Omega\to\set{0,1}^\N\)</span> is the first hitting time to <span class="math inline">\(\set{k}\)</span> by random walk <span class="math inline">\(S:\Omega\to\Z_+^{\Z_+}\)</span>. That is,</p>
+</div>
+</div>
+<div class="lem">
+<p><strong>Lemma 17</strong>. For an Bernoulli random sequence <span class="math inline">\(X:\Omega\to\set{0,1}^\N\)</span> with <span class="math inline">\(\E X_1 \in (0,1)\)</span>, the <span class="math inline">\(k\)</span>th hitting time to state&nbsp;<span class="math inline">\(1\)</span> is a stopping time, and <span class="math inline">\(\tau_X^{\set{1}, k} = \sum_{i=1}^kY_i\)</span> where <span class="math inline">\(Y:\Omega\to\N^\N\)</span> is an random sequence distributed identically to <span class="math inline">\(\tau_X^{\set{1}}\)</span> .</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> When the Bernoulli step size sequence <span class="math inline">\(X\)</span> is with <span class="math inline">\(\E X_1 = p \in (0,1)\)</span>, we get that <span class="math inline">\(P\set{\tau_S^{\set{1}}= n} = (1-p)^{n-1}p\)</span> for all <span class="math inline">\(n \in \N\)</span>. It follows that Hence, the random time <span class="math inline">\(\tau_S^{\set{1}}\)</span> is finite almost surely. We will show that <span class="math inline">\(\tau_S^{\set{k}}\)</span> is finite almost surely for all <span class="math inline">\(k \in \N\)</span> by induction. By induction hypothesis, <span class="math inline">\(\tau_S^{\set{k-1}}\)</span> is finite almost surely. Then <span class="math inline">\(S_{\tau_S^{\set{k-1}}+n}-S_{\tau_S^{\set{k-1}}} = \sum_{j=1}^nX_{\tau_S^{\set{k-1}}+j}\)</span> is the sum of <span class="math inline">\(n\)</span> Bernoulli random variables independent of <span class="math inline">\(\tau_S^{\set{k-1}}\)</span> by strong independence property, and hence has distribution identical to <span class="math inline">\(S_n\)</span>. Further, This implies that <span class="math inline">\(\tau_S^{\set{k}} = \tau_S^{\set{k-1}} + \tau_S^{\set{1}}\)</span>, where <span class="math inline">\(\tau_S^{\set{1}}\)</span> has the identical distribution to <span class="math inline">\(\tau_X^{\set{1}}\)</span> and is independent of <span class="math inline">\(\tau_S^{\set{k-1}}\)</span>.&nbsp;◻</p>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1116,10 +1228,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-17.html" class="pagination-link" aria-label="Tractable Random Processes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-19.html" class="pagination-link" aria-label="Discrete Time Markov Chains">
+        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1243,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

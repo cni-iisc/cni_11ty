@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Strong Markov Property – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-21.html" rel="next">
+<link href="../Probability Foundations/lecture-19.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-19.html">Section 6. Markov chains</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-20.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -425,25 +426,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -460,37 +461,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -550,40 +551,40 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 6. Markov chains</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,9 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#n-step-transition" id="toc-n-step-transition" class="nav-link active" data-scroll-target="#n-step-transition"><span class="math inline">\(n\)</span>-step transition</a></li>
+  <li><a href="#strong-markov-property-smp" id="toc-strong-markov-property-smp" class="nav-link" data-scroll-target="#strong-markov-property-smp">Strong Markov property (SMP)</a></li>
+  <li><a href="#hitting-and-recurrence-times" id="toc-hitting-and-recurrence-times" class="nav-link" data-scroll-target="#hitting-and-recurrence-times">Hitting and Recurrence Times</a></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +651,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-19.html">Section 6. Markov chains</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-20.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Strong Markov Property</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,18 +682,76 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/PPBWLf0g9hE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="n-step-transition" class="level1">
+<h1><span class="math inline">\(n\)</span>-step transition</h1>
+<div class="defn">
+<p><strong>Definition 1</strong>. For a time homogeneous Markov chain <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span>, we can define <strong><span class="math inline">\(n\)</span>-step transition probability matrix</strong> <span class="math inline">\(P^{(n)}\)</span>, with its <span class="math inline">\((x,y)\)</span> entry being the <strong><span class="math inline">\(n\)</span>-step transition probability</strong> for <span class="math inline">\(X_{m+n}\)</span> to be in state <span class="math inline">\(y\)</span> given the event <span class="math inline">\(\set{X_m = x}\)</span>. That is, <span class="math inline">\(p_{xy}^{(n)} \triangleq P(\set{X_{n+m} = y }|\set{ X_m = x})\)</span> for all <span class="math inline">\(x,y \in \sX\)</span> and <span class="math inline">\(m,n \in \Z_+\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. That is, the row <span class="math inline">\(P^{(n)}_x = (p^{(n)}_{xy}: y \in \sX) \in \cM(\sX)\)</span> is the conditional distribution of <span class="math inline">\(X_n\)</span> given the initial state <span class="math inline">\(\set{X_0 = x}\)</span>.</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 2</strong>. The <span class="math inline">\(n\)</span>-step transition probabilities for a homogeneous Markov chain form a semi-group. That is, for all positive integers <span class="math inline">\(m,n \in \Z_+\)</span></p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> The events <span class="math inline">\(\set{ \set{X_m = z}: z \in \sX}\)</span> partition the sample space <span class="math inline">\(\Omega\)</span>, and hence we can express the event <span class="math inline">\(\set{X_{m+n} = y}\)</span> as the following disjoint union It follows from the Markov property and law of total probability that for any states <span class="math inline">\(x, y\)</span> and positive integers <span class="math inline">\(m, n\)</span> Since the choice of states <span class="math inline">\(x,y \in \sX\)</span> were arbitrary, the result follows.&nbsp;◻</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 3</strong>. The <span class="math inline">\(n\)</span>-step transition probability matrix is given by <span class="math inline">\(P^{(n)} = P^n\)</span> for any positive integer <span class="math inline">\(n\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> In particular, we have <span class="math inline">\(P^{(n+1)} = P^{(n)}P^{(1)} =  P^{(1)}P^{(n)}\)</span>. Since <span class="math inline">\(P^{(1)} = P\)</span>, we have <span class="math inline">\(P^{(n)} = P^n\)</span> by induction.&nbsp;◻</p>
+</div>
+<div class="defn">
+<p><strong>Definition 4</strong>. For a time homogeneous Markov chain <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span> we denote the probability mass function of Markov chain at step <span class="math inline">\(n\)</span> by <span class="math inline">\(\pi_n\in \cM(\sX)\)</span>.</p>
+</div>
+<div class="lem">
+<p><strong>Lemma 5</strong> (Chapman Kolmogorov). The right multiplication of a probability vector with the transition matrix <span class="math inline">\(P\)</span> transforms the probability distribution of current state to probability distribution of the next state. That is,</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> To see this, we fix <span class="math inline">\(y \in \sX\)</span> and from the law of total probability and the definition conditional probability, we observe that&nbsp;◻</p>
+</div>
+</section>
+<section id="strong-markov-property-smp" class="level1">
+<h1>Strong Markov property (SMP)</h1>
+<p>We are interested in generalizing the Markov property to any random times. For a DTMC <span class="math inline">\(X: \Omega \to \sX^{\Z_+}\)</span> and a random variable <span class="math inline">\(\tau: \Omega \to \N\)</span>, we are interested in knowing whether for any historical event <span class="math inline">\(H_{\tau-1} = \cap_{n = 0}^{\tau-1}\set{X_n = x_n}\)</span> and any state <span class="math inline">\(x, y \in \sX\)</span>, we have</p>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 6</strong> (Two-state DTMC). Consider the two state Markov chain <span class="math inline">\(X \in \set{0, 1}^{\Z_+}\)</span> such that <span class="math inline">\(P_0\set{X_1 = 1} = q\)</span> and <span class="math inline">\(P_1\set{X_1=0} = p\)</span> for <span class="math inline">\(p,q \in [0,1]\)</span>. Let <span class="math inline">\(\tau : \Omega \to \N\)</span> be a random variable defined as That is, <span class="math inline">\(\set{\tau = n} = \set{X_1 = 0, \dots, X_n = 0, X_{n+1} = 1}\)</span>. Hence, for the historical event <span class="math inline">\(H_{\tau-1} = \set{X_1 = \dots, X_{\tau-1} = 0}\)</span>, the conditional probability <span class="math inline">\(P(\set{X_{\tau+1}= 1}\mid H_{\tau-1}\cap\set{X_\tau = 0}) = 1\)</span>, and not equal to <span class="math inline">\(q\)</span>.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 7</strong>. Let <span class="math inline">\(\tau:\Omega\to\N\)</span> be a stopping time with respect to a random sequence <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span>. Then for all states <span class="math inline">\(x,y \in \sX\)</span> and the event <span class="math inline">\(H_{\tau-1} = \cap_{n=0}^{\tau-1}\set{X_n = x_n}\)</span>, the process <span class="math inline">\(X\)</span> satisfies the <strong>strong Markov property</strong> if</p>
+</div>
+<div class="lem">
+<p><strong>Lemma 8</strong>. Homogeneous Markov chains satisfy the strong Markov property.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Let <span class="math inline">\(X:\Omega \to \sX^{\Z_+}\)</span> be a homogeneous DTMC with transition matrix <span class="math inline">\(P\)</span>, and <span class="math inline">\(\tau:\Omega\to\N\)</span> be an associated stopping time. We take any historical event <span class="math inline">\(H_{\tau-1} = \cap_{n = 0}^{T-1}\set{X_n = x_n}\)</span>, and states <span class="math inline">\(x, y \in \sX\)</span>. From the definition of conditional probability, the law of total probability, and the Markovity of the process <span class="math inline">\(X\)</span>, we have This equality follows from the fact that the event <span class="math inline">\(\set{\tau= n}\)</span> is completely determined by <span class="math inline">\((X_0, \dots, X_n)\)</span>.&nbsp;◻</p>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. Consider a homogeneous DTMC <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span> and the first instant <span class="math inline">\(\tau_k \triangleq \tau_X^{\set{y},k}\)</span> for the process <span class="math inline">\(X\)</span> to hit <span class="math inline">\(k\)</span> times, a state <span class="math inline">\(y\in\sX\)</span>. Recall that <span class="math inline">\(\tau_0 \triangleq 0\)</span> and recurrence time <span class="math inline">\(H_k \triangleq \tau_k - \tau_{k-1} = \inf\set{n \in \N: X_{\tau_{k-1}+n}= y}\)</span> for all <span class="math inline">\(k \in \N\)</span>. We define a process <span class="math inline">\(Y:\Omega\to\sX^{\Z_+}\)</span> where <span class="math inline">\(Y_m \triangleq X_{\tau_k + m}\)</span> for all <span class="math inline">\(m \in \Z_+\)</span>. If <span class="math inline">\(\tau_k\)</span> is almost surely finite, then it is a stopping time with respect to process <span class="math inline">\(X\)</span>. Using strong Markov property of DTMC <span class="math inline">\(X\)</span>, we will show that <span class="math inline">\(Y\)</span> is a stochastic replica of <span class="math inline">\(X\)</span> with <span class="math inline">\(X_0 = y\)</span>.</p>
+</div>
+</section>
+<section id="hitting-and-recurrence-times" class="level1">
+<h1>Hitting and Recurrence Times</h1>
+<p>We will consider a time-homogeneous discrete time Markov chain <span class="math inline">\(X: \Omega \to \sX^{\Z_+}\)</span> on countable state space <span class="math inline">\(\sX\)</span> with transition probability matrix <span class="math inline">\(P: \sX \times \sX \to [0,1]\)</span>, and initial state <span class="math inline">\(X_0 = x \in \sX\)</span>. We denote the natural filtration generated by the process <span class="math inline">\(X\)</span> as <span class="math inline">\(\sF_\bullet\)</span>, where <span class="math inline">\(\sF_n \triangleq \sigma(X_0, \dots, X_n)\)</span> for all <span class="math inline">\(n \in \N\)</span>.</p>
+<div class="rem">
+<p><strong>Remark 3</strong>. Starting from state <span class="math inline">\(x\)</span>, the mean number of visits to state <span class="math inline">\(y\)</span> in <span class="math inline">\(n\)</span> steps is <span class="math inline">\(\E_xN_y(n) = \sum_{k=1}^np_{xy}^{(k)}\)</span>. From the monotone convergence theorem, we also get that <span class="math inline">\(E_xN_y(\infty) = \sum_{k \in \N}p_{xy}^{(k)}\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 4</strong>. If <span class="math inline">\(\tau_{k-1}\)</span> is almost sure finite, then <span class="math inline">\(\tau_{k-1}\)</span> is a stopping time for process <span class="math inline">\(X\)</span>. From the strong Markov property of homogeneous DTMC <span class="math inline">\(X\)</span> applied to stopping time <span class="math inline">\(\tau_{k-1}\)</span>, it follows that the future <span class="math inline">\(\sigma(X_{\tau_{k-1}+j}: j \in \N)\)</span> is independent of the past <span class="math inline">\(\sigma(X_0, \dots, X_{\tau_{k-1}})\)</span> given the present <span class="math inline">\(\sigma(X_{\tau_{k-1}})\)</span>. Since <span class="math inline">\(X_{\tau_{k-1}}= y\)</span> for <span class="math inline">\(k \ge 2\)</span> deterministically, it follows that <span class="math inline">\(\sigma(X_{\tau_{k-1}})\)</span> is a trivial event space and the future <span class="math inline">\(\sigma(X_{\tau_{k-1}+j}: j \in \N)\)</span> is independent of the random past <span class="math inline">\(\sigma(X_0, \dots, X_{\tau_{k-1}})\)</span>. We further observe that the distribution of <span class="math inline">\(\sigma(X_{\tau_{k-1}+j}: j \in \N)\)</span> is identical to distribution of <span class="math inline">\(X\)</span> given <span class="math inline">\(X_0= y\)</span>. Thus, the process <span class="math inline">\((X_{\tau_{k-1}+j}: j \in \N)\)</span> is distributed identically for all <span class="math inline">\(k \ge 2\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 5</strong>. We observe that the recurrence time satisfies <span class="math inline">\(\set{H_k = n} \in \sigma(X_{\tau_{k-1}+j}: j \in [n])\)</span> for all <span class="math inline">\(n \in \N\)</span>, and hence the recurrence time <span class="math inline">\(H_k\)</span> is independent of the random past <span class="math inline">\(\sigma(X_0, \dots, X_{\tau_{k-1}})\)</span>. Recursively applying this fact, we can conclude that <span class="math inline">\((H_1, \dots, H_k)\)</span> are independent random variables. Further, since <span class="math inline">\((X_{\tau_{k-1}+j}: j \in \N)\)</span> is distributed identically for all <span class="math inline">\(k \ge 2\)</span>, it follows that <span class="math inline">\((H_k: k \ge 2)\)</span> are distributed identically.</p>
+</div>
+<div class="lem">
+<p><strong>Lemma 9</strong>. If <span class="math inline">\(H_1\)</span> and <span class="math inline">\(H_2\)</span> are almost surely finite, then the random sequence <span class="math inline">\((H_k: k \ge 2)\)</span> is .</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> From the above two remarks, it suffices to show that each term of the random sequence <span class="math inline">\(\tau:\Omega\to\N^\N\)</span> is almost surely finite. We will show this by induction. Since <span class="math inline">\(\tau_1 = H_1\)</span> is almost surely finite, it follows that <span class="math inline">\(\tau_1\)</span> is stopping time. Since <span class="math inline">\(\tau_2 = \tau_1+ H_2\)</span> is almost surely finite, it follows that <span class="math inline">\(\tau_2\)</span> is a stopping time. By inductive hypothesis <span class="math inline">\(\tau_{k-1}\)</span> is almost surely finite, and hence <span class="math inline">\(H_k\)</span> is independent of <span class="math inline">\((H_1, \dots, H_k)\)</span> and identically distributed to <span class="math inline">\(H_2\)</span> and is almost surely finite. It follows that <span class="math inline">\(\tau_k = \tau_{k-1} + H_k\)</span> is almost surely finite, and the result follows.&nbsp;◻</p>
+</div>
 
 
 </section>
@@ -1116,10 +1172,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-19.html" class="pagination-link" aria-label="Discrete Time Markov Chains">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-21.html" class="pagination-link" aria-label="Recurrent and transient states">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1187,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

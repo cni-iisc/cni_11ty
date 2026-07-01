@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Poisson process on the half-line – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-28.html" rel="next">
+<link href="../Probability Foundations/lecture-26.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-24.html">Section 7. Poisson processes</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-27.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -425,25 +426,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -460,37 +461,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -559,31 +560,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -591,40 +592,40 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 7. Poisson processes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#simple-point-processes-on-the-half-line" id="toc-simple-point-processes-on-the-half-line" class="nav-link active" data-scroll-target="#simple-point-processes-on-the-half-line">Simple point processes on the half-line</a></li>
+  <li><a href="#iid-exponential-inter-arrival-times-characterization" id="toc-iid-exponential-inter-arrival-times-characterization" class="nav-link" data-scroll-target="#iid-exponential-inter-arrival-times-characterization">IID exponential inter-arrival times characterization</a>
+  <ul class="collapse">
+  <li><a href="#distribution-functions" id="toc-distribution-functions" class="nav-link" data-scroll-target="#distribution-functions">Distribution functions</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +653,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-24.html">Section 7. Poisson processes</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-27.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Poisson process on the half-line</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,20 +684,121 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/gSYNw3aR5qI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="simple-point-processes-on-the-half-line" class="level1">
+<h1>Simple point processes on the half-line</h1>
+<p>A stochastic process defined on the half-line <span class="math inline">\(N: \Omega \to \Z_+^{\R_+}\)</span> is a <strong>counting process</strong> if</p>
+<ol type="1">
+<li><p><span class="math inline">\(N_0 = 0\)</span>, and</p></li>
+<li><p>for each <span class="math inline">\(\omega \in \Omega\)</span>, the sample path <span class="math inline">\(N(\omega): \R_+ \to \Z_+\)</span> is non-decreasing, integer valued, and right continuous function of time <span class="math inline">\(t \in \R_+\)</span>.</p></li>
+</ol>
+<p>Each discontinuity of the sample path of the counting process can be thought of as a jump of the process, as shown in Figure&nbsp;<a href="#Fig:Poisson" data-reference-type="ref" data-reference="Fig:Poisson">1</a>. A simple counting process has the unit jump size almost surely. General point processes in higher dimension don’t have any inter-arrival time interpretation.</p>
+<figure id="Fig:Poisson" data-latex-placement="hhhh" class="figure">
+<figcaption>
+Sample path of a simple counting process.
+</figcaption>
+</figure>
+<div class="defn">
+<p><strong>Definition 1</strong>. The points of discontinuity are also called the <strong>arrival instants</strong> of the counting process <span class="math inline">\(N\)</span>. The <strong><span class="math inline">\(n\)</span>th arrival instant</strong> is a random variable denoted <span class="math inline">\(\tS_n: \Omega \to \R_+\)</span>, defined inductively as</p>
+</div>
+<div class="defn">
+<p><strong>Definition 2</strong>. The <strong>inter arrival time</strong> between <span class="math inline">\((n-1)\)</span>th and <span class="math inline">\(n\)</span>th arrival is denoted by <span class="math inline">\(X_n\)</span> and written as <span class="math inline">\(X_n \triangleq \tS_n - \tS_{n-1}\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. For a simple point process, we have <span class="math inline">\(P\set{X_{n} = 0} = P\set{X_n\le 0} = 0.\)</span></p>
+</div>
+<div class="lem">
+<p><strong>Lemma 3</strong>. Simple counting process <span class="math inline">\(N:\Omega\to\Z_+^{\R_+}\)</span> and arrival process <span class="math inline">\(\tS:\Omega\to\R_+^\N\)</span> are inverse processes, i.e.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Let <span class="math inline">\(\omega \in \set{\tS_n \le t}\)</span>, then <span class="math inline">\(N_{\tS_n} = n\)</span> by definition. Since <span class="math inline">\(N\)</span> is a non-decreasing process, we have <span class="math inline">\(N_t \ge N_{\tS_n} = n\)</span>. Conversely, let <span class="math inline">\(\omega \in \set{N_t \ge n}\)</span>, then it follows from definition that <span class="math inline">\(\tS_n \le t\)</span>.&nbsp;◻</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 4</strong>. For arrival instants <span class="math inline">\(\tS:\Omega\to\R_+^\N\)</span> associated with a counting process <span class="math inline">\(N:\Omega\to\Z_+^{\R_+}\)</span> we have <span class="math inline">\(\set{\tS_n \le t, \tS_{n+1} &gt; t} = \set{N_t = n}\)</span> for all <span class="math inline">\(n \in \Z_+\)</span> and <span class="math inline">\(t \in \R_+\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> It is easy to see that <span class="math inline">\(\set{\tS_{n+1} &gt; t } = \set{\tS_{n+1} \le t}^c = \set{N_t \ge n+1}^c = \set{N_t &lt; n+1}\)</span>. Hence,&nbsp;◻</p>
+</div>
+<div class="lem">
+<p><strong>Lemma 5</strong>. Let <span class="math inline">\(F_n(x)\)</span> be the distribution function for <span class="math inline">\(S_n\)</span>, then <span class="math inline">\(P_n(t) \triangleq P\set{N_t = n} = F_{n}(t)-F_{n+1}(t)\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> It suffices to observe that following is a union of disjoint events,&nbsp;◻</p>
+</div>
+</section>
+<section id="iid-exponential-inter-arrival-times-characterization" class="level1">
+<h1>IID exponential inter-arrival times characterization</h1>
+<div class="prop">
+<p><strong>Proposition 6</strong>. The counting process <span class="math inline">\(N:\Omega\to\Z_+^{\R_+}\)</span> associated with a simple Poisson point process <span class="math inline">\(S:\Omega\to\R_+^\N\)</span> is Markov.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> We define the event space <span class="math inline">\(\sF_t \triangleq \sigma(N_s: s \le t)\)</span> as the history of the process until time <span class="math inline">\(t \in \R_+\)</span>. Then, from the independent increment property of Poisson processes, we have for any historical event <span class="math inline">\(H_s \in \sF_s\)</span> The transition probability matrix is <span class="math inline">\(P(s,t)\)</span> with its <span class="math inline">\((k,n)\)</span>th entry given by <span class="math inline">\(e^{-\Lambda(s,t]}\frac{(\Lambda(s,t])^{n-k}}{(n-k)!}\)</span>.&nbsp;◻</p>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. A Markov process <span class="math inline">\(X:\Omega\to\sX^\R\)</span> is time homogeneous if the transition matrix <span class="math inline">\(P(s,t) = P(t-s)\)</span> for all <span class="math inline">\(t \ge s\)</span>. Thus the counting process for a homogeneous Poisson point process is time homogeneous Markov process, as the transition probability matrix <span class="math inline">\(P(s,t) = P(t-s)\)</span> with its <span class="math inline">\((k,n)\)</span>th entry given by <span class="math inline">\(e^{-\lambda(t-s)}\frac{(\lambda(t-s))^{n-k}}{(n-k)!}\)</span>.</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 7</strong>. The counting process <span class="math inline">\(N:\Omega\to\Z_+^{\R_+}\)</span> associated with a simple Poisson point process <span class="math inline">\(S:\Omega\to\R_+^\N\)</span> is strongly Markov.</p>
+</div>
+<div class="prop">
+<p><strong>Proposition 8</strong>. A simple counting process <span class="math inline">\(N:\Omega\to\Z_+^{\R_+}\)</span> is associated with a <strong>homogeneous Poisson process</strong> with a constant intensity density <span class="math inline">\(\lambda\)</span>, iff the inter-arrival time sequence <span class="math inline">\(X:\Omega\to\R_+^\N\)</span> are random variables with an exponential distribution of rate <span class="math inline">\(\lambda\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Let <span class="math inline">\(N_t\)</span> be a counting process associated with a homogeneous Poisson point process on half-line with constant intensity density <span class="math inline">\(\lambda\)</span>. From equivalence <span class="math inline">\(iii\_\)</span> in Theorem&nbsp;<a href="#thm:equiv" data-reference-type="ref" data-reference="thm:equiv">[thm:equiv]</a>, we obtain for any positive integer <span class="math inline">\(t\)</span>, It suffices to show that inter-arrivals time sequence <span class="math inline">\(X:\Omega\to\R_+^\N\)</span> is . We can show that <span class="math inline">\(N\)</span> is Markov process with strong Markov property. Since the sequence of ordered points <span class="math inline">\(\tS:\Omega\to\R_+^\N\)</span> is a sequence of stopping times for the counting process, it follows from the strong Markov property of this process that <span class="math inline">\((N_{\tS_n+t} - N_{\tS_n}: t \ge 0)\)</span> is independent of <span class="math inline">\(\sigma(N_s: s \le \tS_n)\)</span> and hence of <span class="math inline">\(\tS_n\)</span> and <span class="math inline">\(N_{\tS_n}\)</span>. Further, we see that It follows that <span class="math inline">\(X:\Omega\to\R_+^\N\)</span> is an independent sequence. For homogeneous Poisson point process, we have <span class="math inline">\(N_{\tS_n+t}-N_{\tS_n} = N_t\)</span> in distribution, and hence <span class="math inline">\(X_{n+1}\)</span> has same distribution as <span class="math inline">\(X_1\)</span> for each <span class="math inline">\(n \in \N\)</span>.</p>
+<p>For the given inter-arrival time sequence <span class="math inline">\(X:\Omega\to\R_+^\N\)</span> distributed exponentially with rate <span class="math inline">\(\lambda\)</span>, we define the <span class="math inline">\(n\)</span>th arrival instant <span class="math inline">\(\tS_n \triangleq \sum_{i=1}^nX_i\)</span> for each <span class="math inline">\(n \in \N\)</span>, and the number of arrivals in time duration <span class="math inline">\((0,t]\)</span> as <span class="math inline">\(N_t\triangleq \sum_{n\in\N}\SetIn{\tS_n\le t}\)</span> for all <span class="math inline">\(t\in \R_+\)</span>. It follows that <span class="math inline">\(N_t\)</span> is path wise non-decreasing, integer-valued, right continuous, and simple since <span class="math inline">\(P\set{X_1 \le 0} = 0\)</span>. Therefore, <span class="math inline">\(N\)</span> is a simple counting process such that It follows that the void probabilities are exponential and hence the random variable <span class="math inline">\(N_t\)</span> is Poisson with parameter <span class="math inline">\(\lambda t\)</span> for all <span class="math inline">\(t \in \R_+\)</span>. Hence, <span class="math inline">\(N\)</span> is a counting process associated with a homogeneous Poisson process with the constant intensity density <span class="math inline">\(\lambda\)</span> from the equivalence <span class="math inline">\(ii\_\)</span> in Theorem&nbsp;<a href="#thm:equiv" data-reference-type="ref" data-reference="thm:equiv">[thm:equiv]</a>.&nbsp;◻</p>
+</div>
+<p>For many proofs regarding Poisson processes, we partition the sample space with the disjoint events <span class="math inline">\(\set{N_t = n}\)</span> for <span class="math inline">\(n \in \Z_+\)</span>. We need the following lemma that enables us to do that.</p>
+<div class="lem">
+<p><strong>Lemma 9</strong>. For any finite time <span class="math inline">\(t &gt; 0\)</span>, the number of points on the interval <span class="math inline">\((0,t]\)</span> from a Poisson process is finite almost surely.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> By strong law of large numbers, we have <span class="math inline">\(\lim_{n \to \infty} \frac{S_{n}}{n} = \E[X_{1}] = \frac{1}{\lambda}\)</span> almost surely. Fix <span class="math inline">\(t &gt; 0\)</span> and we define a sample space subset <span class="math inline">\(M = \set{\omega \in \Omega: N(\omega, t) = \infty }\)</span>. For any <span class="math inline">\(\omega \in M\)</span>, we have <span class="math inline">\(S_{n}(\omega)\le t\)</span> for all <span class="math inline">\(n \in \N\)</span>. This implies <span class="math inline">\(\lim\sup_n\frac{S_{n}}{n} = 0\)</span> and <span class="math inline">\(\omega \not\in \set{\lim_n \frac{S_{n}}{n} = \frac{1}{\lambda} }\)</span>. Hence, the probability measure for set <span class="math inline">\(M\)</span> is zero.&nbsp;◻</p>
+</div>
+<section id="distribution-functions" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-functions">Distribution functions</h2>
+<div class="lem">
+<p><strong>Lemma 10</strong>. The following are true for the <span class="math inline">\(n\)</span>th arrival instant <span class="math inline">\(\tS_n\)</span> of the Poisson arrival process <span class="math inline">\(\tS:\Omega\to\R_+^\N\)</span> with constant intensity density <span class="math inline">\(\lambda\)</span>.</p>
+<ol type="a">
+<li><p>The moment generating function is <span class="math inline">\(M_{\tS_n}(\theta) = \E[e^{\theta \tS_n} ] = \frac{\lambda^n}{(\lambda-\theta)^n}\SetIn{\theta &lt; \lambda} + \infty\SetIn{\theta \ge \lambda}.
+%\infty, &amp; \theta \ge \lambda.
+%\begin{cases}
+%\frac{\lambda^n}{(\lambda-\theta)^n}, &amp; \theta &lt; \lambda \\
+%\infty, &amp; \theta \ge \lambda.
+%\end{cases}\)</span></p></li>
+<li><p>The distribution function is <span class="math inline">\(F_n(t) \triangleq P\set{\tS_n \le t} = 1 - e^{-\lambda t}\sum_{k=0}^{n-1}\frac{(\lambda t)^k}{k!}\)</span>.</p></li>
+<li><p>The density function is Gamma distributed with parameters <span class="math inline">\(n\)</span> and <span class="math inline">\(\lambda\)</span>. That is, <span class="math inline">\(f_{n}(s) =\frac{\lambda (\lambda s)^{n-1}} {(n-1)!} e^{-\lambda s}\)</span>.</p></li>
+</ol>
+</div>
+<div class="cor">
+<p><strong>Corollary 11</strong>. Consider the counting process <span class="math inline">\(N:\Omega\to\Z_+^{\R_+}\)</span> associated with the Poisson arrival process <span class="math inline">\(\tS:\Omega\to\R_+^\N\)</span> having constant intensity density <span class="math inline">\(\lambda\)</span>. The following are true.</p>
+<ol type="a">
+<li><p>The relation between distribution of <span class="math inline">\(n\)</span>th arrival instant and probability mass function for the counting process is given by <span class="math inline">\(F_n(t)= \sum_{j \ge n}P_j(t)\)</span>.</p></li>
+<li><p>For each <span class="math inline">\(t\in\R_+\)</span>, the probability mass function <span class="math inline">\(P_{N_t}\in\cM(\Z_+)\)</span> for discrete random variable <span class="math inline">\(N_t:\Omega\to\Z_+\)</span> is given by <span class="math inline">\(P_n(t) \triangleq P_{N_t}(n) = P\set{N_t=n)}= e^{-\lambda t}\frac{(\lambda t)^{n}}{n!}\)</span>.</p></li>
+<li><p>The relation between distribution of <span class="math inline">\(n\)</span>th arrival instant and the mean of the counting process is given by <span class="math inline">\(\sum_{n \in \N}F_n(t) = \E N_t\)</span>.</p></li>
+<li><p>For each <span class="math inline">\(t\in\R_+\)</span>, the mean <span class="math inline">\(\E[N_t] = \lambda t\)</span>, explaining the rate parameter <span class="math inline">\(\lambda\)</span> for the Poisson process.</p></li>
+</ol>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> We observe the inverse relationship <span class="math inline">\(\set{\tS_n \le t} = \set{N_t \ge n}\)</span> for all <span class="math inline">\(n \in \Z_+\)</span> and <span class="math inline">\(t\in\R_+\)</span>.</p>
+<ol type="a">
+<li><p>The result follows by taking the probability on both sides of the inverse relationship, to get <span class="math inline">\(F_n(t)
+= P\set{\tS_n \le t}
+= P\set{N_t \ge n}
+= \sum_{j \ge n}P\set{N_t = j}
+= \sum_{j \ge n}P_j(t).\)</span></p></li>
+<li><p>The result follows from the explicit from for the distribution of <span class="math inline">\(\tS_n\)</span> and recognizing that <span class="math inline">\(P_n(t) = F_n(t) - F_{n+1}(t)\)</span>.</p></li>
+<li><p>The result from the following observation <span class="math inline">\(\sum_{n \in \N}F_n(t) = \E\sum_{n \in \N}\SetIn{N_t \ge n} = \sum_{n \in \N}P\set{N_t \ge n} = \E N_t.\)</span></p></li>
+<li><p>The result follows by summing the distribution function of the <span class="math inline">\(n\)</span>th arrivals, to get <span class="math inline">\(\E N_t = \sum_{n\in\N}F_n(t) = e^{-\lambda t}\sum_{n\in\N}\sum_{k \ge n}\frac{(\lambda t)^k}{k!} =
+\lambda t e^{-\lambda t}\sum_{k\in\N}\frac{(\lambda t)^{k-1}}{(k-1)!} = \lambda t\)</span>.</p></li>
+</ol>
+<p>&nbsp;◻</p>
+</div>
+<div class="rem">
+<p><strong>Remark 3</strong>. A Poisson process is not a stationary process. That is, the finite dimensional distributions are not shift invariant. This is clear from looking at the first moment <span class="math inline">\(\E N_t = \lambda t\)</span>, which is linearly increasing in time.</p>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1116,10 +1217,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-26.html" class="pagination-link" aria-label="Properties of Poisson point processes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-28.html" class="pagination-link" aria-label="Compound Poisson Processes">
+        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1232,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
