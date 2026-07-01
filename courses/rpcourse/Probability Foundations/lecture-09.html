@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Moments and L^p spaces – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-10.html" rel="next">
+<link href="../Probability Foundations/lecture-08.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-08.html">Section 3. Expectation</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-09.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -425,25 +426,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -451,46 +452,46 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 3. Expectation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -559,31 +560,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,10 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#moments" id="toc-moments" class="nav-link active" data-scroll-target="#moments">Moments</a></li>
+  <li><a href="#lp-spaces" id="toc-lp-spaces" class="nav-link" data-scroll-target="#lp-spaces"><span class="math inline">\(L^p\)</span> spaces</a></li>
+  <li><a href="#central-moments" id="toc-central-moments" class="nav-link" data-scroll-target="#central-moments">Central Moments</a></li>
+  <li><a href="#inequalities" id="toc-inequalities" class="nav-link" data-scroll-target="#inequalities">Inequalities</a></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +652,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-08.html">Section 3. Expectation</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-09.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,18 +683,133 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
-<ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
-</ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/bULUWNKuI-4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="moments" class="level1">
+<h1>Moments</h1>
+<p>Let <span class="math inline">\(X:\Omega\to\R\)</span> be a random variable defined on the probability space <span class="math inline">\((\Omega,\sF,P)\)</span> with the distribution function <span class="math inline">\(F_X:\R \to [0,1]\)</span>.</p>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 1</strong> (Absolute value function). For the function <span class="math inline">\(\abs{\cdot}: \R \to \R_+\)</span>, we can write the inverse image of half open sets <span class="math inline">\((-\infty, x]\)</span> for any <span class="math inline">\(x \in \R\)</span> as <span class="math inline">\(A_g(x) = g^{-1}(-\infty, x]\)</span>. It follows that <span class="math inline">\(A_g(x) = \emptyset \in \sB(\R)\)</span> for <span class="math inline">\(x &lt; 0\)</span> and <span class="math inline">\(A_g(x) = [-x, x] \in \sB(\R)\)</span> for <span class="math inline">\(x \in \R_+\)</span>. Since <span class="math inline">\(g^{-1}(-\infty, x] \in \sB(R)\)</span>, it follows that <span class="math inline">\(\abs{\cdot}: \R \to \R_+\)</span> is a Borel measurable function.</p>
+</div>
+</div>
+<div class="lem">
+<p><strong>Lemma 2</strong>. If <span class="math inline">\(\E\abs{X}\)</span> is finite, then <span class="math inline">\(\E X\)</span> exists and is finite.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> The function <span class="math inline">\(\abs{\cdot}: \R \to \R\)</span> is a Borel measurable function and hence <span class="math inline">\(\abs{X}\)</span> is a random variable. Further <span class="math inline">\(\abs{X} \ge 0\)</span>, and hence the expectation <span class="math inline">\(\E\abs{X}\)</span> always exists. If <span class="math inline">\(\E\abs{X}\)</span> is finite, it means <span class="math inline">\(\E X_+\)</span> and <span class="math inline">\(\E X_-\)</span> are both finite, and hence <span class="math inline">\(\E X = \E X_+ - \E X_-\)</span> is finite as well.&nbsp;◻</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 3</strong>. Let <span class="math inline">\(g: \R \to \R\)</span> be a Borel measurable function. If <span class="math inline">\(\E\abs{g(X)}\)</span> is finite, then <span class="math inline">\(\E g(X)\)</span> exists and is finite.</p>
+</div>
+<div class="tcolorbox">
+<div class="exerc">
+<p><strong>Exercise 4</strong> (Polynomial function). For any <span class="math inline">\(k \in \N\)</span>, we define functions <span class="math inline">\(g_k: \R \to \R\)</span> such that <span class="math inline">\(g_k: x \mapsto x^k\)</span>. Show that <span class="math inline">\(g_k\)</span> is Borel measurable for all <span class="math inline">\(k \in \N\)</span>.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 5</strong> (Moments). We define the <span class="math inline">\(k\)</span>th <strong>moment</strong> of the random variable <span class="math inline">\(X\)</span> as <span class="math inline">\(m_k \triangleq \E g_k(X) = \E X^k\)</span>. First moment <span class="math inline">\(\E X\)</span> is called the <strong>mean</strong> of the random variable.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. If <span class="math inline">\(\E\abs{X}^k\)</span> is finite, then <span class="math inline">\(m_k\)</span> exists and is finite.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 2</strong>. If <span class="math inline">\(P\set{\abs{X} \le 1} = 1\)</span>, then <span class="math inline">\(P\set{\abs{X}^k \le 1} = 1\)</span>. Therefore, by the monotonicity of expectations <span class="math inline">\(\E\abs{X}^k \le 1\)</span>, and the moments <span class="math inline">\(m_k\)</span> exist and are finite for all <span class="math inline">\(k \in \N\)</span>.</p>
+</div>
+</section>
+<section id="lp-spaces" class="level1">
+<h1><span class="math inline">\(L^p\)</span> spaces</h1>
+<div class="defn">
+<p><strong>Definition 6</strong>. A vector space over field <span class="math inline">\(\F\)</span> is denoted by a set <span class="math inline">\(V\)</span> has (a) vector addition <span class="math inline">\(+: V\times V\to V\)</span> that satisfies associativity and commutativity, and has an identity and inverse element for each vector <span class="math inline">\(v\in V\)</span>, and (b) scalar multiplication <span class="math inline">\(\cdot: \F \times V \to V\)</span> that satisfies compatibility of field multiplication, distributivity with vector and field addition, and has an identity element.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 3</strong>. We can verify that the set of random variables is a vector space over reals, and we denote it by <span class="math inline">\(V\)</span>. To this end, we can verify the associativity and commutativity of addition of random variables. For any random variable <span class="math inline">\(X\)</span>, the constant function <span class="math inline">\(0\)</span> is the identity random variable, and <span class="math inline">\(-X\)</span> is the additive inverse for vector additions. We can verify the compatibility of scalar multiplication with random variables, existence of unit scalar <span class="math inline">\(1\)</span>, and distributivity of scalar multiplications with respect to field addition and vector addition.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 7</strong>. For a vector space <span class="math inline">\(V\)</span> over field <span class="math inline">\(\F\)</span>, a <strong>norm</strong> on the vector space is a map <span class="math inline">\(f: V \to \R_+\)</span> that satisfies</p>
+<ol type="1">
+<li><p><span class="math inline">\(f(av) = \abs{a}f(v)\)</span> for all <span class="math inline">\(a \in \F\)</span> and <span class="math inline">\(v \in V\)</span>,</p></li>
+<li><p><span class="math inline">\(f(v+w) \le f(v) + f(w)\)</span> for all <span class="math inline">\(v,w \in V\)</span>, and</p></li>
+<li><p><span class="math inline">\(f(v) \ge 0\)</span> for all <span class="math inline">\(v \in V\)</span>.</p></li>
+</ol>
+</div>
+<div class="defn">
+<p><strong>Definition 8</strong>. For a probability space <span class="math inline">\((\Omega,\sF,P)\)</span>, and <span class="math inline">\(p \ge 1\)</span>, we define the set of random variables with finite absolute <span class="math inline">\(p\)</span>th moment as the vector space <span class="math inline">\(L^p \triangleq \set{X \in V:(\E\abs{X}^p)^{\frac{1}{p}} &lt; \infty}.\)</span></p>
+</div>
+<div class="defn">
+<p><strong>Definition 9</strong>. We define a function <span class="math inline">\(\norm{}_p: L^p \to \R_+\)</span> defined by <span class="math inline">\(\norm{}_p(X) = \norm{X}_p \triangleq (\E\abs{X}^p)^{\frac{1}{p}}\)</span> for any <span class="math inline">\(X \in L^p\)</span> and real <span class="math inline">\(p \ge 1\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 4</strong>. For <span class="math inline">\(p=1\)</span>, the map <span class="math inline">\(\norm{}_p\)</span> is norm. Therefore, <span class="math inline">\(L^1\)</span> is a normed vector space consisting of random variables with bounded absolute mean.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 5</strong>. We will show that <span class="math inline">\(\norm{X}_\infty = \sup\set{\abs{X(\omega)}:\omega\in \Omega}\)</span>, and hence <span class="math inline">\(L^\infty\)</span> is a normed vector space of bounded random variables.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 6</strong>. We will also show that <span class="math inline">\(\norm{}_p\)</span> is a norm for all <span class="math inline">\(p \in (1, \infty)\)</span>, and hence <span class="math inline">\(L^p\)</span> is a normed vector space of random variables with bounded <span class="math inline">\(\norm{}_p\)</span> norm. In particular, the <span class="math inline">\(L^2\)</span> space consists of random variables with bounded second moment.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 7</strong>. If <span class="math inline">\(\E\abs{X}^N\)</span> is finite for some <span class="math inline">\(N \in \N\)</span>, then <span class="math inline">\(\E\abs{X}^k\)</span> is finite for all <span class="math inline">\(k \in [N]\)</span>. This follows from the linearity and monotonicity of expectations, and the fact that This implies that <span class="math inline">\(L^N \subseteq L^k\)</span> for all <span class="math inline">\(k \in [N]\)</span>. We will show that <span class="math inline">\(L^{q} \subseteq L^p\)</span> for any real numbers <span class="math inline">\(1 \le p \le q\)</span>.</p>
+</div>
+</section>
+<section id="central-moments" class="level1">
+<h1>Central Moments</h1>
+<div class="shaded">
+<div class="exmp">
+<p><strong>Example 10</strong> (Shifted polynomial functions). For any <span class="math inline">\(k \in \N\)</span>, we define functions <span class="math inline">\(h_k: \R \to \R\)</span> such that <span class="math inline">\(h_k: x \mapsto (x-m_1)^k\)</span>. Then, <span class="math inline">\(h_k = g_k(x-m_1) = g_k\circ f\)</span> where <span class="math inline">\(f:\R \to\R\)</span> is defined as <span class="math inline">\(f(x) = x-m_1\)</span> for all <span class="math inline">\(x \in \R\)</span>. Since <span class="math inline">\(g_k\)</span> and <span class="math inline">\(f\)</span> are measurable, so is <span class="math inline">\(h_k\)</span>.</p>
+</div>
+</div>
+<div class="defn">
+<p><strong>Definition 11</strong> (Central moments). Let <span class="math inline">\(X: \Omega \to \R\)</span> be a random variable defined on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span> with finite first moment <span class="math inline">\(m_1\)</span>. We define the <span class="math inline">\(k\)</span>th <strong>central moment</strong> of the random variable <span class="math inline">\(X\)</span> as <span class="math inline">\(\sigma_k \triangleq \E h_k(X) = \E (X-m_1)^k\)</span>. The second central moment <span class="math inline">\(\sigma_2 = \E(X-m_1)^2\)</span> is called the <strong>variance</strong> of the random variable and denoted by <span class="math inline">\(\sigma^2\)</span>.</p>
+</div>
+<div class="lem">
+<p><strong>Lemma 12</strong>. The first central moment <span class="math inline">\(\sigma_1= \E(X-m_1) = 0\)</span> and the variance <span class="math inline">\(\sigma^2 = \E(X-m_1)^2\)</span> for a random variable <span class="math inline">\(X\)</span> is always non-negative, with equality when <span class="math inline">\(X\)</span> is a constant. That is, <span class="math inline">\(m_2 \ge m_1^2\)</span> with equality when <span class="math inline">\(X\)</span> is a constant.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Recall that <span class="math inline">\(h_1, h_2\)</span> are Boreal measurable functions, and hence <span class="math inline">\(h_1(X) = X- m_1\)</span> and <span class="math inline">\(h_2(X) = (X-m_1)^2\)</span> are random variables. From the linearity of expectations, it follows that <span class="math inline">\(\sigma_1 = \E h_1(X) = \E X - m_1 = 0\)</span>. Since <span class="math inline">\((X-m_1)^2 \ge 0\)</span> almost surely, it follows from the monotonicity of expectation that <span class="math inline">\(0 \le \E(X-m_1)^2\)</span>. From the linearity of expectation and expansion of <span class="math inline">\((X-m_1)^2\)</span>, we get <span class="math inline">\(\sigma^2 = \E X^2 - 2m_1\E X + m_1^2 = m_2 - m_1^2 \ge 0.\)</span>&nbsp;◻</p>
+</div>
+<div class="rem">
+<p><strong>Remark 8</strong>. If second moment is finite, then the first moment is finite. That is, <span class="math inline">\(L^2 \subseteq L^1\)</span>.</p>
+</div>
+</section>
+<section id="inequalities" class="level1">
+<h1>Inequalities</h1>
+<div class="thm">
+<p><strong>Theorem 13</strong> (Markov’s inequality). Let <span class="math inline">\(X: \Omega \to \R\)</span> be a random variable defined on the probability space <span class="math inline">\((\Omega, \sF, P)\)</span>. Then, for any monotonically non-decreasing function <span class="math inline">\(f: \R \to \R_+\)</span>, we have</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> We can verify that any monotonically non-decreasing function <span class="math inline">\(f: \R \to \R_+\)</span> is Borel measurable. Hence, <span class="math inline">\(f(X)\)</span> is a random variable for any random variable <span class="math inline">\(X\)</span>. Therefore, The result follows from the monotonicity of expectations.&nbsp;◻</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 14</strong> (Markov). Let <span class="math inline">\(X\)</span> be a non-negative random variable, then <span class="math inline">\(P\set{X \ge \epsilon} \le \frac{\E X}{\epsilon}\)</span> for all <span class="math inline">\(\epsilon  &gt; 0\)</span>.</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 15</strong> (Chebychev). Let <span class="math inline">\(X\)</span> be a random variable with finite mean <span class="math inline">\(m_1\)</span> and variance <span class="math inline">\(\sigma^2\)</span>, then</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Apply the Markov’s inequality for random variable <span class="math inline">\(Y = \abs{X-m_1} \ge 0\)</span> and increasing function <span class="math inline">\(f(x) = x^2\)</span> for <span class="math inline">\(x \ge 0\)</span>.&nbsp;◻</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 16</strong> (Chernoff). Let <span class="math inline">\(X\)</span> be a random variable with finite <span class="math inline">\(\E[e^{\theta X}]\)</span> for some <span class="math inline">\(\theta&gt;0\)</span>, then</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Apply the Markov’s inequality for random variable <span class="math inline">\(X\)</span> and increasing function <span class="math inline">\(f(x) = e^{\theta x} &gt; 0\)</span> for <span class="math inline">\(\theta &gt; 0\)</span>.&nbsp;◻</p>
+</div>
+<div class="defn">
+<p><strong>Definition 17</strong> (Convex function). A real-valued function <span class="math inline">\(f: \R \to \R\)</span> is convex if for all <span class="math inline">\(x, y\in \R\)</span> and <span class="math inline">\(\theta \in [0,1]\)</span>, we have</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 18</strong> (Jensen’s inequality). For any convex function <span class="math inline">\(f: \R \to \R\)</span> and random variable <span class="math inline">\(X\)</span>, we have</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> It suffices to show this for simple random variables <span class="math inline">\(X: \Omega \to \sX\)</span>. We show this by induction on cardinality of alphabet <span class="math inline">\(\sX\)</span>. The inequality is trivially true for <span class="math inline">\(\abs{\sX}=1\)</span>. We assume that the inductive hypothesis is true for <span class="math inline">\(\abs{\sX} = n\)</span>.</p>
+<p>Let <span class="math inline">\(X \in \sX\)</span>, where <span class="math inline">\(\abs{\sX} = n+1\)</span>. We can denote <span class="math inline">\(\sX = \set{x_1, \dots, x_{n+1}}\)</span> with <span class="math inline">\(p_i \triangleq P\set{X = x_i}\)</span> for all <span class="math inline">\(i \in [n+1]\)</span>. We observe that <span class="math inline">\((\frac{p_j}{1-p_1}: j \ge 2)\)</span> is a probability mass function for some random variable <span class="math inline">\(Y \in \sY = \set{x_2, \dots, x_{n+1}}\)</span> with cardinality <span class="math inline">\(n\)</span>. Hence, by inductive hypothesis, we have Applying the convexity of <span class="math inline">\(f\)</span> to <span class="math inline">\(\theta = p_1, x = x_1, y = \sum_{i=2}^{n+1}\frac{p_i}{1-p_1}x_i\)</span>, we get From the inductive step, it follows that the RHS is upper bounded by <span class="math inline">\(\E f(X)\)</span>, and the result follows.&nbsp;◻</p>
+</div>
+<div class="thm">
+<p><strong>Theorem 19</strong>. For any real numbers <span class="math inline">\(1 \le p \le q &lt; \infty\)</span>, we have <span class="math inline">\(L^q \subseteq L^p\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Let <span class="math inline">\(1 \le p \le q &lt; \infty\)</span> and consider a convex function <span class="math inline">\(g: \R_+ \to \R_+\)</span> defined by <span class="math inline">\(g(x) \triangleq x^{{q}/{p}}\)</span> for all <span class="math inline">\(x \in \R_+\)</span>. It follows that <span class="math inline">\(g(\abs{X}^p) = \abs{X}^q\)</span> and hence from the Jensen’s inequality, we get&nbsp;◻</p>
+</div>
 
 
 </section>
@@ -1116,10 +1230,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-08.html" class="pagination-link" aria-label="Expectation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-10.html" class="pagination-link" aria-label="Correlation">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1245,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

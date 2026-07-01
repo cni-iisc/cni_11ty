@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-07-01">
 <meta name="description" content="A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.">
 
-<title>Probability and Random Processes</title>
+<title>Invariant Distribution – Probability and Random Processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,28 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Probability Foundations/lecture-01.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Probability Foundations/lecture-24.html" rel="next">
+<link href="../Probability Foundations/lecture-22.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9485d2876aa1002e62740be884464af3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fb813a46f614d50ca558e8979863fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,7 +337,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Probability and Random Processes</span>
     </a>
   </div>
@@ -347,7 +348,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -367,7 +368,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-19.html">Section 6. Markov chains</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-23.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -381,7 +382,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -396,19 +397,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability Function</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Independence</span></span></a>
   </div>
 </li>
@@ -425,25 +426,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Random Variable</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Random Vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Transformation of random vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Random Processes</span></span></a>
   </div>
 </li>
@@ -460,37 +461,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Moments and <span class="math inline">\(L^p\)</span> spaces</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-11.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Generating functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-12.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conditional Expectation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-13.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional expectation</span></span></a>
   </div>
 </li>
@@ -507,19 +508,19 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Almost sure convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><span class="math inline">\(L^p\)</span> convergence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-16.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Weak convergence</span></span></a>
   </div>
 </li>
@@ -536,13 +537,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tractable Random Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-18.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Stopping Times</span></span></a>
   </div>
 </li>
@@ -550,40 +551,40 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Section 6. Markov chains</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Discrete Time Markov Chains</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-20.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Strong Markov Property</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Recurrent and transient states</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-22.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-23.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></span></a>
   </div>
 </li>
@@ -600,31 +601,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Poisson processes: Conditional distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Properties of Poisson point processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-27.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Poisson process on the half-line</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
+  <a href="../Probability Foundations/lecture-28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Compound Poisson Processes</span></span></a>
   </div>
 </li>
@@ -640,7 +641,8 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#invariant-distribution" id="toc-invariant-distribution" class="nav-link active" data-scroll-target="#invariant-distribution">Invariant Distribution</a></li>
+  <li><a href="#computing-invariant-distribution" id="toc-computing-invariant-distribution" class="nav-link" data-scroll-target="#computing-invariant-distribution">Computing invariant distribution</a></li>
   </ul>
 </nav>
     </div>
@@ -648,16 +650,11 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-19.html">Section 6. Markov chains</a></li><li class="breadcrumb-item"><a href="../Probability Foundations/lecture-23.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Invariant Distribution</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Probability and Random Processes</h1>
+<h1 class="title"><span class="chapter-title">Invariant Distribution</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    A graduate-level foundational course, originally offered as E2.202 Random Processes in the ECE Department at IISc.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -684,18 +681,91 @@ window.Quarto = {
 </header>
 
 
-<section id="about" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
-<p>This is the homepage of the course. The content is organised into <strong>modules</strong>, each comprising a series of <strong>lectures</strong> accessible through dedicated pages.</p>
-<p>On each lecture page, you’ll find:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/H_KThf5QThc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="invariant-distribution" class="level1">
+<h1>Invariant Distribution</h1>
+<p>Let <span class="math inline">\(X: \Omega \to \sX^{\Z_+}\)</span> be a time-homogeneous Markov chain with transition probability matrix <span class="math inline">\(P: \sX\times\sX\to[0,1]\)</span>.</p>
+<div class="defn">
+<p><strong>Definition 1</strong>. A probability distribution <span class="math inline">\(\pi \in \cM(\sX)\)</span> is said to be <strong>invariant distribution</strong> for the Markov chain <span class="math inline">\(X\)</span> if it satisfies the <strong>global balance equation</strong> <span class="math inline">\(\pi = \pi P\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 2</strong>. When the initial distribution of a Markov chain is <span class="math inline">\(\nu \in \cM(\sX)\)</span>, then the conditional probability is denoted by <span class="math inline">\(P_\nu: \sF \to [0,1]\)</span> defined by</p>
+</div>
+<div class="defn">
+<p><strong>Definition 3</strong>. For a Markov chain <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span>, we denote the distribution of random variable <span class="math inline">\(X_n:\Omega\to\sX\)</span> by <span class="math inline">\(\nu_n \in \cM(\sX)\)</span> for all <span class="math inline">\(n \in \Z_+\)</span>. That is, <span class="math inline">\(\nu_n(x) \triangleq P_{\nu_0}\set{X_n = x}\)</span> for all <span class="math inline">\(x \in \sX\)</span>.</p>
+</div>
+<div class="rem">
+<p><strong>Remark 1</strong>. We observe that <span class="math inline">\(\nu_n(x) = \sum_{z\in\sX}\nu_0(z)(P^n)_{zx}\)</span> for all <span class="math inline">\(x \in \sX\)</span>.</p>
+</div>
+<div class="shaded*">
+<div class="rem">
+<p><strong>Remark 2</strong>. Facts about the invariant distribution <span class="math inline">\(\pi\)</span>.</p>
+<ol type="1">
+<li><p>The global balance equation <span class="math inline">\(\pi = \pi P\)</span> is a matrix equation, that is we have a collection of <span class="math inline">\(\abs{\sX}\)</span> equations <span class="math inline">\(\pi_y = \sum_{x \in \sX}\pi_xp_{xy}\)</span> for each <span class="math inline">\(y \in \sX\)</span>.</p></li>
+<li><p>The invariant distribution <span class="math inline">\(\pi\)</span> is left eigenvector of stochastic matrix <span class="math inline">\(P\)</span> with the largest eigenvalue <span class="math inline">\(1\)</span>. The all ones vector is the right eigenvector of this stochastic matrix <span class="math inline">\(P\)</span> for the eigenvalue <span class="math inline">\(1\)</span>.</p></li>
+<li><p>From the Chapman-Kolmogorov equation for initial probability vector <span class="math inline">\(\pi\)</span>, we have <span class="math inline">\(\pi = \pi P^n\)</span> for <span class="math inline">\(n \in \N\)</span>. That is, if <span class="math inline">\(\nu_0 = \pi\)</span>, then <span class="math inline">\(\nu_n = \pi\)</span> for all <span class="math inline">\(n \in \Z_+\)</span>.</p></li>
+<li><p>Resulting process with initial distribution <span class="math inline">\(\pi\)</span> is stationary, and hence have shift-invariant finite dimensional distributions. For example, for any <span class="math inline">\(k, n \in \Z_+\)</span> and <span class="math inline">\(x_0, \dots, x_n \in \sX\)</span>, we have</p></li>
+<li><p>For an irreducible Markov chain, if <span class="math inline">\(\pi_x &gt; 0\)</span> for some <span class="math inline">\(x \in \sX\)</span>, then the entire invariant vector <span class="math inline">\(\pi\)</span> is positive. To this end, we will show that <span class="math inline">\(\pi_y &gt; 0\)</span> for all states <span class="math inline">\(y \in \sX\)</span>. Let <span class="math inline">\(y \in \sX\)</span>, then from the irreducibility of Markov chain, there exists an <span class="math inline">\(m \in \Z_+\)</span> such that <span class="math inline">\(p_{xy}^{(m)} &gt; 0\)</span>. Further, <span class="math inline">\(\pi = \pi P^m\)</span> and hence <span class="math inline">\(\pi_y \ge \pi_x p_{xy}^{(m)} &gt; 0\)</span>.</p></li>
+<li><p>Any scaled version of <span class="math inline">\(\pi\)</span> satisfies the global balance equation. Therefore, for any invariant vector <span class="math inline">\(\alpha \in \sX^{\R_+}\)</span> of a positive recurrent transition matrix <span class="math inline">\(P\)</span>, the sum <span class="math inline">\(\norm{\alpha}_1 = \sum_{x \in \sX}\alpha_x\)</span> must be finite. We can normalize <span class="math inline">\(\alpha\)</span> and get an invariant probability measure <span class="math inline">\(\pi = \frac{\alpha}{\norm{\alpha}_1}\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="thm">
+<p><strong>Theorem 4</strong>. An irreducible Markov chain with transition probability matrix <span class="math inline">\(P:\sX\times\sX\to[0,1]\)</span> is positive recurrent iff there exists a unique invariant probability measure <span class="math inline">\(\pi \in \cM(\sX)\)</span> that satisfies global balance equation <span class="math inline">\(\pi = \pi P\)</span> and <span class="math inline">\(\pi_x = \frac{1}{\mu_{xx}} &gt; 0\)</span> for all <span class="math inline">\(x \in \sX\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> Consider an irreducible Markov chain <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span> with transition probability matrix <span class="math inline">\(P\)</span>. We will first show that positive recurrence of <span class="math inline">\(X\)</span> implies the existence of a positive invariant distribution <span class="math inline">\(\pi\)</span> and its uniqueness. Then we will show that the existence of a unique positive invariant distribution <span class="math inline">\(\pi\)</span> implies positive recurrence of <span class="math inline">\(X\)</span>.</p>
 <ul>
-<li>AI-assisted <strong>video presentation</strong> of the lecture<br>
-</li>
-<li>Accompanying <strong>lecture notes</strong> for review and reference</li>
+<li><p>For Markov chain <span class="math inline">\(X\)</span>, let the initial state be <span class="math inline">\(X_0 = x\)</span>. Recall that the number of visits to state <span class="math inline">\(y \in \sX\)</span> in the first <span class="math inline">\(n\)</span> steps of the Markov chain <span class="math inline">\(X\)</span> is denoted by <span class="math inline">\(N_y(n) = \sum_{k=1}^n\SetIn{X_k = y}\)</span>. It follows that <span class="math inline">\(\sum_{y \in \sX}N_y(n) = n\)</span> for each <span class="math inline">\(n \in \N\)</span>. Let <span class="math inline">\(H_x \triangleq \tau_X^{\set{x},1}\)</span> be the first recurrence time to state <span class="math inline">\(x\in\sX\)</span>, then we have <span class="math inline">\(N_x(H_x) = 1\)</span> and <span class="math inline">\(\sum_{y \in \sX}N_y(H_x) = H_x\)</span>.</p>
+<ul>
+<li><p>We define a vector <span class="math inline">\(v \in \R^\sX\)</span> by <span class="math inline">\(v_y \triangleq \E_x[N_y(H_x)]\)</span> for each <span class="math inline">\(y \in \sX\)</span>. We observe that <span class="math inline">\(v_y \ge 0\)</span> for each state <span class="math inline">\(y \in \sX\)</span>. In particular, <span class="math inline">\(v_x = 1\)</span>. Since <span class="math inline">\(X\)</span> is positive recurrent, we get that <span class="math inline">\(\sum_{y \in \sX}v_y = \E_xH_x = \mu_{xx} &lt; \infty\)</span>. We will show that the vector <span class="math inline">\(v\)</span> satisfies the global balance equation <span class="math inline">\(v = vP\)</span>. To see this, we first define <span class="math inline">\(\lambda_{xy}^{(n)}  \triangleq P_x\set{X_n = y, n \le H_x}\)</span> for all <span class="math inline">\(n \in \N\)</span> and states <span class="math inline">\(x,y\in\sX\)</span>. We observe that <span class="math inline">\(\lambda_{xy}^{(1)} = p_{xy}\)</span> for each <span class="math inline">\(y \in \sX\)</span>. Next, we observe from the monotone convergence theorem, that For <span class="math inline">\(n \ge 2\)</span>, partitioning the event <span class="math inline">\(\set{X_n=y, n \le H_x}\)</span> by the events <span class="math inline">\((\set{X_{n-1}=z}: z \in \sX\setminus\set{x})\)</span>, the countable additivity of conditional probability for disjoint events, and the definition of conditional probability, we get Recall that since <span class="math inline">\(H_x\)</span> is adapted to natural filtration <span class="math inline">\(\sF_\bullet\)</span> of Markov chain <span class="math inline">\(X\)</span>, we have <span class="math inline">\(\set{n \le H_x, X_0=x} = \set{X_0=x}\cap\set{H_x &gt; n-1}^c \in \sF_{n-1}\)</span>. Together with the Markov property of <span class="math inline">\(X\)</span> and the fact that <span class="math inline">\(\set{X_{n-1}=z, n \le H_x} = \set{X_{n-1}=z, n-1 \le H_x}\)</span>, we obtain Substituting the expression for <span class="math inline">\(\lambda_{xy}^{(n)}\)</span> in&nbsp;<a href="#eqn:EigenvectorTerms" data-reference-type="eqref" data-reference="eqn:EigenvectorTerms">[eqn:EigenvectorTerms]</a> into the expression for <span class="math inline">\(v_y = \sum_{n \in \N}\lambda_{xy}^{(n)}\)</span> in&nbsp;<a href="#eqn:Eigenvector" data-reference-type="eqref" data-reference="eqn:Eigenvector">[eqn:Eigenvector]</a> and using the fact that <span class="math inline">\(v_x = 1\)</span>, we obtain Since <span class="math inline">\(v\)</span> has a finite sum, it follows that <span class="math inline">\(\pi \triangleq \frac{v}{\sum_{x \in \sX}v_x}\)</span> is an invariant distribution for the Markov chain <span class="math inline">\(X\)</span> with the transition matrix <span class="math inline">\(P\)</span>. In addition, we have <span class="math inline">\(\pi_x = \frac{v_x}{\sum_{y \in \sX}v_y} = \frac{1}{\mu_{xx}} &gt; 0\)</span>.</p></li>
+<li><p>Next, we show that this is a unique invariant measure independent of the initial state <span class="math inline">\(x\)</span>, and hence <span class="math inline">\(\pi_y = \frac{1}{\mu_{yy}} &gt; 0\)</span> for all <span class="math inline">\(y \in \sX\)</span>. For uniqueness, we observe from the Chapman-Kolmogorov equations and invariance of <span class="math inline">\(\pi\)</span> that <span class="math inline">\(\pi = \frac{1}{n}\pi(P + P^2 + \dots + P^n)\)</span>. Hence, <span class="math inline">\(\pi_y = \sum_{x \in \sX}\pi_x \frac{1}{n}\sum_{k=1}^np_{xy}^{(k)}\)</span> for all states <span class="math inline">\(y \in \sX\)</span>. Taking limit <span class="math inline">\(n \to \infty\)</span> on both sides, and exchanging limit and summation on right hand side using bounded convergence theorem for summable series <span class="math inline">\(\pi\)</span>, we get <span class="math inline">\(\pi_y = \frac{1}{\mu_{yy}}\sum_{x \in \sX}\pi_x =  \frac{1}{\mu_{yy}} &gt; 0\)</span> for all states <span class="math inline">\(y \in \sX\)</span>.</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(\pi\)</span> be the unique positive invariant distribution of Markov chain <span class="math inline">\(X\)</span>, such that <span class="math inline">\(\pi_y = \frac{1}{\mu_{yy}} &gt; 0\)</span> for all states <span class="math inline">\(y \in \sX\)</span>. It follows that the Markov chain <span class="math inline">\(X\)</span> is positive recurrent.</p></li>
 </ul>
-<p>You are encouraged to engage with the material at your own pace - whether by watching the videos, reading the notes, or both.</p>
-<p>We hope you enjoy the learning experience.<br>
-<strong>Happy learning!</strong></p>
+<p>&nbsp;◻</p>
+</div>
+<div class="cor">
+<p><strong>Corollary 5</strong>. An irreducible Markov chain on a finite state space <span class="math inline">\(\sX\)</span> has a unique positive stationary distribution <span class="math inline">\(\pi\)</span>.</p>
+</div>
+<div class="defn">
+<p><strong>Definition 6</strong>. An irreducible, aperiodic, positive recurrent Markov chain is called <strong>ergodic</strong>.</p>
+</div>
+<div class="shaded*">
+<div class="rem">
+<p><strong>Remark 3</strong>. Additional remarks about the stationary distribution <span class="math inline">\(\pi\)</span>.</p>
+<ol type="1">
+<li><p>For a Markov chain with multiple positive recurrent communicating classes <span class="math inline">\(\cC_1, \dots, \cC_m\)</span>, one can find the positive equilibrium distribution for each class, and extend it to the entire state space <span class="math inline">\(\sX\)</span> denoting it by <span class="math inline">\(\pi_k\)</span> for class <span class="math inline">\(k \in [m]\)</span>. It is easy to check that any convex combination <span class="math inline">\(\pi = \sum_{k = 1}^m\alpha_k\pi_k\)</span> satisfies the global balance equation <span class="math inline">\(\pi = \pi P\)</span>, where <span class="math inline">\(\alpha_k \ge 0\)</span> for each <span class="math inline">\(k \in [m]\)</span> and <span class="math inline">\(\sum_{k=1}^m\alpha_k = 1\)</span>. Hence, a Markov chain with multiple positive recurrent classes have a convex set of invariant probability measures, with the individual invariant distribution <span class="math inline">\(\pi_k\)</span> for each positive recurrent class <span class="math inline">\(k \in [m]\)</span> being the extreme points.</p></li>
+<li><p>Let <span class="math inline">\(\mu(0) = e_x\)</span>, that is let the initial state of the positive recurrent Markov chain be <span class="math inline">\(X_0 = x\)</span>. Then, we know that That is, <span class="math inline">\(\pi_y\)</span> is limiting average of number of visits to state <span class="math inline">\(y \in \sX\)</span>.</p></li>
+<li><p>If a positive recurrent Markov chain is aperiodic, then limiting probability of being in a state <span class="math inline">\(y\)</span> is its invariant probability, that is <span class="math inline">\(\pi_y = \lim_{n \to \infty}p_{xy}^{(n)}\)</span>.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="computing-invariant-distribution" class="level1">
+<h1>Computing invariant distribution</h1>
+<p>When the state space <span class="math inline">\(\sX\)</span> is finite, one can find left eigenvector of probability transition matrix <span class="math inline">\(P\)</span> for the largest eigenvalue&nbsp;<span class="math inline">\(1\)</span>. This is the invariant distribution that satisfies the global balance equation <span class="math inline">\(\pi = \pi P\)</span>.</p>
+<div class="defn">
+<p>Consider a time homogeneous positive recurrent Markov chain <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span> with probability transition matrix <span class="math inline">\(P\)</span> and invariant distribution <span class="math inline">\(\pi \in \cM(\sX)\)</span>. For any two disjoint sets <span class="math inline">\(A, B \subseteq \sX\)</span>, the probability flux from set of nodes <span class="math inline">\(A\)</span> to set of nodes <span class="math inline">\(B\)</span> is defined as <span class="math inline">\(\Phi(A,B) =\sum_{x \in A}\sum_{y \in B}\pi_xp_{xy}\)</span>.</p>
+</div>
+<div class="rem">
+<p>The probability flux from a single node <span class="math inline">\(x\)</span> to single node <span class="math inline">\(y\)</span> is denoted by <span class="math inline">\(\Phi(x,y) = \pi_xp_{xy}\)</span>.</p>
+</div>
+<div class="defn">
+<p>For a time homogeneous Markov chain <span class="math inline">\(X:\Omega\to\sX^{\Z_+}\)</span> with probability transition matrix <span class="math inline">\(P\)</span> represented as the weighted transition graph <span class="math inline">\(G = (\sX, E, w)\)</span>, a <strong>cut</strong> is defined as the partition <span class="math inline">\((\sX_1,\sX_2)\)</span> of nodes.</p>
+</div>
+<div class="lem">
+<p>Probability flux balances across cuts.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> A cut for the state space <span class="math inline">\(\sX\)</span> is given by a partition <span class="math inline">\((\sX_1,\sX_2)\)</span>. We show that <span class="math inline">\(\Phi(\sX_1,\sX_2) = \Phi(\sX_2,\sX_1)\)</span>. To this see, we observe that by exchanging sums from the monotone convergence theorem, and exchanging <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> as running variables, we can write the probability flux <span class="math inline">\(\Phi(\sX_1,\sX_2)\)</span> as&nbsp;◻</p>
+</div>
+<div class="cor">
+<p>For any states <span class="math inline">\(y \in \sX\)</span>, we have <span class="math inline">\(\pi_y(1-p_{yy}) = \pi_y \sum_{x \neq y}p_{yx} = \sum_{x \neq y}\pi_xp_{xy}\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> It follows from probability flux balancing across the cut <span class="math inline">\((\set{y}, \set{y}^c)\)</span>.&nbsp;◻</p>
+</div>
 
 
 </section>
@@ -1116,10 +1186,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Probability Foundations/lecture-22.html" class="pagination-link" aria-label="Communicating classes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Communicating classes</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Probability Foundations/lecture-01.html" class="pagination-link" aria-label="Sample and Event Space">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sample and Event Space</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Probability Foundations/lecture-24.html" class="pagination-link" aria-label="Poisson Point Processes">
+        <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Poisson Point Processes</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1128,5 +1201,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
