@@ -1,15 +1,15 @@
 ---
 layout: project_page
 title: "SPARC Workshop on Distributed Learning and Optimization"
-img: 
+img: assets/img/workshops/2026/SPARCWorkshopJuly2026Poster1.jpg
 importance: 11
 category: ""
 showcase: true
 ---
 
-<!--<div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/2026/CNI_TechnicalWorkshop_13April2026_Poster.png"/>
-</div>-->
+<div class="container-fluid mb-2 mt-2">
+      <img class="img-fluid" src="/assets/img/workshops/2026/SPARCWorkshopJuly2026Poster1.jpg"/>
+</div>
 <p>The SPARC Workshop on Distributed Learning and Optimization is a one-day workshop featuring invited talks on recent advances in distributed learning, optimization, and related areas, bringing together researchers and students for technical discussions and research exchange. </p>
 
 #### 🗓️ Date
