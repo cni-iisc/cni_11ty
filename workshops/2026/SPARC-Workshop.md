@@ -32,6 +32,7 @@ showcase: true
 
 <p>Deadline:Last Date of Registration 09 July 2026, 12:00 PM</p>
 
+#### Workshop Schedule: (Tentative)
 
 <style>
 /* Container */
@@ -39,7 +40,6 @@ showcase: true
   max-width: 900px;
   margin: 40px auto;
   padding: 10px;
-  display:none;
 }
 
 /* Schedule Card */
@@ -186,244 +186,115 @@ body.dark .close-btn {
 <div class="tab-content">
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/ayalvadi_ganesh.png"
-       data-title="Prof. Ayalvadi Ganesh (University of Bristol)"
-       data-talktitle="Gossiping on Random Graphs"
-       data-abstract="Consider a set of agents, each of whom has a single message to convey to all other agents. The messages are all of the same length. Time is divided into rounds, and each agent may broadcast a single message. Agents are represented as nodes of a directed communication graph, and a broadcast is received error-free by all (out)-neighbours of the broadcasting node. The problem is to minimise the number of rounds until all agents have received all messages. We study this problem on directed Erdos-Renyi random graphs. "
-       data-speakerbio="Ayalvadi Ganesh is Professor of Applied Probability at the University of Bristol. He received his B.Tech from IIT-Madras in 1988 and his PhD from Cornell in 1995. His research interests include large deviations, queueing theory, random graph dynamics, and decentralised algorithms. He won the INFORMS Best Publication Award in 2005 and the ACM Sigmetrics Best Paper Prize in 2010."
-       data-link="https://people.maths.bris.ac.uk/~maajg/">   
-    <time>10:00AM – 10:20AM</time>
+       data-image=" "
+       data-title="Prof. P. N. Karthik (IIT Hyderabad)"
+       data-talktitle="Asymptotically Optimal Clustering with Dueling Feedback"
+       data-abstract="In this talk, I will cover a new analysis framework for clustering M items into an unknown number of K distinct groups using noisy and actively collected responses. At each time step, an agent is allowed to query pairs of items and observe bandit binary feedback. If the pair of items belongs to the same (resp.\ different) cluster, the observed feedback is 1 with probability p>1/2 (resp. q<1/2). I will present a fundamental lower bound on the expected number of queries needed to achieve a desired confidence in the clustering accuracy, formulated as a sup-inf optimization problem. Building on this theoretical foundation, I will showcase the design of an asymptotically optimal algorithm in which the stopping criterion involves an empirical version of the inner infimum -- the Generalized Likelihood Ratio (GLR) statistic -- being compared to a threshold. Towards the end, I will present a computationally feasible variant of the GLR statistic and show that its performance gap to the lower bound can be accurately empirically estimated and remains within a constant multiple of the lower bound."
+       data-speakerbio="Karthik is an Assistant Professor in the Department of Artificial Intelligence at the Indian Institute of Technology, Hyderabad (IIT Hyderabad). Prior to this, he was a Research Fellow in the Institute of Data Science at the National University of Singapore (NUS). Prior to joining NUS, he obtained the Ph.D. and Master of Science (Engineering) dual degree from the Department of Electrical Communication Engineering at the Indian Institute of Science (IISc), Bengaluru. His research interests are broadly in probability theory, statistics, reinforcement learning, and multi-armed bandits. He is a recipient of the 2026 Prime Minister's Early Career Research Grant (PMECRG) from the Anusandhan National Research Foundation (ANRF)."
+       data-link=" ">   
+    <time>08:30AM – 09:00AM</time>
     <div class="schedule-content">
-      <div class="speaker">Talk-1 Prof. Ayalvadi Ganesh (University of Bristol)</div>
+      <div class="speaker">Talk-1 Prof. P. N. Karthik (IIT Hyderabad)</div>
     </div>
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/SteveHailes.png"
-       data-title="Prof. Steve Hailes (University College London)"
-       data-talktitle="Towards Trustworthy Wi-Fi Sensing: Systematic Evaluation of Deep Learning Model Robustness to Adversarial Attacks"
-       data-abstract="This talk examines adversarial robustness in Wi-Fi Channel State Information (CSI)-based sensing for human activity recognition (HAR) and identification (HID). Using a unified evaluation framework that we develop to measure and compare robustness across five diverse architectures and four public datasets, it systematically evaluates white-box, black-box transfer, and universal attacks alongside defense strategies like Adversarial Training and Randomized Smoothing. The results show that model capacity does not guarantee resilience - simple architectures often outperform high-capacity ones - and that vulnerability is fundamentally task-dependent. Crucially, enforcing physics-guided signal constraints drastically reduces attack success rates compared to unconstrained perturbations, suggesting that standard digital attacks may overestimate real-world vulnerabilities. These findings, together with the framework itself, establish foundational design principles for secure and deployable edge-based wireless sensing systems. The work covered in this talk was conducted by Shreevanth Krishnaa Gopalakrishnan, a PhD student in the Department of Computer Science at UCL, and is under submission to MobiCom 2026."
-       data-speakerbio="Stephen Hailes is Professor of Wireless Systems and was, until 18 months ago, Head of the Department of Computer Science at UCL. He has broad interests in sensing, communication and security but his main research foci at present are in AI and in cybersecurity, including the cybersecurity of OT systems.  He is a Director of the Centre for Doctoral Training in Cyber-Physical Risk. Shreevanth Gopalakrishnan is one of his PhD students from the CDT in Cybersecurity."
+       data-image=" "
+       data-title="Dr. Kartikeyan Shanmugam (Google DeepMind India)"
+       data-talktitle="To be announced"
+       data-abstract="To be announced"
+       data-speakerbio="To be announced"
        data-link="https://profiles.ucl.ac.uk/11262-steve-hailes">   
-    <time>10:20AM - 10:40AM</time>
+    <time>09:00AM - 09:30AM</time>
     <div class="schedule-content">
-      <div class="speaker">Talk-2 Prof. Steve Hailes (University College London) </div>
+      <div class="speaker">Talk-2 Dr. Kartikeyan Shanmugam (Google DeepMind India)</div>
     </div>
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/Dr.DilipKrishnaswamy.jpg"
-       data-title="Dr. Dilip Krishnaswamy (CDoT) "
-       data-talktitle="Resilient and Distributed Space Networking and Computing"
-       data-abstract="This talk explores possibilities for resilient and distributed space computation and networking utilizing satellites in different hierarchical orbits around the planet. In particular, possibilities for different orbital configurations to serve a country are discussed, and possibilities for AI inferencing  and NTN intelligent controllers in space are also discussed. Alternate space routing paths are discussed as well. In general, the talk explores possibilities for resilient and distributed connectivity, computing, networking and storage."
-       data-speakerbio="Dilip Krishnaswamy has led the architecture, design, and development of engineering platforms & products at Intel Corp, Qualcomm Research, IBM Research, and Jio Platforms. He received his PhD degree in Electrical Engineering from the University of Illinois at Urbana-Champaign. He is an alumnus of IIT Madras where he received a B.Tech. degree in Electronics and Communication Engineering. He is an inventor on 80+ granted patents and has authored 80+research publications. He is presently serving as Executive Vice-President at C-DOT (Centre for Development of Telematics), Bangalore, India, where he is leading Advanced-5G Engineering and 6G Innovation efforts."
+       data-image=" "
+       data-title="Prof. Kunal Chowdhury (IISc Bengaluru)"
+       data-talktitle="A Minima-Preserving Smooth Relaxation for Quadratic Binary Optimization."
+       data-abstract="Quadratic binary optimization provides a common framework for combinatorial optimization problems such as MAX-CUT, number partitioning, and assignment, as well as for Ising-type models arising in computational physics. These problems are generally intractable, and even designing approximate methods that remain effective and scalable for large instances is challenging. Continuous relaxations, such as the famous Goemans-Williamson semidefinite relaxation for MAX-CUT, offer a powerful path forward, but they quickly become infeasible as the problem size grows.To obtain a more scalable approach, we develop a smooth penalty-based relaxation that can be optimized using first-order methods such as ADAM. Our main result is a landscape-equivalence theorem under explicit conditions on the penalty. It establishes a one-to-one correspondence between the local minima of the smooth problem and the one-flip local minima of the original binary problem. We present numerical experiments showing that the method works well in practice, scales to large problems, and is competitive with existing solvers across several benchmarks. Time permitting, we will look at some open problems."
+       data-speakerbio="Kunal Chaudhury is a Professor at the Indian Institute of Science, working at the intersection of signal processing, computational imaging, mathematical optimization, and machine learning. His research spans inverse problems, image reconstruction and restoration, denoising and filtering, image fusion, registration, compressed sensing, sensor-network localization, and optimization theory and algorithms."
        data-link="">   
-    <time>10:40AM - 11:00AM</time>
+    <time>09:30AM - 10:00AM</time>
     <div class="schedule-content">
-      <div class="speaker">Talk-3 Dilip Krishnaswamy (CDoT) </div>
+      <div class="speaker">Talk-3 Prof. Kunal Chowdhury (IISc Bengaluru)</div>
     </div>
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/prem_singh.JPG"
-       data-title="Prof. Prem Singh (IIIT Bangalore)"
-       data-talktitle="From Theory to Field: End-to-End Design, Testing, and Deployment of RIS Systems"
-       data-abstract="Reconfigurable Intelligent Surfaces (RIS) are emerging as a key enabler for shaping wireless propagation environments in next-generation communication systems. While extensive research has focused on theoretical models and algorithms, translating these ideas into practical, deployable systems remains a significant challenge. This talk presents an end-to-end perspective on building RIS systems from scratch, encompassing design, prototyping, testing, and real-world deployment. We discuss critical aspects such as hardware-software co-design, control and reconfiguration strategies, calibration, and over-the-air validation. In addition, the talk highlights the associated challenges encountered in practice. "
-       data-speakerbio=" Prem Singh (Senior Member, IEEE) received the M.Tech. and PhD degrees in electrical engineering from the Indian Institute of Technology Kanpur, India. He is currently a Faculty Member with IIIT Bangalore. He is the Co-Founder and the Director of Mantiswave Networks Pvt., Ltd., which received the Best Startup in Faculty 2025 award by TIDES Business Incubator, IIT Roorkee. He received the Faculty Award for Research Excellence at IIIT Bangalore for high-impact-factor journals and conference publications from 2022–2025. His two recent research articles on OTFS and Delay-Doppler signal processing are among the best readings of the IEEE Communications Society. His PhD thesis received the Best Thesis Award in IEEE CICT 2020, organised by IIIT Kancheepuram, India, and he was also one of the finalists (top two) for the Indian National Academy of Engineering (INAE) Innovative Student Project Award 2021. His current interests include embedded system design for 5G and beyond wireless systems, including FPGA-based hardware design, 3GPP-compliant firmware design, and testbed setup. His research interests include transceiver design for 5G and beyond wireless systems."
+       data-image=" "
+       data-title="Prof. Nikhil Karamchandani (IIT Bambay)"
+       data-talktitle="To be announced"
+       data-abstract="To be announced"
+       data-speakerbio="To be announced"
        data-link="">   
-    <time>11:00AM - 11:20AM</time>
+    <time>10:00AM - 10:30AM</time>
     <div class="schedule-content">
-      <div class="speaker">Talk-4 Prof. Prem Singh (IIIT Bangalore)</div>
+      <div class="speaker">Talk-4 Prof. Nikhil Karamchandani (IIT Bombay)</div>
     </div>
   </div>
 
   <div class="schedule-item break">
-    <time>11:20 – 11:40</time>
+    <time>10:30 – 11:00</time>
     ☕ Tea/Coffee Break
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/anurag-kumar.jpg"
-       data-title=" Prof. Anurag Kumar (IISc) "
-       data-talktitle="Applications-Aware Optimal Joint Scheduling Over Wireless Access "
-       data-abstract="Emerging and future wireless access networks will have to support a variety of diverse applications, with various quality-of-service requirements, such as online edge-based control of robots, wireless audio for auditoria, and real-time surveillance video at scale. Despite the 10s of Gbps physical layer bit rates in both 5G/6G networks and Wi-Fi networks,  actual end-to-end performance guarantees are a challenge due to channel variability, cochannel interference, user mobility, the need for complex measurements for optimal operation, etc. In this setting,  efficient and dynamic resource sharing for the emerging applications over wireless access networks poses many challenges. We have been working on both the above technologies. For 5G, we will present our problem formulation and some results on optimal joint scheduling for multiple flow types, initially focusing on full-buffer elastic (FBE) flows and hard deadline real-time (HDR) flows. For WI-Fi, we have developed an overlay orchestration approach that can provide fairness among TCP flows, at the same time ensuring that downlink and uplink real-time UDP flows obtain their required performance guarantees. We will provide a quick overview of one of our experimental demonstrations."
-       data-speakerbio="Prof. Anurag Kumar (B.Tech (1977) IIT Kanpur, PhD (1981) Cornell Univ.) was a Member of Technical Staff in AT&T Bell Laboratories (1981-1988), before returning to India and joining the Indian Institute of Science (IISc) as a faculty member in the ECE Department. He was the Director of IISc during 2014-2020.  Since 1st January, 2024, he is an Indian National Science Academy (INSA) Distinguished Professor. He has published about 200 peer reviewed papers in journals and conferences, in the area of performance analysis, optimisation, and control of communications networks and distributed systems, and has coauthored two major books that have been used around the world. He is a recipient of the J.C. Bose National Fellowship, awarded by the Department of Science Technology, for the period 2011-2021."
-       data-link="https://eecs.iisc.ac.in/people/anurag-kumar/">   
-    <time>11:40AM - 12:00PM </time>
+       data-image=" "
+       data-title="Prof. Salim El Rouayheb (Rutger University)"
+       data-talktitle="To be announced"
+       data-abstract="To be announced"
+       data-speakerbio="To be announced"
+       data-link=" ">   
+    <time>11:00AM - 11:30PM </time>
     <div class="schedule-content">
-      <div class="speaker">Talk-5  Prof. Anurag Kumar (IISc)</div>
+      <div class="speaker">Talk-5  Prof. Salim El Rouayheb (Rutger University)</div>
     </div>
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/AnindyaSaha.png"
-       data-title="Anindya Saha (Tejas Networks) "
-       data-talktitle="Discovery Block for Service-Aware and Energy-Efficient Networks "
-       data-abstract="What if your device could 'peek' at 6G services before committing to a full connection? This talk unveils the Discovery Block, a lightweight physical-layer preamble that replaces 5G's 'blind searches' with intelligent, service-aware filtering. We explore architectures that slash energy waste and enable seamless spectrum sharing."
-       data-speakerbio="Anindya Saha is a leader in wireless communications, currently serving as Vice President (Wireless Group) and CTO Office member at Tejas Networks. He spearheads advanced technology initiatives for 5G and 6G in this role, bringing his nearly 29 years of experience. He has held key roles at Texas Instruments, Broadcom, and Saankhya Labs (CTO). He specializes in semiconductor design, DSP architecture, and wireless systems, contributing to the development of 5G radios, Broadcast receivers, and Satellite IoT solutions. Saha holds several US and Indian patents, has authored more than 10 IEEE publications, and actively participates in 3GPP standards. Notable achievements include the TSDSI Hall of Fame Award (2022) and leading the IEEE Bangalore Chapter to receive the 2024 APAC Chapter Achievement Award. He is a Senior Member of IEEE and a Fellow of IETE and IEI. He holds an M.E. from IISc Bangalore and a B.Tech. from IIT-BHU (Gold Medal). "
+       data-image=" "
+       data-title="Prof. Chandramani Singh (IISc Bengaluru)"
+       data-talktitle="To be announced"
+       data-abstract="To be announced"
+       data-speakerbio="To be announced"
        data-link="">   
-    <time>12:00PM - 12:20PM </time>
+    <time>11:30PM - 12:00PM </time>
     <div class="schedule-content">
-      <div class="speaker">Talk-6 Anindya Saha (Tejas Networks)</div>
+      <div class="speaker">Talk-6 Prof. Chandramani Singh (IISc Bengaluru)</div>
     </div>
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/"
-       data-title=" Prof. Huzur Saran (IITD) "
-       data-talktitle="AI-Driven Smart Radio Environments for 6G: Integrating RIS, ISAC, and Semantic Networking for Next-Generation Wireless Systems"
-       data-abstract="The evolution from 5G to 6G involves a rethinking of wireless system design, moving from connectivity-centric architectures to intelligent, adaptive, and context-aware networks. In our at IITD we have been working on comprehensive R&D framework for next-generation wireless systems centered upon AI-driven Smart Radio Environments (SREs), leveraging Reconfigurable Intelligent Surfaces (RIS), Integrated Sensing and Communication (ISAC), and Semantic-Aware Networking (SAN) using Smart Edge Intelligence. The proposed architecture adopts a layered design comprising: (i) a Physical Foundation Layer enabling programmable wireless environments through RIS and advanced spectrum utilization (FR2/FR3), (ii) an Efficiency Layer focused on semantic communication to optimize bandwidth and support massive machine-type communications (mMTC), (iii) a Service Layer enabling ultra-low latency applications such as haptics via edge computing, and (iv) a Security and Management Plane employing AI/ML for device profiling and threat detection enhanced by our Smart Edge Intelligence framework which has been demonstrated in the past. A key innovation lies in shifting intelligence from end devices to the environment, enabling simpler, cost-effective IoT deployments while maintaining high performance and interoperability. The work includes the design and prototyping of RIS hardware, development of open-source emulators, channel estimation frameworks, and ISAC-enabled platforms, along with contributions to standardization bodies such as 3GPP, TSDSI, and ITU. This integrated approach positions the system as a scalable and standards-aligned pathway toward early 6G realization, supporting applications in industrial IoT, tactile internet, and intelligent sensing. The outcomes contribute to indigenous technology development, standards-essential patents, and the establishment of a national ecosystem for AI-native telecom innovation. Some of the above Initiatives are presently funded as a joint Multi-Institutional project by the Ministry of Information & Electronics Technology (MEITY) as a INR 1000 Million project."
-       data-speakerbio="Prof. Huzur Saran is a Professor in the Department of Computer Science IIT Delhi. He was been during his career Head of the Bharti School of Telecom Technology,  head Computer Science & Khosla School of IT and Incharge of the Centre of Excellence in Cyber Security at IIT Delhi. Prior to joining IIT Delhi in 1990, he did his Ph.D in Computer Science from the University of California, Berkeley in 1989  and, a B.Tech from IIT Delhi in 1983. His research is focused on Wireless Networks, Computer Systems & Security and Algorithms. Prof. Saran has been actively working in 5G/6G wireless technologies. He lead the 5G Testbed Project at IITD funded by the Deportment of Telecom. During 2000-2002 he was a Visiting Professor at the Information Systems Lab, Stanford where he worked on the media access control layer of an early 4G wireless system."
+       data-image=" "
+       data-title="Prof. Amitalok Budkuley (IIT Kharagpur)"
+       data-talktitle="Interactive Bayesian Deception under Strategic Timing"
+       data-abstract="Et tu, Brute?, Whether or not Shakespeare's famous words were ever spoken, they capture a timeless idea: deception is often most consequential when the truth is discovered too late. Many modern sequential decision problems share this feature, one must decide not only what to believe, but when to act. In this talk, we will introduce our framework for interactive Bayesian deception under strategic timing, where an informed sender strategically designs the flow of information available to a receiver over time, while the receiver actively probes for information and decides when to declare that an underlying state of the world has changed. This framework combines ideas from Bayesian persuasion, quickest change detection, optimal stopping, and stochastic control. We will characterize the equilibrium structure of this interaction. The receiver's optimal strategy is shown to consist of adaptive information acquisition coupled with a belief-dependent stopping rule. The sender's dynamic information-design problem can then be reduced to an optimization over posterior beliefs, yielding a concavification characterization in the spirit of Bayesian persuasion, but in a setting where the receiver's action is itself a sequential stopping decision. This is joint work with Arya Choudhari (IIT Kharagpur) and was presented at AAMAS 2026 this year."
+       data-speakerbio="Amitalok J. Budkuley is an assistant professor in the Dept. of Electronics and Electrical Communication Engineering (E & ECE) at IIT Kharagpur. He received his B. Engg. from Goa University, in 2007, and his M. Tech. and Ph. D. degree in Electrical Engineering from the Indian Institute of Technology Bombay, Mumbai, India in 2009 and 2017 respectively. In between, he spent some time in industry working with Cisco Systems Inc.. From 2016 to 2019, he was at the Dept. of Information Engineering, The Chinese University of Hong Kong (CUHK) as a research assistant and then as a post-doctoral fellow, following which he joined IIT Kharagpur in his current designation. His research interests include information theory and security, signal processing for distributed communication, control and decision-making."
        data-link="">   
-    <time>12:20PM- 12:40PM </time>
+    <time>12:00PM- 12:30PM </time>
     <div class="schedule-content">
-      <div class="speaker">Talk-7  Prof. Huzur Saran (IITD)</div>
+      <div class="speaker">Talk-7  Prof. Amitalok Budkuley (IIT Kharagpur)</div>
     </div>
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/SheelaPrabhakar.png"
-       data-title="Sheela Prabhakar (ArtPark)"
-       data-talktitle="QoS Support in Private 5G Network (for Efficient UA/GVs Operation)"
-       data-abstract="Private 5G networks have significant advantages over traditional or alternate technologies as communication backbone for deployment of UGVs / UAVs for wide range of applications covering industrial, defence, enterprise, etc. One such advantage crucial for UGVs / UAVs operation is the QoS provided by the network. In this talk we share our experience from evaluation of QoS features in Private 5G Networks for deployment of UGVs and UAVs, some of the hurdles faced and our approach in addressing them.  "
-       data-speakerbio="Sheela Prabhakar is a seasoned technology and business leader with a distinguished career spanning nearly four decades in Wired and Wireless Communications, Data Communication Systems, Cellular Networks, and Multimedia Technologies. With a Bachelor’s degree in Electronics & Communication Engineering and a Master’s degree from the Indian Institute of Science (IISc), she combines deep technical expertise with proven leadership in steering complex technology initiatives from concept to successful market-ready products. Her professional journey has made significant contributions across diverse industry domains — from Defence to Industrial, Surveillance, and medical applications — delivering solutions that have reached customers worldwide. Currently, she heads the Government of Karnataka–sponsored Centre of Excellence for Wired & Wireless Technologies at ARTPARK–IISc, where she is spearheading the setup of advanced 5G testbeds and use case laboratories. In the past, She held senior leadership roles at Ittiam Systems, Lucent Technologies, and Bharat Electronics. "
+       data-image=" "
+       data-title="Prof. Sundeep Chepuri (IISc Bengaluru)"
+       data-talktitle="To be announced"
+       data-abstract="To be announced"
+       data-speakerbio="To be announced"
        data-link="">   
-    <time>12:40PM - 01:00PM </time>
+    <time>12:30PM - 01:00PM </time>
     <div class="schedule-content">
-      <div class="speaker">Talk-8 Sheela Prabhakar (ArtPark)</div>
+      <div class="speaker">Talk-8 Prof. Sundeep Chepuri (IISc Bengaluru)</div>
     </div>
   </div>
 
-  <div class="schedule-item break">
-    <time> 01:00PM – 02:00PM</time>
-    🍽 Lunch Break
-  </div>
 
-  
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/GerardParr.jpg"
-       data-title="Prof. Gerard Parr (University of East Anglia)  "
-       data-talktitle="Threats to UK-India International Submarine Telecoms Cables from Natural/Adversary/Human Attack"
-       data-abstract="Protection of Critical National Infrastructure has taken on increased importance and attention in recent years.  With recent world and geo-political events, the importance of maintaining our International Interconnectors has increased dramatically. Whilst there are many challenges in monitoring and protecting on-land infrastructure (water, electricity, oil, gas, telecoms), there are particular areas of risk and interest associated with the sub-sea digital network interconnects that service the UK and India.  Moreover, the UK and India serve as landing points for a number of strategically important communications interconnects for the rest of Europe and Asia.  The importance of this Critical Infrastructure to the economy of India and the UK cannot be overstated. This presentation will give a summary overview of the importance of Submarine Telecoms infrastructure and some of the challenges that exist to provide their resilience. It will also solicit some suggestions for addressing these challenges under the auspices of the UK-India Future Networks Initiative."
-       data-speakerbio="Gerard is a Full Professor in Telecommunications Engineering and has been Head of School of Computing Sciences at the University of East Anglia (UEA) in Norwich, Norfolk, UK from 2016-2023.  His role involved a range of senior management responsibilities covering Teaching, Research, Innovation and Outreach.  He holds a PhD in Self-Stabilising Protocols from Ulster University in Northern Ireland, aspects of which were completed with UCL and one of the founding Fathers of the Internet (Professor Jon Postel) whilst a Visiting Research Scientist at the DARPA/University of Southern California Information Sciences Institute in Marina Del Rey, Los Angeles. Within his academic career, areas of research include Wireless Sensor Clouds, UAVs for Disaster Response Communications, ICT for the Rural Economy, delay-sensitive protocols, energy-aware autonomic networking and IoT-edge computing. He has attracted several £millions of external research and commercial funding and has advised governments on the allocation of funding to large-scale projects valued in total at approximately £4 billion. His industrial collaborations have included companies such as BT, Intel, IBM, Aviva, Ericsson, Siemens, InfoSys, Wipro, Tejas Networks, Vodafone, ARM and SAP.  Professor Parr is an invited member of the Peer Review College of the esteemed UK Government funding agency- the Engineering & Physical Sciences Research Council (EPSRC). His academic research collaborations include MIT, Georgia Institute of Technology, University of Arizona, UC Berkeley, UC San Diego, USC-ISI Los Angeles, University of Florida, University College London, Southampton, Surrey, QMUL, Otto von Guericke University Magdeburg, Oxford, St Andrews, Exeter, Lancaster , Cambridge, Beijing University of Posts & Telecommunications (BUPT), Tsinghua University, Peking University and Indian Institutes of Technology in Mumbai, Madras, Kanpur, Hyderabad, Delhi, Mandi and IISc Bangalore. He was previously appointed as a Visiting Professor to the Science Foundation Ireland/CTVR at Trinity College Dublin and to the Emirates-BT Innovation Centre (EBTIC) at Khalifa University in Abu Dhabi- UAE. He was previously Chief Scientific Advisor to Project Kelvin, an initiative led by UK and Irish governments.  This led to the installation of a submarine telecommunications cable connecting the north coast of Northern Ireland and Dublin to a transatlantic submarine cable linking North America with Southport in England, and onwards to continental Europe. He has been International Scientific Advisor to the UK EPSRC National Centre for Doctoral Training in Communications Engineering at the University of Bristol. He was appointed as Senior Guest Editor for prestigious IEEE Journal on Selected Areas of Communications (JSAC) for a Special Issue on Communications Challenges and Dynamics in UAVs. He has extensive experience of working with developing economies, in particular, India, where he was the UK Academic co-ordinator for the major EPSRC-DST India-UK Advanced Technology Centre in Next Generation Networks Systems and Services which was the largest collaboration of its kind between UK and India in the ICT sector attracting total investment of over £20 million and also helped establish a Virtual Graduate Research School for 67 PhD students under the UKIERI Programme. Gerard was awarded an MBE in Queens New Year Honours for 2018 for contributions to Telecommunications Infrastructure in Northern Ireland.  During January 2020 Prof Parr was elected to the Strategic Advisory Committee for the UK Government UK Research and Innovation (UKRI) – (EPSRC) ICT Programme to assist with strategic developments, funding panels and identification of funding priorities.  Most recently Gerard has been successful in attracting Co-I funding for a 5-year EPSRC Next Stage Digital Economy Hub called DIGIT (Digital-Innovation-Growth-Impact-Transformation) valued over £12 million which will explore methodologies and business impact of Digital Transformation in Large Organisations. During 2021 Gerard was also successful as PI to attract funding for the “UK-India Future Networks Initiative” with academic institutions IISc Bangalore, IIT Delhi, UCL, Kings College, Surrey, Southampton. Most recently in December 2022 he was successful as a Co-PI on a bid to UKRI-ESRC concerning Digital Technology in Teacher Agency. The £5.3 million fund will support a total of nine projects. He is also a Member of the UKRI-EPSRC Digital Security & Resilience Advisory Group. "
-       data-link="https://research-portal.uea.ac.uk/en/persons/gerard-parr/">   
-    <time>02:00PM - 02:20PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-9 Prof. Gerard Parr (University of East Anglia) </div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/SrivathsaAcharya.jpg"
-       data-title="Srivathsa Acharya (IISc)"
-       data-talktitle="Product-Code-Based Outer Coding at the PHY-MAC Layer for Reliable, Low-Latency, Cellular Communication"
-       data-abstract="A novel outer-coding scheme, termed Product- Code-Based Outer Coding at PHY-MAC Layer (PROMAC) for 5G and beyond is presented, that enables reliable communication within a single transmission time interval in the presence of two or more datalink paths. It is shown through simulations that this scheme provides an improvement of 10dB over Packet Data Convergence Protocol (PDCP) duplication over a commonly employed 3GPP channel model. The proposed scheme employs a short binary code (SBC) to carry out outer coding at the Medium Access Control (MAC) layer. Innovative features of the proposed scheme that also lead to improved performance include: identifying packets with low-density-parity-check (LDPC) code blocks, architecting the system so that the combination of LDPC codewords and outer code form a product code that can be iteratively decoded, carrying out soft-decision decoding of this outer code and requiring the physical (PHY) layer to pass on all correctly-decoded code blocks to the MAC layer, even if the entire Transport Block has not been correctly decoded. Some further enhancements of this scheme are also presented."
-       data-speakerbio="Srivathsa Acharya earned his B.Tech. from NITK, Surathkal in 2005 and his M.E. from IISc, Bangalore in 2007. He is currently a Senior Principal Communication Systems Technical Lead at MaxLinear, Bangalore, India, specializing in digital signal processing (DSP) for 5G radio-unit (RU) solutions. Simultaneously, he is pursuing his Ph.D. (ERP) at IISc Bangalore under the supervision of Prof. P. Vijay Kumar, researching codes for low-latency geo-distributed storage and packet-level erasure codes for 5G reliable low-latency communication."
-       data-link="https://ece.iisc.ac.in/member/srivathsa-acharya/">   
-    <time>02:20PM - 02:40PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-10 Srivathsa Acharya (IISc)</div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/Prof.NeeleshMehta.jpg"
-       data-title="Prof. Neelesh Mehta (IISc) "
-       data-talktitle="Low-Overhead Parametric Estimation for RIS-Aided Near-Field Communications "
-       data-abstract="The push towards larger aperture arrays, more antennas, larger reflective intelligent surfaces (RISs), and higher carrier frequencies has made near-field an important regime of communication in 6G systems. Wavefronts that traditionally are planar in the far-field become spherical in the near-field. Consequently, the steering vector of the near-field channel depends not only on the angle-of-arrival/departure between the transmitter and the receiver, but also on the distance. This renders conventional far-field-based channel estimation schemes suboptimal or even inapplicable for near-field communications. We develop new parametric channel estimation schemes for RIS-aided communications when the user lies in the near-field of the RIS. Such schemes are appealing because the number of pilots required to estimate the channel between the RIS and the user scales with the number of channel parameters, which is small, rather than with the number of RIS elements, which is much larger.  However, channel estimation errors lead to a sub-optimal RIS configuration and a lower RIS beamforming gain, and also affect data demodulation. We characterize the mean-square error in channel estimation and the achievable rate in the presence of estimation errors. We derive new insights into the fundamental trade-off between training and data transmission in the near field. The proposed schemes achieve a lower mean-square channel estimation error and higher data rates than state-of-the-art schemes. "
-       data-speakerbio="Neelesh B. Mehta is a Professor and Chair of the Electrical Communication Engineering department at the Indian Institute of Science, Bengaluru. His research group focuses on the design, modeling, and optimization of 5G and beyond cellular systems and next-generation WiFi systems. He is a Fellow of the IEEE, the Indian Academy of Sciences, the Indian National Science Academy, the Indian National Academy of Engineers, and the National Academy of Sciences India. He is a recipient of the J C Bose Fellowship, Shanti Swarup Bhatnagar Award, and other awards. He currently serves as the Chair of IEEE ComSoc’s Distinguished Lecturer Selection Committee. He has served on ComSoc’s Board of Governors, Nominations and Elections Committee, and Awards Committee, and has held editorial and oversight positions in the IEEE Transactions on Wireless Communications. "
-       data-link="">   
-    <time>02:40PM  - 03:00PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-11 Prof. Neelesh Mehta (IISc)</div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/DeepaVenkitesh.png"
-       data-title="Prof. Deepa Venkitesh (IITM) "
-       data-talktitle="Scaling Capacities- Learnings from AOC Testbed at IITM"
-       data-abstract="The relentless surge in global data traffic necessitates a shift beyond the fundamental capacity limits of single-mode fibers, driving the exploration of Space Division Multiplexing (SDM) at the AOC (Advanced Optical Communication) Testbed at IIT Madras. This talk details the comprehensive lifecycle of Multicore Fiber (MCF)implementation, from the engineering of fiber profiles to minimize inter-core crosstalk to the practical challenges of physical deployment within a controlled testbed environment. We present the results from rigorous data transmission testing of upto 3.2 Tbps per wavelength, and offer our insights into the scalability of next-generation optical infrastructures and the transition of multicore architectures."
-       data-speakerbio="Deepa Venkitesh obtained her Bachelors and Master’s degree in Physics from the University of Kerala and PhD from the Indian Institute of Technology Bombay. She has worked in SAMEER Mumbai, Vivekanand Education Society, Mumbai before joining the Indian Institute of Technology Madras. She is currently a Professor in the Department of Electrical Engineering, IIT Madras. She was bestowed with the Young Faculty Recognition Award of IIT Madras in 2012, and the Abdul Kalam Technology Innovation Fellowship of INAE in 2021. She is Senior Member of OSA, and Editorial Board member of Journal of Lightwave Technology. She was   the Associate Vice President of “Women in Photonics” of the IEEE Photonics Society (2020-2023). She has also served as the National Coordinating Faculty for the Prime Ministers Research Fellowship program of the Govt of India (2022-2024). She is the project lead for the Advanced Optical Communication Testbed project- which is a consortium project funded by the Department of Telecommunications, Govt of India. Her areas of interest are in optical communication including capacity scaling, optical signal processing, continuous variable quantum key distribution and microwave photonics."
-       data-link="https://sites.google.com/a/ee.iitm.ac.in/deepav/">   
-    <time>03:00PM - 03:20PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-12 Prof. Deepa Venkitesh (IITM)</div>
-    </div>
-  </div>
-
-   <div class="schedule-item break">
-    <time> 03:20PM – 03:40PM</time>
-    ☕ Tea/Coffee Break
-  </div>
-
-   
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/SrikrishnaBhashyam.png"
-       data-title="Prof. Srikrishna Bhashyam (IITM)"
-       data-talktitle="Clustering of Data Sequences"
-       data-abstract="We consider the problem of clustering independent and identically distributed (i.i.d.) data sequences generated from unknown probability distributions. The data sequences have to be clustered according to the closeness of the underlying distributions. Clustering of data sequences has applications in several practical problems like network traffic monitoring, anomaly detection, and market segmentation. This problem has been studied in the fixed sample size, sequential and multi-armed bandit settings. We will present algorithms that achieve a fixed confidence level with as few samples as possible from the data sequences. This is joint work with G. Dhinesh Chandran and Kota Srinivas Reddy. "
-       data-speakerbio="Srikrishna Bhashyam (Senior Member, IEEE) received the B.Tech. degree in electronics and communication engineering from IIT Madras, India, in 1996, and the M.S. and Ph.D. degrees in electrical and computer engineering from Rice University, Houston, TX, USA, in 1998 and 2001, respectively. He was a Senior Engineer with Qualcomm, Inc., Campbell, CA, USA, from 2001 to 2003, where he was involved in wideband code division multiple access modem design. Since 2003, he has been with IIT Madras. He is currently a Professor with the Department of Electrical Engineering. His research interests include wireless communication, statistical signal processing, and information theory. He served as an Editor for IEEE Transactions on Wireless Communications from 2009 to 2014, and IEEE Transactions on Communications from 2017 to 2024. "
-       data-link="https://www.ee.iitm.ac.in/~skrishna/">   
-    <time>03:40PM - 04:00PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-13 Prof. Srikrishna Bhashyam (IITM)</div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/SreenathRamanath.png"
-       data-title="Dr. Sreenath Ramnath (Lekha Wireless) "
-       data-talktitle="Mobility and Scheduling Strategies in Airborne Communication Systems"
-       data-abstract="We consider a local area deployment of UAVs, tasked to deliver packages. We focus on mobility and scheduling strategies. Taking some examples, we provide an insight into the opportunities and challenges that arise in such a deployment."
-       data-speakerbio="Sreenath has over three decades of R&D experience in the Wireless industry. He holds a Masters degree from the Indian Institute of Science (IISc), Bangalore, and a PhD in Computer Science & Control from INRIA, Sophia Antipolis, France. He has worked on technologies such as GPS, CDMA, Wireless LAN, WiMAX, LTE, and 5G, and has held technical and managerial roles at Accord, Ittiam, Philips, and Beceem (acquired by Broadcom). He is currently VP - Technology & Innovation at Lekha Wireless Solutions, Bangalore, where he leads the design and development of next-generation communication networks. He is also actively involved with TSDSI and B6GA, driving indigenous innovation and contributing to India’s 6G vision. In the past, he has served as an Adjunct Professor with the EE Dept., IIT Bombay, Associate Researcher with the Alcatel-Lucent Chair on Flexible-Radio at Supelec, Paris, France and as an associate member of the INRIA-Bell Labs joint research lab on Self Organizing Networks. He is a Senior Member of IEEE. He has co-authored 50+ IPRs and 30+ publications in reputed journals and conferences."
-       data-link="">   
-    <time>04:00PM - 04:20PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-14 Dr. Sreenath Ramnath (Lekha Wireless)</div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/RadhaKrishnaGanti.png"
-       data-title="Prof. Radhakrishna Ganti (IITM) "
-       data-talktitle="Fronthaul Compression and Reliable Pilotless Transmission for Cellular Communications"
-       data-abstract="We will look at a novel technique for communication without any pilots. "
-       data-speakerbio="Radha Krishna Ganti is a Professor at the Indian Institute of Technology Madras, Chennai, India. He received his B. Tech. and M. Tech. in EE from the Indian Institute of Technology, Madras, and a Masters in Applied Mathematics and a Ph.D. in EE from the University of Notre Dame in 2009. His research interests include digital communications, convex optimisation, cellular systems and building communication systems. He received the 2014 IEEE Stephen O. Rice Prize,  and the 2014 IEEE Leonard G. Abraham Prize and the 2015  IEEE Communications society  young author best paper award. He was also awarded the 2016-2017 Institute Research and Development Award (IRDA) by IIT Madras. In 2019, he was awarded the TSDSI fellow for technical excellence in standardisation activities and contribution to LMLC use case in ITU. He was involved in the development of 5G base stations for the 5G testbed project funded by DOT and is currently involved in the development of 6G THz testbeds. He was awarded the Vignan Yuva Shanti Swaroop Bhatnagar Award for the year 2024 in the Engineering Sciences by the Govt. of India"
-       data-link="">   
-    <time>04:20PM - 04:40PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-15 Prof. Radhakrishna Ganti (IITM)</div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/David Koilpillai.jpg"
-       data-title="Prof. David Koilpillai (IITM) "
-       data-talktitle="India Roadmap to 6G – A Bharat 6G Alliance Perspective"
-       data-abstract=" India has seen the fastest rollout of 5G systems in the world crossing 530,000 5G sites. With 98% of the India’s mobile Broadband users (~98 crores) using mobile access, India is truly a “Mobile First” county … and the rapid developments in 5G and evolution towards 6G are of high interest and impact in India. The three phase roadmap to 6G developed by Bharat 6G Alliance (B6GA) will be presented. The impact of the various technical aspects such as introduction of AI/ML, Integrated Sensing and Communication (ISAC), Non-Terrestrial Networks (NTN) and Delay-Doppler techniques based on Orthogonal Time Frequency Space (OTFS) Modulation will be mentioned. The role of academia and industry in the India 6G initiatives will be highlighted. The spectrum allocation in India for 5G Advanced and 6G is aligned with global trends. This India spectrum allocation will be briefly described. Together, this presentation will provide a comprehensive view of the roadmap to develop the 6G ecosystem in India, and the role of B6GA. "
-       data-speakerbio="R. David Koilpillai is the Qualcomm Institute Chair Professor in Electrical Engineering at IIT Madras, with over three decades of experience in wireless and cellular technologies. He holds a B.Tech from IIT Madras and MS and PhD degrees from the California Institute of Technology, USA. At IIT Madras since 2002, he has served as Head of Department and Dean (Planning), contributing to infrastructure and strategic development. He currently chairs the Bharat 6G Alliance and has been actively involved in advancing research in 5G Advanced, 6G, and next-generation communication systems. Previously, he spent 12 years at Ericsson USA, where he led advanced research initiatives. A Fellow of the Indian National Academy of Engineering, he has received numerous awards, holds multiple international patents, and has authored over 100 publications. "
-       data-link="https://www.ee.iitm.ac.in/~koilpillai/">   
-    <time>04:40PM  - 05:00PM</time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-16 Prof. David Koilpillai (IITM)</div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/A. Chockalingam.jpg"
-       data-title="Prof. A. Chockalingam (IISc) "
-       data-talktitle="Zak-OTFS: A Waveform for Radar Sensing "
-       data-abstract=" In this talk, we consider waveforms for radar sensing. While orthogonality is the preferred attribute in communication waveforms to limit interference and achieve improved communication reliability, localization is the preferred attribute in radar sensing waveforms to achieve improved target detection and resolution. The goodness of a radar waveform is typically quantified through its ambiguity function. The range (delay) and velocity (Doppler) resolutions are primarily determined by the ambiguity function of the waveform used. Two candidate waveforms will be considered in this talk. One will be the widely used chirp waveform. The other will be the recent Zak transform-based orthogonal time frequency space (Zak-OTFS) waveform. We present their waveform characteristics and their achieved range/velocity estimation performance in multi-target scenarios. While the self-ambiguity function of a chirp is a line in the delay-Doppler (DD) domain, the self-ambiguity function of the Zak-OTFS waveform is a lattice that gives better DD domain localization and estimation performance. "
-       data-speakerbio="A. Chockalingam is a professor in the department of ECE, IISc, Bangalore. He obtained a Ph.D. degree from the same department in 1993. He was a postdoctoral fellow and an assistant project scientist in the department of ECE, UC San Diego from 1993 to 1996. He was with Qualcomm, San Diego as a Staff Engineer/Manager from 1996 to 1998. Since 1998 he has been a faculty at IISc, Bangalore. He has served as an editor/associate editor of IEEE Trans. on Wireless Communications, IEEE Trans. Vehicular Technology, IEEE JSAC, and IEEE JSTSP. He is a recipient of the Swarnajayanti Fellowship and the J. C. Bose National Fellowship from the DST, Govt. of India. He is the author of the book “Large MIMO Systems” published by Cambridge University Press in 2014. He is also an author of the book “OTFS Modulation – Theory and Applications” published by IEEE Press-Wiley in 2024."
-       data-link="https://ece.iisc.ac.in/~achockal/">   
-    <time>05:00PM - 05:20PM</time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-17 Prof. A. Chockalingam (IISc)</div>
-    </div>
-  </div>
-
- 
 </div>
 
 
