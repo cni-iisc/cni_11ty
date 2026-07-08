@@ -243,11 +243,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.SalimElRouyaheb_Rutgers.jpg"
        data-title="Prof. Salim El Rouayheb (Rutger University)"
-       data-talktitle="To be announced"
-       data-abstract="To be announced"
-       data-speakerbio="To be announced"
+       data-talktitle="Random Walk Learning and the Pac-Man Attack"
+       data-abstract="Imagine a network with malicious Pac-Man nodes that silently “eat” random walks passing through them. This can cripple Random Walk-based decentralized learning by driving the walk population to extinction, completely halting the learning progress. We present self-creating random walks, a simple fully decentralized mechanism that regenerates walks using only local timing information. Our approach prevents extinction, maintains a stable walk population, and preserves learning without centralized coordination. We provide theoretical guarantees on stability and convergence under attack, and show empirical robustness and fast recovery."
+       data-speakerbio="Salim El Rouayheb is an Associate Professor in the Department of Electrical and Computer Engineering at Rutgers University. His research interests are in information-theoretic security and privacy, coding theory, distributed and federated learning, and decentralized algorithms. Before joining Rutgers, he held positions at UC Berkeley, Princeton University, and the Illinois Institute of Technology. His work has been recognized with an NSF CAREER Award, a Google Faculty Research Award, and the Rutgers Walter Tyson Junior Faculty Chair."
        data-link=" ">   
     <time>11:00AM - 11:30PM </time>
     <div class="schedule-content">
