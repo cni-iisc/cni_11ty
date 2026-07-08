@@ -186,7 +186,7 @@ body.dark .close-btn {
 <div class="tab-content">
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.P.N.Karthik.jpg"
        data-title="Prof. P. N. Karthik (IIT Hyderabad)"
        data-talktitle="Asymptotically Optimal Clustering with Dueling Feedback"
        data-abstract="In this talk, I will cover a new analysis framework for clustering M items into an unknown number of K distinct groups using noisy and actively collected responses. At each time step, an agent is allowed to query pairs of items and observe bandit binary feedback. If the pair of items belongs to the same (resp.\ different) cluster, the observed feedback is 1 with probability p>1/2 (resp. q<1/2). I will present a fundamental lower bound on the expected number of queries needed to achieve a desired confidence in the clustering accuracy, formulated as a sup-inf optimization problem. Building on this theoretical foundation, I will showcase the design of an asymptotically optimal algorithm in which the stopping criterion involves an empirical version of the inner infimum -- the Generalized Likelihood Ratio (GLR) statistic -- being compared to a threshold. Towards the end, I will present a computationally feasible variant of the GLR statistic and show that its performance gap to the lower bound can be accurately empirically estimated and remains within a constant multiple of the lower bound."
@@ -212,7 +212,7 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.KunalNarayanChowdhury.jpg"
        data-title="Prof. Kunal Chowdhury (IISc Bengaluru)"
        data-talktitle="A Minima-Preserving Smooth Relaxation for Quadratic Binary Optimization."
        data-abstract="Quadratic binary optimization provides a common framework for combinatorial optimization problems such as MAX-CUT, number partitioning, and assignment, as well as for Ising-type models arising in computational physics. These problems are generally intractable, and even designing approximate methods that remain effective and scalable for large instances is challenging. Continuous relaxations, such as the famous Goemans-Williamson semidefinite relaxation for MAX-CUT, offer a powerful path forward, but they quickly become infeasible as the problem size grows.To obtain a more scalable approach, we develop a smooth penalty-based relaxation that can be optimized using first-order methods such as ADAM. Our main result is a landscape-equivalence theorem under explicit conditions on the penalty. It establishes a one-to-one correspondence between the local minima of the smooth problem and the one-flip local minima of the original binary problem. We present numerical experiments showing that the method works well in practice, scales to large problems, and is competitive with existing solvers across several benchmarks. Time permitting, we will look at some open problems."
@@ -256,10 +256,10 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.ChnadramaniSingh.jpg"
        data-title="Prof. Chandramani Singh (IISc Bengaluru)"
-       data-talktitle="To be announced"
-       data-abstract="To be announced"
+       data-talktitle=" Age Aware Content Fetching and Broadcast in a Sensing-as-a-Service System"
+       data-abstract="We consider a Sensing-as-a-Service (S2aaS) system consisting of a sensor, a set of users, and a sensor cloud service provider (SCSP). The sensor updates its content each time it captures a new measurement. The SCSP occasionally fetches the content from the sensor, caches the latest fetched version and broadcasts it on being requested by the users. The SCSP incurs content fetching costs while fetching and broadcasting the contents. The SCSP also incurs an age cost if users do not receive the most recent version of the content after requesting. We study a content fetching and broadcast problem, aiming to minimize the time-averaged content fetching and age costs. The problem can be framed as a Markov decision process but cannot be elegantly solved owing to its multi-dimensional state space and complex dynamics. To address this, we first obtain the optimal policy for the homogeneous case with all the users having the same request probability and age cost. We extend this algorithm for heterogeneous case but the complexity grows exponentially with the number of users. To tackle this, we propose a low complexity Whittle index based algorithm, which performs very close to the optimal. The complexity of the algorithm is linear in number of users and serves as a heuristic for both homogeneous and heterogeneous cases. "
        data-speakerbio="To be announced"
        data-link="">   
     <time>11:30PM - 12:00PM </time>
@@ -269,7 +269,7 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.AmitalokBudkuley.jpg"
        data-title="Prof. Amitalok Budkuley (IIT Kharagpur)"
        data-talktitle="Interactive Bayesian Deception under Strategic Timing"
        data-abstract="Et tu, Brute?, Whether or not Shakespeare's famous words were ever spoken, they capture a timeless idea: deception is often most consequential when the truth is discovered too late. Many modern sequential decision problems share this feature, one must decide not only what to believe, but when to act. In this talk, we will introduce our framework for interactive Bayesian deception under strategic timing, where an informed sender strategically designs the flow of information available to a receiver over time, while the receiver actively probes for information and decides when to declare that an underlying state of the world has changed. This framework combines ideas from Bayesian persuasion, quickest change detection, optimal stopping, and stochastic control. We will characterize the equilibrium structure of this interaction. The receiver's optimal strategy is shown to consist of adaptive information acquisition coupled with a belief-dependent stopping rule. The sender's dynamic information-design problem can then be reduced to an optimization over posterior beliefs, yielding a concavification characterization in the spirit of Bayesian persuasion, but in a setting where the receiver's action is itself a sequential stopping decision. This is joint work with Arya Choudhari (IIT Kharagpur) and was presented at AAMAS 2026 this year."
