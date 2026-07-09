@@ -199,11 +199,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Dr.KartikeyanShanmugam.jpg"
        data-title="Dr. Kartikeyan Shanmugam (Google DeepMind India)"
-       data-talktitle="To be announced"
-       data-abstract="To be announced"
-       data-speakerbio="To be announced"
+       data-talktitle=" Efficient Approximate Posterior Sampling via Annealed Langevin Monte Carlo"
+       data-abstract="We study the problem of posterior sampling in the context of score based generative models. We have a trained score network for a prior p(x), a measurement model p(y|x), and are tasked with sampling from the posterior p(x|y). Prior work has shown this to be intractable in KL (in the worst case) under well-accepted computational hardness assumptions. Despite this, popular algorithms for tasks such as image super-resolution, stylization, and reconstruction enjoy empirical success. Rather than establishing distributional assumptions or restricted settings under which exact posterior sampling is tractable, we view this as a more general “tilting” problem of biasing a distribution towards a measurement. Under minimal assumptions, we show that one can tractably sample from a distribution that is simultaneously close to the posterior of a noised prior in KL divergence and the true posterior in Fisher divergence. Intuitively, this combination ensures that the resulting sample is consistent with both the measurement and the prior. To the best of our knowledge these are the first formal results for (approximate) posterior sampling in polynomial time."
+       data-speakerbio="Karthikeyan Shanmugam is currently a Research Scientist at Google DeepMind India (Bengaluru). Previously, he was a Research Staff Member and a Herman Goldstine Postdoctoral Fellow at IBM Research, NY in the period 2016-2022. He obtained his Ph.D. from UT Austin in 2016, B. Tech and M. Tech Degrees from IIT Madras in 2010, all in Electrical Engineering.  He is a recipient of the IBM Corporate Technical Award in 2021 for his work on Trustworthy AI. His recent research focus in Machine Learning is on Causal inference, Online learning and Foundation models."
        data-link="https://profiles.ucl.ac.uk/11262-steve-hailes">   
     <time>09:00AM - 09:30AM</time>
     <div class="schedule-content">
@@ -213,23 +213,23 @@ body.dark .close-btn {
 
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.KunalNarayanChowdhury.jpg"
-       data-title="Prof. Kunal Chowdhury (IISc Bengaluru)"
+       data-title="Prof. Kunal Chaudhury (IISc Bengaluru)"
        data-talktitle="A Minima-Preserving Smooth Relaxation for Quadratic Binary Optimization."
-       data-abstract="Quadratic binary optimization provides a common framework for combinatorial optimization problems such as MAX-CUT, number partitioning, and assignment, as well as for Ising-type models arising in computational physics. These problems are generally intractable, and even designing approximate methods that remain effective and scalable for large instances is challenging. Continuous relaxations, such as the famous Goemans-Williamson semidefinite relaxation for MAX-CUT, offer a powerful path forward, but they quickly become infeasible as the problem size grows.To obtain a more scalable approach, we develop a smooth penalty-based relaxation that can be optimized using first-order methods such as ADAM. Our main result is a landscape-equivalence theorem under explicit conditions on the penalty. It establishes a one-to-one correspondence between the local minima of the smooth problem and the one-flip local minima of the original binary problem. We present numerical experiments showing that the method works well in practice, scales to large problems, and is competitive with existing solvers across several benchmarks. Time permitting, we will look at some open problems."
+       data-abstract="Quadratic binary optimization provides a common framework for combinatorial problems such as MAX-CUT, number partitioning, and assignment, as well as for Ising-type models arising in computational physics. These problems are generally intractable, and even designing approximate methods that remain effective and scalable for large instances is challenging. Continuous relaxations, such as the Goemans-Williamson semidefinite relaxation for MAX-CUT, offer a powerful route, but can become computationally expensive at large scale. To obtain a more scalable approach, we develop a smooth penalty-based relaxation that can be optimized using first-order methods such as ADAM. Under explicit conditions on the penalty, we prove an exact landscape-equivalence result. Namely, the global minimizers of the smooth problem coincide with those of the original binary problem, while its local minimizers coincide with the one-flip local minima of the binary problem. In particular, no rounding is required at an exact relaxed minimizer. Numerical experiments indicate that the method scales well and performs competitively. Time permitting, we will discuss some open problems."
        data-speakerbio="Kunal Chaudhury is a Professor at the Indian Institute of Science, working at the intersection of signal processing, computational imaging, mathematical optimization, and machine learning. His research spans inverse problems, image reconstruction and restoration, denoising and filtering, image fusion, registration, compressed sensing, sensor-network localization, and optimization theory and algorithms."
        data-link="">   
     <time>09:30AM - 10:00AM</time>
     <div class="schedule-content">
-      <div class="speaker">Talk-3 Prof. Kunal Chowdhury (IISc Bengaluru)</div>
+      <div class="speaker">Talk-3 Prof. Kunal Chaudhury (IISc Bengaluru)</div>
     </div>
   </div>
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.NikhilKaramchandani.jpg"
        data-title="Prof. Nikhil Karamchandani (IIT Bambay)"
-       data-talktitle="To be announced"
-       data-abstract="To be announced"
-       data-speakerbio="To be announced"
+       data-talktitle="Small-error Cascaded Group Testing"
+       data-abstract="Group testing concerns itself with the accurate recovery of a set of “defective” items from a larger population via a series of tests. In the classical group testing model, tests are binary and indicate the presence of at least one defective item in the test. In this talk, we will discuss the recently proposed cascaded group testing model, where tests admit an ordering, and test outcomes indicate the first defective item in the test under this ordering. We will consider exact as well as partial recovery of defective items, as well as talk about the impact of limited adaptivity and constrained test sizes."
+       data-speakerbio="Nikhil Karamchandani is an Associate Professor with the Department of Electrical Engineering, IIT Bombay. He received the Ph.D. degree from the Department of Electrical and Computer Engineering, University of California at San Diego. He was a postdoctoral scholar with the University of California at Los Angeles and the Information Theory and Applications (ITA) Center, University of California at San Diego. His research interests include information and coding theory, statistical learning and inference, and networks."
        data-link="">   
     <time>10:00AM - 10:30AM</time>
     <div class="schedule-content">
@@ -247,7 +247,7 @@ body.dark .close-btn {
        data-title="Prof. Salim El Rouayheb (Rutger University)"
        data-talktitle="Random Walk Learning and the Pac-Man Attack"
        data-abstract="Imagine a network with malicious Pac-Man nodes that silently “eat” random walks passing through them. This can cripple Random Walk-based decentralized learning by driving the walk population to extinction, completely halting the learning progress. We present self-creating random walks, a simple fully decentralized mechanism that regenerates walks using only local timing information. Our approach prevents extinction, maintains a stable walk population, and preserves learning without centralized coordination. We provide theoretical guarantees on stability and convergence under attack, and show empirical robustness and fast recovery."
-       data-speakerbio="Salim El Rouayheb is an Associate Professor in the Department of Electrical and Computer Engineering at Rutgers University. His research interests are in information-theoretic security and privacy, coding theory, distributed and federated learning, and decentralized algorithms. Before joining Rutgers, he held positions at UC Berkeley, Princeton University, and the Illinois Institute of Technology. His work has been recognized with an NSF CAREER Award, a Google Faculty Research Award, and the Rutgers Walter Tyson Junior Faculty Chair."
+       data-speakerbio="Salim El Rouayheb is an Associate Professor in the Department of Electrical and Computer Engineering at Rutgers University. His research interests are in information-theoretic security and privacy, coding theory, distributed and federated learning, and decentralized algorithms. Before joining Rutgers, he held positions at UC Berkeley, Princeton University, and the Illinois Institute of Technology. His work has been recognized with an NSF CAREER Award, a Google Faculty Research Award, and the Rutgers Walter Tyson Junior Faculty Chair.git "
        data-link=" ">   
     <time>11:00AM - 11:30PM </time>
     <div class="schedule-content">
@@ -260,7 +260,7 @@ body.dark .close-btn {
        data-title="Prof. Chandramani Singh (IISc Bengaluru)"
        data-talktitle=" Age Aware Content Fetching and Broadcast in a Sensing-as-a-Service System"
        data-abstract="We consider a Sensing-as-a-Service (S2aaS) system consisting of a sensor, a set of users, and a sensor cloud service provider (SCSP). The sensor updates its content each time it captures a new measurement. The SCSP occasionally fetches the content from the sensor, caches the latest fetched version and broadcasts it on being requested by the users. The SCSP incurs content fetching costs while fetching and broadcasting the contents. The SCSP also incurs an age cost if users do not receive the most recent version of the content after requesting. We study a content fetching and broadcast problem, aiming to minimize the time-averaged content fetching and age costs. The problem can be framed as a Markov decision process but cannot be elegantly solved owing to its multi-dimensional state space and complex dynamics. To address this, we first obtain the optimal policy for the homogeneous case with all the users having the same request probability and age cost. We extend this algorithm for heterogeneous case but the complexity grows exponentially with the number of users. To tackle this, we propose a low complexity Whittle index based algorithm, which performs very close to the optimal. The complexity of the algorithm is linear in number of users and serves as a heuristic for both homogeneous and heterogeneous cases. "
-       data-speakerbio="To be announced"
+       data-speakerbio="Chandramani Singh an Associate Professor with the Department of ESE, Indian Institute of Science, Bengaluru. He received M.E. and Ph.D. degrees in electrical communication engineering from Indian Institute of Science, Bengaluru, India, in 2005 and 2012, respectively. He was a Research Engineer with INRIA Rocquencourt from 2012 to 2013, and a Post-Doctoral Research Associate with CSL, University of Illinois Urbana-Champaign from 2013 to 2014. His research interests include communication networks, stochastic control and learning, and game theory."
        data-link="">   
     <time>11:30PM - 12:00PM </time>
     <div class="schedule-content">
