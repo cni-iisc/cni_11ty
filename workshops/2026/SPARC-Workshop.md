@@ -1,7 +1,7 @@
 ---
 layout: project_page
 title: "SPARC Workshop on Distributed Learning and Optimization"
-img: assets/img/workshops/2026/SPARCWorkshopJuly2026Poster1.jpg
+img: assets/img/workshops/2026/SPARC_Workshop/SPARCWorkshopJuly2026Poster.jpg
 importance: 11
 category: ""
 showcase: true
@@ -11,6 +11,14 @@ showcase: true
       <img class="img-fluid" src="/assets/img/workshops/2026/SPARCWorkshopJuly2026Poster1.jpg"/>
 </div>
 <p>The SPARC Workshop on Distributed Learning and Optimization is a one-day workshop featuring invited talks on recent advances in distributed learning, optimization, and related areas, bringing together researchers and students for technical discussions and research exchange. </p>
+
+#### Organized by
+
+**Prof. Parimal Parag and Prof. Chandramani Singh, Indian Institute of Science, Bangalore**
+
+#### In Collaboration with
+
+**Prof. Salim El Rouyaheb, Rutgers University**
 
 #### 🗓️ Date
 
@@ -32,7 +40,7 @@ showcase: true
 
 <p>Deadline:Last Date of Registration 09 July 2026, 12:00 PM</p>
 
-#### Workshop Schedule: (Tentative)
+#### Workshop Schedule:
 
 <style>
 /* Container */
@@ -185,6 +193,11 @@ body.dark .close-btn {
 
 <div class="tab-content">
 
+  <div class="schedule-item break">
+    <time>08:00 – 08:30</time>
+    🎊 Inaugration and Opening Remarks
+  </div>
+
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.P.N.Karthik.jpg"
        data-title="Prof. P. N. Karthik (IIT Hyderabad)"
@@ -243,28 +256,14 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.SalimElRouyaheb_Rutgers.jpg"
-       data-title="Prof. Salim El Rouayheb (Rutger University)"
-       data-talktitle="Random Walk Learning and the Pac-Man Attack"
-       data-abstract="Imagine a network with malicious Pac-Man nodes that silently “eat” random walks passing through them. This can cripple Random Walk-based decentralized learning by driving the walk population to extinction, completely halting the learning progress. We present self-creating random walks, a simple fully decentralized mechanism that regenerates walks using only local timing information. Our approach prevents extinction, maintains a stable walk population, and preserves learning without centralized coordination. We provide theoretical guarantees on stability and convergence under attack, and show empirical robustness and fast recovery."
-       data-speakerbio="Salim El Rouayheb is an Associate Professor in the Department of Electrical and Computer Engineering at Rutgers University. His research interests are in information-theoretic security and privacy, coding theory, distributed and federated learning, and decentralized algorithms. Before joining Rutgers, he held positions at UC Berkeley, Princeton University, and the Illinois Institute of Technology. His work has been recognized with an NSF CAREER Award, a Google Faculty Research Award, and the Rutgers Walter Tyson Junior Faculty Chair.git "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.ChnadramaniSingh.jpg"
+       data-title="Prof. Chandramani Singh (IISc Bengaluru)"
+       data-talktitle="We consider a Sensing-as-a-Service (S2aaS) system consisting of a sensor, a set of users, and a sensor cloud service provider (SCSP). The sensor updates its content each time it captures a new measurement. The SCSP occasionally fetches the content from the sensor, caches the latest fetched version and broadcasts it on being requested by the users. The SCSP incurs content fetching costs while fetching and broadcasting the contents. The SCSP also incurs an age cost if users do not receive the most recent version of the content after requesting. We study a content fetching and broadcast problem, aiming to minimize the time-averaged content fetching and age costs. The problem can be framed as a Markov decision process but cannot be elegantly solved owing to its multi-dimensional state space and complex dynamics. To address this, we first obtain the optimal policy for the homogeneous case with all the users having the same request probability and age cost. We extend this algorithm for heterogeneous case but the complexity grows exponentially with the number of users. To tackle this, we propose a low complexity Whittle index based algorithm, which performs very close to the optimal. The complexity of the algorithm is linear in number of users and serves as a heuristic for both homogeneous and heterogeneous cases."
+       data-speakerbio="Chandramani Singh an Associate Professor with the Department of ESE, Indian Institute of Science, Bengaluru. He received M.E. and Ph.D. degrees in electrical communication engineering from Indian Institute of Science, Bengaluru, India, in 2005 and 2012, respectively. He was a Research Engineer with INRIA Rocquencourt from 2012 to 2013, and a Post-Doctoral Research Associate with CSL, University of Illinois Urbana-Champaign from 2013 to 2014. His research interests include communication networks, stochastic control and learning, and game theory."
        data-link=" ">   
     <time>11:00AM - 11:30PM </time>
     <div class="schedule-content">
-      <div class="speaker">Talk-5  Prof. Salim El Rouayheb (Rutger University)</div>
-    </div>
-  </div>
-
-  <div class="schedule-item"
-       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.ChnadramaniSingh.jpg"
-       data-title="Prof. Chandramani Singh (IISc Bengaluru)"
-       data-talktitle=" Age Aware Content Fetching and Broadcast in a Sensing-as-a-Service System"
-       data-abstract="We consider a Sensing-as-a-Service (S2aaS) system consisting of a sensor, a set of users, and a sensor cloud service provider (SCSP). The sensor updates its content each time it captures a new measurement. The SCSP occasionally fetches the content from the sensor, caches the latest fetched version and broadcasts it on being requested by the users. The SCSP incurs content fetching costs while fetching and broadcasting the contents. The SCSP also incurs an age cost if users do not receive the most recent version of the content after requesting. We study a content fetching and broadcast problem, aiming to minimize the time-averaged content fetching and age costs. The problem can be framed as a Markov decision process but cannot be elegantly solved owing to its multi-dimensional state space and complex dynamics. To address this, we first obtain the optimal policy for the homogeneous case with all the users having the same request probability and age cost. We extend this algorithm for heterogeneous case but the complexity grows exponentially with the number of users. To tackle this, we propose a low complexity Whittle index based algorithm, which performs very close to the optimal. The complexity of the algorithm is linear in number of users and serves as a heuristic for both homogeneous and heterogeneous cases. "
-       data-speakerbio="Chandramani Singh an Associate Professor with the Department of ESE, Indian Institute of Science, Bengaluru. He received M.E. and Ph.D. degrees in electrical communication engineering from Indian Institute of Science, Bengaluru, India, in 2005 and 2012, respectively. He was a Research Engineer with INRIA Rocquencourt from 2012 to 2013, and a Post-Doctoral Research Associate with CSL, University of Illinois Urbana-Champaign from 2013 to 2014. His research interests include communication networks, stochastic control and learning, and game theory."
-       data-link="">   
-    <time>11:30PM - 12:00PM </time>
-    <div class="schedule-content">
-      <div class="speaker">Talk-6 Prof. Chandramani Singh (IISc Bengaluru)</div>
+      <div class="speaker">Talk-5  Prof. Chandramani Singh (IISc Bengaluru)</div>
     </div>
   </div>
 
@@ -275,9 +274,22 @@ body.dark .close-btn {
        data-abstract="Et tu, Brute?, Whether or not Shakespeare's famous words were ever spoken, they capture a timeless idea: deception is often most consequential when the truth is discovered too late. Many modern sequential decision problems share this feature, one must decide not only what to believe, but when to act. In this talk, we will introduce our framework for interactive Bayesian deception under strategic timing, where an informed sender strategically designs the flow of information available to a receiver over time, while the receiver actively probes for information and decides when to declare that an underlying state of the world has changed. This framework combines ideas from Bayesian persuasion, quickest change detection, optimal stopping, and stochastic control. We will characterize the equilibrium structure of this interaction. The receiver's optimal strategy is shown to consist of adaptive information acquisition coupled with a belief-dependent stopping rule. The sender's dynamic information-design problem can then be reduced to an optimization over posterior beliefs, yielding a concavification characterization in the spirit of Bayesian persuasion, but in a setting where the receiver's action is itself a sequential stopping decision. This is joint work with Arya Choudhari (IIT Kharagpur) and was presented at AAMAS 2026 this year."
        data-speakerbio="Amitalok J. Budkuley is an assistant professor in the Dept. of Electronics and Electrical Communication Engineering (E & ECE) at IIT Kharagpur. He received his B. Engg. from Goa University, in 2007, and his M. Tech. and Ph. D. degree in Electrical Engineering from the Indian Institute of Technology Bombay, Mumbai, India in 2009 and 2017 respectively. In between, he spent some time in industry working with Cisco Systems Inc.. From 2016 to 2019, he was at the Dept. of Information Engineering, The Chinese University of Hong Kong (CUHK) as a research assistant and then as a post-doctoral fellow, following which he joined IIT Kharagpur in his current designation. His research interests include information theory and security, signal processing for distributed communication, control and decision-making."
        data-link="">   
+    <time>11:30PM - 12:00PM </time>
+    <div class="schedule-content">
+      <div class="speaker">Talk-6 Prof. Amitalok Budkuley (IIT Kharagpur)</div>
+    </div>
+  </div>
+
+  <div class="schedule-item"
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.SalimElRouyaheb_Rutgers.jpg"
+       data-title="Prof. Salim El Rouayheb (Rutgers University)"
+       data-talktitle="Random Walk Learning and the Pac-Man Attack"
+       data-abstract="Imagine a network with malicious Pac-Man nodes that silently “eat” random walks passing through them. This can cripple Random Walk-based decentralized learning by driving the walk population to extinction, completely halting the learning progress. We present self-creating random walks, a simple fully decentralized mechanism that regenerates walks using only local timing information. Our approach prevents extinction, maintains a stable walk population, and preserves learning without centralized coordination. We provide theoretical guarantees on stability and convergence under attack, and show empirical robustness and fast recovery."
+       data-speakerbio="Salim El Rouayheb is an Associate Professor in the Department of Electrical and Computer Engineering at Rutgers University. His research interests are in information-theoretic security and privacy, coding theory, distributed and federated learning, and decentralized algorithms. Before joining Rutgers, he held positions at UC Berkeley, Princeton University, and the Illinois Institute of Technology. His work has been recognized with an NSF CAREER Award, a Google Faculty Research Award, and the Rutgers Walter Tyson Junior Faculty Chair.git"
+       data-link="">   
     <time>12:00PM- 12:30PM </time>
     <div class="schedule-content">
-      <div class="speaker">Talk-7  Prof. Amitalok Budkuley (IIT Kharagpur)</div>
+      <div class="speaker">Talk-7  Prof. Salim El Rouayheb (Rutgers University)</div>
     </div>
   </div>
 
@@ -294,6 +306,10 @@ body.dark .close-btn {
     </div>
   </div>
 
+  <div class="schedule-item break">
+    <time>01:00 – 02:00</time>
+    🍽️ Lunch
+  </div>
 
 </div>
 
@@ -303,6 +319,8 @@ body.dark .close-btn {
 
 <h4>Sponsor</h4>
 <div class="container-fluid" align="center">
+      <img src="/assets/img/Logos/1280px-Ministry_of_Education_India.svg.png" alt="MOE logo" class="img-fluid" style="height: 100px; object-fit: contain;"/> 
+      <img src="/assets/img/Logos/SPARCLogo.png" alt="SPARC logo" class="img-fluid" style="height: 100px; object-fit: contain;"/>
       <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco CSR logo" class="img-fluid" style="height: 130px; object-fit: contain;"/> 
 </div>
 
