@@ -295,11 +295,11 @@ body.dark .close-btn {
   </div>
 
   <div class="schedule-item"
-       data-image=" "
+       data-image="/assets/img/workshops/2026/SPARC_Workshop/Prof.SundeepChepuri.jpg"
        data-title="Prof. Sundeep Chepuri (IISc Bengaluru)"
-       data-talktitle="To be announced"
-       data-abstract="To be announced"
-       data-speakerbio="To be announced"
+       data-talktitle="Decentralized Constrained Learning: Heterogeneity and Differential Privacy"
+       data-abstract="Decentralized learning is a distributed learning paradigm in which clients collaborate to learn a global model without relying on a central coordinator. Many optimization problems arising in signal processing and machine learning are constrained, while participating clients often have limited computational resources and heterogeneous data distributions. Preserving privacy during information exchange among clients is another important requirement. Differential privacy is commonly achieved by perturbing model parameters with appropriately calibrated noise. However, adding noise directly to primal variables can destroy important structural properties of the learned model, such as sparsity or low rank. In this talk, we will present stochastic conditional gradient methods designed to handle data heterogeneity in decentralized constrained learning. We will also discuss how dual-averaging methods can preserve structural properties of the model while providing differential privacy guarantees. This is joint work with Robin Francis."
+       data-speakerbio="Sundeep Prabhakar Chepuri received his M.Sc. degree (cum laude) in electrical engineering and Ph.D. degree (cum laude) from the Delft University of Technology, The Netherlands, in July 2011 and January 2016, respectively. He was a Postdoctoral researcher at the Delft University of Technology, The Netherlands. He has held positions at Robert Bosch, India, during 2007- 2009, and Holst Centre/imec-nl, The Netherlands, during 2010-2011. Currently, he is an Associate Professor at the Department of ECE at the Indian Institute of Science (IISc) in Bengaluru, India. Dr. Chepuri was a recipient the Pratiksha Trust Young Investigator award and EURASIP Early Career Award. Papers that he has co-authored have received best paper awards at the ICASSP 2015 and 2026, ASILOMAR 2019 and 2025, and EUSIPCO 2023. His general research interest lies in the field of mathematical signal processing, statistical inference, and machine learning applied to graphs and wireless communications."
        data-link="">   
     <time>12:30PM - 01:00PM </time>
     <div class="schedule-content">
