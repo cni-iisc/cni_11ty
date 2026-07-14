@@ -3,34 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="Centre for Networked Intelligence" />
-        <meta
-            property="og:description"
-            content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."
-        />
-        <meta property="og:url" content="{{ site.baseurl }}" />
-        <meta
-            property="og:image"
-            content="{{ site.baseurl }}/assets/img/Logos/cni_blue_round_1200x1200.png"
-        />
-        <meta property="og:image:alt" content="CNI logo" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="1200" />
+        {% set ogImage = img if img else "assets/img/Logos/cni_blue_round_1200x1200.png" %}
+        {% set ogDescription = description if description else "Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future." %}
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:description" content="{{ ogDescription }}" />
+        <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+        <meta property="og:image" content="{{ site.baseurl }}/{{ ogImage }}" />
+        <meta property="og:image:alt" content="{{ title }}" />
         <meta property="og:type" content="website" />
 
         <!-- Twitter Card Meta Tags -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Centre for Networked Intelligence" />
-        <meta
-            name="twitter:description"
-            content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."
-        />
-        <meta
-            name="twitter:image"
-            content="{{ site.baseurl }}/assets/img/Logos/cni_blue_round_1200x1200.png"
-        />
-        <meta name="twitter:image:alt" content="CNI logo" />
+        <meta name="twitter:title" content="{{ title }}" />
+        <meta name="twitter:description" content="{{ ogDescription }}" />
+        <meta name="twitter:image" content="{{ site.baseurl }}/{{ ogImage }}" />
+        <meta name="twitter:image:alt" content="{{ title }}" />
 
         <!--
             <link rel="icon" href="/assets/images/tab_symbol.ico" type="image/x-icon" />
