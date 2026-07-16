@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addFilter("formatDateTime", (date) => {
-    return DateTime.fromJSDate(new Date(date)).toFormat("dd MMM yyyy, h:mm a"); 
+    return DateTime.fromJSDate(new Date(date)).toFormat("dd MMM yyyy, h:mm a");
     // e.g. 30 May 2025, 4:30 pm
   });
 
@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
 
   //ignore pre-built rpcourse from template processing
-  eleventyConfig.ignores.add("courses/rpcourse/**");
+  eleventyConfig.ignores.add("courses/random/**");
 
   //copy pre-built rpcourse content to output after build
   eleventyConfig.on('eleventy.after', async () => {
@@ -69,7 +69,7 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(date,  { zone: "UTC" }).toLocal().toFormat("yyyy-MM-dd HH:mm:ss");
   });
 
-  
+
 
   eleventyConfig.addNunjucksFilter("upcoming", function (collection) {
     const carouselCfg = require("./_data/carousel.json");
@@ -247,20 +247,20 @@ module.exports = function (eleventyConfig) {
             'Upgrade-Insecure-Requests': '1'
           }
         };
-        
+
         https.get(url, options, (res) => {
           let data = [];
-          
+
           // Handle redirects
           if (res.statusCode === 301 || res.statusCode === 302) {
             return fetchICS(res.headers.location).then(resolve).catch(reject);
           }
-          
+
           res.on('data', chunk => data.push(chunk));
           res.on('end', () => {
             const buffer = Buffer.concat(data);
             const encoding = res.headers['content-encoding'];
-            
+
             if (encoding === 'gzip') {
               zlib.gunzip(buffer, (err, decoded) => {
                 if (err) reject(err);
@@ -315,4 +315,3 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["html", "njk", "md"],
   };
 };
-
