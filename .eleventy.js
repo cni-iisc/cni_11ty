@@ -36,13 +36,13 @@ module.exports = function (eleventyConfig) {
 
   //copy pre-built rpcourse content to output after build
   eleventyConfig.on('eleventy.after', async () => {
-    const src = path.join(__dirname, 'courses/rpcourse');
-    const dest = path.join(__dirname, 'docs/courses/rpcourse');
+    const src = path.join(__dirname, 'courses/random');
+    const dest = path.join(__dirname, 'docs/courses/random');
     if (fs.existsSync(dest)) {
       fs.rmSync(dest, { recursive: true, force: true });
     }
     fs.cpSync(src, dest, { recursive: true });
-    console.log('✅ Copied rpcourse content to docs/courses/rpcourse');
+    console.log('✅ Copied rpcourse content to docs/courses/random');
   });
   // Custom filter to format time
   eleventyConfig.addFilter("formatTime", (date) => {
