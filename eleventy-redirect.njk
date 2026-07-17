@@ -5,6 +5,10 @@
     size: 1,
     alias: "redirect",
     before: function (data) {
+      // Out-of-band redirects for pages without frontmatter (e.g. passthrough
+      // copy targets like /courses/random/). Kept in _data/redirects.json.
+      const manual = JSON.parse(require('fs').readFileSync(require('path').join(process.cwd(), '_data', 'redirects.json'), 'utf8')) || [];
+      const seed = manual.map(r => ({ to: r.to, from: r.from }));
       return data.reduce((redirects, page) => {
         if (Array.isArray(page.data.redirect_from)) {
           for (let url of page.data.redirect_from) {
@@ -14,7 +18,7 @@
           redirects.push({ to: page.url, from: page.data.redirect_from });
         }
         return redirects;
-      }, []);
+      }, seed);
     },
     addAllPagesToCollections: false,
   },
