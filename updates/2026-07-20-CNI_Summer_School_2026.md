@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Registration Open for 6th CNI Summer School 2026"
+title: "6th CNI Summer School 2026"
 teaser: "This summer school will focus on model approximation techniques in Markov Decision Processes (MDPs) and Partially Observable Markov Decision Processes (POMDPs)."
 categories:
     - events
