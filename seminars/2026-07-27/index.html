@@ -1,0 +1,103 @@
+
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:title" content="Modeling Paradigms and Tools for Autonomy Management in Complex Networked Systems"><meta property="og:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta property="og:url" content="/seminars/2026-07-27/"><meta property="og:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta property="og:image:alt" content="Modeling Paradigms and Tools for Autonomy Management in Complex Networked Systems"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Modeling Paradigms and Tools for Autonomy Management in Complex Networked Systems"><meta name="twitter:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta name="twitter:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta name="twitter:image:alt" content="Modeling Paradigms and Tools for Autonomy Management in Complex Networked Systems"><link rel="icon" type="image/x-icon" href="/assets/images/favicon-dark.ico" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" media="(prefers-color-scheme: light)"><title>Modeling Paradigms and Tools for Autonomy Management in Complex Networked Systems | CNI</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet"><script type="text/javascript">MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"],
+                    ],
+                },
+                svg: { fontCache: "global" },
+            };</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9KXWYD9G5G"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-9KXWYD9G5G");</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><link rel="stylesheet" href="/assets/css/navbar_style.css"><link rel="stylesheet" href="/assets/css/footer.css"><style>/* Light theme */
+            .light-theme {
+                background-color: #f7f7f7;
+                color: #212121;
+            }
+            .light-theme td {
+                color: #212121;
+            }
+
+            /* Dark theme */
+            .dark-theme {
+                background-color: #212121;
+                color: #ffffff;
+            }
+            .dark-theme td {
+                color: white;
+            }
+
+            /* Theme toggle button styles */
+            .theme-toggle {
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }</style><script>// Theme toggle functionality
+            function setTheme(theme) {
+                if (theme === "dark") {
+                    document.body.classList.remove("light-theme");
+                    document.body.classList.add("dark-theme");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    document.body.classList.remove("dark-theme");
+                    document.body.classList.add("light-theme");
+                    localStorage.setItem("theme", "light");
+                }
+            }
+
+            // Initialize theme on page load
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get saved theme or default to light
+                const savedTheme = localStorage.getItem("theme") || "light";
+                setTheme(savedTheme);
+
+                // Update icon based on current theme
+                updateThemeIcon(savedTheme);
+            });
+
+            // Toggle between light and dark themes
+            function toggleTheme() {
+                const currentTheme = document.body.classList.contains("dark-theme")
+                    ? "dark"
+                    : "light";
+                const newTheme = currentTheme === "dark" ? "light" : "dark";
+                setTheme(newTheme);
+                updateThemeIcon(newTheme);
+            }
+
+            // Update icon based on current theme
+            function updateThemeIcon(theme) {
+                const themeIcon = document.getElementById("theme-icon");
+                // themeIcon hover color should be hyperlink color
+                themeIcon.style.color = "white";
+                themeIcon.addEventListener("mouseover", function () {
+                    themeIcon.style.color = "var(--hyperlink-clr)";
+                });
+                themeIcon.addEventListener("mouseout", function () {
+                    themeIcon.style.color = "white";
+                });
+                // change icon based on theme
+                if (themeIcon) {
+                    if (theme === "dark") {
+                        themeIcon.classList.remove("bi-sun");
+                        themeIcon.classList.add("bi-moon");
+                    } else {
+                        themeIcon.classList.remove("bi-moon");
+                        themeIcon.classList.add("bi-sun");
+                    }
+                }
+            }</script></head><body><nav class="navbar navbar-expand-lg custom-navbar"><div class="container-fluid"><a class="navbar-brand" href="/"><img src="/assets/images/cni_logo.png" alt="CNI logo" style="height: 60px"> </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarText"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">People</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/faculty/">Faculty</a></li><li><a class="dropdown-item" href="/staff/">Staff</a></li><li><a class="dropdown-item" href="/phd-fellows/">PhD Fellows</a></li><li><a class="dropdown-item" href="/mtech-fellows/">MTech Fellows</a></li><li><a class="dropdown-item" href="/visitors/">Visitors</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Research</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/projects/">Projects</a></li><li><a class="dropdown-item" href="/publications/">Publications</a></li><li><a class="dropdown-item" href="/highlights/">Highlights</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Outreach</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/seminars/">Seminars</a></li><li><a class="dropdown-item" href="/newsletter/latest/">Newsletters</a></li><li><a class="dropdown-item" href="/courses/">Courses</a></li><li><a class="dropdown-item" href="/schools/">Summer School</a></li><li><a class="dropdown-item" href="/news/">CNI in News</a></li><li><a class="dropdown-item" href="/hackathons">Hackathons</a></li><li><a class="dropdown-item" href="/workshops/">Workshops</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/opportunities/">Opportunities</a></li><li class="nav-item"><button class="theme-toggle" onclick="toggleTheme()"><i id="theme-icon" class="bi bi-sun"></i></button></li></ul></div></div></nav><link rel="stylesheet" href="/assets/css/seminar_cards.css"><div class="container-fluid text-center mt-2"><h2>CNI Seminar Series</h2><header class="mt-4"><h3>Modeling Paradigms and Tools for Autonomy Management in Complex Networked Systems</h3><h4><a href="https://www.gc.cuny.edu/people/kaliappa-ravindran">Prof. Kaliappa Ravindran, Professor, City University of New York</a></h4><h5>#309</h5></header></div><div class="container-fluid text-center" style="max-width: 800px"><div class="ratio ratio-16x9"><iframe class="img-fluid rounded" src="https://www.youtube.com/embed/dKjx7TdOJng" title="YouTube video player" frameborder="0" allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+            " allowfullscreen=""></iframe></div><br></div><div class="container-fluid mt-4" style="max-width: 800px"><h6 class="text-center" style="width: 20px; height: 20px; display: inline-block">Abstract</h6><p>In today's world of AI/ML, many autonomously managed systems deal with a physical world of interconnected sub-systems and components (e.g., a fleet of driverless cars navigating on the road. In such autonomous systems, the modeling of physical world is important to attain a desired behavior of the external control &amp; management software modules that realize the observe-decide-adapt functions. The focus of my talk is on probabilistic model-checking (PMC) as a flexible design paradigm for fault-adaptive and resilient network systems. PMC approach enables improving the dependability of a networked system by embodying quantifiable and verifiable models of system-internal algorithms that interwork with the physical world. PMC is based on state-machine programming styles, where the system designer explicitly assigns state-transition probabilities to depict the likely occurrence of various events and actions incident on the system at run-time. To put in perspective, current design paradigms for a networked system "S" are based on either operational models of "S" (i.e., closed-form mathematical expressions that predict the run-time behavior of "S"), or, miniature prototypes of "S" built in laboratory that mimic the behavior of "S" in a real-world setting. Operational models offer a quick &amp; short-hand analysis, but are less accurate in predictions about the run-time behavior of "S". Whereas, miniature prototypes of "S" overcome the prediction accuracy issues, but incur substantial development costs: in terms of the protype-building efforts and long turn-around time. In this vein, the PMC approach for design &amp; verification offers a middle-ground: namely, yields better prediction accuracy than operational-models of "S" (at one-end), and lowers the model development costs in system design-cycle when compared to building miniature prototypes of "S" (at the other end). Currently prevalent PMC languages are: PRISM (Oxford univ.), PAT (National Univ. of Singapore), STORM (Technical Univ. of Aachen), and FSQ (Carnegie-Mellon Univ.). My talk will cover a case-study for the PMC approach: namely, a terrain surveillance system composed of multiple drones with on-board cameras. The surveillance system is faced with multiple uncertainties: both at object detection level—due to image-data fuzziness—and due to communication disruptions --- thereby warranting a probabilistic treatise of the system behavior. Our research at CUNY demonstrates the distinct advantages of PMC-based approach when infusing autonomy management in such complex systems.</p><br><h6 style="width: 20px; display: inline-block">Bio</h6><h5><a href="https://www.gc.cuny.edu/people/kaliappa-ravindran">Prof. Kaliappa Ravindran, Professor, City University of New York</a></h5><p>Prof. Kaliappa Ravindran is a Professor of Computer Science and Data Science at the Grove School of Engineering at the City University of New York, USA (since 1996). Prior to that, he had held faculty and visiting positions at other universities in USA, Canada, and India. He had also worked as a Telecom software engineer and Control Systems engineer in industries. He obtained Ph.D. in Computer Science from the University of British Columbia (Canada) and B.S./M.S. degrees in Electronics engineering and system automation fields from the Indian Institute of Science. Prof. Ravindran's research group at CUNY works in the areas of autonomous networked system of things, software-defined networks/systems for fault-resilient operations, model-based software integration for cyber-physical systems (e.g., autonomous cars), formal-verification &amp; assessment of network systems, and distributed collaborative decision-support systems (e.g., multi-player robot games and cyber-surveillance systems). His group also works on QoS auditing and certification methods in cloud-hosted services. Many US federal agencies have supported his research over the last 25+ years: such as the Air Force, Navy, Army, Missile Defense Agency, and NSF --- and support from many multi-national industries (such as NEC, General Motors, CISCO, Siemens, IBM, and Philips).</p></div><footer class="site-footer"><div class="footer-container"><a href="mailto:contact.cni@iisc.ac.in" title="Email" target="_blank"><i class="fa-solid fa-envelope"></i> </a><a href="https://github.com/cni-iisc" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i> </a><a href="https://x.com/cni_iisc" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i> </a><a href="https://www.linkedin.com/company/cni-iisc" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i> </a><a href="https://www.youtube.com/@centrefornetworkedintellig5324" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i> </a><a href="https://www.instagram.com/cni_iisc/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a><p>© 2026 Centre for Networked Intelligence. All rights reserved.</p><p>Last updated: July 22, 2026</p></div></footer></body></html>
