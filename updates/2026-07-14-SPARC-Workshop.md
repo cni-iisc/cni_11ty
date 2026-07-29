@@ -5,7 +5,7 @@ teaser: "A one-day workshop featuring invited talks on distributed learning, opt
 categories: events
 permalink: /2026/SPARC-Workshop/
 tags: workshops
-img: assets/img/workshops/2026/SPARC_Workshop/SPARCWorkshopJuly2026Poster.jpg
+img: assets/img/updates/2026/SPARCWorkshop_PostEventPhoto.jpg
 showcase: true
 ---
 
