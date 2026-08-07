@@ -14,7 +14,7 @@ showcase: true
 
 #### Organized by
 
-**Indian Institute of Science and Centre for Networked Intelligence, Indian Institute of Science, Bangalore**
+**Indian Institute of Science and Centre for Networked Intelligence**
 
 #### 🗓️ Date
 
