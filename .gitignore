@@ -2,3 +2,12 @@ node_modules
 python
 /docs
 _data/events.json
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
