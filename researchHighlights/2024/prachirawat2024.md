@@ -11,7 +11,7 @@ year: 2024
 category: mtech #should have either mtech or phd
 
 report_video: zYzyB3BC_xE
-permalink: "/highlights/prachirawat2024/" 
+permalink: "/highlights/2024/prachirawat2024/" 
 ---
 This document explains how real-time image processing can be performed using the 
 Oakestra orchestration framework, specifically using Raspberry Pi as an edge (worker) 

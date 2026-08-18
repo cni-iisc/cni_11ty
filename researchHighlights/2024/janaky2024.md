@@ -12,7 +12,7 @@ year: 2024
 category: phd #should have either mtech or phd
 
 report_video: m0Ick5S4_5Q
-permalink: "/highlights/janaky2024/" 
+permalink: "/highlights/2024/janaky2024/" 
 ---
 
 <b>Background and Motivation</b><br>

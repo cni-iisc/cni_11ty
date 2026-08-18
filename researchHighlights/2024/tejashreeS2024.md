@@ -12,7 +12,7 @@ year: 2024
 category: phd #should have either mtech or phd
 
 report_video: mn0j3hvXN68
-permalink: "/highlights/tejashreeS2024/" 
+permalink: "/highlights/2024/tejashreeS2024/" 
 ---
 
 <b>Report on research undertaken in the year 2024-25:</b><br>

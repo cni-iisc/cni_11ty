@@ -12,7 +12,7 @@ year: 2024
 category: phd #should have either mtech or phd
 
 report_video: l-4D7Ju25S4
-permalink: "/highlights/SreeshmaShiv2024/" 
+permalink: "/highlights/2024/SreeshmaShiv2024/" 
 ---
 <b>FINITE TIME ANALYSIS OF GRADIENT SCHEDULING WITH A SLOW TIME-SCALE INDEX-BIAS FOR
 ACCURATE GBR SLICING IN 5G CELLULAR NETWORKS</b>

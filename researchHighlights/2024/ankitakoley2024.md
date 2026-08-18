@@ -13,7 +13,7 @@ year: 2024
 category: phd #should have either mtech or phd
 
 report_video: T-MZTlbHgIA
-permalink: "/highlights/ankitakoley2024/" 
+permalink: "/highlights/2024/ankitakoley2024/" 
 ---
 We consider a dynamic content caching problem wherein the contents get updated at a 
 central server, and local copies of a subset of contents are cached at a local cache associated 

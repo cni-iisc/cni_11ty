@@ -13,7 +13,7 @@ year: 2024
 category: phd #should have either mtech or phd
 
 report_video: s6H1343V3wQ
-permalink: "/highlights/Aakashsunilshedsale2024/" 
+permalink: "/highlights/2024/Aakashsunilshedsale2024/" 
 ---
 <p>Class imbalance refers to a situation in a dataset where the number of samples across different
 classes is uneven, with some classes having significantly more samples than others. Class imbalance is a
