@@ -6,6 +6,6 @@ importance: 19
 img: /assets/images/people/staff/SoumilMukherjee.png
 past: false
 cap: null
-category: Staff
+category: Intern
 ---
 

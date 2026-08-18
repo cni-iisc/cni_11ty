@@ -6,6 +6,6 @@ importance: 20
 img: /assets/images/people/staff/SourakantiMisra.png
 past: false
 cap: null
-category: Staff
+category: Intern
 ---
 

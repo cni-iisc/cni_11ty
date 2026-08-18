@@ -163,6 +163,18 @@ module.exports = function (eleventyConfig) {
       .filter((person) => person.data.category === "Staff");
   });
 
+  eleventyConfig.addCollection("Interns", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("./_people/interns/*.md")
+      .filter((person) => person.data.category === "Intern");
+  });
+
+  eleventyConfig.addCollection("Postdocs", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("./_people/postdoc/*.md")
+      .filter((person) => person.data.category === "Postdoc");
+  });
+
   eleventyConfig.addCollection("Faculty", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob("./_people/faculty/*.md")

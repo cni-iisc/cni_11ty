@@ -4,8 +4,7 @@ position_at_CNI: Intern
 linkedin: https://www.linkedin.com/in/anway-durge-5b47051b3/
 importance: 17
 img: /assets/images/people/staff/AnwayDurge.JPG
-past: false
+past: true
 cap: null
-category: Staff
+category: Intern
 ---
-

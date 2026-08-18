@@ -12,6 +12,14 @@
                 "url": "/staff/"
             },
             {
+                "title": "Interns",
+                "url": "/interns/"
+            },
+            {
+                "title": "Postdocs",
+                "url": "/postdocs/"
+            },
+            {
                 "title": "PhD Fellows",
                 "url": "/phd-fellows/"
             },

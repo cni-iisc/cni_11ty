@@ -1,15 +1,15 @@
 ---
 layout: base.html
-title: Staff
-permalink: "/staff/"
+title: Interns
+permalink: "/interns/"
 ---
 <link rel="stylesheet" href="/assets/css/people.css">
 
 
 <div class="container-fluid my-2 text-center justify-content-center" style="max-width: 1200px;">
-<h1 class="text-center mb-4">Staff</h1>
+<h1 class="text-center mb-4">Interns</h1>
   <div class="row jusitfy-content-center gap-0 row-gap-0">
-    {% for person in collections.Staff | sort(attribute="data.importance") %}
+    {% for person in collections.Interns | sort(attribute="data.importance") %}
     {% if person.data.past != true %}
       <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
         <div class="card mb-4 staff-card">
@@ -28,5 +28,5 @@ permalink: "/staff/"
       {% endif %}
     {% endfor %}
   </div>
-  <a type="button" class="btn button-style" href="/staff/alumni/"><h4 style="margin: 0">Former staff</h4></a>
+  <a type="button" class="btn button-style" href="/interns/alumni/"><h4 style="margin: 0">Former interns</h4></a>
 </div>

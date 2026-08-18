@@ -1,12 +1,12 @@
 ---
 layout: 
 title: Nurzaman Ahmed
-position_at_CNI: Post Doctoral Fellow
+position_at_CNI: Post-doctoral Fellow
 description: 
 department:
 img: /assets/images/people/staff/past/Nurzaman Ahmed.jpg
 cap: 17
-category: Staff
+category: Postdoc
 redirect: 
 research_interests: 
 email: 
