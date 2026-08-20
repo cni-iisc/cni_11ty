@@ -12,6 +12,6 @@ year: 2025
 
 category: phd #should have either mtech or phd
 
-report_video: oeEx9N-5Hns
+report_video: 1xGGnngJ08I
 permalink: "/highlights/srinivasnomula2025/" 
 ---
