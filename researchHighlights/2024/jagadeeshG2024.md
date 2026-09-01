@@ -12,7 +12,7 @@ year: 2024
 category: mtech #should have either mtech or phd
 
 report_video: 46Jgy97Meto
-permalink: "/highlights/jagadeeshG2024/" 
+permalink: "/highlights/2024/jagadeeshG2024/" 
 ---
 <b>Precision Time Synchronization in Distributed Networks Using a P4-Enabled Boundary Clock with PI Offset Servo on a Netronome SmartNIC</b>
 

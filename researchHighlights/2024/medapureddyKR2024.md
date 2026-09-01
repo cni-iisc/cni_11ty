@@ -12,7 +12,7 @@ year: 2024
 category: mtech #should have either mtech or phd
 
 report_video: SKHeIq4vWUg
-permalink: "/highlights/medapureddyKR2024/" 
+permalink: "/highlights/2024/medapureddyKR2024/" 
 ---
 <p>Time synchronization in networks is critical for enabling coordination and consistency across distributed systems, especially in industrial control, autonomous systems, and high-frequency trading. This project explores the use of P4-programmable data planes to enhance time synchronization accuracy using the Precision Time Protocol (PTP).  
  <br>

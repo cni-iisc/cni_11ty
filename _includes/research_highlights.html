@@ -13,7 +13,8 @@ layout: base.html
       <span id="selectedYear">{{ current_year }}-{{ current_year+1 }}</span> <!-- Latest year by default -->
     </button>
     <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
-      <li><a class="dropdown-item" href="/highlights/" data-year="2024">2024-2025</a></li>
+      <li><a class="dropdown-item" href="/highlights/" data-year="2025">2025-2026</a></li>
+      <li><a class="dropdown-item" href="/highlights/2024/" data-year="2024">2024-2025</a></li>
       <li><a class="dropdown-item" href="/highlights/2023/" data-year="2023">2023-2024</a></li>
       <li><a class="dropdown-item" href="/highlights/2022/" data-year="2022">2022-2023</a></li>
       <li><a class="dropdown-item" href="/highlights/2021/" data-year="2021">2021-2022</a></li>
@@ -45,7 +46,7 @@ layout: base.html
             {% endif %}
         {% endfor %}
         </div>
-    
+
         <h3 class="mt-4"><strong>MTech</strong></h3>
         <div class="row"> <!-- Using custom class here -->
         {% for highlight in highlights %}
@@ -68,5 +69,3 @@ layout: base.html
     {% endfor %}
 
 </div>
-
-

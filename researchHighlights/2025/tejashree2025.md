@@ -1,0 +1,19 @@
+---
+
+layout: research_highlight.html # Do not change this portion
+
+title: Development and Validation of Edge-adapted Lightweight Deep Learning Models for Point-of-care Oral Cancer Screening
+
+
+speaker: Tejashree S
+
+img: none
+year: 2025
+
+category: phd #should have either mtech or phd
+
+report_video: ERB5KVOyviU
+permalink: "/highlights/tejashree2025/" 
+---
+In the past year, we continued our efforts on building a point-of-care, AI-enabled, white-light imaging-based, mobile-phone application for screening of oral pre-cancers and cancers. In the earlier years, we had developed lightweight deep-learning models, based on the MobileViT-v2 framework, to classify white-light images of the oral cavity, captured through smartphones, into binary categories – Non-suspicious andSuspicious, based on the presence of oral pre-cancer/cancer lesions. In the past year, we successfully integrated the trained models into edge devices (low-budget smartphones, specifically Motorola moto G34 5G) and enabled offline model inference. The performance of the trained models in resource-constrained (smartphones) and resource-rich (laptops, GPU servers) environments was matched; the binary decisions were the same across deployment environments, with model output probability differences averaging at 10e-5.Once the models were integrated into edge devices, they underwent large-scale prospective validation. The study was conducted using prospectively collected data from three sites (one in the north and two in the southern parts of India). About 40,000 images from about 6,000 participants were labelled through a pre-designed Reader study. The image-level labels provided by the readers served as a comparator for the models’ image-level performance. Further, the image-level analyses of the models were combined to provide a case-level (participant-level) referral recommendation to aid frontline health workers in promptly referring those suspected of having suspicious lesions to the next level of care. The case-level performance of the trained models was analysed against the tele-specialist’s labels, which had been reviewed based on case information, including images, metadata, and habit history. It was found that the model’s case-level performance against a tele-specialist was better than that of a frontline health worker, in terms of sensitivity (Figure 1), enabling early detection of oral precancers in resource-limited settings.
+Building on binary classification, we developed deep learning models for a finer, risk-based three-class classification of white-light images of the oral cavity into Nonsuspicious, Suspicious Low-risk, and Suspicious High-risk categories. This finer classification enables a higher priority referral to those who are at a higher risk of developing cancer or have already developed one. We developed models based on the U-Net architecture, using MobileViT-v2 layers, for simultaneous lesion classification and segmentation, thereby enhancing the interpretability of the model’s decisions. Further, to robustly compare the performance of trained deep-learning models with human specialists (readers), we developed a framework inspired by multi-reader, multi-case (MRMC) studies prevalent in medical imaging. We conducted a reader-study design, developed a latent-variable framework based on Bernoulli modelling, estimated the parameters via maximum likelihood estimation (MLE), and performed a generalised likelihood ratio test (GLRT) to establish the non-inferiority of AI models compared to readers. This setting was designed specifically for scenarios where AI models act autonomously, and no ground-truth labels are available. Going forward, we aim to assess the performance of the deployed models using the framework we have developed.

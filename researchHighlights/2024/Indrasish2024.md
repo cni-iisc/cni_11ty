@@ -13,7 +13,7 @@ year: 2024
 category: phd #should have either mtech or phd
 
 report_video: BT8Nswmi2LE
-permalink: "/highlights/Indrasish2024/" 
+permalink: "/highlights/2024/Indrasish2024/" 
 ---
 <b>Coursework:</b> I have successfully completed a total of five RTP courses of 15 credits. In
 addition, I have completed two non-RTP courses, E0 230: Computational Methods of
