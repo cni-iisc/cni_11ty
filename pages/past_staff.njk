@@ -7,12 +7,12 @@ permalink: "/staff/alumni/"
 
 
 <div class="container-fluid mt-2 text-center justify-content-center" style="max-width:1000px;">
-<h2 class="text-center mb-4">Past Staff</h2>
+<h2 class="text-center mb-4">Former Staff</h2>
   <div class="row jusitfy-content-center gap-0">
     {% for person in collections.Staff | sortByNumber("cap") %}
     {% if person.data.past === true %}
       <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
-        <div class="card mb-4 staff-card"> 
+        <div class="card mb-4 staff-card">
           <!-- show only if person.data.img has 2024-->
           <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top">
           <div class="staff-card-body">
