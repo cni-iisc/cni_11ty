@@ -34,6 +34,9 @@ module.exports = function (eleventyConfig) {
   //ignore pre-built rpcourse from template processing
   eleventyConfig.ignores.add("courses/random/**");
 
+  //ignore root-level planning docs (no front matter, contain template syntax)
+  eleventyConfig.ignores.add("RESIZING_PLAN.md");
+
   //copy pre-built rpcourse content to output after build
   eleventyConfig.on('eleventy.after', async () => {
     const src = path.join(__dirname, 'courses/random');
@@ -163,10 +166,29 @@ module.exports = function (eleventyConfig) {
       .filter((person) => person.data.category === "Staff");
   });
 
-  eleventyConfig.addCollection("Interns", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("./_people/interns/*.md")
-      .filter((person) => person.data.category === "Intern");
+  eleventyConfig.addCollection("Interns", function () {
+    // data-driven from _data/interns.yml instead of _people/interns/*.md
+    const interns = yaml.load(
+      fs.readFileSync(path.join(__dirname, "_data/interns.yml"), "utf8")
+    );
+    // sort: duration_to reverse-chronological (ongoing first), then duration_from reverse-chronological
+    const sortKey = (p, field) =>
+      field === "duration_to" && p.duration_to === "ongoing" ? "9999-99" : p[field] || "";
+    return interns
+      .slice()
+      .sort(
+        (a, b) =>
+          sortKey(b, "duration_to").localeCompare(sortKey(a, "duration_to")) ||
+          sortKey(b, "duration_from").localeCompare(sortKey(a, "duration_from"))
+      );
+  });
+
+  eleventyConfig.addFilter("formatMonth", (ym) => {
+    if (ym === "ongoing") return "Ongoing";
+    if (!ym) return "";
+    const [y, m] = String(ym).split("-");
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    return `${months[Number(m) - 1] || ""} ${y}`.trim();
   });
 
   eleventyConfig.addCollection("Postdocs", function (collectionApi) {

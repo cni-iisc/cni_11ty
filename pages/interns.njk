@@ -9,24 +9,30 @@ permalink: "/interns/"
 <div class="container-fluid my-2 text-center justify-content-center" style="max-width: 1200px;">
 <h1 class="text-center mb-4">Interns</h1>
   <div class="row jusitfy-content-center gap-0 row-gap-0">
-    {% for person in collections.Interns | sort(attribute="data.importance") %}
-    {% if person.data.past != true %}
+    {% for person in collections.Interns %}
       <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
         <div class="card mb-4 staff-card">
-          <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top img-fluid">
+          {% if person.profile_pic %}
+          <img src="{{ person.profile_pic }}" alt="{{ person.name }}" class="card-img-top img-fluid">
+          {% endif %}
           <div class="staff-card-body lh-sm">
-            <h6 class="card-title mt-2">{{ person.data.title }}</h6>
-            <p style="color: var(--hover-clr);">{{ person.data.position_at_CNI }}</p>
-            {% if person.data.linkedin %}
-              <a href="{{ person.data.linkedin }}" target="_blank" class="linkedin-icon mt-0">
+            <h6 class="card-title mt-2">{{ person.name }}</h6>
+            <p style="color: var(--hover-clr);">{{ person.duration_from | formatMonth }} – {{ person.duration_to | formatMonth }}</p>
+            {% if person.institute %}
+            <p class="mb-1">{{ person.institute }}</p>
+            {% endif %}
+            {% if person.linkedin %}
+              <a href="{{ person.linkedin }}" target="_blank" class="linkedin-icon mt-0">
                 <i class="fab fa-linkedin fa-lg mt-0"></i> <!-- Font Awesome LinkedIn Icon -->
+              </a>
+            {% elif person.url %}
+              <a href="{{ person.url }}" target="_blank" class="linkedin-icon mt-0">
+                <i class="fas fa-globe fa-lg mt-0"></i> <!-- Font Awesome Globe Icon -->
               </a>
             {% endif %}
           </div>
         </div>
       </div>
-      {% endif %}
     {% endfor %}
   </div>
-  <a type="button" class="btn button-style" href="/interns/alumni/"><h4 style="margin: 0">Former interns</h4></a>
 </div>

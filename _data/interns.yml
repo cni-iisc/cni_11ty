@@ -1,0 +1,88 @@
+# Interns listing, consumed by the "Interns" collection in .eleventy.js
+# (renders /interns/ and /interns/alumni/).
+#
+# - duration_from / duration_to use YYYY-MM so they sort lexicographically.
+# - duration_to: "ongoing" means the internship has not ended yet (shown as current).
+# - Order in this file doesn't matter; the collection sorts by duration_to (reverse
+#   chronological, ongoing first) then duration_from (reverse chronological).
+# - TODO: fill in institute and url (personal website) where known.
+
+- name: Akhil T
+  linkedin: https://linkedin.com/in/akhilt2/
+  url: ""
+  profile_pic: /assets/images/people/interns/AkhilT.jpg
+  duration_from: 2026-05
+  duration_to: ongoing
+  institute: ""
+
+- name: Sourakanti Misra
+  linkedin: https://www.linkedin.com/in/sourakantimisra/?utm_source=share_via&utm_content=profile&utm_medium=member_android
+  url: ""
+  profile_pic: /assets/images/people/interns/SourakantiMisra.png
+  duration_from: 2026-06
+  duration_to: 2026-07
+  institute: ""
+
+- name: Soumil Mukherjee
+  linkedin: https://www.linkedin.com/in/soumil-ju-tt/
+  url: ""
+  profile_pic: /assets/images/people/interns/SoumilMukherjee.png
+  duration_from: 2026-06
+  duration_to: 2026-07
+  institute: ""
+
+- name: Anway Durge
+  linkedin: https://www.linkedin.com/in/anway-durge-5b47051b3/
+  url: ""
+  profile_pic: /assets/images/people/interns/AnwayDurge.JPG
+  duration_from: 2026-02
+  duration_to: 2026-06
+  institute: ""
+
+- name: Rishabh Parmar
+  linkedin: https://www.linkedin.com/in/rishabhrp/
+  url: ""
+  profile_pic: /assets/images/people/interns/Rishabh_Parmar.JPG
+  duration_from: 2026-02
+  duration_to: 2026-06
+  institute: ""
+
+- name: Vedanth Padmaraman
+  linkedin: https://linkedin.com/in/vedanth-padmaraman/
+  url: ""
+  profile_pic: /assets/images/people/interns/Vedanth_Padmaraman.jpg
+  duration_from: 2026-01
+  duration_to: 2026-05
+  institute: ""
+
+- name: Spaarsh Thakkar
+  linkedin: https://www.linkedin.com/in/spaarsh-thakkar/
+  url: ""
+  profile_pic: /assets/images/people/interns/Spaarsh.jpg
+  duration_from: 2025-05
+  duration_to: 2025-12
+  institute: ""
+
+- name: Dhruthan M N
+  linkedin: https://www.linkedin.com/in/dhruthan
+  url: ""
+  profile_pic: /assets/images/people/interns/Dhruthan.jpg
+  duration_from: 2025-06
+  duration_to: 2025-09
+  institute: ""
+
+- name: Ayush Gaurav
+  linkedin: https://www.linkedin.com/in/ayush-gaurav-11530525a/
+  url: ""
+  profile_pic: /assets/images/people/interns/Ayush.jpg
+  duration_from: 2025-06
+  duration_to: 2025-08
+  institute: ""
+
+- name: Hrishikesh Gogoi
+  linkedin: ""
+  url: ""
+  profile_pic: /assets/images/people/interns/hrishikesh-gogoi.avif
+  duration_from: 2025-02
+  duration_to: 2025-05
+  institute: ""
