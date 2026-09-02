@@ -15,7 +15,7 @@ permalink: /news/
         <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0">
             <div class="card shadow-sm">
                 {% if item.img %}
-                <img src="/{{ item.img }}" class="card-img-top img-fluid" alt="{{ item.title }}" style="height:250px; object-fit:cover;">
+                <img src="/{{ item.img }}" class="card-img-top img-fluid" alt="{{ item.title }}" style="height:250px; width: auto; object-fit:cover;">
                 {% endif %}
                 <div class="card-body">
                     <h6 class="card-title">{{ item.title }}</h6>
