@@ -137,7 +137,7 @@ Please email [outreach.cni@iisc.ac.in](mailto:outreach.cni@iisc.ac.in) with the 
 ### Sponsors
 
 <div class="container-fluid text-center">
-    <div class="d-flex justify-content-center align-items-center flex-wrap">
+    <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 48px;">
         <img src="/assets/img/workshops/eBPF_Foundation.png" alt="eBPF Foundation Logo" class="img-fluid" style="height: 150px; width: auto; object-fit: contain;">
         <img src="/assets/img/Logos/Cisco CSR Logos-TM-vert.png" alt="Cisco CSR logo" class="img-fluid" style="height: 150px; width: auto; object-fit: contain;">
     </div>
@@ -146,8 +146,8 @@ Please email [outreach.cni@iisc.ac.in](mailto:outreach.cni@iisc.ac.in) with the 
 ### Supported by
 
 <div class="container-fluid text-center">
-    <div class="d-flex justify-content-center align-items-center flex-wrap">
+    <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 48px;">
       <img src="/assets/img/Logos/IISc_logo.png" alt="Image 3" class="img-fluid" style="height: 150px; width: auto; object-fit: contain;">
-      <img src="/assets/img/Logos/ECE Cropped.jpg" alt="Image 4" class="img-fluid" style="height: 150px; width: auto; object-fit: contain;">
+      <img src="/assets/img/Logos/ECE Cropped.jpg" alt="Image 4" class="img-fluid" style="height: 60px; width: auto; object-fit: contain;">
     </div>
 </div>
