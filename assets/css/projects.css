@@ -9,8 +9,9 @@
 
 .card-img-top {
   border-radius: 5px 5px 0 0;
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
+  height: 260px;
+  object-fit: cover; /* uniform card heights; slight crop of the thumbnail */
 }
 
 .card-body {
@@ -49,4 +50,3 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
-

@@ -69,6 +69,14 @@ html, body {
   color: white;
 }
 
+/* YouTube hqdefault.jpg is 4:3 (480x360) with black letterbox bars baked in
+   for 16:9 videos. Rendering it in a 16:9 box with object-fit: cover crops the
+   two symmetric bars away (16:9 of 480x360 = 480x270, bars are 45px each). */
+.yt-thumb {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .banner-image {
   width: 100%;
   height: 300px;
