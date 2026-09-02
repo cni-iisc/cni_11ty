@@ -124,7 +124,7 @@ Apart from this, we have the bi-annual Cisco-IISc day on June 27, where all CNI 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -332,7 +332,7 @@ Apart from this, we have the bi-annual Cisco-IISc day on June 27, where all CNI 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/5ZGOVwc9l-c" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/25598f3c71f91db1e87fe7431f258ee5.png" alt="Multiparty Interactive Coding over Networks of Intersecting Broadcast Links" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/5ZGOVwc9l-c" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/25598f3c71f91db1e87fe7431f258ee5.png" alt="Multiparty Interactive Coding over Networks of Intersecting Broadcast Links" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -424,7 +424,7 @@ Apart from this, we have the bi-annual Cisco-IISc day on June 27, where all CNI 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/5Rrbm8VEFsA" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/304fd22b5eb275bacd254f3e4e783dc9.png" alt="Probably Anytime-Safe Stochastic Combinatorial Semi-Bandits | Prof. Vincent Y. F. Tan" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/5Rrbm8VEFsA" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/304fd22b5eb275bacd254f3e4e783dc9.png" alt="Probably Anytime-Safe Stochastic Combinatorial Semi-Bandits | Prof. Vincent Y. F. Tan" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -526,7 +526,7 @@ Apart from this, we have the bi-annual Cisco-IISc day on June 27, where all CNI 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/peevkOXh7vM" target="_blank" data-block-id="243"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/62b8159834bf33acd53c3a914bf98beb.png" alt="The unreasonable effectiveness of mathematics in large scale deep learning" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/peevkOXh7vM" target="_blank" data-block-id="243"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/62b8159834bf33acd53c3a914bf98beb.png" alt="The unreasonable effectiveness of mathematics in large scale deep learning" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -601,7 +601,7 @@ Apart from this, we have the bi-annual Cisco-IISc day on June 27, where all CNI 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/dtVckysRbDs" target="_blank" data-block-id="247"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c551871e792aeda2340700094e6833b9.png" alt="Missing Mass and Optimal Discovery" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/dtVckysRbDs" target="_blank" data-block-id="247"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c551871e792aeda2340700094e6833b9.png" alt="Missing Mass and Optimal Discovery" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -680,10 +680,10 @@ Apart from this, we have the bi-annual Cisco-IISc day on June 27, where all CNI 
 <table class="mceClusterLayout" border="0" width="" cellspacing="0" cellpadding="0" data-block-id="-9">
 <tbody>
 <tr>
-<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="auto" /></a></td>
+<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="auto" /></a></td>
+<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="auto" /></a></td>
+<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="auto" /></a></td>
+<td class="mobileClass-767" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="767"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -708,12 +708,12 @@ Apart from this, we have the bi-annual Cisco-IISc day on June 27, where all CNI 
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

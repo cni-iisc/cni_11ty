@@ -17,5 +17,5 @@ CNI, in partnership with eBPF Foundation, is organizing the first eBPF Day India
 <br>
 **For registration and other details, please see [cni.iisc.ac.in/workshops/2024/ebpf](https://cni.iisc.ac.in/_workshops/2024/ebpf)**
 <br><br>
-<a href="/workshops/2024/ebpf"><img src="{{ site.url }}{{ site.baseurl }}/assets/img/workshops/ebpfDay-poster2.png"  width="100%"></a>
+<a href="/workshops/2024/ebpf"><img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/workshops/ebpfDay-poster2.png"  width="100%"></a>
 

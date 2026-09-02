@@ -19,7 +19,7 @@ showcase: false
     </p>
 <br>
     <br>
-    <img width = "100%" src= "/assets/img/workshops/ita2023.png"/>
+    <img alt="" width = "100%" src= "/assets/img/workshops/ita2023.png"/>
 <br>
     </center>
 

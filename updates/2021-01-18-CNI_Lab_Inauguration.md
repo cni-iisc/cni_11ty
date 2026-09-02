@@ -22,10 +22,10 @@ The Centre for Networked Intelligence, IISc inaugurated its state-of-the-art net
 </div>
 
 
-&nbsp;&nbsp;<img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05396-199x300.jpg" class="img-fluid">&emsp;&nbsp;
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05402-199x300.jpg" class="img-fluid">&emsp;&nbsp;
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05413-199x300.jpg" class="img-fluid">&emsp;&nbsp;
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05426-199x300.jpg" class="img-fluid">
+&nbsp;&nbsp;<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05396-199x300.jpg" class="img-fluid">&emsp;&nbsp;
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05402-199x300.jpg" class="img-fluid">&emsp;&nbsp;
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05413-199x300.jpg" class="img-fluid">&emsp;&nbsp;
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/DSC05426-199x300.jpg" class="img-fluid">
 
 CNI Networking Lab, developed in collaboration with [Cisco](https://www.linkedin.com/company/cisco/) was inaugurated by Krishna Sundaresan, VP Engineering, Cisco India and SAARC. The centre’s logo was unveiled by Prof. Yadati Narahari, Chair, Division of EECS, IISc.
 

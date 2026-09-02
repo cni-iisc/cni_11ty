@@ -16,4 +16,4 @@ The hackathon, featuring unique challenges to solve regarding authentication and
 
 Please head over to [https://hackathon.uidai.gov.in](https://hackathon.uidai.gov.in/) for more details.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/aadhar_hackathon.jpeg" class="img-fluid">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/aadhar_hackathon.jpeg" class="img-fluid">

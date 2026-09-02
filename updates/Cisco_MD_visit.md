@@ -6,4 +6,4 @@ showcase: true
 img: assets/img/updates/2026/Cisco MD Visit to CNI 2026.png
 date: 2026-03-11
 ---
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/updates/2026/Cisco MD Visit to CNI 2026.png"  width="100%">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/updates/2026/Cisco MD Visit to CNI 2026.png"  width="100%">

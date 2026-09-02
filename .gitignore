@@ -11,3 +11,6 @@ _data/events.json
 *.fls
 *.log
 *.out
+
+# eleventy-img optimization cache
+.11ty-img-cache

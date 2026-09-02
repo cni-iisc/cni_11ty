@@ -149,7 +149,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 24px 0 0 24px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 98.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="98.811320754717" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 24px 0 0 24px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 98.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -293,7 +293,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 </td>
 </tr>
 <tr style="height: 367px;">
-<td class="mceBlockContainerE2E" style="padding: 0px; height: 367px;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/summerschool/2023" target="_blank" data-block-id="170"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/6ff6d3f3-cae4-5d20-4953-3cd5be018597.jpeg" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 0px; height: 367px;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/summerschool/2023" target="_blank" data-block-id="170"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/6ff6d3f3-cae4-5d20-4953-3cd5be018597.jpeg" alt="" height="auto" /></a></td>
 </tr>
 <tr style="height: 23px;">
 <td class="mceBlockContainer" style="background-color: transparent; padding: 0px; height: 23px;" valign="top">&nbsp;</td>
@@ -363,7 +363,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/5Rrbm8VEFsA" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/ef8fc90a54c0a5407ecd076b9fb32cfa.png" alt="Probably Anytime-Safe Stochastic Combinatorial Semi-Bandits | Prof. Vincent Y. F. Tan" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/5Rrbm8VEFsA" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/ef8fc90a54c0a5407ecd076b9fb32cfa.png" alt="Probably Anytime-Safe Stochastic Combinatorial Semi-Bandits | Prof. Vincent Y. F. Tan" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -438,7 +438,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=peevkOXh7vM" target="_blank" data-block-id="157"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/06c138d3860e03ea7636c2398b905e91.png" alt="The unreasonable effectiveness of mathematics in large scale deep learning" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=peevkOXh7vM" target="_blank" data-block-id="157"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/06c138d3860e03ea7636c2398b905e91.png" alt="The unreasonable effectiveness of mathematics in large scale deep learning" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -539,7 +539,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=dtVckysRbDs" target="_blank" data-block-id="159"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/db3f8e0af35709d2f189ff6a23f34567.png" alt="Missing Mass and Optimal Discovery" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=dtVckysRbDs" target="_blank" data-block-id="159"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/db3f8e0af35709d2f189ff6a23f34567.png" alt="Missing Mass and Optimal Discovery" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -614,7 +614,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=OJnlLWXft2U" target="_blank" data-block-id="160"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/9ae023dd5ce1fe874737fd57b4508d98.png" alt="A tale of tails: Asymptotics and Non-asymptotics in Load Balancing| Prof. Siva Theja Maguluri" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=OJnlLWXft2U" target="_blank" data-block-id="160"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/9ae023dd5ce1fe874737fd57b4508d98.png" alt="A tale of tails: Asymptotics and Non-asymptotics in Load Balancing| Prof. Siva Theja Maguluri" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -715,7 +715,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 0 12px 0;" align="center" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-07-14/" target="_blank" data-block-id="166"><img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/826c89b7-37ae-313e-d696-415e6bc0b31a.png" alt="" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 0 12px 0;" align="center" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-07-14/" target="_blank" data-block-id="166"><img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/826c89b7-37ae-313e-d696-415e6bc0b31a.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -790,7 +790,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-07-17/" target="_blank" data-block-id="165"><img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a992accc-51da-0f55-2d9a-f5e4a791a3fd.png" alt="" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-07-17/" target="_blank" data-block-id="165"><img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a992accc-51da-0f55-2d9a-f5e4a791a3fd.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -891,7 +891,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=wZi2bdZDadM" target="_blank" data-block-id="167"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/847f814766eeb9353a53c964800b7b41.png" alt="Dynamic Pricing and Matching for Online Marketplaces| Sushil Varma, Georgia Tech." width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=wZi2bdZDadM" target="_blank" data-block-id="167"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/847f814766eeb9353a53c964800b7b41.png" alt="Dynamic Pricing and Matching for Online Marketplaces| Sushil Varma, Georgia Tech." height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -980,7 +980,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 50px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=5ZGOVwc9l-c&amp;list=PLNN9TCnjABcZm0JkniaBpOIn3vb6dYTdH&amp;index=10" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/7472c9720d50a8d8f85ee4e381a958b4.png" alt="Multiparty Interactive Coding over Networks of Intersecting Broadcast Links" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 50px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://www.youtube.com/watch?v=5ZGOVwc9l-c&amp;list=PLNN9TCnjABcZm0JkniaBpOIn3vb6dYTdH&amp;index=10" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/7472c9720d50a8d8f85ee4e381a958b4.png" alt="Multiparty Interactive Coding over Networks of Intersecting Broadcast Links" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1082,7 +1082,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 294px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/ea88e522-37cf-4bfd-f3bf-706e321afbb7.png" alt="" width="294" height="auto" data-block-id="187" /></td>
+<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 294px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/ea88e522-37cf-4bfd-f3bf-706e321afbb7.png" alt="" height="auto" data-block-id="187" /></td>
 </tr>
 </tbody>
 </table>
@@ -1157,7 +1157,7 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 294px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/f7229223-f2c1-5e85-e80b-4387a380d603.jpeg" alt="" width="294" height="auto" data-block-id="228" /></td>
+<td class="mceBlockContainer" style="background-color: #f8f9ff; padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 294px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/f7229223-f2c1-5e85-e80b-4387a380d603.jpeg" alt="" height="auto" data-block-id="228" /></td>
 </tr>
 </tbody>
 </table>
@@ -1229,10 +1229,10 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
 <table class="mceClusterLayout" border="0" width="" cellspacing="0" cellpadding="0" data-block-id="-9">
 <tbody>
 <tr>
-<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="auto" /></a></td>
+<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="auto" /></a></td>
+<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="auto" /></a></td>
+<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="auto" /></a></td>
+<td class="mobileClass-32" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="32"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1257,12 +1257,12 @@ msg-content: "We have one major upcoming event this month. The Centre for Networ
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

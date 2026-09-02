@@ -11,7 +11,7 @@ year: 2019
 
 <h3 style="text-align:center;"><a href="https://cps.iisc.ac.in/pudx/">Winners announced</a></h3>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/combine-all-5-logos.png">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/combine-all-5-logos.png">
 
 #### Pune Urban Data Exchange (PUDX) Datathon  
 

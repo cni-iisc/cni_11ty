@@ -9,7 +9,7 @@ category: ""
 
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital-defenders-ctf-2023.jpeg" class="img-fluid">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital-defenders-ctf-2023.jpeg" class="img-fluid">
 
 This **Capture the Flag (CTF)** competition was organized by [CySecK- the K-Tech Centre of Excellence in Cyber Security](https://cs-coe.iisc.ac.in/) – in association with the [Centre for Networked Intelligence (CNI)](https://cni.iisc.ac.in/) (located in the Indian Institute of Science, Bengaluru) and [Cisco Systems India Pvt. Ltd.](https://www.cisco.com/site/in/en/index.html)
 
@@ -19,9 +19,9 @@ The aim of this CTF was to promote awareness of cybersecurity and to guide and t
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_1.jpeg" class="img-fluid">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_2.jpeg" class="img-fluid">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_3.jpeg" class="img-fluid">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_1.jpeg" class="img-fluid">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_2.jpeg" class="img-fluid">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_3.jpeg" class="img-fluid">
 
 
 <b>With the conclusion of this year's hackathon</b>, we have awarded <b>25 prizes</b> worth <b>INR 400,000</b> to participants across 30 states and Union Territories of India.

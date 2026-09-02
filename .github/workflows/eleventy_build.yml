@@ -38,7 +38,22 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
+
+      - name: Cache optimized images and remote-fetch cache
+        uses: actions/cache@v4
+        with:
+          # docs/img holds the generated derivatives; preserving it between runs
+          # lets eleventy-img skip re-encoding unchanged images (incremental
+          # builds). .11ty-img-cache holds downloaded remote sources (newsletter
+          # images). Rolling key + restore-keys keep the most recent cache even
+          # when new assets invalidate the exact key.
+          path: |
+            docs/img
+            .11ty-img-cache
+          key: eleventy-img-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            eleventy-img-v1-
 
       - name: Install dependencies
         run: npm ci

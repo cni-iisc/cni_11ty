@@ -88,7 +88,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -192,7 +192,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 18px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-18/" target="_blank" data-block-id="429"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/83656b9a-94a8-f077-1548-624dedd98d27.png" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 18px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-18/" target="_blank" data-block-id="429"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/83656b9a-94a8-f077-1548-624dedd98d27.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -293,7 +293,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 12px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-19/" target="_blank" data-block-id="481"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/8ef63d2c-7257-b9b6-33a2-00be62d10628.jpg" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 12px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-19/" target="_blank" data-block-id="481"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/8ef63d2c-7257-b9b6-33a2-00be62d10628.jpg" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -368,7 +368,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 18px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-20/" target="_blank" data-block-id="487"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/6b50f58d-6fba-1bed-4287-53fc4eb4581e.jpg" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 18px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-20/" target="_blank" data-block-id="487"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/6b50f58d-6fba-1bed-4287-53fc4eb4581e.jpg" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -549,7 +549,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 188px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/ed39c9e6-5054-c967-3d73-12f720760433.jpeg" alt="" width="188" height="auto" data-block-id="506" /></td>
+<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 188px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/ed39c9e6-5054-c967-3d73-12f720760433.jpeg" alt="" height="auto" data-block-id="506" /></td>
 </tr>
 </tbody>
 </table>
@@ -558,7 +558,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 31px 0 12px 0;" align="full" valign="top"><img class="imageDropZone" style="width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eeac0a5d-37ef-2afa-c0c3-d6df29c32675.jpg" alt="" width="660" height="auto" data-block-id="507" /></td>
+<td class="mceBlockContainerE2E" style="padding: 31px 0 12px 0;" align="full" valign="top"><img class="imageDropZone" style="width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eeac0a5d-37ef-2afa-c0c3-d6df29c32675.jpg" alt="" height="auto" data-block-id="507" /></td>
 </tr>
 </tbody>
 </table>
@@ -567,7 +567,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 188px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a8df23b6-35f5-d148-3b9d-20b63913d960.jpeg" alt="" width="188" height="auto" data-block-id="508" /></td>
+<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 188px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a8df23b6-35f5-d148-3b9d-20b63913d960.jpeg" alt="" height="auto" data-block-id="508" /></td>
 </tr>
 </tbody>
 </table>
@@ -670,7 +670,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 82px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-11-22/" target="_blank" data-block-id="452"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/db4350ea-27f7-e680-62ac-0a6c0731e285.png" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 82px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-11-22/" target="_blank" data-block-id="452"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/db4350ea-27f7-e680-62ac-0a6c0731e285.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -775,7 +775,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 102px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-11-28/" target="_blank" data-block-id="447"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/b21c7f93-e898-8edb-d054-708d407a1254.png" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 102px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-11-28/" target="_blank" data-block-id="447"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/b21c7f93-e898-8edb-d054-708d407a1254.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -850,7 +850,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 32px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-01/" target="_blank" data-block-id="449"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a7fa9a8e-f001-00d4-331a-2a137af46c8c.png" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 32px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-01/" target="_blank" data-block-id="449"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a7fa9a8e-f001-00d4-331a-2a137af46c8c.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -955,7 +955,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 30px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-05/" target="_blank" data-block-id="450"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a9297434-d342-81ab-20ba-58bbedf36d05.png" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 30px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-05/" target="_blank" data-block-id="450"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a9297434-d342-81ab-20ba-58bbedf36d05.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1030,7 +1030,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 58px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-12/" target="_blank" data-block-id="454"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/0dd4bf0a-8043-b72d-376e-33a43486aeec.jpg" alt="" width="660" height="auto" /></a></td>
+<td class="mceBlockContainerE2E" style="padding: 58px 0 12px 0;" align="full" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-12-12/" target="_blank" data-block-id="454"><img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/0dd4bf0a-8043-b72d-376e-33a43486aeec.jpg" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1106,10 +1106,10 @@ img: "JTGSS 1.JPG"
 <table class="mceClusterLayout" border="0" width="" cellspacing="0" cellpadding="0" data-block-id="-9">
 <tbody>
 <tr>
-<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="auto" /></a></td>
+<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="auto" /></a></td>
+<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="auto" /></a></td>
+<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="auto" /></a></td>
+<td class="mobileClass-726" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="726"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1134,12 +1134,12 @@ img: "JTGSS 1.JPG"
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

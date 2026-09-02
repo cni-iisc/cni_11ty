@@ -77,7 +77,7 @@ category: ""
 
     <div class="container-intro">
       <div class="image">
-        <img src="/assets/projects/Wi-Fi-optimization/assets/img/enterprise_network_adwiser.png">
+        <img alt="" src="/assets/projects/Wi-Fi-optimization/assets/img/enterprise_network_adwiser.png">
         <figcaption align="center">Fig.1 - a typical WiFi newtork with ADWISER</figcaption>
       </div>
 
@@ -97,7 +97,7 @@ category: ""
   
   <div class="container-intro">
     <div class="image">
-      <img src="/assets/projects/Wi-Fi-optimization/assets/img/adwiser_architecture.png" >
+      <img alt="" src="/assets/projects/Wi-Fi-optimization/assets/img/adwiser_architecture.png" >
       <figcaption align="center">Fig.2 - Internal Architecture of ADWISER</figcaption>
     </div>
     <div class="text">
@@ -135,7 +135,7 @@ category: ""
       The cell-edge STAs experience co-channel interference during simultaneous transmission from the APs.
       <br></p>
 		<div class="img-center">
-			<img src="/assets/projects/Wi-Fi-optimization/assets/img/physical_locations_APs_STAs_networks_lab_ece_iisc.jpeg" alt="testbedlayout" width="500" height="300" align="middle"/>
+			<img src="/assets/projects/Wi-Fi-optimization/assets/img/physical_locations_APs_STAs_networks_lab_ece_iisc.jpeg" alt="testbedlayout" height="300" align="middle"/>
       <figcaption align="center">Fig.3 - Physical testbed with 4AP-2STA</figcaption>
 		</div>		
       </div>

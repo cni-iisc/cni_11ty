@@ -13,7 +13,7 @@ permalink: "/interns/"
       <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
         <div class="card mb-4 staff-card">
           {% if person.profile_pic %}
-          <img src="{{ person.profile_pic }}" alt="{{ person.name }}" class="card-img-top img-fluid">
+          <img src="{{ person.profile_pic }}" alt="{{ person.name }}" class="card-img-top img-fluid" sizes="230px" eleventy:widths="230,460">
           {% endif %}
           <div class="staff-card-body lh-sm">
             <h6 class="card-title mt-2">{{ person.name }}</h6>

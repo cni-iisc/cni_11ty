@@ -135,3 +135,9 @@ background-color: var(--hyperlink-clr);
         height: 360px;
     }
 }
+/* YouTube hqdefault.jpg is 4:3 with baked-in letterbox bars for 16:9 videos;
+   the .yt-thumb crop removes them (same rule as seminar_cards.css). */
+.yt-thumb {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}

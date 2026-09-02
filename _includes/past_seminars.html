@@ -65,9 +65,9 @@ layout: base.html
                 {% else %}
                 {% if seminar.data.recorded_video %}
                 {% set videoId = seminar.data.recorded_video %}
-                <img class="card-img-top img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg"
+                <img class="card-img-top img-fluid yt-thumb" src="/assets/img/thumbs/{{ videoId }}-hq.jpg"
                     alt="Card image cap">
-                {% else %}
+                {% elif seminar.data.img %}
                 {% if seminar.data.img.startsWith('/') %}
                 {% set imgSrc = seminar.data.img.slice(1) %}
                 {% else %}

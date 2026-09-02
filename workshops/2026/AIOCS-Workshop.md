@@ -8,7 +8,7 @@ showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/AIOCS-workshop-jul2026.jpg"/>
+      <img alt="" class="img-fluid" src="/assets/img/workshops/AIOCS-workshop-jul2026.jpg"/>
 </div>
 <p>AI in Oral Cancer Screening: Bridging Innovation and Clinical Practice is a one-day workshop bringing together researchers, clinicians, and startups working on AI-driven point-of-care screening for oral cancer, for technical talks and discussion on translating research into clinical impact.</p>
 

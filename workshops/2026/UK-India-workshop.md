@@ -8,7 +8,7 @@ showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/2026/CNI_TechnicalWorkshop_13April2026_Poster.png"/>
+      <img alt="" class="img-fluid" src="/assets/img/workshops/2026/CNI_TechnicalWorkshop_13April2026_Poster.png"/>
 </div>
 <p>A CNI Technical Workshop on Future Communications and Networking, advancing research dialogue and Indo-UK collaboration. This workshop brings together researchers, practitioners, and students to explore emerging directions in communication systems, network science, and related interdisciplinary domains.</p>
 
@@ -434,8 +434,8 @@ body.dark .close-btn {
 
 <h4>Supported by</h4>
 <div class="container-fluid" align="center">
-  <img class="img-fluid" src= "/assets/img/workshops/2026/IISc_Master_Seal_Transparent.png" style="height: 170px;"/>
-  <img class="img-fluid" src= "/assets/img/workshops/2026/ECE LOGO svg.png" style="height: 100px;"/>
+  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/IISc_Master_Seal_Transparent.png" style="height: 170px;"/>
+  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/ECE LOGO svg.png" style="height: 100px;"/>
 </div>
 
 <div id="modal">

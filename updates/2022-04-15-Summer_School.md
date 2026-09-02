@@ -12,7 +12,7 @@ header:
 ---
 The 2022 edition of CNI Summer school is here!
 
-![]({{ site.url }}{{ site.baseurl }}/images/posts/SummerSchool2022_poster.png)
+![](/assets/img/posts/SummerSchool2022_poster.png)
 
 This year’s summer school will be in the form of a short course on Online Algorithms, taught by Prof. Rahul Vaze from TIFR Mumbai. It will be conducted in hybrid mode (online as well as in-person participation in IISc Campus).
 

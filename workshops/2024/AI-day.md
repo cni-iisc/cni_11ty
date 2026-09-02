@@ -9,7 +9,7 @@ showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-<img class="img-fluid" src= "/assets/img/workshops/AIDay-poster-v3.png"/>
+<img alt="" class="img-fluid" src= "/assets/img/workshops/AIDay-poster-v3.png"/>
 </div>
 
 #### One-day workshop on topics in Generative AI
@@ -105,5 +105,5 @@ Please email [outreach.cni@iisc.ac.in](mailto:outreach.cni@iisc.ac.in) with the 
 #### Supported by
 
 <div class="container-fluid" align="center">
-<img class="img-fluid" src= "/assets/img/workshops/iisc-ece-logos.png"/>
+<img alt="" class="img-fluid" src= "/assets/img/workshops/iisc-ece-logos.png"/>
 </div>

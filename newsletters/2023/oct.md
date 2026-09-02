@@ -81,7 +81,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -185,7 +185,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 18px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/6f64ee5e-6d1f-c416-75ac-c709cb88bb95.png" alt="" width="192" height="auto" data-block-id="429" /></td>
+<td class="mceBlockContainer" style="padding: 18px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/6f64ee5e-6d1f-c416-75ac-c709cb88bb95.png" alt="" height="auto" data-block-id="429" /></td>
 </tr>
 </tbody>
 </table>
@@ -295,7 +295,7 @@ img: "JTGSS 1.JPG"
 </td>
 </tr>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 16px 12px 80px;" valign="top"><img class="imageDropZone" style="width: 457px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/1f853eee-9974-046b-4b32-9e8c8880907d.jpg" alt="" width="457" height="auto" data-block-id="404" /></td>
+<td class="mceBlockContainer" style="padding: 12px 16px 12px 80px;" valign="top"><img class="imageDropZone" style="width: 457px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/1f853eee-9974-046b-4b32-9e8c8880907d.jpg" alt="" height="auto" data-block-id="404" /></td>
 </tr>
 </tbody>
 </table>
@@ -401,7 +401,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><img class="imageDropZone" style="width: 121.99999999999997px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/024c450d-ab5c-4ec7-dd91-03d7944bfb27.jpeg" alt="" width="121.99999999999997" height="auto" data-block-id="382" /></td>
+<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><img class="imageDropZone" style="width: 121.99999999999997px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/024c450d-ab5c-4ec7-dd91-03d7944bfb27.jpeg" alt="" height="auto" data-block-id="382" /></td>
 </tr>
 </tbody>
 </table>
@@ -502,7 +502,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f9f9f9; padding: 6px 0 0 0;" align="center" valign="top"><img class="imageDropZone" style="width: 112px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/b5b1a7f6-67d0-59bf-3a67-a4b0270f273c.jpeg" alt="" width="112" height="auto" data-block-id="393" /></td>
+<td class="mceBlockContainer" style="background-color: #f9f9f9; padding: 6px 0 0 0;" align="center" valign="top"><img class="imageDropZone" style="width: 112px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/b5b1a7f6-67d0-59bf-3a67-a4b0270f273c.jpeg" alt="" height="auto" data-block-id="393" /></td>
 </tr>
 </tbody>
 </table>
@@ -587,7 +587,7 @@ img: "JTGSS 1.JPG"
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 66px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/gITfote39tw" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c526dff7d28e6f483621e5bc25a8686b.png" alt="Programmable Networks: Hardware, Software, and Applications | Prof. Anirudh Sivaraman" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 66px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/gITfote39tw" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c526dff7d28e6f483621e5bc25a8686b.png" alt="Programmable Networks: Hardware, Software, and Applications | Prof. Anirudh Sivaraman" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -677,10 +677,10 @@ img: "JTGSS 1.JPG"
 <table class="mceClusterLayout" border="0" width="" cellspacing="0" cellpadding="0" data-block-id="-9">
 <tbody>
 <tr>
-<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="auto" /></a></td>
+<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="auto" /></a></td>
+<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="auto" /></a></td>
+<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="auto" /></a></td>
+<td class="mobileClass-5" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="5"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -705,12 +705,12 @@ img: "JTGSS 1.JPG"
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

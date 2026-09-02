@@ -10,10 +10,57 @@ const lightningCSS = require("@11tyrocks/eleventy-plugin-lightningcss");
 const browserslist = require("browserslist");
 const { transform, browserslistToTargets } = require("lightningcss");
 const mathjaxPlugin = require("eleventy-plugin-mathjax");
+const { eleventyImageTransformPlugin, default: Image } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   // Add the plugin with default settings (SVG output)
   eleventyConfig.addPlugin(mathjaxPlugin);
+
+  // Automatic image optimization: post-process every <img> in the built HTML.
+  // Emits <picture> with avif/webp sources + original-format fallback, adds
+  // responsive srcset/sizes, intrinsic width/height, lazy loading.
+  // Derivatives go to <output>/img/; originals stay in <output>/assets/ via
+  // the passthrough copy (also needed for favicon/CSS references).
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: "html",
+    // Single format: WebP — supported by ~97-98% of browsers (Chrome 32+,
+    // Firefox 65+, Safari 14+, Edge 18+), more than AVIF (~93%, Safari 16.4+),
+    // and it keeps transparency (important for the PNG logos).
+    formats: ["webp"],
+    // Posters spanning the full column were noticeably over-compressed at
+    // sharp's defaults. Per user spec: banners optimized from the originals at
+    // 1600px, up to ~400KB — measured WebP q85 at 1600w lands at 146-277K for
+    // the heaviest posters, so quality 85 with a 1600w candidate. Cards keep
+    // their small eleventy:widths overrides; smaller sources never upscale.
+    // NOTE: the derivative hash excludes the widths list, so width changes
+    // re-encode nothing — only quality/format options do.
+    widths: [400, 800, 1200, 1600],
+    sharpWebpOptions: { quality: 78 },
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+      sizes: "100vw",
+    },
+    // Route ALL derivatives into <output>/img/ (default behavior already does
+    // this for absolute srcs, but remote srcs like newsletter images get
+    // "colocated" into each page's directory — duplicating ~2k files and
+    // defeating the incremental build, since page dirs are wiped every build).
+    // Setting urlPath explicitly disables colocation entirely.
+    urlPath: "/img/",
+    cacheOptions: {
+      // NOTE: do NOT set `type` here — in eleventy-img v7 cacheOptions.type flows
+      // into eleventy-fetch as the *content* type ("buffer" is the correct default
+      // for remote images); "filesystem" there poisons the fetch cache (remote
+      // images cached as text, read back as a String, and sharp fails with
+      // "Input file is missing"). The derivative/output cache is a disk cache
+      // independent of this option.
+      duration: "1y",
+      directory: ".11ty-img-cache",
+    },
+    // Keep a dead/404 image as-is (like the pre-plugin site) instead of failing
+    // the whole build — e.g. remote thumbnails that no longer exist.
+    failOnError: false,
+  });
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
@@ -22,6 +69,45 @@ module.exports = function (eleventyConfig) {
     // e.g. 30 May 2025, 4:30 pm
   });
 
+
+  // The home-page carousel builds its <img> elements client-side from a JSON
+  // blob, so the HTML transform never sees those images and they would be
+  // served as raw passthrough originals (up to 2.5MB). This filter generates
+  // an optimized webp derivative (cached in docs/img like everything else,
+  // existence-based so unchanged sources are never re-encoded) and returns
+  // { src, srcset } for the carousel JSON.
+  eleventyConfig.addNunjucksAsyncFilter("carouselImg", (src, callback) => {
+    (async () => {
+      try {
+        let s = src;
+        // prefer the vendored maxres thumbnail for video items when available
+        // (the -mq.jpg used by the carousel JSON is only 320px wide and would
+        // be upscaled to full viewport width)
+        const mq = s.match(/^\/assets\/img\/thumbs\/(.+)-mq\.jpg$/);
+        if (mq) {
+          const maxPath = path.join(__dirname, "assets/img/thumbs", `${mq[1]}-max.jpg`);
+          if (fs.existsSync(maxPath)) s = `/assets/img/thumbs/${mq[1]}-max.jpg`;
+        }
+        const stats = await Image(s.replace(/^\//, ""), {
+          widths: [800, 1200, 1600],
+          formats: ["webp"],
+          outputDir: path.join(__dirname, "docs/img"),
+          urlPath: "/img/",
+          sharpWebpOptions: { quality: 78 },
+          cacheOptions: { duration: "1y", directory: ".11ty-img-cache" },
+        });
+        const cands = stats.webp || [];
+        const srcset = cands.map((c) => `${c.url} ${c.width}w`).join(", ");
+        return { src: cands.length ? cands[cands.length - 1].url : src, srcset };
+      } catch (e) {
+        console.warn("⚠️  carouselImg failed for", src, e.message);
+        return { src, srcset: "" }; // graceful fallback to the original
+      }
+    })().then(
+      (r) => callback(null, r),
+      (e) => callback(e)
+    );
+  });
 
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
@@ -46,6 +132,37 @@ module.exports = function (eleventyConfig) {
     }
     fs.cpSync(src, dest, { recursive: true });
     console.log('✅ Copied rpcourse content to docs/courses/random');
+
+    // Prune stale derivative images from docs/img. Every non-serve build
+    // rewrites ALL pages, so any docs/img file not referenced by the built
+    // HTML is a leftover of a changed/removed source — safe to delete (keeps
+    // the derivative cache and the gh-pages deploy from growing unbounded).
+    if (process.env.ELEVENTY_RUN_MODE !== "serve") {
+      const imgDir = path.join(__dirname, "docs/img");
+      if (fs.existsSync(imgDir)) {
+        const referenced = new Set();
+        const collect = (dir) => {
+          for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+            const p = path.join(dir, entry.name);
+            if (entry.isDirectory()) collect(p);
+            else if (entry.name.endsWith(".html")) {
+              for (const m of fs.readFileSync(p, "utf8").matchAll(/\/img\/[A-Za-z0-9._-]+/g)) {
+                referenced.add(m[0]);
+              }
+            }
+          }
+        };
+        collect(path.join(__dirname, "docs"));
+        let pruned = 0;
+        for (const f of fs.readdirSync(imgDir)) {
+          if (!referenced.has(`/img/${f}`)) {
+            fs.rmSync(path.join(imgDir, f), { force: true });
+            pruned++;
+          }
+        }
+        if (pruned) console.log(`🧹 Pruned ${pruned} stale derivative(s) from docs/img`);
+      }
+    }
   });
   // Custom filter to format time
   eleventyConfig.addFilter("formatTime", (date) => {
@@ -102,10 +219,19 @@ module.exports = function (eleventyConfig) {
       "./schools/*.html",
     ]);
   });
+  // Wipe the output dir, but KEEP docs/img: eleventy-img's derivative disk
+  // cache is existence-based (a derivative file present at its expected output
+  // path is reused without re-encoding), and derivative filenames embed a hash
+  // of the source bytes — so unchanged images are never re-encoded across
+  // builds (incremental builds). Changed/removed sources simply produce new
+  // hashed filenames; stale leftovers are pruned in the eleventy.after hook.
   eleventyConfig.on("beforeBuild", () => {
     const outputDir = "docs";
     if (fs.existsSync(outputDir)) {
-      fs.rmSync(outputDir, { recursive: true, force: true });
+      for (const entry of fs.readdirSync(outputDir)) {
+        if (entry === "img") continue; // preserve eleventy-img derivative cache
+        fs.rmSync(path.join(outputDir, entry), { recursive: true, force: true });
+      }
     }
   });
   eleventyConfig.addCollection("hackathons", function (collectionApi) {
@@ -267,6 +393,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.on('eleventy.before', async () => {
+    // Vendor YouTube thumbnails locally (see scripts/fetch-youtube-thumbs.js);
+    // existing files are skipped, so this is a no-op after the first run.
+    try {
+      await require('./scripts/fetch-youtube-thumbs')();
+    } catch (err) {
+      console.warn('⚠️  [thumbs] thumbnail prefetch failed:', err.message);
+    }
+
     const icsUrl = 'https://outlook.office365.com/owa/calendar/cf7d500ee50e4c7b876fb1845efe821d@iisc.ac.in/22ed80c434a3478d9ba6316fbfed35137860062344497390190/calendar.ics'; // replace this
     const outputPath = path.join(__dirname, '_data/events.json');
 
@@ -314,6 +448,17 @@ module.exports = function (eleventyConfig) {
     }
 
     try {
+      // Skip the fetch entirely when the file was (re)written very recently —
+      // otherwise every watch-mode rebuild re-fetches, rewrites the file (mtime
+      // bump) and the file watcher immediately triggers ANOTHER rebuild (loop).
+      if (fs.existsSync(outputPath)) {
+        const age = Date.now() - fs.statSync(outputPath).mtimeMs;
+        if (age < 10 * 60 * 1000) {
+          console.log('ℹ️  _data/events.json is fresh (<10 min old); skipping ICS fetch');
+          return;
+        }
+      }
+
       const data = await fetchICS(icsUrl);
       const parsed = ical.parseICS(data);
       const now = new Date();
@@ -329,8 +474,16 @@ module.exports = function (eleventyConfig) {
           end: e.end
         }));
 
-      fs.writeFileSync(outputPath, JSON.stringify(events, null, 2));
-      console.log(`✅ Fetched and saved ${events.length} events to _data/events.json`);
+      // Write only when the content actually changed (mtime churn on an
+      // unchanged file re-triggers the watch-mode rebuild loop).
+      const json = JSON.stringify(events, null, 2);
+      const current = fs.existsSync(outputPath) ? fs.readFileSync(outputPath, "utf8") : null;
+      if (current !== json) {
+        fs.writeFileSync(outputPath, json);
+        console.log(`✅ Fetched and saved ${events.length} events to _data/events.json`);
+      } else {
+        console.log('ℹ️  _data/events.json unchanged; not rewritten');
+      }
     } catch (err) {
       console.error('❌ Failed to fetch .ics:', err);
     }

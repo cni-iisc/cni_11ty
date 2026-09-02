@@ -8,7 +8,7 @@ showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-      <img class="img-fluid" src="/assets/img/workshops/2026/SPARC_Workshop/SPARCWorkshopJuly2026Poster.jpg"/>
+      <img alt="" class="img-fluid" src="/assets/img/workshops/2026/SPARC_Workshop/SPARCWorkshopJuly2026Poster.jpg"/>
 </div>
 <p>The SPARC Workshop on Distributed Learning and Optimization is a one-day workshop featuring invited talks on recent advances in distributed learning, optimization, and related areas, bringing together researchers and students for technical discussions and research exchange. </p>
 
@@ -327,8 +327,8 @@ body.dark .close-btn {
 
 <h4>Supported by</h4>
 <div class="container-fluid" align="center">
-  <img class="img-fluid" src= "/assets/img/workshops/2026/IISc_Master_Seal_Transparent.png" style="height: 170px;"/>
-  <img class="img-fluid" src= "/assets/img/workshops/2026/ECE LOGO svg.png" style="height: 100px;"/>
+  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/IISc_Master_Seal_Transparent.png" style="height: 170px;"/>
+  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/ECE LOGO svg.png" style="height: 100px;"/>
 </div>
 
 <div id="modal">

@@ -92,6 +92,16 @@
   object-fit: fill;
 }
 
+/* The build-time image pipeline adds intrinsic width/height attributes to
+   every <img>. Content that relied on `width="100%"` attributes (newsletters,
+   updates) would otherwise render at the intrinsic pixel width and overflow
+   its column. This rule keeps every image inside its container. Inline
+   styles (e.g. the nav logo's height:60px) still take precedence. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .button-year{
   background-color: var(--navbar-clr);
   color: #ffffff;

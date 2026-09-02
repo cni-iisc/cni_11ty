@@ -6,4 +6,4 @@ showcase: true
 img: assets/img/CiscoFellowshipForCNI2025-26.png
 date: 2025-11-01
 ---
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/CiscoFellowshipForCNI2025-26.png"  width="100%">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/CiscoFellowshipForCNI2025-26.png"  width="100%">

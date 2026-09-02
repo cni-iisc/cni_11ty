@@ -27,7 +27,7 @@ In the absence of a medical cure to tackle COVID-19, test-contact trace-isolate 
 Put on your operations research and optimisation hats to solve this interesting and pressing problem.
 
 <div class="container-fluid text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/transfer_map_zoomed.png" class="img-fluid">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/transfer_map_zoomed.png" class="img-fluid">
 </div>
 
 ### Challenges
@@ -62,10 +62,10 @@ Can you design a user interface and visualisation solution for the health care p
 
 For guidance, we list a few features that can be incorporated as part of the interface design for rendering the output.
 
-<img src="https://lh3.googleusercontent.com/DXGLGIEoVbFqPa-E9sFERzumIgyUiV-KXJwRzt9IANVHZ6PNQG9SBsSiXHeuX_cadNI5rb1MwqrgKdYBsLxm0BT82cppBXZiR42Z-KhFTbzms2Lyr-QnPItBiGGBEVvSTh2dBtCx" class="img-fluid">
-<img src="https://lh5.googleusercontent.com/UkKxj2wtB2CSd879cQ8Yt3PMC6seuzyRaNJKaa-i9-IJv51pAO805E1hVkthiVJowaMqFdO2ucxJFv4peVIzABMljrjfAeU-vzwFPQgVT3eDTulM-aJ5gBRup5oGnn5Zl3U8d1qe" class="img-fluid">
-<img src="https://lh3.googleusercontent.com/ywPtZeorkrKnD1QgMw-D1aZjwKyLbknF6pdKJNO1jJopJGjOpPcB7zh4vvfMFt0bCBFiSFMJqf2O0GQicBWCz9SUtpaemKOqs6xG7v4j_Xjk2C_8FU3LP7WtT6llanbhxx1Ihtt8" class="img-fluid">
-<img src="https://lh6.googleusercontent.com/M-JlJIIPCa94a-uhJrUmFUfrkRrGK-jtdOhaG7rqtm1np4VYFr12FmNUEpJTS-goxTfv0CkwHZvhhHBIHv0c8u8ppjYRH0sna2c6Ni2Y21eyqKSwH_QNbaT8NamtA4LP23j_DHX6" class="img-fluid">
+<img alt="" src="https://lh3.googleusercontent.com/DXGLGIEoVbFqPa-E9sFERzumIgyUiV-KXJwRzt9IANVHZ6PNQG9SBsSiXHeuX_cadNI5rb1MwqrgKdYBsLxm0BT82cppBXZiR42Z-KhFTbzms2Lyr-QnPItBiGGBEVvSTh2dBtCx" class="img-fluid">
+<img alt="" src="https://lh5.googleusercontent.com/UkKxj2wtB2CSd879cQ8Yt3PMC6seuzyRaNJKaa-i9-IJv51pAO805E1hVkthiVJowaMqFdO2ucxJFv4peVIzABMljrjfAeU-vzwFPQgVT3eDTulM-aJ5gBRup5oGnn5Zl3U8d1qe" class="img-fluid">
+<img alt="" src="https://lh3.googleusercontent.com/ywPtZeorkrKnD1QgMw-D1aZjwKyLbknF6pdKJNO1jJopJGjOpPcB7zh4vvfMFt0bCBFiSFMJqf2O0GQicBWCz9SUtpaemKOqs6xG7v4j_Xjk2C_8FU3LP7WtT6llanbhxx1Ihtt8" class="img-fluid">
+<img alt="" src="https://lh6.googleusercontent.com/M-JlJIIPCa94a-uhJrUmFUfrkRrGK-jtdOhaG7rqtm1np4VYFr12FmNUEpJTS-goxTfv0CkwHZvhhHBIHv0c8u8ppjYRH0sna2c6Ni2Y21eyqKSwH_QNbaT8NamtA4LP23j_DHX6" class="img-fluid">
 
 Note: These are only for guidance, and you are expected to develop even richer and informative UI features. 
 
@@ -180,7 +180,7 @@ For discussions and queries about the hackathon, please visit the [hackathon for
 
 <table>
 <tr>
-<td style="vertical-align:middle"><img src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/Cisco-CSR-Logos-horiz-300x78.jpg" height="100" class="img-fluid"></td>
-<td style="vertical-align:middle"><img src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/IISc_logo.png" height="100" class="img-fluid"></td>
+<td style="vertical-align:middle"><img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/Cisco-CSR-Logos-horiz-300x78.jpg" height="100" class="img-fluid"></td>
+<td style="vertical-align:middle"><img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/IISc_logo.png" height="100" class="img-fluid"></td>
 </tr>
 </table>

@@ -77,11 +77,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="row align-items-center">
     <!-- Image Column -->
     <div class="col-md-6">
-      {% if seminar.data.recorded_video != '' %}
+      {% if seminar.data.recorded_video %}
       {% set videoId = seminar.data.recorded_video %}
-      <img class="img-fluid rounded" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg"
+      <img class="img-fluid rounded yt-thumb" src="/assets/img/thumbs/{{ videoId }}-hq.jpg"
         alt="{{ seminar.data.title }}">
-      {% else %}
+      {% elif seminar.data.img %}
       {% if seminar.data.img.startsWith('/') %}
       {% set imgSrc = seminar.data.img.slice(1) %}
       {% else %}
@@ -166,9 +166,9 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="card mb-3">
         {% if seminar.data.recorded_video %}
         {% set videoId = seminar.data.recorded_video %}
-        <img class="card-img-top img-fluid" src="https://img.youtube.com/vi/{{ videoId }}/maxresdefault.jpg"
+        <img class="card-img-top img-fluid yt-thumb" src="/assets/img/thumbs/{{ videoId }}-hq.jpg"
           alt="Card image cap">
-        {% else %}
+        {% elif seminar.data.img %}
         {% if seminar.data.img.startsWith('/') %}
         {% set imgSrc = seminar.data.img.slice(1) %}
         {% else %}

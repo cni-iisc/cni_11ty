@@ -11,9 +11,9 @@ showcase: false
 
 <div class="container text-center">
 <div class="d-flex justify-content-center align-items-center flex-wrap">
-<img src= "/assets/img/workshops/eBPF_group_photo.png" clas="img-fluid rounded" width=100% height=auto>
+<img alt="" src= "/assets/img/workshops/eBPF_group_photo.png" clas="img-fluid rounded" width=100% height=auto>
 <br>  
-<img src= "/assets/img/workshops/eBPF_Day_poster_v3.png" class="img-fluid rounded">
+<img alt="" src= "/assets/img/workshops/eBPF_Day_poster_v3.png" class="img-fluid rounded">
 </div>
 </div>
 

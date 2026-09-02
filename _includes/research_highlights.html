@@ -36,7 +36,9 @@ layout: base.html
                 <a href="{{ highlight.url}}">
                 <div class="card mb-3">
                 {% set videoId = highlight.video %}
-                <img class="card-img-top img-fluid" data-video-id="{{ videoId }}" src="https://img.youtube.com/vi/{{ videoId }}/hqdefault.jpg" alt="Card image cap">
+                {% if videoId and videoId != 'No video' %}
+                <img class="card-img-top img-fluid yt-thumb" data-video-id="{{ videoId }}" src="/assets/img/thumbs/{{ videoId }}-hq.jpg" alt="Card image cap">
+                {% endif %}
                 <div class="card-body p-2">
                     <p class="card-text">{{ highlight.title }} by {{ highlight.speaker }}</p>
                 </div>
@@ -55,7 +57,9 @@ layout: base.html
                 <a href="{{ highlight.url}}">
                 <div class="card">
                 {% set videoId = highlight.video %}
-                <img class="card-img-top" src="https://img.youtube.com/vi/{{ videoId }}/hqdefault.jpg" alt="Card image cap">
+                {% if videoId and videoId != 'No video' %}
+                <img class="card-img-top yt-thumb" src="/assets/img/thumbs/{{ videoId }}-hq.jpg" alt="Card image cap">
+                {% endif %}
                 <div class="card-body p-2">
                     <p class="card-text">{{ highlight.title }} by {{ highlight.speaker }}</p>
                 </div>

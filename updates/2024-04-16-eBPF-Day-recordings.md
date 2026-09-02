@@ -13,7 +13,7 @@ img: /assets/img/workshops/ebpf_day_groupPic1.jpg
 showcase: false
 ---
 
-<a href="/workshops/2024/ebpf"><img src="{{ site.url }}{{ site.baseurl }}/assets/img/workshops/ebpf_day_groupPic1.jpg" class="img-fluid"></a>
+<a href="/workshops/2024/ebpf"><img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/workshops/ebpf_day_groupPic1.jpg" class="img-fluid"></a>
 <br><br>
 **Video recordings of all talks at eBPF day are released on [CNI's YouTube Channel](https://www.youtube.com/@centrefornetworkedintellig5324).**
 <br>

@@ -72,7 +72,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -195,7 +195,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/iQcmWzRLOBU" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/127faa8b80e01df933aedde824feeb34.png" alt="The Power of Adaptivity in Representation Learning: from Meta-Learning to Federated Learning" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/iQcmWzRLOBU" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/127faa8b80e01df933aedde824feeb34.png" alt="The Power of Adaptivity in Representation Learning: from Meta-Learning to Federated Learning" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -270,7 +270,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/dVyqQ2kfLPw" target="_blank" data-block-id="157"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/0dfbc476107796fcdb34957e902d5cf7.png" alt="A Converse for Fault-tolerant Quantum Computation." width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/dVyqQ2kfLPw" target="_blank" data-block-id="157"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/0dfbc476107796fcdb34957e902d5cf7.png" alt="A Converse for Fault-tolerant Quantum Computation." height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -372,7 +372,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/april11-2023-2/" target="_blank" data-block-id="329"><img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a595976a-9c40-f9b0-d16e-2ee3d067499e.png" alt="" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/april11-2023-2/" target="_blank" data-block-id="329"><img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/a595976a-9c40-f9b0-d16e-2ee3d067499e.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -447,7 +447,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/DtrciQaBGtg" target="_blank" data-block-id="337"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/b1e479ccdad9e02acc90d0be28d1506e.png" alt="Learning Optimal Beam Directions inNext-generation Wireless Networks | Prof. Manjesh Kumar Hanawal" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/DtrciQaBGtg" target="_blank" data-block-id="337"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/b1e479ccdad9e02acc90d0be28d1506e.png" alt="Learning Optimal Beam Directions inNext-generation Wireless Networks | Prof. Manjesh Kumar Hanawal" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -548,7 +548,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/CSWQD-YpzeQ" target="_blank" data-block-id="333"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/77b408ff62bc52867d4381b83959a738.png" alt="Trends and Challenges in Multi-cloud Networking and Observability. | Dr. Praveen Jayachandran, IBM" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/CSWQD-YpzeQ" target="_blank" data-block-id="333"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/77b408ff62bc52867d4381b83959a738.png" alt="Trends and Challenges in Multi-cloud Networking and Observability. | Dr. Praveen Jayachandran, IBM" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -648,7 +648,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/8ryHuwy5p5I" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/e87a96163bae0afdbbecca184863e4f4.png" alt="Age-Distortion Tradeoffs." width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/8ryHuwy5p5I" target="_blank" data-block-id="120"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/e87a96163bae0afdbbecca184863e4f4.png" alt="Age-Distortion Tradeoffs." height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -749,7 +749,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/cSa74gRzEsE" target="_blank" data-block-id="243"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/1e91c0199ebaf69a03334f8b7a36ae7b.png" alt="Fast, Flexible, and Intelligent Next-Generation Networks and Systems" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/cSa74gRzEsE" target="_blank" data-block-id="243"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/1e91c0199ebaf69a03334f8b7a36ae7b.png" alt="Fast, Flexible, and Intelligent Next-Generation Networks and Systems" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -824,7 +824,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/1a314e66-2485-5602-06e4-e185ac1ff8fe.png" alt="" width="192" height="auto" data-block-id="343" /></td>
+<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/1a314e66-2485-5602-06e4-e185ac1ff8fe.png" alt="" height="auto" data-block-id="343" /></td>
 </tr>
 </tbody>
 </table>
@@ -925,7 +925,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/9Ry3mCzxFzc" target="_blank" data-block-id="255"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/457fec13d021dc096bdedeca854e720f.png" alt="Research Challenges in Network Slicing in 5G and Beyond &amp; Its Implications on Rural Connectivity" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/9Ry3mCzxFzc" target="_blank" data-block-id="255"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/457fec13d021dc096bdedeca854e720f.png" alt="Research Challenges in Network Slicing in 5G and Beyond &amp; Its Implications on Rural Connectivity" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1000,7 +1000,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/DlmpO-nqvwo" target="_blank" data-block-id="345"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/2145d56573bffc61c4c06a049efbdb43.png" alt="Short Packet Communication under Random Arrival of Data | Prof. Parthajit Mohapatra| IIT Tirupati" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/DlmpO-nqvwo" target="_blank" data-block-id="345"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/2145d56573bffc61c4c06a049efbdb43.png" alt="Short Packet Communication under Random Arrival of Data | Prof. Parthajit Mohapatra| IIT Tirupati" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1079,10 +1079,10 @@ year: 2023
 <table class="mceClusterLayout" border="0" width="" cellspacing="0" cellpadding="0" data-block-id="-9">
 <tbody>
 <tr>
-<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="auto" /></a></td>
+<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="auto" /></a></td>
+<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="auto" /></a></td>
+<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="auto" /></a></td>
+<td class="mobileClass-571" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="571"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1107,12 +1107,12 @@ year: 2023
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

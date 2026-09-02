@@ -14,7 +14,7 @@ permalink: "/staff/alumni/"
       <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
         <div class="card mb-4 staff-card">
           <!-- show only if person.data.img has 2024-->
-          <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top">
+          <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top" sizes="230px" eleventy:widths="230,460">
           <div class="staff-card-body">
             <h6 class="card-title mt-2">{{ person.data.title }}</h6>
             <p>{{ person.data.position_at_CNI }}</p>

@@ -1,5 +1,59 @@
 # Image Resizing / Optimization Plan
 
+> **STATUS: IMPLEMENTED (2026-09-01).** `@11ty/eleventy-img` v7 transform plugin is wired into
+> `.eleventy.js` (formats `avif/webp/auto`, widths `[400, 800, 1200]`, filesystem cache in
+> `.11ty-img-cache/`, `failOnError: false`). People cards use `eleventy:widths="230,460"`
+> `sizes="230px"`; nav logo uses `120,180`/`90px` eager; fellow/visitor avatars `200,400`/`200px`.
+> Build verified: 1211 images optimized; build exit 0; zero broken image refs in output.
+> Incremental builds: derivatives are written to `docs/img` (kept across builds — `beforeBuild`
+> wipes `docs/` except `docs/img`; derivative filenames embed a hash of the source bytes, so
+> unchanged images are never re-encoded; `eleventy.after` prunes docs/img files no longer
+> referenced by built HTML; `urlPath: "/img/"` disables per-page colocation so remote/newsletter
+> derivatives also live in docs/img and dedupe). Fully warm local build: ~24s (2133/2133
+> derivative references served from cache vs ~10-14min cold). CI caches `docs/img` +
+> `.11ty-img-cache` via actions/cache with a rolling key + `restore-keys` prefix.
+> Follow-ups: (1) YouTube `hqdefault.jpg` is 4:3 with baked-in letterbox bars for 16:9 videos —
+> seminar thumbs got black bands; fixed with `.yt-thumb { aspect-ratio: 16/9; object-fit: cover }`
+> in `assets/css/seminar_cards.css` (applied to the 4 video-thumb `<img>` tags; symmetric bars
+> are cropped exactly). (2) Do NOT set `type` inside `cacheOptions` in eleventy-img v7 — it
+> flows into eleventy-fetch as the *content* type; `"filesystem"` poisons the remote-fetch
+> cache (images cached as garbled text, sharp fails with mojibake "Input file is missing").
+> Purged the 899 poisoned `eleventy-fetch-*` cache entries. (3) The same transient write race
+> (ENOENT on open of an index.html that then exists) hit once; a plain rerun succeeded —
+> treat as flaky, retry the build. (4) YouTube thumbs are now fully vendored locally:
+> `scripts/fetch-youtube-thumbs.js` (wired into `eleventy.before`) downloads hqdefault
+> (480x360, cards use it + `.yt-thumb` crop) and mqdefault (16:9, home carousel) for every
+> `recorded_video`/`report_video` id into `assets/img/thumbs/` (~8.4MB committed; skipped
+> when present; new ids auto-fetched on next build). Templates now reference
+> `/assets/img/thumbs/<id>-hq.jpg` / `-mq.jpg` — zero remote `img.youtube` refs in built HTML,
+> all video thumbs `<picture>`-optimized. `_data/researchHighlights.js` drops video ids whose
+> thumb doesn't exist (fixes the permanently-404 HlvZKUD153 broken image). (5) Quality/width
+> tuning for full-column posters: AVIF quality 50→65, WebP/JPEG 75, widths [400,800,1200]
+> (1600w candidates exceeded the ~200KB budget on text-dense posters; largest AVIF now 212K,
+> most 80-192K). (6) Newsletter/page overflow fixed: the transform replaces an img's numeric
+> `width` attr (including mailchimp's `width="100%"`) with the intrinsic pixel width, so
+> content rendered at full natural width — global rule `img { max-width: 100%; height: auto }`
+> added to `assets/css/navbar_style.css` (loaded on every page via base.html). Also stripped
+> 735 meaningless integer/float `width` attrs from newsletter `<img>` tags (they made the
+> transform generate full-resolution derivatives, e.g. a 1.3MB 5184w AVIF), and ICS fetch now
+> skips/writes-only-on-change to stop the serve-mode rebuild loop caused by mtime churn on
+> the watched `_data/events.json`.
+> (7) FINAL FORMAT/QUALITY (user decision): single format
+> **WebP** (most supported: ~97-98% incl. Safari 14+, vs AVIF ~93%/Safari 16.4+; keeps PNG
+> transparency), `sharpWebpOptions: { quality: 78 }`, `widths: [400, 800, 1200, 1600]` — banners
+> optimized from originals at 1600px within the user's ~400KB budget (largest derivative
+> exactly 400K; q80/q85 exceeded it on text-dense posters at 412-508K). The JS carousel
+> filter uses the same format/quality with widths [800, 1200, 1600]. No JPEG/PNG/AVIF
+> derivatives are generated at all (docs/img dropped to 89MB, webp-only); the <picture>
+> markup remains valid (single-source) and unchanged sources are never re-encoded.
+> Extra fixes made while implementing: 120 `<img>` tags missing `alt` got `alt=""`; 9 dead
+> Jekyll-style `/images/...` srcs repointed to `/assets/img/posts/...`; `pages/workshops.html`
+> hardcoded card's `{{ workshop.data.img }}` (outside loop → `src="/"`) replaced with
+> `wifi-optimisation.jpg`; seminar front-matter paths corrected (missing extensions, wrong dir,
+> wrong case); `recorded_video`/`img` guards changed to truthy checks; YouTube thumbnails
+> switched `maxresdefault` → `hqdefault` (some 404); `SoumilMukherjee.png` was a mislabeled BMP,
+> re-encoded as real PNG; CI bumped to Node 20 + image cache step.
+
 ## Problem
 
 `assets/images/` holds **66.5 MB across 155 raster files** (118 JPG, 29 PNG, 8 JPEG,

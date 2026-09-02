@@ -17,22 +17,27 @@ permalink: "/"
   "seminars": [
     {% for seminar in collections.seminars | upcoming | sort('date') %}
     {% if not loop.first %},{% endif %}
+    {% if seminar.data.recorded_video %}{% set carouselSrc = "/assets/img/thumbs/" ~ seminar.data.recorded_video ~ "-mq.jpg" %}{% else %}{% set carouselSrc = seminar.data.img %}{% endif %}
+    {% set carousel = carouselSrc | carouselImg %}
     {
       "title": {{ seminar.data.title | dump | safe }},
       "url": {{ seminar.url | dump | safe }},
       "date": {{ seminar.date | dump | safe }},
       "recorded_video": {{ seminar.data.recorded_video | dump | safe }},
-      "img": {% if seminar.data.recorded_video %}"https://img.youtube.com/vi/{{ seminar.data.recorded_video }}/maxresdefault.jpg"{% else %}{% if seminar.data.img.startsWith('/') %}{{ ('/' + seminar.data.img.slice(1)) | dump | safe }}{% else %}{{ ('/' + seminar.data.img) | dump | safe }}{% endif %}{% endif %}
+      "img": {{ carousel.src | dump | safe }},
+      "srcset": {{ carousel.srcset | dump | safe }}
     }
     {% endfor %}
   ],
   "updates": [
     {% for post in collections.updates | showcases %}
     {% if not loop.first %},{% endif %}
+    {% set carousel = post.data.img | carouselImg %}
     {
       "title": {{ post.data.title | dump | safe }},
       "url": {{ post.url | dump | safe }},
-      "img": {{ post.data.img | dump | safe }}
+      "img": {{ carousel.src | dump | safe }},
+      "srcset": {{ carousel.srcset | dump | safe }}
     }
     {% endfor %}
   ]
@@ -89,6 +94,7 @@ permalink: "/"
     var img = document.createElement('img');
     img.className = 'd-block rounded img-fluid';
     img.src = item.img;
+    if (item.srcset) { img.srcset = item.srcset; img.sizes = '100vw'; }
     img.alt = item.title;
     img.style.cssText = 'width: 75%; height: 25%; cursor: pointer;';
     img.onclick = function() { window.location.href = item.url; };
@@ -244,12 +250,12 @@ permalink: "/"
       <br>
       <div class="row">
         <div class="col-md-6">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/Cisco CSR Logos-TM-vert.png" class="img-fluid"
-            style="height: 125px; object-fit: cover;" />
+          <img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/Cisco CSR Logos-TM-vert.png" class="img-fluid"
+            style="height: 125px; width: auto; object-fit: contain;" />
         </div>
         <div class="col-md-6">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/IISc_Master_Seal_Transparent.png"
-            class="img-fluid" style="height: 125px; object-fit: cover;" />
+          <img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/IISc_Master_Seal_Transparent.png"
+            class="img-fluid" style="height: 125px; width: auto; object-fit: contain;" />
         </div>
       </div>
     </div>
@@ -260,12 +266,12 @@ permalink: "/"
       <br>
       <div class="row">
         <div class="col-md-6">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/cropped-BCCPS-Logo.png" class="img-fluid"
-            style="height: 115px; object-fit: cover;" />
+          <img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/cropped-BCCPS-Logo.png" class="img-fluid"
+            style="height: 115px; width: auto; object-fit: contain;" />
         </div>
         <div class="col-md-6">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/ece_logo.jpg" class="img-fluid"
-            style="height: 115px; object-fit: cover;" />
+          <img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/Logos/ece_logo.jpg" class="img-fluid"
+            style="height: 115px; width: auto; object-fit: contain;" />
         </div>
       </div>
     </div>

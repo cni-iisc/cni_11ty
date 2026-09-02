@@ -186,7 +186,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																													<tr>
 																																																														<td class="mceBlockContainer" style="background-color: transparent; padding: 26px 0 9px 18px;" align="center" valign="top">
 																																																															<a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="339">
-																																																																<img class="imageDropZone" style="border: 0; width: 82.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="82.811320754717" height="auto" />
+																																																																<img class="imageDropZone" style="border: 0; width: 82.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" />
 																																																															</a>
 																																																														</td>
 																																																													</tr>
@@ -478,7 +478,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																												<tr>
 																																																													<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top">
 																																																														<a style="display: block;" href="https://youtu.be/zMeN9W526Jo&amp;list=PLNN9TCnjABcZm0JkniaBpOIn3vb6dYTdH&amp;index=5" target="_blank" data-block-id="169">
-																																																															<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/d91f2135500d92df343b53ee542d188b.png" alt="PAC Mode Estimation using PPR Martingale Confidence Sequences | Prof. Shivaram Kalyanakrishnan" width="192" height="auto" />
+																																																															<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/d91f2135500d92df343b53ee542d188b.png" alt="PAC Mode Estimation using PPR Martingale Confidence Sequences | Prof. Shivaram Kalyanakrishnan" height="auto" />
 																																																														</a>
 																																																													</td>
 																																																												</tr>
@@ -571,7 +571,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																											<tr>
 																																																												<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top">
 																																																													<a style="display: block;" href="https://www.youtube.com/watch?v=mpbT1qqhXXQ" target="_blank" data-block-id="159">
-																																																														<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/56680f208b898583ac2be8c91d749222.png" alt="Almost-Optimal Best Restless Markov Arm Identification with Fixed Confidence | Dr. P N Karthik" width="192" height="auto" />
+																																																														<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/56680f208b898583ac2be8c91d749222.png" alt="Almost-Optimal Best Restless Markov Arm Identification with Fixed Confidence | Dr. P N Karthik" height="auto" />
 																																																													</a>
 																																																												</td>
 																																																											</tr>
@@ -731,7 +731,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																										<tr>
 																																																											<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 23px 24px 12px 24px;" align="center" valign="top">
 																																																												<a style="display: block;" href="https://youtu.be/5Rrbm8VEFsA" target="_blank" data-block-id="120">
-																																																													<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/304fd22b5eb275bacd254f3e4e783dc9.png" alt="Probably Anytime-Safe Stochastic Combinatorial Semi-Bandits | Prof. Vincent Y. F. Tan" width="192" height="auto" />
+																																																													<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/304fd22b5eb275bacd254f3e4e783dc9.png" alt="Probably Anytime-Safe Stochastic Combinatorial Semi-Bandits | Prof. Vincent Y. F. Tan" height="auto" />
 																																																												</a>
 																																																											</td>
 																																																										</tr>
@@ -877,7 +877,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																									<tr>
 																																																										<td class="mceBlockContainer" style="padding: 18px 24px 12px 24px;" align="center" valign="top">
 																																																											<a style="display: block;" href="https://youtu.be/peevkOXh7vM" target="_blank" data-block-id="243">
-																																																												<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/62b8159834bf33acd53c3a914bf98beb.png" alt="The unreasonable effectiveness of mathematics in large scale deep learning" width="192" height="auto" />
+																																																												<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/62b8159834bf33acd53c3a914bf98beb.png" alt="The unreasonable effectiveness of mathematics in large scale deep learning" height="auto" />
 																																																											</a>
 																																																										</td>
 																																																									</tr>
@@ -970,7 +970,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																								<tr>
 																																																									<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 32px 24px 12px 24px;" align="center" valign="top">
 																																																										<a style="display: block;" href="https://youtu.be/dtVckysRbDs" target="_blank" data-block-id="247">
-																																																											<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c551871e792aeda2340700094e6833b9.png" alt="Missing Mass and Optimal Discovery" width="192" height="auto" />
+																																																											<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c551871e792aeda2340700094e6833b9.png" alt="Missing Mass and Optimal Discovery" height="auto" />
 																																																										</a>
 																																																									</td>
 																																																								</tr>
@@ -1107,7 +1107,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																							<tr>
 																																																								<td class="mceBlockContainer" style="padding: 18px 24px 12px 24px;" align="center" valign="top">
 																																																									<a style="display: block;" href="https://youtu.be/OJnlLWXft2U" target="_blank" data-block-id="255">
-																																																										<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/e1ffff2451038b520c48cfe5c102a822.png" alt="A tale of tails: Asymptotics and Non-asymptotics in Load Balancing| Prof. Siva Theja Maguluri" width="192" height="auto" />
+																																																										<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/e1ffff2451038b520c48cfe5c102a822.png" alt="A tale of tails: Asymptotics and Non-asymptotics in Load Balancing| Prof. Siva Theja Maguluri" height="auto" />
 																																																									</a>
 																																																								</td>
 																																																							</tr>
@@ -1200,7 +1200,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																						<tr>
 																																																							<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 8px 0 12px 0;" align="center" valign="top">
 																																																								<a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-07-14/" target="_blank" data-block-id="295">
-																																																									<img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/b75b67c7-c2d7-526c-f756-bc7e45644b8c.png" alt="" width="192" height="auto" />
+																																																									<img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/b75b67c7-c2d7-526c-f756-bc7e45644b8c.png" alt="" height="auto" />
 																																																								</a>
 																																																							</td>
 																																																						</tr>
@@ -1343,7 +1343,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																					<tr>
 																																																						<td class="mceBlockContainer" style="padding: 2px 0 12px 0;" align="center" valign="top">
 																																																							<a style="display: block;" href="https://cni.iisc.ac.in/seminars/2023-07-17/" target="_blank" data-block-id="297">
-																																																								<img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/fca23e0d-13bf-59b9-c5d3-88ec11291088.png" alt="" width="192" height="auto" />
+																																																								<img class="imageDropZone" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/fca23e0d-13bf-59b9-c5d3-88ec11291088.png" alt="" height="auto" />
 																																																							</a>
 																																																						</td>
 																																																					</tr>
@@ -1436,7 +1436,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																				<tr>
 																																																					<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 22px 0 12px 0;" align="center" valign="top">
 																																																						<a style="display: block;" href="https://youtu.be/wZi2bdZDadM" target="_blank" data-block-id="259">
-																																																							<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/07500edc10aca1e5615dc7e7de886e07.png" alt="Dynamic Pricing and Matching for Online Marketplaces| Sushil Varma, Georgia Tech." width="192" height="auto" />
+																																																							<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/07500edc10aca1e5615dc7e7de886e07.png" alt="Dynamic Pricing and Matching for Online Marketplaces| Sushil Varma, Georgia Tech." height="auto" />
 																																																						</a>
 																																																					</td>
 																																																				</tr>
@@ -1576,7 +1576,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																			<tr>
 																																																				<td class="mceBlockContainer" style="padding: 30px 0 12px 0;" align="center" valign="top">
 																																																					<a style="display: block;" href="https://youtu.be/7PrQ_MZ_uC8" target="_blank" data-block-id="273">
-																																																						<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/efef4b4b500c12eac5c26ab31b8abd09.png" alt="An overview of robotics research at Google Deepmind. | Dr. Pannag R Sanketi" width="192" height="auto" />
+																																																						<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/efef4b4b500c12eac5c26ab31b8abd09.png" alt="An overview of robotics research at Google Deepmind. | Dr. Pannag R Sanketi" height="auto" />
 																																																					</a>
 																																																				</td>
 																																																			</tr>
@@ -1669,7 +1669,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																		<tr>
 																																																			<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 24px 0 12px 0;" align="center" valign="top">
 																																																				<a style="display: block;" href="https://youtu.be/sb0x1ZXH4Uo" target="_blank" data-block-id="277">
-																																																					<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c6250c998e032ad237c64020ef11e5b8.png" alt="SaFeR &ndash; A Safety Framework for e-Scooter Riders | Prof. Mahima Agumbe Suresh" width="192" height="auto" />
+																																																					<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c6250c998e032ad237c64020ef11e5b8.png" alt="SaFeR &ndash; A Safety Framework for e-Scooter Riders | Prof. Mahima Agumbe Suresh" height="auto" />
 																																																				</a>
 																																																			</td>
 																																																		</tr>
@@ -1806,7 +1806,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																																																	<tr>
 																																																		<td class="mceBlockContainer" style="padding: 21px 0 12px 0;" align="center" valign="top">
 																																																			<a style="display: block;" href="https://youtu.be/ZSKnqAfwOFU" target="_blank" data-block-id="291">
-																																																				<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/fe8cd7523d1c247a3b2ca37590528d1b.png" alt="The Robustness of Blockchains to Network Delays | Dr. Suryanarayana Sankagiri" width="192" height="auto" />
+																																																				<img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/fe8cd7523d1c247a3b2ca37590528d1b.png" alt="The Robustness of Blockchains to Network Delays | Dr. Suryanarayana Sankagiri" height="auto" />
 																																																			</a>
 																																																		</td>
 																																																	</tr>
@@ -1919,7 +1919,7 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 													<tr>
 														<td class="mceBlockContainerE2E" style="background-color: #f4f6ff; padding: 0;" align="full" valign="top">
 															<a style="display: block;" href="https://cni.iisc.ac.in/summerschool/2023" target="_blank" data-block-id="299">
-																<img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/c920a71b-6ccc-2f97-1fc1-855c9a46460c.jpg" alt="" width="660" height="auto" />
+																<img class="imageDropZone" style="border: 0; width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/c920a71b-6ccc-2f97-1fc1-855c9a46460c.jpg" alt="" height="auto" />
 															</a>
 														</td>
 													</tr>
@@ -1955,22 +1955,22 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
 																													<tr>
 																														<td class="mobileClass-3" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="3">
 																															<a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5">
-																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="auto" />
+																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="auto" />
 																															</a>
 																														</td>
 																														<td class="mobileClass-3" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="3">
 																															<a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6">
-																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="auto" />
+																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="auto" />
 																															</a>
 																														</td>
 																														<td class="mobileClass-3" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="3">
 																															<a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7">
-																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="auto" />
+																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="auto" />
 																															</a>
 																														</td>
 																														<td class="mobileClass-3" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="3">
 																															<a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8">
-																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="auto" />
+																																<img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="auto" />
 																															</a>
 																														</td>
 																													</tr>
@@ -1997,12 +1997,12 @@ msg-content: "IISc welcomes new students and they will be starting a new career.
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

@@ -18,6 +18,6 @@ Digital defenders hackathon, conducted by CNI in association with Cisco and Cyse
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_1.jpeg"  width="100%">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_2.jpeg"  width="100%">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_3.jpeg"  width="100%">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_1.jpeg"  width="100%">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_2.jpeg"  width="100%">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/hackathons/digital_defender_results_3.jpeg"  width="100%">

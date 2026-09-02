@@ -158,7 +158,7 @@ year: 2024
 
 <tr>
 
-<td id="blockContainerId-3" class="mceImageBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="3"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceLogo" style="width: 79.811320754717px; height: auto; max-width: 79.811320754717px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></span></a></td>
+<td id="blockContainerId-3" class="mceImageBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="3"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceLogo" style="width: 79.811320754717px; height: auto; max-width: 79.811320754717px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1280,7 +1280,7 @@ year: 2024
 
 <tr>
 
-<td id="blockContainerId-49" class="mceImageBlockContainer" style="padding: 105px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-07/" target="_blank" data-block-id="49"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/7e0cd99e-b317-2d7f-99af-36e5597dcd06.png" alt="" width="220" height="auto" /></span></a></td>
+<td id="blockContainerId-49" class="mceImageBlockContainer" style="padding: 105px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-07/" target="_blank" data-block-id="49"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/7e0cd99e-b317-2d7f-99af-36e5597dcd06.png" alt="" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1534,7 +1534,7 @@ year: 2024
 
 <tr>
 
-<td id="blockContainerId-57" class="mceImageBlockContainer" style="padding: 100px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-14/" target="_blank" data-block-id="57"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/31b31e84-4210-9b17-60e5-36d31c38c2e5.png" alt="" width="220" height="auto" /></span></a></td>
+<td id="blockContainerId-57" class="mceImageBlockContainer" style="padding: 100px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-14/" target="_blank" data-block-id="57"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/31b31e84-4210-9b17-60e5-36d31c38c2e5.png" alt="" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1700,7 +1700,7 @@ year: 2024
 
 <tr>
 
-<td id="blockContainerId-61" class="mceImageBlockContainer" style="padding: 110px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-21/" target="_blank" data-block-id="61"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/7668b2ea-ba41-9e0c-7f94-b6327ac91cef.png" alt="" width="220" height="auto" /></span></a></td>
+<td id="blockContainerId-61" class="mceImageBlockContainer" style="padding: 110px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-21/" target="_blank" data-block-id="61"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/7668b2ea-ba41-9e0c-7f94-b6327ac91cef.png" alt="" height="auto" /></span></a></td>
 
 </tr>
 
@@ -1954,7 +1954,7 @@ year: 2024
 
 <tr>
 
-<td id="blockContainerId-69" class="mceImageBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 187.00000000000003px; height: auto; max-width: 187.00000000000003px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/e2e724ec-237d-94a8-9008-34ab30bcb1a3.png" alt="" width="187.00000000000003" height="auto" data-block-id="69" /></span></td>
+<td id="blockContainerId-69" class="mceImageBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 187.00000000000003px; height: auto; max-width: 187.00000000000003px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/e2e724ec-237d-94a8-9008-34ab30bcb1a3.png" alt="" height="auto" data-block-id="69" /></span></td>
 
 </tr>
 
@@ -2120,7 +2120,7 @@ year: 2024
 
 <tr>
 
-<td id="blockContainerId-87" class="mceImageBlockContainer" style="padding: 110px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-21/" target="_blank" data-block-id="87"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/030e78bc-e633-c410-2d1f-c0edfbfa55cc.png" alt="" width="220" height="auto" /></span></a></td>
+<td id="blockContainerId-87" class="mceImageBlockContainer" style="padding: 110px 0 12px 0;" align="left" valign="top"><a style="display: block;" href="https://cni.iisc.ac.in/seminars/2024-05-21/" target="_blank" data-block-id="87"><span class="mceImageBorder" style="border: 0; border-radius: 0; vertical-align: top; margin: 0;"><img class="imageDropZone mceImage" style="width: 220px; height: auto; max-width: 220px !important; border-radius: 0; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/030e78bc-e633-c410-2d1f-c0edfbfa55cc.png" alt="" height="auto" /></span></a></td>
 
 </tr>
 
@@ -2334,7 +2334,7 @@ year: 2024
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://www.facebook.com/IIScCNI/" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://www.facebook.com/IIScCNI/" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="40" /></a></td>
 
 </tr>
 
@@ -2350,7 +2350,7 @@ year: 2024
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://instagram.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://instagram.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="40" /></a></td>
 
 </tr>
 
@@ -2366,7 +2366,7 @@ year: 2024
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://twitter.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://twitter.com/cni_iisc" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="40" /></a></td>
 
 </tr>
 
@@ -2382,7 +2382,7 @@ year: 2024
 
 <tr>
 
-<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="40" /></a></td>
+<td class="mceSocialFollowIcon" style="padding: 3px 12px 3px 12px;" align="center" valign="top" width="40"><a href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" rel="noreferrer"><img class="mceSocialFollowImage" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="40" /></a></td>
 
 </tr>
 
@@ -2503,12 +2503,12 @@ year: 2024
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

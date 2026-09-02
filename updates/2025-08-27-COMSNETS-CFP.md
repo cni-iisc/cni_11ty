@@ -6,7 +6,7 @@ showcase: false
 img: assets/img/COMSNETS_poster.png
 date: 2025-08-27
 ---
-<a href="https://www.comsnets.org/call_for_papers.html" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/assets/img/COMSNETS_poster.png"  width="100%"></a>
+<a href="https://www.comsnets.org/call_for_papers.html" target="_blank"><img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/COMSNETS_poster.png"  width="100%"></a>
 
 <p class="text-justify">
 The <strong>18<sup>th</sup> International Conference on COMmunication Systems and NETworkS (COMSNETS)</strong> will happen in Bengaluru, India, from January 6 - 10, 2026. As a leading forum for the global Networking and Communication Systems community, COMSNETS 2026 aims to foster groundbreaking research, facilitate the exchange of ideas between academia, government, and industry, and promote advancements in the field.

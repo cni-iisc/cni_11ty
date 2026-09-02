@@ -8,7 +8,7 @@ category: ""
 owcase: false
 ---
 <center>
-<img src="/assets/img/workshops/ics_security_poster.jpeg" class="img-fluid">
+<img alt="" src="/assets/img/workshops/ics_security_poster.jpeg" class="img-fluid">
 <br>
 <br>
 <h1>
@@ -21,7 +21,7 @@ owcase: false
     The expert speakers from the domain, Mr. Niranjan Patil, founder and CEO, OPSEC Labs Pvt Ltd, and Mr. Haresh Dagale, Principal Research Scientist, Indian Institute of Science, took the attendees through informative sessions supported by case studies and interactions opening up different dimensions of attacks and their prevention measures. The workshop was attended by 30+ participants who work in related areas.
 </article>
 <br>
-    <img src= "/assets/img/workshops/ics_security.jpeg" class="img-fluid">
+    <img alt="" src= "/assets/img/workshops/ics_security.jpeg" class="img-fluid">
 <br>
 <br>
 

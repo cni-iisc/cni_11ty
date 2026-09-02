@@ -72,7 +72,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" width="79.811320754717" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 10px 0 9px 18px;" align="center" valign="top"><a style="display: block;" href="http://cni.iisc.ac.in" target="_blank" data-block-id="108"><img class="imageDropZone" style="border: 0; width: 79.811320754717px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/eb6b787b-1cf6-01b4-f743-88b0e983586c.png" alt="" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -219,7 +219,7 @@ year: 2023
 <td class="mceBlockContainer" style="background-color: transparent; padding: 0;" valign="top">&nbsp;</td>
 </tr>
 <tr>
-<td class="mceBlockContainerE2E" style="padding: 12px 0 12px 0;" align="full" valign="top"><img class="imageDropZone" style="width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/8f1f6223-6aa9-a36e-77ca-440326146d46.jpg" alt="" width="660" height="auto" data-block-id="356" /></td>
+<td class="mceBlockContainerE2E" style="padding: 12px 0 12px 0;" align="full" valign="top"><img class="imageDropZone" style="width: 660px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/8f1f6223-6aa9-a36e-77ca-440326146d46.jpg" alt="" height="auto" data-block-id="356" /></td>
 </tr>
 <tr>
 <td class="mceBlockContainer" style="padding: 0 24px 0 24px;" valign="top">
@@ -278,7 +278,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/8ryHuwy5p5I" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c48b091ccf2e0e0a5421234c7648087f.png" alt="Age-Distortion Tradeoffs." width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/8ryHuwy5p5I" target="_blank" data-block-id="169"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c48b091ccf2e0e0a5421234c7648087f.png" alt="Age-Distortion Tradeoffs." height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -353,7 +353,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/cSa74gRzEsE" target="_blank" data-block-id="157"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/248fb7b8470dabd9fd1b3627c8f3d404.png" alt="Fast, Flexible, and Intelligent Next-Generation Networks and Systems" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/cSa74gRzEsE" target="_blank" data-block-id="157"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/248fb7b8470dabd9fd1b3627c8f3d404.png" alt="Fast, Flexible, and Intelligent Next-Generation Networks and Systems" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -454,7 +454,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/60de7470-779a-0dd3-4678-33405cf7bb83.png" alt="" width="192" height="auto" data-block-id="353" /></td>
+<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/60de7470-779a-0dd3-4678-33405cf7bb83.png" alt="" height="auto" data-block-id="353" /></td>
 </tr>
 </tbody>
 </table>
@@ -529,7 +529,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/9Ry3mCzxFzc" target="_blank" data-block-id="329"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/bead2f97611bb121eb4ce4b3b42fc34f.png" alt="Research Challenges in Network Slicing in 5G and Beyond &amp; Its Implications on Rural Connectivity" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: transparent; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/9Ry3mCzxFzc" target="_blank" data-block-id="329"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/bead2f97611bb121eb4ce4b3b42fc34f.png" alt="Research Challenges in Network Slicing in 5G and Beyond &amp; Its Implications on Rural Connectivity" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -630,7 +630,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/DlmpO-nqvwo" target="_blank" data-block-id="337"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c5b823ba2dee4f506ab4594e977c34bd.png" alt="Short Packet Communication under Random Arrival of Data | Prof. Parthajit Mohapatra| IIT Tirupati" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/DlmpO-nqvwo" target="_blank" data-block-id="337"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/c5b823ba2dee4f506ab4594e977c34bd.png" alt="Short Packet Communication under Random Arrival of Data | Prof. Parthajit Mohapatra| IIT Tirupati" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -730,7 +730,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/ae6a9b64-0a48-8697-e95e-43e53134c37e.jpg" alt="" width="192" height="auto" data-block-id="355" /></td>
+<td class="mceBlockContainer" style="padding: 12px 0 12px 0;" align="center" valign="top"><img class="imageDropZone" style="width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/images/ae6a9b64-0a48-8697-e95e-43e53134c37e.jpg" alt="" height="auto" data-block-id="355" /></td>
 </tr>
 </tbody>
 </table>
@@ -831,7 +831,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 18px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/6gDEKAib_8s" target="_blank" data-block-id="243"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/9c10afe92b3d83a4585114c37ffac720.png" alt="Coding Schemes for Input-Constrained Channels" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 18px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/6gDEKAib_8s" target="_blank" data-block-id="243"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/9c10afe92b3d83a4585114c37ffac720.png" alt="Coding Schemes for Input-Constrained Channels" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -906,7 +906,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/wwtF7nnch2M" target="_blank" data-block-id="247"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/cf24dbe9ed826e8d0b027aa787a8bc1c.png" alt="RF Beyond Communication: New Opportunities for Human Sensing with mmWave | Prof. Sandip Chakraborty" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="background-color: #f4f6ff; padding: 0 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/wwtF7nnch2M" target="_blank" data-block-id="247"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/cf24dbe9ed826e8d0b027aa787a8bc1c.png" alt="RF Beyond Communication: New Opportunities for Human Sensing with mmWave | Prof. Sandip Chakraborty" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1007,7 +1007,7 @@ year: 2023
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td class="mceBlockContainer" style="padding: 18px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/Gf1nE9uUcxw" target="_blank" data-block-id="255"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/42a48e2e1ef20866724213c99c25e218.png" alt="Finite time analysis of temporal difference learning with linear function approximation" width="192" height="auto" /></a></td>
+<td class="mceBlockContainer" style="padding: 18px 24px 12px 24px;" align="center" valign="top"><a style="display: block;" href="https://youtu.be/Gf1nE9uUcxw" target="_blank" data-block-id="255"><img class="" style="border: 0; width: 192px; height: auto; max-width: 100%; display: block;" src="https://mcusercontent.com/8b62bbd6edbd0ea0ec3a15770/video_thumbnails_new/42a48e2e1ef20866724213c99c25e218.png" alt="Finite time analysis of temporal difference learning with linear function approximation" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1071,10 +1071,10 @@ year: 2023
 <table class="mceClusterLayout" border="0" width="" cellspacing="0" cellpadding="0" data-block-id="-9">
 <tbody>
 <tr>
-<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" width="40" height="auto" /></a></td>
-<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" width="40" height="auto" /></a></td>
+<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://www.facebook.com/IIScCNI/" target="_blank" data-block-id="-5"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-filled-dark-40.png" alt="Facebook icon" height="auto" /></a></td>
+<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://instagram.com/cni_iisc" target="_blank" data-block-id="-6"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png" alt="Instagram icon" height="auto" /></a></td>
+<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://twitter.com/cni_iisc" target="_blank" data-block-id="-7"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-filled-dark-40.png" alt="Twitter icon" height="auto" /></a></td>
+<td class="mobileClass-13" style="padding-left: 24px; padding-top: 0; padding-right: 24px;" valign="top" data-breakpoint="13"><a style="display: block;" href="https://youtube.com/@centrefornetworkedintellig5324" target="_blank" data-block-id="-8"><img class="" style="border: 0; width: 40px; height: auto; max-width: 100%; display: block;" src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-filled-dark-40.png" alt="YouTube icon" height="auto" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1099,12 +1099,12 @@ year: 2023
   <tr>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://cni.iisc.ac.in" target="_blank">
-        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" width="220" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
+        <img src="https://sawa-dev-2-storage-bucket.storage.googleapis.com/profiles/bio3swdwdilzsbpx-07d9d.png" alt="CNI" style="display: block; max-width: 220px; height: auto; filter: brightness(0);">
       </a>
     </td>
     <td align="center" valign="middle" style="padding: 0 10px;">
       <a href="https://www.cisco.com" target="_blank">
-        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" width="120" style="display: block; max-width: 120px; height: auto;">
+        <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco" style="display: block; max-width: 120px; height: auto;">
       </a>
     </td>
   </tr>

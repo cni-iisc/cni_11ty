@@ -11,10 +11,10 @@ header:
 
 ---
 <div class="show-for-small-only">
-   <img class="image_center" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/CNI_Summer_School_Networking_v2_small.png" >
+   <img alt="" class="image_center" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/CNI_Summer_School_Networking_v2_small.png" >
 </div>
 <div class="hide-for-small">
-   <img style="float:right" width="400" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/CNI_Summer_School_Networking_v2_small.png">
+   <img alt="" style="float:right" src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/CNI_Summer_School_Networking_v2_small.png">
 </div>
 
    The [Centre for Networked Intelligence](https://cni.iisc.ac.in/) at [Indian Institute of Science (IISc)](https://www.iisc.ac.in/) is organizing its inaugural three-day CNI Summer School on **5-6-7th August 2021.**

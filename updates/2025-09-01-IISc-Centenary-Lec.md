@@ -6,4 +6,4 @@ showcase: false
 img: assets/img/Prof_Bruce_Hajek.jpg
 date: 2025-09-01
 ---
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/Prof_Bruce_Hajek.jpg"  width="100%">
+<img alt="" src="{{ site.url }}{{ site.baseurl }}/assets/img/Prof_Bruce_Hajek.jpg"  width="100%">
