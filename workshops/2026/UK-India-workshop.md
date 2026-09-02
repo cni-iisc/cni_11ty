@@ -429,13 +429,13 @@ body.dark .close-btn {
 
 <h4>Sponsor</h4>
 <div class="container-fluid" align="center">
-      <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco CSR logo" class="img-fluid" style="height: 130px; object-fit: contain;"/> 
+      <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco CSR logo" class="img-fluid" style="height: 130px; width: auto; object-fit: contain;"/> 
 </div>
 
 <h4>Supported by</h4>
 <div class="container-fluid" align="center">
-  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/IISc_Master_Seal_Transparent.png" style="height: 170px;"/>
-  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/ECE LOGO svg.png" style="height: 100px;"/>
+  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/IISc_Master_Seal_Transparent.png" style="height: 170px; width: auto;"/>
+  <img alt="" class="img-fluid" src= "/assets/img/workshops/2026/ECE LOGO svg.png" style="height: 100px; width: auto;"/>
 </div>
 
 <div id="modal">

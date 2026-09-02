@@ -208,11 +208,11 @@ showcase: true
 #### Sponsors &amp; Supporters
 
 <div class="container-fluid" align="center">
-      <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco CSR logo" class="img-fluid" style="height: 100px; object-fit: contain;"/>
-      <img src="/assets/img/Logos/TANUH-logo.png" alt="TANUH logo" class="img-fluid" style="height: 100px; object-fit: contain;"/>
-      <img src="/assets/img/Logos/1280px-Ministry_of_Education_India.svg.png" alt="Ministry of Education logo" class="img-fluid" style="height: 100px; object-fit: contain;"/>
-      <img src="/assets/img/Logos/Kotak-IISc-AIML-Centre.png" alt="Kotak IISc AI-ML Centre logo" class="img-fluid" style="height: 100px; object-fit: contain;"/>
-      <img src="/assets/img/Logos/Biocon-Foundation.png" alt="Biocon Foundation logo" class="img-fluid" style="height: 100px; object-fit: contain;"/>
+      <img src="/assets/img/Logos/CiscoLogo-Black-TransparentBg.png" alt="Cisco CSR logo" class="img-fluid" style="height: 100px; width: auto; object-fit: contain;"/>
+      <img src="/assets/img/Logos/TANUH-logo.png" alt="TANUH logo" class="img-fluid" style="height: 100px; width: auto; object-fit: contain;"/>
+      <img src="/assets/img/Logos/1280px-Ministry_of_Education_India.svg.png" alt="Ministry of Education logo" class="img-fluid" style="height: 100px; width: auto; object-fit: contain;"/>
+      <img src="/assets/img/Logos/Kotak-IISc-AIML-Centre.png" alt="Kotak IISc AI-ML Centre logo" class="img-fluid" style="height: 100px; width: auto; object-fit: contain;"/>
+      <img src="/assets/img/Logos/Biocon-Foundation.png" alt="Biocon Foundation logo" class="img-fluid" style="height: 100px; width: auto; object-fit: contain;"/>
 </div>
 
 #### Contact

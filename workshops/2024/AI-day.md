@@ -99,7 +99,7 @@ Please email [outreach.cni@iisc.ac.in](mailto:outreach.cni@iisc.ac.in) with the 
 #### Sponsors
 
 <div class="container-fluid" align="center">
-      <img src="/assets/img/Logos/Cisco CSR Logos-TM-vert.png" alt="Cisco CSR logo" class="img-fluid" style="height: 300px; object-fit: contain;"/> 
+      <img src="/assets/img/Logos/Cisco CSR Logos-TM-vert.png" alt="Cisco CSR logo" class="img-fluid" style="height: 300px; width: auto; object-fit: contain;"/> 
 </div>
 
 #### Supported by
