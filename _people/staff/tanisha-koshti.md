@@ -4,7 +4,7 @@ position_at_CNI: Junior Research Fellow
 linkedin: https://www.linkedin.com/in/tanisha-koshti-873575261/
 importance: 6
 img: /assets/images/people/staff/Tanisha_Koshti.JPG
-past: false
+past: true
 cap: null
 category: Staff
 ---
