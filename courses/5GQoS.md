@@ -3,7 +3,7 @@ layout: project_page
 title: 5G Quality of Service
 description: 
 img: assets/img/courses/5GQoS.png
-importance: 6
+importance: 5
 category: work
 ignore: false
 ---
