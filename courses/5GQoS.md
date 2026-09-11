@@ -30,7 +30,7 @@ ignore: false
 </div>
 </div>
 
-The program featured in-depth technical lectures & discussions delivered by CNI faculty Prof. Anurag Kumar (INSA Distinguished Professor, Dept. of ECE, IISc) at the [Center of Excellence: Wired & Wireless Technologies](https://www.artpark.in/programs/coe-wwt1) in [ARTPARK](https://www.artpark.in).
+The program featured in-depth technical lectures & discussions delivered by CNI faculty member Prof. Anurag Kumar (INSA Distinguished Professor, Dept. of ECE, IISc) at the [Center of Excellence: Wired & Wireless Technologies](https://www.artpark.in/programs/coe-wwt1) in [ARTPARK](https://www.artpark.in).
 
 **🗓️ Dates: 21, 28 February & 7 March 2026**
 
