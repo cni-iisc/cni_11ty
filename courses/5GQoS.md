@@ -1,6 +1,6 @@
 ---
 layout: project_page
-title: 5G Quality of Service
+title: 5G Networking with Scheduling for Quality of Service
 description: 
 img: assets/img/courses/5GQoS.png
 importance: 5
