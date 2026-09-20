@@ -1,0 +1,11 @@
+---
+layout: visitor.html
+pagination:
+  data: collections.Visitors
+  size: 1
+  alias: visitor
+permalink: "/visitors/{{ visitor.academic_year }}/{{ visitor.slug }}/"
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ visitor.name }}"
+---

@@ -12,6 +12,34 @@ const { transform, browserslistToTargets } = require("lightningcss");
 const mathjaxPlugin = require("eleventy-plugin-mathjax");
 const { eleventyImageTransformPlugin, default: Image } = require("@11ty/eleventy-img");
 
+// Load a YAML data file from _data/ (used by data-driven collections such as
+// Interns and Visitors). Always returns an array so callers can map/sort safely.
+const readDataYaml = (file) =>
+  yaml.load(fs.readFileSync(path.join(__dirname, "_data", file), "utf8")) || [];
+
+// Academic years present in the visitors data, newest first. Drives the
+// /visitors/ year dropdown and the per-year pages, so neither is maintained by hand.
+const getVisitorYears = () => {
+  const years = readDataYaml("visitors.yml")
+    .map((visitor) => Number(visitor.academic_year))
+    .filter(Boolean);
+  return [...new Set(years)].sort((a, b) => b - a);
+};
+
+// Academic year the site currently belongs to (Jul–Jun): Sept 2026 => 2026,
+// Jan 2026 => 2025.
+const getCurrentAcademicYear = () => {
+  const now = new Date();
+  return now.getMonth() >= 6 ? now.getFullYear() : now.getFullYear() - 1;
+};
+
+// ISO date (YYYY-MM-DD) -> "13 Jan 2026", parsed in UTC to avoid day drift.
+const formatIsoDate = (iso) => {
+  if (!iso) return "";
+  const dt = DateTime.fromISO(String(iso), { zone: "utc" });
+  return dt.isValid ? dt.toFormat("d LLL yyyy") : String(iso);
+};
+
 module.exports = function (eleventyConfig) {
   // Add the plugin with default settings (SVG output)
   eleventyConfig.addPlugin(mathjaxPlugin);
@@ -307,6 +335,62 @@ module.exports = function (eleventyConfig) {
           sortKey(b, "duration_to").localeCompare(sortKey(a, "duration_to")) ||
           sortKey(b, "duration_from").localeCompare(sortKey(a, "duration_from"))
       );
+  });
+
+  // Visitors: data-driven from _data/visitors.yml (schema documented in the file).
+  // Sorted by academic year (newest first), then visit_from (newest first), then name.
+  eleventyConfig.addCollection("Visitors", function () {
+    return readDataYaml("visitors.yml")
+      .slice()
+      .sort(
+        (a, b) =>
+          (Number(b.academic_year) || 0) - (Number(a.academic_year) || 0) ||
+          String(b.visit_from || b.visit_to || "").localeCompare(
+            String(a.visit_from || a.visit_to || "")
+          ) ||
+          String(a.name || "").localeCompare(String(b.name || ""))
+      );
+  });
+
+  // Academic years with visitor data (newest first) and the year to open by
+  // default (/visitors/ redirects to it). Current AY wins; otherwise the newest
+  // year that actually has visitors, so the page is never blank before new data lands.
+  eleventyConfig.addGlobalData("currentAcademicYear", getCurrentAcademicYear);
+  eleventyConfig.addGlobalData("visitorYears", getVisitorYears);
+  eleventyConfig.addGlobalData("defaultVisitorYear", () => {
+    const years = getVisitorYears();
+    const current = getCurrentAcademicYear();
+    return years.includes(current) ? current : years[0];
+  });
+
+  // Visitors belonging to one academic year (used by the per-year listing pages).
+  eleventyConfig.addFilter("visitorsForYear", (visitors, year) =>
+    (visitors || []).filter((visitor) => Number(visitor.academic_year) === Number(year))
+  );
+
+  // Display string for a visitor's dates, derived from the ISO visit_from/visit_to
+  // fields, e.g. "13 Jan 2026 – 14 Jan 2026" or "3 Feb 2026".
+  eleventyConfig.addFilter("visitorDates", (visitor) => {
+    if (!visitor) return "";
+    const from = formatIsoDate(visitor.visit_from);
+    const to = formatIsoDate(visitor.visit_to);
+    if (from && to && visitor.visit_from !== visitor.visit_to) return `${from} – ${to}`;
+    return from || to;
+  });
+
+  // Split a YAML folded/literal block into escaped <p> elements.
+  eleventyConfig.addFilter("paragraphs", (text) => {
+    if (!text) return "";
+    const escapeHtml = (s) =>
+      String(s).replace(/[&<>"']/g, (c) =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+      );
+    return String(text)
+      .split(/\n+/)
+      .map((p) => p.replace(/\n/g, " ").trim())
+      .filter(Boolean)
+      .map((p) => `<p>${escapeHtml(p)}</p>`)
+      .join("");
   });
 
   eleventyConfig.addFilter("formatMonth", (ym) => {

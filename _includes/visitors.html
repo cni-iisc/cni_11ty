@@ -3,68 +3,75 @@ layout: base.html
 ---
 <link rel="stylesheet" href="/assets/css/people.css">
 
-
-{% if category == "Visitors" %}
-{% set cat = "Visitors" %}
-{% else %}
-{% set cat = "Guests" %}
-{% endif %}
-
+{% set year = year or defaultVisitorYear %}
 
 <div class="container-fluid text-center mt-2" style="max-width:1200px;">
-  <h2>{{ cat }} to CNI</h2>
+  <h2>Visitors to CNI</h2>
+
   <div class="dropdown text-center">
     <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown"
       aria-expanded="false">
-      <span id="selectedYear">{{ year }}-{{ year + 1 }}</span> <!-- Latest year by default -->
+      <span id="selectedYear">{{ year }}-{{ year + 1 }}</span>
     </button>
     <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
-      <li><a class="dropdown-item" href="/{{ cat | lower }}/" data-year="2024">2024-2025</a></li>
-      <li><a class="dropdown-item" href="/{{ cat | lower}}-2023/" data-year="2023">2023-2024</a></li>
+      {% for y in visitorYears %}
+      <li>
+        <a class="dropdown-item{% if y == year %} active{% endif %}" href="/visitors/{{ y }}/"
+          {% if y == year %}aria-current="true"{% endif %}>{{ y }}-{{ y + 1 }}</a>
+      </li>
+      {% endfor %}
     </ul>
   </div>
-  <div class="row jusitfy-content-center gap-0">
-    {% for person in collections.Visitors %}
-    {% if person.data.category == category %}
-    {% if person.data.years.includes(year) %}
-    <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
-      <div class="card mb-4 staff-card">
-        <img src="{{ person.data.img }}" alt="{{ person.data.title }}" class="card-img-top img-fluid" sizes="230px" eleventy:widths="230,460">
-        <div class="staff-card-body">
-          <h6 class="card-title m-2">{{ person.data.title }}</h6>
-          {% if person.data.redirect %}
-          <a href="{{ person.data.redirect }}" target="_blank" class="website-icon mt-0">
-            <i class="fas fa-link fa-lg mt-0"></i> <!-- Font Awesome Link Icon -->
-          </a>
+
+  <div class="row justify-content-center gap-0">
+    {% set yearVisitors = collections.Visitors | visitorsForYear(year) %}
+    {% for person in yearVisitors %}
+    <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center gap-0">
+      <div class="card visitor-card">
+        <a class="visitor-card-photo" href="/visitors/{{ person.academic_year }}/{{ person.slug }}/">
+          {% if person.profile_pic %}
+          <img src="{{ person.profile_pic }}" alt="{{ person.name }}" class="card-img-top img-fluid" sizes="230px"
+            eleventy:widths="230,460">
+          {% else %}
+          <div class="visitor-card-photo-placeholder" aria-hidden="true"><i class="fas fa-user"></i></div>
           {% endif %}
-          {% if person.data.linkedin %}
-          <a href="{{ person.data.linkedin }}" target="_blank" class="linkedin-icon mt-0">
-            <i class="fab fa-linkedin fa-lg mt-0"></i> <!-- Font Awesome LinkedIn Icon -->
+        </a>
+        <div class="visitor-card-body text-center">
+          <a class="visitor-card-name" href="/visitors/{{ person.academic_year }}/{{ person.slug }}/">
+            <h6 class="card-title mb-1">{{ person.name }}</h6>
           </a>
+
+          {% if person.institution %}
+          <p class="visitor-institution mb-1">{{ person.institution }}</p>
           {% endif %}
+
+          {% set dates = person | visitorDates %}
+          {% if dates %}
+          <p class="visitor-dates mb-2">{{ dates }}</p>
+          {% endif %}
+
+          <div class="visitor-links">
+            {% if person.website %}
+            <a href="{{ person.website }}" target="_blank" rel="noopener" class="website-icon" title="Website"
+              aria-label="{{ person.name }} website"><i class="fas fa-globe fa-lg"></i></a>
+            {% endif %}
+            {% if person.google_scholar %}
+            <a href="{{ person.google_scholar }}" target="_blank" rel="noopener" class="website-icon"
+              title="Google Scholar" aria-label="{{ person.name }} on Google Scholar"><i
+                class="fas fa-graduation-cap fa-lg"></i></a>
+            {% endif %}
+            {% if person.linkedin %}
+            <a href="{{ person.linkedin }}" target="_blank" rel="noopener" class="linkedin-icon" title="LinkedIn"
+              aria-label="{{ person.name }} on LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- <div class="text-center">
-          <div class="overflow-hidden z-index-1 position-relative mx-auto text-center">
-            <img class="rounded-circle border border-5" src="{{ person.data.img }}" alt="{{ person.data.title }}" style="width: 200px; height: 200px; object-fit: fill; border-color: var(--navbar-clr) !important;" sizes="200px" eleventy:widths="200,400">
-          </div>
-          <div class="matter mt-2 text-center rounded" style="width: 200px;">
-            <p class="fw-700 m-0 p-0">{{ person.data.title }}</p>
-            <div class="pt-2">
-              {% if person.data.linkedin %}
-              <a class="linkedin-icon" href="{{ person.data.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-              {% endif %}
-              {% if person.data.redirect %}
-              <a class="website-icon" href="{{ person.data.redirect }}" target="_blank"><i class="fas fa-link fa-lg"></i></a>
-              {% endif %}
-            </div>
-          </div>
-        </div> -->
-
-    {% endif %}
-    {% endif %}
     {% endfor %}
   </div>
+
+  {% if yearVisitors.length == 0 %}
+  <p class="text-center mt-4">No visitors recorded for this year.</p>
+  {% endif %}
 </div>

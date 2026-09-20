@@ -1,0 +1,144 @@
+---
+layout: base.html
+---
+<link rel="stylesheet" href="/assets/css/people.css">
+
+<div class="container my-4" style="max-width: 950px;">
+  <p class="mb-4">
+    <a href="/visitors/{{ visitor.academic_year }}/">
+      <i class="fas fa-arrow-left fa-xs"></i> Visitors {{ visitor.academic_year }}-{{ visitor.academic_year + 1 }}
+    </a>
+  </p>
+
+  <div class="row g-4 align-items-start">
+    <div class="col-md-4 text-center">
+      {% if visitor.profile_pic %}
+      <img src="{{ visitor.profile_pic }}" alt="{{ visitor.name }}" class="img-fluid rounded visitor-profile-img"
+        sizes="(min-width: 768px) 300px, 90vw" eleventy:widths="300,600">
+      {% else %}
+      <div class="visitor-profile-placeholder" aria-hidden="true"><i class="fas fa-user"></i></div>
+      {% endif %}
+
+      <div class="visitor-links mt-3">
+        {% if visitor.website %}
+        <a href="{{ visitor.website }}" target="_blank" rel="noopener" class="website-icon" title="Website"
+          aria-label="{{ visitor.name }} website"><i class="fas fa-globe fa-lg"></i></a>
+        {% endif %}
+        {% if visitor.google_scholar %}
+        <a href="{{ visitor.google_scholar }}" target="_blank" rel="noopener" class="website-icon"
+          title="Google Scholar" aria-label="{{ visitor.name }} on Google Scholar"><i
+            class="fas fa-graduation-cap fa-lg"></i></a>
+        {% endif %}
+        {% if visitor.linkedin %}
+        <a href="{{ visitor.linkedin }}" target="_blank" rel="noopener" class="linkedin-icon" title="LinkedIn"
+          aria-label="{{ visitor.name }} on LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+        {% endif %}
+        {% if visitor.talk_event_page %}
+        <a href="{{ visitor.talk_event_page }}" target="_blank" rel="noopener" class="website-icon"
+          title="Talk / event page" aria-label="{{ visitor.name }} event page"><i class="fas fa-link fa-lg"></i></a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <h1 class="h3 mb-2">{{ visitor.name }}</h1>
+      {% if visitor.designation %}
+      <p class="visitor-designation mb-1">{{ visitor.designation }}</p>
+      {% endif %}
+      {% if visitor.institution %}
+      <p class="visitor-institution mb-1">{{ visitor.institution }}</p>
+      {% endif %}
+      {% set dates = visitor | visitorDates %}
+      {% if dates %}
+      <p class="visitor-dates mb-3"><i class="far fa-calendar-alt"></i> {{ dates }}</p>
+      {% endif %}
+      {% if visitor.intro %}
+      <p class="visitor-lead mb-0">{{ visitor.intro | trim }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if visitor.talk_title %}
+  <section class="visitor-section">
+    <h2 class="h5">Talk</h2>
+    <h3 class="h6 visitor-talk-title">{{ visitor.talk_title | trim }}</h3>
+    {% if visitor.talk_description %}
+    <p>{{ visitor.talk_description | trim }}</p>
+    {% endif %}
+    {% if visitor.talk_event_page %}
+    <a class="btn button-style" href="{{ visitor.talk_event_page }}" target="_blank" rel="noopener">Event page</a>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if visitor.bio %}
+  <section class="visitor-section">
+    <h2 class="h5">Biography</h2>
+    {{ visitor.bio | paragraphs | safe }}
+  </section>
+  {% endif %}
+
+  {% if visitor.research_interests and visitor.research_interests.length %}
+  <section class="visitor-section">
+    <h2 class="h5">Research interests</h2>
+    <ul class="visitor-interests mb-0">
+      {% for interest in visitor.research_interests %}
+      <li>{{ interest }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if visitor.purpose %}
+  <section class="visitor-section">
+    <h2 class="h5">About the visit</h2>
+    <p class="mb-0">{{ visitor.purpose | trim }}</p>
+  </section>
+  {% endif %}
+
+  {% if visitor.engagements and visitor.engagements.length %}
+  <section class="visitor-section">
+    <h2 class="h5">Engagements</h2>
+    {% for engagement in visitor.engagements %}
+    {# Even rows float the image right so media/text alternate sides. #}
+    {% set flip = loop.index % 2 == 0 %}
+    <div class="engagement-row">
+      {% if engagement.images and engagement.images.length %}
+      <div class="engagement-media{% if flip %} engagement-media--right{% endif %}">
+        <div class="engagement-mosaic engagement-mosaic--{{ engagement.images.length }}">
+          {% for image in engagement.images %}
+          <img src="{{ image }}" alt="Photo from {{ visitor.name }}'s visit" class="img-fluid rounded"
+            sizes="(min-width: 768px) 40vw, 100vw" eleventy:widths="200,400,600">
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      <p class="engagement-text mb-0">{{ engagement.text | trim }}</p>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if visitor.extra_pics and visitor.extra_pics.length %}
+  <section class="visitor-section">
+    <h2 class="h5">Photos from the visit</h2>
+    <div class="row g-3">
+      {% for photo in visitor.extra_pics %}
+      <div class="col-6 col-md-4">
+        <a href="{{ photo }}" target="_blank" rel="noopener">
+          <img src="{{ photo }}" alt="Photo from {{ visitor.name }}'s visit"
+            class="img-fluid rounded visitor-photo" sizes="(min-width: 768px) 33vw, 50vw"
+            eleventy:widths="300,600">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if visitor.end_note %}
+  <section class="visitor-section">
+    <p class="visitor-end-note mb-0">{{ visitor.end_note | trim }}</p>
+  </section>
+  {% endif %}
+</div>

@@ -1,0 +1,269 @@
+# Visitors listing, consumed by the "Visitors" collection in .eleventy.js and
+# rendered on the per-year listing pages (/visitors/<academic_year>/) and the
+# per-visitor detail pages (/visitors/<academic_year>/<slug>/).
+#
+# Schema — only `name`, `slug` and `academic_year` are required; omit (or leave
+# "" / []) any field you don't have yet. Long prose fields use YAML folded blocks
+# (`>`), so keep the indentation two spaces deeper than the key; leave a blank
+# line between paragraphs (each blank-separated block renders as its own <p>).
+#
+#   name                Full name as shown on the card.
+#   slug                URL segment for the detail page, e.g. "puneet-sharma"
+#                       (/visitors/<academic_year>/<slug>/). Keep it stable once
+#                       published so links don't break.
+#   institution         Affiliation during the visit.
+#   designation         Role/title, e.g. "Professor and Director of ...".
+#   academic_year       Integer START year of the academic year the visit belongs
+#                       to (2025 => "2025-26"). Drives the year filter, the
+#                       per-year pages and the dropdown.
+#   visit_from          ISO date YYYY-MM-DD, first day of the visit.
+#                       Keep the quotes ("2026-01-13") so YAML treats it as a
+#                       string instead of parsing it into a timestamp.
+#   visit_to            ISO date YYYY-MM-DD, last day of the visit. Omit it for a
+#                       one-day visit — visit_from alone is then shown.
+#   profile_pic         Portrait shown on the card and detail page. Keep it under
+#                       the visitor's own folder (see `image layout` below).
+#   website             Personal / institutional homepage.
+#   google_scholar      Google Scholar profile URL.
+#   linkedin            LinkedIn profile URL.
+#   intro               Short blurb shown as the lead on the detail page.
+#   bio                 Full biography (paragraphs separated by a blank line).
+#   purpose             Why they visited, e.g. "part of the CNI seminar series".
+#   talk_title          Title of the talk they gave, if any.
+#   talk_description    Abstract / short description of the talk.
+#   talk_event_page     URL of the seminar/event page for the talk.
+#   research_interests  List of short research-interest strings.
+#   engagements         List of engagement rows. Each entry is:
+#                         text:   prose that wraps around the images (folded block)
+#                         images: list of image paths shown as one composite, 40%
+#                                 wide, floated left/right; rows alternate sides.
+#                       See `image layout` below for where images live.
+#   end_note            Closing / thank-you paragraph.
+#   extra_pics          List of additional visit photos shown as a gallery.
+#
+# Image layout: every visitor keeps ALL their images in a per-visitor folder
+#   /assets/images/people/visitors/<academic_year>/<slug>/
+# and references them with root-relative paths, e.g.
+#   /assets/images/people/visitors/2025/puneet-sharma/profile.jpg
+# All of them go through the site-wide eleventy-img optimization pipeline.
+#
+# Field mapping from the source spreadsheet (CNI_Visitors.xlsx):
+#   visit_year -> academic_year   (converted from "2025-26" to 2025)
+#   visit_dates -> visit_from/visit_to (split into two ISO dates)
+#   img -> profile_pic
+#   purpose_intro -> purpose      event_page -> talk_event_page
+#   photos_of_visit -> extra_pics
+#   research_interests -> list (prose sentence or pipe-separated values split into items)
+#
+# Order in this file doesn't matter. The collection sorts by academic_year
+# (newest first), then visit_from (newest first), then name.
+
+- name: Sushovan Das
+  slug: sushovan-das
+  institution: ETH Zurich
+  designation: Postdoctoral Researcher, Networked Systems Group
+  academic_year: 2025
+  visit_from: "2026-01-05"
+  profile_pic: ""
+  website: https://sushovan-das.net/
+  talk_title: "Rearchitecting Datacenter Networks: A New Paradigm with Optical Core and Optical Edge"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-01-05/
+  engagements:
+    - text: >
+        During their time at CNI, Dr. Das interacted with faculty through research
+        discussion and with students through a seminar talk.
+      images: []
+  extra_pics: []
+
+- name: Florin Ciucu
+  slug: florin-ciucu
+  institution: University of Warwick
+  designation: Professor, Department of Computer Science
+  academic_year: 2025
+  visit_from: "2026-01-12"
+  profile_pic: ""
+  website: https://www.dcs.warwick.ac.uk/~florin/
+  talk_title: "On Some Ultra-Sharp Bounds in Queueing Systems"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-01-12/
+  engagements:
+    - text: >
+        During their time at CNI, Professor Ciucu interacted with faculty through
+        research discussion and with students through a seminar talk.
+      images: []
+  extra_pics: []
+
+- name: Alexandre Proutiere
+  slug: alexandre-proutiere
+  institution: KTH Royal Institute of Technology
+  designation: Professor, Division of Decision and Control Systems
+  academic_year: 2025
+  visit_from: "2026-01-13"
+  profile_pic: ""
+  website: https://people.kth.se/~alepro/
+  talk_title: "Learning with Minimal Human Feedback"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-01-13/
+  engagements:
+    - text: >
+        During their time at CNI, Professor Proutiere interacted with faculty through
+        research discussion and with students through a seminar talk.
+      images: []
+  extra_pics: []
+
+- name: Andres Kwasinski
+  slug: andres-kwasinski
+  institution: Rochester Institute of Technology
+  designation: Professor and Director of the Ph.D. Program in Electrical and Computer Engineering
+  academic_year: 2025
+  visit_from: "2026-01-13"
+  visit_to: "2026-01-14"
+  profile_pic: /assets/images/people/visitors/2025/andres-kwasinski/profile.jpg
+  website: https://www.rit.edu/directory/axkeec-andres-kwasinski
+  google_scholar: https://scholar.google.com/citations?user=tSzRv0YAAAAJ&hl=en
+  linkedin: ""
+  intro: >
+    CNI recently hosted Professor Andres Kwasinski, who is a Professor and Director of
+    the Ph.D. program in Electrical and Computer Engineering at the Rochester Institute
+    of Technology, Rochester, NY, USA. During his visit, he engaged with the CNI
+    community through a seminar talk.
+  bio: >
+    Andres Kwasinski is a Professor and Director of the Ph.D. program in Electrical
+    and Computer Engineering at the Rochester Institute of Technology, Rochester, NY,
+    USA. He has co-authored more than 110 peer-reviewed publications and four books
+    published by Cambridge University Press and Wiley. He currently serves on the
+    Senior Editorial Board of the IEEE Signal Processing Magazine, where he has also
+    been Area Editor and Associate Editor. He has previously served as an Editor for
+    IEEE Transactions on Wireless Communications and IEEE Wireless
+    Communications Letters.
+
+    He received the Diploma in Electrical Engineering from the Buenos Aires Institute of
+    Technology, Argentina, and the M.Sc. and Ph.D. degrees in Electrical and Computer
+    Engineering from the University of Maryland, College Park, USA. Dr. Kwasinski is a
+    Senior Member of the IEEE.
+  purpose: The visit was part of the CNI seminar series.
+  talk_title: >
+    The Synergy Between Quality of Experience and Deep Reinforcement Learning for
+    Uncoordinated Multi-Agent Resource Allocation in Cognitive Radio Network
+  talk_description: >
+    How quality-of-experience–driven metrics can be combined with deep reinforcement
+    learning to enable efficient, adaptive resource allocation in uncoordinated
+    multi-agent cognitive radio networks.
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-01-14/
+  research_interests:
+    - Cognitive radios and wireless networks
+    - Cross-layer techniques in wireless communications
+    - Smart infrastructures and networking
+  engagements:
+    - text: >
+        During their time at CNI, Professor Andres interacted with faculty through
+        research discussion and with students through a seminar talk.
+      images: []
+  end_note: >
+    We were glad to host Professor Andres Kwasinski at CNI and appreciate their
+    thoughtful perspectives and contributions to ongoing conversations around cognitive
+    radio networks, multi-agent systems, and learning-driven resource allocation. Interactions
+    like these continue to strengthen CNI’s role as a hub for networked intelligence research.
+  extra_pics: []
+
+- name: Dr. Puneet Sharma
+  slug: puneet-sharma
+  institution: HPE Labs
+  designation: HPE Fellow, Vice President, and Director of the Networking and Distributed Systems Lab
+  academic_year: 2025
+  visit_from: "2026-02-03"
+  profile_pic: /assets/images/people/visitors/2025/puneet-sharma/profile.jpg
+  website: https://www.hpe.com/psnow/doc/a00150137enw
+  google_scholar: ""
+  linkedin: ""
+  intro: >
+    CNI recently hosted Dr. Puneet Sharma, who is an HPE Fellow, Vice President, and
+    Director of the Networking and Distributed Systems Lab at HPE Labs. During his
+    visit, he engaged with the CNI community through a seminar talk.
+  bio: >
+    Dr. Puneet Sharma is an HPE Fellow, Vice President, and Director of the Networking
+    and Distributed Systems Lab at HPE Labs, leading research in Edge-to-Cloud-to-Exascale
+    Infrastructure, Multi-Cloud Resource Orchestration, AI for Infrastructure, 5G/WiFi,
+    and Security. Since joining HP Labs in 1998 after earning his Ph.D. from the
+    University of Southern California, he has driven innovations in software-defined
+    networking (SDN), GPU virtualization, container orchestration, edge computing,
+    Private 5G, and AI/ML systems, enabling major technology transfers across HPE
+    business units.
+
+    A recognised global thought leader, Puneet has authored 150+ papers, holds 90+
+    patents, co-authored IETF RFCs, and delivered keynote talks at IEEE and industry
+    events. He is an IEEE Fellow, ACM Distinguished Scientist, and two-time Tsinghua
+    AI 2000 Most Influential Scholar. He earned his B.Tech from IIT Delhi. His leadership
+    continues to advance AI-powered, distributed computing and networking infrastructure
+    worldwide.
+  purpose: The visit was part of the CNI seminar series.
+  talk_title: Rethinking Networking through the Lens of AI
+  talk_description: >
+    How artificial intelligence can be applied to networking challenges, drawing on
+    practical experiences from recent projects to explore when and how AI truly enhances
+    networking systems, the trade-offs involved, and how embedding domain knowledge in
+    AI-driven solutions can reshape network design.
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-02-03/
+  research_interests:
+    - AI-driven networking and networked systems
+    - Distributed computing and edge-to-cloud infrastructure
+    - Multi-cloud resource orchestration
+    - Software-defined networking (SDN) and 5G/WiFi systems
+  engagements:
+    - text: >
+        During their time at CNI, Dr. Sharma interacted with faculty through research
+        discussion. Dr. Sharma also engaged with students through a seminar talk.
+      images:
+        - /assets/images/people/visitors/2025/puneet-sharma/visit-1.jpg
+        - /assets/images/people/visitors/2025/puneet-sharma/visit-2.jpg
+  end_note: >
+    We were glad to host Dr. Puneet Sharma at CNI and appreciate their thoughtful
+    perspectives and contributions to ongoing conversations around AI-driven networking,
+    distributed systems, and intelligent infrastructure design. Interactions like these
+    continue to strengthen CNI's role as a hub for networked intelligence research.
+  extra_pics: []
+
+# TODO: placeholders below still need real data — profile_pic, google_scholar,
+# linkedin, intro, purpose, research_interests, engagements, end_note, extra_pics.
+# Add visit_to as well if the visit spanned more than one day.
+- name: Prof. Emina Soljanin
+  slug: emina-soljanin
+  institution: Rutgers University
+  designation: Distinguished Professor of Electrical and Computer Engineering
+  academic_year: 2024
+  visit_from: "2024-08-12"
+  profile_pic: ""
+  website: https://www.ece.rutgers.edu/emina-soljanin
+  google_scholar: ""
+  linkedin: ""
+  intro: ""
+  bio: >
+    Emina Soljanin is a Distinguished Professor of Electrical and Computer Engineering at
+    Rutgers. Before moving to Rutgers in January 2016, she was a (Distinguished) Member of
+    Technical Staff for 21 years in various incarnations of the Mathematical Sciences
+    Research Center of Bell Labs. Her interests and expertise are broad and currently range
+    from distributed computing to quantum information science. She is an IEEE Fellow, an
+    outstanding alumnus of the Texas A&M School of Engineering, the 2011 Padovani Lecturer,
+    a 2016/17 Distinguished Lecturer, and the 2019 IEEE Information Theory Society President.
+    In 2023, Emina received the IEEE Information Theory Society Aaron D. Wyner Distinguished
+    Service Award and Mrs Urmila Agrawal Distinguished Visiting Chair Professorship at the
+    Indian Institute of Sciences.
+  purpose: ""
+  talk_title: "Codes for (Un)Expected Loads"
+  talk_description: >
+    Distributed computing systems strive to maximize the concurrent data access requests
+    they can support with fixed resources. Replicating data objects according to their
+    relative popularity and access volume helps achieve this goal. However, these quantities
+    are often unpredictable. In emerging applications such as edge computing, the
+    instantaneous and expected numbers of users and their data interests fluctuate
+    extensively. Therefore, data storage schemes should support such dynamics. Erasure coding
+    is emerging as an efficient and robust form of redundant storage. This talk asks which
+    data access rates erasure-coded systems can handle. It introduces the notion of access
+    service rate region. It argues that it should be an essential consideration in designing
+    efficient distributed systems that must remain stable for a wide range and multiple
+    combinations of mean loads. The problems associated with the service rate region metric
+    generalize several notions in coding theory for distributed systems. We address them
+    using math tools such as combinatorial optimization on graphs and finite geometry.
+  talk_event_page: https://cni.iisc.ac.in/seminars/2024-08-12/
+  research_interests: []
+  engagements: []
+  end_note: ""
+  extra_pics: []

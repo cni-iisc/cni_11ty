@@ -1,3 +1,4 @@
 [
-  { "from": "/courses/rpcourse/", "to": "/courses/random/" }
+  { "from": "/courses/rpcourse/", "to": "/courses/random/" },
+  { "from": "/visitors-2023/", "to": "/visitors/" }
 ]
