@@ -100,3 +100,204 @@
 body, html {
   overflow-x: hidden;
 }
+
+/* Visitor cards (_includes/visitors.html) and detail page (_includes/visitor.html) */
+.visitor-card {
+  height: auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.visitor-card-photo {
+  display: block;
+}
+
+/* Uniform photo area so the cards line up regardless of source aspect ratio. */
+.visitor-card .card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
+.visitor-card-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  background-color: #e9ecef;
+  color: #adb5bd;
+  font-size: 4rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.visitor-card-body {
+  flex: 1 1 auto;
+  background-color: var(--navbar-clr);
+  color: #ffffff;
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.visitor-card-name {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.visitor-card-name:hover .card-title {
+  color: var(--hover-clr);
+}
+
+.visitor-card-body .visitor-institution {
+  color: #ffffff;
+}
+
+.visitor-designation {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.visitor-institution {
+  color: inherit;
+}
+
+.visitor-dates {
+  color: var(--hover-clr);
+  font-size: 0.9rem;
+}
+
+.visitor-links {
+  margin-top: 0.25rem;
+}
+
+.visitor-links a {
+  margin-right: 0.4rem;
+}
+
+/* Visitor detail page (_includes/visitor.html) */
+.visitor-profile-img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.visitor-profile-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  background-color: #e9ecef;
+  color: #adb5bd;
+  font-size: 5rem;
+  border-radius: 10px;
+}
+
+.visitor-lead {
+  font-size: 1.05rem;
+}
+
+.visitor-section {
+  margin-top: 2rem;
+}
+
+.visitor-section h2 {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.visitor-talk-title {
+  font-weight: 600;
+}
+
+.visitor-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.visitor-end-note {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Engagement rows (visitor detail page): a 40%-wide composite of the engagement's
+   images floats left/right and the text wraps around it, filling the rest of the
+   width (and continuing full-width below the image when longer). Rows alternate
+   image-left / image-right. */
+.engagement-row {
+  margin-top: 1.5rem;
+}
+
+.engagement-row:first-of-type {
+  margin-top: 0;
+}
+
+/* Clearfix so each row's float doesn't overlap the next row. */
+.engagement-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.engagement-media {
+  float: left;
+  width: 40%;
+  margin: 0 1.25rem 0.75rem 0;
+}
+
+.engagement-media--right {
+  float: right;
+  margin: 0 0 0.75rem 1.25rem;
+}
+
+.engagement-text {
+  margin-bottom: 0;
+}
+
+.engagement-mosaic {
+  display: grid;
+  gap: 6px;
+}
+
+.engagement-mosaic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.engagement-mosaic--1 {
+  grid-template-columns: 1fr;
+}
+
+.engagement-mosaic--2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.engagement-mosaic--3 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.engagement-mosaic--3 img:first-child {
+  grid-column: 1 / -1;
+}
+
+.engagement-mosaic--4,
+.engagement-mosaic--5,
+.engagement-mosaic--6 {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 767.98px) {
+  .engagement-media,
+  .engagement-media--right {
+    float: none;
+    width: 100%;
+    margin: 0 0 0.75rem 0;
+  }
+}
