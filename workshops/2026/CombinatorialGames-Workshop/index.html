@@ -1,0 +1,274 @@
+
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:title" content="Combinatorial Games Workshop"><meta property="og:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta property="og:url" content="/workshops/2026/CombinatorialGames-Workshop/"><meta property="og:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta property="og:image:alt" content="Combinatorial Games Workshop"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Combinatorial Games Workshop"><meta name="twitter:description" content="Centre for Networked Intelligence, under the division of EECS and RBCCPS, IISc, aims to develop next generation networking methodologies and concept solutions that can derive knowledge from evolved networks of the future."><meta name="twitter:image" content="/assets/img/Logos/cni_blue_round_1200x1200.png"><meta name="twitter:image:alt" content="Combinatorial Games Workshop"><link rel="icon" type="image/x-icon" href="/assets/images/favicon-dark.ico" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" media="(prefers-color-scheme: light)"><title>Combinatorial Games Workshop | CNI</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet"><script type="text/javascript">MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"],
+                    ],
+                },
+                svg: { fontCache: "global" },
+            };</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9KXWYD9G5G"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-9KXWYD9G5G");</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><link rel="stylesheet" href="/assets/css/navbar_style.css"><link rel="stylesheet" href="/assets/css/footer.css"><style>/* Light theme */
+            .light-theme {
+                background-color: #f7f7f7;
+                color: #212121;
+            }
+            .light-theme td {
+                color: #212121;
+            }
+
+            /* Dark theme */
+            .dark-theme {
+                background-color: #212121;
+                color: #ffffff;
+            }
+            .dark-theme td {
+                color: white;
+            }
+
+            /* Theme toggle button styles */
+            .theme-toggle {
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }</style><script>// Theme toggle functionality
+            function setTheme(theme) {
+                if (theme === "dark") {
+                    document.body.classList.remove("light-theme");
+                    document.body.classList.add("dark-theme");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    document.body.classList.remove("dark-theme");
+                    document.body.classList.add("light-theme");
+                    localStorage.setItem("theme", "light");
+                }
+            }
+
+            // Initialize theme on page load
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get saved theme or default to light
+                const savedTheme = localStorage.getItem("theme") || "light";
+                setTheme(savedTheme);
+
+                // Update icon based on current theme
+                updateThemeIcon(savedTheme);
+            });
+
+            // Toggle between light and dark themes
+            function toggleTheme() {
+                const currentTheme = document.body.classList.contains("dark-theme")
+                    ? "dark"
+                    : "light";
+                const newTheme = currentTheme === "dark" ? "light" : "dark";
+                setTheme(newTheme);
+                updateThemeIcon(newTheme);
+            }
+
+            // Update icon based on current theme
+            function updateThemeIcon(theme) {
+                const themeIcon = document.getElementById("theme-icon");
+                // themeIcon hover color should be hyperlink color
+                themeIcon.style.color = "white";
+                themeIcon.addEventListener("mouseover", function () {
+                    themeIcon.style.color = "var(--hyperlink-clr)";
+                });
+                themeIcon.addEventListener("mouseout", function () {
+                    themeIcon.style.color = "white";
+                });
+                // change icon based on theme
+                if (themeIcon) {
+                    if (theme === "dark") {
+                        themeIcon.classList.remove("bi-sun");
+                        themeIcon.classList.add("bi-moon");
+                    } else {
+                        themeIcon.classList.remove("bi-moon");
+                        themeIcon.classList.add("bi-sun");
+                    }
+                }
+            }</script></head><body><nav class="navbar navbar-expand-lg custom-navbar"><div class="container-fluid"><a class="navbar-brand" href="/"><img src="/assets/images/cni_logo.png" alt="CNI logo" style="height: 60px; width: auto" loading="eager"> </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarText"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">People</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/faculty/">Faculty</a></li><li><a class="dropdown-item" href="/staff/">Staff</a></li><li><a class="dropdown-item" href="/interns/">Interns</a></li><li><a class="dropdown-item" href="/postdocs/">Postdocs</a></li><li><a class="dropdown-item" href="/phd-fellows/">PhD Fellows</a></li><li><a class="dropdown-item" href="/mtech-fellows/">MTech Fellows</a></li><li><a class="dropdown-item" href="/visitors/">Visitors</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Research</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/projects/">Projects</a></li><li><a class="dropdown-item" href="/publications/">Publications</a></li><li><a class="dropdown-item" href="/highlights/">Highlights</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" onmouseover="this.style.color='var(--hyperlink-clr)';" onmouseout="this.style.color='#ffffff';">Outreach</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/seminars/">Seminars</a></li><li><a class="dropdown-item" href="/newsletter/latest/">Newsletters</a></li><li><a class="dropdown-item" href="/courses/">Courses</a></li><li><a class="dropdown-item" href="/schools/">Summer School</a></li><li><a class="dropdown-item" href="/news/">CNI in News</a></li><li><a class="dropdown-item" href="/hackathons">Hackathons</a></li><li><a class="dropdown-item" href="/workshops/">Workshops</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/opportunities/">Opportunities</a></li><li class="nav-item"><button class="theme-toggle" onclick="toggleTheme()"><i id="theme-icon" class="bi bi-sun"></i></button></li></ul></div></div></nav><div class="container mt-2 mb-2 text-center"><h2>Combinatorial Games Workshop</h2></div><div class="mx-auto" style="max-width: 800px;"><article class="container mt-2 mb-2"><div class="container-fluid mb-2 mt-2"><img alt="" class="img-fluid" src=""></div><p>This two-day workshop will explore combinatorial game theory through research talks, discussions, and interactive sessions. Alongside mathematical perspectives, participants will have the opportunity to engage with the strategic aspects of combinatorial games through gameplay.</p><h4>🗓️ Date And Time</h4><p><strong>October 29-30, 2026 (10:00am-05:00pm)</strong></p><h4>🏫 Mode</h4><p><strong>Offline</strong></p><h4>📍 Venue</h4><p><strong>Lecture Hall 1, Department of Mathematics, Indian Institute of Science, Bengaluru</strong><br>(<a href="https://share.google/CcxwSwrn7EnkLU4Yu">📌 Map location</a>)</p><h4>Registration</h4><p>Will open soon</p><h4>Workshop Schedule For 2 Days:</h4><style>/* Container */
+.tab-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+/* Schedule Card */
+.schedule-item {
+  display: flex;
+  gap: 20px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.schedule-item:hover {
+  transform: translateY(-2px);
+  background: #b7bdd1;
+}
+
+.imageBox {
+  text-align: center;
+}
+
+.imageBox img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+/* Time */
+.schedule-item time {
+  min-width: 140px;
+  font-weight: 600;
+  color: #224b6f;
+}
+
+/* Content */
+.schedule-content {
+  flex: 1;
+}
+
+/* Speaker */
+.speaker {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Org */
+.org {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Title */
+.talk-title {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Break */
+.break {
+  background: #6084a3;
+  justify-content: left;
+  font-weight: 600;
+  cursor: default;
+}
+
+/* Modal */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* controlled by JS */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  padding: 20px; /* prevents edge sticking */
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: #ffffff;
+  color: #111827;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;   
+  overflow-y: auto;   
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+}
+
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* MODAL DARK MODE FIX */
+.modal-content {
+  background: #ffffff;
+  color: #111827; /* VERY IMPORTANT */
+}
+
+#modal.dark #modal {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#modal.dark .modal-content {
+  background: #1f2937;
+  color: #000000;
+}
+
+#modal.dark .modal-content h2,
+#modal.dark .modal-content h4,
+#modal.dark .modal-content p,
+#modal.dark #modal-speaker {
+  color: #000000;
+}
+
+body.dark #modal-link {
+  color: #60a5fa;
+}
+
+body.dark .close-btn {
+  color: #000000;
+}</style><div class="tab-content"><div class="schedule-item" data-image="assets\img\workshops\2026\CombinatorialGamesWorkshop\Urban.jpg" data-title="Prof. Urban Larsson (IIT Bombay)" data-talktitle="Combinatorial Game Theory and Play" data-abstract="Chess, Go, and Tic-Tac-Toe are examples of recreational combinatorial games. We develop axioms that allow us to study their underlying mathematics. This 2 + 2 hour session combines theory, play, and hands-on analysis. We introduce fundamental ideas from Combinatorial Game Theory (CGT) through playing a galimaufry of combinatorial games, including Nim, Hackenbush, Clobber, Toppling Dominoes, Domineering, Col, Snort, and more, moving back and forth between play, analyzing positions, and developing the underlying theory.The session begins with a glimpse of the remarkable depth of the subject. Through a generalization of Dedekind sections to games, Conway's classical book On Numbers and Games (1976) revealed a landscape of games, some of which are numbers, later popularized by Knuth's book Surreal Numbers. The real number line is merely a microscopic fragment of all these games; in Cantor's ordinal arithmetic, 1 + ω = ω, whereas in Conway's game landscape, 1 + ω > ω, although in both cases ω is greater than every real number. We then turn to ideas that form the foundation of the session, including perfect-play outcome classes, the hierarchy of game values, comparison of games, and the disjunctive sum. Top-down induction provides a central tool for analysing games and proving theorems. We also encounter the CGT-temperature scale and see how it captures the strategic importance of moving first in a particular component.
+       The emphasis will be on the interaction between theory and practice. Participants play games, analyze positions, and use the theory to explain what they observe, and, if we are lucky, we formulate some conjectures. No previous knowledge of Combinatorial Game Theory is assumed. This is a compressed version of a course I have taught every year since I started at IIT Bombay in 2022. In that course, students develop their own rulesets and then study the mathematics arising from their games. If time permits, we look at some of these student-created games, and we also encourage participants to invent and explore a ruleset of their own." data-speakerbio="Urban Larsson is an Associate Professor in the Department of IEOR at IIT Bombay. Before that, he was a Research Fellow at the National University of Singapore, a postdoctoral fellow at the Technion, where he was awarded an Aly Kaufman Fellowship, and a Killam Postdoctoral Fellow at Dalhousie University (Canada) in 2014--2016. He was a responsible lecturer in mathematics in 2013--2014 and a Ph.D. student at Chalmers and the University of Gothenburg (Sweden), completing his Ph.D. in 2013. His main research areas are Game Theory, Number Theory, Discrete Mathematics, Computer Science, and Algorithms, with some of his main contributions finding bridges between Combinatorial Games and neighboring fields. He has published 48 peer-reviewed research papers, presented his research at more than 200 international conferences and seminars, has an Erdős number of two, and has more than 60 coauthors. He is an Associate Editor for the International Journal of Game Theory and Editor of Games of No Chance 5 and Games of No Chance 6, the latter published by Cambridge University Press and SLMath/MSRI in 2025. He is Co-Editor of the upcoming online diamond journal, Games of No Chance, The Journal of Combinatorial Game Theory, with Dr. Alfie Davies. He has served on the scientific or program committees of CGTC I--V, and three Games, Agents, and Incentives Workshops at AAMAS. He has co-organized CGT workshops at Dalhousie University, the Technion, Ohio State University, and IIT Bombay, and taught CGT at AAMAS and at universities in Japan. In 2024, together with Anjali Bhagat, Prem Kant, and Prof. Mallikarjuna Rao, he co-organized Combinatorial Games at Mumbai, with more than 60 participants from the US, Japan, Canada, Portugal, and India. CGTC VI will be held in Aveiro, Portugal, January 21--23, 2027, where he is also a member of the scientific committee." data-link="https://www.ieor.iitb.ac.in/larsson"><time>10:00AM – 11:30AM</time><div class="schedule-content"><div class="speaker">Talk-1 Prof. Urban Larsson (IIT Bombay)</div></div></div><div class="schedule-item break"><time>11:30AM – 11:45AM</time> ☕ Tea Break</div><div class="schedule-item" data-image="assets\img\workshops\2026\CombinatorialGamesWorkshop\MoumantiPodder.jpeg" data-title="Prof. Moumanti Podder (IISER Pune)" data-talktitle="Combinatorial Games in Probability and Mathematical Logic" data-abstract="There are two distinct categories into which my lectures on this topic can be divided:
+       i) Two-player combinatorial games played on random premises: These include, on one hand, the normal, misère and escape games played on rooted trees, including rooted Galton-Watson trees (which are an excellent example of rooted random trees), and on the other, percolation games played on infinite lattice graphs. The primary objective here is to understand / analyse the probabilities of the various outcomes possible (win for the first player, loss for the first player, and, where feasible, draw for both of the players), and examine any phase transition phenomena that may arise (such as when the probability of draw goes from being equal to 0 for a certain regime of values of the parameter(s) involved in defining the game or the premise on which the game is being played, to being strictly positive in a different regime).
+       ii) The Ehrenfeucht-Fraïssé games: These serve as a bridge between mathematical logic and combinatorial games -- in particular, when we focus on first order logic, these games help us establish, rigorously, whether two given graphs are elementarily equivalent or not. For the sake of these lectures, I shall keep my focus on first order logic alone. For a given positive integer k and given graphs G and H, if Duplicator wins the k-round Ehrenfeucht-Fraïssé game, played on G and H, against Spoiler, then this goes to show that for every first order sentence A of quantifier depth at most k, either A is true for both G and H, or it is false for both G and H. In my lectures, I shall try to describe some strategies that can be employed by Duplicator to ensure her victory." data-speakerbio=" " data-link="https://www.iiserpune.ac.in/research/department/mathematics/people/faculty/regular-faculty/moumanti-podder/317#about"><time>11:45AM – 1:15PM</time><div class="schedule-content"><div class="speaker">Talk-2 Prof. Moumanti Podder (IISER Pune)</div></div></div><div class="schedule-item break"><time>1:15PM – 2:30PM</time> 🍽️ Lunch</div><div class="schedule-item" data-image="assets\img\workshops\2026\CombinatorialGamesWorkshop\SouvikRoy.jpg" data-title="Prof. Souvik Roy (ISI Kolkata)" data-talktitle="Game Theory through Discrete Mathematics: Voting, Matching, and Strategic Choice" data-abstract=" These lectures provide an introduction to selected topics in game theory in which discrete mathematics and combinatorial ideas play a central role. The lectures are intended for Master's students with no previous background in game theory. The basic concepts will therefore be introduced from the beginning, mainly through simple examples, before moving to some fundamental results and applications.
+       The first part will introduce strategic interaction and preference aggregation, with particular attention to voting. We will discuss how individual rankings can be combined into a collective decision, why apparently natural voting rules may lead to difficulties, and how strategic considerations arise. Topics may include majority voting, the Condorcet paradox, the idea behind Arrow's impossibility theorem, and strategic voting, with a brief discussion of the Gibbard–Satterthwaite theorem.
+       The second part will focus on matching problems, where agents on different sides of a market have preferences over one another. Examples include matching students to colleges and workers to firms. We will introduce the notion of stability, blocking pairs, and the deferred acceptance algorithm. The Gale–Shapley existence theorem for stable matchings will be presented, together with the main intuition behind the algorithm and some of its basic properties. If time permits, we will also discuss extensions such as many-to-one matching and matching with couples.
+       Throughout the lectures, the emphasis will be on the discrete structure underlying these problems: rankings, permutations, graphs, assignments, and finite algorithms. The aim is not to provide a comprehensive treatment of game theory, but to show how relatively simple combinatorial models can be used to study important questions about collective decisions, incentives, and allocation." data-speakerbio="Souvik Roy is a Professor at the Applied Statistics Unit of the Indian Statistical Institute, Kolkata. His research interests include Game Theory, Mechanism Design, Algebraic Graph Theory, Social Choice Theory, Probability Theory (diffusion processes, percolation and random matrix), Number Theory and Epistemic Game Theory. In 2024, he was honored with the Mahalanobis Memorial Medal by the Indian Econometric Society. Additionally, in the same year, he received the Social Choice and Welfare Award from the Society for Social Choice and Welfare, France. Earlier, in 2016, he was awarded the Professor M.J. Manohar Rao Award for Young Researchers by the Indian Econometric Society." data-link="https://souvikroy.weebly.com/"><time>2:30PM – 4:00PM</time><div class="schedule-content"><div class="speaker">Talk-3 Prof. Souvik Roy (ISI Kolkata)</div></div></div><div class="schedule-item break"><time>4:00PM – 4:15PM</time> ☕ Tea Break</div><div class="schedule-item break"><time>4:15PM – 5:00PM</time> "Play" Session</div></div><h4>Sponsor</h4><div class="container-fluid" align="center"><img src="/img/gKfTYVX2Fo-400.webp" alt="Cisco CSR logo" class="img-fluid" style="height: 130px; width: auto; object-fit: contain;" loading="lazy" decoding="async" width="400" height="362"></div><h4>Supported by</h4><div class="container-fluid" align="center"><img alt="" class="img-fluid" src="/img/Oo1NRbkFGs-400.webp" style="height: 170px; width: auto;" loading="lazy" decoding="async" width="1600" height="1131" srcset="/img/Oo1NRbkFGs-400.webp 400w, /img/Oo1NRbkFGs-800.webp 800w, /img/Oo1NRbkFGs-1200.webp 1200w, /img/Oo1NRbkFGs-1600.webp 1600w" sizes="100vw"> <img alt="" class="img-fluid" src="/img/wUqIstgda8-347.webp" style="height: 100px; width: auto;" loading="lazy" decoding="async" width="347" height="118"></div><div id="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal1()">×</span><div class="imageBox"><img id="modal-image" src="" alt="Speaker Image"></div><h4 id="modal-title"></h4><p><strong>Title:</strong> <span id="modal-talktitle"></span></p><p><strong>Abstract:</strong> <span id="modal-abstract"></span></p><p><strong>Speaker Bio:</strong> <span id="modal-speakerbio"></span></p><a id="modal-link" target="_blank">More Info</a></div></div><script>const modal = document.getElementById("modal");
+
+document.querySelectorAll(".schedule-item").forEach((item) => {
+  if (!item.classList.contains("break")) {
+    item.addEventListener("click", () => {
+      document.getElementById("modal-title").textContent = item.dataset.title || "";
+      document.getElementById("modal-talktitle").textContent = item.dataset.talktitle || "";
+      document.getElementById("modal-abstract").textContent = item.dataset.abstract || "";
+      document.getElementById("modal-speakerbio").textContent =item.dataset.speakerbio || "";
+      document.getElementById("modal-link").href = item.dataset.link || "#";
+      document.getElementById("modal-image").src =
+        item.dataset.image || "/assets/img/default-speaker.png";
+
+      modal.style.display = "flex";
+    });
+  }
+});
+
+function closeModal1() {
+  modal.style.display = "none";
+}
+
+/* close on outside click */
+window.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};</script></article></div><footer class="site-footer"><div class="footer-container"><a href="mailto:outreach.cni@iisc.ac.in" title="Email" target="_blank"><i class="fa-solid fa-envelope"></i> </a><a href="https://github.com/cni-iisc" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i> </a><a href="https://x.com/cni_iisc" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i> </a><a href="https://www.linkedin.com/company/cni-iisc" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i> </a><a href="https://www.youtube.com/@centrefornetworkedintellig5324" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i> </a><a href="https://www.instagram.com/cni_iisc/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a><p>© 2026 Centre for Networked Intelligence. All rights reserved.</p><p>Last updated: September 25, 2026</p></div></footer></body></html>
