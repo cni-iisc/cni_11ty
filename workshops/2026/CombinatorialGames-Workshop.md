@@ -1,14 +1,14 @@
 ---
 layout: project_page
 title: "Combinatorial Games Workshop"
-img: ''
+img: 'assets\img\workshops\2026\CombinatorailGamesWorkshopPoster.jpg'
 importance: 13
 category: ""
 showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-      <img alt="" class="img-fluid" src=""/>
+      <img alt="" class="img-fluid" src="/assets/img/workshops/2026/CombinatorailGamesWorkshopPoster.jpg"/>
 </div>
 <p>This two-day workshop will explore combinatorial game theory through research talks, discussions, and interactive sessions. Alongside mathematical perspectives, participants will have the opportunity to engage with the strategic aspects of combinatorial games through gameplay.</p>
 
@@ -28,9 +28,9 @@ showcase: true
 
 #### Registration
 
-<p>Will open soon</p>
+<button><a href="https://forms.gle/JQtuVdLkBk4wg1PR9" target="_blank">Registration Link</a></button>
 
-#### Workshop Schedule For 2 Days:
+#### Workshop Schedule, October 29-30:
 
 <style>
 /* Container */
