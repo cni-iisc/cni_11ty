@@ -317,5 +317,3 @@ window.onclick = function(e) {
   }
 };
 </script>
-
-
