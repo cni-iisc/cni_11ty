@@ -1,14 +1,14 @@
 ---
 layout: project_page
 title: "Combinatorial Games Workshop"
-img: 'assets\img\workshops\2026\CombinatorailGamesWorkshopPoster.jpg'
+img: 'assets/img/workshops/2026/CombinatorialGamesWorkshop/CombinatorailGamesWorkshopPoster.jpg'
 importance: 13
 category: ""
 showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-      <img alt="" class="img-fluid" src="/assets/img/workshops/2026/CombinatorailGamesWorkshopPoster.jpg"/>
+      <img alt="" class="img-fluid" src="assets/img/workshops/2026/CombinatorialGamesWorkshop/CombinatorailGamesWorkshopPoster.jpg"/>
 </div>
 <p>This two-day workshop will explore combinatorial game theory through research talks, discussions, and interactive sessions. Alongside mathematical perspectives, participants will have the opportunity to engage with the strategic aspects of combinatorial games through gameplay.</p>
 
@@ -207,7 +207,7 @@ body.dark .close-btn {
 
   <div class="schedule-item"
        data-image="/assets/img/workshops/2026/CombinatorialGamesWorkshop/MoumantiPodder.jpeg"
-       data-title="Prof. Moumanti Podder (IISER Pune)"
+       data-title="Dr. Moumanti Podder (IISER Pune)"
        data-talktitle="Combinatorial Games in Probability and Mathematical Logic"
        data-abstract="There are two distinct categories into which my lectures on this topic can be divided:
        i) Two-player combinatorial games played on random premises: These include, on one hand, the normal, misère and escape games played on rooted trees, including rooted Galton-Watson trees (which are an excellent example of rooted random trees), and on the other, percolation games played on infinite lattice graphs. The primary objective here is to understand / analyse the probabilities of the various outcomes possible (win for the first player, loss for the first player, and, where feasible, draw for both of the players), and examine any phase transition phenomena that may arise (such as when the probability of draw goes from being equal to 0 for a certain regime of values of the parameter(s) involved in defining the game or the premise on which the game is being played, to being strictly positive in a different regime).
@@ -216,7 +216,7 @@ body.dark .close-btn {
        data-link="https://www.iiserpune.ac.in/research/department/mathematics/people/faculty/regular-faculty/moumanti-podder/317#about">   
     <time>11:45AM – 1:15PM</time>
     <div class="schedule-content">
-      <div class="speaker">Talk-2 Prof. Moumanti Podder (IISER Pune)</div>
+      <div class="speaker">Talk-2 Dr. Moumanti Podder (IISER Pune)</div>
     </div>
   </div>
 
