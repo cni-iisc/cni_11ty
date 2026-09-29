@@ -206,7 +206,7 @@ body.dark .close-btn {
 
 
   <div class="schedule-item"
-       data-image="assets/img/workshops/2026/CombinatorialGamesWorkshop/MoumantiPodder.jpeg"
+       data-image="/assets/img/workshops/2026/CombinatorialGamesWorkshop/MoumantiPodder.jpeg"
        data-title="Prof. Moumanti Podder (IISER Pune)"
        data-talktitle="Combinatorial Games in Probability and Mathematical Logic"
        data-abstract="There are two distinct categories into which my lectures on this topic can be divided:
@@ -228,7 +228,7 @@ body.dark .close-btn {
 
 
   <div class="schedule-item"
-       data-image="assets/img/workshops/2026/CombinatorialGamesWorkshop/SouvikRoy.jpg"
+       data-image="/assets/img/workshops/2026/CombinatorialGamesWorkshop/SouvikRoy.jpg"
        data-title="Prof. Souvik Roy (ISI Kolkata)"
        data-talktitle="Game Theory through Discrete Mathematics: Voting, Matching, and Strategic Choice"
        data-abstract=" These lectures provide an introduction to selected topics in game theory in which discrete mathematics and combinatorial ideas play a central role. The lectures are intended for Master's students with no previous background in game theory. The basic concepts will therefore be introduced from the beginning, mainly through simple examples, before moving to some fundamental results and applications.
