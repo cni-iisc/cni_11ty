@@ -8,7 +8,7 @@ showcase: true
 ---
 
 <div class="container-fluid mb-2 mt-2">
-      <img alt="" class="img-fluid" src="assets/img/workshops/2026/CombinatorialGamesWorkshop/CombinatorailGamesWorkshopPoster.jpg"/>
+      <img alt="" class="img-fluid" src="/assets/img/workshops/2026/CombinatorialGamesWorkshop/CombinatorailGamesWorkshopPoster.jpg"/>
 </div>
 <p>This two-day workshop will explore combinatorial game theory through research talks, discussions, and interactive sessions. Alongside mathematical perspectives, participants will have the opportunity to engage with the strategic aspects of combinatorial games through gameplay.</p>
 
