@@ -185,7 +185,7 @@ body.dark .close-btn {
 
 
   <div class="schedule-item"
-       data-image="assets\img\workshops\2026\CombinatorialGamesWorkshop\Urban.jpg"
+       data-image="/assets/img/workshops/2026/CombinatorialGamesWorkshop/Urban.jpg"
        data-title="Prof. Urban Larsson (IIT Bombay)"
        data-talktitle="Combinatorial Game Theory and Play"
        data-abstract="Chess, Go, and Tic-Tac-Toe are examples of recreational combinatorial games. We develop axioms that allow us to study their underlying mathematics. This 2 + 2 hour session combines theory, play, and hands-on analysis. We introduce fundamental ideas from Combinatorial Game Theory (CGT) through playing a galimaufry of combinatorial games, including Nim, Hackenbush, Clobber, Toppling Dominoes, Domineering, Col, Snort, and more, moving back and forth between play, analyzing positions, and developing the underlying theory.The session begins with a glimpse of the remarkable depth of the subject. Through a generalization of Dedekind sections to games, Conway's classical book On Numbers and Games (1976) revealed a landscape of games, some of which are numbers, later popularized by Knuth's book Surreal Numbers. The real number line is merely a microscopic fragment of all these games; in Cantor's ordinal arithmetic, 1 + ω = ω, whereas in Conway's game landscape, 1 + ω > ω, although in both cases ω is greater than every real number. We then turn to ideas that form the foundation of the session, including perfect-play outcome classes, the hierarchy of game values, comparison of games, and the disjunctive sum. Top-down induction provides a central tool for analysing games and proving theorems. We also encounter the CGT-temperature scale and see how it captures the strategic importance of moving first in a particular component.
@@ -206,7 +206,7 @@ body.dark .close-btn {
 
 
   <div class="schedule-item"
-       data-image="assets\img\workshops\2026\CombinatorialGamesWorkshop\MoumantiPodder.jpeg"
+       data-image="/assets/img/workshops/2026/CombinatorialGamesWorkshop/MoumantiPodder.jpeg"
        data-title="Prof. Moumanti Podder (IISER Pune)"
        data-talktitle="Combinatorial Games in Probability and Mathematical Logic"
        data-abstract="There are two distinct categories into which my lectures on this topic can be divided:
@@ -228,7 +228,7 @@ body.dark .close-btn {
 
 
   <div class="schedule-item"
-       data-image="assets\img\workshops\2026\CombinatorialGamesWorkshop\SouvikRoy.jpg"
+       data-image="/assets/img/workshops/2026/CombinatorialGamesWorkshop/SouvikRoy.jpg"
        data-title="Prof. Souvik Roy (ISI Kolkata)"
        data-talktitle="Game Theory through Discrete Mathematics: Voting, Matching, and Strategic Choice"
        data-abstract=" These lectures provide an introduction to selected topics in game theory in which discrete mathematics and combinatorial ideas play a central role. The lectures are intended for Master's students with no previous background in game theory. The basic concepts will therefore be introduced from the beginning, mainly through simple examples, before moving to some fundamental results and applications.
