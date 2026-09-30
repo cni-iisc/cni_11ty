@@ -5,7 +5,7 @@ teaser: "A two-day workshop featuring invited talks and game sessions on combina
 categories: events
 permalink: /2026/CombinatorailGames-Workshop/
 tags: workshops
-img: assets/img/updates/2026/CombinatorailGamesWorkshopPoster.jpg
+img: assets/img/workshops/2026/CombinatorialGamesWorkshop/CombinatorailGamesWorkshopPoster-1.jpg
 showcase: true
 ---
 
