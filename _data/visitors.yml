@@ -79,7 +79,7 @@
   designation: Professor, Department of Computer Science
   academic_year: 2025
   visit_from: "2026-01-12"
-  profile_pic: ""
+  profile_pic: /assets/images/people/visitors/2026/florin-ciucu/FlorinCiucu.jpg
   website: https://www.dcs.warwick.ac.uk/~florin/
   purpose: Visited CNI to deliver a seminar talk on ultra-sharp bounds in queueing systems.
   talk_title: "On Some Ultra-Sharp Bounds in Queueing Systems"
@@ -97,7 +97,7 @@
   designation: Professor, Division of Decision and Control Systems
   academic_year: 2025
   visit_from: "2026-01-13"
-  profile_pic: ""
+  profile_pic: /assets/images/people/visitors/2026/alexandre-proutiere/AlexandreProutiere.jpeg
   website: https://people.kth.se/~alepro/
   purpose: Visited CNI to deliver a seminar talk on learning with minimal human feedback.
   talk_title: "Learning with Minimal Human Feedback"
@@ -116,11 +116,12 @@
   academic_year: 2025
   visit_from: "2026-01-13"
   visit_to: "2026-01-14"
-  profile_pic: /assets/images/people/visitors/2026/andres-kwasinski/profile.jpg
+  profile_pic: /assets/images/people/visitors/2026/andres-kwasinski/AndresKwasinski.jpg
   website: https://www.rit.edu/directory/axkeec-andres-kwasinski
   google_scholar: https://scholar.google.com/citations?user=tSzRv0YAAAAJ&hl=en
   linkedin: ""
-  purpose: Visited CNI to deliver a seminar talk on learning with minimal human feedback.
+  purpose: Visited CNI to deliver a seminar talk on the synergy between quality of experience and deep reinforcement learning for
+    uncoordinated multi-agent resource allocation in cognitive radio network.
   talk_title: "The Synergy Between Quality of Experience and Deep Reinforcement Learning for
     Uncoordinated Multi-Agent Resource Allocation in Cognitive Radio Network"
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-01-14/
@@ -151,6 +152,27 @@
       images:
         - /assets/images/people/visitors/2025/puneet-sharma/visit-1.jpg
         - /assets/images/people/visitors/2025/puneet-sharma/visit-2.jpg
+  extra_pics: []
+
+- name: Namrata Vaswani
+  slug: namrata-vaswani
+  institution: Iowa State University
+  designation: Professor of Electrical and Computer Engineering, and the Anderlik Professor of Engineering at Iowa State University
+  academic_year: 2025
+  visit_from: "2026-02-23"
+  visit_to: "2026-02-24"
+  profile_pic: /assets/images/people/visitors/2026/namrata-vaswani/NamrataVaswani.jpg
+  website: https://www.engineering.iastate.edu/people/profile/namrata/
+  google_scholar:  https://scholar.google.com/citations?user=s-dQPO8AAAAJ&hl=en
+  linkedin: ""
+  purpose: Visited CNI to deliver a seminar talk on Mathematical ML and ML for math.
+  talk_title: "Mathematical ML and ML for Math: Alternating GD and Minimization (AltGDmin) for Secure Federated Low Rank Matrix Learning for Real-time MRI and ML-enabled K-12 Math Support"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-02-23/
+  engagements:
+    - text: >
+       During their time at CNI, Professor Namrata interacted with faculty through
+        research discussion and with students through a seminar talk.
+      images: []
   extra_pics: []
 
 - name: Prof. Emina Soljanin
