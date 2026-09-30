@@ -12,6 +12,10 @@ showcase: true
 </div>
 <p>This two-day workshop will explore combinatorial game theory through research talks, discussions, and interactive sessions. Alongside mathematical perspectives, participants will have the opportunity to engage with the strategic aspects of combinatorial games through gameplay.</p>
 
+#### Organized by
+
+**Prof. Parimal Parag, ECE Department, IISc and Prof. Arvind Ayyer, Department of Mathematics, IISc**
+
 #### 🗓️ Date And Time
 
 **October 29-30, 2026 (10:00am-05:00pm)**
