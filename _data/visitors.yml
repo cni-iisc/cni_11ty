@@ -150,8 +150,9 @@
         During their time at CNI, Dr. Sharma interacted with faculty through research
         discussion. Dr. Sharma also engaged with students through a seminar talk.
       images:
-        - /assets/images/people/visitors/2025/puneet-sharma/visit-1.jpg
-        - /assets/images/people/visitors/2025/puneet-sharma/visit-2.jpg
+        - /assets/images/people/visitors/2026/puneet-sharma/visit-1.jpg
+        - /assets/images/people/visitors/2026/puneet-sharma/visit-2.jpg
+        - /assets/images/people/visitors/2026/puneet-sharma/visit-3.jpg
   extra_pics: []
 
 - name: Namrata Vaswani
@@ -173,6 +174,30 @@
        During their time at CNI, Professor Namrata interacted with faculty through
         research discussion and with students through a seminar talk.
       images: []
+  extra_pics: []
+
+- name: Alexandre Reiffers-Masson
+  slug: alexandre-reiffers-masson
+  institution: IMT Atlantique
+  designation: Associate Professor at IMT Atlantique (Brest)
+  academic_year: 2025
+  visit_from: "2026-02-25"
+  visit_to: "2026-02-25"
+  profile_pic: /assets/images/people/visitors/2026/alexandre-reiffers-masson/AlexandreReiffers.jpg
+  website: https://sites.google.com/view/alexandre-reiffers/about
+  google_scholar: https://scholar.google.com/citations?user=OBmvq4QAAAAJ&hl=en
+  linkedin: ""
+  purpose: ""
+  talk_title: "What Can Be Recovered Under Sparse Adversarial Corruption? Assumption-free Theory for Linear Measurements"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-02-25/
+  engagements:
+    - text: >
+       During their time at CNI, Professor Alexandre interacted with faculty through
+        research discussion and with students through a seminar talk.
+      images:
+      - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-1.JPG
+      - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-2.JPG
+      - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-3.JPG
   extra_pics: []
 
 - name: Prof. Emina Soljanin
