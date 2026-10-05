@@ -34,6 +34,8 @@ showcase: true
 
 <button><a href="https://forms.gle/JQtuVdLkBk4wg1PR9" target="_blank">Registration Link</a></button>
 
+<p>Deadline:Last Date of Registration 25 October 2026, 12:00 PM</p>
+
 #### Workshop Schedule, October 29-30:
 
 <style>
