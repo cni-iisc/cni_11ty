@@ -266,6 +266,21 @@ body.dark .close-btn {
 
 
 
+#### ❓ FAQ
+
+**1. Is there a registration fee?**
+- No, there is no registration fee for the workshop.  
+
+**2. Will TA/DA be provided?**
+- No, TA/DA will not be provided.  
+
+**3. Where can I have meals?**
+- There are several cafeterias/restaurants available on the IISc campus.  
+
+**4. Will accommodation be provided?**
+- No, participants must arrange their own accommodation.
+
+
 
 
 <h4>Sponsor</h4>
