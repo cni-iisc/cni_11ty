@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Combinatorial Games Workshop"
+title: "CNI Workshop on Combinatorial Games"
 teaser: "A two-day workshop featuring invited talks and game sessions on combinatorial game theory and related areas."
 categories: events
 permalink: /2026/CombinatorailGames-Workshop/
 tags: workshops
-img: assets/img/workshops/2026/CombinatorialGamesWorkshop/CombinatorailGamesWorkshopPoster_revised.jpg
+img: assets/img/workshops/2026/CombinatorialGamesWorkshop/CNIWorkshopOnCombinatorailGames.jpg
 showcase: true
 ---
 
