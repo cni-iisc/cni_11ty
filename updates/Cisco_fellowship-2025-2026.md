@@ -2,7 +2,7 @@
 layout: post
 title: The Awardees of Cisco Fellowship
 teaser: CNI Awarded Fellowship to 7 PhD and 7 MTech Students
-showcase: true
+showcase: false
 img: assets/img/CiscoFellowshipForCNI2025-26.png
 date: 2025-11-01
 ---
