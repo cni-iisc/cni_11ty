@@ -182,10 +182,9 @@
   designation: Associate Professor at IMT Atlantique (Brest)
   academic_year: 2025
   visit_from: "2026-02-25"
-  visit_to: "2026-02-25"
   profile_pic: /assets/images/people/visitors/2026/alexandre-reiffers-masson/AlexandreReiffers.jpg
   website: https://sites.google.com/view/alexandre-reiffers/about
-  google_scholar: https://scholar.google.com/citations?user=OBmvq4QAAAAJ&hl=en
+  google_scholar: "https://scholar.google.com/citations?user=OBmvq4QAAAAJ&hl=en"
   linkedin: ""
   purpose: ""
   talk_title: "What Can Be Recovered Under Sparse Adversarial Corruption? Assumption-free Theory for Linear Measurements"
@@ -199,6 +198,35 @@
       - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-2.JPG
       - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-3.JPG
   extra_pics: []
+
+- name: Max Pfeffer
+  slug: max pfeffer
+  institution: Georg-August-Universität Göttingen
+  designation: Junior Professor of Mathematics at Georg-August-Universität Göttingen
+  academic_year: 2025
+  visit_from: "2026-00-03"
+  profile_pic: /assets/images/people/visitors/2026/max-pfeffer/Dr.MaxPfeffers.jpg
+  website: https://sites.google.com/view/maxpfeffer/ 
+  google_scholar: 
+  linkedin: ""
+  purpose: ""
+  talk_title: "Manifold Optimization in Data Science"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-03-03/
+  engagements:
+    - text: >
+       During their time at CNI, Professor Max interacted with faculty through
+        research discussion and with students through a seminar talk.
+      images:
+      - 
+      - 
+      - 
+  extra_pics: []
+
+
+
+
+
+
 
 - name: Prof. Emina Soljanin
   slug: emina-soljanin
