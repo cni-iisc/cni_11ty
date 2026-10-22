@@ -76,7 +76,7 @@
       images: []
   extra_pics: []
 
-- name: Florin Ciucu
+- name: Prof. Florin Ciucu
   slug: florin-ciucu
   institution: University of Warwick
   designation: Professor, Department of Computer Science
@@ -94,7 +94,7 @@
       images: []
   extra_pics: []
 
-- name: Alexandre Proutiere
+- name: Prof. Alexandre Proutiere
   slug: alexandre-proutiere
   institution: KTH Royal Institute of Technology
   designation: Professor, Division of Decision and Control Systems
@@ -112,7 +112,7 @@
       images: []
   extra_pics: []
 
-- name: Andres Kwasinski
+- name: Prof. Andres Kwasinski
   slug: andres-kwasinski
   institution: Rochester Institute of Technology
   designation: Professor and Director of the Ph.D. Program in Electrical and Computer Engineering
@@ -158,7 +158,7 @@
         - /assets/images/people/visitors/2026/puneet-sharma/visit-3.jpg
   extra_pics: []
 
-- name: Namrata Vaswani
+- name: Prof. Namrata Vaswani
   slug: namrata-vaswani
   institution: Iowa State University
   designation: Professor of Electrical and Computer Engineering, and the Anderlik Professor of Engineering at Iowa State University
@@ -179,7 +179,7 @@
       images: []
   extra_pics: []
 
-- name: Alexandre Reiffers-Masson
+- name: Prof. Alexandre Reiffers-Masson
   slug: alexandre-reiffers-masson
   institution: IMT Atlantique
   designation: Associate Professor at IMT Atlantique (Brest)
@@ -202,7 +202,7 @@
       - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-3.JPG
   extra_pics: []
 
-- name: Max Pfeffer
+- name: Prof. Max Pfeffer
   slug: max-pfeffer
   institution: Georg-August-Universität Göttingen
   designation: Junior Professor of Mathematics at Georg-August-Universität Göttingen
@@ -226,7 +226,7 @@
       - /assets/images/people/visitors/2026/max-pfeffer/Visit4.JPG
   extra_pics: []
 
-- name: Hariprasad Manjunath
+- name: Prof. Hariprasad Manjunath
   slug: hariprasad-manjunath
   institution: Chanakya University, Bengaluru
   designation: Assistant Professor at the School of Mathematics and Natural Sciences, Chanakya University, Bengaluru
@@ -271,7 +271,7 @@
       - /assets/images/people/visitors/2026/sandeep-chennakeshu/IMG_0311.JPG
   extra_pics: []
 
-- name: Bharadwaj Satchidanandan
+- name: Prof. Bharadwaj Satchidanandan
   slug: bharadwaj-satchidanandan
   institution: IIT Madras
   designation: Assistant Professor, Department of Electrical Engineering at the Indian Institute of Technology Madras
@@ -290,7 +290,7 @@
       - /assets/images/people/visitors/2026/bharadwaj-satchidanandan/IMG_0611.JPG
   extra_pics: []
 
-- name: Harshan Jagadeesh
+- name: Prof. Harshan Jagadeesh
   slug: harshan-jagadeesh
   institution: IIT Delhi
   designation: Associate Professor, Department of Electrical Engineering, IIT Delhi.
@@ -330,7 +330,7 @@
       - /assets/images/people/visitors/2026/sandeep-rao/IMG_0711.JPG
   extra_pics: []
 
-- name: Mansi Sood
+- name: Dr. Mansi Sood
   slug: mansi-sood
   institution: Massachusetts Institute of Technology 
   designation: Schmidt Science Fellow at the MIT Laboratory for Information and Decision Systems
@@ -348,6 +348,66 @@
       images:
       - /assets/images/people/visitors/2026/mansi-sood/MansiSood (2).jpg
   extra_pics: []
+
+- name: Prof. M. R. Bhavani Shankar
+  slug: bhavani-shankar
+  institution: University of Luxembourg
+  designation: Senior Research Scientist/Assistant Professor, SnT, Interdisciplinary Centre for Security, Reliability and Trust
+  visit_from: "2026-04-16"
+  profile_pic: /assets/images/people/visitors/2026/bhavani-shankar/Prof. Bhavani Shankar.jpg
+  website: https://www.uni.lu/snt-en/people/bhavani-shankar-mysore-rama-rao/
+  google_scholar: https://scholar.google.com/citations?user=JXx5O8kAAAAJ&hl=en
+  linkedin: ""
+  purpose: ""
+  talk_title: "Waveform Design in Modern Radar Systems"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-04-16/
+  engagements:
+    - text: >
+       During their time at CNI, Prof. Shankar interacted with faculty through research discussion and with students through a seminar talk.
+      images:
+      - /assets/images/people/visitors/2026/bhavani-shankar/IMG_0754.JPG
+  extra_pics: []
+
+- name: 
+  slug: 
+  institution: 
+  designation: 
+  visit_from: "2026-04-15"
+  profile_pic: /assets/images/people/visitors/2026/
+  website: 
+  google_scholar: 
+  linkedin: ""
+  purpose: ""
+  talk_title: ""
+  talk_event_page: 
+  engagements:
+    - text: >
+       During their time at CNI,         interacted with faculty through research discussion and with students through a seminar talk.
+      images:
+      - /assets/images/people/visitors/2026/
+  extra_pics: []
+
+- name: 
+  slug: 
+  institution: 
+  designation: 
+  visit_from: "2026-04-15"
+  profile_pic: /assets/images/people/visitors/2026/
+  website: 
+  google_scholar: 
+  linkedin: ""
+  purpose: ""
+  talk_title: ""
+  talk_event_page: 
+  engagements:
+    - text: >
+       During their time at CNI,         interacted with faculty through research discussion and with students through a seminar talk.
+      images:
+      - /assets/images/people/visitors/2026/
+  extra_pics: []
+
+
+
 
 
 
