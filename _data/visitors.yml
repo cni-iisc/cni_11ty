@@ -209,8 +209,8 @@
   academic_year: 2025
   visit_from: "2026-03-03"
   profile_pic: /assets/images/people/visitors/2026/max-pfeffer/Dr.MaxPfeffers.jpg
-  website: https://sites.google.com/view/maxpfeffer/ 
-  google_scholar: 
+  website: https://sites.google.com/view/maxpfeffer/
+  google_scholar:
   linkedin: ""
   purpose: ""
   talk_title: "Manifold Optimization in Data Science"
@@ -234,7 +234,7 @@
   visit_from: "2026-03-03"
   profile_pic: /assets/images/people/visitors/2026/hariprasad-manjunath/hariprasad_manjunath_profilepic.jpeg
   website: https://chanakyauniversity.edu.in/faculties/hariprasad-manjunath-hegde/
-  google_scholar: 
+  google_scholar:
   linkedin: ""
   purpose: ""
   talk_title: "Multi-community Spectral Clustering for Geometric Graphs"
@@ -252,13 +252,13 @@
 
 - name: Dr. Sandeep Chennakeshu
   slug: sandeep-chennakeshu
-  institution: 
-  designation: Former CTO of Ericsson Mobile Phones/Sony-Ericsson, President Ericsson Mobile Platforms, SVP Freescale, President Blackberry Technology Solutions, EVP AMD and COO Uhnder Inc. 
+  institution:
+  designation: Former CTO of Ericsson Mobile Phones/Sony-Ericsson, President Ericsson Mobile Platforms, SVP Freescale, President Blackberry Technology Solutions, EVP AMD and COO Uhnder Inc.
   academic_year: 2025
   visit_from: "2026-03-04"
   profile_pic: /assets/images/people/visitors/2026/sandeep-chennakeshu/Dr.SandeepChennakehsu.webp
   website: https://sandeepchennakeshu.com/
-  google_scholar: 
+  google_scholar:
   linkedin: ""
   purpose: ""
   talk_title: "Trends in AI and Semiconductors"
@@ -275,10 +275,11 @@
   slug: bharadwaj-satchidanandan
   institution: IIT Madras
   designation: Assistant Professor, Department of Electrical Engineering at the Indian Institute of Technology Madras
+  academic_year: 2025
   visit_from: "2026-03-09"
   profile_pic: /assets/images/people/visitors/2026/bharadwaj-satchidanandan/Satchidanandan4.jpg
   website: https://sites.google.com/view/bsatchidanandan/home
-  google_scholar: 
+  google_scholar:
   linkedin: ""
   purpose: ""
   talk_title: "Incentive Compatibility in Two-Stage Repeated Stochastic Games"
@@ -294,6 +295,7 @@
   slug: harshan-jagadeesh
   institution: IIT Delhi
   designation: Associate Professor, Department of Electrical Engineering, IIT Delhi.
+  academic_year: 2025
   visit_from: "2026-03-18"
   profile_pic: /assets/images/people/visitors/2026/harshan-jagadeesh/Harshan_official - Harshan Jagadeesh.jpg
   website: https://sites.google.com/site/jharshan/
@@ -313,12 +315,13 @@
 
 - name: Sandeep Rao
   slug: sandeep-rao
-  institution: Texas Instruments (TI) 
+  institution: Texas Instruments (TI)
   designation: Lead, R&D, Texas Instruments (TI)
+  academic_year: 2025
   visit_from: "2026-04-06"
   profile_pic: /assets/images/people/visitors/2026/sandeep-rao/profile - Sandeep Rao.jpg
   website: https://www.ti.com/product-category/sensors/mmwave-radar/overview.html
-  google_scholar: 
+  google_scholar:
   linkedin: ""
   purpose: ""
   talk_title: "Signal Processing Challenges in mmWave Radar"
@@ -332,8 +335,9 @@
 
 - name: Mansi Sood
   slug: mansi-sood
-  institution: Massachusetts Institute of Technology 
+  institution: Massachusetts Institute of Technology
   designation: Schmidt Science Fellow at the MIT Laboratory for Information and Decision Systems
+  academic_year: 2025
   visit_from: "2026-04-15"
   profile_pic: /assets/images/people/visitors/2026/mansi-sood/MansiSood (1).jpg
   website: https://www.mansisood.com/
@@ -348,13 +352,6 @@
       images:
       - /assets/images/people/visitors/2026/mansi-sood/MansiSood (2).jpg
   extra_pics: []
-
-
-
-
-
-
-
 
 #Year 2024-2025
 
@@ -377,4 +374,3 @@
         research discussion and with students through a seminar talk.
       images: []
   extra_pics: []
-  
