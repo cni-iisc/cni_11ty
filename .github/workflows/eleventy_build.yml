@@ -9,6 +9,12 @@ permissions:
   contents: write
   pages: write
 
+# One build at a time: two pushes seconds apart (e.g. two seminars published back to back)
+# otherwise build in parallel, and the later one's push to gh-pages is rejected.
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
 jobs:
   build_deploy:
     runs-on: ubuntu-22.04
