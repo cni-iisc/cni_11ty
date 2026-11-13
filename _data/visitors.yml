@@ -353,6 +353,27 @@
       - /assets/images/people/visitors/2026/mansi-sood/MansiSood (2).jpg
   extra_pics: []
 
+- name:
+  slug:
+  institution: 
+  designation: 
+  academic_year: 2025
+  visit_from: "2026-04-15"
+  profile_pic: 
+  website: 
+  google_scholar: 
+  linkedin: ""
+  purpose: ""
+  talk_title: ""
+  talk_event_page:
+  engagements:
+    - text: >
+       During their time at CNI, Mansi interacted with faculty through research discussion and with students through a seminar talk.
+      images:
+      - /assets/images/people/visitors/2026/mansi-sood/MansiSood (2).jpg
+  extra_pics: []
+
+
 #Year 2024-2025
 
 - name: Prof. Emina Soljanin
