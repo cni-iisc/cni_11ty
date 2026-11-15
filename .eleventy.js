@@ -340,8 +340,10 @@ module.exports = function (eleventyConfig) {
   // Visitors: data-driven from _data/visitors.yml (schema documented in the file).
   // Sorted by academic year (newest first), then visit_from (newest first), then name.
   eleventyConfig.addCollection("Visitors", function () {
+    // Skip incomplete entries: an empty slug would make the detail page's
+    // permalink collide with the per-year listing page (/visitors/<year>/).
     return readDataYaml("visitors.yml")
-      .slice()
+      .filter((visitor) => visitor && visitor.slug)
       .sort(
         (a, b) =>
           (Number(b.academic_year) || 0) - (Number(a.academic_year) || 0) ||
