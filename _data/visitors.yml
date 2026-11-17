@@ -440,3 +440,25 @@
   engagements: []
   extra_pics:
     - /assets/images/people/visitors/2025/gautam-menon/visit-1.jpg
+- name: Prof. Ayalvadi Ganesh
+  slug: ayalvadi-ganesh
+  institution: University of Bristol
+  designation: Professor
+  academic_year: 2025
+  visit_from: ''
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/ayalvadi-ganesh/profile.jpg'
+  website: https://people.maths.bris.ac.uk/~maajg/
+  google_scholar: https://scholar.google.com/citations?user=fQ0q_0YAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-05-04/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics:
+    - /assets/images/people/visitors/2025/ayalvadi-ganesh/extra-1.jpg
