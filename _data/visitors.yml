@@ -353,6 +353,52 @@
       - /assets/images/people/visitors/2026/mansi-sood/MansiSood (2).jpg
   extra_pics: []
 
+- name: Prof. Frank den Hollander
+  slug: frank-den-hollander
+  institution: Leiden University
+  designation: Emeritus Professor at Leiden University, Netherlands
+  academic_year: 2025
+  visit_from: "2026-04-20"
+  profile_pic: /assets/images/people/visitors/2026/frank-den-hollander/FRANK3 - Frank den Hollander.jpg
+  website: https://pub.math.leidenuniv.nl/~hollanderwtfden/
+  google_scholar: 
+  linkedin: ""
+  purpose: ""
+  talk_title: "The Friendship Paradox for Social Networks"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-04-20/
+  engagements:
+    - text: >
+       During their time at CNI, Prof. Frank interacted with faculty students through a seminar talk.
+      images:
+      - /assets/images/people/visitors/2026/frank-den-hollander/IMG_0756.JPG
+  extra_pics: []
+
+- name: Prof. Remco van der Hofstad
+  slug: remco-van-der-hofstad
+  institution:  Eindhoven University of Technology
+  designation: Professor at Eindhoven University of Technology, Netherlands
+  academic_year: 2025
+  visit_from: "2026-04-20"
+  profile_pic: /assets/images/people/visitors/2026/remco-van-der-hofstad/Foto_RvdH_small2 - RemcovdH.jpg
+  website: https://pub.math.leidenuniv.nl/~hollanderwtfden/
+  google_scholar: 
+  linkedin: ""
+  purpose: ""
+  talk_title: "Who is Important in a Network? Bringing Order to Centrality Measures"
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-04-20-1/
+  engagements:
+    - text: >
+       During their time at CNI, Prof. Remco interacted with faculty through research discussion and with students through a seminar talk.
+      images:
+      - /assets/images/people/visitors/2026/remco-van-der-hofstad/IMG_0758.JPG
+  extra_pics: []
+
+
+
+
+
+
+
 #Year 2024-2025
 
 - name: Prof. Emina Soljanin
