@@ -419,7 +419,7 @@
   academic_year: 2025
   visit_from: "2026-04-27"
   visit_to: ''
-  profile_pic: ''
+  profile_pic: '/assets/images/people/visitors/2025/gautam-menon/profile.jpg'
   website: https://www.ashoka.edu.in/profile/gautam-menon-2/
   google_scholar: https://scholar.google.com/citations?user=nduE54kAAAAJ&hl=en
   linkedin: ''
@@ -432,8 +432,7 @@
   end_note: ''
   research_interests: []
   engagements: []
-  extra_pics:
-    - /assets/images/people/visitors/2025/gautam-menon/visit-1.jpg
+  extra_pics: []
 - name: Prof. Ayalvadi Ganesh
   slug: ayalvadi-ganesh
   institution: University of Bristol
