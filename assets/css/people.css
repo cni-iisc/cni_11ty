@@ -301,3 +301,26 @@ body, html {
     margin: 0 0 0.75rem 0;
   }
 }
+
+/* Outreach visit cards (_includes/visits.html) and detail page (_includes/visit.html).
+   Reuse the visitor-card styles; visit cards carry less text, so they're shorter. */
+.visit-card {
+  min-height: 340px;
+  width: 100%;
+  max-width: 260px;
+}
+
+.visit-intro {
+  max-width: 680px;
+}
+
+.visit-thumbnail-img {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.visit-facts li {
+  margin-bottom: 0.4rem;
+}
