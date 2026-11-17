@@ -1,0 +1,176 @@
+# Outreach visits: visits by CNI members to external organizations. Consumed by
+# the "Visits" collection in .eleventy.js and rendered on the per-year listing
+# pages (/visits/<academic_year>/) and the per-visit detail pages
+# (/visits/<academic_year>/<slug>/). Listed under Outreach > Visits in the navbar.
+#
+# Source: "Faculty Academic Outreach_Talks and Visits.xlsx" (sheet DataForWebpage)
+# on the CNI-Outreach-Visits SharePoint site.
+#
+# Schema — only `organization`, `slug` and `academic_year` are required; omit any
+# field you don't have. Long prose fields use YAML folded blocks (`>`); leave a
+# blank line between paragraphs.
+#
+#   organization        Organization / institute visited, shown as "Visit to <organization>".
+#   slug                URL segment for the detail page (/visits/<academic_year>/<slug>/).
+#                       Keep it stable once published so links don't break.
+#   member              CNI member who made the visit, e.g. "Prof. Parimal Parag".
+#   member_designation  Role of the member, shown on the detail page.
+#   member_url          Optional homepage for the member; the name links to it.
+#   academic_year       Integer START year of the academic year of the visit
+#                       (Jan 2025 => 2024, i.e. "2024-25"). Drives the year pages and dropdown.
+#   visit_from          ISO date YYYY-MM-DD, first day of the visit (keep the quotes).
+#   visit_to            ISO date YYYY-MM-DD, last day. Omit for a one-day visit.
+#   thumbnail           Picture of the organization, shown on the card and the detail page.
+#   purpose             Paragraph on the purpose of the visit and key engagements.
+#   event_page          Optional URL of the talk / event page.
+#   photos              List of photos from the visit, shown in the Photos section.
+#
+# Image layout: each visit keeps its images in its own folder
+#   /assets/images/outreach/visits/<academic_year>/<slug>/
+# All of them go through the site-wide eleventy-img optimization pipeline.
+#
+# Order in this file doesn't matter. The collection sorts by academic_year
+# (newest first), then visit_from (newest first), then organization.
+
+# ---------------------------------------------------------------- 2025-26
+
+- organization: MVJ College of Engineering (MVJCE)
+  slug: mvj-college-of-engineering-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2025
+  visit_from: "2026-03-17"
+  thumbnail: /assets/images/outreach/visits/2025/mvj-college-of-engineering-parimal-parag/thumbnail.jpg
+  purpose: >
+    Prof. Parimal Parag delivered an invited talk at MVJ College of Engineering
+    on 17 March 2026.
+  photos:
+    - /assets/images/outreach/visits/2025/mvj-college-of-engineering-parimal-parag/photo-2.jpg
+    - /assets/images/outreach/visits/2025/mvj-college-of-engineering-parimal-parag/photo-5.jpg
+    - /assets/images/outreach/visits/2025/mvj-college-of-engineering-parimal-parag/photo-6.jpg
+
+- organization: National Conference on Communications (IITH)
+  slug: ncc-iit-hyderabad-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2025
+  visit_from: "2026-02-27"
+  visit_to: "2026-02-28"
+  thumbnail:  /assets/images/outreach/visits/2025/ncc-iit-hyderabad-parimal-parag/photo-3.jpg
+  purpose: >
+    Prof. Parimal Parag delivered an invited talk at the National Conference on
+    Communications, held at IIT Hyderabad, from 27–28 February 2026.
+  photos:
+    - /assets/images/outreach/visits/2025/ncc-iit-hyderabad-parimal-parag/photo-1.jpg
+    - /assets/images/outreach/visits/2025/ncc-iit-hyderabad-parimal-parag/photo-2.jpg
+
+- organization: IIIT Hyderabad (IIITH)
+  slug: iiit-hyderabad-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2025
+  visit_from: "2025-11-17"
+  visit_to: "2025-11-19"
+  thumbnail: /assets/images/outreach/visits/2025/iiit-hyderabad-parimal-parag/thumbnail.webp
+  purpose: >
+    Prof. Parimal Parag delivered an invited tutorial on 17 November 2025 and an
+    invited talk on 19 November 2025.
+  event_page: https://alphagrep.iiit.ac.in/
+  photos:
+    - /assets/images/outreach/visits/2025/iiit-hyderabad-parimal-parag/photo-1.jpg
+    - /assets/images/outreach/visits/2025/iiit-hyderabad-parimal-parag/photo-2.jpg
+
+- organization: IIT Hyderabad (IITH)
+  slug: iit-hyderabad-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2025
+  visit_from: "2025-11-18"
+  thumbnail: /assets/images/outreach/visits/2025/iit-hyderabad-parimal-parag/thumbnail.jpg
+  purpose: >
+    Prof. Parimal Parag delivered an invited talk at the Department of Electrical
+    Engineering.
+  photos:
+    - /assets/images/outreach/visits/2025/iit-hyderabad-parimal-parag/photo-1.jpg
+    - /assets/images/outreach/visits/2025/iit-hyderabad-parimal-parag/photo-2.jpg
+
+# ---------------------------------------------------------------- 2024-25
+
+- organization: University of Warwick
+  slug: university-of-warwick-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2024
+  visit_from: "2025-05-22"
+  thumbnail: /assets/images/outreach/visits/2024/university-of-warwick-parimal-parag/thumbnail.jpg
+  purpose: >
+    Prof. Parimal Parag delivered an invited talk titled "The Power of Two in
+    Large Service-marketplaces".
+
+- organization: Durham University
+  slug: durham-university-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2024
+  visit_from: "2025-05-14"
+  thumbnail: /assets/images/outreach/visits/2024/durham-university-parimal-parag/thumbnail.webp
+  purpose: >
+    Prof. Parimal Parag delivered an invited talk titled "The Power of Two in
+    Large Service-marketplaces".
+  photos:
+    - /assets/images/outreach/visits/2024/durham-university-parimal-parag/photo-1.jpg
+
+- organization: Rutgers University
+  slug: rutgers-university-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2024
+  visit_from: "2025-03-03"
+  thumbnail: /assets/images/outreach/visits/2024/rutgers-university-parimal-parag/thumbnail.jpg
+  purpose: >
+    Prof. Parimal Parag delivered an invited talk titled "The Power of Two in
+    Large Service-marketplaces".
+  event_page: https://www.inspirelab.us/seminars/
+
+- organization: Pennsylvania State University (PSU)
+  slug: penn-state-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2024
+  visit_from: "2025-02-27"
+  thumbnail: /assets/images/outreach/visits/2024/penn-state-parimal-parag/thumbnail.jpg
+  purpose: >
+    Prof. Parimal Parag delivered an invited talk titled "The Power of Two in
+    Large Service-marketplaces".
+  event_page: https://psu.mediaspace.kaltura.com/media/Parimal+Parag+-+CSE+Colloqium+-+Feb+27+-+2025/1_3x0t2zzl
+  photos:
+    - /assets/images/outreach/visits/2024/penn-state-parimal-parag/photo-1.jpg
+    - /assets/images/outreach/visits/2024/penn-state-parimal-parag/photo-2.jpg
+    - /assets/images/outreach/visits/2024/penn-state-parimal-parag/photo-3.jpg
+
+- organization: University of Bristol
+  slug: university-of-bristol-parimal-parag
+  member: Prof. Parimal Parag
+  member_designation: Associate Professor, ECE Department
+  member_url: https://ece.iisc.ac.in/~parimal/
+  academic_year: 2024
+  visit_from: "2025-01-03"
+  visit_to: "2025-01-15"
+  thumbnail: /assets/images/outreach/visits/2024/university-of-bristol-parimal-parag/thumbnail.jpg
+  purpose: >
+    Prof. Parimal Parag visited the University of Bristol for research discussions
+    on potential collaborations in group testing, high-dimensional probability,
+    distributed matching, hierarchical inference, distributed training, and
+    reinforcement learning. During his visit, he also delivered an invited talk at
+    the UKIERI Workshop on Decentralised Learning on 6 January 2025.
+  event_page: https://www.bristol.ac.uk/maths/events/2025/workshop-on-decentralised-learning.html
+  photos:
+    - /assets/images/outreach/visits/2024/university-of-bristol-parimal-parag/photo-1.jpg

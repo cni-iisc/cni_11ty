@@ -17,14 +17,17 @@ const { eleventyImageTransformPlugin, default: Image } = require("@11ty/eleventy
 const readDataYaml = (file) =>
   yaml.load(fs.readFileSync(path.join(__dirname, "_data", file), "utf8")) || [];
 
-// Academic years present in the visitors data, newest first. Drives the
-// /visitors/ year dropdown and the per-year pages, so neither is maintained by hand.
-const getVisitorYears = () => {
-  const years = readDataYaml("visitors.yml")
-    .map((visitor) => Number(visitor.academic_year))
+// Academic years present in a year-paged YAML data file (visitors.yml,
+// visits.yml), newest first. Drives the year dropdown and the per-year pages,
+// so neither is maintained by hand.
+const getAcademicYears = (file) => {
+  const years = readDataYaml(file)
+    .map((entry) => Number(entry && entry.academic_year))
     .filter(Boolean);
   return [...new Set(years)].sort((a, b) => b - a);
 };
+const getVisitorYears = () => getAcademicYears("visitors.yml");
+const getVisitYears = () => getAcademicYears("visits.yml");
 
 // Academic year the site currently belongs to (Jul–Jun): Sept 2026 => 2026,
 // Jan 2026 => 2025.
@@ -369,6 +372,45 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("visitorsForYear", (visitors, year) =>
     (visitors || []).filter((visitor) => Number(visitor.academic_year) === Number(year))
   );
+
+  // Outreach visits by CNI members to external organizations: data-driven from
+  // _data/visits.yml (schema documented in the file). Sorted by academic year
+  // (newest first), then visit_from (newest first), then organization.
+  eleventyConfig.addCollection("Visits", function () {
+    return readDataYaml("visits.yml")
+      .filter((visit) => visit && visit.slug)
+      .sort(
+        (a, b) =>
+          (Number(b.academic_year) || 0) - (Number(a.academic_year) || 0) ||
+          String(b.visit_from || b.visit_to || "").localeCompare(
+            String(a.visit_from || a.visit_to || "")
+          ) ||
+          String(a.organization || "").localeCompare(String(b.organization || ""))
+      );
+  });
+
+  // Same year logic as visitors: current AY if it has visits, else the newest one.
+  eleventyConfig.addGlobalData("visitYears", getVisitYears);
+  eleventyConfig.addGlobalData("defaultVisitYear", () => {
+    const years = getVisitYears();
+    const current = getCurrentAcademicYear();
+    return years.includes(current) ? current : years[0];
+  });
+
+  // "Mar 2026", or "Feb 2025" for a multi-day visit within one month; spans
+  // across months show both, e.g. "Dec 2025 – Jan 2026". Used on visit cards.
+  eleventyConfig.addFilter("visitMonthYear", (visit) => {
+    if (!visit) return "";
+    const fmt = (iso) => {
+      if (!iso) return "";
+      const dt = DateTime.fromISO(String(iso), { zone: "utc" });
+      return dt.isValid ? dt.toFormat("LLL yyyy") : String(iso);
+    };
+    const from = fmt(visit.visit_from);
+    const to = fmt(visit.visit_to);
+    if (from && to && from !== to) return `${from} – ${to}`;
+    return from || to;
+  });
 
   // Display string for a visitor's dates, derived from the ISO visit_from/visit_to
   // fields, e.g. "13 Jan 2026 – 14 Jan 2026" or "3 Feb 2026".

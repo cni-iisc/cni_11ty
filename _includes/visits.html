@@ -1,0 +1,62 @@
+---
+layout: base.html
+---
+<link rel="stylesheet" href="/assets/css/people.css">
+
+{% set year = year or defaultVisitYear %}
+
+<div class="container-fluid text-center mt-2" style="max-width:1200px;">
+  <h2>Outreach Visits</h2>
+  <p class="visit-intro mx-auto">Visits by CNI members to external organizations for talks, tutorials and research collaborations.</p>
+
+  <div class="dropdown text-center">
+    <button class="btn dropdown-toggle button-year" type="button" id="yearDropdown" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <span id="selectedYear">{{ year }}-{{ year + 1 }}</span>
+    </button>
+    <ul class="dropdown-menu text-center" aria-labelledby="yearDropdown">
+      {% for y in visitYears %}
+      <li>
+        <a class="dropdown-item{% if y == year %} active{% endif %}" href="/visits/{{ y }}/"
+          {% if y == year %}aria-current="true"{% endif %}>{{ y }}-{{ y + 1 }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="row justify-content-center gap-0">
+    {# visitorsForYear only looks at academic_year, so it works for visits too. #}
+    {% set yearVisits = collections.Visits | visitorsForYear(year) %}
+    {% for visit in yearVisits %}
+    {% set visitUrl = "/visits/" + visit.academic_year + "/" + visit.slug + "/" %}
+    <div class="col-lg-3 col-sm-6 my-3 d-flex justify-content-center gap-0">
+      <div class="card visitor-card visit-card">
+        <a class="visitor-card-photo" href="{{ visitUrl }}">
+          {% if visit.thumbnail %}
+          <img src="{{ visit.thumbnail }}" alt="{{ visit.organization }}" class="card-img-top img-fluid" sizes="230px"
+            eleventy:widths="230,460">
+          {% else %}
+          <div class="visitor-card-photo-placeholder" aria-hidden="true"><i class="fas fa-university"></i></div>
+          {% endif %}
+        </a>
+        <div class="visitor-card-body text-center">
+          <a class="visitor-card-name" href="{{ visitUrl }}">
+            <h6 class="card-title mb-1">Visit to {{ visit.organization }}</h6>
+          </a>
+          {% if visit.member %}
+          <p class="visitor-institution mb-1">{{ visit.member }}</p>
+          {% endif %}
+          {% set when = visit | visitMonthYear %}
+          {% if when %}
+          <p class="visitor-dates mb-0">{{ when }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if yearVisits.length == 0 %}
+  <p class="text-center mt-4">No visits recorded for this year.</p>
+  {% endif %}
+</div>

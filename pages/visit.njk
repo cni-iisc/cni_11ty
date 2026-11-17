@@ -1,0 +1,11 @@
+---
+layout: visit.html
+pagination:
+  data: collections.Visits
+  size: 1
+  alias: visit
+permalink: "/visits/{{ visit.academic_year }}/{{ visit.slug }}/"
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "Visit to {{ visit.organization }}"
+---
