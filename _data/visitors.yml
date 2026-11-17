@@ -369,8 +369,9 @@
         During their time at CNI, Prof. Frank interacted with faculty students through a seminar talk.
       images:
         - /assets/images/people/visitors/2026/frank-den-hollander/IMG_0756.JPG
-  extra_pics: []
-
+  extra_pics:
+    - /assets/images/people/visitors/2025/frank-den-hollander/extra-1.jpg
+    - /assets/images/people/visitors/2025/frank-den-hollander/extra-2.jpg
 - name: Prof. Remco van der Hofstad
   slug: remco-van-der-hofstad
   institution: Eindhoven University of Technology
@@ -389,16 +390,9 @@
         During their time at CNI, Prof. Remco interacted with faculty through research discussion and with students through a seminar talk.
       images:
         - /assets/images/people/visitors/2026/remco-van-der-hofstad/IMG_0758.JPG
-  extra_pics: []
-
-
-
-
-
-
-
-#Year 2024-2025
-
+  extra_pics:
+    - /assets/images/people/visitors/2025/remco-van-der-hofstad/extra-1.jpg
+    - /assets/images/people/visitors/2025/remco-van-der-hofstad/extra-2.jpg
 - name: Prof. Emina Soljanin
   slug: emina-soljanin
   institution: Rutgers University
@@ -462,3 +456,218 @@
   engagements: []
   extra_pics:
     - /assets/images/people/visitors/2025/ayalvadi-ganesh/extra-1.jpg
+- name: Prof. Narasimha Reddy
+  slug: narasimha-reddy
+  institution: Texas A&M University
+  designation: Professor and Head, Department of Electrical and Computer Engineering
+  academic_year: 2025
+  visit_from: "2026-06-04"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/narasimha-reddy/profile.jpg'
+  website: https://cesg.tamu.edu/faculty/narasimha-reddy/
+  google_scholar: ''
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-06-04/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Srinivas Shakkottai
+  slug: srinivas-shakkottai
+  institution: Texas A&M University
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-06-12"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/srinivas-shakkottai/profile.jpg'
+  website: https://cesg.tamu.edu/faculty/srinivas-shakkottai/
+  google_scholar: https://scholar.google.com/citations?user=HtpmINIAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-06-12/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Natarajan Gautam
+  slug: natarajan-gautam
+  institution: Syracuse University
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-07-01"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/natarajan-gautam/profile.jpg'
+  website: https://ecs.syracuse.edu/faculty-staff/natarajan-gautam
+  google_scholar: https://scholar.google.com/citations?user=fbhpBTsAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-07-01/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Arpan Mukhopadhyay
+  slug: arpan-mukhopadhyay
+  institution: University of Warwick
+  designation: Associate Professor
+  academic_year: 2025
+  visit_from: "2026-06-30"
+  visit_to: "2026-07-07"
+  profile_pic: '/assets/images/people/visitors/2025/arpan-mukhopadhyay/profile.jpg'
+  website: https://sites.google.com/site/arpanphi/home
+  google_scholar: https://scholar.google.com/citations?user=bmPxFagAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-07-06/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics:
+    - /assets/images/people/visitors/2025/arpan-mukhopadhyay/extra-1.jpg
+- name: Prof. Aditya Mahajan
+  slug: aditya-mahajan
+  institution: McGill University
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-07-20"
+  visit_to: "2026-07-24"
+  profile_pic: '/assets/images/people/visitors/2025/aditya-mahajan/profile.jpg'
+  website: https://adityam.github.io/
+  google_scholar: https://scholar.google.com/citations?user=Qr6-idkAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/schools/2026/
+  end_note: ''
+  research_interests: []
+  engagements:
+    - text: During his visit to CNI, Prof. Aditya interacted with faculty through research discussions, delivered a seminar talk for students, and served as a guest lecturer for the four-day CNI Summer School.
+      images: []
+  extra_pics:
+    - /assets/images/people/visitors/2025/aditya-mahajan/extra-1.jpg
+    - /assets/images/people/visitors/2025/aditya-mahajan/extra-2.jpg
+- name: Prof. Kaliappa Ravindran
+  slug: kaliappa-ravindran
+  institution: City University of New York
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-07-27"
+  visit_to: "2026-07-30"
+  profile_pic: '/assets/images/people/visitors/2025/kaliappa-ravindran/profile.jpg'
+  website: https://www.gc.cuny.edu/people/kaliappa-ravindran
+  google_scholar: https://scholar.google.com/citations?user=vn4LOOsAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-07-27/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Sayak Ray Chowdhury
+  slug: sayak-ray-chowdhury
+  institution: IIT Kanpur
+  designation: Assistant Professor
+  academic_year: 2025
+  visit_from: "2026-08-10"
+  visit_to: "2026-08-13"
+  profile_pic: '/assets/images/people/visitors/2025/sayak-ray-chowdhury/profile.jpg'
+  website: https://sites.google.com/view/sayakraychowdhury/home
+  google_scholar: https://scholar.google.com/citations?user=Q0_CaxYAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-10/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Emina Soljanin
+  slug: emina-soljanin
+  institution: Rutgers University
+  designation: Distinguished Professor
+  academic_year: 2025
+  visit_from: ''
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/emina-soljanin/profile.jpg'
+  website: https://ece.rutgers.edu/emina-soljanin
+  google_scholar: https://scholar.google.com/citations?user=biHNfvkAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-11/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Ankur Mani
+  slug: ankur-mani
+  institution: University of Minnesota
+  designation: Affiliated Faculty
+  academic_year: 2025
+  visit_from: "2026-08-13"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/ankur-mani/profile.png'
+  website: https://sites.google.com/umn.edu/amani
+  google_scholar: https://scholar.google.com/citations?user=QrWJyPwAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-13/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Vijay G Subramanian
+  slug: vijay-subramanian
+  institution: University of Michigan, Ann Arbor
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-08-17"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/vijay-subramanian/profile.png'
+  website: https://subramanian.engin.umich.edu/
+  google_scholar: https://scholar.google.com/citations?user=CuAYQ6gAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-17/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
