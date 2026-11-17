@@ -64,6 +64,10 @@
                 "url": "/newsletter/latest/"
             },
             {
+                "title": "Workshops",
+                "url": "/workshops/"
+            },
+            {
                 "title": "Courses",
                 "url": "/courses/"
             },
@@ -72,16 +76,16 @@
                 "url": "/schools/"
             },
             {
+                "title": "Visits",
+                "url": "/visits/"
+            },
+            {
                 "title": "CNI in News",
                 "url": "/news/"
             },
             {
                 "title": "Hackathons",
                 "url": "/hackathons"
-            },
-            {
-                "title": "Workshops",
-                "url": "/workshops/"
             }
         ]
     },

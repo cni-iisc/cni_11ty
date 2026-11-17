@@ -1,0 +1,71 @@
+---
+layout: base.html
+---
+<link rel="stylesheet" href="/assets/css/people.css">
+
+<div class="container my-4" style="max-width: 950px;">
+  <p class="mb-4">
+    <a href="/visits/{{ visit.academic_year }}/">
+      <i class="fas fa-arrow-left fa-xs"></i> Outreach Visits {{ visit.academic_year }}-{{ visit.academic_year + 1 }}
+    </a>
+  </p>
+
+  <div class="row g-4 align-items-start">
+    <div class="col-md-5 text-center">
+      {% if visit.thumbnail %}
+      <img src="{{ visit.thumbnail }}" alt="{{ visit.organization }}" class="img-fluid rounded visit-thumbnail-img"
+        sizes="(min-width: 768px) 380px, 90vw" eleventy:widths="380,760">
+      {% else %}
+      <div class="visitor-profile-placeholder" aria-hidden="true"><i class="fas fa-university"></i></div>
+      {% endif %}
+    </div>
+
+    <div class="col-md-7">
+      <h1 class="h3 mb-3">Visit to {{ visit.organization }}</h1>
+
+      <ul class="list-unstyled visit-facts mb-3">
+        {% if visit.member %}
+        <li>
+          <i class="fas fa-user fa-fw"></i> <strong>Visitor:</strong>
+          {% if visit.member_url %}<a href="{{ visit.member_url }}" target="_blank" rel="noopener">{{ visit.member }}</a>{% else %}{{ visit.member }}{% endif %}{% if visit.member_designation %}, {{ visit.member_designation }}{% endif %}
+        </li>
+        {% endif %}
+        {# visitorDates formats visit_from/visit_to, shared with the visitors pages. #}
+        {% set dates = visit | visitorDates %}
+        {% if dates %}
+        <li><i class="far fa-calendar-alt fa-fw"></i> <strong>Date:</strong> {{ dates }}</li>
+        {% endif %}
+      </ul>
+
+      {% if visit.event_page %}
+      <p class="mb-0">
+        <a href="{{ visit.event_page }}" target="_blank" rel="noopener">Event Page</a>
+      </p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if visit.purpose %}
+  <section class="visitor-section">
+    <h2 class="h5">Purpose of the Visit and Key Engagements</h2>
+    {{ visit.purpose | paragraphs | safe }}
+  </section>
+  {% endif %}
+
+  {% if visit.photos and visit.photos.length %}
+  <section class="visitor-section">
+    <h2 class="h5">Photographs from the Visit</h2>
+    <div class="row g-3">
+      {% for photo in visit.photos %}
+      <div class="col-6 col-md-4">
+        <a href="{{ photo }}" target="_blank" rel="noopener">
+          <img src="{{ photo }}" alt="Photo from the visit to {{ visit.organization }}"
+            class="img-fluid rounded visitor-photo" sizes="(min-width: 768px) 33vw, 50vw"
+            eleventy:widths="300,600">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>

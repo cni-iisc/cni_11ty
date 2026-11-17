@@ -1,0 +1,11 @@
+---
+layout: visits.html
+pagination:
+  data: visitYears
+  size: 1
+  alias: year
+permalink: "/visits/{{ year }}/"
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "Outreach Visits {{ year }}-{{ year + 1 }}"
+---
