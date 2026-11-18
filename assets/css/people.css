@@ -113,18 +113,19 @@ body, html {
   display: block;
 }
 
-/* Profile photos are portraits cropped to the face by the internal editor: 3:4
-   (width 1 : height 1.33), or up to square for small photos. Shown at their own shape,
-   so 230 to 307 px high; the card body fills the rest of the row's height. */
+/* Profile photos are 4:5 portraits (width 4 : height 5) cropped to the face by the
+   internal editor; every card shows them in the same 230 x 288 px box. */
 .visitor-card .card-img-top {
   height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 .visitor-card-photo-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 307px;
+  height: 288px;
   background-color: #e9ecef;
   color: #adb5bd;
   font-size: 4rem;
@@ -189,7 +190,7 @@ body, html {
   justify-content: center;
   width: 100%;
   max-width: 300px;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   margin: 0 auto;
   background-color: #e9ecef;
   color: #adb5bd;
