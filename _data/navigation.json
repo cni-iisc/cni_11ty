@@ -12,10 +12,6 @@
                 "url": "/staff/"
             },
             {
-                "title": "Interns",
-                "url": "/interns/"
-            },
-            {
                 "title": "Postdocs",
                 "url": "/postdocs/"
             },
@@ -26,6 +22,10 @@
             {
                 "title": "MTech Fellows",
                 "url": "/mtech-fellows/"
+            },
+            {
+                "title": "Interns",
+                "url": "/interns/"
             },
             {
                 "title": "Visitors",
