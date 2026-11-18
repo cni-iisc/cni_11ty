@@ -9,8 +9,8 @@
 # ///
 """Crop recently added people photos to the card: 4:5, centred on the face.
 
-Covers the photos on /faculty, /postdocs, /phd-fellows, /mtech-fellows and /interns
-(visitor photos are cropped by the internal editor instead). See CROP_PEOPLE_PHOTOS.md.
+Covers the photos on /faculty, /postdocs, /phd-fellows, /mtech-fellows, /interns, /staff
+and /staff/alumni (visitor photos are cropped by the internal editor instead). See CROP_PEOPLE_PHOTOS.md.
 
     uv run scripts/crop_people_photos.py                     # dummy run: list, change nothing
     uv run scripts/crop_people_photos.py --since-days 90     # ... photos from the last 90 days
@@ -22,8 +22,9 @@ The rule (the same as for visitor photos):
 - every crop is 4:5 (width 4 : height 5), centred on the face, as large as the room
   around the face allows: the face fills 20% of it with room all round, up to 25%
   without;
-- a face near an edge stays at 25% and the crop slides to stay inside the photo; a face
-  too big for that gets the largest 4:5 cut (the face then fills more than 25%);
+- when even a 25% crop can't be centred on the face (a face near an edge of the
+  photo), the face fills 30% and the crop slides to stay inside the photo; a face too
+  big for that gets the largest 4:5 cut (the face then fills more than 30%);
 - the crop is scaled down to at most 600 px wide.
 
 "The face" is the box of the YuNet face detector (forehead to chin, cheek to cheek), and
@@ -31,7 +32,7 @@ its share is that box's area over the crop's. A photo meets the rule when the cr
 rule asks for is (nearly) the whole photo; such photos, and photos without a face, are
 left alone.
 
-Which photos: the ones the five pages show (their ``img:`` / ``profile_pic:`` fields)
+Which photos: the ones the seven pages show (their ``img:`` / ``profile_pic:`` fields)
 that were added or replaced in git within ``--since-days`` days (default: 30), or are new
 or changed and not committed yet. ``--since-days all`` checks every photo the pages show;
 paths given on the command line are checked whatever their age.
@@ -61,10 +62,12 @@ BACKUPS = Path(__file__).resolve().parent / ".crop-backups"
 
 ASPECT = 4 / 5        # width / height of every crop (the card is 230 px wide: 230 x 288)
 MIN_SHARE = 0.20      # the face's share of the crop's area when there's room around it
-MAX_SHARE = 0.25      # ... and when there isn't (more only if the face is too big)
+MAX_SHARE = 0.25      # ... and when there is less (the largest crop centred on the face)
+EDGE_SHARE = 0.30     # ... when a 25% crop can't be centred (more only if the face is too big)
 MAX_WIDTH = 600       # px; the pages build 230 and 460 px wide copies
 TOLERANCE = 0.03      # a photo meets the rule if its crop keeps >= 97% of each side, or it is
-                      # already 4:5 (within 3%) with the face >= 20% (within 3%); see meets_rule
+                      # already 4:5 (within 3%) with the face >= 20% (within SHARE_SLACK)
+SHARE_SLACK = 0.15    # the face found again in a small crop can be ~10% smaller; see meets_rule
 DETECT_SIZE = 640     # longest side the face detector sees
 MIN_SCORE = 0.7       # detector confidence
 JPEG_QUALITY = 90
@@ -91,7 +94,7 @@ def _front_matter(path: Path) -> dict:
 
 
 def people_photos() -> dict[str, str]:
-    """{web path of a photo: the page that shows it} for the five pages."""
+    """{web path of a photo: the page that shows it} for the seven pages."""
     photos: dict[str, str] = {}
 
     def add(web: object, page: str) -> None:
@@ -114,6 +117,12 @@ def people_photos() -> dict[str, str]:
             page = fellows.get(str(fm.get("category", "")).strip())
             if page:
                 add(fm.get("img"), page)
+    # .eleventy.js "Staff": /staff shows the current staff, /staff/alumni/ those with past: true
+    for pattern in ("staff/*.md", "*.md"):
+        for md in sorted((REPO / "_people").glob(pattern)):
+            fm = _front_matter(md)
+            if str(fm.get("category", "")).strip() == "Staff":
+                add(fm.get("img"), "staff-alumni" if fm.get("past") is True else "staff")
     interns = REPO / "_data" / "interns.yml"
     if interns.is_file():
         for row in yaml.safe_load(interns.read_text(encoding="utf-8")) or []:
@@ -170,14 +179,20 @@ def find_face(img: Image.Image) -> Face | None:
 
 
 def cut_box(size: tuple[int, int], face: Face) -> Box:
-    """The 4:5 cut centred on the face, the face 20-25% of it as the room allows."""
+    """The 4:5 cut centred on the face, the face 20-25% of it as the room allows, or 30%
+    (the cut sliding to stay inside the photo) when even 25% can't be centred."""
     width, height = size
     x, y, w, h = face
     cx, cy = x + w / 2, y + h / 2
     tight = math.sqrt(w * h / (MAX_SHARE * ASPECT))   # crop height with the face at 25%
     loose = math.sqrt(w * h / (MIN_SHARE * ASPECT))   # ... and at 20%
+    near_edge = math.sqrt(w * h / (EDGE_SHARE * ASPECT))   # ... and at 30%
     centred = min(2 * min(cy, height - cy), 2 * min(cx, width - cx) / ASPECT)
-    ch = min(max(centred, tight), loose, height, width / ASPECT)
+    if centred >= tight:   # the face can be centred at 20-25%
+        ch = min(centred, loose)
+    else:                  # it can't: the face at 30%, the crop slides to stay inside
+        ch = near_edge
+    ch = min(ch, height, width / ASPECT)
     cw, ch = max(1, round(ch * ASPECT)), max(1, round(ch))
     left = min(max(round(cx - cw / 2), 0), width - cw)
     top = min(max(round(cy - ch / 2), 0), height - ch)
@@ -192,8 +207,8 @@ def meets_rule(size: tuple[int, int], box: Box, face: Face) -> bool:
     """Whether the photo already meets the rule, so it is left alone.
 
     Either the crop would keep (nearly) the whole photo, or the photo is already 4:5 with
-    the face filling at least 20% of it (more is fine: the photo is tight around the
-    face). The second test keeps a crop stable: on a small photo, the face found again in
+    the face filling about 20% of it or more (down to 17%, SHARE_SLACK; more is fine: the
+    photo is tight around the face). The second test keeps a crop stable: on a small photo, the face found again in
     the cropped copy can be a few pixels off, and the crop would otherwise shrink a
     little on every run.
     """
@@ -201,7 +216,7 @@ def meets_rule(size: tuple[int, int], box: Box, face: Face) -> bool:
     if (box[2] - box[0]) >= (1 - TOLERANCE) * width and (box[3] - box[1]) >= (1 - TOLERANCE) * height:
         return True
     is_4_5 = abs(width / height - ASPECT) <= TOLERANCE * ASPECT
-    return is_4_5 and face_share((0, 0, width, height), face) >= MIN_SHARE * (1 - TOLERANCE)
+    return is_4_5 and face_share((0, 0, width, height), face) >= MIN_SHARE * (1 - SHARE_SLACK)
 
 
 def load(path: Path) -> Image.Image:
@@ -323,15 +338,15 @@ def main(argv: list[str] | None = None) -> int:
         wanted = {a.lstrip("/") for a in args.paths}
         unknown = sorted(w for w in wanted if w not in by_rel)
         for w in unknown:
-            print(f"skip       {w}: not shown on the five pages (faculty, postdocs, PhD/MTech fellows, interns)")
+            print(f"skip       {w}: not shown on the seven pages (faculty, postdocs, PhD/MTech fellows, interns, staff, staff alumni)")
         candidates = sorted(wanted & by_rel.keys())
     elif args.since_days is None:
         candidates = sorted(by_rel)
-        print(f"checking all {len(by_rel)} photos on the five pages.")
+        print(f"checking all {len(by_rel)} photos on the seven pages.")
     else:
         recent = recent_files(args.since_days)
         candidates = sorted(rel for rel in by_rel if rel in recent)
-        print(f"{len(candidates)} of {len(by_rel)} photos on the five pages were added or changed "
+        print(f"{len(candidates)} of {len(by_rel)} photos on the seven pages were added or changed "
               f"in the last {args.since_days} days (or are not committed yet).")
     if not args.apply:
         print("dummy run: nothing is changed.")
