@@ -14,3 +14,6 @@ _data/events.json
 
 # eleventy-img optimization cache
 .11ty-img-cache
+
+# originals saved by scripts/crop_people_photos.py --apply
+scripts/.crop-backups/
