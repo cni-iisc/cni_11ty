@@ -438,8 +438,8 @@
   institution: University of Bristol
   designation: Professor
   academic_year: 2025
-  visit_from: ''
-  visit_to: ''
+  visit_from: "2026-09-15"
+  visit_to: "2026-10-17"
   profile_pic: '/assets/images/people/visitors/2025/ayalvadi-ganesh/profile.jpg'
   website: https://people.maths.bris.ac.uk/~maajg/
   google_scholar: https://scholar.google.com/citations?user=fQ0q_0YAAAAJ&hl=en
@@ -612,7 +612,7 @@
   institution: Rutgers University
   designation: Distinguished Professor
   academic_year: 2025
-  visit_from: ''
+  visit_from: "2026-07-11"
   visit_to: ''
   profile_pic: '/assets/images/people/visitors/2025/emina-soljanin/profile.jpg'
   website: https://ece.rutgers.edu/emina-soljanin
@@ -666,6 +666,153 @@
   talk_title: ''
   talk_description: ''
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-17/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Pravin Nair
+  slug: pravin-nair
+  institution: IIT Madras
+  designation: Assistant Professor
+  academic_year: 2025
+  visit_from: "2026-08-17"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/pravin-nair/profile.jpg'
+  website: https://pravin1390.github.io/
+  google_scholar: https://scholar.google.com/citations?user=VTqK0FMAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-17-1/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Dr. Dheeraj Nagaraj
+  slug: dheeraj-nagaraj
+  institution: Google DeepMind
+  designation: Research Scientist
+  academic_year: 2025
+  visit_from: "2026-08-31"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/dheeraj-nagaraj/profile.jpg'
+  website: http://dheerajnagaraj.com/
+  google_scholar: https://scholar.google.com/citations?user=0g80b7sAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-31/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Dr. Ashutosh Gore
+  slug: ashutosh-gore
+  institution: Reliance Jio
+  designation: VP Engineering
+  academic_year: 2025
+  visit_from: "2026-09-07"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/ashutosh-gore/profile.jpg'
+  website: https://www.linkedin.com/in/adgore/
+  google_scholar: ''
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-09-07/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Jithin Ravi
+  slug: jithin-ravi
+  institution: IIT Kharagpur
+  designation: Assistant Professor
+  academic_year: 2025
+  visit_from: "2026-09-21"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/jithin-ravi/profile.jpg'
+  website: https://sites.google.com/view/rjithin/home
+  google_scholar: https://scholar.google.com/citations?user=oPtbq9sAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-09-21/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Dinesh Bharadia
+  slug: dinesh-bharadia
+  institution: University of California San Diego
+  designation: Associate Professor
+  academic_year: 2025
+  visit_from: "2026-10-12"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/dinesh-bharadia/profile.jpg'
+  website: https://dineshb.ucsd.edu/
+  google_scholar: https://scholar.google.com/citations?user=5SjaXJsAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-10-12-1/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Mrityunjoy Chakraborty
+  slug: mrityunjoy-chakraborty
+  institution: IIT Kharagpur
+  designation: VSNL Chair Professor
+  academic_year: 2025
+  visit_from: "2026-10-12"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/mrityunjoy-chakraborty/profile.jpg'
+  website: https://facweb.iitkgp.ac.in/~mchakraborty/
+  google_scholar: https://scholar.google.com/citations?user=15pXJ7cAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-10-12/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Seshan Srirangarajan
+  slug: seshan-srirangarajan
+  institution: IIT Delhi
+  designation: Associate Professor
+  academic_year: 2025
+  visit_from: "2026-11-16"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/seshan-srirangarajan/profile.jpg'
+  website: https://web.iitd.ac.in/~seshan/
+  google_scholar: https://scholar.google.com/citations?user=ijFjQ7oAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-11-16/
   end_note: ''
   research_interests: []
   engagements: []
