@@ -64,7 +64,7 @@
   designation: Postdoctoral Researcher, Networked Systems Group
   academic_year: 2025
   visit_from: "2026-01-05"
-  profile_pic: /assets/images/people/visitors/2026/sushovan-das/SushovanDas.jpg
+  profile_pic: /assets/images/people/visitors/2026/sushovan-das/profile.jpg
   website: https://sushovan-das.net/
   purpose: Visited CNI to deliver a seminar talk on rearchitecting datacenter networks with optical core and optical edge.
   talk_title: "Rearchitecting Datacenter Networks: A New Paradigm with Optical Core and Optical Edge"
@@ -82,7 +82,7 @@
   designation: Professor, Department of Computer Science
   academic_year: 2025
   visit_from: "2026-01-12"
-  profile_pic: /assets/images/people/visitors/2026/florin-ciucu/FlorinCiucu.jpg
+  profile_pic: /assets/images/people/visitors/2026/florin-ciucu/profile.jpg
   website: https://www.dcs.warwick.ac.uk/~florin/
   purpose: Visited CNI to deliver a seminar talk on ultra-sharp bounds in queueing systems.
   talk_title: "On Some Ultra-Sharp Bounds in Queueing Systems"
@@ -100,7 +100,7 @@
   designation: Professor, Division of Decision and Control Systems
   academic_year: 2025
   visit_from: "2026-01-13"
-  profile_pic: /assets/images/people/visitors/2026/alexandre-proutiere/AlexandreProutiere.jpeg
+  profile_pic: /assets/images/people/visitors/2026/alexandre-proutiere/profile.jpg
   website: https://people.kth.se/~alepro/
   purpose: Visited CNI to deliver a seminar talk on learning with minimal human feedback.
   talk_title: "Learning with Minimal Human Feedback"
@@ -119,19 +119,17 @@
   academic_year: 2025
   visit_from: "2026-01-13"
   visit_to: "2026-01-14"
-  profile_pic: /assets/images/people/visitors/2026/andres-kwasinski/AndresKwasinski.jpg
+  profile_pic: /assets/images/people/visitors/2026/andres-kwasinski/profile.jpg
   website: https://www.rit.edu/directory/axkeec-andres-kwasinski
   google_scholar: https://scholar.google.com/citations?user=tSzRv0YAAAAJ&hl=en
   linkedin: ""
-  purpose: Visited CNI to deliver a seminar talk on the synergy between quality of experience and deep reinforcement learning for
-    uncoordinated multi-agent resource allocation in cognitive radio network.
-  talk_title: "The Synergy Between Quality of Experience and Deep Reinforcement Learning for
-    Uncoordinated Multi-Agent Resource Allocation in Cognitive Radio Network"
+  purpose: Visited CNI to deliver a seminar talk on the synergy between quality of experience and deep reinforcement learning for uncoordinated multi-agent resource allocation in cognitive radio network.
+  talk_title: "The Synergy Between Quality of Experience and Deep Reinforcement Learning for Uncoordinated Multi-Agent Resource Allocation in Cognitive Radio Network"
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-01-14/
   engagements:
     - text: >
-       During their time at CNI, Professor Andres interacted with faculty through
-        research discussion and with students through a seminar talk.
+        During their time at CNI, Professor Andres interacted with faculty through
+         research discussion and with students through a seminar talk.
       images: []
   extra_pics: []
 
@@ -141,7 +139,7 @@
   designation: HPE Fellow, Vice President, and Director of the Networking and Distributed Systems Lab
   academic_year: 2025
   visit_from: "2026-02-03"
-  profile_pic: /assets/images/people/visitors/2026/puneet-sharma/PuneetSharma.jpg
+  profile_pic: /assets/images/people/visitors/2026/puneet-sharma/profile.jpg
   website: https://www.hpe.com/psnow/doc/a00150137enw
   google_scholar: ""
   linkedin: ""
@@ -165,17 +163,17 @@
   academic_year: 2025
   visit_from: "2026-02-23"
   visit_to: "2026-02-24"
-  profile_pic: /assets/images/people/visitors/2026/namrata-vaswani/NamrataVaswani.jpg
+  profile_pic: /assets/images/people/visitors/2026/namrata-vaswani/profile.jpg
   website: https://www.engineering.iastate.edu/people/profile/namrata/
-  google_scholar:  https://scholar.google.com/citations?user=s-dQPO8AAAAJ&hl=en
+  google_scholar: https://scholar.google.com/citations?user=s-dQPO8AAAAJ&hl=en
   linkedin: ""
   purpose: Visited CNI to deliver a seminar talk on Mathematical ML and ML for math.
   talk_title: "Mathematical ML and ML for Math: Alternating GD and Minimization (AltGDmin) for Secure Federated Low Rank Matrix Learning for Real-time MRI and ML-enabled K-12 Math Support"
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-02-23/
   engagements:
     - text: >
-       During their time at CNI, Professor Namrata interacted with faculty through
-        research discussion and with students through a seminar talk.
+        During their time at CNI, Professor Namrata interacted with faculty through
+         research discussion and with students through a seminar talk.
       images: []
   extra_pics: []
 
@@ -185,7 +183,7 @@
   designation: Associate Professor at IMT Atlantique (Brest)
   academic_year: 2025
   visit_from: "2026-02-25"
-  profile_pic: /assets/images/people/visitors/2026/alexandre-reiffers-masson/AlexandreReiffers.jpg
+  profile_pic: /assets/images/people/visitors/2026/alexandre-reiffers-masson/profile.jpg
   website: https://sites.google.com/view/alexandre-reiffers/about
   google_scholar: "https://scholar.google.com/citations?user=OBmvq4QAAAAJ&hl=en"
   linkedin: ""
@@ -194,12 +192,12 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-02-25/
   engagements:
     - text: >
-       During their time at CNI, Professor Alexandre interacted with faculty through
-        research discussion and with students through a seminar talk.
+        During their time at CNI, Professor Alexandre interacted with faculty through
+         research discussion and with students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-1.JPG
-      - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-2.JPG
-      - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-3.JPG
+        - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-1.JPG
+        - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-2.JPG
+        - /assets/images/people/visitors/2026/alexandre-reiffers-masson/Visit-3.JPG
   extra_pics: []
 
 - name: Prof. Max Pfeffer
@@ -208,7 +206,7 @@
   designation: Junior Professor of Mathematics at Georg-August-Universität Göttingen
   academic_year: 2025
   visit_from: "2026-03-03"
-  profile_pic: /assets/images/people/visitors/2026/max-pfeffer/Dr.MaxPfeffers.jpg
+  profile_pic: /assets/images/people/visitors/2026/max-pfeffer/profile.jpg
   website: https://sites.google.com/view/maxpfeffer/
   google_scholar:
   linkedin: ""
@@ -217,13 +215,13 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-03-03/
   engagements:
     - text: >
-       During their time at CNI, Professor Max interacted with faculty through
-        research discussion and with students through a seminar talk.
+        During their time at CNI, Professor Max interacted with faculty through
+         research discussion and with students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/max-pfeffer/Visit1.JPG
-      - /assets/images/people/visitors/2026/max-pfeffer/Visit2.JPG
-      - /assets/images/people/visitors/2026/max-pfeffer/Visit3.JPG
-      - /assets/images/people/visitors/2026/max-pfeffer/Visit4.JPG
+        - /assets/images/people/visitors/2026/max-pfeffer/Visit1.JPG
+        - /assets/images/people/visitors/2026/max-pfeffer/Visit2.JPG
+        - /assets/images/people/visitors/2026/max-pfeffer/Visit3.JPG
+        - /assets/images/people/visitors/2026/max-pfeffer/Visit4.JPG
   extra_pics: []
 
 - name: Prof. Hariprasad Manjunath
@@ -232,7 +230,7 @@
   designation: Assistant Professor at the School of Mathematics and Natural Sciences, Chanakya University, Bengaluru
   academic_year: 2025
   visit_from: "2026-03-03"
-  profile_pic: /assets/images/people/visitors/2026/hariprasad-manjunath/hariprasad_manjunath_profilepic.jpeg
+  profile_pic: /assets/images/people/visitors/2026/hariprasad-manjunath/profile.jpg
   website: https://chanakyauniversity.edu.in/faculties/hariprasad-manjunath-hegde/
   google_scholar:
   linkedin: ""
@@ -241,13 +239,13 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-03-03-1/
   engagements:
     - text: >
-       During their time at CNI, Professor Hariprasad interacted with faculty through
-        research discussion and with students through a seminar talk.
+        During their time at CNI, Professor Hariprasad interacted with faculty through
+         research discussion and with students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/hariprasad-manjunath/visit1.JPG
-      - /assets/images/people/visitors/2026/hariprasad-manjunath/visit2.JPG
-      - /assets/images/people/visitors/2026/hariprasad-manjunath/visit3.JPG
-      - /assets/images/people/visitors/2026/hariprasad-manjunath/visit4.JPG
+        - /assets/images/people/visitors/2026/hariprasad-manjunath/visit1.JPG
+        - /assets/images/people/visitors/2026/hariprasad-manjunath/visit2.JPG
+        - /assets/images/people/visitors/2026/hariprasad-manjunath/visit3.JPG
+        - /assets/images/people/visitors/2026/hariprasad-manjunath/visit4.JPG
   extra_pics: []
 
 - name: Dr. Sandeep Chennakeshu
@@ -256,7 +254,7 @@
   designation: Former CTO of Ericsson Mobile Phones/Sony-Ericsson, President Ericsson Mobile Platforms, SVP Freescale, President Blackberry Technology Solutions, EVP AMD and COO Uhnder Inc.
   academic_year: 2025
   visit_from: "2026-03-04"
-  profile_pic: /assets/images/people/visitors/2026/sandeep-chennakeshu/Dr.SandeepChennakehsu.webp
+  profile_pic: /assets/images/people/visitors/2026/sandeep-chennakeshu/profile.jpg
   website: https://sandeepchennakeshu.com/
   google_scholar:
   linkedin: ""
@@ -265,10 +263,10 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-03-04/
   engagements:
     - text: >
-       During their time at CNI, Dr. Sandeep interacted with faculty and students through a seminar talk.
+        During their time at CNI, Dr. Sandeep interacted with faculty and students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/sandeep-chennakeshu/IMG_0308.JPG
-      - /assets/images/people/visitors/2026/sandeep-chennakeshu/IMG_0311.JPG
+        - /assets/images/people/visitors/2026/sandeep-chennakeshu/IMG_0308.JPG
+        - /assets/images/people/visitors/2026/sandeep-chennakeshu/IMG_0311.JPG
   extra_pics: []
 
 - name: Prof. Bharadwaj Satchidanandan
@@ -277,7 +275,7 @@
   designation: Assistant Professor, Department of Electrical Engineering at the Indian Institute of Technology Madras
   academic_year: 2025
   visit_from: "2026-03-09"
-  profile_pic: /assets/images/people/visitors/2026/bharadwaj-satchidanandan/Satchidanandan4.jpg
+  profile_pic: /assets/images/people/visitors/2026/bharadwaj-satchidanandan/profile.jpg
   website: https://sites.google.com/view/bsatchidanandan/home
   google_scholar:
   linkedin: ""
@@ -286,9 +284,9 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-03-09/
   engagements:
     - text: >
-       During their time at CNI, Prof. Bharadwaj interacted with faculty and students through a seminar talk.
+        During their time at CNI, Prof. Bharadwaj interacted with faculty and students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/bharadwaj-satchidanandan/IMG_0611.JPG
+        - /assets/images/people/visitors/2026/bharadwaj-satchidanandan/IMG_0611.JPG
   extra_pics: []
 
 - name: Prof. Harshan Jagadeesh
@@ -297,7 +295,7 @@
   designation: Associate Professor, Department of Electrical Engineering, IIT Delhi.
   academic_year: 2025
   visit_from: "2026-03-18"
-  profile_pic: /assets/images/people/visitors/2026/harshan-jagadeesh/Harshan_official - Harshan Jagadeesh.jpg
+  profile_pic: /assets/images/people/visitors/2026/harshan-jagadeesh/profile.jpg
   website: https://sites.google.com/site/jharshan/
   google_scholar: https://scholar.google.com/citations?user=kv_Ko5sAAAAJ&hl=en
   linkedin: ""
@@ -306,11 +304,11 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-03-18/
   engagements:
     - text: >
-       During their time at CNI, Prof. Harshan interacted with faculty through research discussion and with students through a seminar talk.
+        During their time at CNI, Prof. Harshan interacted with faculty through research discussion and with students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/harshan-jagadeesh/IMG_0691.JPG
-      - /assets/images/people/visitors/2026/harshan-jagadeesh/IMG_0694.JPG
-      - /assets/images/people/visitors/2026/harshan-jagadeesh/IMG_0698.JPG
+        - /assets/images/people/visitors/2026/harshan-jagadeesh/IMG_0691.JPG
+        - /assets/images/people/visitors/2026/harshan-jagadeesh/IMG_0694.JPG
+        - /assets/images/people/visitors/2026/harshan-jagadeesh/IMG_0698.JPG
   extra_pics: []
 
 - name: Sandeep Rao
@@ -319,7 +317,7 @@
   designation: Lead, R&D, Texas Instruments (TI)
   academic_year: 2025
   visit_from: "2026-04-06"
-  profile_pic: /assets/images/people/visitors/2026/sandeep-rao/profile - Sandeep Rao.jpg
+  profile_pic: /assets/images/people/visitors/2026/sandeep-rao/profile.jpg
   website: https://www.ti.com/product-category/sensors/mmwave-radar/overview.html
   google_scholar:
   linkedin: ""
@@ -328,9 +326,9 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-04-06/
   engagements:
     - text: >
-       During their time at CNI, Sandeep Rao interacted with faculty and students through a seminar talk.
+        During their time at CNI, Sandeep Rao interacted with faculty and students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/sandeep-rao/IMG_0711.JPG
+        - /assets/images/people/visitors/2026/sandeep-rao/IMG_0711.JPG
   extra_pics: []
 
 - name: Dr. Mansi Sood
@@ -339,7 +337,7 @@
   designation: Schmidt Science Fellow at the MIT Laboratory for Information and Decision Systems
   academic_year: 2025
   visit_from: "2026-04-15"
-  profile_pic: /assets/images/people/visitors/2026/mansi-sood/MansiSood (1).jpg
+  profile_pic: /assets/images/people/visitors/2026/mansi-sood/profile.jpg
   website: https://www.mansisood.com/
   google_scholar: https://scholar.google.com/citations?user=QGzkEzgAAAAJ&hl=en
   linkedin: ""
@@ -348,9 +346,9 @@
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-04-15/
   engagements:
     - text: >
-       During their time at CNI, Mansi interacted with faculty through research discussion and with students through a seminar talk.
+        During their time at CNI, Mansi interacted with faculty through research discussion and with students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/mansi-sood/MansiSood (2).jpg
+        - /assets/images/people/visitors/2026/mansi-sood/MansiSood (2).jpg
   extra_pics: []
 
 - name: Prof. Frank den Hollander
@@ -359,37 +357,39 @@
   designation: Emeritus Professor at Leiden University, Netherlands
   academic_year: 2025
   visit_from: "2026-04-20"
-  profile_pic: /assets/images/people/visitors/2026/frank-den-hollander/FRANK3 - Frank den Hollander.jpg
+  profile_pic: /assets/images/people/visitors/2026/frank-den-hollander/profile.jpg
   website: https://pub.math.leidenuniv.nl/~hollanderwtfden/
-  google_scholar: 
+  google_scholar:
   linkedin: ""
   purpose: ""
   talk_title: "The Friendship Paradox for Social Networks"
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-04-20/
   engagements:
     - text: >
-       During their time at CNI, Prof. Frank interacted with faculty students through a seminar talk.
+        During their time at CNI, Prof. Frank interacted with faculty students through a seminar talk.
       images:
-      - /assets/images/people/visitors/2026/frank-den-hollander/IMG_0756.JPG
-  extra_pics: []
-
+        - /assets/images/people/visitors/2026/frank-den-hollander/IMG_0756.JPG
+  extra_pics:
+    - /assets/images/people/visitors/2025/frank-den-hollander/extra-1.jpg
+    - /assets/images/people/visitors/2025/frank-den-hollander/extra-2.jpg
 - name: Prof. Remco van der Hofstad
   slug: remco-van-der-hofstad
-  institution:  Eindhoven University of Technology
+  institution: Eindhoven University of Technology
   designation: Professor at Eindhoven University of Technology, Netherlands
   academic_year: 2025
   visit_from: "2026-04-20"
-  profile_pic: /assets/images/people/visitors/2026/remco-van-der-hofstad/Foto_RvdH_small2 - RemcovdH.jpg
+  profile_pic: /assets/images/people/visitors/2026/remco-van-der-hofstad/profile.jpg
   website: https://pub.math.leidenuniv.nl/~hollanderwtfden/
-  google_scholar: 
+  google_scholar:
   linkedin: ""
   purpose: ""
   talk_title: "Who is Important in a Network? Bringing Order to Centrality Measures"
   talk_event_page: https://cni.iisc.ac.in/seminars/2026-04-20-1/
   engagements:
     - text: >
-       During their time at CNI, Prof. Remco interacted with faculty through research discussion and with students through a seminar talk.
+        During their time at CNI, Prof. Remco interacted with faculty through research discussion and with students through a seminar talk.
       images:
+<<<<<<< HEAD
       - /assets/images/people/visitors/2026/remco-van-der-hofstad/IMG_0758.JPG
   extra_pics: []
 
@@ -400,6 +400,12 @@
 
 #Year 2024-2025
 
+=======
+        - /assets/images/people/visitors/2026/remco-van-der-hofstad/IMG_0758.JPG
+  extra_pics:
+    - /assets/images/people/visitors/2025/remco-van-der-hofstad/extra-1.jpg
+    - /assets/images/people/visitors/2025/remco-van-der-hofstad/extra-2.jpg
+>>>>>>> f2440d38bff2a3cae962718d2c8efcefd0612978
 - name: Prof. Emina Soljanin
   slug: emina-soljanin
   institution: Rutgers University
@@ -418,4 +424,409 @@
         During their time at CNI, Professor Soljanin interacted with faculty through
         research discussion and with students through a seminar talk.
       images: []
+  extra_pics: []
+- name: Prof. Gautam Menon
+  slug: gautam-menon
+  institution: Ashoka University, Sonipat
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-04-27"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/gautam-menon/profile.jpg'
+  website: https://www.ashoka.edu.in/profile/gautam-menon-2/
+  google_scholar: https://scholar.google.com/citations?user=nduE54kAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: 'https://cni.iisc.ac.in/seminars/2026-04-27/'
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Ayalvadi Ganesh
+  slug: ayalvadi-ganesh
+  institution: University of Bristol
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-09-15"
+  visit_to: "2026-10-17"
+  profile_pic: '/assets/images/people/visitors/2025/ayalvadi-ganesh/profile.jpg'
+  website: https://people.maths.bris.ac.uk/~maajg/
+  google_scholar: https://scholar.google.com/citations?user=fQ0q_0YAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-05-04/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics:
+    - /assets/images/people/visitors/2025/ayalvadi-ganesh/extra-1.jpg
+- name: Prof. Narasimha Reddy
+  slug: narasimha-reddy
+  institution: Texas A&M University
+  designation: Professor and Head, Department of Electrical and Computer Engineering
+  academic_year: 2025
+  visit_from: "2026-06-04"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/narasimha-reddy/profile.jpg'
+  website: https://cesg.tamu.edu/faculty/narasimha-reddy/
+  google_scholar: ''
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-06-04/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Srinivas Shakkottai
+  slug: srinivas-shakkottai
+  institution: Texas A&M University
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-06-12"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/srinivas-shakkottai/profile.jpg'
+  website: https://cesg.tamu.edu/faculty/srinivas-shakkottai/
+  google_scholar: https://scholar.google.com/citations?user=HtpmINIAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-06-12/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Natarajan Gautam
+  slug: natarajan-gautam
+  institution: Syracuse University
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-07-01"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/natarajan-gautam/profile.jpg'
+  website: https://ecs.syracuse.edu/faculty-staff/natarajan-gautam
+  google_scholar: https://scholar.google.com/citations?user=fbhpBTsAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-07-01/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Arpan Mukhopadhyay
+  slug: arpan-mukhopadhyay
+  institution: University of Warwick
+  designation: Associate Professor
+  academic_year: 2025
+  visit_from: "2026-06-30"
+  visit_to: "2026-07-07"
+  profile_pic: '/assets/images/people/visitors/2025/arpan-mukhopadhyay/profile.jpg'
+  website: https://sites.google.com/site/arpanphi/home
+  google_scholar: https://scholar.google.com/citations?user=bmPxFagAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-07-06/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics:
+    - /assets/images/people/visitors/2025/arpan-mukhopadhyay/extra-1.jpg
+- name: Prof. Aditya Mahajan
+  slug: aditya-mahajan
+  institution: McGill University
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-07-20"
+  visit_to: "2026-07-24"
+  profile_pic: '/assets/images/people/visitors/2025/aditya-mahajan/profile.jpg'
+  website: https://adityam.github.io/
+  google_scholar: https://scholar.google.com/citations?user=Qr6-idkAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/schools/2026/
+  end_note: ''
+  research_interests: []
+  engagements:
+    - text: During his visit to CNI, Prof. Aditya interacted with faculty through research discussions, delivered a seminar talk for students, and served as a guest lecturer for the four-day CNI Summer School.
+      images: []
+  extra_pics:
+    - /assets/images/people/visitors/2025/aditya-mahajan/extra-1.jpg
+    - /assets/images/people/visitors/2025/aditya-mahajan/extra-2.jpg
+- name: Prof. Kaliappa Ravindran
+  slug: kaliappa-ravindran
+  institution: City University of New York
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-07-27"
+  visit_to: "2026-07-30"
+  profile_pic: '/assets/images/people/visitors/2025/kaliappa-ravindran/profile.jpg'
+  website: https://www.gc.cuny.edu/people/kaliappa-ravindran
+  google_scholar: https://scholar.google.com/citations?user=vn4LOOsAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-07-27/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Sayak Ray Chowdhury
+  slug: sayak-ray-chowdhury
+  institution: IIT Kanpur
+  designation: Assistant Professor
+  academic_year: 2025
+  visit_from: "2026-08-10"
+  visit_to: "2026-08-13"
+  profile_pic: '/assets/images/people/visitors/2025/sayak-ray-chowdhury/profile.jpg'
+  website: https://sites.google.com/view/sayakraychowdhury/home
+  google_scholar: https://scholar.google.com/citations?user=Q0_CaxYAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-10/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Emina Soljanin
+  slug: emina-soljanin
+  institution: Rutgers University
+  designation: Distinguished Professor
+  academic_year: 2025
+  visit_from: "2026-07-11"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/emina-soljanin/profile.jpg'
+  website: https://ece.rutgers.edu/emina-soljanin
+  google_scholar: https://scholar.google.com/citations?user=biHNfvkAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-11/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Ankur Mani
+  slug: ankur-mani
+  institution: University of Minnesota
+  designation: Affiliated Faculty
+  academic_year: 2025
+  visit_from: "2026-08-13"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/ankur-mani/profile.jpg'
+  website: https://sites.google.com/umn.edu/amani
+  google_scholar: https://scholar.google.com/citations?user=QrWJyPwAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-13/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Vijay G Subramanian
+  slug: vijay-subramanian
+  institution: University of Michigan, Ann Arbor
+  designation: Professor
+  academic_year: 2025
+  visit_from: "2026-08-17"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/vijay-subramanian/profile.jpg'
+  website: https://subramanian.engin.umich.edu/
+  google_scholar: https://scholar.google.com/citations?user=CuAYQ6gAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-17/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Pravin Nair
+  slug: pravin-nair
+  institution: IIT Madras
+  designation: Assistant Professor
+  academic_year: 2025
+  visit_from: "2026-08-17"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/pravin-nair/profile.jpg'
+  website: https://pravin1390.github.io/
+  google_scholar: https://scholar.google.com/citations?user=VTqK0FMAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-17-1/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Dr. Dheeraj Nagaraj
+  slug: dheeraj-nagaraj
+  institution: Google DeepMind
+  designation: Research Scientist
+  academic_year: 2025
+  visit_from: "2026-08-31"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/dheeraj-nagaraj/profile.jpg'
+  website: http://dheerajnagaraj.com/
+  google_scholar: https://scholar.google.com/citations?user=0g80b7sAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-08-31/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Dr. Ashutosh Gore
+  slug: ashutosh-gore
+  institution: Reliance Jio
+  designation: VP Engineering
+  academic_year: 2025
+  visit_from: "2026-09-07"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/ashutosh-gore/profile.jpg'
+  website: https://www.linkedin.com/in/adgore/
+  google_scholar: ''
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-09-07/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Jithin Ravi
+  slug: jithin-ravi
+  institution: IIT Kharagpur
+  designation: Assistant Professor
+  academic_year: 2025
+  visit_from: "2026-09-21"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/jithin-ravi/profile.jpg'
+  website: https://sites.google.com/view/rjithin/home
+  google_scholar: https://scholar.google.com/citations?user=oPtbq9sAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-09-21/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Dinesh Bharadia
+  slug: dinesh-bharadia
+  institution: University of California San Diego
+  designation: Associate Professor
+  academic_year: 2025
+  visit_from: "2026-10-12"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/dinesh-bharadia/profile.jpg'
+  website: https://dineshb.ucsd.edu/
+  google_scholar: https://scholar.google.com/citations?user=5SjaXJsAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-10-12-1/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Mrityunjoy Chakraborty
+  slug: mrityunjoy-chakraborty
+  institution: IIT Kharagpur
+  designation: VSNL Chair Professor
+  academic_year: 2025
+  visit_from: "2026-10-12"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/mrityunjoy-chakraborty/profile.jpg'
+  website: https://facweb.iitkgp.ac.in/~mchakraborty/
+  google_scholar: https://scholar.google.com/citations?user=15pXJ7cAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-10-12/
+  end_note: ''
+  research_interests: []
+  engagements: []
+  extra_pics: []
+- name: Prof. Seshan Srirangarajan
+  slug: seshan-srirangarajan
+  institution: IIT Delhi
+  designation: Associate Professor
+  academic_year: 2025
+  visit_from: "2026-11-16"
+  visit_to: ''
+  profile_pic: '/assets/images/people/visitors/2025/seshan-srirangarajan/profile.jpg'
+  website: https://web.iitd.ac.in/~seshan/
+  google_scholar: https://scholar.google.com/citations?user=ijFjQ7oAAAAJ&hl=en
+  linkedin: ''
+  intro: ''
+  bio: ''
+  purpose: ''
+  talk_title: ''
+  talk_description: ''
+  talk_event_page: https://cni.iisc.ac.in/seminars/2026-11-16/
+  end_note: ''
+  research_interests: []
+  engagements: []
   extra_pics: []

@@ -113,9 +113,11 @@ body, html {
   display: block;
 }
 
-/* Uniform photo area so the cards line up regardless of source aspect ratio. */
+/* Profile photos are 4:5 portraits (width 4 : height 5) cropped to the face by the
+   internal editor; every card shows them in the same 230 x 288 px box. */
 .visitor-card .card-img-top {
-  height: 230px;
+  height: auto;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
 }
 
@@ -123,7 +125,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 230px;
+  height: 288px;
   background-color: #e9ecef;
   color: #adb5bd;
   font-size: 4rem;
@@ -188,7 +190,7 @@ body, html {
   justify-content: center;
   width: 100%;
   max-width: 300px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   margin: 0 auto;
   background-color: #e9ecef;
   color: #adb5bd;
