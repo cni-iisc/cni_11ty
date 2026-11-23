@@ -389,23 +389,10 @@
     - text: >
         During their time at CNI, Prof. Remco interacted with faculty through research discussion and with students through a seminar talk.
       images:
-<<<<<<< HEAD
       - /assets/images/people/visitors/2026/remco-van-der-hofstad/IMG_0758.JPG
   extra_pics: []
 
 
-
-
-
-
-#Year 2024-2025
-
-=======
-        - /assets/images/people/visitors/2026/remco-van-der-hofstad/IMG_0758.JPG
-  extra_pics:
-    - /assets/images/people/visitors/2025/remco-van-der-hofstad/extra-1.jpg
-    - /assets/images/people/visitors/2025/remco-van-der-hofstad/extra-2.jpg
->>>>>>> f2440d38bff2a3cae962718d2c8efcefd0612978
 - name: Prof. Emina Soljanin
   slug: emina-soljanin
   institution: Rutgers University
